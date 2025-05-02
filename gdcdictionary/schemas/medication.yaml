@@ -42,8 +42,27 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  dose_sequence_number:
+    description: The sequence number of a specific dose of a medication given in a series of doses.
+    type: integer
+
+  medication_code:
+    description: The code for a specific medication, assigned by the code system.
+    type: string
+
+  medication_code_system:
+    term:
+      $ref: "_terms.yaml#/medication_code_system"
+    type: string
+
+  medication_manufacturer:
+    term:
+      $ref: "_terms.yaml#/medication_manufacturer"
+    type: string
+
   medication_name:
-    description: The name of the specific medication the case was prescribed or administered.
+    term:
+      $ref: "_terms.yaml#/medication_name"
     type: string
 
   medication_type:
@@ -59,13 +78,7 @@ properties:
       - Protease inhibitor
       - Supplemental oxygen
       - Systemic steroids
-
-  medication_status:
-    description: Indicates if the medication is in active use.
-    enum:
-      - Active
-      - Inactive
-      - Not Reported
+      - Vaccine
 
   days_to_medication_start:
     description: The number of days from the index date to the date the case started a specific medication.

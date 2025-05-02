@@ -26,11 +26,18 @@ links:
     target_type: case
     multiplicity: many_to_one
     required: true
+  - name: datasets
+    backref: imaging_studies
+    label: member_of
+    target_type: dataset
+    multiplicity: many_to_many
+    required: true
 
 required:
   - submitter_id
   - type
   - cases
+  - datasets
 
 uniqueKeys:
   - [id]
@@ -40,60 +47,101 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  age_at_imaging:
+    term:
+      $ref: "_terms.yaml#/age_at_imaging"
+    type: number
+    maximum: 89
+    minimum: 0
+
+  age_at_imaging_gt89:
+    description: Indicates whether the age of the patient in years at the time the imaging study was performed is greater than 89 years. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.
+    enum:
+      - "Yes"
+      - "No"
+
+  body_part_examined:
+    term:
+      $ref: "_terms.yaml#/body_part_examined"
+    type: array
+    items:
+      type: string
+
+  days_from_study_to_neg_covid_test:
+    description: The number of days from the imaging study to the patient's negative COVID-19 test(s).  This property takes a list of values, each of which represents a COVID-19 test for the patient. A positive value for this property means that a negative COVID-19 test result was obtained for the patient that many days after the imaging study was performed. A negative value indicates that a negative COVID-19 test result was obtained prior to the date of imaging. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.
+    type: array
+    items:
+      type: integer
+
+  days_from_study_to_pos_covid_test:
+    description: The number of days from the imaging study to the patient's positive COVID-19 test(s).  This property takes a list of values, each of which represents a COVID-19 test for the patient. A positive value for this property means that a positive COVID-19 test result was obtained for the patient that many days after the imaging study was performed. A negative value indicates that the positive COVID-19 test result was obtained prior to the date of imaging. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.
+    type: array
+    items:
+      type: integer
+
   days_to_study:
-    description: The number of days between the case's index date and the date of the imaging study.
+    description: The number of days between the case's index date and the date of the imaging study. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.
     type: number
 
+  image_data_modified:
+    description: An indicator of whether any post-clinical modification of image pixel data has been performed on the study.
+    type: boolean
+
+  loinc_code:
+    term:
+      $ref: "_terms.yaml#/loinc_code"
+    type: string
+
+  loinc_contrast:
+    term:
+      $ref: "_terms.yaml#/loinc_contrast"
+    type: string
+
+  loinc_long_common_name:
+    term:
+      $ref: "_terms.yaml#/loinc_long_common_name"
+    type: string
+
+  loinc_method:
+    term:
+      $ref: "_terms.yaml#/loinc_method"
+    type: string
+
+  loinc_system:
+    term:
+      $ref: "_terms.yaml#/loinc_system"
+    type: string
+
   study_description:
-    description: (0008, 1030) Study Description.
+    term:
+      $ref: "_terms.yaml#/study_description"
     type: string
 
   study_modality:
-    description: The modalities of the imaging study; derived from (0008, 0060) Modality.
+    term:
+      $ref: "_terms.yaml#/study_modality"
     type: array
     items:
       type: string
-
-  age_at_imaging:
-    description: Age of the patient in years at the time the imaging study was performed.
-    type: number
-    maximum: 90
-    minimum: 0
-
-  body_part_examined:
-    description: (0018, 0015) Body Part Examined.
-    type: array
-    items:
-      type: string
-
-  study_location:
-    description: The location or geographical site of imaging, or the name of the clinic that performed the imaging study.
-    type: string
-
-  series_count:
-    description: The total number of imaging series performed during the imaging study.
-    type: integer
-
-  study_covid_status:
-    description: The COVID-19 test status of the patient at the time the imaging study was performed.
-    enum:
-      - "Positive"
-      - "Negative"
-      - "Unknown"
-      - "Inconclusive"
 
   study_uid:
-    description: (0020, 000d) Study Instance UID
+    term:
+      $ref: "_terms.yaml#/study_uid"
     type: string
 
   study_year:
-    description: The year when imaging study was performed; year component of Study Date (0008, 0020).
+    term:
+      $ref: "_terms.yaml#/study_year"
     type: integer
 
   study_year_shifted:
-    description: Indicates whether the study year has been shifted for de-identification.
+    description: Indicates whether the study year has been shifted for de-identification. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.
     type: boolean
 
   cases:
     description: The submitter_id or id of the case observed in this imaging_study, i.e., a link to a record in the parent node.
     $ref: "_definitions.yaml#/to_one"
+
+  datasets:
+    description: The submitter_id or id of the dataset this case belongs to, i.e., a link to a record in the parent node.
+    $ref: "_definitions.yaml#/to_many"

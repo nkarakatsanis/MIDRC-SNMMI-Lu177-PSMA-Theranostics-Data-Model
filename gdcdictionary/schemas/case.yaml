@@ -42,268 +42,32 @@ properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
   age_at_index:
-    description: The subject's age at the time of the study.
+    term:
+      $ref: "_terms.yaml#/age_at_index"
     type: number
+    maximum: 89
+    minimum: 0
 
-  covid19_positive:
-    description: An indicator of whether the patient has ever had a positive COVID-19 test.
+  age_at_index_gt89:
+    description: Indicates whether the subject's age at the time of the study was greater than 89 years. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html. 
     enum:
       - "Yes"
       - "No"
-      - Not Reported
 
-  country_of_origin:
-    description: The country where the subject is from.
+  country_of_residence:
+    term:
+      $ref: "_terms.yaml#/country_of_residence"
+    type: string
+
+  covid19_positive:
+    term:
+      $ref: "_terms.yaml#/covid19_positive"
     enum:
-      - Afghanistan
-      - Albania
-      - Antarctica
-      - Algeria
-      - American Samoa
-      - Andorra
-      - Angola
-      - Antigua and Barbuda
-      - Azerbaijan
-      - Argentina
-      - Australia
-      - Austria
-      - Bahamas
-      - Bahrain
-      - Bangladesh
-      - Armenia
-      - Barbados
-      - Belgium
-      - Bermuda
-      - Bhutan
-      - Bolivia (Plurinational State of)
-      - Bosnia and Herzegovina
-      - Botswana
-      - Bouvet Island
-      - Brazil
-      - Belize
-      - British Indian Ocean Territory
-      - Solomon Islands
-      - Virgin Islands (British)
-      - Brunei Darussalam
-      - Bulgaria
-      - Myanmar
-      - Burundi
-      - Belarus
-      - Cambodia
-      - Cameroon
-      - Canada
-      - Cabo Verde
-      - Cayman Islands
-      - Central African Republic
-      - Sri Lanka
-      - Chad
-      - Chile
-      - China
-      - Taiwan, Province of China
-      - Christmas Island
-      - Cocos (Keeling) Islands
-      - Colombia
-      - Comoros
-      - Mayotte
-      - Congo
-      - Congo, Democratic Republic of the
-      - Cook Islands
-      - Costa Rica
-      - Croatia
-      - Cuba
-      - Cyprus
-      - Czechia
-      - Benin
-      - Denmark
-      - Dominica
-      - Dominican Republic
-      - Ecuador
-      - El Salvador
-      - Equatorial Guinea
-      - Ethiopia
-      - Eritrea
-      - Estonia
-      - Faroe Islands
-      - Falkland Islands (Malvinas)
-      - South Georgia and the South Sandwich Islands
-      - Fiji
-      - Finland
-      - Åland Islands
-      - France
-      - French Guiana
-      - French Polynesia
-      - French Southern Territories
-      - Djibouti
-      - Gabon
-      - Georgia
-      - Gambia
-      - Palestine, State of
-      - Germany
-      - Ghana
-      - Gibraltar
-      - Kiribati
-      - Greece
-      - Greenland
-      - Grenada
-      - Guadeloupe
-      - Guam
-      - Guatemala
-      - Guinea
-      - Guyana
-      - Haiti
-      - Heard Island and McDonald Islands
-      - Holy See
-      - Honduras
-      - Hong Kong
-      - Hungary
-      - Iceland
-      - India
-      - Indonesia
-      - Iran (Islamic Republic of)
-      - Iraq
-      - Ireland
-      - Israel
-      - Italy
-      - Côte d'Ivoire
-      - Jamaica
-      - Japan
-      - Kazakhstan
-      - Jordan
-      - Kenya
-      - Korea (Democratic People's Republic of)
-      - Korea, Republic of
-      - Kuwait
-      - Kyrgyzstan
-      - Lao People's Democratic Republic
-      - Lebanon
-      - Lesotho
-      - Latvia
-      - Liberia
-      - Libya
-      - Liechtenstein
-      - Lithuania
-      - Luxembourg
-      - Macao
-      - Madagascar
-      - Malawi
-      - Malaysia
-      - Maldives
-      - Mali
-      - Malta
-      - Martinique
-      - Mauritania
-      - Mauritius
-      - Mexico
-      - Monaco
-      - Mongolia
-      - Moldova, Republic of
-      - Montenegro
-      - Montserrat
-      - Morocco
-      - Mozambique
-      - Oman
-      - Namibia
-      - Nauru
-      - Nepal
-      - Netherlands
-      - Curaçao
-      - Aruba
-      - Sint Maarten (Dutch part)
-      - Bonaire, Sint Eustatius and Saba
-      - New Caledonia
-      - Vanuatu
-      - New Zealand
-      - Nicaragua
-      - Niger
-      - Nigeria
-      - Niue
-      - Norfolk Island
-      - Norway
-      - Northern Mariana Islands
-      - United States Minor Outlying Islands
-      - Micronesia (Federated States of)
-      - Marshall Islands
-      - Palau
-      - Pakistan
-      - Panama
-      - Papua New Guinea
-      - Paraguay
-      - Peru
-      - Philippines
-      - Pitcairn
-      - Poland
-      - Portugal
-      - Guinea-Bissau
-      - Timor-Leste
-      - Puerto Rico
-      - Qatar
-      - Réunion
-      - Romania
-      - Russian Federation
-      - Rwanda
-      - Saint Barthélemy
-      - Saint Helena, Ascension and Tristan da Cunha
-      - Saint Kitts and Nevis
-      - Anguilla
-      - Saint Lucia
-      - Saint Martin (French part)
-      - Saint Pierre and Miquelon
-      - Saint Vincent and the Grenadines
-      - San Marino
-      - Sao Tome and Principe
-      - Saudi Arabia
-      - Senegal
-      - Serbia
-      - Seychelles
-      - Sierra Leone
-      - Singapore
-      - Slovakia
-      - Viet Nam
-      - Slovenia
-      - Somalia
-      - South Africa
-      - Zimbabwe
-      - Spain
-      - South Sudan
-      - Sudan
-      - Western Sahara
-      - Suriname
-      - Svalbard and Jan Mayen
-      - Eswatini
-      - Sweden
-      - Switzerland
-      - Syrian Arab Republic
-      - Tajikistan
-      - Thailand
-      - Togo
-      - Tokelau
-      - Tonga
-      - Trinidad and Tobago
-      - United Arab Emirates
-      - Tunisia
-      - Turkey
-      - Turkmenistan
-      - Turks and Caicos Islands
-      - Tuvalu
-      - Uganda
-      - Ukraine
-      - North Macedonia
-      - Egypt
-      - United Kingdom of Great Britain and Northern Ireland
-      - Guernsey
-      - Jersey
-      - Isle of Man
-      - Tanzania, United Republic of
-      - United States of America
-      - Virgin Islands (U.S.)
-      - Burkina Faso
-      - Uruguay
-      - Uzbekistan
-      - Venezuela (Bolivarian Republic of)
-      - Wallis and Futuna
-      - Samoa
-      - Yemen
-      
+      - "Yes"
+      - "No"
+      - "Indeterminate"
+      - "Not Reported"
+
   ethnicity:
     term:
       $ref: "_terms.yaml#/ethnicity"
@@ -312,13 +76,35 @@ properties:
       - Not Hispanic or Latino
       - Not Reported
 
+  gen3_linked_subjects_available:
+    description: Indicates whether there is data available for the subject in other data resources.
+    type: boolean
+
   icu_indicator:
-    description: Indicates whether the subject has been admitted to the ICU.
+    term:
+      $ref: "_terms.yaml#/icu_indicator"
     type: boolean
 
   index_event:
-    description: The event used as the anchor or start date for all temporal data elements. This acts as day 0 on a timeline of events relating to the patient.
-    type: string
+    description: The event used as the anchor or start date for all temporal data elements. This acts as day 0 on a timeline of events relating to the patient. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.
+    enum:
+      - COVID-19 Test
+      - Long COVID Diagnosis
+      - Study Enrollment
+      - First Imaging Study
+
+  linked_external_data:
+    description: A list of all external data resources that are confirmed to have data for the case.
+    type: array
+    items:
+      type: string
+
+  long_covid_diagnosis:
+    term:
+      $ref: "_terms.yaml#/long_covid_diagnosis"
+    enum:
+      - Positive
+      - Not Reported
 
   race:
     term:
@@ -328,31 +114,40 @@ properties:
       - Asian
       - Black or African American
       - Native Hawaiian or other Pacific Islander
+      - Other
       - White
       - Not Reported
 
   sex:
-    description: The biologic character or quality that distinguishes male and female from one another as expressed by analysis of the person's gonadal, morphologic  (internal and external), chromosomal, and hormonal characteristics.
+    term:
+      $ref: "_terms.yaml#/sex"
     enum:
       - Female
       - Male
       - Not Reported
 
   site_id:
-    description: A de-identified code used to classify a case as part of a specific data submission.
+    term:
+      $ref: "_terms.yaml#/site_id"
+    type: string
+
+  token_record_id:
+    description: An ID used to link a de-identified case in MIDRC to the same case in an external data resource.
     type: string
 
   treatment_info:
-    description: Indicates whether detailed treatment information is available for the subject.
+    term:
+      $ref: "_terms.yaml#/treatment_info"
     type: boolean
 
   ventilator_indicator:
-    description: Indicates whether the subject has been on a ventilator.
+    term:
+      $ref: "_terms.yaml#/ventilator_indicator"
     type: boolean
 
   zip:
-    description: The three-digit United States zip code for any population greater than 20,000. For zip codes where the three digit number represents a population less than 20,000 "000" will be provided.
-    type: integer
+    description: The three-digit United States zip code of residence for any population greater than 20,000. For zip codes where the three digit number represents a population less than 20,000 "000" will be provided.
+    type: string
 
   datasets:
     description: The submitter_id or id of the dataset this case belongs to, i.e., a link to a record in the parent node.

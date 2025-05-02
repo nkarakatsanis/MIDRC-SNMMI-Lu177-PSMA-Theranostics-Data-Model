@@ -90,8 +90,12 @@ properties:
     description: The primary type of disease studied in this dataset, if applicable.
     type: string
 
+  full_name:
+    description: The full name or title of the dataset or publication.
+    type: string
+
   license:
-    description: The license under which the daaset has been published.
+    description: The license under which the dataset has been published.
     type: string
 
   longitudinal:
