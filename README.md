@@ -1,6 +1,8 @@
-Data Model for the Medical Imaging and Data Resource Center (MIDRC) Data Commons
+NMMI-specific Expansion of the Data Model for the Medical Imaging and Data Resource Center (MIDRC) Data Commons
 
-The MIDRC data commons is powered by the Gen3 software stack. For more information on Gen3, visit the documentation at gen3.org. For more details about how Gen3 uses a data model and how the data dictionary should be formatted, see https://gen3.org/resources/user/dictionary/.
+The NMMI-MIDRC data commons is powered by the Gen3 software stack. 
+For more information on Gen3, visit the documentation at gen3.org. 
+For more details about how Gen3 uses a data model and how the data dictionary should be formatted, see https://gen3.org/resources/user/dictionary/.
 
 
 # Data Dictionary
