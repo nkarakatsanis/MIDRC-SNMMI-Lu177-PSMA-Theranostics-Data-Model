@@ -1,0 +1,14 @@
+{
+  "discharge_type": null, 
+  "days_to_hospital_admission": null, 
+  "days_to_hospital_discharge": null, 
+  "*submitter_id": null, 
+  "project_id": null, 
+  "days_to_icu_discharge": null, 
+  "*cases": {
+    "submitter_id": null
+  }, 
+  "*type": "visit", 
+  "case_ids": null, 
+  "days_to_icu_admission": null
+}

@@ -1,0 +1,408 @@
+[
+  {
+    "node": "program",
+    "candidate_targets": "",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "project",
+    "candidate_targets": "",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "dataset",
+    "candidate_targets": "",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "study",
+    "candidate_targets": "Protocol metadata outside clinical OMOP core",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "site",
+    "candidate_targets": "CARE_SITE; LOCATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "model_release",
+    "candidate_targets": "METADATA or external governance",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "semantic_mapping",
+    "candidate_targets": "CONCEPT; CONCEPT_RELATIONSHIP; vocabulary governance",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "provenance",
+    "candidate_targets": "External provenance; selected NOTE or OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "case",
+    "candidate_targets": "PERSON",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "visit",
+    "candidate_targets": "VISIT_OCCURRENCE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "therapy_course",
+    "candidate_targets": "EPISODE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "therapy_cycle",
+    "candidate_targets": "EPISODE with EPISODE_EVENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "timepoint",
+    "candidate_targets": "VISIT_OCCURRENCE or EPISODE context",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "treatment_plan",
+    "candidate_targets": "Planned order not a delivered DRUG_EXPOSURE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "radiopharmaceutical",
+    "candidate_targets": "Drug concept vocabulary; no separate DRUG table in OMOP 5.4",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "radiopharmaceutical_batch",
+    "candidate_targets": "External product metadata or qualified measurements",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "administration",
+    "candidate_targets": "DRUG_EXPOSURE plus activity MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "anthropometric_assessment",
+    "candidate_targets": "MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "lifestyle_assessment",
+    "candidate_targets": "OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "clinical_assessment",
+    "candidate_targets": "OBSERVATION; MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "condition",
+    "candidate_targets": "CONDITION_OCCURRENCE; staging MEASUREMENT or OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "medical_history",
+    "candidate_targets": "CONDITION_OCCURRENCE; OBSERVATION; NOTE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "medication",
+    "candidate_targets": "DRUG_EXPOSURE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "procedure",
+    "candidate_targets": "PROCEDURE_OCCURRENCE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "specimen",
+    "candidate_targets": "SPECIMEN",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "biomarker_assessment",
+    "candidate_targets": "MEASUREMENT; OBSERVATION; SPECIMEN",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "laboratory_panel",
+    "candidate_targets": "Grouping metadata; SPECIMEN; VISIT_OCCURRENCE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "laboratory_result",
+    "candidate_targets": "MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "scanner",
+    "candidate_targets": "Device concept; site equipment registry",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "scanner_qa",
+    "candidate_targets": "MEASUREMENT; device usage when applicable",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "imaging_study",
+    "candidate_targets": "PROCEDURE_OCCURRENCE; imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "imaging_series",
+    "candidate_targets": "Imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "acquisition",
+    "candidate_targets": "Imaging extension; selected OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "raw_imaging_file",
+    "candidate_targets": "External artifact; imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "reconstruction",
+    "candidate_targets": "Imaging extension; OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "image_file",
+    "candidate_targets": "External artifact; imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "registration",
+    "candidate_targets": "Imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "anatomic_target",
+    "candidate_targets": "Target identifier in imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "segmentation",
+    "candidate_targets": "Imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "segmentation_file",
+    "candidate_targets": "External artifact; imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "roi_measurement",
+    "candidate_targets": "MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "time_activity_curve",
+    "candidate_targets": "Imaging extension; derived MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "dosimetry",
+    "candidate_targets": "External analysis; selected OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "absorbed_dose",
+    "candidate_targets": "MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "dose_map_file",
+    "candidate_targets": "External artifact; imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "dose_summary",
+    "candidate_targets": "MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "organ_function",
+    "candidate_targets": "MEASUREMENT; OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "toxicity_event",
+    "candidate_targets": "OBSERVATION or CONDITION_OCCURRENCE as concept domain requires",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "toxicity_summary",
+    "candidate_targets": "OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "response_assessment",
+    "candidate_targets": "OBSERVATION; MEASUREMENT; EPISODE",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "survival_outcome",
+    "candidate_targets": "DEATH; EPISODE; derived MEASUREMENT",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "patient_reported_outcome",
+    "candidate_targets": "MEASUREMENT; OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "clinical_document_file",
+    "candidate_targets": "NOTE; external document",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "Assign concept IDs and domains using a pinned approved vocabulary release. Imaging extensions are outside core 5.4."
+  },
+  {
+    "node": "eligibility_assessment",
+    "candidate_targets": "OBSERVATION; linked clinical evidence",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "New workflow node; assign concept domains and link semantics during ETL specification."
+  },
+  {
+    "node": "disease_burden",
+    "candidate_targets": "Derived MEASUREMENT; imaging extension",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "New workflow node; assign concept domains and link semantics during ETL specification."
+  },
+  {
+    "node": "clinical_event",
+    "candidate_targets": "CONDITION_OCCURRENCE; PROCEDURE_OCCURRENCE; OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "New workflow node; assign concept domains and link semantics during ETL specification."
+  },
+  {
+    "node": "treatment_decision",
+    "candidate_targets": "OBSERVATION; planned treatment metadata",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "New workflow node; assign concept domains and link semantics during ETL specification."
+  },
+  {
+    "node": "treatment_transition",
+    "candidate_targets": "EPISODE context; DRUG_EXPOSURE; OBSERVATION",
+    "status": "conceptual_not_executable_etl",
+    "baseline_version": "5.4",
+    "note": "New workflow node; assign concept domains and link semantics during ETL specification."
+  }
+]

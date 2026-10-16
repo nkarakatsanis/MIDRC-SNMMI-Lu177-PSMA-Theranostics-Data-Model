@@ -1,0 +1,50 @@
+[
+  {
+    "submitter_id": "SYN-DOSE_MAP_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "syn-dose_map_file.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "type": "dicom_annotation_file",
+    "data_format": "DCM",
+    "data_type": "Internal Annotation",
+    "data_category": "DICOM Annotation Series File",
+    "modality": "RTDOSE",
+    "annotation_name": "NMMI_PSMA_DOSE_MAP",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "series_uid": "2.25.91002",
+    "series_description": "Invented dose-map artifact",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "theranostics_file_role": "dose_map"
+  },
+  {
+    "submitter_id": "SYN-SEGMENTATION_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "syn-segmentation_file.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "type": "dicom_annotation_file",
+    "data_format": "DCM",
+    "data_type": "Internal Annotation",
+    "data_category": "DICOM Annotation Series File",
+    "modality": "SEG",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "series_uid": "2.25.91001",
+    "series_description": "Invented segmentation artifact",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "theranostics_file_role": "segmentation"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "status": "AUTHOR_SUPPLIED_REVISION_PRESERVED",
+  "document_sha256": "f1633b5c3131f678271087db97da016895f10c58d1082c39b46eacba016c8dbe",
+  "source": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.0.docx, supplied by the user",
+  "checks": [
+    "Exact byte preservation of the attached document",
+    "Paragraph-text comparison against generated v0.3.0: corrected spacing in the title; other paragraph text unchanged"
+  ],
+  "visual_layout_revalidated": false,
+  "previous_layout_report": "document_check_previous_export.json",
+  "note": "The author-supplied formatting is preserved; the earlier 19-page visual inspection applies to the previous generated export."
+}

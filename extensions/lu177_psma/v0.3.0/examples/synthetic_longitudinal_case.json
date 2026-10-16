@@ -1,0 +1,2829 @@
+[
+  {
+    "name": "SYNTHETIC_NMMI_PROGRAM",
+    "dbgap_accession_number": "",
+    "id": "11111111-1111-4111-8111-111111111111",
+    "type": "program"
+  },
+  {
+    "code": "SYNTHETIC",
+    "name": "Synthetic model demonstration",
+    "dbgap_accession_number": "",
+    "type": "project",
+    "programs": [
+      {
+        "id": "11111111-1111-4111-8111-111111111111"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DATASET",
+    "model_version": "0.3.0-proposal",
+    "full_name": "Synthetic Lu-177 PSMA model example",
+    "longitudinal": true,
+    "type": "dataset",
+    "data_description": "Entirely invented longitudinal Lu177-PSMA model example; no real patient data or image objects.",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-MODEL_RELEASE",
+    "model_version": "0.3.0-proposal",
+    "release_version": "0.3.0-proposal",
+    "released_on": "2026-10-16",
+    "type": "model_release",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PROVENANCE",
+    "model_version": "0.3.0-proposal",
+    "source_system": "Synthetic generator",
+    "transformation": "Illustrative data only; no clinical inference or imported patient data",
+    "type": "provenance",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SITE",
+    "model_version": "0.3.0-proposal",
+    "site_code": "SYNTHETIC_EXAMPLE",
+    "type": "site",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-STUDY",
+    "model_version": "0.3.0-proposal",
+    "protocol_identifier": "SYNTHETIC-PROTOCOL",
+    "protocol_version": "1",
+    "type": "study",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-CASE",
+    "model_version": "0.3.0-proposal",
+    "age_at_index": 70,
+    "sex_assigned_at_birth": "Male",
+    "deidentification_method": "Invented example; no real person",
+    "type": "case",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DIAGNOSTIC-PRODUCT",
+    "model_version": "0.3.0-proposal",
+    "name": "Synthetic F-18 PSMA tracer",
+    "radionuclide": "F-18",
+    "molecular_target": "PSMA",
+    "type": "radiopharmaceutical",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RADIOPHARMACEUTICAL",
+    "model_version": "0.3.0-proposal",
+    "name": "Synthetic Lu-177 PSMA product",
+    "radionuclide": "Lu-177",
+    "molecular_target": "PSMA",
+    "type": "radiopharmaceutical",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SCANNER",
+    "model_version": "0.3.0-proposal",
+    "device_identifier": "SYNTHETIC-SPECT",
+    "device_type": "SPECT/CT",
+    "manufacturer": "Synthetic vendor",
+    "manufacturer_model_name": "Example system",
+    "type": "scanner",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SEMANTIC_MAPPING",
+    "model_version": "0.3.0-proposal",
+    "node_name": "absorbed_dose",
+    "vocabulary": "NucLex",
+    "mapping_status": "unmapped",
+    "property_name": "absorbed_dose_gy",
+    "type": "semantic_mapping",
+    "model_releases": [
+      {
+        "submitter_id": "SYN-MODEL_RELEASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-TARGET-LESION-2",
+    "model_version": "0.3.0-proposal",
+    "target_identifier": "JOURNEY-LESION-2",
+    "target_type": "lesion",
+    "anatomic_location": "Second synthetic lesion",
+    "type": "anatomic_target",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ANATOMIC_TARGET",
+    "model_version": "0.3.0-proposal",
+    "target_identifier": "SYN-KIDNEY-R",
+    "target_type": "organ",
+    "anatomic_location": "Right kidney",
+    "type": "anatomic_target",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TARGET-LESION-1",
+    "model_version": "0.3.0-proposal",
+    "target_identifier": "SYN-LESION-1",
+    "target_type": "lesion",
+    "anatomic_location": "Synthetic pelvic lesion",
+    "type": "anatomic_target",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-MEDICAL_HISTORY",
+    "model_version": "0.3.0-proposal",
+    "type": "medical_history",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-MEDICATION",
+    "model_version": "0.3.0-proposal",
+    "medication_name": "Synthetic analgesic exposure",
+    "start_date": "2025-12-01",
+    "type": "medication",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH",
+    "model_version": "0.3.0-proposal",
+    "batch_identifier": "SYNTHETIC-LOT",
+    "radiochemical_purity_percent": 99.0,
+    "type": "radiopharmaceutical_batch",
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SCANNER_QA",
+    "model_version": "0.3.0-proposal",
+    "qa_type": "quantitative calibration",
+    "qa_result": "pass",
+    "radionuclide": "Lu-177",
+    "valid_from": "2025-12-01T00:00:00Z",
+    "valid_until": "2026-12-01T00:00:00Z",
+    "type": "scanner_qa",
+    "scanners": [
+      {
+        "submitter_id": "SYN-SCANNER"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SPECIMEN",
+    "model_version": "0.3.0-proposal",
+    "specimen_type": "SYNTHETIC_EXAMPLE",
+    "type": "specimen",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-RAW-48H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "synthetic_48h_projections.bin",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "data_format": "BIN",
+    "data_type": "Synthetic placeholder",
+    "data_category": "Theranostics supporting data",
+    "type": "supplementary_file",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "theranostics_file_role": "raw_acquisition"
+  },
+  {
+    "submitter_id": "SYN-CLINICAL_DOCUMENT_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "clinical_document_file_example.bin",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "data_format": "TXT",
+    "data_type": "Synthetic placeholder",
+    "data_category": "Theranostics supporting data",
+    "type": "supplementary_file",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "theranostics_file_role": "clinical_document"
+  },
+  {
+    "submitter_id": "SYN-RAW_IMAGING_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "raw_imaging_file_example.bin",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "data_format": "BIN",
+    "data_type": "Synthetic placeholder",
+    "data_category": "Theranostics supporting data",
+    "type": "supplementary_file",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "theranostics_file_role": "raw_acquisition"
+  },
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-COURSE",
+    "model_version": "0.3.0-proposal",
+    "course_number": 2,
+    "start_date": "2026-08-01",
+    "course_status": "active",
+    "planned_number_of_cycles": 2,
+    "actual_number_of_cycles": 1,
+    "treatment_completed_as_planned": false,
+    "completion_reason": "Ongoing subsequent course in synthetic follow-up",
+    "type": "therapy_course",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "studies": [
+      {
+        "submitter_id": "SYN-STUDY"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-THERAPY_COURSE",
+    "model_version": "0.3.0-proposal",
+    "course_number": 1,
+    "start_date": "2026-01-01",
+    "course_status": "completed",
+    "planned_number_of_cycles": 2,
+    "completion_date": "2026-02-01",
+    "actual_number_of_cycles": 2,
+    "treatment_completed_as_planned": true,
+    "completion_reason": "Completed the two planned cycles in this compact invented example; this is not a recommended treatment regimen.",
+    "type": "therapy_course",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "studies": [
+      {
+        "submitter_id": "SYN-STUDY"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-VISIT",
+    "model_version": "0.3.0-proposal",
+    "visit_type": "Initial theranostics consultation",
+    "assessment_datetime": "2025-12-10T10:00:00Z",
+    "type": "visit",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-CYCLE-1",
+    "model_version": "0.3.0-proposal",
+    "cycle_number": 1,
+    "cycle_status": "administered",
+    "type": "therapy_cycle",
+    "therapy_courses": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-COURSE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-CYCLE-2",
+    "model_version": "0.3.0-proposal",
+    "cycle_number": 2,
+    "cycle_status": "administered",
+    "type": "therapy_cycle",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-THERAPY_CYCLE",
+    "model_version": "0.3.0-proposal",
+    "cycle_number": 1,
+    "cycle_status": "administered",
+    "type": "therapy_cycle",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-TRACER",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "diagnostic",
+    "administered_activity_mbq": 10.0,
+    "activity_reference_datetime": "2026-04-01T12:00:00Z",
+    "administration_datetime": "2026-04-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-PRODUCT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-ADMIN-1",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "therapy",
+    "administered_activity_mbq": 1000.0,
+    "activity_reference_datetime": "2026-08-01T12:00:00Z",
+    "administration_datetime": "2026-08-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-CYCLE-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ADMIN-2",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "therapy",
+    "administered_activity_mbq": 1000.0,
+    "activity_reference_datetime": "2026-02-01T12:00:00Z",
+    "administration_datetime": "2026-02-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-CYCLE-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ADMINISTRATION",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "therapy",
+    "administered_activity_mbq": 1000.0,
+    "activity_reference_datetime": "2026-01-01T12:00:00Z",
+    "administration_datetime": "2026-01-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DIAGNOSTIC-ADMIN",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "diagnostic",
+    "administered_activity_mbq": 10.0,
+    "activity_reference_datetime": "2025-12-20T12:00:00Z",
+    "administration_datetime": "2025-12-20T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-PRODUCT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-TIME",
+    "model_version": "0.3.0-proposal",
+    "phase": "baseline",
+    "hours_from_administration": 1.0,
+    "assessment_datetime": "2025-12-20T13:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-ADMIN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-48H",
+    "model_version": "0.3.0-proposal",
+    "phase": "post_administration",
+    "hours_from_administration": 48.0,
+    "assessment_datetime": "2026-01-03T12:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-TIME",
+    "model_version": "0.3.0-proposal",
+    "phase": "follow_up",
+    "hours_from_administration": 1.0,
+    "assessment_datetime": "2026-04-01T13:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-TRACER"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TIMEPOINT",
+    "model_version": "0.3.0-proposal",
+    "phase": "post_administration",
+    "hours_from_administration": 24.0,
+    "assessment_datetime": "2026-01-02T12:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-BIOMARKER_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "type": "biomarker_assessment",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-CLINICAL_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "assessment_role": "baseline",
+    "assessment_datetime": "2025-12-10T10:30:00Z",
+    "ecog_score": 1,
+    "prognostic_context": "Disease extent, prior treatment and clinical status reviewed; illustrative documentation, no prognosis algorithm applied.",
+    "prognostic_risk_category": "Recorded narrative assessment; no calculated risk category",
+    "type": "clinical_assessment",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-CONDITION",
+    "model_version": "0.3.0-proposal",
+    "condition_name": "Prostate adenocarcinoma with metastatic disease; synthetic record",
+    "initial_diagnosis_date_prostateca": "2023-04-10",
+    "histology_subtype": "Adenocarcinoma",
+    "disease_status_assessment_date": "2025-12-10",
+    "type": "condition",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-PETCT",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.20001",
+    "study_date": "2025-12-20",
+    "imaging_purpose": "baseline",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-TIME"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-ADMIN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-SPECTCT-48H",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.30001",
+    "study_date": "2026-01-03",
+    "imaging_purpose": "dosimetry",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "JOURNEY-C1-48H"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-PETCT",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.40001",
+    "study_date": "2026-04-01",
+    "imaging_purpose": "follow_up",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-TIME"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-TRACER"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-IMAGING_STUDY",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.10001",
+    "study_date": "2026-01-02",
+    "imaging_purpose": "dosimetry",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "SYN-TIMEPOINT"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-CONFIRM-PANEL",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2026-04-22",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-EARLY-PANEL",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2026-01-22",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-LABORATORY_PANEL",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2025-12-30",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PSA-PANEL-2",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2026-04-01",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-LIFESTYLE_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "type": "observation",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "observation_profile": "lifestyle",
+    "observation_name": "smoking_history",
+    "observation_answer": "Former"
+  },
+  {
+    "submitter_id": "JOURNEY-PAIN-CONFIRM",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "NRS",
+    "instrument_version": "0-10",
+    "score_domain": "pain",
+    "score": 3.0,
+    "score_unit": "NRS points",
+    "assessment_role": "confirmation",
+    "baseline_averaging_days": 3,
+    "assessment_datetime": "2026-04-16T09:00:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PAIN-FU",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "NRS",
+    "instrument_version": "0-10",
+    "score_domain": "pain",
+    "score": 3.0,
+    "score_unit": "NRS points",
+    "assessment_role": "followup",
+    "baseline_averaging_days": 3,
+    "assessment_datetime": "2026-04-01T09:00:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PRO-CTCAE-FATIGUE",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "PRO-CTCAE",
+    "instrument_version": "Specify approved item-library release",
+    "score_domain": "fatigue",
+    "assessment_role": "followup",
+    "assessment_datetime": "2026-04-01T09:30:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "item_code": "Synthetic item identifier for illustration",
+    "item_attribute": "severity",
+    "response_value": "Mild",
+    "pro_ctcae_collected": true,
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PATIENT_REPORTED_OUTCOME",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "NRS",
+    "instrument_version": "0-10",
+    "score_domain": "pain",
+    "score": 6.0,
+    "score_unit": "NRS points",
+    "assessment_role": "baseline",
+    "baseline_averaging_days": 3,
+    "assessment_datetime": "2025-12-30T09:00:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-CT-IMAGE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "synthetic_baseline_ct.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "HU",
+    "type": "ct_series_file",
+    "series_uid": "2.25.20003",
+    "modality": "CT",
+    "series_description": "Baseline CT anatomical reference",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "CT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-CT-IMAGE-24H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-c1-ct-image-24h.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "HU",
+    "type": "ct_series_file",
+    "series_uid": "2.25.31001",
+    "modality": "CT",
+    "series_description": "CT for paired post-therapy SPECT/CT",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "CT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-CT-IMAGE-48H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-c1-ct-image-48h.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "HU",
+    "type": "ct_series_file",
+    "series_uid": "2.25.31002",
+    "modality": "CT",
+    "series_description": "CT for paired post-therapy SPECT/CT",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-C1-SPECTCT-48H"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "CT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSE_MAP_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "syn-dose_map_file.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "type": "dicom_annotation_file",
+    "data_format": "DCM",
+    "data_type": "Internal Annotation",
+    "data_category": "DICOM Annotation Series File",
+    "modality": "RTDOSE",
+    "annotation_name": "NMMI_PSMA_DOSE_MAP",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "series_uid": "2.25.91002",
+    "series_description": "Invented dose-map artifact",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "theranostics_file_role": "dose_map"
+  },
+  {
+    "submitter_id": "SYN-SEGMENTATION_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "syn-segmentation_file.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "type": "dicom_annotation_file",
+    "data_format": "DCM",
+    "data_type": "Internal Annotation",
+    "data_category": "DICOM Annotation Series File",
+    "modality": "SEG",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "series_uid": "2.25.91001",
+    "series_description": "Invented segmentation artifact",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "theranostics_file_role": "segmentation"
+  },
+  {
+    "submitter_id": "JOURNEY-C1-IMAGE-48H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-c1-image-48h.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "Bq/mL",
+    "type": "nm_series_file",
+    "series_uid": "2.25.30002",
+    "modality": "NM",
+    "series_description": "Quantitative post-therapy SPECT at 48 hours",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-C1-SPECTCT-48H"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "NM",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "nm_acquisition_kind": "SPECT"
+  },
+  {
+    "submitter_id": "JOURNEY-C1-PLANAR",
+    "model_version": "0.3.0-proposal",
+    "file_name": "synthetic_planar.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "Bq/mL",
+    "type": "nm_series_file",
+    "series_uid": "2.25.10003",
+    "modality": "NM",
+    "series_description": "Illustrative planar NM image",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "NM",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "nm_acquisition_kind": "planar"
+  },
+  {
+    "submitter_id": "SYN-IMAGE_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "syn-image_file.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "Bq/mL",
+    "type": "nm_series_file",
+    "series_uid": "2.25.10002",
+    "modality": "NM",
+    "series_description": "Quantitative post-therapy SPECT at 24 hours",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "NM",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "nm_acquisition_kind": "SPECT"
+  },
+  {
+    "submitter_id": "SYN-PROCEDURE",
+    "model_version": "0.3.0-proposal",
+    "procedure_name_source_value": "Palliative radiotherapy to symptomatic bone lesion",
+    "procedure_date": "2026-05-15",
+    "method": "Synthetic focal radiotherapy record",
+    "type": "procedure",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-PET-IMAGE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-baseline-pet-image.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "SUVbw",
+    "type": "pt_series_file",
+    "series_uid": "2.25.20002",
+    "modality": "PT",
+    "series_description": "Baseline PSMA PET",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "PT",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "ct_images": true
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-PET-IMAGE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-followup-pet-image.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "SUVbw",
+    "type": "pt_series_file",
+    "series_uid": "2.25.40002",
+    "modality": "PT",
+    "series_description": "Follow-up PSMA PET",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PETCT"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "PT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-ACQ-48H",
+    "model_version": "0.3.0-proposal",
+    "number_of_energy_windows": 1,
+    "energy_window_names": [
+      "PHOTOPEAK"
+    ],
+    "energy_window_lower_kev": [
+      190.0
+    ],
+    "energy_window_upper_kev": [
+      220.0
+    ],
+    "type": "acquisition",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-C1-SPECTCT-48H"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "scanners": [
+      {
+        "submitter_id": "SYN-SCANNER"
+      }
+    ],
+    "scanner_qas": [
+      {
+        "submitter_id": "SYN-SCANNER_QA"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "JOURNEY-C1-RAW-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ACQUISITION",
+    "model_version": "0.3.0-proposal",
+    "number_of_energy_windows": 1,
+    "energy_window_names": [
+      "PHOTOPEAK"
+    ],
+    "energy_window_lower_kev": [
+      190.0
+    ],
+    "energy_window_upper_kev": [
+      220.0
+    ],
+    "type": "acquisition",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "scanners": [
+      {
+        "submitter_id": "SYN-SCANNER"
+      }
+    ],
+    "scanner_qas": [
+      {
+        "submitter_id": "SYN-SCANNER_QA"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "SYN-RAW_IMAGING_FILE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-SSE-1",
+    "model_version": "0.3.0-proposal",
+    "event_type": "radiation_to_bone",
+    "event_date": "2026-05-15",
+    "symptomatic": true,
+    "adjudication_status": "confirmed",
+    "event_definition": "Symptomatic skeletal event: radiation to symptomatic bone site",
+    "type": "clinical_event",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "procedures": [
+      {
+        "submitter_id": "SYN-PROCEDURE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-REGISTRATION",
+    "model_version": "0.3.0-proposal",
+    "type": "registration",
+    "moving_nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "reference_nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-KIDNEY-C1-48H",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-KIDNEY-48H",
+    "segmentation_method": "manual",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-48H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-C1-24H",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-L1-24H",
+    "segmentation_method": "Manual delineation with CT localization; illustrative",
+    "software_name": "ExampleSegmentation",
+    "software_version": "0-demo",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-24H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-C1-48H",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-L1-48H",
+    "segmentation_method": "Manual delineation with CT localization; illustrative",
+    "software_name": "ExampleSegmentation",
+    "software_version": "0-demo",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-48H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L1-BASE",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L1-BASE",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-CT-IMAGE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L1-FU",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L1-FU",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L2-BASE",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L2-BASE",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-CT-IMAGE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L2-FU",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L2-FU",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SEGMENTATION",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "SYN-KIDNEY-R-C1",
+    "segmentation_method": "manual",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-24H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "dicom_annotation_files": [
+      {
+        "submitter_id": "SYN-SEGMENTATION_FILE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-RECON-48H",
+    "model_version": "0.3.0-proposal",
+    "algorithm": "Synthetic iterative method",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "reconstruction",
+    "acquisitions": [
+      {
+        "submitter_id": "JOURNEY-C1-ACQ-48H"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "JOURNEY-C1-RAW-48H"
+      }
+    ],
+    "output_nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RECONSTRUCTION",
+    "model_version": "0.3.0-proposal",
+    "algorithm": "Synthetic iterative method",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "reconstruction",
+    "acquisitions": [
+      {
+        "submitter_id": "SYN-ACQUISITION"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "SYN-RAW_IMAGING_FILE"
+      }
+    ],
+    "output_nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-CREATININE",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Creatinine",
+    "unit": "mg/dL",
+    "test_result_number": 1.0,
+    "source_element_id": "Synthetic baseline evidence",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-LABORATORY_PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-HEMOGLOBIN",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Hemoglobin",
+    "unit": "g/dL",
+    "test_result_number": 12.0,
+    "source_element_id": "Synthetic baseline evidence",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-LABORATORY_PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-KIDNEY-ACTIVITY-48H",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 6.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-KIDNEY-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-ACTIVITY-24H",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 24.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-24H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-ACTIVITY-48H",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 14.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L1-BASE",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 12.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L1-BASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L1-FU",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 7.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L1-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L2-BASE",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 18.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L2-BASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L2-FU",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 11.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L2-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-CONFIRM",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 35.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM-PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-EARLY",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 130.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "JOURNEY-PSA-EARLY-PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ANTHROPOMETRIC_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "anthropometric",
+    "test_name_source_value": "Weight",
+    "test_result_number": 80.0,
+    "unit": "kg"
+  },
+  {
+    "submitter_id": "SYN-LABORATORY_RESULT",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 100.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-LABORATORY_PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PSA-2",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 40.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-PSA-PANEL-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ROI_MEASUREMENT",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 10.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "SYN-SEGMENTATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BURDEN-BASE",
+    "model_version": "0.3.0-proposal",
+    "scope": "whole_body",
+    "assessment_role": "baseline",
+    "total_psma_positive_tumor_volume_ml": 30.0,
+    "method": "Sum of the two included synthetic lesion volumes",
+    "lesion_count": 2,
+    "coverage_description": "Complete two-lesion burden of this invented dataset",
+    "type": "disease_burden",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "included_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      },
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L1-BASE"
+      },
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L2-BASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BURDEN-FU",
+    "model_version": "0.3.0-proposal",
+    "scope": "whole_body",
+    "assessment_role": "followup",
+    "total_psma_positive_tumor_volume_ml": 18.0,
+    "method": "Same synthetic method as baseline",
+    "lesion_count": 2,
+    "coverage_description": "Same two tracked lesions; no new lesions",
+    "type": "disease_burden",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PETCT"
+      }
+    ],
+    "included_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      },
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L1-FU"
+      },
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L2-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ORGAN_FUNCTION",
+    "model_version": "0.3.0-proposal",
+    "organ_name": "Right kidney",
+    "functional_status": "Synthetic example",
+    "type": "organ_function",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-TAC-C1",
+    "model_version": "0.3.0-proposal",
+    "time_hours": [
+      24.0,
+      48.0
+    ],
+    "activity_mbq": [
+      24.0,
+      14.0
+    ],
+    "fit_method": "Synthetic illustrative fit",
+    "extrapolation_method": "Illustrative only",
+    "decay_reference": "physical activity at sampling time",
+    "type": "time_activity_curve",
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "JOURNEY-LESION-ACTIVITY-24H"
+      },
+      {
+        "submitter_id": "JOURNEY-LESION-ACTIVITY-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TIME_ACTIVITY_CURVE",
+    "model_version": "0.3.0-proposal",
+    "time_hours": [
+      24.0,
+      48.0
+    ],
+    "activity_mbq": [
+      10.0,
+      6.0
+    ],
+    "fit_method": "Synthetic illustrative fit",
+    "extrapolation_method": "Illustrative only",
+    "decay_reference": "physical activity at sampling time",
+    "type": "time_activity_curve",
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "SYN-ROI_MEASUREMENT"
+      },
+      {
+        "submitter_id": "JOURNEY-KIDNEY-ACTIVITY-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-DOSIMETRY-C1",
+    "model_version": "0.3.0-proposal",
+    "method": "Synthetic target-specific SPECT/CT calculation",
+    "software_name": "ExampleDosimetry",
+    "software_version": "0-demo",
+    "type": "dosimetry",
+    "evidence_completeness": "complete",
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "time_activity_curves": [
+      {
+        "submitter_id": "JOURNEY-LESION-TAC-C1"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "acquisitions": [
+      {
+        "submitter_id": "SYN-ACQUISITION"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-ACQ-48H"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-24H"
+      },
+      {
+        "submitter_id": "JOURNEY-LESION-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSIMETRY",
+    "model_version": "0.3.0-proposal",
+    "method": "Synthetic target-specific SPECT/CT calculation",
+    "software_name": "ExampleDosimetry",
+    "software_version": "0-demo",
+    "type": "dosimetry",
+    "evidence_completeness": "complete",
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "time_activity_curves": [
+      {
+        "submitter_id": "SYN-TIME_ACTIVITY_CURVE"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "acquisitions": [
+      {
+        "submitter_id": "SYN-ACQUISITION"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-ACQ-48H"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "SYN-SEGMENTATION"
+      },
+      {
+        "submitter_id": "JOURNEY-KIDNEY-C1-48H"
+      }
+    ],
+    "dose_maps": [
+      {
+        "submitter_id": "SYN-DOSE_MAP_FILE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSIMETRY-2",
+    "model_version": "0.3.0-proposal",
+    "method": "Illustrative calculation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "dosimetry",
+    "evidence_completeness": "partial",
+    "missing_evidence_reason": "The compact synthetic second-cycle summary does not include its source acquisitions or contours. Do not treat it as a reproducible dosimetry example or substitute first-cycle evidence.",
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-CYCLE-2"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMIN-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-ELIGIBILITY",
+    "model_version": "0.3.0-proposal",
+    "eligibility_status": "eligible",
+    "criteria_name": "Synthetic protocol eligibility review",
+    "criteria_version": "DEMO-1",
+    "assessment_datetime": "2025-12-30T11:00:00Z",
+    "reviewer_role": "Treating physician",
+    "rationale": "Invented clinician decision supported by linked diagnosis, scan and organ-function evidence; no eligibility thresholds calculated.",
+    "type": "eligibility_assessment",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "studies": [
+      {
+        "submitter_id": "SYN-STUDY"
+      }
+    ],
+    "visits": [
+      {
+        "submitter_id": "SYN-VISIT"
+      }
+    ],
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "conditions": [
+      {
+        "submitter_id": "SYN-CONDITION"
+      }
+    ],
+    "clinical_assessments": [
+      {
+        "submitter_id": "SYN-CLINICAL_ASSESSMENT"
+      }
+    ],
+    "laboratory_measurements": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      },
+      {
+        "submitter_id": "JOURNEY-BASELINE-HEMOGLOBIN"
+      },
+      {
+        "submitter_id": "JOURNEY-BASELINE-CREATININE"
+      }
+    ],
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ABSORBED_DOSE",
+    "model_version": "0.3.0-proposal",
+    "absorbed_dose_gy": 1.0,
+    "statistic": "mean",
+    "target_mass_g": 150.0,
+    "uncertainty_value": 0.1,
+    "uncertainty_unit": "Gy",
+    "uncertainty_definition": "Illustrative standard uncertainty",
+    "uncertainty_method": "Invented for data-structure demonstration",
+    "type": "absorbed_dose",
+    "dosimetries": [
+      {
+        "submitter_id": "SYN-DOSIMETRY"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "SYN-SEGMENTATION"
+      },
+      {
+        "submitter_id": "JOURNEY-KIDNEY-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSE-KIDNEY-C2",
+    "model_version": "0.3.0-proposal",
+    "absorbed_dose_gy": 1.5,
+    "statistic": "mean",
+    "target_mass_g": 150.0,
+    "type": "absorbed_dose",
+    "dosimetries": [
+      {
+        "submitter_id": "SYN-DOSIMETRY-2"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSE-LESION-C1",
+    "model_version": "0.3.0-proposal",
+    "absorbed_dose_gy": 5.0,
+    "statistic": "mean",
+    "target_mass_g": 20.0,
+    "uncertainty_value": 0.5,
+    "uncertainty_unit": "Gy",
+    "uncertainty_definition": "Illustrative standard uncertainty",
+    "uncertainty_method": "Synthetic uncertainty estimate",
+    "type": "absorbed_dose",
+    "dosimetries": [
+      {
+        "submitter_id": "JOURNEY-LESION-DOSIMETRY-C1"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-24H"
+      },
+      {
+        "submitter_id": "JOURNEY-LESION-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSE_SUMMARY",
+    "model_version": "0.3.0-proposal",
+    "cumulative_dose_gy": 2.5,
+    "aggregation_method": "Sum of cycle-specific mean doses for the same tracked organ",
+    "included_cycle_numbers": [
+      1,
+      2
+    ],
+    "coverage_description": "Both illustrated cycles; one tracked right kidney; mean absorbed dose.",
+    "dose_distribution_statistic": "mean",
+    "type": "dose_summary",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "component_doses": [
+      {
+        "submitter_id": "SYN-ABSORBED_DOSE"
+      },
+      {
+        "submitter_id": "SYN-DOSE-KIDNEY-C2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TOXICITY_EVENT",
+    "model_version": "0.3.0-proposal",
+    "ctcae_version": "6.0",
+    "ctcae_term": "Fatigue",
+    "grade": 1,
+    "serious": false,
+    "onset_date": "2026-01-03",
+    "assessment_datetime": "2026-01-03T16:00:00Z",
+    "type": "toxicity_event",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-EARLY-PSA-ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "Early PSA trajectory observation",
+    "criteria_version": "SYNTHETIC-1",
+    "assessment_scope": "biochemical",
+    "baseline_definition": "Pretreatment sample collected 2 days before first administration",
+    "baseline_date": "2025-12-30",
+    "assessment_datetime": "2026-01-22T14:00:00Z",
+    "result_category": "Early rise; interpretation pending follow-up",
+    "psa_early_rise_pre12w": true,
+    "psa_followup_value": 130.0,
+    "psa_change_percent": 30.0,
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "laboratory_measurements": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      },
+      {
+        "submitter_id": "JOURNEY-PSA-EARLY"
+      }
+    ],
+    "baseline_psa_results": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PAIN-RESPONSE",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "Study-defined confirmed pain response",
+    "criteria_version": "DEMO-1",
+    "assessment_scope": "clinical_benefit",
+    "baseline_definition": "Mean NRS over three baseline days",
+    "baseline_date": "2025-12-30",
+    "assessment_datetime": "2026-04-16T12:00:00Z",
+    "result_category": "Confirmed pain improvement in synthetic example",
+    "confirmation_date": "2026-04-16",
+    "pain_response": "yes",
+    "pain_response_date": "2026-04-01",
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "baseline_pros": [
+      {
+        "submitter_id": "SYN-PATIENT_REPORTED_OUTCOME"
+      }
+    ],
+    "followup_pros": [
+      {
+        "submitter_id": "JOURNEY-PAIN-FU"
+      }
+    ],
+    "confirmation_pros": [
+      {
+        "submitter_id": "JOURNEY-PAIN-CONFIRM"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RECIP",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "RECIP",
+    "criteria_version": "1.0",
+    "assessment_scope": "whole_body",
+    "baseline_definition": "Baseline PSMA PET",
+    "baseline_date": "2025-12-20",
+    "assessment_datetime": "2026-04-01T15:00:00Z",
+    "result_category": "RECIP-PR",
+    "criteria_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9635677/",
+    "criteria_rule_status": "Synthetic quantitative consistency example",
+    "recip_category": "RECIP-PR",
+    "recip_response": "PMR",
+    "new_psma_avid_lesions_posttreatment": 0,
+    "ptlv_change_percent": -40.0,
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "baseline_imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "followup_imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PETCT"
+      }
+    ],
+    "baseline_burdens": [
+      {
+        "submitter_id": "JOURNEY-BURDEN-BASE"
+      }
+    ],
+    "followup_burdens": [
+      {
+        "submitter_id": "JOURNEY-BURDEN-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RESPONSE_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "PCWG3 PSA response",
+    "criteria_version": "2016",
+    "assessment_scope": "biochemical",
+    "baseline_definition": "Pretreatment sample collected 2 days before first administration",
+    "baseline_date": "2025-12-30",
+    "assessment_datetime": "2026-04-22T12:00:00Z",
+    "result_category": "Confirmed PSA50 response in synthetic example",
+    "psa_followup_value": 40.0,
+    "psa_change_percent": -60.0,
+    "psa_best_response_percent": -65.0,
+    "psa_response_50_confirmed": true,
+    "psa_response_50_date": "2026-04-01",
+    "confirmation_date": "2026-04-22",
+    "psa_nadir_date": "2026-04-22",
+    "psa_subsequent_decline_documented": true,
+    "psa_rise_retrospective_interpretation": "Early rise was followed by decline; no prospective flare label was assigned",
+    "retrospective_interpretation_date": "2026-04-22",
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "laboratory_measurements": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      },
+      {
+        "submitter_id": "JOURNEY-PSA-EARLY"
+      },
+      {
+        "submitter_id": "SYN-PSA-2"
+      },
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM"
+      }
+    ],
+    "baseline_psa_results": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      }
+    ],
+    "nadir_psa_results": [
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM"
+      }
+    ],
+    "confirmatory_psa_results": [
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TOXICITY_SUMMARY",
+    "model_version": "0.3.0-proposal",
+    "ctcae_term": "Fatigue",
+    "ctcae_version": "6.0",
+    "maximum_grade": 1,
+    "assessment_status": "assessed",
+    "time_window_start_day": 0,
+    "time_window_end_day": 90,
+    "type": "toxicity_summary",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "toxicity_events": [
+      {
+        "submitter_id": "SYN-TOXICITY_EVENT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-INITIAL-PLAN",
+    "model_version": "0.3.0-proposal",
+    "plan_version": "DEMO-INITIAL",
+    "approval_status": "clinician_approved",
+    "planned_activity_gbq": 1.0,
+    "rationale": "Synthetic clinician-approved initial plan; no recommended activity or interval is inferred.",
+    "plan_datetime": "2025-12-30T12:00:00Z",
+    "type": "treatment_plan",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "eligibility_assessments": [
+      {
+        "submitter_id": "JOURNEY-ELIGIBILITY"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TREATMENT_PLAN",
+    "model_version": "0.3.0-proposal",
+    "plan_version": "SYNTHETIC-2",
+    "approval_status": "draft",
+    "planned_activity_gbq": 1.0,
+    "rationale": "Later evidence-review plan snapshot; not a retroactive change to the completed initial plan.",
+    "plan_datetime": "2026-04-22T15:00:00Z",
+    "type": "treatment_plan",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "response_assessments": [
+      {
+        "submitter_id": "SYN-RESPONSE_ASSESSMENT"
+      },
+      {
+        "submitter_id": "JOURNEY-RECIP"
+      },
+      {
+        "submitter_id": "JOURNEY-PAIN-RESPONSE"
+      }
+    ],
+    "toxicity_events": [
+      {
+        "submitter_id": "SYN-TOXICITY_EVENT"
+      }
+    ],
+    "dose_summaries": [
+      {
+        "submitter_id": "SYN-DOSE_SUMMARY"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-COMPLETION",
+    "model_version": "0.3.0-proposal",
+    "decision_type": "complete_planned_course",
+    "decision_datetime": "2026-02-01T15:00:00Z",
+    "rationale": "Completed the prospectively recorded compact example plan; this does not mean NLCB.",
+    "type": "treatment_decision",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "treatment_plans": [
+      {
+        "submitter_id": "JOURNEY-INITIAL-PLAN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-CONTINUE-DECISION",
+    "model_version": "0.3.0-proposal",
+    "decision_type": "continue",
+    "decision_datetime": "2026-01-23T10:00:00Z",
+    "rationale": "Synthetic treating-team decision following clinical review; an early PSA increase alone was not assigned a flare or progression label.",
+    "type": "treatment_decision",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "response_assessments": [
+      {
+        "submitter_id": "JOURNEY-EARLY-PSA-ASSESSMENT"
+      }
+    ],
+    "toxicity_events": [
+      {
+        "submitter_id": "SYN-TOXICITY_EVENT"
+      }
+    ],
+    "treatment_plans": [
+      {
+        "submitter_id": "JOURNEY-INITIAL-PLAN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-DECISION",
+    "model_version": "0.3.0-proposal",
+    "decision_type": "retreat",
+    "decision_datetime": "2026-07-28T12:00:00Z",
+    "rationale": "Invented clinician-selected retreatment after later reassessment; not an automatic response to PSA or dose.",
+    "type": "treatment_decision",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "clinical_events": [
+      {
+        "submitter_id": "JOURNEY-SSE-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-TRANSITION-RETREATMENT",
+    "model_version": "0.3.0-proposal",
+    "transition_type": "psma_rpt_retreatment",
+    "transition_status": "occurred",
+    "post_lu177_therapy_received": true,
+    "retreatment_performed": true,
+    "start_date": "2026-08-01",
+    "last_prior_administration_date": "2026-02-01",
+    "agent_name": "Synthetic Lu-177 PSMA product",
+    "reason": "Recorded clinician decision after later reassessment",
+    "type": "treatment_transition",
+    "prior_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "subsequent_courses": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-COURSE"
+      }
+    ],
+    "treatment_decisions": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-DECISION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-TIME-TO-NEXT-TREATMENT",
+    "model_version": "0.3.0-proposal",
+    "endpoint_name": "Time to next treatment",
+    "endpoint_definition": "Next anticancer treatment after last administration of the index course",
+    "time_origin_definition": "Last therapeutic administration of index course",
+    "event_definition": "Actual start of next anticancer therapy",
+    "event_observed": true,
+    "origin_date": "2026-02-01",
+    "censor_date": "2026-08-01",
+    "duration_days": 181,
+    "censoring_reason": "Alive at follow-up",
+    "event_date": "2026-08-01",
+    "duration_months": 5.946611909650924,
+    "months_conversion": "days / 30.4375 for this illustrative analysis",
+    "type": "survival_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "treatment_transitions": [
+      {
+        "submitter_id": "JOURNEY-TRANSITION-RETREATMENT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-TIME-TO-SSE",
+    "model_version": "0.3.0-proposal",
+    "endpoint_name": "Time to first SSE",
+    "endpoint_definition": "First qualifying symptomatic skeletal event after therapy start",
+    "time_origin_definition": "First therapeutic administration",
+    "event_definition": "First confirmed SSE",
+    "event_observed": true,
+    "origin_date": "2026-01-01",
+    "censor_date": "2026-05-15",
+    "duration_days": 134,
+    "censoring_reason": "Alive at follow-up",
+    "event_date": "2026-05-15",
+    "type": "survival_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "clinical_events": [
+      {
+        "submitter_id": "JOURNEY-SSE-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SURVIVAL_OUTCOME",
+    "model_version": "0.3.0-proposal",
+    "endpoint_name": "OS",
+    "endpoint_definition": "All-cause death or censor at last known alive",
+    "time_origin_definition": "First therapeutic administration",
+    "event_definition": "Death from any cause",
+    "event_observed": false,
+    "origin_date": "2026-01-01",
+    "censor_date": "2026-10-01",
+    "duration_days": 273,
+    "censoring_reason": "Alive at follow-up",
+    "type": "survival_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  }
+]

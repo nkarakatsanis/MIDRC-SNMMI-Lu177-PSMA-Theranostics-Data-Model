@@ -1,0 +1,68 @@
+[
+  {
+    "submitter_id": "JOURNEY-C1-RAW-48H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "synthetic_48h_projections.bin",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "data_format": "BIN",
+    "data_type": "Synthetic placeholder",
+    "data_category": "Theranostics supporting data",
+    "type": "supplementary_file",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "theranostics_file_role": "raw_acquisition"
+  },
+  {
+    "submitter_id": "SYN-CLINICAL_DOCUMENT_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "clinical_document_file_example.bin",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "data_format": "TXT",
+    "data_type": "Synthetic placeholder",
+    "data_category": "Theranostics supporting data",
+    "type": "supplementary_file",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "theranostics_file_role": "clinical_document"
+  },
+  {
+    "submitter_id": "SYN-RAW_IMAGING_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "raw_imaging_file_example.bin",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "data_format": "BIN",
+    "data_type": "Synthetic placeholder",
+    "data_category": "Theranostics supporting data",
+    "type": "supplementary_file",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "theranostics_file_role": "raw_acquisition"
+  }
+]

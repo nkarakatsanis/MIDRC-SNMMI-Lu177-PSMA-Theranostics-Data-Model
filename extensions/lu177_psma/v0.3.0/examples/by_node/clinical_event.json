@@ -1,0 +1,27 @@
+[
+  {
+    "submitter_id": "JOURNEY-SSE-1",
+    "model_version": "0.3.0-proposal",
+    "event_type": "radiation_to_bone",
+    "event_date": "2026-05-15",
+    "symptomatic": true,
+    "adjudication_status": "confirmed",
+    "event_definition": "Symptomatic skeletal event: radiation to symptomatic bone site",
+    "type": "clinical_event",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "procedures": [
+      {
+        "submitter_id": "SYN-PROCEDURE"
+      }
+    ]
+  }
+]

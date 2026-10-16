@@ -1,0 +1,46 @@
+{
+  "*type": "treatment_plan",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "therapy_cycles": {
+    "submitter_id": null
+  },
+  "response_assessments": {
+    "submitter_id": null
+  },
+  "toxicity_events": {
+    "submitter_id": null
+  },
+  "organ_functions": {
+    "submitter_id": null
+  },
+  "dose_summaries": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "planned_activity_gbq": null,
+  "*plan_version": null,
+  "*approval_status": null,
+  "rationale": null,
+  "planned_interval_days": null,
+  "eligibility_assessments": {
+    "submitter_id": null
+  },
+  "plan_datetime": null,
+  "planning_reference_dose_gy": null,
+  "planning_reference_source": null,
+  "laboratory_measurements": {
+    "submitter_id": null
+  }
+}

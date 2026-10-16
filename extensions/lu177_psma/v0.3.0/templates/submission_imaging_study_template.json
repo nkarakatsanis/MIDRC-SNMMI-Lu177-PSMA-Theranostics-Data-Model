@@ -1,0 +1,52 @@
+{
+  "age_at_imaging": null,
+  "age_at_imaging_gt89": null,
+  "body_part_examined": null,
+  "case_ids": null,
+  "*cases": {
+    "submitter_id": null
+  },
+  "*datasets": {
+    "submitter_id": null
+  },
+  "days_from_study_to_neg_covid_test": null,
+  "days_from_study_to_pos_covid_test": null,
+  "days_to_study": null,
+  "image_data_modified": null,
+  "loinc_code": null,
+  "loinc_contrast": null,
+  "loinc_long_common_name": null,
+  "loinc_method": null,
+  "loinc_system": null,
+  "project_id": null,
+  "study_description": null,
+  "study_modality": null,
+  "study_uid": null,
+  "study_year": null,
+  "study_year_shifted": null,
+  "*submitter_id": null,
+  "*type": "imaging_study",
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "study_date": null,
+  "imaging_purpose": null,
+  "is_therapy_baseline": null,
+  "study_time": null,
+  "accession_number_pseudonym": null,
+  "visits": {
+    "submitter_id": null
+  },
+  "timepoints": {
+    "submitter_id": null
+  },
+  "administrations": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  }
+}

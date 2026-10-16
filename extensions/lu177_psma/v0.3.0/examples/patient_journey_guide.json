@@ -1,0 +1,389 @@
+{
+  "status": "Entirely synthetic; demonstrates record structure, not a treatment regimen",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Diagnosis and first consultation",
+      "time": "Before treatment",
+      "narrative": "Patient SYN-CASE has a documented prostate cancer diagnosis and disease history. The initial visit records symptoms, ECOG status, prior therapy and the clinician’s prognostic assessment. A recorded risk score would retain its method and version; the model does not calculate prognosis.",
+      "nodes": [
+        "case",
+        "visit",
+        "condition",
+        "clinical_assessment",
+        "medical_history",
+        "medication"
+      ],
+      "record_ids": [
+        "SYN-CASE",
+        "SYN-VISIT",
+        "SYN-CONDITION",
+        "SYN-CLINICAL_ASSESSMENT"
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Baseline evidence and eligibility",
+      "time": "Pretreatment workup",
+      "narrative": "A diagnostic PSMA tracer injection and baseline PET/CT are distinct from therapeutic administrations. Baseline PSA, blood counts, renal status, pain and function are time-stamped. An eligibility assessment links this evidence to the applicable criteria and the documented clinician decision.",
+      "nodes": [
+        "administration",
+        "imaging_study",
+        "measurement",
+        "patient_reported_outcome",
+        "eligibility_assessment"
+      ],
+      "record_ids": [
+        "JOURNEY-BASELINE-PETCT",
+        "SYN-LABORATORY_RESULT",
+        "JOURNEY-ELIGIBILITY"
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Agree the treatment plan",
+      "time": "Before cycle 1",
+      "narrative": "A versioned treatment plan records clinical intent, approval and rationale. The course and planned cycles provide longitudinal structure. The compact synthetic dataset illustrates two planned cycles; neither that count nor the invented activity values defines a recommended regimen.",
+      "nodes": [
+        "therapy_course",
+        "therapy_cycle",
+        "treatment_plan"
+      ],
+      "record_ids": [
+        "SYN-THERAPY_COURSE",
+        "SYN-THERAPY_CYCLE",
+        "JOURNEY-INITIAL-PLAN"
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Deliver a cycle and acquire post-therapy images",
+      "time": "Cycle 1 and post-administration timepoints",
+      "narrative": "The actual administration belongs to cycle 1 and specifies product, activity and reference time. Post-therapy SPECT/CT examinations at two illustrative times reference that same administration. Series, acquisitions, calibration and reconstruction records preserve how quantitative images were produced.",
+      "nodes": [
+        "therapy_cycle",
+        "administration",
+        "timepoint",
+        "imaging_study",
+        "acquisition",
+        "scanner_qa",
+        "reconstruction",
+        "nm_series_file",
+        "ct_series_file"
+      ],
+      "record_ids": [
+        "SYN-ADMINISTRATION",
+        "SYN-ACQUISITION",
+        "JOURNEY-C1-ACQ-48H"
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Track lesions and calculate dose",
+      "time": "After quantitative imaging",
+      "narrative": "The same lesion identifier is used across time. Each contour is a distinct segmentation on a particular image. Activity measurements feed a time-activity curve and a dosimetry calculation. The resulting dose estimate references the lesion, calculation and segmentations; the calculation references the cycle and acquisitions.",
+      "nodes": [
+        "anatomic_target",
+        "annotation",
+        "measurement",
+        "time_activity_curve",
+        "dosimetry",
+        "absorbed_dose"
+      ],
+      "record_ids": [
+        "SYN-TARGET-LESION-1",
+        "JOURNEY-LESION-C1-24H",
+        "JOURNEY-LESION-C1-48H",
+        "JOURNEY-LESION-TAC-C1",
+        "JOURNEY-LESION-DOSIMETRY-C1",
+        "SYN-DOSE-LESION-C1"
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Review safety and interim response",
+      "time": "Between cycles",
+      "narrative": "Laboratory and clinician CTCAE records, patient symptoms and imaging remain separate evidence streams. An early PSA rise is recorded without assuming flare or declaring automatic treatment failure. A treatment decision records the clinician’s interpretation and rationale for the next cycle. The same structure supports a hold, reduction or stop when documented.",
+      "nodes": [
+        "measurement",
+        "toxicity_event",
+        "patient_reported_outcome",
+        "response_assessment",
+        "treatment_decision"
+      ],
+      "record_ids": [
+        "JOURNEY-PSA-EARLY",
+        "JOURNEY-EARLY-PSA-ASSESSMENT",
+        "SYN-TOXICITY_EVENT",
+        "JOURNEY-CONTINUE-DECISION"
+      ]
+    },
+    {
+      "step": 7,
+      "title": "Repeat cycles and complete the planned course",
+      "time": "Last planned cycle",
+      "narrative": "The next cycle receives new administration and assessment records while retaining the patient, course and tracked targets. Cumulative dose references its component estimates. Completion is recorded against the plan. Planned completion does not imply NLCB, and first progression would not itself create an NLCB record.",
+      "nodes": [
+        "therapy_cycle",
+        "administration",
+        "dose_summary",
+        "therapy_course",
+        "treatment_decision"
+      ],
+      "record_ids": [
+        "SYN-CYCLE-2",
+        "SYN-ADMIN-2",
+        "SYN-DOSE_SUMMARY",
+        "JOURNEY-COMPLETION"
+      ]
+    },
+    {
+      "step": 8,
+      "title": "Assess multidimensional outcomes",
+      "time": "End-of-course follow-up",
+      "narrative": "Serial PSA and its confirmation support a biochemical assessment. Baseline and follow-up whole-body tumor burden support a separate RECIP assessment. Pain response links baseline, follow-up and confirmatory patient reports with opioid context. Clinician CTCAE summaries and PRO-CTCAE item responses remain distinct.",
+      "nodes": [
+        "disease_burden",
+        "response_assessment",
+        "patient_reported_outcome",
+        "toxicity_summary"
+      ],
+      "record_ids": [
+        "SYN-RESPONSE_ASSESSMENT",
+        "JOURNEY-RECIP",
+        "JOURNEY-PAIN-RESPONSE",
+        "JOURNEY-PRO-CTCAE-FATIGUE"
+      ]
+    },
+    {
+      "step": 9,
+      "title": "Continue follow-up and link later treatment",
+      "time": "After course completion",
+      "narrative": "Subsequent symptomatic skeletal events, survival follow-up and later therapy are retained. Time to next treatment uses the declared last-administration origin. Retreatment creates a new course, linked through a transition, rather than overwriting the original course or restarting its cycle numbers.",
+      "nodes": [
+        "clinical_event",
+        "survival_outcome",
+        "treatment_transition",
+        "therapy_course"
+      ],
+      "record_ids": [
+        "JOURNEY-SSE-1",
+        "JOURNEY-TRANSITION-RETREATMENT",
+        "JOURNEY-TIME-TO-NEXT-TREATMENT",
+        "JOURNEY-RETREATMENT-COURSE"
+      ]
+    }
+  ],
+  "use_cases": [
+    {
+      "id": "lesion_dose",
+      "title": "Trace a lesion dose back to the patient and source images",
+      "question": "Which lesion received this estimated dose, during which cycle, and from which images and methods?",
+      "narrative": "SYN-DOSE-LESION-C1 is one mean absorbed-dose estimate for the persistent lesion SYN-TARGET-LESION-1. The lesion belongs to SYN-CASE. The estimate points to a dosimetry run, which belongs to cycle 1 and references two post-therapy acquisitions. Its two segmentation records identify the contours and software used on the corresponding images. A new estimate or revised contour receives a new record; the lesion identity is retained.",
+      "relationships": [
+        [
+          "absorbed_dose.anatomic_targets",
+          "anatomic_target",
+          "The dose estimate belongs to one tracked lesion or organ."
+        ],
+        [
+          "anatomic_target.cases",
+          "case",
+          "That target belongs to exactly one patient."
+        ],
+        [
+          "absorbed_dose.dosimetries → dosimetry.therapy_cycles",
+          "therapy_cycle",
+          "The estimate is attached to one calculation run and its treatment cycle."
+        ],
+        [
+          "dosimetry.acquisitions",
+          "acquisition",
+          "The run cites the 24-hour and 48-hour post-therapy acquisition records."
+        ],
+        [
+          "acquisition.nm_series_files; annotation.anatomic_reference_ct_series_files",
+          "nm_series_file / ct_series_file",
+          "SPECT uses NM; the contour cites its anatomical CT reference. Both files refer to the same examination."
+        ],
+        [
+          "dosimetry.annotations; absorbed_dose.annotations",
+          "annotation",
+          "The dose record cites the target-specific contours and their software/method."
+        ],
+        [
+          "dosimetry.method; annotation.segmentation_method",
+          "Method properties",
+          "The calculation and segmentation methods are preserved with parameters and software versions."
+        ]
+      ],
+      "record_ids": [
+        "SYN-DOSE-LESION-C1",
+        "SYN-TARGET-LESION-1",
+        "SYN-CASE",
+        "SYN-THERAPY_CYCLE",
+        "JOURNEY-LESION-DOSIMETRY-C1",
+        "SYN-ACQUISITION",
+        "JOURNEY-C1-ACQ-48H",
+        "JOURNEY-LESION-C1-24H",
+        "JOURNEY-LESION-C1-48H"
+      ]
+    },
+    {
+      "id": "discordant_evidence",
+      "title": "Keep biochemical and imaging assessments independently interpretable",
+      "question": "Was a PSA rise a transient observation, confirmed progression, or still unresolved?",
+      "narrative": "The early PSA record is linked to its actual collection date and baseline. It is not retroactively relabeled using future data. Later biochemical and RECIP assessments keep separate criteria, dates and evidence. A treatment decision can consider both without collapsing them into a single unsupported composite endpoint.",
+      "relationships": [
+        [
+          "response_assessment.baseline_psa_results",
+          "measurement",
+          "Identifies the actual baseline sample."
+        ],
+        [
+          "response_assessment.confirmatory_psa_results",
+          "measurement",
+          "Keeps confirmation separate from first detection."
+        ],
+        [
+          "response_assessment.baseline_burdens / followup_burdens",
+          "disease_burden",
+          "Preserves scan-specific whole-body volume summaries."
+        ],
+        [
+          "treatment_decision.response_assessments",
+          "response_assessment",
+          "Documents how multiple assessments informed a decision."
+        ]
+      ],
+      "record_ids": [
+        "JOURNEY-EARLY-PSA-ASSESSMENT",
+        "SYN-RESPONSE_ASSESSMENT",
+        "JOURNEY-RECIP",
+        "JOURNEY-CONTINUE-DECISION"
+      ]
+    },
+    {
+      "id": "safety_and_benefit",
+      "title": "Relate organ exposure to toxicity and patient experience",
+      "question": "What dose, laboratory and symptom evidence supports an observed safety or benefit outcome?",
+      "narrative": "A cumulative kidney dose references same-target component doses. Toxicity assessments can link dose and laboratory evidence. Patient-reported pain or PRO-CTCAE items remain instrument-specific records, while a pain-response assessment links baseline, follow-up and confirmation with opioid exposure. These links support an analysis; they do not establish that dose caused an event.",
+      "relationships": [
+        [
+          "dose_summary.component_doses",
+          "absorbed_dose",
+          "Declares the dose estimates included in an aggregate."
+        ],
+        [
+          "toxicity_event.absorbed_doses / laboratory_measurements",
+          "absorbed_dose / measurement",
+          "Links supporting exposure and laboratory evidence."
+        ],
+        [
+          "response_assessment.baseline_pros / followup_pros / confirmation_pros",
+          "patient_reported_outcome",
+          "Retains repeated instrument evidence."
+        ],
+        [
+          "patient_reported_outcome.analgesic_medications",
+          "medication",
+          "Provides medication context for pain interpretation."
+        ]
+      ],
+      "record_ids": [
+        "SYN-DOSE_SUMMARY",
+        "SYN-TOXICITY_EVENT",
+        "JOURNEY-PAIN-RESPONSE",
+        "JOURNEY-PRO-CTCAE-FATIGUE"
+      ]
+    },
+    {
+      "id": "completion_and_retreatment",
+      "title": "Distinguish completion, NLCB and retreatment",
+      "question": "Did the planned course finish, did clinical benefit end, or did a later course begin?",
+      "narrative": "The example completes its planned course without an NLCB determination. In an alternative discontinuation scenario, a separate NLCB decision would retain its date, reasons and supporting evidence. Subsequent therapy and retreatment are linked through a transition to a new course; survival and next-treatment endpoints retain explicit origins and censoring.",
+      "relationships": [
+        [
+          "therapy_course.treatment_completed_as_planned",
+          "course property",
+          "Records completion against the plan."
+        ],
+        [
+          "treatment_decision.therapy_courses",
+          "therapy_course",
+          "Places a completion or NLCB decision in its course."
+        ],
+        [
+          "treatment_transition.prior_courses / subsequent_courses",
+          "therapy_course",
+          "Connects distinct treatment episodes."
+        ],
+        [
+          "survival_outcome.treatment_transitions",
+          "treatment_transition",
+          "Identifies the event supporting time to next treatment."
+        ]
+      ],
+      "record_ids": [
+        "JOURNEY-COMPLETION",
+        "JOURNEY-TRANSITION-RETREATMENT",
+        "JOURNEY-TIME-TO-NEXT-TREATMENT"
+      ]
+    },
+    {
+      "id": "midrc_modality",
+      "title": "PET, planar and SPECT without duplicate image nodes",
+      "question": "How can MIDRC reuse the same image tables across diagnosis and therapy?",
+      "narrative": "The baseline PET file is a pt_series_file linked to its imaging_study. Its CT companion is a ct_series_file. The post-therapy SPECT and planar files are nm_series_file records with different nm_acquisition_kind values. The file-level DICOM radiopharmaceutical header is source metadata; the administration record remains the authoritative injection event.",
+      "relationships": [
+        [
+          "pt_series_file.imaging_studies",
+          "imaging_study",
+          "PET file to baseline examination."
+        ],
+        [
+          "nm_series_file.imaging_studies",
+          "imaging_study",
+          "Planar or SPECT file to post-therapy examination."
+        ],
+        [
+          "imaging_study.administrations",
+          "administration",
+          "Exam to the actual diagnostic or therapeutic injection."
+        ],
+        [
+          "reconstruction.output_nm_series_files",
+          "nm_series_file",
+          "Processing execution to its output file without duplicating the file record."
+        ]
+      ],
+      "record_ids": [
+        "JOURNEY-BASELINE-PET-IMAGE",
+        "JOURNEY-BASELINE-CT-IMAGE",
+        "SYN-IMAGE_FILE",
+        "JOURNEY-C1-PLANAR",
+        "SYN-RECONSTRUCTION"
+      ]
+    }
+  ],
+  "model_version": "0.3.0-proposal",
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified SNMMI abstract order",
+    "status": "tentative; not an assertion of author approval"
+  }
+}

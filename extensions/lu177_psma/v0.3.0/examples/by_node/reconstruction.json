@@ -1,0 +1,48 @@
+[
+  {
+    "submitter_id": "JOURNEY-C1-RECON-48H",
+    "model_version": "0.3.0-proposal",
+    "algorithm": "Synthetic iterative method",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "reconstruction",
+    "acquisitions": [
+      {
+        "submitter_id": "JOURNEY-C1-ACQ-48H"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "JOURNEY-C1-RAW-48H"
+      }
+    ],
+    "output_nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RECONSTRUCTION",
+    "model_version": "0.3.0-proposal",
+    "algorithm": "Synthetic iterative method",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "reconstruction",
+    "acquisitions": [
+      {
+        "submitter_id": "SYN-ACQUISITION"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "SYN-RAW_IMAGING_FILE"
+      }
+    ],
+    "output_nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ]
+  }
+]

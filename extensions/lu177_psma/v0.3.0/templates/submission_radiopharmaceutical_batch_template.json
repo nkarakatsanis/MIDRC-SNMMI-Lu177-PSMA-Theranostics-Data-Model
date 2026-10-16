@@ -1,0 +1,23 @@
+{
+  "*type": "radiopharmaceutical_batch",
+  "*submitter_id": null,
+  "project_id": null,
+  "*radiopharmaceuticals": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "batch_identifier": null,
+  "production_method": null,
+  "assay_datetime": null,
+  "specific_activity_unit": null,
+  "radiochemical_purity_percent": null,
+  "specific_activity": null
+}

@@ -1,0 +1,108 @@
+{
+  "*type": "acquisition",
+  "*submitter_id": null,
+  "project_id": null,
+  "*scanners": {
+    "submitter_id": null
+  },
+  "scanner_qas": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "protocol_name": null,
+  "duration_seconds": null,
+  "energy_window_names": null,
+  "energy_window_lower_kev": null,
+  "energy_window_upper_kev": null,
+  "number_of_energy_windows": null,
+  "number_of_bed_positions": null,
+  "number_of_spect_acquisition_projections": null,
+  "imaging_spect_detector_type": null,
+  "imaging_spect_image_comments": null,
+  "spiral_pitch_factor": null,
+  "mas_exposure": null,
+  "kvp": null,
+  "exposure_time": null,
+  "ma_x_ray_tube_current": null,
+  "revolution_time": null,
+  "scan_options": null,
+  "frame_reference_time": null,
+  "frame_duration": null,
+  "radiopharmaceutical_substabce": null,
+  "radionuclide_code_meaning": null,
+  "frame_start_time": null,
+  "actual_frame_duration": null,
+  "sensitivity_factor": null,
+  "sliceprogressiondirection": null,
+  "image_index": null,
+  "counts_source_attribute": null,
+  "radiopharmaceutical_info_seq": null,
+  "energy_window_seq": null,
+  "collimator_name": null,
+  "collimator_type": null,
+  "angular_step": null,
+  "rotation_direction": null,
+  "acquisition_start_condition": null,
+  "acquisition_end_condition": null,
+  "cardiac_cycle_position": null,
+  "rotation_information_sequence": null,
+  "tomo_angle_range": null,
+  "energy_window_information_sequence": null,
+  "number_of_frames_in_rotation": null,
+  "start_angle": null,
+  "type_of_detector_motion": null,
+  "acuisition_date_time": null,
+  "frame_time_continuous_bed": null,
+  "bed_speed": null,
+  "table_motion": null,
+  "x_ray_tube_current": null,
+  "exposure": null,
+  "ctdivol": null,
+  "ctdi_phantom_type_code_sequence": null,
+  "type_of_sequence": null,
+  "contrast_enhanced": null,
+  "high_bit": null,
+  "acquisition_number": null,
+  "acquisition_termination_condition": null,
+  "detector_motion_details_sequence": null,
+  "pet_frame_acquisition_sequence": null,
+  "pet_position_sequence": null,
+  "collimator_grid_name": null,
+  "gantry_detector_slew": null,
+  "counts_source": null,
+  "acquisition_time": null,
+  "table_speed": null,
+  "table_traverse": null,
+  "table_motion_direction": null,
+  "number_of_time_slices": null,
+  "*imaging_studies": {
+    "submitter_id": null
+  },
+  "pt_series_files": {
+    "submitter_id": null
+  },
+  "nm_series_files": {
+    "submitter_id": null
+  },
+  "ct_series_files": {
+    "submitter_id": null
+  },
+  "mr_series_files": {
+    "submitter_id": null
+  },
+  "raw_files": {
+    "submitter_id": null
+  },
+  "acquisition_type_source_value": null,
+  "source_section_note_2_image_characteristics": null,
+  "source_section_note_3_acquisition_parameters": null,
+  "source_section_note_5_other_important_fields": null
+}

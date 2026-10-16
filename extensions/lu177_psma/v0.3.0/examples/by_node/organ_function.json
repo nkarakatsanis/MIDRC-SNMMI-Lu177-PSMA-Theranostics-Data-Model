@@ -1,0 +1,19 @@
+[
+  {
+    "submitter_id": "SYN-ORGAN_FUNCTION",
+    "model_version": "0.3.0-proposal",
+    "organ_name": "Right kidney",
+    "functional_status": "Synthetic example",
+    "type": "organ_function",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ]
+  }
+]

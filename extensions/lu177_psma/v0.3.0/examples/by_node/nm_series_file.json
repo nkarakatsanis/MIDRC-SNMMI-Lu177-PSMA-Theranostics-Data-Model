@@ -1,0 +1,107 @@
+[
+  {
+    "submitter_id": "JOURNEY-C1-IMAGE-48H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-c1-image-48h.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "Bq/mL",
+    "type": "nm_series_file",
+    "series_uid": "2.25.30002",
+    "modality": "NM",
+    "series_description": "Quantitative post-therapy SPECT at 48 hours",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-C1-SPECTCT-48H"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "NM",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "nm_acquisition_kind": "SPECT"
+  },
+  {
+    "submitter_id": "JOURNEY-C1-PLANAR",
+    "model_version": "0.3.0-proposal",
+    "file_name": "synthetic_planar.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "Bq/mL",
+    "type": "nm_series_file",
+    "series_uid": "2.25.10003",
+    "modality": "NM",
+    "series_description": "Illustrative planar NM image",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "NM",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "nm_acquisition_kind": "planar"
+  },
+  {
+    "submitter_id": "SYN-IMAGE_FILE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "syn-image_file.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "Bq/mL",
+    "type": "nm_series_file",
+    "series_uid": "2.25.10002",
+    "modality": "NM",
+    "series_description": "Quantitative post-therapy SPECT at 24 hours",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "NM",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "nm_acquisition_kind": "SPECT"
+  }
+]

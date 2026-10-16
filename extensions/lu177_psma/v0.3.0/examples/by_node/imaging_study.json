@@ -1,0 +1,114 @@
+[
+  {
+    "submitter_id": "JOURNEY-BASELINE-PETCT",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.20001",
+    "study_date": "2025-12-20",
+    "imaging_purpose": "baseline",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-TIME"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-ADMIN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-SPECTCT-48H",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.30001",
+    "study_date": "2026-01-03",
+    "imaging_purpose": "dosimetry",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "JOURNEY-C1-48H"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-PETCT",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.40001",
+    "study_date": "2026-04-01",
+    "imaging_purpose": "follow_up",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-TIME"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-TRACER"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-IMAGING_STUDY",
+    "model_version": "0.3.0-proposal",
+    "study_uid": "2.25.10001",
+    "study_date": "2026-01-02",
+    "imaging_purpose": "dosimetry",
+    "type": "imaging_study",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ],
+    "timepoints": [
+      {
+        "submitter_id": "SYN-TIMEPOINT"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "*type": "medical_history",
+  "*submitter_id": null,
+  "project_id": null,
+  "*cases": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "comorbidity_cardiovascular_disease": null,
+  "comorbidity_chronic_kidney_disease": null,
+  "comorbidity_diabetes_mellitus": null,
+  "comorbidity_hypertension": null,
+  "significant_comorbidities_list": null,
+  "family_history_other_cancer": null,
+  "family_history_other_cancer_details": null,
+  "family_history_prostateca": null,
+  "family_history_prostateca_relatives": null,
+  "family_history_prostate_cancer": null,
+  "family_history_prostate_cancer_age": null,
+  "family_history_breast_cancer": null,
+  "family_history_colorectal_cancer": null,
+  "family_history_ovarian_cancer": null,
+  "family_history_melanoma": null,
+  "family_history_pancreatic_cancer": null,
+  "history_prostate_cancer": null,
+  "history_bph": null,
+  "history_prostatitis": null,
+  "history_diabetes": null,
+  "history_coronary_disease": null,
+  "history_hypertension": null,
+  "history_heart_failure": null,
+  "history_kidney_stones": null,
+  "history_bladder_stones": null,
+  "history_uti": null
+}

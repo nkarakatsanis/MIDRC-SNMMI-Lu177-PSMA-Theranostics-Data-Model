@@ -1,0 +1,64 @@
+{
+  "version": "0.3.0-proposal",
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified SNMMI abstract order",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "distinctions": [
+    {
+      "layer": "data_model",
+      "function": "record structure and patient-specific links"
+    },
+    {
+      "layer": "data_dictionary",
+      "function": "field meaning, representation, units and constraints"
+    },
+    {
+      "layer": "terminology",
+      "function": "codes, labels, synonyms and value sets"
+    },
+    {
+      "layer": "ontology",
+      "function": "formal concepts and semantic relationships"
+    }
+  ],
+  "examples": [
+    {
+      "use_case": "PSA baseline and confirmation",
+      "model": "Two measurement records; baseline_psa_results and confirmatory_psa_results identify roles.",
+      "dictionary": "Numeric result, ng/mL unit, assay identity, specimen, time, missingness.",
+      "terminology": {
+        "code": "2857-1",
+        "system": "LOINC",
+        "meaning": "PSA mass concentration in serum or plasma",
+        "source": "https://loinc.org/2857-1",
+        "scope": "Illustrative matching total-PSA serum example, not all PSA-related assays",
+        "release": "to be pinned by implementing project"
+      },
+      "ontology": "External reviewed binding; no NucLex identifier asserted."
+    },
+    {
+      "use_case": "Lesion dose",
+      "model": "Estimate to target, patient, run, cycle, acquisitions and contours.",
+      "dictionary": "absorbed_dose_gy numeric; statistic and uncertainty explicit.",
+      "terminology": "Reviewed names/codes for quantity, target and method; Gy is a unit, not a result concept.",
+      "ontology": "Candidate conceptual relationships require external ontology approval; not inferred from foreign keys."
+    }
+  ],
+  "note": "The categories overlap: terminology resources may contain ontological structures. Gen3 implements model and dictionary in one schema."
+}

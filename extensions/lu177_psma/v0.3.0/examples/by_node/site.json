@@ -1,0 +1,13 @@
+[
+  {
+    "submitter_id": "SYN-SITE",
+    "model_version": "0.3.0-proposal",
+    "site_code": "SYNTHETIC_EXAMPLE",
+    "type": "site",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  }
+]

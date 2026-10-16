@@ -1,0 +1,43 @@
+{
+  "*type": "toxicity_event",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "therapy_cycles": {
+    "submitter_id": null
+  },
+  "absorbed_doses": {
+    "submitter_id": null
+  },
+  "timepoints": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "*ctcae_version": null,
+  "*ctcae_term": null,
+  "ctcae_code": null,
+  "*grade": null,
+  "serious": null,
+  "onset_date": null,
+  "resolution_date": null,
+  "ae_attribution_to_lu177": null,
+  "ae_related_cycle_number": null,
+  "laboratory_measurements": {
+    "submitter_id": null
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "submitter_id": "SYN-BIOMARKER_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "type": "biomarker_assessment",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]
