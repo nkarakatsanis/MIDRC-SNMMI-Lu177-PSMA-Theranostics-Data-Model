@@ -1,0 +1,213 @@
+[
+  {
+    "submitter_id": "JOURNEY-KIDNEY-C1-48H",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-KIDNEY-48H",
+    "segmentation_method": "manual",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-48H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-C1-24H",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-L1-24H",
+    "segmentation_method": "Manual delineation with CT localization; illustrative",
+    "software_name": "ExampleSegmentation",
+    "software_version": "0-demo",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-24H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-C1-48H",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-L1-48H",
+    "segmentation_method": "Manual delineation with CT localization; illustrative",
+    "software_name": "ExampleSegmentation",
+    "software_version": "0-demo",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-48H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L1-BASE",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L1-BASE",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-CT-IMAGE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L1-FU",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L1-FU",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L2-BASE",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L2-BASE",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-CT-IMAGE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-L2-FU",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "JOURNEY-PET-L2-FU",
+    "segmentation_method": "Synthetic PET lesion segmentation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "pt_series_files": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PET-IMAGE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SEGMENTATION",
+    "model_version": "0.3.0-proposal",
+    "segmentation_identifier": "SYN-KIDNEY-R-C1",
+    "segmentation_method": "manual",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "annotation",
+    "annotation_profile": "segmentation",
+    "annotation_name": "NMMI_PSMA_SEGMENTATION",
+    "annotation_method": "Retrospective_expert",
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "anatomic_reference_ct_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-CT-IMAGE-24H"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "dicom_annotation_files": [
+      {
+        "submitter_id": "SYN-SEGMENTATION_FILE"
+      }
+    ]
+  }
+]

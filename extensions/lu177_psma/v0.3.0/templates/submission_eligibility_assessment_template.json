@@ -1,0 +1,51 @@
+{
+  "*type": "eligibility_assessment",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "project_id": null,
+  "*cases": {
+    "submitter_id": null
+  },
+  "studies": {
+    "submitter_id": null
+  },
+  "visits": {
+    "submitter_id": null
+  },
+  "therapy_courses": {
+    "submitter_id": null
+  },
+  "conditions": {
+    "submitter_id": null
+  },
+  "clinical_assessments": {
+    "submitter_id": null
+  },
+  "imaging_studies": {
+    "submitter_id": null
+  },
+  "organ_functions": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "*eligibility_status": null,
+  "*criteria_name": null,
+  "criteria_version": null,
+  "rationale": null,
+  "reviewer_role": null,
+  "laboratory_measurements": {
+    "submitter_id": null
+  }
+}

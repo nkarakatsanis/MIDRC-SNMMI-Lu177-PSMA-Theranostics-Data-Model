@@ -1,0 +1,17 @@
+[
+  {
+    "submitter_id": "SYN-REGISTRATION",
+    "model_version": "0.3.0-proposal",
+    "type": "registration",
+    "moving_nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "reference_nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ]
+  }
+]

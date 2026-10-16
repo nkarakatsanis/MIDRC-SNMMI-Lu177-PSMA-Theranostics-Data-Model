@@ -1,0 +1,15 @@
+[
+  {
+    "submitter_id": "SYN-LIFESTYLE_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "type": "observation",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "observation_profile": "lifestyle",
+    "observation_name": "smoking_history",
+    "observation_answer": "Former"
+  }
+]

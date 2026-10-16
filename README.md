@@ -1,159 +1,120 @@
-NMMI-specific Expansion of the Data Model for the Medical Imaging and Data Resource Center (MIDRC) Data Commons
+# SNMMI-MIDRC Lu177-PSMA theranostics data model
 
-The NMMI-MIDRC data commons is powered by the Gen3 software stack. 
-For more information on Gen3, visit the documentation at gen3.org. 
-For more details about how Gen3 uses a data model and how the data dictionary should be formatted, see https://gen3.org/resources/user/dictionary/.
+**Release 0.3.0** · A proposed expansion of the baseline MIDRC Gen3 data model and data dictionary.
 
+This project structures the imaging, clinical, treatment, dosimetry and outcome evidence needed to study personalized Lu177-PSMA therapy. Its graph, table and JSON views describe the same nodes, properties and relationships. Development is led within the SNMMI AI Task Force and Computational Nuclear Ontology Working Groups. The model and its NucLex alignment remain under development; this repository does not assert institutional adoption or a deployed MIDRC extension.
 
-# Data Dictionary
+## Start here
 
-The data dictionary provides the first level of validation for all submitted data.
-Written in YAML, JSON schemas define all the individual entities
-(nodes) in the data model. Moreover, these schemas define all of the relationships (links)
-between the nodes. Finally, the schemas define the valid key-value pairs that can be used to
-describe the nodes.
+| Resource | What it contains |
+| --- | --- |
+| [Release 0.3.0](https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model/releases/tag/v0.3.0) | Downloadable model archive, standalone HTML and Word documentation. |
+| [Human-readable architecture](docs/DATA_MODEL.md) | Domains, patient journey, use cases, MIDRC reuse, OMOP candidates and semantic-layer distinctions. |
+| [Field-by-field data dictionary](docs/dictionary/README.md) | Definitions, types, required fields, allowed values and link rules for all 67 nodes and 2,519 node/property entries. |
+| [Interactive model explorer](extensions/lu177_psma/v0.3.0/NMMI_Model_Explorer.html) | Graph and table views, element search, mappings, patient journey and use cases. Download the HTML and open it locally. |
+| [Architecture document](extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx) | The author's supplied v0.3.0 Word document, preserved exactly. |
+| [Node catalog](docs/NODE_CATALOG.md) | All 67 nodes with their role, property count and JSON/YAML/template links. |
+| [Domain index](docs/DOMAINS.md) | The 24 domain navigation groups and their reusable node types. |
+| [Developer integration guide](extensions/lu177_psma/v0.3.0/integration/MIDRC_Integration_Guide.md) | Additive changes, mappings, validation and implementation review. |
+| [Repository guide](docs/REPOSITORY_GUIDE.md) | Source layout, baseline provenance, release/version rules and workflow behavior. |
 
-## Data Dictionary Structure
+## Data Dictionary
 
-The Data Model covers all of the nodes within the as well as the relationships between
-the different types of nodes. All of the nodes in the data model are strongly typed and individually
-defined for a specific data type. Doing such allows for faster querying of
-the data model as well as providing a clear and concise representation of the data.
+Following the MIDRC repository convention, a Gen3 data dictionary defines strongly typed nodes, valid node properties and links. The executable schemas therefore carry both the **data model** (record structure and relationships) and **data dictionary** (element definitions and constraints).
 
-Beyond node type, there are also a number of extensions used to further define the nodes within
-the data model. Nodes are grouped up into categories that represent broad roles for the node such
-as `subject` or `sample`. Additionally, nodes are defined within their `Program` or `Project`
-and have descriptions of their use. All nodes also have a series of `systemProperties`; these
-properties are those that will be automatically filled by the system unless otherwise defined by
-the user.  These basic properties define the node itself but still need to be placed into the model.
+The complete v0.3.0 proposal is under `extensions/lu177_psma/v0.3.0/`. Existing imported source remains under `gdcdictionary/`. These are explicitly separate because the imported checkout and the deployed MIDRC dictionary used to build the proposal are different revisions. Adding this release does not replace the active imported schemas or deploy a revised commons.
 
-The model itself is represented as a graph. Within the schema are defined `links`; these links
-point from child to parent with Program being the root of the graph. The links also contain a
-`backref` that allows for a parent to point back to a child. Other features of the link include a
-semantic `label` that describes the relationship between the two nodes, a `multiplicity` property
-that describes the numeric relationship from the child to the parent, and a requirement property
-to define whether a node must have that link. Taken all together the nodes and links create the
-directed graph of the Data Model.
+### Data Dictionary Structure
 
-## Node Properties and Examples
+The proposal contains **67 node types and 293 relationships**: 29 baseline MIDRC nodes, including 17 with optional additions and 12 unchanged, plus 38 proposed theranostics nodes. The dictionary retains the original baseline required fields, datatypes, relationship cardinalities and link-group rules; seven enum additions are separately identified for review.
 
-Each node contains a series of potential key-value pairs (`properties`) that can be used to
-characterize the data they represent. Some properties are categorized as `required`, and if a submission lacks a required property, it cannot be accepted. All properties not designated `required` can be left out of submissions.
+| Representation | Location |
+| --- | --- |
+| Merged compiled Gen3 dictionary | [`gen3_dictionary.json`](extensions/lu177_psma/v0.3.0/gen3_dictionary.json) |
+| Individual JSON node schemas | [`schemas/`](extensions/lu177_psma/v0.3.0/schemas/) |
+| YAML node schemas for integration review | [`integration/yaml/`](extensions/lu177_psma/v0.3.0/integration/yaml/) |
+| Portal-style JSON templates | [`templates/`](extensions/lu177_psma/v0.3.0/templates/) |
+| Property tables and source crosswalks | [`tables/`](extensions/lu177_psma/v0.3.0/tables/) and [`mappings/`](extensions/lu177_psma/v0.3.0/mappings/) |
+| Graph exports and scoped views | [`graph/`](extensions/lu177_psma/v0.3.0/graph/) |
+| Additive changes against the pinned baseline | [`midrc_additive_patch.json`](extensions/lu177_psma/v0.3.0/integration/midrc_additive_patch.json) |
 
-The properties have further validation through their entries. For basic string type properties, such as `submitter_id`, any string value will be accepted as a valid entry. Other acceptance criteria can be defined in property definitions. For example, `enum` type properties only allow one of a list of strings, which are enumerated in the property's definition. Regular expressions can also be used to limit string submissions to matching values. For numeric properties, maximum and minimum values can limit valid entries.
+Each schema declares its node ID, category, descriptions, properties, required fields and `links`. Links identify the parent `target_type`, reverse `backref`, relationship label, multiplicity and requirement. Gen3 child-to-parent record links and reverse traversal support the connected graph. Graph displays are views of those definitions, rather than a separate clinical ontology.
 
+### Node Properties and Examples
 
+Reuse MIDRC nodes when their meaning and record grain match: `case` for the patient, `visit` for encounter context, `imaging_study` for examinations, `measurement` for quantitative results, `observation` for suitable categorical observations, and `annotation` for segmentation records. PET images use `pt_series_file`; planar and SPECT images use `nm_series_file`; CT and MR use their corresponding series-file nodes.
+
+For a lesion dose, `absorbed_dose` points to an `anatomic_target` and a `dosimetry` calculation. The target points to the patient; the calculation points to the cycle and source acquisitions. Segmentation `annotation` records and method metadata preserve how the estimate was derived. The [lesion-dose use case](docs/DATA_MODEL.md#a-lesion-dose-in-the-connected-model) and [synthetic patient records](extensions/lu177_psma/v0.3.0/examples/full_patient_journey.json) make these links concrete.
+
+For PSA, a `measurement` stores the result, unit, assay identity and timing. A `response_assessment` uses role-specific links such as `baseline_psa_results` and `confirmatory_psa_results`. Those links identify the supporting measurements without copying their values into an outcome row.
+
+`*` prefixes in portal templates mark required fields and must be removed before submission. Null values are editing placeholders. A required alternative link group may require one link even when individual members are not starred. File indexing URLs are handled separately from the node properties. See [template preparation](extensions/lu177_psma/v0.3.0/scripts/prepare_record.py).
+
+### Data model, dictionary, terminology and ontology
+
+| Component | Responsibility | Example |
+| --- | --- | --- |
+| Data model | Record identity, structure, links and cardinality. | This dose belongs to this lesion and derives from this calculation for this cycle. |
+| Data dictionary | Element meaning, datatype, units, allowed values and validation. | `absorbed_dose_gy` is a numeric dose estimate in Gy; its statistic is also recorded. |
+| Terminology | Controlled labels and identifiers used consistently in records. | An appropriate reviewed LOINC code identifies a PSA assay. |
+| Ontology | Concepts and formal semantic relationships among them. | NucLex/RadLex concepts classify anatomical targets, imaging modalities and dosimetry methods. |
+
+Terminologies can include ontology structure. LOINC, NucLex and RadLex are separately governed semantic resources; they are not interchangeable lists. Their codes and versions can be bound to model properties without replacing links between actual patient records. No NucLex or RadLex identifiers are fabricated in this proposal.
 
 ## Dictionary Changes
 
-The following is an attempt to layout guidelines for the level of
-impact of changes to the dictionary by categorizing them into
-**Breaking Changes**, **Entity Relation Additions**, **Schema Additions**,
-**Cosmetic Corrections**.
+The original MIDRC change categories are retained for review of future revisions.
 
 ### Breaking Changes
 
-Breaking changes are changes to the dictionary such that previously
-allowable data is invalid against the new schema, e.g. a **removal** of
-part of the dictionary.
-
-N.B. That not all changes classified here as Breaking Changes are
-promised to require a data migration.  It is possible that no data
-exists in the GDC that is invalidated by the change, e.g. making a
-field required that has never been left blank.  This should be
-confirmed against the corpus of data and the userbase should be
-notified of a break in backwards-compatibility.
-
-**Breaking Changes include**:
-- Renaming/removing anything that is not a description or comment
-  - Removing an entity schema
-  - Removing a property's allowed `type`
-  - Removing a property's allowed `enum` value
-  - Changing an entity's `category`
-  - Changing an entity's `unique_keys`
-  - Changing an entity's `links`, including `label`, `backref`
-  - Removing a property from an entity schema
-- Changing existence requirements
-  - Adding a property to the `required` list
-  - Changing link `required` from `false` to `true`
-  - Changing link `multiplicity` from `one_to_many` or `many_to_one` to `one_to_one`
-  - Changing link subgroup exclusivity from `false` to `true`
-
-
-**Handling breaking changes**:
-
-Sometimes it may be best to introduce necessary breaking changes
-incrementally.  Given you have State A and State B, which are
-incomatible, if you can create a State AB that is compatible with
-both, you can upgrade to State AB without breaking changes, update
-data to be compliant with State B, then upgrade to State B.
-
-1. State A is deployed
-2. Upgrade to State AB
-3. Update data while State AB is deployed to be valid under State B
-4. Upgrade to State B
-
-An example could be: _Introduce required property `color`_:
-
-1. Property `color` does not exist
-2. Deploy schema that allows but does not require `color`
-3. Add color to all records
-4. Deploy schema that requires `color`
-
+Removing or renaming nodes or properties, narrowing datatypes or enums, changing record grain, making an optional field mandatory, or tightening link cardinality can invalidate existing records. Review such changes against actual data and supply an explicit migration. Migration from the earlier custom v0.2 proposal is distinct from compatibility with the MIDRC baseline.
 
 ### Entity Relation Additions
 
-Additions to the dictionary that create nodes, properties, or add links between nodes are not considered breaking changes, however, they should be carefully considered in context of downstream effects.
-
-**Entity Relation Additions include**:
-- Adding a new child node;
-- Adding a new property to an existing node;
-- Adding a new link between nodes without disrupting existing links.
-
-**Entity Relation downstream effects**:
-- Data commons operator will need to update the database schema;
-- Users should be notified of additions.
-
+This proposal adds 38 theranostics nodes and optional properties/relationships to 17 existing nodes. The [node delta](extensions/lu177_psma/v0.3.0/integration/node_delta.csv) records each decision. New relationships still require Gen3 build and ingestion testing before use in a deployed commons.
 
 ### Schema Additions
 
-The data commons is setup to allow strict additions to properties have minimal impact on existing data.
-
-**Schema Additions include**:
-- New properties;
-- Less restrictive types for properties (e.g., changing enum or boolean to a string, or a number to integer);
-- New allowed `enum` members for properties.
-
-**Schema Addition downstream effects**:
-- Users should be notified of additions
+All 824 baseline property definitions are preserved except seven declared enum appends. Those additions are recorded in [proposed enum additions](extensions/lu177_psma/v0.3.0/integration/proposed_enum_additions.json). Existing MIDRC test-name enums remain intact; assay-specific source labels and coded identity are represented by separate optional properties where needed.
 
 ### Cosmetic Corrections
 
-Cosmetic corrections are changes that have little to no behavioral
-effects.
+Descriptions and labels can be improved without changing record structure when the meaning is unchanged. A change of measured quantity, unit, concept scope or semantics is not merely cosmetic. Preserve source definitions and mapping provenance during review.
 
-**Cosmetic Corrections include**:
-- Changes to terms
-- Changes to documentation
-- Schema formatting changes
+## Testing
 
-**Schema Addition downstream effects**:
-- No large impacts
+From the repository root:
 
+```bash
+python -m pip install -r extensions/lu177_psma/v0.3.0/scripts/requirements.txt
+python extensions/lu177_psma/v0.3.0/scripts/validate_model.py
+python scripts/build_dictionary_docs.py --check
+```
 
-### Testing
+Local checks cover 67 schemas and templates, baseline preservation, the additive patch, 921 source occurrences, 122 synthetic linked records, 29 baseline regression fixtures and 27 deliberately invalid cases. The [validation report](extensions/lu177_psma/v0.3.0/validation/validation_report.json) lists the checks and limitations. The synthetic journey illustrates record structure, not a recommended treatment regimen.
 
-Commits will automagically be run on TravisCI when a Pull Request is opened.
-If you would like to test locally they are run via [tox](https://tox.readthedocs.io/en/latest/)
+The field-level Markdown pages are generated from the same committed schemas. Regenerate them with `python scripts/build_dictionary_docs.py` after schema changes. Build the release downloads with `python scripts/build_release_assets.py --output dist`.
 
+Live Gen3 compilation, database migration, submission API ingestion, portal rendering and real clinical data remain unvalidated. Clinical and terminology-owner review is still required. The prior HTML checks used DOM emulation, and the attached Word revision retains the author's formatting.
 
-### Versioning
+## Versioning
 
-When updating the data dictionary version number, use the following guidelines to make decisions about what tag to use next:
+| Item | Identifier |
+| --- | --- |
+| This repository release | **0.3.0**, recorded in [`VERSION`](VERSION) and [`release.json`](release.json) |
+| Theranostics Git tag | `v0.3.0` |
+| Packaged working-artifact revision | `0.3.0-proposal`; “proposal” describes its review status |
+| Pinned deployed MIDRC dictionary | `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674` |
+| Imported repository parent | `bee947238381704486ccd12beeb8f4689fb22843` |
 
-1. MAJOR: update to a new major version when many changes have been made, especially if the changes are breaking changes (listed above) leading to backward incompatibility. A major change could constitute the addition of a handful of new nodes or properties for capturing a new type of data that wasn't in the model before or changing the structure / relationships of major nodes in the model. Also use the major version update if a large number of minor updates have been made since the last major update.
-   - e.g. 1.2.4 -> 2.0.0
-2. MINOR: a minor update constitutes a large change or handful of smaller changes that nonetheless result in a dictionary that is backwards compatible or mostly so with the previous version. These changes could include smaller additions or modifications to support a new type of data, or the migration of one type of data to a new structure. Also use a minor version update if a large number of patches have been made since the last minor update.
-   - e.g. 1.2.4 -> 1.3.0
-3. PATCH: a patch is an update that is backwards compatible and addresses a single issue or small number of issues, including fixing typos, updating descriptions, non-breaking property type updates, adding enumeration values, or adding a new property or node to the model. Also use patch version updates for smaller changes that will eventually support a major change, for example, when actively developing or mocking up a larger change that isn't ready for deployment to production.
-   - e.g. 1.2.4 -> 1.2.5
+An inherited MIDRC tag named `0.3.0` already existed. It is preserved; the theranostics release uses `v0.3.0` to avoid rewriting history. Future versions should document breaking, additive and cosmetic changes, while model, baseline-dictionary and terminology/ontology versions remain independently identifiable. The original `pyproject.toml` describes the imported baseline Python package, not the new repository release.
+
+## Authorship and attribution
+
+**tentative authors list**
+
+Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Tahir I Yusufaly, Tyler J Bradshaw
+
+The tentative list does not assert individual approval. Existing upstream `LICENSE` and `NOTICE` files are retained. See the extension [attribution notice](extensions/lu177_psma/v0.3.0/NOTICE.md) and the [original imported README](docs/upstream/README.before-lu177-psma-v0.3.0.md). The model remains a technical proposal for the working group and MIDRC developers.
+
+References: [Gen3 dictionary and model](https://gen3.org/resources/user/dictionary/), [MIDRC dictionary](https://data.midrc.org/DD), [MIDRC source](https://github.com/MIDRC/midrc_dictionary).

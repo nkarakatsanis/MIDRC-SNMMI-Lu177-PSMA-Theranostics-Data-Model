@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "environment": "LinkeDOM DOM emulation; not a browser rendering test",
+  "checks": [
+    "SVG node count: lesion_dose",
+    "SVG node count: clinical_core",
+    "SVG node count: midrc_imaging",
+    "SVG node count: outcome_revision",
+    "SVG node count: longitudinal",
+    "SVG node count: imaging",
+    "SVG node count: governance",
+    "SVG node count: baseline",
+    "SVG node count: complete",
+    "Graph node opens table view",
+    "Node selection and property filtering",
+    "Node search",
+    "Source search preserves conflicting definitions",
+    "Crosswalk destination opens node",
+    "Source pagination",
+    "Worksheet filter",
+    "Schema and template download payloads",
+    "Source set filter: revised (94)",
+    "Source set filter: paper (65)",
+    "Source set filter: earlier (762)",
+    "Source set filter: all (921)",
+    "All 67 node schemas render",
+    "Eight tabs, nine journey stages, five outcome dimensions",
+    "All five use cases, sample-record inspection and schema navigation",
+    "Outcome revision opens the full revised-field crosswalk",
+    "Use case opens lesion-dose graph",
+    "Exact tentative author order visible"
+  ],
+  "limitations": [
+    "Browser rendering was not available in this environment. Responsive CSS and graphical layout require review in a desktop browser."
+  ]
+}

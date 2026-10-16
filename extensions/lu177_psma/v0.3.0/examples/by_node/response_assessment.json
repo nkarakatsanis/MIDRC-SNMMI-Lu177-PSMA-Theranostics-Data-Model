@@ -1,0 +1,169 @@
+[
+  {
+    "submitter_id": "JOURNEY-EARLY-PSA-ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "Early PSA trajectory observation",
+    "criteria_version": "SYNTHETIC-1",
+    "assessment_scope": "biochemical",
+    "baseline_definition": "Pretreatment sample collected 2 days before first administration",
+    "baseline_date": "2025-12-30",
+    "assessment_datetime": "2026-01-22T14:00:00Z",
+    "result_category": "Early rise; interpretation pending follow-up",
+    "psa_early_rise_pre12w": true,
+    "psa_followup_value": 130.0,
+    "psa_change_percent": 30.0,
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "laboratory_measurements": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      },
+      {
+        "submitter_id": "JOURNEY-PSA-EARLY"
+      }
+    ],
+    "baseline_psa_results": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PAIN-RESPONSE",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "Study-defined confirmed pain response",
+    "criteria_version": "DEMO-1",
+    "assessment_scope": "clinical_benefit",
+    "baseline_definition": "Mean NRS over three baseline days",
+    "baseline_date": "2025-12-30",
+    "assessment_datetime": "2026-04-16T12:00:00Z",
+    "result_category": "Confirmed pain improvement in synthetic example",
+    "confirmation_date": "2026-04-16",
+    "pain_response": "yes",
+    "pain_response_date": "2026-04-01",
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "baseline_pros": [
+      {
+        "submitter_id": "SYN-PATIENT_REPORTED_OUTCOME"
+      }
+    ],
+    "followup_pros": [
+      {
+        "submitter_id": "JOURNEY-PAIN-FU"
+      }
+    ],
+    "confirmation_pros": [
+      {
+        "submitter_id": "JOURNEY-PAIN-CONFIRM"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RECIP",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "RECIP",
+    "criteria_version": "1.0",
+    "assessment_scope": "whole_body",
+    "baseline_definition": "Baseline PSMA PET",
+    "baseline_date": "2025-12-20",
+    "assessment_datetime": "2026-04-01T15:00:00Z",
+    "result_category": "RECIP-PR",
+    "criteria_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9635677/",
+    "criteria_rule_status": "Synthetic quantitative consistency example",
+    "recip_category": "RECIP-PR",
+    "recip_response": "PMR",
+    "new_psma_avid_lesions_posttreatment": 0,
+    "ptlv_change_percent": -40.0,
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "baseline_imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "followup_imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PETCT"
+      }
+    ],
+    "baseline_burdens": [
+      {
+        "submitter_id": "JOURNEY-BURDEN-BASE"
+      }
+    ],
+    "followup_burdens": [
+      {
+        "submitter_id": "JOURNEY-BURDEN-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RESPONSE_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "criteria_name": "PCWG3 PSA response",
+    "criteria_version": "2016",
+    "assessment_scope": "biochemical",
+    "baseline_definition": "Pretreatment sample collected 2 days before first administration",
+    "baseline_date": "2025-12-30",
+    "assessment_datetime": "2026-04-22T12:00:00Z",
+    "result_category": "Confirmed PSA50 response in synthetic example",
+    "psa_followup_value": 40.0,
+    "psa_change_percent": -60.0,
+    "psa_best_response_percent": -65.0,
+    "psa_response_50_confirmed": true,
+    "psa_response_50_date": "2026-04-01",
+    "confirmation_date": "2026-04-22",
+    "psa_nadir_date": "2026-04-22",
+    "psa_subsequent_decline_documented": true,
+    "psa_rise_retrospective_interpretation": "Early rise was followed by decline; no prospective flare label was assigned",
+    "retrospective_interpretation_date": "2026-04-22",
+    "type": "response_assessment",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "laboratory_measurements": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      },
+      {
+        "submitter_id": "JOURNEY-PSA-EARLY"
+      },
+      {
+        "submitter_id": "SYN-PSA-2"
+      },
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM"
+      }
+    ],
+    "baseline_psa_results": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      }
+    ],
+    "nadir_psa_results": [
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM"
+      }
+    ],
+    "confirmatory_psa_results": [
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "case_ids": null,
+  "core_metadata_collections": {
+    "submitter_id": null
+  },
+  "*data_category": null,
+  "*data_format": null,
+  "*data_type": null,
+  "datasets": {
+    "submitter_id": null
+  },
+  "file_description": null,
+  "*file_name": null,
+  "*file_size": null,
+  "*md5sum": null,
+  "object_id": null,
+  "project_id": null,
+  "*submitter_id": null,
+  "*type": "supplementary_file",
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "sha256": null,
+  "format_version": null,
+  "deidentification_profile": null,
+  "raw_data_type": null,
+  "petsird_version": null,
+  "theranostics_file_role": null,
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "cases": {
+    "submitter_id": null
+  }
+}

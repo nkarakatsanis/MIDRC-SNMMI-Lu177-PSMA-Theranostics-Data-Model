@@ -1,0 +1,59 @@
+[
+  {
+    "submitter_id": "JOURNEY-ELIGIBILITY",
+    "model_version": "0.3.0-proposal",
+    "eligibility_status": "eligible",
+    "criteria_name": "Synthetic protocol eligibility review",
+    "criteria_version": "DEMO-1",
+    "assessment_datetime": "2025-12-30T11:00:00Z",
+    "reviewer_role": "Treating physician",
+    "rationale": "Invented clinician decision supported by linked diagnosis, scan and organ-function evidence; no eligibility thresholds calculated.",
+    "type": "eligibility_assessment",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "studies": [
+      {
+        "submitter_id": "SYN-STUDY"
+      }
+    ],
+    "visits": [
+      {
+        "submitter_id": "SYN-VISIT"
+      }
+    ],
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "conditions": [
+      {
+        "submitter_id": "SYN-CONDITION"
+      }
+    ],
+    "clinical_assessments": [
+      {
+        "submitter_id": "SYN-CLINICAL_ASSESSMENT"
+      }
+    ],
+    "laboratory_measurements": [
+      {
+        "submitter_id": "SYN-LABORATORY_RESULT"
+      },
+      {
+        "submitter_id": "JOURNEY-BASELINE-HEMOGLOBIN"
+      },
+      {
+        "submitter_id": "JOURNEY-BASELINE-CREATININE"
+      }
+    ],
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ]
+  }
+]

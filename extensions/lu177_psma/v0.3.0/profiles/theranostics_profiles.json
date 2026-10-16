@@ -1,0 +1,90 @@
+{
+  "version": "0.3.0-proposal",
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified SNMMI abstract order",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "purpose": "Optional collection-specific evidence requirements, implemented in scripts/validate_model.py; not a replacement for the unchanged MIDRC baseline constraints.",
+  "profiles": [
+    {
+      "name": "theranostics_imaging",
+      "nodes": [
+        "pt_series_file",
+        "nm_series_file",
+        "ct_series_file",
+        "mr_series_file"
+      ],
+      "requirements": [
+        "modality agrees with typed node",
+        "imaging_studies populated",
+        "format and data_type pair match",
+        "NM subtype explicitly planar/SPECT/other/unknown"
+      ]
+    },
+    {
+      "name": "atomic_quantitative_measurement",
+      "nodes": [
+        "measurement"
+      ],
+      "requirements": [
+        "one numeric result and unit",
+        "assay/metric identity",
+        "case context",
+        "lab profile links panel; ROI profile links annotation"
+      ]
+    },
+    {
+      "name": "segmentation",
+      "nodes": [
+        "annotation"
+      ],
+      "requirements": [
+        "anatomic target and source image",
+        "segmentation method with software/provenance as available"
+      ]
+    },
+    {
+      "name": "dosimetry_evidence",
+      "nodes": [
+        "dosimetry"
+      ],
+      "requirements": [
+        "complete status requires acquisition and annotation links",
+        "partial/unavailable status requires a reason",
+        "no substitution of evidence from a different cycle"
+      ]
+    },
+    {
+      "name": "outcome_evidence",
+      "nodes": [
+        "response_assessment",
+        "disease_burden",
+        "patient_reported_outcome",
+        "treatment_decision",
+        "treatment_transition"
+      ],
+      "requirements": [
+        "criteria and release-specific evidence",
+        "whole-body RECIP burden separated from lesion metrics",
+        "completion and NLCB distinct",
+        "retreatment uses a distinct course"
+      ]
+    }
+  ],
+  "boundary": "Clinical criteria checks are selected synthetic consistency checks. Full PCWG/CTCAE algorithms and ontology mapping validation are external release tasks."
+}

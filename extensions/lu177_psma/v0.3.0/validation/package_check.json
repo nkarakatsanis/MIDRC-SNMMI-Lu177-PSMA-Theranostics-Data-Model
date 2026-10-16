@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "merged_dictionary_patch_matches": true,
+  "html_schema_template_and_manifest_consistency": true,
+  "authorship_order_in_guides": true,
+  "individual_schemas": 67,
+  "expanded_original_templates": 5,
+  "files_before_checksum_manifest": 423
+}

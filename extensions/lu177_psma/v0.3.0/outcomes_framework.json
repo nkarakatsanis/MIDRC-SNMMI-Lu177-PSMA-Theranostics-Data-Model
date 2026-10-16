@@ -1,0 +1,91 @@
+{
+  "status": "candidate framework; not a validated core outcome set",
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified SNMMI abstract order",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "domains": [
+    {
+      "domain": "Biochemical response and kinetics",
+      "nodes": [
+        "laboratory_panel",
+        "measurement",
+        "biomarker_assessment",
+        "response_assessment"
+      ],
+      "principle": "Keep baseline, nadir, serial and confirmatory evidence distinct; early rise is not a prospective flare label."
+    },
+    {
+      "domain": "Molecular and anatomic imaging",
+      "nodes": [
+        "imaging_study",
+        "anatomic_target",
+        "annotation",
+        "measurement",
+        "disease_burden",
+        "response_assessment"
+      ],
+      "principle": "Separate lesion observations, whole-body burden, RECIST response, PCWG progression and RECIP response."
+    },
+    {
+      "domain": "Dosimetry and dose–outcome relationships",
+      "nodes": [
+        "administration",
+        "acquisition",
+        "annotation",
+        "dosimetry",
+        "absorbed_dose",
+        "dose_summary",
+        "response_assessment",
+        "toxicity_event",
+        "study"
+      ],
+      "principle": "Dose is an exposure. Link target-specific estimates to response and toxicity without treating association as causation."
+    },
+    {
+      "domain": "Clinical benefit, safety, function and patient-reported outcomes",
+      "nodes": [
+        "clinical_assessment",
+        "clinical_event",
+        "patient_reported_outcome",
+        "toxicity_event",
+        "toxicity_summary",
+        "response_assessment",
+        "survival_outcome",
+        "therapy_course"
+      ],
+      "principle": "Capture actual events and repeated instruments; separate clinician grading, patient reporting and course completion."
+    },
+    {
+      "domain": "Longitudinal treatment trajectory",
+      "nodes": [
+        "therapy_course",
+        "therapy_cycle",
+        "treatment_plan",
+        "treatment_decision",
+        "treatment_transition",
+        "medication",
+        "procedure",
+        "survival_outcome"
+      ],
+      "principle": "First progression, NLCB, last administration, planned completion, next treatment and retreatment are distinct events."
+    }
+  ],
+  "priority_policy": "Source priority is an annotation, not a globally required property or an assertion of validation.",
+  "model_version": "0.3.0-proposal"
+}

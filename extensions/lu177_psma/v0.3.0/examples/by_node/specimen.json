@@ -1,0 +1,13 @@
+[
+  {
+    "submitter_id": "SYN-SPECIMEN",
+    "model_version": "0.3.0-proposal",
+    "specimen_type": "SYNTHETIC_EXAMPLE",
+    "type": "specimen",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

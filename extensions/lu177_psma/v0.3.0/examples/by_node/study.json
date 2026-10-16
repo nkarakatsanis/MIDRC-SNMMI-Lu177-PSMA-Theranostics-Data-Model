@@ -1,0 +1,14 @@
+[
+  {
+    "submitter_id": "SYN-STUDY",
+    "model_version": "0.3.0-proposal",
+    "protocol_identifier": "SYNTHETIC-PROTOCOL",
+    "protocol_version": "1",
+    "type": "study",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "*type": "dosimetry",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_cycles": {
+    "submitter_id": null
+  },
+  "administrations": {
+    "submitter_id": null
+  },
+  "time_activity_curves": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "method": null,
+  "software_name": null,
+  "software_version": null,
+  "mass_model": null,
+  "model_assumptions": null,
+  "uncertainty_method": null,
+  "calculation_datetime": null,
+  "dosimetry_ad_calculation_granularity": null,
+  "dosimetry_ad_calculation_method": null,
+  "dosimetry_ad_tiac_fitting_method_for_roi": null,
+  "dosimetry_software": null,
+  "dosimetry_software_version": null,
+  "dosimetry_imaging_modality": null,
+  "dosimetry_performed": null,
+  "dosimetry_timepoints": null,
+  "equivalent_dose": null,
+  "effective_dose": null,
+  "kerma": null,
+  "acquisitions": {
+    "submitter_id": null
+  },
+  "pt_series_files": {
+    "submitter_id": null
+  },
+  "nm_series_files": {
+    "submitter_id": null
+  },
+  "ct_series_files": {
+    "submitter_id": null
+  },
+  "mr_series_files": {
+    "submitter_id": null
+  },
+  "annotations": {
+    "submitter_id": null
+  },
+  "dose_maps": {
+    "submitter_id": null
+  },
+  "non_dicom_dose_maps": {
+    "submitter_id": null
+  },
+  "evidence_completeness": null,
+  "missing_evidence_reason": null
+}

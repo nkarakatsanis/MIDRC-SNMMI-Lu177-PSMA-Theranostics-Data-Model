@@ -1,0 +1,12 @@
+{
+  "retrieved_on": "2026-10-15",
+  "endpoint": "https://data.midrc.org/api/v0/submission/_dictionary/_all",
+  "settings": {
+    "_dict_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "_dict_version": "1.4.3-2-g7505333",
+    "enable_case_cache": false
+  },
+  "sha256": "578e57dc45f719b07f1ac31482fed9129675c133aaafc3004dc346e5e4928e21",
+  "license": "Apache-2.0",
+  "reuse": "Selected definitions and patterns adapted; this proposal is not a MIDRC release."
+}

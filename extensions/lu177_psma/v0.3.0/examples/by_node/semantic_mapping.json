@@ -1,0 +1,16 @@
+[
+  {
+    "submitter_id": "SYN-SEMANTIC_MAPPING",
+    "model_version": "0.3.0-proposal",
+    "node_name": "absorbed_dose",
+    "vocabulary": "NucLex",
+    "mapping_status": "unmapped",
+    "property_name": "absorbed_dose_gy",
+    "type": "semantic_mapping",
+    "model_releases": [
+      {
+        "submitter_id": "SYN-MODEL_RELEASE"
+      }
+    ]
+  }
+]

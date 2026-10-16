@@ -1,0 +1,27 @@
+{
+  "*type": "scanner",
+  "*submitter_id": null,
+  "project_id": null,
+  "*projects": {
+    "code": null
+  },
+  "sites": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "manufacturer": null,
+  "manufacturer_model_name": null,
+  "device_type": null,
+  "*device_identifier": null,
+  "station_name": null,
+  "software_versions": null,
+  "detector_type": null
+}

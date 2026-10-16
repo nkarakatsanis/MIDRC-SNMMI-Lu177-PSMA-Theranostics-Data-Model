@@ -1,0 +1,68 @@
+id,model_version,status,property_count,midrc_relation,midrc_pattern,group,record_grain,omop_candidates
+annotation,0.3.0-proposal,MIDRC baseline retained,61,preserved_and_extended,annotation,Imaging,One annotation/contour execution; its files remain separate artifacts,
+annotation_file,0.3.0-proposal,MIDRC baseline retained,50,preserved_and_extended,annotation_file,Imaging,One MIDRC annotation file record,
+case,0.3.0-proposal,MIDRC baseline retained,53,preserved_and_extended,case,Subject,One person per project,PERSON
+condition,0.3.0-proposal,MIDRC baseline retained,57,preserved_and_extended,condition,Clinical,One condition or disease-status assessment,CONDITION_OCCURRENCE; staging MEASUREMENT or OBSERVATION
+core_metadata_collection,0.3.0-proposal,MIDRC baseline retained,23,preserved,core_metadata_collection,Governance,One MIDRC core metadata collection record,
+cr_series_file,0.3.0-proposal,MIDRC baseline retained,37,preserved,cr_series_file,Imaging,One MIDRC cr series file record,
+ct_series_file,0.3.0-proposal,MIDRC baseline retained,67,preserved_and_extended,ct_series_file,Imaging,One MIDRC ct series file record,
+data_release,0.3.0-proposal,MIDRC baseline retained,10,preserved,data_release,Governance,One MIDRC data release record,
+dataset,0.3.0-proposal,MIDRC baseline retained,29,preserved_and_extended,dataset,Governance,One collection,
+dicom_annotation_file,0.3.0-proposal,MIDRC baseline retained,41,preserved_and_extended,dicom_annotation_file,Imaging,One MIDRC dicom annotation file record,
+dx_series_file,0.3.0-proposal,MIDRC baseline retained,37,preserved,dx_series_file,Imaging,One MIDRC dx series file record,
+imaging_study,0.3.0-proposal,MIDRC baseline retained,42,preserved_and_extended,imaging_study,Imaging,One examination,PROCEDURE_OCCURRENCE; imaging extension
+measurement,0.3.0-proposal,MIDRC baseline retained,55,preserved_and_extended,measurement,Clinical,"One measured value with context; lab, ROI and anthropometric profiles",MEASUREMENT
+medication,0.3.0-proposal,MIDRC baseline retained,49,preserved_and_extended,medication,Clinical,One medication exposure or source summary,DRUG_EXPOSURE
+mg_series_file,0.3.0-proposal,MIDRC baseline retained,40,preserved,mg_series_file,Imaging,One MIDRC mg series file record,
+mr_series_file,0.3.0-proposal,MIDRC baseline retained,80,preserved_and_extended,mr_series_file,Imaging,One MIDRC mr series file record,
+nm_series_file,0.3.0-proposal,MIDRC baseline retained,64,preserved_and_extended,nm_series_file,Imaging,One MIDRC nm series file record,
+observation,0.3.0-proposal,MIDRC baseline retained,27,preserved_and_extended,observation,Clinical,One categorical or text observation with context,OBSERVATION
+procedure,0.3.0-proposal,MIDRC baseline retained,37,preserved_and_extended,procedure,Clinical,One intervention or source summary,PROCEDURE_OCCURRENCE
+program,0.3.0-proposal,MIDRC baseline retained,4,preserved,program,Governance,One initiative,
+project,0.3.0-proposal,MIDRC baseline retained,32,preserved,project,Governance,One access-controlled project,
+pt_series_file,0.3.0-proposal,MIDRC baseline retained,64,preserved_and_extended,pt_series_file,Imaging,One MIDRC pt series file record,
+radiology_report,0.3.0-proposal,MIDRC baseline retained,58,preserved,radiology_report,Clinical,One MIDRC radiology report record,
+rf_series_file,0.3.0-proposal,MIDRC baseline retained,37,preserved,rf_series_file,Imaging,One MIDRC rf series file record,
+root,0.3.0-proposal,MIDRC baseline retained,3,preserved,root,Governance,One MIDRC root record,
+supplementary_file,0.3.0-proposal,MIDRC baseline retained,34,preserved_and_extended,supplementary_file,Governance,One MIDRC supplementary file record,
+us_series_file,0.3.0-proposal,MIDRC baseline retained,32,preserved,us_series_file,Imaging,One MIDRC us series file record,
+visit,0.3.0-proposal,MIDRC baseline retained,27,preserved_and_extended,visit,Longitudinal context,One encounter,VISIT_OCCURRENCE
+xa_series_file,0.3.0-proposal,MIDRC baseline retained,39,preserved,xa_series_file,Imaging,One MIDRC xa series file record,
+therapy_course,0.3.0-proposal,proposed extension node,25,new_theranostics_node,No exact therapy-course node,Longitudinal context,One course per case,EPISODE
+toxicity_event,0.3.0-proposal,proposed extension node,33,new_theranostics_node,condition; observation,Outcomes,One adverse-event episode or graded assessment,OBSERVATION or CONDITION_OCCURRENCE as concept domain requires
+clinical_assessment,0.3.0-proposal,proposed extension node,113,new_theranostics_node,observation; measurement,Clinical,One assessment time,OBSERVATION; MEASUREMENT
+timepoint,0.3.0-proposal,proposed extension node,25,new_theranostics_node,Relative days-to-index properties,Longitudinal context,One time anchor or assessment window,VISIT_OCCURRENCE or EPISODE context
+treatment_plan,0.3.0-proposal,proposed extension node,30,new_theranostics_node,medication; procedure patterns,Treatment,One plan version,Planned order not a delivered DRUG_EXPOSURE
+anatomic_target,0.3.0-proposal,proposed extension node,18,new_theranostics_node,annotation pattern,Quantification,One tracked lesion or organ per case,Target identifier in imaging extension
+dose_summary,0.3.0-proposal,proposed extension node,23,new_theranostics_node,measurement pattern,Quantification,One target and aggregation window,MEASUREMENT
+patient_reported_outcome,0.3.0-proposal,proposed extension node,44,new_theranostics_node,measurement; observation,Outcomes,One instrument and assessment time,MEASUREMENT; OBSERVATION
+response_assessment,0.3.0-proposal,proposed extension node,132,new_theranostics_node,observation; measurement,Outcomes,One criteria set and assessment time,OBSERVATION; MEASUREMENT; EPISODE
+semantic_mapping,0.3.0-proposal,proposed extension node,25,new_theranostics_node,property term metadata,Governance,One mapping assertion,CONCEPT; CONCEPT_RELATIONSHIP; vocabulary governance
+acquisition,0.3.0-proposal,proposed extension node,92,new_theranostics_node,Modality-specific series-file metadata,Imaging,One acquisition settings block,Imaging extension; selected OBSERVATION
+radiopharmaceutical_batch,0.3.0-proposal,proposed extension node,21,new_theranostics_node,No exact batch-QC node,Treatment,One batch or lot,External product metadata or qualified measurements
+scanner,0.3.0-proposal,proposed extension node,23,new_theranostics_node,Series manufacturer and model properties,Imaging,One equipment unit,Device concept; site equipment registry
+time_activity_curve,0.3.0-proposal,proposed extension node,23,new_theranostics_node,No exact equivalent,Quantification,One target and administration curve,Imaging extension; derived MEASUREMENT
+radiopharmaceutical,0.3.0-proposal,proposed extension node,23,new_theranostics_node,pt_series_file.radiopharmaceutical; medication,Treatment,One product identity,Drug concept vocabulary; no separate DRUG table in OMOP 5.4
+study,0.3.0-proposal,proposed extension node,18,new_theranostics_node,dataset,Longitudinal context,One protocol version,Protocol metadata outside clinical OMOP core
+scanner_qa,0.3.0-proposal,proposed extension node,24,new_theranostics_node,measurement pattern,Imaging,One QA test or calibration event,MEASUREMENT; device usage when applicable
+toxicity_summary,0.3.0-proposal,proposed extension node,26,new_theranostics_node,observation,Outcomes,One toxicity term and window,OBSERVATION
+laboratory_panel,0.3.0-proposal,proposed extension node,27,new_theranostics_node,measurement pattern,Clinical,One collected panel or order,Grouping metadata; SPECIMEN; VISIT_OCCURRENCE
+dosimetry,0.3.0-proposal,proposed extension node,45,new_theranostics_node,No exact equivalent,Quantification,One calculation run for a cycle or administration,External analysis; selected OBSERVATION
+biomarker_assessment,0.3.0-proposal,proposed extension node,46,new_theranostics_node,measurement,Clinical,One assay or assessment,MEASUREMENT; OBSERVATION; SPECIMEN
+provenance,0.3.0-proposal,proposed extension node,23,new_theranostics_node,system properties,Governance,One provenance assertion,External provenance; selected NOTE or OBSERVATION
+organ_function,0.3.0-proposal,proposed extension node,25,new_theranostics_node,measurement; observation,Clinical,One organ and assessment time,MEASUREMENT; OBSERVATION
+site,0.3.0-proposal,proposed extension node,15,new_theranostics_node,case.site_id,Governance,One site,CARE_SITE; LOCATION
+medical_history,0.3.0-proposal,proposed extension node,41,new_theranostics_node,condition; observation,Clinical,One history assessment,CONDITION_OCCURRENCE; OBSERVATION; NOTE
+registration,0.3.0-proposal,proposed extension node,25,new_theranostics_node,annotation pattern,Imaging,One registration execution,Imaging extension
+administration,0.3.0-proposal,proposed extension node,34,new_theranostics_node,medication,Treatment,One actual administration event,DRUG_EXPOSURE plus activity MEASUREMENT
+specimen,0.3.0-proposal,proposed extension node,18,new_theranostics_node,Gen3 biospecimen pattern,Clinical,One collected specimen,SPECIMEN
+absorbed_dose,0.3.0-proposal,proposed extension node,27,new_theranostics_node,measurement,Quantification,"One target, run and dose statistic",MEASUREMENT
+model_release,0.3.0-proposal,proposed extension node,17,new_theranostics_node,_settings,Governance,One release,METADATA or external governance
+therapy_cycle,0.3.0-proposal,proposed extension node,21,new_theranostics_node,No exact cycle node,Longitudinal context,One course and cycle number,EPISODE with EPISODE_EVENT
+survival_outcome,0.3.0-proposal,proposed extension node,36,new_theranostics_node,case mortality and follow-up properties,Outcomes,One endpoint definition per case and course,DEATH; EPISODE; derived MEASUREMENT
+reconstruction,0.3.0-proposal,proposed extension node,45,new_theranostics_node,Series metadata; Gen3 analysis pattern,Imaging,One execution,Imaging extension; OBSERVATION
+eligibility_assessment,0.3.0-proposal,proposed extension node,33,new_theranostics_node,observation; measurement; linked evidence patterns,Clinical,One eligibility assessment and criteria version,OBSERVATION; linked clinical evidence
+disease_burden,0.3.0-proposal,proposed extension node,32,new_theranostics_node,observation; measurement; linked evidence patterns,Quantification,"One imaging examination, scope and quantification method",Derived MEASUREMENT; imaging extension
+clinical_event,0.3.0-proposal,proposed extension node,30,new_theranostics_node,observation; measurement; linked evidence patterns,Outcomes,One clinical event,CONDITION_OCCURRENCE; PROCEDURE_OCCURRENCE; OBSERVATION
+treatment_decision,0.3.0-proposal,proposed extension node,40,new_theranostics_node,observation; measurement; linked evidence patterns,Treatment,One decision at a specified time,OBSERVATION; planned treatment metadata
+treatment_transition,0.3.0-proposal,proposed extension node,32,new_theranostics_node,observation; measurement; linked evidence patterns,Longitudinal context,One transition or follow-up status assessment,EPISODE context; DRUG_EXPOSURE; OBSERVATION
