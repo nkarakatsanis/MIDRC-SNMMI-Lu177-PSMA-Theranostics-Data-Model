@@ -1,0 +1,587 @@
+[
+  {
+    "node": "program",
+    "property": "name",
+    "midrc_node": "program",
+    "midrc_property": "name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "program",
+    "property": "dbgap_accession_number",
+    "midrc_node": "program",
+    "midrc_property": "dbgap_accession_number",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "project",
+    "property": "code",
+    "midrc_node": "project",
+    "midrc_property": "code",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "project",
+    "property": "name",
+    "midrc_node": "project",
+    "midrc_property": "name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "project",
+    "property": "dbgap_accession_number",
+    "midrc_node": "project",
+    "midrc_property": "dbgap_accession_number",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dataset",
+    "property": "full_name",
+    "midrc_node": "dataset",
+    "midrc_property": "full_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dataset",
+    "property": "data_description",
+    "midrc_node": "dataset",
+    "midrc_property": "data_description",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dataset",
+    "property": "longitudinal",
+    "midrc_node": "dataset",
+    "midrc_property": "longitudinal",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "case",
+    "property": "age_at_index",
+    "midrc_node": "case",
+    "midrc_property": "age_at_index",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "case",
+    "property": "age_at_index_gt89",
+    "midrc_node": "case",
+    "midrc_property": "age_at_index_gt89",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "case",
+    "property": "index_event",
+    "midrc_node": "case",
+    "midrc_property": "index_event",
+    "status": "pattern_adapted_disease_specific_enum_replaced",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "case",
+    "property": "country_of_residence",
+    "midrc_node": "case",
+    "midrc_property": "country_of_residence",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_uid",
+    "midrc_node": "imaging_study",
+    "midrc_property": "study_uid",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_description",
+    "midrc_node": "imaging_study",
+    "midrc_property": "study_description",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_modality",
+    "midrc_node": "imaging_study",
+    "midrc_property": "study_modality",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_study",
+    "property": "days_to_study",
+    "midrc_node": "imaging_study",
+    "midrc_property": "days_to_study",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_study",
+    "property": "body_part_examined",
+    "midrc_node": "imaging_study",
+    "midrc_property": "body_part_examined",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_series",
+    "property": "series_uid",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "series_uid",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_series",
+    "property": "series_description",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "series_description",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_series",
+    "property": "modality",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "modality",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "imaging_series",
+    "property": "number_of_instances",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "number_of_instances",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "scanner",
+    "property": "manufacturer",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "manufacturer",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "scanner",
+    "property": "manufacturer_model_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "manufacturer_model_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "medication",
+    "property": "medication_name",
+    "midrc_node": "medication",
+    "midrc_property": "medication_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "medication",
+    "property": "medication_code",
+    "midrc_node": "medication",
+    "midrc_property": "medication_code",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "medication",
+    "property": "medication_code_system",
+    "midrc_node": "medication",
+    "midrc_property": "medication_code_system",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "medication",
+    "property": "days_to_medication_start",
+    "midrc_node": "medication",
+    "midrc_property": "days_to_medication_start",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "medication",
+    "property": "days_to_medication_end",
+    "midrc_node": "medication",
+    "midrc_property": "days_to_medication_end",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "condition",
+    "property": "condition_name",
+    "midrc_node": "condition",
+    "midrc_property": "condition_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "condition",
+    "property": "condition_code",
+    "midrc_node": "condition",
+    "midrc_property": "condition_code",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "condition",
+    "property": "condition_code_system",
+    "midrc_node": "condition",
+    "midrc_property": "condition_code_system",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "procedure",
+    "property": "procedure_name",
+    "midrc_node": "procedure",
+    "midrc_property": "procedure_name",
+    "status": "adapted",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "change": "Removed MIDRC disease-specific enumeration; retained procedure-name meaning for oncology interventions."
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_name",
+    "midrc_node": "measurement",
+    "midrc_property": "test_name",
+    "status": "pattern_adapted_disease_specific_enum_replaced",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_method",
+    "midrc_node": "measurement",
+    "midrc_property": "test_method",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_result_number",
+    "midrc_node": "measurement",
+    "midrc_property": "test_result_number",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_result_text",
+    "midrc_node": "measurement",
+    "midrc_property": "test_result_text",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation",
+    "property": "annotation_method",
+    "midrc_node": "annotation_file",
+    "midrc_property": "annotation_method",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation",
+    "property": "annotator_id",
+    "midrc_node": "annotation_file",
+    "midrc_property": "annotator_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "image_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "segmentation_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "dose_map_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674"
+  }
+]

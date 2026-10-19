@@ -1,0 +1,33 @@
+{
+  "body_part_examined": null, 
+  "image_data_modified": null, 
+  "number_of_instances": null, 
+  "*submitter_id": null, 
+  "core_metadata_collections": {
+    "submitter_id": null
+  }, 
+  "*data_category": null, 
+  "dicom_header_file_guid": null, 
+  "image_data_modification_method": null, 
+  "manufacturer": null, 
+  "manufacturer_model_name": null, 
+  "*md5sum": null, 
+  "project_id": null, 
+  "object_id": null, 
+  "*file_name": null, 
+  "modality": null, 
+  "series_uid": null, 
+  "image_data_modification_name": null, 
+  "*file_size": null, 
+  "series_description": null, 
+  "*data_format": null, 
+  "radiopharmaceutical": null, 
+  "lossy_image_compression": null, 
+  "case_ids": null, 
+  "imaging_studies": {
+    "submitter_id": null
+  }, 
+  "*data_type": null, 
+  "*type": "nm_series_file", 
+  "urls": null
+}

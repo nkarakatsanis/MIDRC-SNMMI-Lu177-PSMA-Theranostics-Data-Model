@@ -1,0 +1,678 @@
+{
+  "note": "This is an illustrative migration of the supplied invented v0.2 fixtures, not a general production importer. Source labels and conflicts are preserved. All imaging files, hashes and sizes are fictitious placeholders; no images are supplied.",
+  "changes": [
+    {
+      "record": "SYN-CASE",
+      "property": "index_event",
+      "action": "First therapeutic administration is not a MIDRC baseline enum. Omitted; therapy-course start remains the explicit anchor. An actual MIDRC index event must be chosen by the receiving project."
+    },
+    {
+      "record": "SYN-DOSE_MAP_FILE",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-DOSE_MAP_FILE",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-DOSE_MAP_FILE",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-RESPONSE_ASSESSMENT",
+      "property": "psa_baseline_value",
+      "source_value": 100.0,
+      "action": "relocated or omitted from synthetic payload; consult property migration"
+    },
+    {
+      "record": "SYN-RESPONSE_ASSESSMENT",
+      "property": "psa_nadir_value",
+      "source_value": 35.0,
+      "action": "relocated or omitted from synthetic payload; consult property migration"
+    },
+    {
+      "record": "SYN-SEGMENTATION_FILE",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-SEGMENTATION_FILE",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-SEGMENTATION_FILE",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-IMAGE_FILE",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-IMAGE_FILE",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "SYN-IMAGE_FILE",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-BASELINE-PET-IMAGE",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-BASELINE-PET-IMAGE",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-BASELINE-PET-IMAGE",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-IMAGE-48H",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-IMAGE-48H",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-IMAGE-48H",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-CT-IMAGE-24H",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-CT-IMAGE-24H",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-CT-IMAGE-24H",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-CT-IMAGE-48H",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-CT-IMAGE-48H",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-C1-CT-IMAGE-48H",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-EARLY-PSA-ASSESSMENT",
+      "property": "psa_baseline_value",
+      "source_value": 100.0,
+      "action": "relocated or omitted from synthetic payload; consult property migration"
+    },
+    {
+      "record": "JOURNEY-FOLLOWUP-PET-IMAGE",
+      "property": "data_format",
+      "source_value": "SYNTHETIC_PLACEHOLDER",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-FOLLOWUP-PET-IMAGE",
+      "property": "data_type",
+      "source_value": "illustration",
+      "action": "not coerced; source retained in migration log"
+    },
+    {
+      "record": "JOURNEY-FOLLOWUP-PET-IMAGE",
+      "property": "data_category",
+      "source_value": "example",
+      "action": "not coerced; source retained in migration log"
+    }
+  ],
+  "record_identity_mapping": {
+    "SYN-IMAGE_FILE": {
+      "node": "nm_series_file",
+      "record": "SYN-IMAGE_FILE"
+    },
+    "SYN-IMAGING_SERIES": {
+      "node": "nm_series_file",
+      "record": "SYN-IMAGE_FILE"
+    },
+    "JOURNEY-BASELINE-PET-IMAGE": {
+      "node": "pt_series_file",
+      "record": "JOURNEY-BASELINE-PET-IMAGE"
+    },
+    "JOURNEY-BASELINE-PET-SERIES": {
+      "node": "pt_series_file",
+      "record": "JOURNEY-BASELINE-PET-IMAGE"
+    },
+    "JOURNEY-C1-IMAGE-48H": {
+      "node": "nm_series_file",
+      "record": "JOURNEY-C1-IMAGE-48H"
+    },
+    "JOURNEY-C1-SPECT-48H": {
+      "node": "nm_series_file",
+      "record": "JOURNEY-C1-IMAGE-48H"
+    },
+    "JOURNEY-C1-CT-IMAGE-24H": {
+      "node": "ct_series_file",
+      "record": "JOURNEY-C1-CT-IMAGE-24H"
+    },
+    "JOURNEY-C1-CT-24H": {
+      "node": "ct_series_file",
+      "record": "JOURNEY-C1-CT-IMAGE-24H"
+    },
+    "JOURNEY-C1-CT-IMAGE-48H": {
+      "node": "ct_series_file",
+      "record": "JOURNEY-C1-CT-IMAGE-48H"
+    },
+    "JOURNEY-C1-CT-48H": {
+      "node": "ct_series_file",
+      "record": "JOURNEY-C1-CT-IMAGE-48H"
+    },
+    "JOURNEY-FOLLOWUP-PET-IMAGE": {
+      "node": "pt_series_file",
+      "record": "JOURNEY-FOLLOWUP-PET-IMAGE"
+    },
+    "JOURNEY-FOLLOWUP-PET-SERIES": {
+      "node": "pt_series_file",
+      "record": "JOURNEY-FOLLOWUP-PET-IMAGE"
+    },
+    "SYN-MEDICATION": {
+      "node": "medication",
+      "record": "SYN-MEDICATION"
+    },
+    "SYN-THERAPY_COURSE": {
+      "node": "therapy_course",
+      "record": "SYN-THERAPY_COURSE"
+    },
+    "SYN-TOXICITY_EVENT": {
+      "node": "toxicity_event",
+      "record": "SYN-TOXICITY_EVENT"
+    },
+    "SYN-DATASET": {
+      "node": "dataset",
+      "record": "SYN-DATASET"
+    },
+    "SYN-CASE": {
+      "node": "case",
+      "record": "SYN-CASE"
+    },
+    "SYN-CLINICAL_ASSESSMENT": {
+      "node": "clinical_assessment",
+      "record": "SYN-CLINICAL_ASSESSMENT"
+    },
+    "SYN-DOSE_MAP_FILE": {
+      "node": "dicom_annotation_file",
+      "record": "SYN-DOSE_MAP_FILE"
+    },
+    "SYN-TIMEPOINT": {
+      "node": "timepoint",
+      "record": "SYN-TIMEPOINT"
+    },
+    "SYN-TREATMENT_PLAN": {
+      "node": "treatment_plan",
+      "record": "SYN-TREATMENT_PLAN"
+    },
+    "SYN-ANATOMIC_TARGET": {
+      "node": "anatomic_target",
+      "record": "SYN-ANATOMIC_TARGET"
+    },
+    "SYN-DOSE_SUMMARY": {
+      "node": "dose_summary",
+      "record": "SYN-DOSE_SUMMARY"
+    },
+    "SYN-PATIENT_REPORTED_OUTCOME": {
+      "node": "patient_reported_outcome",
+      "record": "SYN-PATIENT_REPORTED_OUTCOME"
+    },
+    "SYN-RESPONSE_ASSESSMENT": {
+      "node": "response_assessment",
+      "record": "SYN-RESPONSE_ASSESSMENT"
+    },
+    "SYN-SEMANTIC_MAPPING": {
+      "node": "semantic_mapping",
+      "record": "SYN-SEMANTIC_MAPPING"
+    },
+    "SYN-PROCEDURE": {
+      "node": "procedure",
+      "record": "SYN-PROCEDURE"
+    },
+    "SYN-ACQUISITION": {
+      "node": "acquisition",
+      "record": "SYN-ACQUISITION"
+    },
+    "SYN-RADIOPHARMACEUTICAL_BATCH": {
+      "node": "radiopharmaceutical_batch",
+      "record": "SYN-RADIOPHARMACEUTICAL_BATCH"
+    },
+    "SYN-SCANNER": {
+      "node": "scanner",
+      "record": "SYN-SCANNER"
+    },
+    "SYN-TIME_ACTIVITY_CURVE": {
+      "node": "time_activity_curve",
+      "record": "SYN-TIME_ACTIVITY_CURVE"
+    },
+    "SYN-RADIOPHARMACEUTICAL": {
+      "node": "radiopharmaceutical",
+      "record": "SYN-RADIOPHARMACEUTICAL"
+    },
+    "SYN-STUDY": {
+      "node": "study",
+      "record": "SYN-STUDY"
+    },
+    "SYN-SCANNER_QA": {
+      "node": "scanner_qa",
+      "record": "SYN-SCANNER_QA"
+    },
+    "SYN-TOXICITY_SUMMARY": {
+      "node": "toxicity_summary",
+      "record": "SYN-TOXICITY_SUMMARY"
+    },
+    "SYN-LABORATORY_PANEL": {
+      "node": "laboratory_panel",
+      "record": "SYN-LABORATORY_PANEL"
+    },
+    "SYN-ROI_MEASUREMENT": {
+      "node": "measurement",
+      "record": "SYN-ROI_MEASUREMENT"
+    },
+    "SYN-DOSIMETRY": {
+      "node": "dosimetry",
+      "record": "SYN-DOSIMETRY"
+    },
+    "SYN-BIOMARKER_ASSESSMENT": {
+      "node": "biomarker_assessment",
+      "record": "SYN-BIOMARKER_ASSESSMENT"
+    },
+    "SYN-PROJECT": {
+      "node": "project",
+      "record": "SYN-PROJECT"
+    },
+    "SYN-ANTHROPOMETRIC_ASSESSMENT": {
+      "node": "measurement",
+      "record": "SYN-ANTHROPOMETRIC_ASSESSMENT"
+    },
+    "SYN-PROVENANCE": {
+      "node": "provenance",
+      "record": "SYN-PROVENANCE"
+    },
+    "SYN-PROGRAM": {
+      "node": "program",
+      "record": "SYN-PROGRAM"
+    },
+    "SYN-ORGAN_FUNCTION": {
+      "node": "organ_function",
+      "record": "SYN-ORGAN_FUNCTION"
+    },
+    "SYN-SEGMENTATION_FILE": {
+      "node": "dicom_annotation_file",
+      "record": "SYN-SEGMENTATION_FILE"
+    },
+    "SYN-LIFESTYLE_ASSESSMENT": {
+      "node": "observation",
+      "record": "SYN-LIFESTYLE_ASSESSMENT"
+    },
+    "SYN-SEGMENTATION": {
+      "node": "annotation",
+      "record": "SYN-SEGMENTATION"
+    },
+    "SYN-IMAGING_STUDY": {
+      "node": "imaging_study",
+      "record": "SYN-IMAGING_STUDY"
+    },
+    "SYN-CONDITION": {
+      "node": "condition",
+      "record": "SYN-CONDITION"
+    },
+    "SYN-SITE": {
+      "node": "site",
+      "record": "SYN-SITE"
+    },
+    "SYN-MEDICAL_HISTORY": {
+      "node": "medical_history",
+      "record": "SYN-MEDICAL_HISTORY"
+    },
+    "SYN-REGISTRATION": {
+      "node": "registration",
+      "record": "SYN-REGISTRATION"
+    },
+    "SYN-ADMINISTRATION": {
+      "node": "administration",
+      "record": "SYN-ADMINISTRATION"
+    },
+    "SYN-SPECIMEN": {
+      "node": "specimen",
+      "record": "SYN-SPECIMEN"
+    },
+    "SYN-VISIT": {
+      "node": "visit",
+      "record": "SYN-VISIT"
+    },
+    "SYN-ABSORBED_DOSE": {
+      "node": "absorbed_dose",
+      "record": "SYN-ABSORBED_DOSE"
+    },
+    "SYN-CLINICAL_DOCUMENT_FILE": {
+      "node": "supplementary_file",
+      "record": "SYN-CLINICAL_DOCUMENT_FILE"
+    },
+    "SYN-MODEL_RELEASE": {
+      "node": "model_release",
+      "record": "SYN-MODEL_RELEASE"
+    },
+    "SYN-THERAPY_CYCLE": {
+      "node": "therapy_cycle",
+      "record": "SYN-THERAPY_CYCLE"
+    },
+    "SYN-SURVIVAL_OUTCOME": {
+      "node": "survival_outcome",
+      "record": "SYN-SURVIVAL_OUTCOME"
+    },
+    "SYN-RECONSTRUCTION": {
+      "node": "reconstruction",
+      "record": "SYN-RECONSTRUCTION"
+    },
+    "SYN-LABORATORY_RESULT": {
+      "node": "measurement",
+      "record": "SYN-LABORATORY_RESULT"
+    },
+    "SYN-RAW_IMAGING_FILE": {
+      "node": "supplementary_file",
+      "record": "SYN-RAW_IMAGING_FILE"
+    },
+    "SYN-CYCLE-2": {
+      "node": "therapy_cycle",
+      "record": "SYN-CYCLE-2"
+    },
+    "SYN-ADMIN-2": {
+      "node": "administration",
+      "record": "SYN-ADMIN-2"
+    },
+    "SYN-DOSIMETRY-2": {
+      "node": "dosimetry",
+      "record": "SYN-DOSIMETRY-2"
+    },
+    "SYN-DOSE-KIDNEY-C2": {
+      "node": "absorbed_dose",
+      "record": "SYN-DOSE-KIDNEY-C2"
+    },
+    "SYN-TARGET-LESION-1": {
+      "node": "anatomic_target",
+      "record": "SYN-TARGET-LESION-1"
+    },
+    "SYN-DOSE-LESION-C1": {
+      "node": "absorbed_dose",
+      "record": "SYN-DOSE-LESION-C1"
+    },
+    "SYN-PSA-PANEL-2": {
+      "node": "laboratory_panel",
+      "record": "SYN-PSA-PANEL-2"
+    },
+    "SYN-PSA-2": {
+      "node": "measurement",
+      "record": "SYN-PSA-2"
+    },
+    "SYN-DIAGNOSTIC-PRODUCT": {
+      "node": "radiopharmaceutical",
+      "record": "SYN-DIAGNOSTIC-PRODUCT"
+    },
+    "SYN-DIAGNOSTIC-ADMIN": {
+      "node": "administration",
+      "record": "SYN-DIAGNOSTIC-ADMIN"
+    },
+    "JOURNEY-BASELINE-TIME": {
+      "node": "timepoint",
+      "record": "JOURNEY-BASELINE-TIME"
+    },
+    "JOURNEY-BASELINE-PETCT": {
+      "node": "imaging_study",
+      "record": "JOURNEY-BASELINE-PETCT"
+    },
+    "JOURNEY-BASELINE-HEMOGLOBIN": {
+      "node": "measurement",
+      "record": "JOURNEY-BASELINE-HEMOGLOBIN"
+    },
+    "JOURNEY-BASELINE-CREATININE": {
+      "node": "measurement",
+      "record": "JOURNEY-BASELINE-CREATININE"
+    },
+    "JOURNEY-ELIGIBILITY": {
+      "node": "eligibility_assessment",
+      "record": "JOURNEY-ELIGIBILITY"
+    },
+    "JOURNEY-INITIAL-PLAN": {
+      "node": "treatment_plan",
+      "record": "JOURNEY-INITIAL-PLAN"
+    },
+    "JOURNEY-C1-48H": {
+      "node": "timepoint",
+      "record": "JOURNEY-C1-48H"
+    },
+    "JOURNEY-C1-SPECTCT-48H": {
+      "node": "imaging_study",
+      "record": "JOURNEY-C1-SPECTCT-48H"
+    },
+    "JOURNEY-C1-ACQ-48H": {
+      "node": "acquisition",
+      "record": "JOURNEY-C1-ACQ-48H"
+    },
+    "JOURNEY-C1-RAW-48H": {
+      "node": "supplementary_file",
+      "record": "JOURNEY-C1-RAW-48H"
+    },
+    "JOURNEY-C1-RECON-48H": {
+      "node": "reconstruction",
+      "record": "JOURNEY-C1-RECON-48H"
+    },
+    "JOURNEY-KIDNEY-C1-48H": {
+      "node": "annotation",
+      "record": "JOURNEY-KIDNEY-C1-48H"
+    },
+    "JOURNEY-KIDNEY-ACTIVITY-48H": {
+      "node": "measurement",
+      "record": "JOURNEY-KIDNEY-ACTIVITY-48H"
+    },
+    "JOURNEY-LESION-C1-24H": {
+      "node": "annotation",
+      "record": "JOURNEY-LESION-C1-24H"
+    },
+    "JOURNEY-LESION-ACTIVITY-24H": {
+      "node": "measurement",
+      "record": "JOURNEY-LESION-ACTIVITY-24H"
+    },
+    "JOURNEY-LESION-C1-48H": {
+      "node": "annotation",
+      "record": "JOURNEY-LESION-C1-48H"
+    },
+    "JOURNEY-LESION-ACTIVITY-48H": {
+      "node": "measurement",
+      "record": "JOURNEY-LESION-ACTIVITY-48H"
+    },
+    "JOURNEY-LESION-TAC-C1": {
+      "node": "time_activity_curve",
+      "record": "JOURNEY-LESION-TAC-C1"
+    },
+    "JOURNEY-LESION-DOSIMETRY-C1": {
+      "node": "dosimetry",
+      "record": "JOURNEY-LESION-DOSIMETRY-C1"
+    },
+    "JOURNEY-PSA-EARLY-PANEL": {
+      "node": "laboratory_panel",
+      "record": "JOURNEY-PSA-EARLY-PANEL"
+    },
+    "JOURNEY-PSA-EARLY": {
+      "node": "measurement",
+      "record": "JOURNEY-PSA-EARLY"
+    },
+    "JOURNEY-EARLY-PSA-ASSESSMENT": {
+      "node": "response_assessment",
+      "record": "JOURNEY-EARLY-PSA-ASSESSMENT"
+    },
+    "JOURNEY-CONTINUE-DECISION": {
+      "node": "treatment_decision",
+      "record": "JOURNEY-CONTINUE-DECISION"
+    },
+    "JOURNEY-FOLLOWUP-TIME": {
+      "node": "timepoint",
+      "record": "JOURNEY-FOLLOWUP-TIME"
+    },
+    "JOURNEY-FOLLOWUP-TRACER": {
+      "node": "administration",
+      "record": "JOURNEY-FOLLOWUP-TRACER"
+    },
+    "JOURNEY-FOLLOWUP-PETCT": {
+      "node": "imaging_study",
+      "record": "JOURNEY-FOLLOWUP-PETCT"
+    },
+    "JOURNEY-TARGET-LESION-2": {
+      "node": "anatomic_target",
+      "record": "JOURNEY-TARGET-LESION-2"
+    },
+    "JOURNEY-PET-L1-BASE": {
+      "node": "annotation",
+      "record": "JOURNEY-PET-L1-BASE"
+    },
+    "JOURNEY-PET-VOLUME-L1-BASE": {
+      "node": "measurement",
+      "record": "JOURNEY-PET-VOLUME-L1-BASE"
+    },
+    "JOURNEY-PET-L1-FU": {
+      "node": "annotation",
+      "record": "JOURNEY-PET-L1-FU"
+    },
+    "JOURNEY-PET-VOLUME-L1-FU": {
+      "node": "measurement",
+      "record": "JOURNEY-PET-VOLUME-L1-FU"
+    },
+    "JOURNEY-PET-L2-BASE": {
+      "node": "annotation",
+      "record": "JOURNEY-PET-L2-BASE"
+    },
+    "JOURNEY-PET-VOLUME-L2-BASE": {
+      "node": "measurement",
+      "record": "JOURNEY-PET-VOLUME-L2-BASE"
+    },
+    "JOURNEY-PET-L2-FU": {
+      "node": "annotation",
+      "record": "JOURNEY-PET-L2-FU"
+    },
+    "JOURNEY-PET-VOLUME-L2-FU": {
+      "node": "measurement",
+      "record": "JOURNEY-PET-VOLUME-L2-FU"
+    },
+    "JOURNEY-BURDEN-BASE": {
+      "node": "disease_burden",
+      "record": "JOURNEY-BURDEN-BASE"
+    },
+    "JOURNEY-BURDEN-FU": {
+      "node": "disease_burden",
+      "record": "JOURNEY-BURDEN-FU"
+    },
+    "JOURNEY-RECIP": {
+      "node": "response_assessment",
+      "record": "JOURNEY-RECIP"
+    },
+    "JOURNEY-PSA-CONFIRM-PANEL": {
+      "node": "laboratory_panel",
+      "record": "JOURNEY-PSA-CONFIRM-PANEL"
+    },
+    "JOURNEY-PSA-CONFIRM": {
+      "node": "measurement",
+      "record": "JOURNEY-PSA-CONFIRM"
+    },
+    "JOURNEY-PAIN-FU": {
+      "node": "patient_reported_outcome",
+      "record": "JOURNEY-PAIN-FU"
+    },
+    "JOURNEY-PAIN-CONFIRM": {
+      "node": "patient_reported_outcome",
+      "record": "JOURNEY-PAIN-CONFIRM"
+    },
+    "JOURNEY-PAIN-RESPONSE": {
+      "node": "response_assessment",
+      "record": "JOURNEY-PAIN-RESPONSE"
+    },
+    "JOURNEY-PRO-CTCAE-FATIGUE": {
+      "node": "patient_reported_outcome",
+      "record": "JOURNEY-PRO-CTCAE-FATIGUE"
+    },
+    "JOURNEY-COMPLETION": {
+      "node": "treatment_decision",
+      "record": "JOURNEY-COMPLETION"
+    },
+    "JOURNEY-SSE-1": {
+      "node": "clinical_event",
+      "record": "JOURNEY-SSE-1"
+    },
+    "JOURNEY-TIME-TO-SSE": {
+      "node": "survival_outcome",
+      "record": "JOURNEY-TIME-TO-SSE"
+    },
+    "JOURNEY-RETREATMENT-COURSE": {
+      "node": "therapy_course",
+      "record": "JOURNEY-RETREATMENT-COURSE"
+    },
+    "JOURNEY-RETREATMENT-CYCLE-1": {
+      "node": "therapy_cycle",
+      "record": "JOURNEY-RETREATMENT-CYCLE-1"
+    },
+    "JOURNEY-RETREATMENT-ADMIN-1": {
+      "node": "administration",
+      "record": "JOURNEY-RETREATMENT-ADMIN-1"
+    },
+    "JOURNEY-RETREATMENT-DECISION": {
+      "node": "treatment_decision",
+      "record": "JOURNEY-RETREATMENT-DECISION"
+    },
+    "JOURNEY-TRANSITION-RETREATMENT": {
+      "node": "treatment_transition",
+      "record": "JOURNEY-TRANSITION-RETREATMENT"
+    },
+    "JOURNEY-TIME-TO-NEXT-TREATMENT": {
+      "node": "survival_outcome",
+      "record": "JOURNEY-TIME-TO-NEXT-TREATMENT"
+    }
+  }
+}

@@ -1,0 +1,5337 @@
+[
+  {
+    "old_node": "laboratory_result",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "state"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_name",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_name_source_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_method",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_method_source_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_result_number",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_result_text",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_source_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "unit",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "unit"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "unit_source_value",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "unit_source_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_code",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_code"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_code_system",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_code_system"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "test_code_version",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_code_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "result_status",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "result_status"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "specimen_type",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "specimen_type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "result_operator",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "result_operator"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "derived_formula",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "derived_formula"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "reference_range_low",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "reference_range_low"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "reference_range_high",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "reference_range_high"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "laboratory_result",
+    "old_property": "source_element_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_element_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "state"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "metric_name",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_name_source_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "value",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "unit",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "unit"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "source_element_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_element_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "calculation_method",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "derived_formula"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "roi_measurement",
+    "old_property": "measurement_date",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "measurement_date"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "state"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "cases",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "cases"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "timepoints",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "timepoints"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "provenance_records",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "provenance_records"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "assessment_datetime",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "measurement_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "days_from_course_start",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "days_from_course_start"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "time_basis",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "time_basis"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "time_window_start_day",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "time_window_start_day"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "time_window_end_day",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "time_window_end_day"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "height_cm",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Unpivot to one measurement, with named metric and unit; do not duplicate numeric fields."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "weight_kg",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Unpivot to one measurement, with named metric and unit; do not duplicate numeric fields."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "bmi_kg_m2",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Unpivot to one measurement, with named metric and unit; do not duplicate numeric fields."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "bsa_m2",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Unpivot to one measurement, with named metric and unit; do not duplicate numeric fields."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "lean_body_mass_kg",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Unpivot to one measurement, with named metric and unit; do not duplicate numeric fields."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "calculation_method",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "derived_formula"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "bmi_assessment_date",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "measurement_date"
+      }
+    ],
+    "reason": "Date of the matching metric record."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "height_assessment_date",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "measurement_date"
+      }
+    ],
+    "reason": "Date of the matching metric record."
+  },
+  {
+    "old_node": "anthropometric_assessment",
+    "old_property": "weight_assessment_date",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "measurement_date"
+      }
+    ],
+    "reason": "Date of the matching metric record."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "state"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "cases",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "cases"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "timepoints",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "timepoints"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "provenance_records",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "provenance_records"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "assessment_datetime",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "assessment_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "days_from_course_start",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "days_from_course_start"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "time_basis",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "time_basis"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "time_window_start_day",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "time_window_start_day"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "time_window_end_day",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "time_window_end_day"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "diet",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "physical_activity",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "sexual_behavior",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "sexually_transmitted_disease_history",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "alcohol_use_frequency_quantity",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "alcohol_use_status",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "smoking_pack_years",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "smoking_status",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "smoking",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "alcohol",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "lifestyle_assessment",
+    "old_property": "marijuana",
+    "new_destinations": [
+      {
+        "node": "observation",
+        "property": "observation_answer"
+      }
+    ],
+    "reason": "One dated observation, named by observation_name. MIDRC case-level smoking summaries remain separate baseline summaries, never overwritten by follow-up values."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "project_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "project_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "project_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "state"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "state"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "state"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "state"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "model_version"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "model_version"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "model_version"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "record_status"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "record_status"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "record_status"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "source_system"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "source_system"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "source_system"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "series_uid",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "series_uid"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_uid"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_uid"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_uid"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "series_description",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_description"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "modality",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "modality"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "number_of_instances",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "number_of_instances"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "number_of_instances"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "number_of_instances"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "number_of_instances"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "frame_of_reference_uid",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "frame_of_reference_uid"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "frame_of_reference_uid"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "frame_of_reference_uid"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "frame_of_reference_uid"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "imaging_type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "imaging_pt_series_type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "image_type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "series_time",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_time"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "series_date",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_date"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "number_of_slices",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "number_of_slices"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "imaging_series",
+    "old_property": "series_type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "project_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "project_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "project_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "state"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "state"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "state"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "state"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "model_version"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "model_version"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "model_version"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "record_status"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "record_status"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "record_status"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "source_system"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "source_system"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "source_system"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "file_name",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "file_name"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "file_name"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "file_name"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "file_name"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "file_size",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "file_size"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "file_size"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "file_size"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "file_size"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "md5sum",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "md5sum"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "md5sum"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "md5sum"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "md5sum"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "object_id",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "object_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "object_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "object_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "data_format",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "data_format"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "data_format"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "data_format"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "data_format"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "data_type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "data_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "data_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "data_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "data_type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "data_category",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "data_category"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "data_category"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "data_category"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "data_category"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "sha256",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "sha256"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "sha256"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "sha256"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "sha256"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "format_version",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "format_version"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "format_version"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "format_version"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "format_version"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "storage_uri",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "object_id"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "object_id"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "object_id"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Resolve source URI to the approved Indexd object identifier; URI belongs in a separate file-index manifest."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "deidentification_profile",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "deidentification_profile"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "deidentification_profile"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "deidentification_profile"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "deidentification_profile"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "rows",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "rows"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "columns",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "columns"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "pixel_spacing_mm",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_spacing"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "voxel_spacing_mm",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "voxel_spacing_mm"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "voxel_spacing_mm"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "voxel_spacing_mm"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "voxel_spacing_mm"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "quantitative_units",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "quantitative_units"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "frame_of_reference_uid",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "frame_of_reference_uid"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "frame_of_reference_uid"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "frame_of_reference_uid"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "frame_of_reference_uid"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "imaging_slice_thickness",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "slice_thickness"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "imaging_pt_number_of_slices",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "number_of_slices"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "slice_thickness",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "slice_thickness"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "spacing_between_slices",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "spacing_between_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "spacing_between_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "spacing_between_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "spacing_between_slices"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "suv_type",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "suv_type"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "image_orientation_patient",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_orientation_patient"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "image_position_patient",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_position_patient"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "photometric_interpretation",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "photometric_interpretation"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "photometric_interpretation"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "photometric_interpretation"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "photometric_interpretation"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "bits_allocated",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "bits_allocated"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "bits_allocated"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "bits_allocated"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "bits_allocated"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "bits_stored",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "bits_stored"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "bits_stored"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "bits_stored"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "bits_stored"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "pixel_representation",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_representation"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_representation"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_representation"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_representation"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "image_file",
+    "old_property": "samples_per_pixel",
+    "new_destinations": [
+      {
+        "node": "pt_series_file",
+        "property": "samples_per_pixel"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "samples_per_pixel"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "samples_per_pixel"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "samples_per_pixel"
+      }
+    ],
+    "reason": "Route by DICOM modality: PT PET, NM planar/SPECT, CT CT, MR MRI. Merge source series and image metadata without duplicating an imaging_series record."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "state"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "annotation_method",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "annotation_method"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "annotator_id",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "annotator_id"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "segmentation_identifier",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "segmentation_identifier"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "method",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "segmentation_method"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "software_name",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "software_name"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "software_version",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "software_version"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "parameters",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "parameters"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "frame_of_reference_uid",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "frame_of_reference_uid"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_image_uid",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_image_uid"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_name",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "annotation_long_name"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_imaging_modality",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_imaging_modality"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "segmentation_method"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method_absolute_threshold_value",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_method_absolute_threshold_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method_description",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "segmentation_method_description"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method_parameter",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "parameters"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method_ratio_reference_region",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_method_ratio_reference_region"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method_ratio_threshold_value",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_method_ratio_threshold_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_method_relative_threshold_value",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_method_relative_threshold_value"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_modality_coregistration_method",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_modality_coregistration_method"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "segmentation",
+    "old_property": "roi_segmentation_modality_coregistration_method_name",
+    "new_destinations": [
+      {
+        "node": "annotation",
+        "property": "roi_segmentation_modality_coregistration_method_name"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "state"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "file_name",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "file_name"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "file_size",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "file_size"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "md5sum",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "md5sum"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "object_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "data_format",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "data_format"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "data_type",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "data_type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "data_category",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "data_category"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "sha256",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "sha256"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "format_version",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "format_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "storage_uri",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "deidentification_profile",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "deidentification_profile"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "raw_data_type",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "raw_data_type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "raw_imaging_file",
+    "old_property": "petsird_version",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "petsird_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "state"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "file_name",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "file_name"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "file_size",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "file_size"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "md5sum",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "md5sum"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "object_id",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "data_format",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "data_format"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "data_type",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "data_type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "data_category",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "data_category"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "sha256",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "sha256"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "format_version",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "format_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "storage_uri",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "clinical_document_file",
+    "old_property": "deidentification_profile",
+    "new_destinations": [
+      {
+        "node": "supplementary_file",
+        "property": "deidentification_profile"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "type"
+      },
+      {
+        "node": "annotation_file",
+        "property": "type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "annotation_file",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "id"
+      },
+      {
+        "node": "annotation_file",
+        "property": "id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "project_id"
+      },
+      {
+        "node": "annotation_file",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "state"
+      },
+      {
+        "node": "annotation_file",
+        "property": "state"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "annotation_file",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "annotation_file",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "model_version"
+      },
+      {
+        "node": "annotation_file",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "record_status"
+      },
+      {
+        "node": "annotation_file",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "annotation_file",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "source_system"
+      },
+      {
+        "node": "annotation_file",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "annotation_file",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "annotation_file",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "file_name",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "file_name"
+      },
+      {
+        "node": "annotation_file",
+        "property": "file_name"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "file_size",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "file_size"
+      },
+      {
+        "node": "annotation_file",
+        "property": "file_size"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "md5sum",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "md5sum"
+      },
+      {
+        "node": "annotation_file",
+        "property": "md5sum"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "object_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "object_id"
+      },
+      {
+        "node": "annotation_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "data_format",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "data_format"
+      },
+      {
+        "node": "annotation_file",
+        "property": "data_format"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "data_type",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "data_type"
+      },
+      {
+        "node": "annotation_file",
+        "property": "data_type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "data_category",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "data_category"
+      },
+      {
+        "node": "annotation_file",
+        "property": "data_category"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "sha256",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "sha256"
+      },
+      {
+        "node": "annotation_file",
+        "property": "sha256"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "format_version",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "format_version"
+      },
+      {
+        "node": "annotation_file",
+        "property": "format_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "storage_uri",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "object_id"
+      },
+      {
+        "node": "annotation_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "deidentification_profile",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "deidentification_profile"
+      },
+      {
+        "node": "annotation_file",
+        "property": "deidentification_profile"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "dicom_structure_set_roi_sequence_reference",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "dicom_structure_set_roi_sequence_reference"
+      },
+      {
+        "node": "annotation_file",
+        "property": "dicom_structure_set_roi_sequence_reference"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "segmentation_file",
+    "old_property": "dicom_contour_data_reference",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "dicom_contour_data_reference"
+      },
+      {
+        "node": "annotation_file",
+        "property": "dicom_contour_data_reference"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "type",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "type"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "submitter_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "submitter_id"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "submitter_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "id"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "project_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "project_id"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "project_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "state",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "state"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "state"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "created_datetime",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "created_datetime"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "created_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "updated_datetime",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "updated_datetime"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "updated_datetime"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "model_version",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "model_version"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "model_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "record_status",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "record_status"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "record_status"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "source_record_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "source_record_id"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "source_record_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "source_system",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "source_system"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "source_system"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "missing_properties",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "missing_properties"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "missing_properties"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "missing_reasons",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "missing_reasons"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "missing_reasons"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "file_name",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "file_name"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "file_name"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "file_size",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "file_size"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "file_size"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "md5sum",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "md5sum"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "md5sum"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "object_id",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "object_id"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "data_format",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "data_format"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "data_format"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "data_type",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "data_type"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "data_type"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "data_category",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "data_category"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "data_category"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "sha256",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "sha256"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "sha256"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "format_version",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "format_version"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "format_version"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "storage_uri",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "object_id"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "object_id"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "dose_map_file",
+    "old_property": "deidentification_profile",
+    "new_destinations": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "deidentification_profile"
+      },
+      {
+        "node": "supplementary_file",
+        "property": "deidentification_profile"
+      }
+    ],
+    "reason": "Use an existing file node according to artifact format; file URLs remain Indexd metadata."
+  },
+  {
+    "old_node": "toxicity_event",
+    "old_property": "laboratory_results",
+    "new_destinations": [
+      {
+        "node": "toxicity_event",
+        "property": "laboratory_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "treatment_plan",
+    "old_property": "laboratory_results",
+    "new_destinations": [
+      {
+        "node": "treatment_plan",
+        "property": "laboratory_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "laboratory_results",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "laboratory_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "roi_measurements",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "roi_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "baseline_psa_results",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "baseline_psa_results"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "nadir_psa_results",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "nadir_psa_results"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "confirmatory_psa_results",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "confirmatory_psa_results"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_series",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "pt_series_files"
+      },
+      {
+        "node": "acquisition",
+        "property": "nm_series_files"
+      },
+      {
+        "node": "acquisition",
+        "property": "ct_series_files"
+      },
+      {
+        "node": "acquisition",
+        "property": "mr_series_files"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "time_activity_curve",
+    "old_property": "roi_measurements",
+    "new_destinations": [
+      {
+        "node": "time_activity_curve",
+        "property": "roi_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "dosimetry",
+    "old_property": "image_files",
+    "new_destinations": [
+      {
+        "node": "dosimetry",
+        "property": "pt_series_files"
+      },
+      {
+        "node": "dosimetry",
+        "property": "nm_series_files"
+      },
+      {
+        "node": "dosimetry",
+        "property": "ct_series_files"
+      },
+      {
+        "node": "dosimetry",
+        "property": "mr_series_files"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "dosimetry",
+    "old_property": "segmentations",
+    "new_destinations": [
+      {
+        "node": "dosimetry",
+        "property": "annotations"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "organ_function",
+    "old_property": "laboratory_results",
+    "new_destinations": [
+      {
+        "node": "organ_function",
+        "property": "laboratory_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "registration",
+    "old_property": "moving_images",
+    "new_destinations": [
+      {
+        "node": "registration",
+        "property": "moving_pt_series_files"
+      },
+      {
+        "node": "registration",
+        "property": "moving_nm_series_files"
+      },
+      {
+        "node": "registration",
+        "property": "moving_ct_series_files"
+      },
+      {
+        "node": "registration",
+        "property": "moving_mr_series_files"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "registration",
+    "old_property": "reference_images",
+    "new_destinations": [
+      {
+        "node": "registration",
+        "property": "reference_pt_series_files"
+      },
+      {
+        "node": "registration",
+        "property": "reference_nm_series_files"
+      },
+      {
+        "node": "registration",
+        "property": "reference_ct_series_files"
+      },
+      {
+        "node": "registration",
+        "property": "reference_mr_series_files"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "absorbed_dose",
+    "old_property": "segmentations",
+    "new_destinations": [
+      {
+        "node": "absorbed_dose",
+        "property": "annotations"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "raw_imaging_files",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "raw_files"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "eligibility_assessment",
+    "old_property": "laboratory_results",
+    "new_destinations": [
+      {
+        "node": "eligibility_assessment",
+        "property": "laboratory_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "disease_burden",
+    "old_property": "roi_measurements",
+    "new_destinations": [
+      {
+        "node": "disease_burden",
+        "property": "roi_measurements"
+      }
+    ],
+    "reason": "Relationship migrated to canonical MIDRC record types; role and cardinality retained."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_study_protocol_name",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "protocol_name"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_ct_mas",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "mas_exposure"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_ct_kvp",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "kvp"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_ct_exposure_time",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "exposure_time"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_ct_revolution_time",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "revolution_time"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_pt_frame_duration",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "frame_duration"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_spect_angular_step",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "angular_step"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_spect_collimator_type",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "collimator_type"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_spect_number_of_frames_in_rotation",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "number_of_frames_in_rotation"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "imaging_spect_actual_frame_duration",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "actual_frame_duration"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "number_of_energy_wndows",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "number_of_energy_windows"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "energy_window_lower_limit",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_lower_kev"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "energy_window_upper_limit",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_upper_kev"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "energy_window_name",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_names"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "imaging_reconstruction_diameter",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_diameter"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "imaging_ct_convolutional_filter",
+    "new_destinations": [
+      {
+        "node": "ct_series_file",
+        "property": "convolution_kernel"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "imaging_pt_corrections",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "applied_corrections"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "corrections",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "applied_corrections"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "imaging_pt_scatter_fraction",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_fraction_factor"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "reconstruction_algorithm",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "algorithm"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "psa_response_best",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "psa_best_response_percent"
+      }
+    ],
+    "reason": "Canonical field reuse; source wording remains in the source catalog."
+  },
+  {
+    "old_node": "medication",
+    "old_property": "post_lu177_therapy_received",
+    "new_destinations": [
+      {
+        "node": "treatment_transition",
+        "property": "post_lu177_therapy_received"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "medication",
+    "old_property": "post_lu177_therapy_agent",
+    "new_destinations": [
+      {
+        "node": "treatment_transition",
+        "property": "agent_name"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "medication",
+    "old_property": "post_lu177_therapy_start_date",
+    "new_destinations": [
+      {
+        "node": "treatment_transition",
+        "property": "start_date"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "medication",
+    "old_property": "post_lu177_therapy_reason",
+    "new_destinations": [
+      {
+        "node": "treatment_transition",
+        "property": "reason"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "pain_score_baseline_nrs",
+    "new_destinations": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "score"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "pain_score_followup_nrs",
+    "new_destinations": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "score"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "pain_response",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "pain_response"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "pain_response_date",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "pain_response_date"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "opiate_use_baseline",
+    "new_destinations": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "opioid_use"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "opiate_use_followup",
+    "new_destinations": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "opioid_use"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "physical_function_score_baseline",
+    "new_destinations": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "score"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "patient_reported_outcome",
+    "old_property": "physical_function_score_followup",
+    "new_destinations": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "score"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "psa_progression_pcwg3_legacy",
+    "new_destinations": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_documented"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "nlcb_date",
+    "new_destinations": [
+      {
+        "node": "treatment_decision",
+        "property": "nlcb_date"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "nlcb_reason",
+    "new_destinations": [
+      {
+        "node": "treatment_decision",
+        "property": "nlcb_reason"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "psma_pet_baseline_ptlv",
+    "new_destinations": [
+      {
+        "node": "disease_burden",
+        "property": "total_psma_positive_tumor_volume_ml"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "psma_pet_followup_ptlv",
+    "new_destinations": [
+      {
+        "node": "disease_burden",
+        "property": "total_psma_positive_tumor_volume_ml"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "dose_response_analysis_performed",
+    "new_destinations": [
+      {
+        "node": "study",
+        "property": "dose_response_analysis_performed"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "dose_limiting_organ",
+    "new_destinations": [
+      {
+        "node": "treatment_decision",
+        "property": "dose_limiting_organ"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "biomarker_assessment",
+    "old_property": "ctc_baseline_count",
+    "new_destinations": [
+      {
+        "node": "biomarker_assessment",
+        "property": "result_numeric"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "biomarker_assessment",
+    "old_property": "ctc_posttreatment_count",
+    "new_destinations": [
+      {
+        "node": "biomarker_assessment",
+        "property": "result_numeric"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "mfs_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "ttpp_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "time_to_first_sse_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "time_to_opioid_dependent_pain_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "time_to_ecog_deterioration_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "date_first_sse",
+    "new_destinations": [
+      {
+        "node": "clinical_event",
+        "property": "event_date"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "sse_type",
+    "new_destinations": [
+      {
+        "node": "clinical_event",
+        "property": "sse_type_source"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "time_to_next_treatment_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "time_to_pain_progression_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "survival_outcome",
+    "old_property": "time_to_physical_function_deterioration_months",
+    "new_destinations": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ],
+    "reason": "Retire the v0.2 legacy alias in favor of its revised canonical destination. Preserve baseline/follow-up role, instrument, endpoint type and timing in linked records."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "acquisition_type",
+    "new_destinations": [
+      {
+        "node": "ct_series_file",
+        "property": "acquisition_type"
+      },
+      {
+        "node": "acquisition",
+        "property": "acquisition_type_source_value"
+      }
+    ],
+    "reason": "Use MIDRC CT Acquisition Type only when the CT attribute and enum match; otherwise preserve the source label pending modality-specific adjudication."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "convolution_kernel",
+    "new_destinations": [
+      {
+        "node": "ct_series_file",
+        "property": "convolution_kernel"
+      }
+    ],
+    "reason": "Reuse the existing MIDRC CT header field only for the CT context. Non-CT source values require review; do not coerce to the CT enum."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "2_image_characteristics",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "source_section_note_2_image_characteristics"
+      }
+    ],
+    "reason": "Source inventory section-label artifact; retained as provenance-only pending adjudication, not a measurement."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "3_acquisition_parameters",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "source_section_note_3_acquisition_parameters"
+      }
+    ],
+    "reason": "Source inventory section-label artifact; retained as provenance-only pending adjudication, not a measurement."
+  },
+  {
+    "old_node": "acquisition",
+    "old_property": "5_other_important_fields",
+    "new_destinations": [
+      {
+        "node": "acquisition",
+        "property": "source_section_note_5_other_important_fields"
+      }
+    ],
+    "reason": "Source inventory section-label artifact; retained as provenance-only pending adjudication, not a measurement."
+  },
+  {
+    "old_node": "reconstruction",
+    "old_property": "4_reconstruction_parameters",
+    "new_destinations": [
+      {
+        "node": "reconstruction",
+        "property": "source_section_note_4_reconstruction_parameters"
+      }
+    ],
+    "reason": "Source inventory section-label artifact; retained as provenance-only pending adjudication, not a measurement."
+  },
+  {
+    "old_node": "procedure",
+    "old_property": "procedure_name",
+    "new_destinations": [
+      {
+        "node": "procedure",
+        "property": "procedure_name_source_value"
+      }
+    ],
+    "reason": "Keep the MIDRC procedure_name enumeration unchanged. Populate it only for its exact existing values; other procedures use this source label plus code/system."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "psa_baseline_value",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Resolve the baseline_psa_results relationship and use its canonical numeric measurement. Do not copy the PSA value into the response row."
+  },
+  {
+    "old_node": "response_assessment",
+    "old_property": "psa_nadir_value",
+    "new_destinations": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "reason": "Resolve the nadir_psa_results relationship and use its canonical numeric measurement. Do not copy the PSA value into the response row."
+  }
+]

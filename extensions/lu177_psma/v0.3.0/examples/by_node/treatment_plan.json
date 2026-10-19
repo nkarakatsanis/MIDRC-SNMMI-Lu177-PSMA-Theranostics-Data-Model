@@ -1,0 +1,58 @@
+[
+  {
+    "submitter_id": "JOURNEY-INITIAL-PLAN",
+    "model_version": "0.3.0-proposal",
+    "plan_version": "DEMO-INITIAL",
+    "approval_status": "clinician_approved",
+    "planned_activity_gbq": 1.0,
+    "rationale": "Synthetic clinician-approved initial plan; no recommended activity or interval is inferred.",
+    "plan_datetime": "2025-12-30T12:00:00Z",
+    "type": "treatment_plan",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "eligibility_assessments": [
+      {
+        "submitter_id": "JOURNEY-ELIGIBILITY"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TREATMENT_PLAN",
+    "model_version": "0.3.0-proposal",
+    "plan_version": "SYNTHETIC-2",
+    "approval_status": "draft",
+    "planned_activity_gbq": 1.0,
+    "rationale": "Later evidence-review plan snapshot; not a retroactive change to the completed initial plan.",
+    "plan_datetime": "2026-04-22T15:00:00Z",
+    "type": "treatment_plan",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "response_assessments": [
+      {
+        "submitter_id": "SYN-RESPONSE_ASSESSMENT"
+      },
+      {
+        "submitter_id": "JOURNEY-RECIP"
+      },
+      {
+        "submitter_id": "JOURNEY-PAIN-RESPONSE"
+      }
+    ],
+    "toxicity_events": [
+      {
+        "submitter_id": "SYN-TOXICITY_EVENT"
+      }
+    ],
+    "dose_summaries": [
+      {
+        "submitter_id": "SYN-DOSE_SUMMARY"
+      }
+    ]
+  }
+]

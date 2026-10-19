@@ -1,0 +1,23 @@
+{
+  "case_ids": null,
+  "contributor": null,
+  "coverage": null,
+  "creator": null,
+  "data_type": null,
+  "date": null,
+  "description": null,
+  "format": null,
+  "language": null,
+  "project_id": null,
+  "*projects": {
+    "code": null
+  },
+  "publisher": null,
+  "relation": null,
+  "rights": null,
+  "source": null,
+  "subject": null,
+  "*submitter_id": null,
+  "title": null,
+  "*type": "core_metadata_collection"
+}

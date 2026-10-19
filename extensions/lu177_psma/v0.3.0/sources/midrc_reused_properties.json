@@ -1,0 +1,1204 @@
+[
+  {
+    "node": "program",
+    "property": "name",
+    "midrc_node": "program",
+    "midrc_property": "name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Full name/title of the program.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "program",
+    "property": "dbgap_accession_number",
+    "midrc_node": "program",
+    "midrc_property": "dbgap_accession_number",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The dbgap accession number provided for the program.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "project",
+    "property": "code",
+    "midrc_node": "project",
+    "midrc_property": "code",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Unique identifier for the project.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "project",
+    "property": "name",
+    "midrc_node": "project",
+    "midrc_property": "name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Display name/brief description for the project.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "project",
+    "property": "dbgap_accession_number",
+    "midrc_node": "project",
+    "midrc_property": "dbgap_accession_number",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The dbgap accession number provided for the project.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "dataset",
+    "property": "full_name",
+    "midrc_node": "dataset",
+    "midrc_property": "full_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The full name or title of the dataset or publication.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "dataset",
+    "property": "data_description",
+    "midrc_node": "dataset",
+    "midrc_property": "data_description",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "A brief, free-text description of the data files and associated metadata provided for this dataset.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "dataset",
+    "property": "longitudinal",
+    "midrc_node": "dataset",
+    "midrc_property": "longitudinal",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Indicates whether the dataset has longitudinal or time-series data.",
+      "type": "boolean"
+    }
+  },
+  {
+    "node": "case",
+    "property": "age_at_index",
+    "midrc_node": "case",
+    "midrc_property": "age_at_index",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "maximum": 89,
+      "minimum": 0,
+      "term": {
+        "description": "The study participant's age, in years, at the index event. The index event is determined by the data submitter and used as an anchor date for all temporal variables. Note that an age of 0 indicates a participant who is younger than 1 year old. For participants with ages greater than 89 years, please use the property 'age_at_index_gt89'. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.\n",
+        "termDef": {
+          "cde_id": "C181702",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Age in Years at Index Date",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C181702"
+        }
+      },
+      "type": "number"
+    }
+  },
+  {
+    "node": "case",
+    "property": "age_at_index_gt89",
+    "midrc_node": "case",
+    "midrc_property": "age_at_index_gt89",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Indicates whether the subject's age at the time of the study was greater than 89 years. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    }
+  },
+  {
+    "node": "case",
+    "property": "index_event",
+    "midrc_node": "case",
+    "midrc_property": "index_event",
+    "status": "pattern_adapted_disease_specific_enum_replaced",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The event used as the anchor or start date for all temporal data elements. This acts as day 0 on a timeline of events relating to the patient. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.",
+      "enum": [
+        "COVID-19 Test",
+        "Long COVID Diagnosis",
+        "Study Enrollment",
+        "First Imaging Study"
+      ]
+    }
+  },
+  {
+    "node": "case",
+    "property": "country_of_residence",
+    "midrc_node": "case",
+    "midrc_property": "country_of_residence",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The country where the subject resides.\n",
+        "termDef": {
+          "cde_id": 416647007,
+          "cde_version": null,
+          "source": "SNOMED",
+          "term": "Country of residence",
+          "term_url": "https://lookup.snomedtools.org/416647007"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_uid",
+    "midrc_node": "imaging_study",
+    "midrc_property": "study_uid",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0020, 000d)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Study Instance UID",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_description",
+    "midrc_node": "imaging_study",
+    "midrc_property": "study_description",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0008, 1030)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Study Description",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_modality",
+    "midrc_node": "imaging_study",
+    "midrc_property": "study_modality",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "items": {
+        "type": "string"
+      },
+      "term": {
+        "description": "The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0008, 0060)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Study Modality",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "array"
+    }
+  },
+  {
+    "node": "imaging_study",
+    "property": "days_to_study",
+    "midrc_node": "imaging_study",
+    "midrc_property": "days_to_study",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The number of days between the case's index date and the date of the imaging study. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.",
+      "type": "number"
+    }
+  },
+  {
+    "node": "imaging_study",
+    "property": "body_part_examined",
+    "midrc_node": "imaging_study",
+    "midrc_property": "body_part_examined",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "items": {
+        "type": "string"
+      },
+      "term": {
+        "description": "(0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0018, 0015)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Body Part Examined",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "array"
+    }
+  },
+  {
+    "node": "imaging_series",
+    "property": "series_uid",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "series_uid",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0020, 000e)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Series Instance UID",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "imaging_series",
+    "property": "series_description",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "series_description",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0008, 103e)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Series Description",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "imaging_series",
+    "property": "modality",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "modality",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0008, 0060)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Modality",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "imaging_series",
+    "property": "number_of_instances",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "number_of_instances",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The number of instances included in this series.",
+      "type": "integer"
+    }
+  },
+  {
+    "node": "scanner",
+    "property": "manufacturer",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "manufacturer",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0008, 0070)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Manufacturer",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "scanner",
+    "property": "manufacturer_model_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "manufacturer_model_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "(0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.\n",
+        "termDef": {
+          "cde_id": "(0008, 1090)",
+          "cde_version": null,
+          "source": "DICOM",
+          "term": "Manufacturer's Model Name",
+          "term_url": "https://www.dicomstandard.org/current"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "medication",
+    "property": "medication_name",
+    "midrc_node": "medication",
+    "midrc_property": "medication_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name of the specific medication the case was prescribed or administered.\n",
+        "termDef": {
+          "cde_id": "C164322",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Drug Name",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C164322"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "medication",
+    "property": "medication_code",
+    "midrc_node": "medication",
+    "midrc_property": "medication_code",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The code for a specific medication, assigned by the code system.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "medication",
+    "property": "medication_code_system",
+    "midrc_node": "medication",
+    "midrc_property": "medication_code_system",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The code for a specific medication, assigned by the code system.\n",
+        "termDef": {
+          "cde_id": "C70895",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Code System",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C70895"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "medication",
+    "property": "days_to_medication_start",
+    "midrc_node": "medication",
+    "midrc_property": "days_to_medication_start",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The number of days from the index date to the date the case started a specific medication.",
+      "type": "integer"
+    }
+  },
+  {
+    "node": "medication",
+    "property": "days_to_medication_end",
+    "midrc_node": "medication",
+    "midrc_property": "days_to_medication_end",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The number of days from the index date to the date the case stopped a specific medication.",
+      "type": "integer"
+    }
+  },
+  {
+    "node": "condition",
+    "property": "condition_name",
+    "midrc_node": "condition",
+    "midrc_property": "condition_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name of the condition the patient has experienced.\n",
+        "termDef": {
+          "cde_id": "C207483",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Condition Name",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C207483"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "condition",
+    "property": "condition_code",
+    "midrc_node": "condition",
+    "midrc_property": "condition_code",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The code for a specific condition, assigned by the code system.\n",
+        "termDef": {
+          "cde_id": "C93536",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Condition Code",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C93536"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "condition",
+    "property": "condition_code_system",
+    "midrc_node": "condition",
+    "midrc_property": "condition_code_system",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The system that assigned the code for a specific condition.\n",
+        "termDef": {
+          "cde_id": "C70895",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Code System",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C70895"
+        }
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "procedure",
+    "property": "procedure_name",
+    "midrc_node": "procedure",
+    "midrc_property": "procedure_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "Breathing Support",
+        "Radiation (Chest)"
+      ],
+      "term": {
+        "description": "The name of the procedure performed.\n",
+        "termDef": {
+          "cde_id": "C201325",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Procedure Name",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C201325"
+        }
+      }
+    }
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_name",
+    "midrc_node": "measurement",
+    "midrc_property": "test_name",
+    "status": "pattern_adapted_disease_specific_enum_replaced",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "COVID-19",
+        "FVC (L)",
+        "FEV1 (L)",
+        "6-Minute Walk Test Distance",
+        "6-Minute Walk Test Exertional Drop in O2 (%)",
+        "Oxygenation (SpO2)",
+        "Home Oxygen Quantity"
+      ],
+      "term": {
+        "description": "The name of the test for which this measurement was the result.\n",
+        "termDef": {
+          "cde_id": "C82541",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Test Name",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C82541"
+        }
+      }
+    }
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_method",
+    "midrc_node": "measurement",
+    "midrc_property": "test_method",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "RT-PCR",
+        "Rapid antigen test",
+        "Not Reported"
+      ],
+      "term": {
+        "description": "The test method used to confirm a condition or produce a measurement.\n",
+        "termDef": {
+          "cde_id": "C82535",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Test Method",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C82535"
+        }
+      }
+    }
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_result_number",
+    "midrc_node": "measurement",
+    "midrc_property": "test_result_number",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The result a test represented by a number.",
+      "type": "number"
+    }
+  },
+  {
+    "node": "laboratory_result",
+    "property": "test_result_text",
+    "midrc_node": "measurement",
+    "midrc_property": "test_result_text",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "Indeterminate",
+        "Negative",
+        "Positive",
+        "Not Reported"
+      ],
+      "term": {
+        "description": "The measured result of the test described using a list of enumerations.\n",
+        "termDef": {
+          "cde_id": "C77140",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Clinical Test Result",
+          "term_url": ":https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C77140"
+        }
+      }
+    }
+  },
+  {
+    "node": "segmentation",
+    "property": "annotation_method",
+    "midrc_node": "annotation_file",
+    "midrc_property": "annotation_method",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Defines the method by which the annotation was created. Clinically_derived - Based on information produced in the process of the subject's medical care; Retrospective_expert - Based on information produced retrospective to the subject's care by annotators with relevant special clinical expertise; Retrospective_general - Based on information produced retrospective to the subject's care by annotators without relevant special clinical expertise; Retrospective_auto - Based on information produced retrospective to the subject's care using automated means.",
+      "enum": [
+        "Clinically_derived",
+        "Retrospective_expert",
+        "Retrospective_general",
+        "Retrospective_auto"
+      ]
+    }
+  },
+  {
+    "node": "segmentation",
+    "property": "annotator_id",
+    "midrc_node": "annotation_file",
+    "midrc_property": "annotator_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "Coded value to represent a particular annotator in a group. These need only be unique per annotation.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name (or part of a name) of a file (of any type).\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The size of the data file (object) in bytes.\n"
+      },
+      "type": "integer"
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "pattern": "^[a-f0-9]{32}$",
+      "term": {
+        "description": "The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The GUID of the object in the index service.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DCM",
+        "nii.gz"
+      ],
+      "term": {
+        "description": "Format of the data files.\n"
+      }
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DICOM",
+        "NIfTI"
+      ],
+      "term": {
+        "description": "Specific content type of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "raw_imaging_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "CT"
+      ],
+      "term": {
+        "description": "Broad categorization of the contents of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name (or part of a name) of a file (of any type).\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The size of the data file (object) in bytes.\n"
+      },
+      "type": "integer"
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "pattern": "^[a-f0-9]{32}$",
+      "term": {
+        "description": "The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The GUID of the object in the index service.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DCM",
+        "nii.gz"
+      ],
+      "term": {
+        "description": "Format of the data files.\n"
+      }
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DICOM",
+        "NIfTI"
+      ],
+      "term": {
+        "description": "Specific content type of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "image_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "CT"
+      ],
+      "term": {
+        "description": "Broad categorization of the contents of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name (or part of a name) of a file (of any type).\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The size of the data file (object) in bytes.\n"
+      },
+      "type": "integer"
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "pattern": "^[a-f0-9]{32}$",
+      "term": {
+        "description": "The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The GUID of the object in the index service.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DCM",
+        "nii.gz"
+      ],
+      "term": {
+        "description": "Format of the data files.\n"
+      }
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DICOM",
+        "NIfTI"
+      ],
+      "term": {
+        "description": "Specific content type of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "segmentation_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "CT"
+      ],
+      "term": {
+        "description": "Broad categorization of the contents of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name (or part of a name) of a file (of any type).\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The size of the data file (object) in bytes.\n"
+      },
+      "type": "integer"
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "pattern": "^[a-f0-9]{32}$",
+      "term": {
+        "description": "The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The GUID of the object in the index service.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DCM",
+        "nii.gz"
+      ],
+      "term": {
+        "description": "Format of the data files.\n"
+      }
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DICOM",
+        "NIfTI"
+      ],
+      "term": {
+        "description": "Specific content type of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "dose_map_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "CT"
+      ],
+      "term": {
+        "description": "Broad categorization of the contents of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "file_name",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_name",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The name (or part of a name) of a file (of any type).\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "file_size",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "file_size",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "term": {
+        "description": "The size of the data file (object) in bytes.\n"
+      },
+      "type": "integer"
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "md5sum",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "md5sum",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "pattern": "^[a-f0-9]{32}$",
+      "term": {
+        "description": "The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.\n"
+      },
+      "type": "string"
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "object_id",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "object_id",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "description": "The GUID of the object in the index service.",
+      "type": "string"
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "data_format",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_format",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DCM",
+        "nii.gz"
+      ],
+      "term": {
+        "description": "Format of the data files.\n"
+      }
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "data_type",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_type",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "DICOM",
+        "NIfTI"
+      ],
+      "term": {
+        "description": "Specific content type of the data file.\n"
+      }
+    }
+  },
+  {
+    "node": "clinical_document_file",
+    "property": "data_category",
+    "midrc_node": "ct_series_file",
+    "midrc_property": "data_category",
+    "status": "definition_and_constraints_reused",
+    "midrc_commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "definition": {
+      "enum": [
+        "CT"
+      ],
+      "term": {
+        "description": "Broad categorization of the contents of the data file.\n"
+      }
+    }
+  }
+]

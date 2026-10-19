@@ -1,0 +1,23 @@
+[
+  {
+    "submitter_id": "SYN-TOXICITY_SUMMARY",
+    "model_version": "0.3.0-proposal",
+    "ctcae_term": "Fatigue",
+    "ctcae_version": "6.0",
+    "maximum_grade": 1,
+    "assessment_status": "assessed",
+    "time_window_start_day": 0,
+    "time_window_end_day": 90,
+    "type": "toxicity_summary",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "toxicity_events": [
+      {
+        "submitter_id": "SYN-TOXICITY_EVENT"
+      }
+    ]
+  }
+]

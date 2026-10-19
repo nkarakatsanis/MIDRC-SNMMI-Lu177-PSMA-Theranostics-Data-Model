@@ -1,0 +1,44 @@
+{
+  "name": "SNMMI-MIDRC Lu177-PSMA theranostics data model",
+  "release_version": "0.3.2",
+  "git_tag": "v0.3.2",
+  "release_title": "0.3.2",
+  "release_date": "2026-10-19",
+  "status": "Development release; technical proposal for review",
+  "repository": "https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model",
+  "default_branch": "cdis",
+  "model_directory": "extensions/lu177_psma/v0.3.0",
+  "model_artifact_revision": "0.3.0-proposal",
+  "version_policy": "Release 0.3.2 updates the Word and HTML documentation to match the clarified baseline and tag history. The model schema revision remains 0.3.0-proposal under extensions/lu177_psma/v0.3.0/. Earlier release tags and original assets remain unchanged.",
+  "baseline_source_parent_commit": "bee947238381704486ccd12beeb8f4689fb22843",
+  "pinned_compiled_dictionary": {
+    "url": "https://data.midrc.org/api/v0/submission/_dictionary/_all",
+    "dictionary_version": "1.4.3-2-g7505333",
+    "commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "retrieved_on": "2026-10-16",
+    "sha256": "578e57dc45f719b07f1ac31482fed9129675c133aaafc3004dc346e5e4928e21"
+  },
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified SNMMI abstract order",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "release_kind": "Documentation and explorer presentation patch",
+  "previous_release": "0.3.1",
+  "standalone_document_version": "0.3.2",
+  "model_schema_changed": false
+}

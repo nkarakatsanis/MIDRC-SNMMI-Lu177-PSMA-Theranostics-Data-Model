@@ -1,0 +1,14 @@
+[
+  {
+    "submitter_id": "SYN-MEDICATION",
+    "model_version": "0.3.0-proposal",
+    "medication_name": "Synthetic analgesic exposure",
+    "start_date": "2025-12-01",
+    "type": "medication",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

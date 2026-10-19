@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "pages": 19,
+  "all_pages_visually_inspected": true,
+  "final_render": "docx_render_release",
+  "page_revisions_checked": [
+    1,
+    10,
+    15,
+    16
+  ],
+  "unchanged_pages_verified_by_byte_comparison": 15,
+  "checks": [
+    "All 19 pages readable and complete",
+    "No clipping, overlapping text, broken tables or missing glyphs observed",
+    "Exact tentative author order on cover and in document metadata",
+    "Graph caption and legend distinguish required, optional and subgroup relationships"
+  ],
+  "authorship_designation": "tentative authors list",
+  "document_sha256": "746e4c39a264c2fcc65420ec73a1edbee62ff84d655ab0f8ebcbe0919ff8f45a",
+  "scope": "Generated v0.3.0 document before the author-supplied revision."
+}

@@ -1,0 +1,44 @@
+{
+  "*type": "survival_outcome",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*endpoint_name": null,
+  "*endpoint_definition": null,
+  "*time_origin_definition": null,
+  "*event_definition": null,
+  "censoring_reason": null,
+  "origin_date": null,
+  "event_date": null,
+  "censor_date": null,
+  "*event_observed": null,
+  "duration_days": null,
+  "months_conversion": null,
+  "date_of_death": null,
+  "efs": null,
+  "last_followup_date": null,
+  "os_months": null,
+  "pfs_months": null,
+  "rpfs_months": null,
+  "response_assessments": {
+    "submitter_id": null
+  },
+  "clinical_events": {
+    "submitter_id": null
+  },
+  "treatment_transitions": {
+    "submitter_id": null
+  },
+  "duration_months": null
+}

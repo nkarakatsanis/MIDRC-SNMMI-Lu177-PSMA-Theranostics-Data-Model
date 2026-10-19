@@ -1,0 +1,38 @@
+[
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-CYCLE-1",
+    "model_version": "0.3.0-proposal",
+    "cycle_number": 1,
+    "cycle_status": "administered",
+    "type": "therapy_cycle",
+    "therapy_courses": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-COURSE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-CYCLE-2",
+    "model_version": "0.3.0-proposal",
+    "cycle_number": 2,
+    "cycle_status": "administered",
+    "type": "therapy_cycle",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-THERAPY_CYCLE",
+    "model_version": "0.3.0-proposal",
+    "cycle_number": 1,
+    "cycle_status": "administered",
+    "type": "therapy_cycle",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  }
+]

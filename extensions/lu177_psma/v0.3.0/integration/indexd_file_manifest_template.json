@@ -1,0 +1,16 @@
+{
+  "note": "Separate file-index registration metadata; never submit urls as a series-file node property. Complete according to the receiving MIDRC Indexd/upload workflow.",
+  "records": [
+    {
+      "node_type": "nm_series_file",
+      "submitter_id": null,
+      "object_id": null,
+      "file_name": null,
+      "size": null,
+      "hashes": {
+        "md5": null
+      },
+      "urls": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "*type": "absorbed_dose",
+  "*submitter_id": null,
+  "project_id": null,
+  "*dosimetries": {
+    "submitter_id": null
+  },
+  "*anatomic_targets": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*absorbed_dose_gy": null,
+  "*statistic": null,
+  "uncertainty_gy": null,
+  "uncertainty_definition": null,
+  "target_mass_g": null,
+  "uncertainty_percent": null,
+  "uncertainty_coverage_probability": null,
+  "uncertainty_method": null,
+  "uncertainty_value": null,
+  "uncertainty_unit": null,
+  "annotations": {
+    "submitter_id": null
+  }
+}

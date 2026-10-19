@@ -1,0 +1,242 @@
+[
+  {
+    "file": "submission_dataset_template.json",
+    "sha256": "a63bbdfb33a69d0ff2361d1b734e7bea747f839a1eb23b6af47156d73aa8ada2",
+    "node": "dataset",
+    "baseline_properties_found": [
+      "acknowledgement",
+      "data_citation",
+      "data_contributor",
+      "data_description",
+      "data_url_doi",
+      "disease_type",
+      "full_name",
+      "license",
+      "longitudinal",
+      "primary_site",
+      "project_id",
+      "projects",
+      "publication_citation",
+      "research_description",
+      "research_design",
+      "research_objective",
+      "research_setup",
+      "submitter_id",
+      "type"
+    ],
+    "not_in_live_node_schema": [],
+    "required_markers_match": true,
+    "relationship_groups": [
+      {
+        "backref": "datasets",
+        "label": "performed_for",
+        "multiplicity": "many_to_one",
+        "name": "projects",
+        "required": true,
+        "target_type": "project"
+      }
+    ]
+  },
+  {
+    "file": "submission_imaging_study_template.json",
+    "sha256": "ef4ca97b37ba971e47f908578612a5d460a59bdc77d8dd2341b37a152ae83ca4",
+    "node": "imaging_study",
+    "baseline_properties_found": [
+      "age_at_imaging",
+      "age_at_imaging_gt89",
+      "body_part_examined",
+      "case_ids",
+      "cases",
+      "datasets",
+      "days_from_study_to_neg_covid_test",
+      "days_from_study_to_pos_covid_test",
+      "days_to_study",
+      "image_data_modified",
+      "loinc_code",
+      "loinc_contrast",
+      "loinc_long_common_name",
+      "loinc_method",
+      "loinc_system",
+      "project_id",
+      "study_description",
+      "study_modality",
+      "study_uid",
+      "study_year",
+      "study_year_shifted",
+      "submitter_id",
+      "type"
+    ],
+    "not_in_live_node_schema": [],
+    "required_markers_match": true,
+    "relationship_groups": [
+      {
+        "backref": "imaging_studies",
+        "label": "related_to",
+        "multiplicity": "many_to_one",
+        "name": "cases",
+        "required": true,
+        "target_type": "case"
+      },
+      {
+        "backref": "imaging_studies",
+        "label": "member_of",
+        "multiplicity": "many_to_many",
+        "name": "datasets",
+        "required": true,
+        "target_type": "dataset"
+      }
+    ]
+  },
+  {
+    "file": "submission_nm_series_file_template.json",
+    "sha256": "895df4c01ca051b63c67060b346a5e3dcc6833282e40c56f09e46691508f6f36",
+    "node": "nm_series_file",
+    "baseline_properties_found": [
+      "body_part_examined",
+      "case_ids",
+      "core_metadata_collections",
+      "data_category",
+      "data_format",
+      "data_type",
+      "dicom_header_file_guid",
+      "file_name",
+      "file_size",
+      "image_data_modification_method",
+      "image_data_modification_name",
+      "image_data_modified",
+      "imaging_studies",
+      "lossy_image_compression",
+      "manufacturer",
+      "manufacturer_model_name",
+      "md5sum",
+      "modality",
+      "number_of_instances",
+      "object_id",
+      "project_id",
+      "radiopharmaceutical",
+      "series_description",
+      "series_uid",
+      "submitter_id",
+      "type"
+    ],
+    "not_in_live_node_schema": [
+      "urls"
+    ],
+    "required_markers_match": true,
+    "relationship_groups": [
+      {
+        "exclusive": false,
+        "required": true,
+        "subgroup": [
+          {
+            "backref": "nm_series_files",
+            "label": "data_from",
+            "multiplicity": "many_to_one",
+            "name": "core_metadata_collections",
+            "required": false,
+            "target_type": "core_metadata_collection"
+          },
+          {
+            "backref": "nm_series_files",
+            "label": "related_to",
+            "multiplicity": "many_to_one",
+            "name": "imaging_studies",
+            "required": false,
+            "target_type": "imaging_study"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "submission_pt_series_file_template.json",
+    "sha256": "4010ffee65ffda0235259e6cf217fb5d98e0cd01e51be9e4133be6c0b6585ccb",
+    "node": "pt_series_file",
+    "baseline_properties_found": [
+      "body_part_examined",
+      "case_ids",
+      "core_metadata_collections",
+      "ct_images",
+      "data_category",
+      "data_format",
+      "data_type",
+      "file_name",
+      "file_size",
+      "image_data_modification_method",
+      "image_data_modification_name",
+      "image_data_modified",
+      "imaging_studies",
+      "lossy_image_compression",
+      "manufacturer",
+      "manufacturer_model_name",
+      "md5sum",
+      "modality",
+      "number_of_instances",
+      "object_id",
+      "project_id",
+      "radiopharmaceutical",
+      "series_description",
+      "series_uid",
+      "slice_thickness",
+      "submitter_id",
+      "type"
+    ],
+    "not_in_live_node_schema": [
+      "urls"
+    ],
+    "required_markers_match": true,
+    "relationship_groups": [
+      {
+        "exclusive": false,
+        "required": true,
+        "subgroup": [
+          {
+            "backref": "pt_series_files",
+            "label": "data_from",
+            "multiplicity": "many_to_one",
+            "name": "core_metadata_collections",
+            "required": false,
+            "target_type": "core_metadata_collection"
+          },
+          {
+            "backref": "pt_series_files",
+            "label": "related_to",
+            "multiplicity": "many_to_one",
+            "name": "imaging_studies",
+            "required": false,
+            "target_type": "imaging_study"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "submission_visit_template.json",
+    "sha256": "5d2c32ee52adf3a414e98d27d33955f7ee1c7cd168bd618740c373cc2bfc68e7",
+    "node": "visit",
+    "baseline_properties_found": [
+      "case_ids",
+      "cases",
+      "days_to_hospital_admission",
+      "days_to_hospital_discharge",
+      "days_to_icu_admission",
+      "days_to_icu_discharge",
+      "discharge_type",
+      "project_id",
+      "submitter_id",
+      "type"
+    ],
+    "not_in_live_node_schema": [],
+    "required_markers_match": true,
+    "relationship_groups": [
+      {
+        "backref": "visits",
+        "label": "member_of",
+        "multiplicity": "many_to_one",
+        "name": "cases",
+        "required": true,
+        "target_type": "case"
+      }
+    ]
+  }
+]

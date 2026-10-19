@@ -1,0 +1,50 @@
+[
+  {
+    "submitter_id": "JOURNEY-PSA-CONFIRM-PANEL",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2026-04-22",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-EARLY-PANEL",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2026-01-22",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-LABORATORY_PANEL",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2025-12-30",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PSA-PANEL-2",
+    "model_version": "0.3.0-proposal",
+    "panel_name": "PSA",
+    "collection_date": "2026-04-01",
+    "type": "laboratory_panel",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

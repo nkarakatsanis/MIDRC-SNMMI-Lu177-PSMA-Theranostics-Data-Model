@@ -1,0 +1,14 @@
+[
+  {
+    "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH",
+    "model_version": "0.3.0-proposal",
+    "batch_identifier": "SYNTHETIC-LOT",
+    "radiochemical_purity_percent": 99.0,
+    "type": "radiopharmaceutical_batch",
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ]
+  }
+]

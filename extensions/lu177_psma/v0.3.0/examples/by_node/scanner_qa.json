@@ -1,0 +1,17 @@
+[
+  {
+    "submitter_id": "SYN-SCANNER_QA",
+    "model_version": "0.3.0-proposal",
+    "qa_type": "quantitative calibration",
+    "qa_result": "pass",
+    "radionuclide": "Lu-177",
+    "valid_from": "2025-12-01T00:00:00Z",
+    "valid_until": "2026-12-01T00:00:00Z",
+    "type": "scanner_qa",
+    "scanners": [
+      {
+        "submitter_id": "SYN-SCANNER"
+      }
+    ]
+  }
+]

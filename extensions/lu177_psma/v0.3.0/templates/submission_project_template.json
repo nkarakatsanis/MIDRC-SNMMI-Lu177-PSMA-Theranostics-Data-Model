@@ -1,0 +1,31 @@
+{
+  "acknowledgement": null,
+  "availability_mechanism": null,
+  "availability_type": null,
+  "*code": null,
+  "complete": null,
+  "data_citation": null,
+  "data_contributor": null,
+  "data_description": null,
+  "data_url_doi": null,
+  "date_collected": null,
+  "*dbgap_accession_number": null,
+  "disease_type": null,
+  "investigator_affiliation": null,
+  "investigator_name": null,
+  "license": null,
+  "longitudinal": null,
+  "*name": null,
+  "primary_site": null,
+  "*programs": {
+    "id": null
+  },
+  "publication_citation": null,
+  "research_description": null,
+  "research_design": null,
+  "research_objective": null,
+  "research_setup": null,
+  "support_id": null,
+  "support_source": null,
+  "type": "project"
+}

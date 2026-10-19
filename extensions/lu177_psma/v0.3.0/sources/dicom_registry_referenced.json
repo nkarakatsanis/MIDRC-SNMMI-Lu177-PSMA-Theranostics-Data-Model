@@ -1,0 +1,779 @@
+{
+  "00080008": {
+    "tag": "(0008,0008)",
+    "name": "Image Type",
+    "keyword": "ImageType",
+    "vr": "CS",
+    "vm": "2-n"
+  },
+  "00080020": {
+    "tag": "(0008,0020)",
+    "name": "Study Date",
+    "keyword": "StudyDate",
+    "vr": "DA",
+    "vm": "1"
+  },
+  "00080021": {
+    "tag": "(0008,0021)",
+    "name": "Series Date",
+    "keyword": "SeriesDate",
+    "vr": "DA",
+    "vm": "1"
+  },
+  "00080030": {
+    "tag": "(0008,0030)",
+    "name": "Study Time",
+    "keyword": "StudyTime",
+    "vr": "TM",
+    "vm": "1"
+  },
+  "00080031": {
+    "tag": "(0008,0031)",
+    "name": "Series Time",
+    "keyword": "SeriesTime",
+    "vr": "TM",
+    "vm": "1"
+  },
+  "00080032": {
+    "tag": "(0008,0032)",
+    "name": "Acquisition Time",
+    "keyword": "AcquisitionTime",
+    "vr": "TM",
+    "vm": "1"
+  },
+  "00080050": {
+    "tag": "(0008,0050)",
+    "name": "Accession Number",
+    "keyword": "AccessionNumber",
+    "vr": "SH",
+    "vm": "1"
+  },
+  "00080060": {
+    "tag": "(0008,0060)",
+    "name": "Modality",
+    "keyword": "Modality",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00080070": {
+    "tag": "(0008,0070)",
+    "name": "Manufacturer",
+    "keyword": "Manufacturer",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00080100": {
+    "tag": "(0008,0100)",
+    "name": "Code Value",
+    "keyword": "CodeValue",
+    "vr": "SH",
+    "vm": "1"
+  },
+  "00081010": {
+    "tag": "(0008,1010)",
+    "name": "Station Name",
+    "keyword": "StationName",
+    "vr": "SH",
+    "vm": "1"
+  },
+  "0008103E": {
+    "tag": "(0008,103E)",
+    "name": "Series Description",
+    "keyword": "SeriesDescription",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00081090": {
+    "tag": "(0008,1090)",
+    "name": "Manufacturer's Model Name",
+    "keyword": "ManufacturerModelName",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00100010": {
+    "tag": "(0010,0010)",
+    "name": "Patient's Name",
+    "keyword": "PatientName",
+    "vr": "PN",
+    "vm": "1"
+  },
+  "00100020": {
+    "tag": "(0010,0020)",
+    "name": "Patient ID",
+    "keyword": "PatientID",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00100030": {
+    "tag": "(0010,0030)",
+    "name": "Patient's Birth Date",
+    "keyword": "PatientBirthDate",
+    "vr": "DA",
+    "vm": "1"
+  },
+  "00100040": {
+    "tag": "(0010,0040)",
+    "name": "Patient's Sex",
+    "keyword": "PatientSex",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00101020": {
+    "tag": "(0010,1020)",
+    "name": "Patient's Size",
+    "keyword": "PatientSize",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00101030": {
+    "tag": "(0010,1030)",
+    "name": "Patient's Weight",
+    "keyword": "PatientWeight",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00180022": {
+    "tag": "(0018,0022)",
+    "name": "Scan Options",
+    "keyword": "ScanOptions",
+    "vr": "CS",
+    "vm": "1-n"
+  },
+  "00180031": {
+    "tag": "(0018,0031)",
+    "name": "Radiopharmaceutical",
+    "keyword": "Radiopharmaceutical",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00180050": {
+    "tag": "(0018,0050)",
+    "name": "Slice Thickness",
+    "keyword": "SliceThickness",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00180060": {
+    "tag": "(0018,0060)",
+    "name": "KVP",
+    "keyword": "KVP",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00180071": {
+    "tag": "(0018,0071)",
+    "name": "Acquisition Termination Condition",
+    "keyword": "AcquisitionTerminationCondition",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00180073": {
+    "tag": "(0018,0073)",
+    "name": "Acquisition Start Condition",
+    "keyword": "AcquisitionStartCondition",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00180074": {
+    "tag": "(0018,0074)",
+    "name": "Acquisition Start Condition Data",
+    "keyword": "AcquisitionStartConditionData",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00180088": {
+    "tag": "(0018,0088)",
+    "name": "Spacing Between Slices",
+    "keyword": "SpacingBetweenSlices",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181000": {
+    "tag": "(0018,1000)",
+    "name": "Device Serial Number",
+    "keyword": "DeviceSerialNumber",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00181020": {
+    "tag": "(0018,1020)",
+    "name": "Software Versions",
+    "keyword": "SoftwareVersions",
+    "vr": "LO",
+    "vm": "1-n"
+  },
+  "00181030": {
+    "tag": "(0018,1030)",
+    "name": "Protocol Name",
+    "keyword": "ProtocolName",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00181062": {
+    "tag": "(0018,1062)",
+    "name": "Nominal Interval",
+    "keyword": "NominalInterval",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00181070": {
+    "tag": "(0018,1070)",
+    "name": "Radiopharmaceutical Route",
+    "keyword": "RadiopharmaceuticalRoute",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00181072": {
+    "tag": "(0018,1072)",
+    "name": "Radiopharmaceutical Start Time",
+    "keyword": "RadiopharmaceuticalStartTime",
+    "vr": "TM",
+    "vm": "1"
+  },
+  "00181073": {
+    "tag": "(0018,1073)",
+    "name": "Radiopharmaceutical Stop Time",
+    "keyword": "RadiopharmaceuticalStopTime",
+    "vr": "TM",
+    "vm": "1"
+  },
+  "00181074": {
+    "tag": "(0018,1074)",
+    "name": "Radionuclide Total Dose",
+    "keyword": "RadionuclideTotalDose",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181075": {
+    "tag": "(0018,1075)",
+    "name": "Radionuclide Half Life",
+    "keyword": "RadionuclideHalfLife",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181078": {
+    "tag": "(0018,1078)",
+    "name": "Radiopharmaceutical Start DateTime",
+    "keyword": "RadiopharmaceuticalStartDateTime",
+    "vr": "DT",
+    "vm": "1"
+  },
+  "00181100": {
+    "tag": "(0018,1100)",
+    "name": "Reconstruction Diameter",
+    "keyword": "ReconstructionDiameter",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181121": {
+    "tag": "(0018,1121)",
+    "name": "Gantry/Detector Slew",
+    "keyword": "GantryDetectorSlew",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181131": {
+    "tag": "(0018,1131)",
+    "name": "Table Traverse",
+    "keyword": "TableTraverse",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181134": {
+    "tag": "(0018,1134)",
+    "name": "Table Motion",
+    "keyword": "TableMotion",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00181140": {
+    "tag": "(0018,1140)",
+    "name": "Rotation Direction",
+    "keyword": "RotationDirection",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00181144": {
+    "tag": "(0018,1144)",
+    "name": "Angular Step",
+    "keyword": "AngularStep",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00181150": {
+    "tag": "(0018,1150)",
+    "name": "Exposure Time",
+    "keyword": "ExposureTime",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00181151": {
+    "tag": "(0018,1151)",
+    "name": "X-Ray Tube Current",
+    "keyword": "XRayTubeCurrent",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00181152": {
+    "tag": "(0018,1152)",
+    "name": "Exposure",
+    "keyword": "Exposure",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00181160": {
+    "tag": "(0018,1160)",
+    "name": "Filter Type",
+    "keyword": "FilterType",
+    "vr": "SH",
+    "vm": "1"
+  },
+  "00181180": {
+    "tag": "(0018,1180)",
+    "name": "Collimator/grid Name",
+    "keyword": "CollimatorGridName",
+    "vr": "SH",
+    "vm": "1"
+  },
+  "00181181": {
+    "tag": "(0018,1181)",
+    "name": "Collimator Type",
+    "keyword": "CollimatorType",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00181210": {
+    "tag": "(0018,1210)",
+    "name": "Convolution Kernel",
+    "keyword": "ConvolutionKernel",
+    "vr": "SH",
+    "vm": "1-n"
+  },
+  "00181242": {
+    "tag": "(0018,1242)",
+    "name": "Actual Frame Duration",
+    "keyword": "ActualFrameDuration",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00187004": {
+    "tag": "(0018,7004)",
+    "name": "Detector Type",
+    "keyword": "DetectorType",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00189236": {
+    "tag": "(0018,9236)",
+    "name": "Cardiac Cycle Position",
+    "keyword": "CardiacCyclePosition",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00189302": {
+    "tag": "(0018,9302)",
+    "name": "Acquisition Type",
+    "keyword": "AcquisitionType",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00189305": {
+    "tag": "(0018,9305)",
+    "name": "Revolution Time",
+    "keyword": "RevolutionTime",
+    "vr": "FD",
+    "vm": "1"
+  },
+  "00189309": {
+    "tag": "(0018,9309)",
+    "name": "Table Speed",
+    "keyword": "TableSpeed",
+    "vr": "FD",
+    "vm": "1"
+  },
+  "00189311": {
+    "tag": "(0018,9311)",
+    "name": "Spiral Pitch Factor",
+    "keyword": "SpiralPitchFactor",
+    "vr": "FD",
+    "vm": "1"
+  },
+  "00189315": {
+    "tag": "(0018,9315)",
+    "name": "Reconstruction Algorithm",
+    "keyword": "ReconstructionAlgorithm",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00189317": {
+    "tag": "(0018,9317)",
+    "name": "Reconstruction Field of View",
+    "keyword": "ReconstructionFieldOfView",
+    "vr": "FD",
+    "vm": "2"
+  },
+  "00189345": {
+    "tag": "(0018,9345)",
+    "name": "CTDIvol",
+    "keyword": "CTDIvol",
+    "vr": "FD",
+    "vm": "1"
+  },
+  "00189346": {
+    "tag": "(0018,9346)",
+    "name": "CTDI Phantom Type Code Sequence",
+    "keyword": "CTDIPhantomTypeCodeSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00189457": {
+    "tag": "(0018,9457)",
+    "name": "Plane Identification",
+    "keyword": "PlaneIdentification",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00189732": {
+    "tag": "(0018,9732)",
+    "name": "PET Frame Acquisition Sequence",
+    "keyword": "PETFrameAcquisitionSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00189733": {
+    "tag": "(0018,9733)",
+    "name": "PET Detector Motion Details Sequence",
+    "keyword": "PETDetectorMotionDetailsSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00189735": {
+    "tag": "(0018,9735)",
+    "name": "PET Position Sequence",
+    "keyword": "PETPositionSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00189749": {
+    "tag": "(0018,9749)",
+    "name": "PET Reconstruction Sequence",
+    "keyword": "PETReconstructionSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00200012": {
+    "tag": "(0020,0012)",
+    "name": "Acquisition Number",
+    "keyword": "AcquisitionNumber",
+    "vr": "IS",
+    "vm": "1"
+  },
+  "00200032": {
+    "tag": "(0020,0032)",
+    "name": "Image Position (Patient)",
+    "keyword": "ImagePositionPatient",
+    "vr": "DS",
+    "vm": "3"
+  },
+  "00200037": {
+    "tag": "(0020,0037)",
+    "name": "Image Orientation (Patient)",
+    "keyword": "ImageOrientationPatient",
+    "vr": "DS",
+    "vm": "6"
+  },
+  "00280002": {
+    "tag": "(0028,0002)",
+    "name": "Samples per Pixel",
+    "keyword": "SamplesPerPixel",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00280004": {
+    "tag": "(0028,0004)",
+    "name": "Photometric Interpretation",
+    "keyword": "PhotometricInterpretation",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00280010": {
+    "tag": "(0028,0010)",
+    "name": "Rows",
+    "keyword": "Rows",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00280011": {
+    "tag": "(0028,0011)",
+    "name": "Columns",
+    "keyword": "Columns",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00280030": {
+    "tag": "(0028,0030)",
+    "name": "Pixel Spacing",
+    "keyword": "PixelSpacing",
+    "vr": "DS",
+    "vm": "2"
+  },
+  "00280051": {
+    "tag": "(0028,0051)",
+    "name": "Corrected Image",
+    "keyword": "CorrectedImage",
+    "vr": "CS",
+    "vm": "1-n"
+  },
+  "00280100": {
+    "tag": "(0028,0100)",
+    "name": "Bits Allocated",
+    "keyword": "BitsAllocated",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00280101": {
+    "tag": "(0028,0101)",
+    "name": "Bits Stored",
+    "keyword": "BitsStored",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00280102": {
+    "tag": "(0028,0102)",
+    "name": "High Bit",
+    "keyword": "HighBit",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00280103": {
+    "tag": "(0028,0103)",
+    "name": "Pixel Representation",
+    "keyword": "PixelRepresentation",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00281052": {
+    "tag": "(0028,1052)",
+    "name": "Rescale Intercept",
+    "keyword": "RescaleIntercept",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00281053": {
+    "tag": "(0028,1053)",
+    "name": "Rescale Slope",
+    "keyword": "RescaleSlope",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00540011": {
+    "tag": "(0054,0011)",
+    "name": "Number of Energy Windows",
+    "keyword": "NumberOfEnergyWindows",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00540012": {
+    "tag": "(0054,0012)",
+    "name": "Energy Window Information Sequence",
+    "keyword": "EnergyWindowInformationSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00540014": {
+    "tag": "(0054,0014)",
+    "name": "Energy Window Lower Limit",
+    "keyword": "EnergyWindowLowerLimit",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00540015": {
+    "tag": "(0054,0015)",
+    "name": "Energy Window Upper Limit",
+    "keyword": "EnergyWindowUpperLimit",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00540016": {
+    "tag": "(0054,0016)",
+    "name": "Radiopharmaceutical Information Sequence",
+    "keyword": "RadiopharmaceuticalInformationSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00540018": {
+    "tag": "(0054,0018)",
+    "name": "Energy Window Name",
+    "keyword": "EnergyWindowName",
+    "vr": "SH",
+    "vm": "1"
+  },
+  "00540052": {
+    "tag": "(0054,0052)",
+    "name": "Rotation Information Sequence",
+    "keyword": "RotationInformationSequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "00540053": {
+    "tag": "(0054,0053)",
+    "name": "Number of Frames in Rotation",
+    "keyword": "NumberOfFramesInRotation",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00540081": {
+    "tag": "(0054,0081)",
+    "name": "Number of Slices",
+    "keyword": "NumberOfSlices",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00540101": {
+    "tag": "(0054,0101)",
+    "name": "Number of Time Slices",
+    "keyword": "NumberOfTimeSlices",
+    "vr": "US",
+    "vm": "1"
+  },
+  "00540200": {
+    "tag": "(0054,0200)",
+    "name": "Start Angle",
+    "keyword": "StartAngle",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00540202": {
+    "tag": "(0054,0202)",
+    "name": "Type of Detector Motion",
+    "keyword": "TypeOfDetectorMotion",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00540500": {
+    "tag": "(0054,0500)",
+    "name": "Slice Progression Direction",
+    "keyword": "SliceProgressionDirection",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00541000": {
+    "tag": "(0054,1000)",
+    "name": "Series Type",
+    "keyword": "SeriesType",
+    "vr": "CS",
+    "vm": "2"
+  },
+  "00541001": {
+    "tag": "(0054,1001)",
+    "name": "Units",
+    "keyword": "Units",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00541002": {
+    "tag": "(0054,1002)",
+    "name": "Counts Source",
+    "keyword": "CountsSource",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00541006": {
+    "tag": "(0054,1006)",
+    "name": "SUV Type",
+    "keyword": "SUVType",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00541100": {
+    "tag": "(0054,1100)",
+    "name": "Randoms Correction Method",
+    "keyword": "RandomsCorrectionMethod",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00541101": {
+    "tag": "(0054,1101)",
+    "name": "Attenuation Correction Method",
+    "keyword": "AttenuationCorrectionMethod",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00541102": {
+    "tag": "(0054,1102)",
+    "name": "Decay Correction",
+    "keyword": "DecayCorrection",
+    "vr": "CS",
+    "vm": "1"
+  },
+  "00541103": {
+    "tag": "(0054,1103)",
+    "name": "Reconstruction Method",
+    "keyword": "ReconstructionMethod",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00541105": {
+    "tag": "(0054,1105)",
+    "name": "Scatter Correction Method",
+    "keyword": "ScatterCorrectionMethod",
+    "vr": "LO",
+    "vm": "1"
+  },
+  "00541300": {
+    "tag": "(0054,1300)",
+    "name": "Frame Reference Time",
+    "keyword": "FrameReferenceTime",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00541320": {
+    "tag": "(0054,1320)",
+    "name": "Slice Sensitivity Factor",
+    "keyword": "SliceSensitivityFactor",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00541321": {
+    "tag": "(0054,1321)",
+    "name": "Decay Factor",
+    "keyword": "DecayFactor",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00541323": {
+    "tag": "(0054,1323)",
+    "name": "Scatter Fraction Factor",
+    "keyword": "ScatterFractionFactor",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00541324": {
+    "tag": "(0054,1324)",
+    "name": "Dead Time Factor",
+    "keyword": "DeadTimeFactor",
+    "vr": "DS",
+    "vm": "1"
+  },
+  "00541330": {
+    "tag": "(0054,1330)",
+    "name": "Image Index",
+    "keyword": "ImageIndex",
+    "vr": "US",
+    "vm": "1"
+  },
+  "30060020": {
+    "tag": "(3006,0020)",
+    "name": "Structure Set ROI Sequence",
+    "keyword": "StructureSetROISequence",
+    "vr": "SQ",
+    "vm": "1"
+  },
+  "30060050": {
+    "tag": "(3006,0050)",
+    "name": "Contour Data",
+    "keyword": "ContourData",
+    "vr": "DS",
+    "vm": "3-3n"
+  }
+}

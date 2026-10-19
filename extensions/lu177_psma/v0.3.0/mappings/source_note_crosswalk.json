@@ -1,0 +1,524 @@
+[
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Nadir_Value",
+    "mapped_element": "marios_outcome_content:r6",
+    "destination": "measurement.test_result_number",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_nadir_value"
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Nadir_Date",
+    "mapped_element": "marios_outcome_content:r7",
+    "destination": "response_assessment.psa_nadir_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_nadir_date"
+    },
+    "node": "response_assessment",
+    "property": "psa_nadir_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_nadir_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Response_50_Confirmed",
+    "mapped_element": "marios_outcome_content:r8",
+    "destination": "response_assessment.psa_response_50_confirmed",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_response_50_confirmed"
+    },
+    "node": "response_assessment",
+    "property": "psa_response_50_confirmed",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_response_50_confirmed"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Response_50_Date",
+    "mapped_element": "marios_outcome_content:r9",
+    "destination": "response_assessment.psa_response_50_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_response_50_date"
+    },
+    "node": "response_assessment",
+    "property": "psa_response_50_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_response_50_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Best_Response_Percent",
+    "mapped_element": "marios_outcome_content:r10",
+    "destination": "response_assessment.psa_best_response_percent",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_best_response_percent"
+    },
+    "node": "response_assessment",
+    "property": "psa_best_response_percent",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_best_response_percent"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Progression_PCWG3",
+    "mapped_element": "marios_outcome_content:r12",
+    "destination": "response_assessment.psa_progression_pcwg3_documented",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_progression_pcwg3_documented"
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_documented",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_documented"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Progression_PCWG3_Date",
+    "mapped_element": "marios_outcome_content:r13",
+    "destination": "response_assessment.psa_progression_pcwg3_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_progression_pcwg3_date"
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Progression_PCWG3_Confirmed_Date",
+    "mapped_element": "marios_outcome_content:r14",
+    "destination": "response_assessment.psa_progression_pcwg3_confirmed_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_progression_pcwg3_confirmed_date"
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_confirmed_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_confirmed_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Early_Rise_Pre12w",
+    "mapped_element": "marios_outcome_content:r11",
+    "destination": "response_assessment.psa_early_rise_pre12w",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_early_rise_pre12w"
+    },
+    "node": "response_assessment",
+    "property": "psa_early_rise_pre12w",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_early_rise_pre12w"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 336,
+    "mentioned_element": "PSA_Progression_Criteria_Used",
+    "mapped_element": "marios_outcome_content:r15",
+    "destination": "response_assessment.psa_progression_criteria_used",
+    "v0_2_destination": {
+      "destination": "response_assessment.psa_progression_criteria_used"
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_criteria_used",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_criteria_used"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 338,
+    "mentioned_element": "Imaging_Response_Criteria_Used",
+    "mapped_element": "marios_outcome_content:r17",
+    "destination": "response_assessment.imaging_response_criteria_used",
+    "v0_2_destination": {
+      "destination": "response_assessment.imaging_response_criteria_used"
+    },
+    "node": "response_assessment",
+    "property": "imaging_response_criteria_used",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_response_criteria_used"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 340,
+    "mentioned_element": "Imaging_Overall_Response",
+    "mapped_element": "marios_outcome_content:r18",
+    "destination": "response_assessment.imaging_overall_response",
+    "v0_2_destination": {
+      "destination": "response_assessment.imaging_overall_response"
+    },
+    "node": "response_assessment",
+    "property": "imaging_overall_response",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_overall_response"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 342,
+    "mentioned_element": "Imaging_Overall_Response_Date",
+    "mapped_element": "marios_outcome_content:r19",
+    "destination": "response_assessment.imaging_overall_response_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.imaging_overall_response_date"
+    },
+    "node": "response_assessment",
+    "property": "imaging_overall_response_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_overall_response_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 344,
+    "mentioned_element": "Imaging_Progression_Type",
+    "mapped_element": "marios_outcome_content:r20",
+    "destination": "response_assessment.imaging_progression_type",
+    "v0_2_destination": {
+      "destination": "response_assessment.imaging_progression_type"
+    },
+    "node": "response_assessment",
+    "property": "imaging_progression_type",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_progression_type"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 347,
+    "mentioned_element": "Imaging_Progression_Site",
+    "mapped_element": "marios_outcome_content:r21",
+    "destination": "response_assessment.imaging_progression_site",
+    "v0_2_destination": {
+      "destination": "response_assessment.imaging_progression_site"
+    },
+    "node": "response_assessment",
+    "property": "imaging_progression_site",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_progression_site"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 349,
+    "mentioned_element": "Soft_Tissue_Response_RECIST",
+    "mapped_element": "marios_outcome_content:r24",
+    "destination": "response_assessment.soft_tissue_response_recist",
+    "v0_2_destination": {
+      "destination": "response_assessment.soft_tissue_response_recist"
+    },
+    "node": "response_assessment",
+    "property": "soft_tissue_response_recist",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "soft_tissue_response_recist"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 351,
+    "mentioned_element": "Visceral_Progression_PCWG3",
+    "mapped_element": "marios_outcome_content:r28",
+    "destination": "response_assessment.visceral_progression_pcwg3",
+    "v0_2_destination": {
+      "destination": "response_assessment.visceral_progression_pcwg3"
+    },
+    "node": "response_assessment",
+    "property": "visceral_progression_pcwg3",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "visceral_progression_pcwg3"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 351,
+    "mentioned_element": "Visceral_Progression_Date",
+    "mapped_element": "marios_outcome_content:r29",
+    "destination": "response_assessment.visceral_progression_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.visceral_progression_date"
+    },
+    "node": "response_assessment",
+    "property": "visceral_progression_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "visceral_progression_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 351,
+    "mentioned_element": "Visceral_Progression_Site",
+    "mapped_element": "marios_outcome_content:r30",
+    "destination": "response_assessment.visceral_progression_site",
+    "v0_2_destination": {
+      "destination": "response_assessment.visceral_progression_site"
+    },
+    "node": "response_assessment",
+    "property": "visceral_progression_site",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "visceral_progression_site"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 353,
+    "mentioned_element": "Nodal_Progression_PCWG3",
+    "mapped_element": "marios_outcome_content:r25",
+    "destination": "response_assessment.nodal_progression_pcwg3",
+    "v0_2_destination": {
+      "destination": "response_assessment.nodal_progression_pcwg3"
+    },
+    "node": "response_assessment",
+    "property": "nodal_progression_pcwg3",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "nodal_progression_pcwg3"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 353,
+    "mentioned_element": "Nodal_Progression_Date",
+    "mapped_element": "marios_outcome_content:r26",
+    "destination": "response_assessment.nodal_progression_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.nodal_progression_date"
+    },
+    "node": "response_assessment",
+    "property": "nodal_progression_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "nodal_progression_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 353,
+    "mentioned_element": "Nodal_Progression_Location",
+    "mapped_element": "marios_outcome_content:r27",
+    "destination": "response_assessment.nodal_progression_location",
+    "v0_2_destination": {
+      "destination": "response_assessment.nodal_progression_location"
+    },
+    "node": "response_assessment",
+    "property": "nodal_progression_location",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "nodal_progression_location"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 355,
+    "mentioned_element": "Bone_Progression_PCWG3",
+    "mapped_element": "marios_outcome_content:r32",
+    "destination": "response_assessment.bone_progression_pcwg3",
+    "v0_2_destination": {
+      "destination": "response_assessment.bone_progression_pcwg3"
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_pcwg3",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_pcwg3"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 355,
+    "mentioned_element": "Bone_Progression_Date",
+    "mapped_element": "marios_outcome_content:r33",
+    "destination": "response_assessment.bone_progression_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.bone_progression_date"
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 355,
+    "mentioned_element": "Bone_Progression_Confirmed_Date",
+    "mapped_element": "marios_outcome_content:r34",
+    "destination": "response_assessment.bone_progression_confirmed_date",
+    "v0_2_destination": {
+      "destination": "response_assessment.bone_progression_confirmed_date"
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_confirmed_date",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_confirmed_date"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 356,
+    "mentioned_element": "Bone_Scan_Flare",
+    "mapped_element": "marios_outcome_content:r35",
+    "destination": "response_assessment.bone_scan_flare",
+    "v0_2_destination": {
+      "destination": "response_assessment.bone_scan_flare"
+    },
+    "node": "response_assessment",
+    "property": "bone_scan_flare",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_scan_flare"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 356,
+    "mentioned_element": "Bone_Progression_Criteria_Used",
+    "mapped_element": "marios_outcome_content:r36",
+    "destination": "response_assessment.bone_progression_criteria_used",
+    "v0_2_destination": {
+      "destination": "response_assessment.bone_progression_criteria_used"
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_criteria_used",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_criteria_used"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 357,
+    "mentioned_element": "Mixed_Response",
+    "mapped_element": "marios_outcome_content:r38",
+    "destination": "response_assessment.mixed_response",
+    "v0_2_destination": {
+      "destination": "response_assessment.mixed_response"
+    },
+    "node": "response_assessment",
+    "property": "mixed_response",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "mixed_response"
+      }
+    ]
+  },
+  {
+    "source_sheet": "Lu-177 PSMA Data Model",
+    "source_row": 357,
+    "mentioned_element": "Mixed_Response_Sites",
+    "mapped_element": "marios_outcome_content:r39",
+    "destination": "response_assessment.mixed_response_sites",
+    "v0_2_destination": {
+      "destination": "response_assessment.mixed_response_sites"
+    },
+    "node": "response_assessment",
+    "property": "mixed_response_sites",
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "mixed_response_sites"
+      }
+    ]
+  }
+]

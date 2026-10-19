@@ -1,0 +1,29 @@
+{
+  "*type": "dose_summary",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "*anatomic_targets": {
+    "submitter_id": null
+  },
+  "*component_doses": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*cumulative_dose_gy": null,
+  "*aggregation_method": null,
+  "included_cycle_numbers": null,
+  "dose_distribution_statistic": null,
+  "lesion_selection_rule": null,
+  "coverage_description": null
+}

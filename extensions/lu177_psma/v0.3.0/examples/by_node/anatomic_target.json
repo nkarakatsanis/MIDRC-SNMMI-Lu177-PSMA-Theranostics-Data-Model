@@ -1,0 +1,41 @@
+[
+  {
+    "submitter_id": "JOURNEY-TARGET-LESION-2",
+    "model_version": "0.3.0-proposal",
+    "target_identifier": "JOURNEY-LESION-2",
+    "target_type": "lesion",
+    "anatomic_location": "Second synthetic lesion",
+    "type": "anatomic_target",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ANATOMIC_TARGET",
+    "model_version": "0.3.0-proposal",
+    "target_identifier": "SYN-KIDNEY-R",
+    "target_type": "organ",
+    "anatomic_location": "Right kidney",
+    "type": "anatomic_target",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TARGET-LESION-1",
+    "model_version": "0.3.0-proposal",
+    "target_identifier": "SYN-LESION-1",
+    "target_type": "lesion",
+    "anatomic_location": "Synthetic pelvic lesion",
+    "type": "anatomic_target",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "case_ids": null,
+  "core_metadata_collections": {
+    "submitter_id": null
+  },
+  "*data_category": null,
+  "*data_format": null,
+  "*data_type": null,
+  "dicom_header_file_guid": null,
+  "*file_name": null,
+  "*file_size": null,
+  "image_data_modification_method": null,
+  "image_data_modification_name": null,
+  "image_data_modified": null,
+  "imaging_studies": {
+    "submitter_id": null
+  },
+  "lossy_image_compression": null,
+  "manufacturer": null,
+  "manufacturer_model_name": null,
+  "*md5sum": null,
+  "modality": null,
+  "number_of_instances": null,
+  "object_id": null,
+  "project_id": null,
+  "region_spatial_format": null,
+  "series_description": null,
+  "series_uid": null,
+  "*submitter_id": null,
+  "transducer_type": null,
+  "*type": "us_series_file"
+}

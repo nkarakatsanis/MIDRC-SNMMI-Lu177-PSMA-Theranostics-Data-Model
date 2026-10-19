@@ -1,0 +1,16 @@
+[
+  {
+    "submitter_id": "SYN-SCANNER",
+    "model_version": "0.3.0-proposal",
+    "device_identifier": "SYNTHETIC-SPECT",
+    "device_type": "SPECT/CT",
+    "manufacturer": "Synthetic vendor",
+    "manufacturer_model_name": "Example system",
+    "type": "scanner",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  }
+]
