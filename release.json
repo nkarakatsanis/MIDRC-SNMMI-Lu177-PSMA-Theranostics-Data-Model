@@ -1,15 +1,15 @@
 {
   "name": "SNMMI-MIDRC Lu177-PSMA theranostics data model",
-  "release_version": "0.3.0",
-  "git_tag": "v0.3.0",
-  "release_title": "0.3.0",
-  "release_date": "2026-10-16",
+  "release_version": "0.3.1",
+  "git_tag": "v0.3.1",
+  "release_title": "0.3.1",
+  "release_date": "2026-10-19",
   "status": "Development release; technical proposal for review",
   "repository": "https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model",
   "default_branch": "cdis",
   "model_directory": "extensions/lu177_psma/v0.3.0",
   "model_artifact_revision": "0.3.0-proposal",
-  "version_policy": "Release 0.3.0 packages the working-artifact revision 0.3.0-proposal. The proposal label describes development status; it is not a suffix on the GitHub release version.",
+  "version_policy": "Release 0.3.1 corrects documentation and packaging for the unchanged 0.3.0-proposal model. The v0.3.0 tag and original downloads remain unchanged. Standalone Word and HTML artifacts retain their v0.3.0 filenames and contents.",
   "baseline_source_parent_commit": "bee947238381704486ccd12beeb8f4689fb22843",
   "pinned_compiled_dictionary": {
     "url": "https://data.midrc.org/api/v0/submission/_dictionary/_all",
@@ -36,5 +36,9 @@
     ],
     "order_source": "User-specified SNMMI abstract order",
     "status": "tentative; not an assertion of author approval"
-  }
+  },
+  "release_kind": "Documentation-only patch",
+  "previous_release": "0.3.0",
+  "standalone_document_version": "0.3.0",
+  "model_schema_changed": false
 }

@@ -1,6 +1,6 @@
 # Toxicity Event (`toxicity_event`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Individual adverse-event assessment with CTCAE version, term, grade and attribution.
 

@@ -1,6 +1,6 @@
 # Radiology Report (`radiology_report`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A detailed report that describes the results of an imaging test. A radiology report can include narrative information about the type of imaging test that was done, how it was done, and any labels representing the results of the test.
 

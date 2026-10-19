@@ -47,6 +47,10 @@ jobs:
             echo "Tag already exists; existing tags are never moved."
             exit 1
           fi
+          # Authorized documentation correction; original tag and assets stay intact.
+          if [ "$release_version" = "0.3.1" ]; then
+            gh release edit v0.3.0 --notes-file releases/0.3.0.md
+          fi
           gh release create "$release_tag" \
             --target "$GITHUB_SHA" \
             --title "$release_version" \

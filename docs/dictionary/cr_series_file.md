@@ -1,6 +1,6 @@
 # CR Series File (`cr_series_file`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A package of image files and metadata related to a CR imaging series to which one or more computed radiograph (CR) instances belong.
 

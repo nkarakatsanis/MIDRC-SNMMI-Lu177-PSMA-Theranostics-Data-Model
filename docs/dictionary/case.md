@@ -1,6 +1,6 @@
 # Case (`case`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 The collection of all data related to a specific patient or case in the context of a specific dataset or experiment.
 

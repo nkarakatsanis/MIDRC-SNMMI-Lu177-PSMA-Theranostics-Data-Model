@@ -436,6 +436,10 @@ Additional supplied project sources: NMMI Data Models Lu177-PSMA May2026.xlsx; t
 
 MIDRC schema content is reused under Apache License 2.0. The license, source attribution and modification notice accompany the package. LOINC and the external ontologies retain their own governance and terms. Gen3/MIDRC interface and terminology references were checked for this revision on 16 October 2026; clinical source reviews carried forward from version 0.2 remain identified in the review log.
 
+## Documentation patch 0.3.1
+
+Repository release 0.3.1 clarifies baseline provenance and tag history. The architecture described here, its Word document and HTML explorer, and all model files retain their v0.3.0 content. See [patch notes](../releases/0.3.1.md).
+
 ## Repository baseline reconciliation
 
 The repository source before this upload is commit `bee947238381704486ccd12beeb8f4689fb22843` on `cdis`. It includes a custom optional `pt_series_file.mr_images` boolean. That field is absent from the deployed baseline used by this proposal. The imported source is preserved, and any future application of the proposal to it must reconcile the PET/MR flag and other source-version differences explicitly. The proposed typed MR file relationships are documented separately; this release does not silently replace the custom flag.

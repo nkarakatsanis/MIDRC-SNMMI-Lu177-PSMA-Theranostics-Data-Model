@@ -1,6 +1,6 @@
 # Toxicity Summary (`toxicity_summary`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Maximum grade for one toxicity term over an explicit assessment window, linked to event evidence.
 

@@ -1,6 +1,6 @@
 # Condition (`condition`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information pertaining to relevant medical condition(s) of a case's subject (e.g., medical diagnoses, diseases, disorders, symptoms, injuries, illnesses, comorbidities) recorded in the process of clinical care (e.g., data extracted from the electronic medical record).
 

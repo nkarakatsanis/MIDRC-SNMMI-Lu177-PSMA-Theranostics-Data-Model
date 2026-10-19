@@ -1,6 +1,6 @@
 # Survival Outcome (`survival_outcome`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Time-to-event result with explicit origin, event definition, event indicator and censoring date.
 

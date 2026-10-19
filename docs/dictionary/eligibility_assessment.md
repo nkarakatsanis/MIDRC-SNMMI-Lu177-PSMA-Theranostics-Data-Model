@@ -1,6 +1,6 @@
 # Eligibility assessment (`eligibility_assessment`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A documented eligibility decision against a specified protocol or clinical criteria version, with supporting patient evidence.
 

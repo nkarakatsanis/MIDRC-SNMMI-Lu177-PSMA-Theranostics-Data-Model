@@ -1,6 +1,6 @@
 # Observation (`observation`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information about the subject obtained in the context of examination, questioning or during a procedure.
 

@@ -1,6 +1,6 @@
 # Scanner (`scanner`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Scanner or activity meter identity, independent of patient encounters.
 

@@ -1,6 +1,6 @@
 # Anatomic Target (`anatomic_target`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Persistent lesion or organ identity across scans and cycles. This identifier is distinct from any contour identifier.
 

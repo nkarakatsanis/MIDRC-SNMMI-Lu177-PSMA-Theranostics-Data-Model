@@ -43,10 +43,13 @@ def main():
     if any(output.iterdir()):
         raise SystemExit('Output directory must be empty; existing assets will not be overwritten.')
 
+    document_version = metadata.get('standalone_document_version', version)
+    if not re.fullmatch(r'\d+\.\d+\.\d+', document_version):
+        raise SystemExit('Invalid standalone document version.')
     filenames = [
-        ('NMMI_Model_Explorer.html', f'NMMI_Model_Explorer_v{version}.html'),
+        ('NMMI_Model_Explorer.html', f'NMMI_Model_Explorer_v{document_version}.html'),
         ('NMMI_Lu177_PSMA_Architecture_and_Status.docx',
-         f'NMMI_Lu177_PSMA_Architecture_and_Status_v{version}.docx'),
+         f'NMMI_Lu177_PSMA_Architecture_and_Status_v{document_version}.docx'),
     ]
     for source, destination in filenames:
         shutil.copyfile(model / source, output / destination)

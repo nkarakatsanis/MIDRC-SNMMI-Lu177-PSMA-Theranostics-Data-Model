@@ -1,6 +1,6 @@
 # Treatment Plan (`treatment_plan`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Versioned physician-approved treatment intent or adaptation, with evidence links and planned activity.
 

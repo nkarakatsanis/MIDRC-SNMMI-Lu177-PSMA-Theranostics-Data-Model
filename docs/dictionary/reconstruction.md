@@ -1,6 +1,6 @@
 # Reconstruction (`reconstruction`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 One reconstruction or processing execution with software version and input data.
 

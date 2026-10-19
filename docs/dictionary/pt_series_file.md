@@ -1,6 +1,6 @@
 # PT Series File (`pt_series_file`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information related to a PT imaging series to which one or more positron emission tomography (PET) images belong.
 

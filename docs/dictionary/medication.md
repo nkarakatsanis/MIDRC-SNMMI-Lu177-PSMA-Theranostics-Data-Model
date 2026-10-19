@@ -1,6 +1,6 @@
 # Medication (`medication`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information related to medication prescribed, dispensed or administered to the case.
 

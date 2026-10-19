@@ -1,6 +1,6 @@
 # Dosimetry (`dosimetry`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Dosimetry computation with inputs, integration method, mass model, uncertainty and software version.
 

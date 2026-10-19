@@ -1,4 +1,4 @@
-# Human-readable data dictionary — 0.3.0
+# Human-readable data dictionary — 0.3.1
 
 **67 node types · 2,519 node/property entries · 293 relationships.** Shared properties are counted once per node, not as distinct clinical concepts.
 

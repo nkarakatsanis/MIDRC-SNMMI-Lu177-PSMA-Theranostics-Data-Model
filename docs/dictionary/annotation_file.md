@@ -1,6 +1,6 @@
 # Annotation File (`annotation_file`)
 
-Release **0.3.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 The annotation_file node provides the ability to link a file containing annotation information to a case, imaging study or imaging series.
 
