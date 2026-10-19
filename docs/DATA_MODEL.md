@@ -1,6 +1,6 @@
 # Lu177-PSMA data model: architecture and use cases
 
-Repository release **0.3.0**. This page transcribes the author-supplied v0.3.0 architecture document; the source Word file is [available here](../extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx). The working-artifact proposal status is retained.
+Repository and documentation release **0.3.2**, with model schema revision **0.3.0-proposal**. This page follows the architecture document, updated from the author-supplied file; the revised Word document is [available here](../extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx).
 
 **tentative authors list**
 
@@ -8,7 +8,7 @@ Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abh
 
 Prepared for the Lu177-PSMA data model working group within the SNMMI AI Task Force and Computational Nuclear Ontology Working Groups, with a technical handoff for MIDRC Gen3 developers.
 
-This revision makes the proposed model an additive extension of the deployed MIDRC dictionary. It reuses MIDRC record types and property definitions for images, measurements, observations and annotations, while preserving the theranostics course, cycle, dose, safety and outcome relationships. Graph views, table views and JSON schemas are generated from the same structure.
+The proposed model is an additive extension of the deployed MIDRC dictionary. It reuses MIDRC record types and property definitions for images, measurements, observations and annotations, while preserving the theranostics course, cycle, dose, safety and outcome relationships. Graph views, table views and JSON schemas are generated from the same structure.
 
 | Revision result | Scope |
 | --- | --- |
@@ -67,7 +67,7 @@ Retain source labels, approve a dictionary definition and representation, then b
 
 ## Reuse of the MIDRC foundation
 
-The baseline is the deployed MIDRC dictionary retrieved on 16 October 2026: version 1.4.3-2-g7505333, commit 7505333d56c87a289463a814131e38d0f2be6674. The complete snapshot, SHA-256, original uploaded templates and change audit are included. Existing node metadata, required lists, types, definitions, relationship multiplicities and subgroup rules are preserved. [2, 3]
+Lu177-PSMA theranostics data model release 0.3.0 extends the deployed MIDRC Gen3 dictionary version `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674`, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release. Existing node metadata, required lists, types, definitions, relationship multiplicities and subgroup rules are preserved. [2, 3]
 
 | Earlier proposal | Canonical version 0 3 structure |
 | --- | --- |
@@ -354,7 +354,7 @@ The integration folder supplies the exact additive patch, node/property delta, s
 | Verify retrieval | Check graph/table views, link/backref queries, file access, export, record revisions and existing MIDRC regression data. |
 | Release review | Adjudicate clinical semantics and ontology mappings using representative de-identified cases before production adoption. |
 
-The merged _settings retains the original MIDRC baseline provenance. The extension version is recorded separately in release_manifest.json. The receiving build must assign its own dictionary version and commit; the baseline commit must not be presented as the commit of a new deployed release.
+The merged _settings retains the original MIDRC baseline provenance. The model schema revision remains 0.3.0-proposal in release_manifest.json; repository and document release 0.3.2 are recorded separately in the root release.json and documentation metadata. The receiving build must assign its own dictionary version and commit; the baseline commit must not be presented as the commit of a new deployed release.
 
 ### Proposed review responsibilities
 
@@ -398,7 +398,7 @@ The 122-record invented patient journey covers 55 used node types. A separate se
 | Outcome revision | 94 revised spreadsheet elements and 65 paper-table occurrences retained; source conflicts remain visible. |
 | Technical tests | Local checks pass; live Gen3 compilation, ingestion, indexing and portal rendering remain unverified. |
 | Clinical and semantic review | 65 review items include historical findings and new integration decisions; not all are proven errors or unresolved technical failures. |
-| Dissemination plans | The team has described a working GitHub release in November and a journal publication goal by end 2026; these are intentions, not completed milestones. |
+| Dissemination plans | The initial GitHub release 0.3.0 was published on 16 October 2026. Documentation release 0.3.2 accompanies this document. Journal publication by the end of 2026 remains an aim. |
 
 The earlier abstract’s 256-element/21-category snapshot and the expanded workbook counts describe different stages and units of counting. Source occurrences, unique concepts, node properties and navigation domains must not be reported interchangeably. The current source catalog includes repeated entries and aliases; it does not claim 921 approved concepts.
 
@@ -436,9 +436,11 @@ Additional supplied project sources: NMMI Data Models Lu177-PSMA May2026.xlsx; t
 
 MIDRC schema content is reused under Apache License 2.0. The license, source attribution and modification notice accompany the package. LOINC and the external ontologies retain their own governance and terms. Gen3/MIDRC interface and terminology references were checked for this revision on 16 October 2026; clinical source reviews carried forward from version 0.2 remain identified in the review log.
 
-## Documentation patch 0.3.1
+## Documentation patch 0.3.2
 
-Repository release 0.3.1 clarifies baseline provenance and tag history. The architecture described here, its Word document and HTML explorer, and all model files retain their v0.3.0 content. See [patch notes](../releases/0.3.1.md).
+Repository release 0.3.1 clarified baseline provenance and tag history. Release 0.3.2 incorporates those clarifications into the Word document and HTML explorer, with matching documentation labels. The model schemas and definitions remain unchanged. See [patch notes](../releases/0.3.2.md).
+
+The initial theranostics model release is tagged v0.3.0. Inherited MIDRC tags have been removed from this repository. Documentation patches use v0.3.1 and v0.3.2; earlier release tags and their original downloads remain unchanged.
 
 ## Repository baseline reconciliation
 

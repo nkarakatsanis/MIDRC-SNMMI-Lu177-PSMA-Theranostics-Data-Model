@@ -5,5 +5,12 @@
   "authorship_order_in_guides": true,
   "individual_schemas": 67,
   "expanded_original_templates": 5,
-  "files_before_checksum_manifest": 423
+  "files_before_checksum_manifest": 426,
+  "documentation_release": "0.3.2",
+  "model_schema_revision": "0.3.0-proposal",
+  "model_schema_files_unchanged": true,
+  "html_model_json_and_application_javascript_unchanged": true,
+  "word_document_rendered_pages": 20,
+  "documentation_baseline_statement_verified": true,
+  "baseline_snapshot_sha256_verified": true
 }

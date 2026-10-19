@@ -1,6 +1,6 @@
 # Response Assessment (`response_assessment`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Criteria-specific biochemical, imaging or clinical response assessment with baseline and follow-up evidence.
 

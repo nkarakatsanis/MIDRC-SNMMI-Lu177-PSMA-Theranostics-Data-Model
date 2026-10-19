@@ -6,6 +6,8 @@ Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abh
 
 Version 0.3.0-proposal, 16 October 2026. This package proposes an additive theranostics extension to the deployed MIDRC dictionary. The architecture document and offline HTML explain the model and the patient journey. Technical acceptance by MIDRC and terminology-owner approval remain separate steps.
 
+The Word and HTML documentation were updated for repository release **0.3.2** on 19 October 2026, including baseline provenance and release/tag history. The model schema revision remains **0.3.0-proposal**, so this directory name is retained. See the [0.3.2 release notes](../../../releases/0.3.2.md).
+
 ## Start here
 
 - `NMMI_Model_Explorer.html`: graph, node tables, source crosswalk, patient journey, use cases, outcome framework, integration audit and the conceptual layers.

@@ -1,20 +1,20 @@
 # SNMMI-MIDRC Lu177-PSMA theranostics data model
 
-**Release 0.3.1** · A proposed expansion of the baseline MIDRC Gen3 data model and data dictionary.
+**Release 0.3.2** · A proposed expansion of the baseline MIDRC Gen3 data model and data dictionary.
 
 This project structures the imaging, clinical, treatment, dosimetry and outcome evidence needed to study personalized Lu177-PSMA therapy. Its graph, table and JSON views describe the same nodes, properties and relationships. Development is led within the SNMMI AI Task Force and Computational Nuclear Ontology Working Groups. The model and its NucLex alignment remain under development; this repository does not assert institutional adoption or a deployed MIDRC extension.
 
-Release **0.3.1** is a documentation-only patch: it makes the MIDRC baseline explicit in the release history and corrects tag wording. The model schemas, architecture Word document and HTML explorer remain at **v0.3.0**; their contents are unchanged.
+Release **0.3.2** updates the Word architecture document and HTML explorer with the exact MIDRC baseline, corrected tag history and matching documentation version labels. The model schema revision remains **0.3.0-proposal**; node structures, relationships and field definitions are unchanged.
 
 ## Start here
 
 | Resource | What it contains |
 | --- | --- |
-| [Release 0.3.1](https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model/releases/tag/v0.3.1) | Downloadable model archive, standalone HTML and Word documentation. |
+| [Release 0.3.2](https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model/releases/tag/v0.3.2) | Downloadable model archive, standalone HTML and Word documentation. |
 | [Human-readable architecture](docs/DATA_MODEL.md) | Domains, patient journey, use cases, MIDRC reuse, OMOP candidates and semantic-layer distinctions. |
 | [Field-by-field data dictionary](docs/dictionary/README.md) | Definitions, types, required fields, allowed values and link rules for all 67 nodes and 2,519 node/property entries. |
 | [Interactive model explorer](extensions/lu177_psma/v0.3.0/NMMI_Model_Explorer.html) | Graph and table views, element search, mappings, patient journey and use cases. Download the HTML and open it locally. |
-| [Architecture document](extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx) | The author's supplied v0.3.0 Word document, preserved exactly. |
+| [Architecture document](extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx) | Architecture document revised from the author-supplied file for documentation release 0.3.2. |
 | [Node catalog](docs/NODE_CATALOG.md) | All 67 nodes with their role, property count and JSON/YAML/template links. |
 | [Domain index](docs/DOMAINS.md) | The 24 domain navigation groups and their reusable node types. |
 | [Developer integration guide](extensions/lu177_psma/v0.3.0/integration/MIDRC_Integration_Guide.md) | Additive changes, mappings, validation and implementation review. |
@@ -97,20 +97,21 @@ Local checks cover 67 schemas and templates, baseline preservation, the additive
 
 The field-level Markdown pages are generated from the same committed schemas. Regenerate them with `python scripts/build_dictionary_docs.py` after schema changes. Build the release downloads with `python scripts/build_release_assets.py --output dist`.
 
-Live Gen3 compilation, database migration, submission API ingestion, portal rendering and real clinical data remain unvalidated. Clinical and terminology-owner review is still required. The prior HTML checks used DOM emulation, and the attached Word revision retains the author's formatting.
+Live Gen3 compilation, database migration, submission API ingestion, portal rendering and real clinical data remain unvalidated. Clinical and terminology-owner review is still required. HTML interaction checks use DOM emulation; the revised Word document is rendered and visually reviewed, with the author's layout retained.
 
 ## Versioning
 
 | Item | Identifier |
 | --- | --- |
-| This repository release | **0.3.1**, recorded in [`VERSION`](VERSION) and [`release.json`](release.json) |
-| Current repository Git tag | `v0.3.1` (documentation-only patch) |
+| This repository release | **0.3.2**, recorded in [`VERSION`](VERSION) and [`release.json`](release.json) |
+| Current repository Git tag | `v0.3.2` (documentation-only patch) |
+| Word and HTML documentation | `0.3.2`; revised baseline and release-history presentation |
 | Initial theranostics model tag | `v0.3.0` |
 | Packaged working-artifact revision | `0.3.0-proposal`; “proposal” describes its review status |
 | Pinned deployed MIDRC dictionary | `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674` |
 | Imported repository parent | `bee947238381704486ccd12beeb8f4689fb22843` |
 
-The initial theranostics model release is tagged `v0.3.0`. Inherited MIDRC tags have since been removed from this repository. The documentation-only patch is tagged `v0.3.1`; the existing `v0.3.0` tag and its original downloads remain unchanged. Future versions should document breaking, additive and cosmetic changes, while model, baseline-dictionary and terminology/ontology versions remain independently identifiable. The original `pyproject.toml` describes the imported baseline Python package, not the new repository release.
+The initial theranostics model release is tagged `v0.3.0`. Inherited MIDRC tags have since been removed from this repository. Documentation patches are tagged `v0.3.1` and `v0.3.2`; earlier release tags and their original downloads remain unchanged. Future versions should document breaking, additive and cosmetic changes, while model, baseline-dictionary and terminology/ontology versions remain independently identifiable. The original `pyproject.toml` describes the imported baseline Python package, not the new repository release.
 
 ## Authorship and attribution
 

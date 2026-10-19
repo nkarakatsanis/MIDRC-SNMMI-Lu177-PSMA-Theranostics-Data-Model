@@ -1,6 +1,6 @@
 # Laboratory Panel (`laboratory_panel`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Panel collection and temporal metadata. Atomic analyte results are child records.
 

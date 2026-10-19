@@ -1,5 +1,16 @@
 # Lu177-PSMA release history
 
+## 0.3.2 — 2026-10-19
+
+Documentation-only follow-up updating the attached Word and HTML files.
+
+- Add the precise MIDRC baseline statement and corrected release/tag history to both artifacts.
+- Use documentation release 0.3.2 in the Word cover/footer, HTML header and download filenames; retain schema revision 0.3.0-proposal.
+- Retain the existing repository document paths and refresh document provenance, validation records and checksums.
+- Preserve model schemas, templates, graph data, examples, source snapshots and all earlier release tags/assets.
+
+Lu177-PSMA theranostics data model release 0.3.0 extends the deployed MIDRC Gen3 dictionary version `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674`, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release.
+
 ## 0.3.1 — 2026-10-19
 
 Documentation-only patch of the 0.3.0 development release.

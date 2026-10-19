@@ -1,6 +1,6 @@
 # Disease burden (`disease_burden`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Patient- or compartment-level quantitative imaging summary derived from a specified examination and included lesions.
 

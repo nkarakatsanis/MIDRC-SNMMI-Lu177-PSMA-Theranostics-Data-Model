@@ -1,4 +1,5 @@
 {
+  "documentation_release": "0.3.2",
   "status": "PASS",
   "environment": "LinkeDOM DOM emulation; not a browser rendering test",
   "checks": [
@@ -28,7 +29,8 @@
     "All five use cases, sample-record inspection and schema navigation",
     "Outcome revision opens the full revised-field crosswalk",
     "Use case opens lesion-dose graph",
-    "Exact tentative author order visible"
+    "Exact tentative author order visible",
+    "Documentation 0.3.2 and release history, exact baseline commit and checksum"
   ],
   "limitations": [
     "Browser rendering was not available in this environment. Responsive CSS and graphical layout require review in a desktop browser."

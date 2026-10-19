@@ -1,12 +1,20 @@
 {
-  "status": "AUTHOR_SUPPLIED_REVISION_PRESERVED",
-  "document_sha256": "f1633b5c3131f678271087db97da016895f10c58d1082c39b46eacba016c8dbe",
-  "source": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.0.docx, supplied by the user",
+  "status": "PASS",
+  "documentation_release": "0.3.2",
+  "model_schema_revision": "0.3.0-proposal",
+  "source": "Author-supplied NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.0(1).docx",
+  "source_sha256": "f1633b5c3131f678271087db97da016895f10c58d1082c39b46eacba016c8dbe",
+  "document_sha256": "f8bf181ed7c3ff62b0343d19dc94bd1bafce0b520e3d331f3ba562c02f4dfe32",
+  "pages": 20,
+  "visual_layout_revalidated": true,
   "checks": [
-    "Exact byte preservation of the attached document",
-    "Paragraph-text comparison against generated v0.3.0: corrected spacing in the title; other paragraph text unchanged"
+    "Rendered all 20 pages to PNG and visually inspected them",
+    "Corrected a clipped example-path line on page 14 and outdated publication-plan text on page 18; rerendered and inspected both pages",
+    "Confirmed the remaining 18 final page PNGs are byte-identical to the visually reviewed render",
+    "Verified exact baseline statement, full commit, retrieval date and SHA-256",
+    "Verified documentation version, release/tag history and live PAGE footer fields",
+    "Verified tentative authors list and author order",
+    "Preserved clinical content, tables, figures and schema revision"
   ],
-  "visual_layout_revalidated": false,
-  "previous_layout_report": "document_check_previous_export.json",
-  "note": "The author-supplied formatting is preserved; the earlier 19-page visual inspection applies to the previous generated export."
+  "note": "Documentation-only revision; no changes to model schemas or clinical definitions."
 }

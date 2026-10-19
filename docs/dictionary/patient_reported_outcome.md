@@ -1,6 +1,6 @@
 # Patient Reported Outcome (`patient_reported_outcome`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Patient-reported pain, quality of life or functional assessment with instrument and scoring context.
 

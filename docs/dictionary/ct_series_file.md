@@ -1,6 +1,6 @@
 # CT Series File (`ct_series_file`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A package of image files and metadata related to a CT imaging series to which one or more computed tomography instances belong.
 

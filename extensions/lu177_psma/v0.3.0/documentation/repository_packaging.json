@@ -1,23 +1,27 @@
 {
-  "packaging_date": "2026-10-16",
+  "packaging_date": "2026-10-19",
   "model_version": "0.3.0-proposal",
   "repository_title": "SNMMI-MIDRC Lu177-PSMA theranostics data model",
   "requested_repository_slug": "MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model",
   "schema_changes_in_this_packaging": false,
   "user_documents": [
     {
-      "attached_filename": "NMMI_Model_Explorer_v0.3.html",
+      "attached_filename": "NMMI_Model_Explorer_v0.3(1).html",
       "package_path": "extensions/lu177_psma/v0.3.0/NMMI_Model_Explorer.html",
-      "standalone_filename": "NMMI_Model_Explorer_v0.3.0.html",
-      "sha256": "acb27a7f0dac90d4815e3d072b27b0c81ff2e2aa70b4699770e4bfaee613ccc7",
-      "preserved_byte_for_byte": true
+      "standalone_filename": "NMMI_Model_Explorer_v0.3.2.html",
+      "sha256": "6a7157f554dcfb9e76d911225015d22ac78b1a174c7335d781cf7ab6d793a70e",
+      "preserved_byte_for_byte": false,
+      "source_sha256": "acb27a7f0dac90d4815e3d072b27b0c81ff2e2aa70b4699770e4bfaee613ccc7",
+      "changes": "Documentation version, exact MIDRC baseline statement and corrected release history"
     },
     {
-      "attached_filename": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.0.docx",
+      "attached_filename": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.0(1).docx",
       "package_path": "extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx",
-      "standalone_filename": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.0.docx",
-      "sha256": "f1633b5c3131f678271087db97da016895f10c58d1082c39b46eacba016c8dbe",
-      "preserved_byte_for_byte": true
+      "standalone_filename": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.3.2.docx",
+      "sha256": "f8bf181ed7c3ff62b0343d19dc94bd1bafce0b520e3d331f3ba562c02f4dfe32",
+      "preserved_byte_for_byte": false,
+      "source_sha256": "f1633b5c3131f678271087db97da016895f10c58d1082c39b46eacba016c8dbe",
+      "changes": "Documentation version, exact MIDRC baseline statement, corrected release history and publication status; example-path line wrap"
     }
   ],
   "upstream_reference_inspected": {
@@ -28,8 +32,10 @@
     "note": "The source reference and pinned deployed compiled dictionary have different histories. The receiving personal repository was inspected separately at baseline_source_parent_commit."
   },
   "repository": "https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model",
-  "release_version": "0.3.0",
-  "release_tag": "v0.3.0",
+  "release_version": "0.3.2",
+  "release_tag": "v0.3.2",
   "baseline_source_parent_commit": "bee947238381704486ccd12beeb8f4689fb22843",
-  "receiving_source_note": "The cdis branch contains an existing optional pt_series_file.mr_images boolean not present in the pinned deployed baseline. Original gdcdictionary files remain unchanged; reconcile this field before applying the proposal to that source tree."
+  "receiving_source_note": "The cdis branch contains an existing optional pt_series_file.mr_images boolean not present in the pinned deployed baseline. Original gdcdictionary files remain unchanged; reconcile this field before applying the proposal to that source tree.",
+  "documentation_revision": "0.3.2",
+  "documentation_change": "Baseline provenance and release history; model schemas unchanged"
 }

@@ -1,6 +1,6 @@
 # DICOM Annotation Series File (`dicom_annotation_file`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 The dicom_annotation_file node provides the ability to link a DICOM series file containing annotation information to an imaging study.
 

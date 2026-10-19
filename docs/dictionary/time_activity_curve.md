@@ -1,6 +1,6 @@
 # Time Activity Curve (`time_activity_curve`)
 
-Release **0.3.1** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Time-activity fit or sampled curve for a persistent target and administration.
 
