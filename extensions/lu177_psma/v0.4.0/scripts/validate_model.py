@@ -285,7 +285,7 @@ def main():
         baseerrs=list(jsonschema.Draft4Validator(s).iter_errors(r));newerrs=list(jsonschema.Draft4Validator(S[n]).iter_errors(r))
         if baseerrs or newerrs:errors.append('Baseline fixture validation '+n+': '+str([e.message for e in baseerrs+newerrs]))
         fixtures.append(r)
-    (ROOT/'examples/midrc_baseline_regression_fixtures.json').write_text(json.dumps({'note':'Independent schema regression fixtures; not a connected submission bundle or real data.','records':fixtures},indent=2)+'\n')
+    (ROOT/'examples/midrc_baseline_regression_fixtures.json').write_text(json.dumps({'note':'Independent schema regression fixtures; not a connected submission bundle or real data.','records':fixtures},indent=2)+'\n', encoding='utf-8', newline='\n')
     checks['baseline_regression_fixtures']=len(fixtures)
     negative={}
     def get(rr,n):return next(r for r in rr if r['type']==n)
@@ -361,5 +361,5 @@ def main():
         if any(i not in ids for i in item['record_ids']):errors.append('Unresolved journey record reference')
     checks['journey_stages']=len(guide['steps']);checks['use_cases']=len(guide['use_cases'])
     report={'status':'PASS' if not errors else 'FAIL','checks':checks,'errors':errors,'not_validated':['Live Gen3 dictionaryutils/data-model build, migration, submission API ingestion, authorization and portal rendering','Clinical completeness and treatment-decision safety; local profile checks are not a clinical criteria engine','NucLex/RadLex binding approval, full LOINC assay mapping, term-specific CTCAE grades, PCWG release-specific algorithms','SOP-class-specific DICOM extraction, actual file bytes/checksums, Indexd registration, object-store access','Real patient data or extraction interfaces']}
-    (ROOT/'validation/validation_report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return bool(errors)
+    (ROOT/'validation/validation_report.json').write_text(json.dumps(report,indent=2)+'\n', encoding='utf-8', newline='\n');print(json.dumps(report,indent=2));return bool(errors)
 if __name__=='__main__':sys.exit(main())

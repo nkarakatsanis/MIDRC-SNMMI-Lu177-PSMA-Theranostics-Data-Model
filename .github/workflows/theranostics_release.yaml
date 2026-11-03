@@ -3,7 +3,7 @@ name: Publish theranostics model release
 on:
   push:
     branches: [cdis]
-    paths: [VERSION]
+    paths: [VERSION, .github/workflows/theranostics_release.yaml]
   workflow_dispatch:
 
 permissions:
