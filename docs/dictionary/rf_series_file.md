@@ -1,6 +1,6 @@
 # RF Series File (`rf_series_file`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information related to a RF imaging series to which one or more X-ray Radiofluoroscopic image belong.
 
@@ -14,7 +14,7 @@ Information related to a RF imaging series to which one or more X-ray Radiofluor
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/rf_series_file.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/rf_series_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_rf_series_file_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/rf_series_file.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/rf_series_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_rf_series_file_template.json)
 
 ## Relationships
 

@@ -1,0 +1,44 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+procedure,breathing_support_type,False,False,MIDRC unchanged,string,The type of breathing support the patient received.,
+procedure,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+procedure,cases,True,False,MIDRC unchanged,compound,"The submitter_id or id of the case to which this procedure is related, i.e., a link to a record in the parent node.",
+procedure,conditions,False,False,MIDRC unchanged,compound,"The submitter_id or id of the condition to which this procedure is related, i.e., a link to a record in the parent node.",
+procedure,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+procedure,days_to_procedure_end,False,False,MIDRC unchanged,integer,The number of days between the case's index date and the end date of the procedure.,
+procedure,days_to_procedure_start,False,False,MIDRC unchanged,integer,The number of days between the case's index date and the start date of the procedure.,
+procedure,history_of_radiation,False,False,MIDRC unchanged,enum,An indicator confirming a history of radiation.,
+procedure,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+procedure,procedure_name,False,False,MIDRC unchanged,enum,"The name of the procedure performed.
+",
+procedure,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+procedure,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+procedure,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+procedure,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+procedure,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+procedure,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+procedure,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+procedure,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+procedure,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+procedure,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+procedure,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+procedure,prior_radiotherapy_prostate,False,False,Theranostics extension,boolean,History of radiotherapy to the prostate or pelvis.,lu_177_psma_data_model:r98
+procedure,prior_radiotherapy_metastases,False,False,Theranostics extension,boolean,History of radiotherapy to metastatic sites.,lu_177_psma_data_model:r146
+procedure,prior_radiotherapy_site_list,False,False,Theranostics extension,array,List of anatomical sites that received prior radiation therapy.,lu_177_psma_data_model:r147
+procedure,prior_radiotherapy_summary,False,False,Theranostics extension,string,"Free text field to summarize key details of prior radiation, such as completion dates, total doses if available, especially if complex.",lu_177_psma_data_model:r148
+procedure,prior_radiotherapy_type,False,False,Theranostics extension,array,"Type of radiation therapy delivered (e.g., EBRT, IMRT, SBRT, Brachytherapy). May vary by site.",lu_177_psma_data_model:r149
+procedure,prior_surgery,False,False,Theranostics extension,boolean,Specifies if the patient had prior surgery related to prostate cancer.,lu_177_psma_data_model:r152
+procedure,prior_surgery_date,False,False,Theranostics extension,string,Date(s) when prior prostate cancer-related surgery was performed.,lu_177_psma_data_model:r153
+procedure,prior_surgery_type,False,False,Theranostics extension,array,Type(s) of prior surgeries performed for prostate cancer.,lu_177_psma_data_model:r154
+procedure,surgical_method,False,False,Theranostics extension,string,Provisional field for surgical method; operational definition requires review.,atlas_data_elements:r130
+procedure,rt_method,False,False,Theranostics extension,string,Provisional field for RT method; operational definition requires review.,atlas_data_elements:r131
+procedure,procedure_date,False,False,Theranostics extension,string,Date of the actual intervention.,
+procedure,method,False,False,Theranostics extension,string,Intervention method or modality.,
+procedure,provenance_records,False,False,Theranostics extension,compound,,
+procedure,anatomic_targets,False,False,Theranostics extension,compound,,
+procedure,therapy_courses,False,False,Theranostics extension,compound,,
+procedure,procedure_name_source_value,False,False,Theranostics extension,string,Source procedure label when absent from the existing MIDRC procedure_name enumeration; use coded identity where available.,

@@ -1,0 +1,2644 @@
+[
+  {
+    "source_element_id": "outcomes_paper:supplement1:r1",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 1,
+    "source_name": "PSA_Baseline_Definition",
+    "source_definition": "Reference PSA timepoint convention (PCWG3/PCWG4)",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "Screening / Pretreatment / Randomization / Day-of-treatment",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Baseline_Definition",
+        "Reference PSA timepoint convention (PCWG3/PCWG4)",
+        "Categorical",
+        "Screening / Pretreatment / Randomization / Day-of-treatment"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_baseline_definition",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r5",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_baseline_definition"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_baseline_definition"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r2",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 2,
+    "source_name": "PSA_Baseline_Date",
+    "source_definition": "Date of baseline PSA sample",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Baseline_Date",
+        "Date of baseline PSA sample",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_baseline_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r4",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_baseline_date"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_baseline_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r3",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 3,
+    "source_name": "PSA_Nadir_Value",
+    "source_definition": "Lowest PSA during therapy — anchor for progression calculations",
+    "source_data_type": "Numeric (ng/mL)",
+    "source_allowed_values": "e.g., 0.4",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Nadir_Value",
+        "Lowest PSA during therapy — anchor for progression calculations",
+        "Numeric (ng/mL)",
+        "e.g., 0.4"
+      ]
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "fixed_values": {
+      "test_name_source_value": "Total PSA",
+      "measurement_profile": "laboratory",
+      "unit": "ng/mL"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: Resolve the nadir_psa_results relationship and use its canonical numeric measurement. Do not copy the PSA value into the response row.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r6",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_nadir_value"
+    },
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ],
+    "midrc_baseline_reuse": true
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r4",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 4,
+    "source_name": "PSA_Nadir_Date",
+    "source_definition": "Date of PSA nadir",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Nadir_Date",
+        "Date of PSA nadir",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_nadir_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r7",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_nadir_date"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_nadir_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r5",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 5,
+    "source_name": "PSA50_Response",
+    "source_definition": "≥50% PSA decline from baseline confirmed ≥3 weeks later",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA50_Response",
+        "≥50% PSA decline from baseline confirmed ≥3 weeks later",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_response_50_confirmed",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r8",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_response_50_confirmed"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_response_50_confirmed"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r6",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 6,
+    "source_name": "PSA_Best_Response_Pct",
+    "source_definition": "Maximum PSA change from baseline (waterfall variable)",
+    "source_data_type": "Numeric (%)",
+    "source_allowed_values": "e.g., −75%",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Best_Response_Pct",
+        "Maximum PSA change from baseline (waterfall variable)",
+        "Numeric (%)",
+        "e.g., −75%"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_best_response_percent",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r10",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_best_response_percent"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_best_response_percent"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r7",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 7,
+    "source_name": "PSA_Early_Rise_Pre12w",
+    "source_definition": "Early PSA rise within 12 weeks — potential flare; not true progression",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Early_Rise_Pre12w",
+        "Early PSA rise within 12 weeks — potential flare; not true progression",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_early_rise_pre12w",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r11",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_early_rise_pre12w"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_early_rise_pre12w"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r8",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 8,
+    "source_name": "PSA_Progression_PCWG3",
+    "source_definition": "≥25% AND ≥2 ng/mL above nadir, confirmed ≥3 weeks later",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Progression_PCWG3",
+        "≥25% AND ≥2 ng/mL above nadir, confirmed ≥3 weeks later",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_documented",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r12",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_progression_pcwg3_documented"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_documented"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r9",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 9,
+    "source_name": "PSA_Progression_Date",
+    "source_definition": "Date of first value meeting PCWG3/PCWG4 progression criteria",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Progression_Date",
+        "Date of first value meeting PCWG3/PCWG4 progression criteria",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r13",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_progression_pcwg3_date"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r10",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 10,
+    "source_name": "PSA_Progression_Confirmed_Date",
+    "source_definition": "Date of confirmatory value ≥3 weeks later",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PSA",
+        "PSA_Progression_Confirmed_Date",
+        "Date of confirmatory value ≥3 weeks later",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_confirmed_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r14",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_progression_pcwg3_confirmed_date"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_confirmed_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r11",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 11,
+    "source_name": "RECIST_Response",
+    "source_definition": "Best overall RECIST 1.1 response in measurable disease",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "CR / PR / SD / PD / NE",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "RECIST_Response",
+        "Best overall RECIST 1.1 response in measurable disease",
+        "Categorical",
+        "CR / PR / SD / PD / NE"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "soft_tissue_response_recist",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r24",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "soft_tissue_response_recist"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "soft_tissue_response_recist"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r12",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 12,
+    "source_name": "Imaging_Progression_Type",
+    "source_definition": "Nature of radiographic progression per PCWG3/PCWG4",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "New lesions / Growth of existing / Both",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Imaging_Progression_Type",
+        "Nature of radiographic progression per PCWG3/PCWG4",
+        "Categorical",
+        "New lesions / Growth of existing / Both"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "imaging_progression_type",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r20",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "imaging_progression_type"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_progression_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r13",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 13,
+    "source_name": "Bone_Progression_PCWG3",
+    "source_definition": "Bone progression by PCWG3 2+2 rule (99mTc scan)",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Bone_Progression_PCWG3",
+        "Bone progression by PCWG3 2+2 rule (99mTc scan)",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_pcwg3",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r32",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "bone_progression_pcwg3"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_pcwg3"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r14",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 14,
+    "source_name": "Bone_Progression_PCWG4_PSMA",
+    "source_definition": "Bone/PSMA progression by PCWG4 criteria (2 new PSMA-avid lesions confirmed at 8–12 weeks)",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Bone_Progression_PCWG4_PSMA",
+        "Bone/PSMA progression by PCWG4 criteria (2 new PSMA-avid lesions confirmed at 8–12 weeks)",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psma_pet_pcwg4_progression_documented",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psma_pet_pcwg4_progression_documented"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psma_pet_pcwg4_progression_documented"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r15",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 15,
+    "source_name": "Bone_Progression_Date",
+    "source_definition": "Date of first post-treatment scan showing ≥2 new lesions",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Bone_Progression_Date",
+        "Date of first post-treatment scan showing ≥2 new lesions",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r33",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "bone_progression_date"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r16",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 16,
+    "source_name": "Bone_Progression_Confirmed_Date",
+    "source_definition": "Date of confirmatory scan",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Bone_Progression_Confirmed_Date",
+        "Date of confirmatory scan",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_confirmed_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r34",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "bone_progression_confirmed_date"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_confirmed_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r17",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 17,
+    "source_name": "Bone_Scan_Flare",
+    "source_definition": "New lesions on first post-treatment scan not confirmed subsequently",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Bone_Scan_Flare",
+        "New lesions on first post-treatment scan not confirmed subsequently",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "bone_scan_flare",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r35",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "bone_scan_flare"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_scan_flare"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r18",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 18,
+    "source_name": "Imaging_Progression_Modality",
+    "source_definition": "Imaging modality and criteria used to determine bone/PSMA progression",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "PCWG3 / 99mTc scan / PCWG4 / PSMA-PET / SPECT-CT / Other",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Imaging",
+        "Imaging_Progression_Modality",
+        "Imaging modality and criteria used to determine bone/PSMA progression",
+        "Categorical",
+        "PCWG3 / 99mTc scan / PCWG4 / PSMA-PET / SPECT-CT / Other"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "imaging_progression_modality",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "imaging_progression_modality"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_progression_modality"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r19",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 19,
+    "source_name": "RECIP_Category",
+    "source_definition": "Molecular response per RECIP 1.0",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "CMR / PMR / SMD / PMD / NE",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Mol. Imaging",
+        "RECIP_Category",
+        "Molecular response per RECIP 1.0",
+        "Categorical",
+        "CMR / PMR / SMD / PMD / NE"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "recip_response",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r54",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "recip_response"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "recip_response"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r20",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 20,
+    "source_name": "PTLV_Baseline",
+    "source_definition": "Baseline PSMA-PET total lesion volume",
+    "source_data_type": "Numeric (mL)",
+    "source_allowed_values": "e.g., 124",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Mol. Imaging",
+        "PTLV_Baseline",
+        "Baseline PSMA-PET total lesion volume",
+        "Numeric (mL)",
+        "e.g., 124"
+      ]
+    },
+    "node": "disease_burden",
+    "property": "total_psma_positive_tumor_volume_ml",
+    "fixed_values": {
+      "scope": "whole_body",
+      "assessment_role": "baseline"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r56",
+    "v0_2_destination": {
+      "node": "disease_burden",
+      "property": "total_psma_positive_tumor_volume_ml"
+    },
+    "destination_options": [
+      {
+        "node": "disease_burden",
+        "property": "total_psma_positive_tumor_volume_ml"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r21",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 21,
+    "source_name": "PTLV_Followup",
+    "source_definition": "Follow-up PSMA-PET total lesion volume",
+    "source_data_type": "Numeric (mL)",
+    "source_allowed_values": "e.g., 68",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Mol. Imaging",
+        "PTLV_Followup",
+        "Follow-up PSMA-PET total lesion volume",
+        "Numeric (mL)",
+        "e.g., 68"
+      ]
+    },
+    "node": "disease_burden",
+    "property": "total_psma_positive_tumor_volume_ml",
+    "fixed_values": {
+      "scope": "whole_body",
+      "assessment_role": "followup"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r57",
+    "v0_2_destination": {
+      "node": "disease_burden",
+      "property": "total_psma_positive_tumor_volume_ml"
+    },
+    "destination_options": [
+      {
+        "node": "disease_burden",
+        "property": "total_psma_positive_tumor_volume_ml"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r22",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 22,
+    "source_name": "PSMA_Expression_Change_Pct",
+    "source_definition": "% change in index lesion SUV baseline to first post-treatment PET",
+    "source_data_type": "Numeric (%)",
+    "source_allowed_values": "e.g., −45%",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Mol. Imaging",
+        "PSMA_Expression_Change_Pct",
+        "% change in index lesion SUV baseline to first post-treatment PET",
+        "Numeric (%)",
+        "e.g., −45%"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psma_expression_change_percent",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r60",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psma_expression_change_percent"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psma_expression_change_percent"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r23",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 23,
+    "source_name": "New_PSMA_Avid_Lesions",
+    "source_definition": "Number of new PSMA-avid lesions on post-treatment PET",
+    "source_data_type": "Integer",
+    "source_allowed_values": "0–n",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Mol. Imaging",
+        "New_PSMA_Avid_Lesions",
+        "Number of new PSMA-avid lesions on post-treatment PET",
+        "Integer",
+        "0–n"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "new_psma_avid_lesions_posttreatment",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r61",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "new_psma_avid_lesions_posttreatment"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "new_psma_avid_lesions_posttreatment"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r24",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 24,
+    "source_name": "Kidney_Dose_Cumul_R",
+    "source_definition": "Cumulative right kidney absorbed dose per cycle (threshold ~23–28 Gy)",
+    "source_data_type": "Numeric (Gy)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Dosimetry",
+        "Kidney_Dose_Cumul_R",
+        "Cumulative right kidney absorbed dose per cycle (threshold ~23–28 Gy)",
+        "Numeric (Gy)",
+        ""
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r65",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Right kidney",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r25",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 25,
+    "source_name": "Kidney_Dose_Cumul_L",
+    "source_definition": "Cumulative left kidney absorbed dose per ccyle",
+    "source_data_type": "Numeric (Gy)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Dosimetry",
+        "Kidney_Dose_Cumul_L",
+        "Cumulative left kidney absorbed dose per ccyle",
+        "Numeric (Gy)",
+        ""
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r66",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Left kidney",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r26",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 26,
+    "source_name": "BoneMarrow_Dose_Cumul",
+    "source_definition": "Cumulative red bone marrow absorbed dose per cycle (threshold ~2 Gy)",
+    "source_data_type": "Numeric (Gy)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Dosimetry",
+        "BoneMarrow_Dose_Cumul",
+        "Cumulative red bone marrow absorbed dose per cycle (threshold ~2 Gy)",
+        "Numeric (Gy)",
+        ""
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r67",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Red bone marrow",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r27",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 27,
+    "source_name": "ParotidGlands_Dose_Cumul",
+    "source_definition": "Cumulative parotid gland absorbed dose per cycle (mean bilateral)",
+    "source_data_type": "Numeric (Gy)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Dosimetry",
+        "ParotidGlands_Dose_Cumul",
+        "Cumulative parotid gland absorbed dose per cycle (mean bilateral)",
+        "Numeric (Gy)",
+        ""
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r68",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Parotid glands: specify laterality or aggregation",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r28",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 28,
+    "source_name": "Tumor_Dose_Index",
+    "source_definition": "Cumulative absorbed dose to index tumor lesion per cycle",
+    "source_data_type": "Numeric (Gy)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Dosimetry",
+        "Tumor_Dose_Index",
+        "Cumulative absorbed dose to index tumor lesion per cycle",
+        "Numeric (Gy)",
+        ""
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r69",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Index tumor: explicit persistent target",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r29",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 29,
+    "source_name": "Dose_Limiting_Organ",
+    "source_definition": "Organ limiting dose delivery when treatment was modified",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "Kidney / Bone marrow / Parotid / None",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Dosimetry",
+        "Dose_Limiting_Organ",
+        "Organ limiting dose delivery when treatment was modified",
+        "Categorical",
+        "Kidney / Bone marrow / Parotid / None"
+      ]
+    },
+    "node": "treatment_decision",
+    "property": "dose_limiting_organ",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r64",
+    "v0_2_destination": {
+      "node": "treatment_decision",
+      "property": "dose_limiting_organ"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_decision",
+        "property": "dose_limiting_organ"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r30",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 30,
+    "source_name": "Pain_NRS_Baseline",
+    "source_definition": "Baseline pain (NRS 0–10; average ≥3 days; ≥4 required for palliation endpoint)",
+    "source_data_type": "Integer (0–10)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "Pain_NRS_Baseline",
+        "Baseline pain (NRS 0–10; average ≥3 days; ≥4 required for palliation endpoint)",
+        "Integer (0–10)",
+        ""
+      ]
+    },
+    "node": "patient_reported_outcome",
+    "property": "score",
+    "fixed_values": {
+      "assessment_role": "baseline",
+      "score_domain": "pain",
+      "instrument_name": "NRS"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r89",
+    "v0_2_destination": {
+      "node": "patient_reported_outcome",
+      "property": "score"
+    },
+    "destination_options": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "score"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r31",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 31,
+    "source_name": "Pain_Response",
+    "source_definition": "≥30% or ≥2-point NRS improvement confirmed ≥2 weeks, without opioid increase",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No / NE",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "Pain_Response",
+        "≥30% or ≥2-point NRS improvement confirmed ≥2 weeks, without opioid increase",
+        "Boolean",
+        "Yes / No / NE"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "pain_response",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r91",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "pain_response"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "pain_response"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r32",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 32,
+    "source_name": "Opiate_Use_Baseline",
+    "source_definition": "Opioid analgesic use at baseline",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "Opiate_Use_Baseline",
+        "Opioid analgesic use at baseline",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "patient_reported_outcome",
+    "property": "opioid_use",
+    "fixed_values": {
+      "assessment_role": "baseline"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r94",
+    "v0_2_destination": {
+      "node": "patient_reported_outcome",
+      "property": "opioid_use"
+    },
+    "destination_options": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "opioid_use"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r33",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 33,
+    "source_name": "Opiate_Use_Followup",
+    "source_definition": "Opioid analgesic use at follow-up",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "Opiate_Use_Followup",
+        "Opioid analgesic use at follow-up",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "patient_reported_outcome",
+    "property": "opioid_use",
+    "fixed_values": {
+      "assessment_role": "followup"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r95",
+    "v0_2_destination": {
+      "node": "patient_reported_outcome",
+      "property": "opioid_use"
+    },
+    "destination_options": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "opioid_use"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r34",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 34,
+    "source_name": "SSE_Occurred",
+    "source_definition": "Symptomatic skeletal event occurred",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "SSE_Occurred",
+        "Symptomatic skeletal event occurred",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "sse_occurred",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "sse_occurred"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "sse_occurred"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r35",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 35,
+    "source_name": "SSE_Type",
+    "source_definition": "Type of first SSE",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "Symptomatic fracture / Radiation to bone / Surgery to bone / Spinal cord compression",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "SSE_Type",
+        "Type of first SSE",
+        "Categorical",
+        "Symptomatic fracture / Radiation to bone / Surgery to bone / Spinal cord compression"
+      ]
+    },
+    "node": "clinical_event",
+    "property": "sse_type_source",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r47",
+    "v0_2_destination": {
+      "node": "clinical_event",
+      "property": "sse_type_source"
+    },
+    "destination_options": [
+      {
+        "node": "clinical_event",
+        "property": "sse_type_source"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r36",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 36,
+    "source_name": "Time_To_First_SSE",
+    "source_definition": "Time from therapy start to first SSE",
+    "source_data_type": "Numeric (months)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "Time_To_First_SSE",
+        "Time from therapy start to first SSE",
+        "Numeric (months)",
+        ""
+      ]
+    },
+    "node": "survival_outcome",
+    "property": "duration_months",
+    "fixed_values": {
+      "endpoint_name": "Time_To_First_SSE"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r43",
+    "v0_2_destination": {
+      "node": "survival_outcome",
+      "property": "duration_months"
+    },
+    "destination_options": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r37",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 37,
+    "source_name": "ECOG_Baseline",
+    "source_definition": "ECOG performance status at baseline",
+    "source_data_type": "Integer (0–5)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "ECOG_Baseline",
+        "ECOG performance status at baseline",
+        "Integer (0–5)",
+        ""
+      ]
+    },
+    "node": "clinical_assessment",
+    "property": "ecog_score",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "clinical_assessment",
+      "property": "ecog_score"
+    },
+    "destination_options": [
+      {
+        "node": "clinical_assessment",
+        "property": "ecog_score"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r38",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 38,
+    "source_name": "ECOG_Followup",
+    "source_definition": "ECOG performance status at follow-up",
+    "source_data_type": "Integer (0–5)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "ECOG_Followup",
+        "ECOG performance status at follow-up",
+        "Integer (0–5)",
+        ""
+      ]
+    },
+    "node": "clinical_assessment",
+    "property": "ecog_score",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "clinical_assessment",
+      "property": "ecog_score"
+    },
+    "destination_options": [
+      {
+        "node": "clinical_assessment",
+        "property": "ecog_score"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r39",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 39,
+    "source_name": "NLCB_Date",
+    "source_definition": "Date of No Longer Clinically Benefiting determination (PCWG3/PCWG4)",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "NLCB_Date",
+        "Date of No Longer Clinically Benefiting determination (PCWG3/PCWG4)",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "treatment_decision",
+    "property": "nlcb_date",
+    "fixed_values": {
+      "decision_type": "nlcb"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r50",
+    "v0_2_destination": {
+      "node": "treatment_decision",
+      "property": "nlcb_date"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_decision",
+        "property": "nlcb_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r40",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 40,
+    "source_name": "NLCB_Reason",
+    "source_definition": "Reason for NLCB",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "Multi-site progression / Toxicity / Patient decision / Completed cycles / Death / Other",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "NLCB_Reason",
+        "Reason for NLCB",
+        "Categorical",
+        "Multi-site progression / Toxicity / Patient decision / Completed cycles / Death / Other"
+      ]
+    },
+    "node": "treatment_decision",
+    "property": "nlcb_reason",
+    "fixed_values": {
+      "decision_type": "nlcb"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r51",
+    "v0_2_destination": {
+      "node": "treatment_decision",
+      "property": "nlcb_reason"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_decision",
+        "property": "nlcb_reason"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r41",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 41,
+    "source_name": "PSA_Imaging_Concordance",
+    "source_definition": "Concordance between PSA and imaging at discontinuation",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "Concordant / PSA only / Imaging only / NE",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Clinical",
+        "PSA_Imaging_Concordance",
+        "Concordance between PSA and imaging at discontinuation",
+        "Categorical",
+        "Concordant / PSA only / Imaging only / NE"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_imaging_concordance",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r52",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_imaging_concordance"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_imaging_concordance"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r42",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 42,
+    "source_name": "PRO_CTCAE_Collected",
+    "source_definition": "NCI PRO-CTCAE completed prospectively",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PRO",
+        "PRO_CTCAE_Collected",
+        "NCI PRO-CTCAE completed prospectively",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "patient_reported_outcome",
+    "property": "pro_ctcae_collected",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r99",
+    "v0_2_destination": {
+      "node": "patient_reported_outcome",
+      "property": "pro_ctcae_collected"
+    },
+    "destination_options": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "pro_ctcae_collected"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r43",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 43,
+    "source_name": "QoL_Instrument",
+    "source_definition": "QoL instrument used",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "FACT-P / EORTC QLQ-C30 / PROMIS / Other",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "PRO",
+        "QoL_Instrument",
+        "QoL instrument used",
+        "Categorical",
+        "FACT-P / EORTC QLQ-C30 / PROMIS / Other"
+      ]
+    },
+    "node": "patient_reported_outcome",
+    "property": "instrument_name",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "patient_reported_outcome",
+      "property": "instrument_name"
+    },
+    "destination_options": [
+      {
+        "node": "patient_reported_outcome",
+        "property": "instrument_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r44",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 44,
+    "source_name": "Retreatment_Performed",
+    "source_definition": "Additional 177Lu-PSMA retreatment administered",
+    "source_data_type": "Boolean",
+    "source_allowed_values": "Yes / No",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Longitudinal",
+        "Retreatment_Performed",
+        "Additional 177Lu-PSMA retreatment administered",
+        "Boolean",
+        "Yes / No"
+      ]
+    },
+    "node": "treatment_transition",
+    "property": "retreatment_performed",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "treatment_transition",
+      "property": "retreatment_performed"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_transition",
+        "property": "retreatment_performed"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r45",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 45,
+    "source_name": "Post_Lu177_Therapy_Agent",
+    "source_definition": "Subsequent anticancer therapy",
+    "source_data_type": "Text/Coded",
+    "source_allowed_values": "Cabazitaxel / PARPi / ARPI / Other",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Longitudinal",
+        "Post_Lu177_Therapy_Agent",
+        "Subsequent anticancer therapy",
+        "Text/Coded",
+        "Cabazitaxel / PARPi / ARPI / Other"
+      ]
+    },
+    "node": "treatment_transition",
+    "property": "agent_name",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r84",
+    "v0_2_destination": {
+      "node": "treatment_transition",
+      "property": "agent_name"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_transition",
+        "property": "agent_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r46",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 46,
+    "source_name": "Post_Lu177_Therapy_Start_Date",
+    "source_definition": "Start date of first subsequent therapy",
+    "source_data_type": "Date",
+    "source_allowed_values": "YYYY-MM-DD",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Longitudinal",
+        "Post_Lu177_Therapy_Start_Date",
+        "Start date of first subsequent therapy",
+        "Date",
+        "YYYY-MM-DD"
+      ]
+    },
+    "node": "treatment_transition",
+    "property": "start_date",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r85",
+    "v0_2_destination": {
+      "node": "treatment_transition",
+      "property": "start_date"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_transition",
+        "property": "start_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r47",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 47,
+    "source_name": "Post_Lu177_Therapy_Reason",
+    "source_definition": "Reason for initiating subsequent therapy",
+    "source_data_type": "Categorical",
+    "source_allowed_values": "PSA progression / Radiographic progression / Clinical progression / Planned switch / Toxicity / Other",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Longitudinal",
+        "Post_Lu177_Therapy_Reason",
+        "Reason for initiating subsequent therapy",
+        "Categorical",
+        "PSA progression / Radiographic progression / Clinical progression / Planned switch / Toxicity / Other"
+      ]
+    },
+    "node": "treatment_transition",
+    "property": "reason",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r86",
+    "v0_2_destination": {
+      "node": "treatment_transition",
+      "property": "reason"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_transition",
+        "property": "reason"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement1:r48",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 1",
+    "source_row": 48,
+    "source_name": "Time_To_Next_Treatment",
+    "source_definition": "Time from last 177Lu-PSMA cycle to next systemic therapy",
+    "source_data_type": "Numeric (months)",
+    "source_allowed_values": "",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 1,
+      "original_cells": [
+        "Longitudinal",
+        "Time_To_Next_Treatment",
+        "Time from last 177Lu-PSMA cycle to next systemic therapy",
+        "Numeric (months)",
+        ""
+      ]
+    },
+    "node": "survival_outcome",
+    "property": "duration_months",
+    "fixed_values": {
+      "endpoint_name": "Time_To_Next_Treatment"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r87",
+    "v0_2_destination": {
+      "node": "survival_outcome",
+      "property": "duration_months"
+    },
+    "destination_options": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r1",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 1,
+    "source_name": "PSA50_Response",
+    "source_definition": "Confirmed biochemical response per PCWG3/PCWG4",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "≥50% PSA decline from baseline confirmed by a second value ≥3 weeks later",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "PSA50_Response",
+        "Confirmed biochemical response per PCWG3/PCWG4",
+        "≥50% PSA decline from baseline confirmed by a second value ≥3 weeks later"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_response_50_confirmed",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r8",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_response_50_confirmed"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_response_50_confirmed"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r2",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 2,
+    "source_name": "PSA_Early_Rise_Pre12w",
+    "source_definition": "Early PSA rise — not true progression",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Rise within first 12 weeks; per PCWG3/PCWG4, antitumor effects including PSA flare may be delayed and should not determine response",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "PSA_Early_Rise_Pre12w",
+        "Early PSA rise — not true progression",
+        "Rise within first 12 weeks; per PCWG3/PCWG4, antitumor effects including PSA flare may be delayed and should not determine response"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_early_rise_pre12w",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r11",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_early_rise_pre12w"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_early_rise_pre12w"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r3",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 3,
+    "source_name": "PSA_Progression_PCWG3 (after prior decline)",
+    "source_definition": "Biochemical progression per PCWG3/PCWG4",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "≥25% increase AND ≥2 ng/mL above nadir, confirmed ≥3 weeks later. Does not automatically require treatment discontinuation (see NLCB)",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "PSA_Progression_PCWG3 (after prior decline)",
+        "Biochemical progression per PCWG3/PCWG4",
+        "≥25% increase AND ≥2 ng/mL above nadir, confirmed ≥3 weeks later. Does not automatically require treatment discontinuation (see NLCB)"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_documented",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r12",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_progression_pcwg3_documented"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_documented"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r4",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 4,
+    "source_name": "PSA_Progression_PCWG3 (no prior decline)",
+    "source_definition": "Biochemical progression without prior PSA decline",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "≥25% increase AND ≥2 ng/mL above baseline beyond 12 weeks, confirmed ≥3 weeks later",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "PSA_Progression_PCWG3 (no prior decline)",
+        "Biochemical progression without prior PSA decline",
+        "≥25% increase AND ≥2 ng/mL above baseline beyond 12 weeks, confirmed ≥3 weeks later"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psa_progression_pcwg3_documented",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r12",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psa_progression_pcwg3_documented"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psa_progression_pcwg3_documented"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r5",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 5,
+    "source_name": "Imaging_Progression_Type",
+    "source_definition": "Nature of radiographic progression per PCWG3/PCWG4",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "(1) New lesions only; (2) growth of pre-existing lesions only; (3) both — recorded separately by site",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Imaging_Progression_Type",
+        "Nature of radiographic progression per PCWG3/PCWG4",
+        "(1) New lesions only; (2) growth of pre-existing lesions only; (3) both — recorded separately by site"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "imaging_progression_type",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r20",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "imaging_progression_type"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "imaging_progression_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r6",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 6,
+    "source_name": "Bone_Progression_PCWG3",
+    "source_definition": "Skeletal progression — PCWG3 2+2 rule (conventional bone scan)",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "≥2 new lesions on first post-treatment scan confirmed by ≥2 additional on next scan. Progression date = date of first post-treatment scan showing initial 2 lesions",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Bone_Progression_PCWG3",
+        "Skeletal progression — PCWG3 2+2 rule (conventional bone scan)",
+        "≥2 new lesions on first post-treatment scan confirmed by ≥2 additional on next scan. Progression date = date of first post-treatment scan showing initial 2 lesions"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "bone_progression_pcwg3",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r32",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "bone_progression_pcwg3"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_progression_pcwg3"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r7",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 7,
+    "source_name": "Bone_Progression_PCWG4_PSMA",
+    "source_definition": "PSMA-PET-based progression — PCWG4 criteria",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "≥2 new PSMA-positive lesions (not change in uptake intensity or SUV), confirmed on 8–12 week scan. Visual criteria; does not require proprietary software",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Bone_Progression_PCWG4_PSMA",
+        "PSMA-PET-based progression — PCWG4 criteria",
+        "≥2 new PSMA-positive lesions (not change in uptake intensity or SUV), confirmed on 8–12 week scan. Visual criteria; does not require proprietary software"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "psma_pet_pcwg4_progression_documented",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "psma_pet_pcwg4_progression_documented"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "psma_pet_pcwg4_progression_documented"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r8",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 8,
+    "source_name": "Bone_Scan_Flare",
+    "source_definition": "Transient post-treatment bone/PSMA scan change",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "New lesions on first follow-up scan not confirmed on subsequent scan. Must not be coded as progression",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Bone_Scan_Flare",
+        "Transient post-treatment bone/PSMA scan change",
+        "New lesions on first follow-up scan not confirmed on subsequent scan. Must not be coded as progression"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "bone_scan_flare",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r35",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "bone_scan_flare"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "bone_scan_flare"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r9",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 9,
+    "source_name": "RECIP_Category",
+    "source_definition": "Molecular imaging response per RECIP 1.0 (distinct from PCWG4 progression criteria)",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "CMR = complete molecular response; PMR = partial (≥30% PTLV decrease, no new lesions); SMD = stable; PMD = progressive (≥20% PTLV increase or new PSMA-avid lesions)",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "RECIP_Category",
+        "Molecular imaging response per RECIP 1.0 (distinct from PCWG4 progression criteria)",
+        "CMR = complete molecular response; PMR = partial (≥30% PTLV decrease, no new lesions); SMD = stable; PMD = progressive (≥20% PTLV increase or new PSMA-avid lesions)"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "recip_response",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r54",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "recip_response"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "recip_response"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r10",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 10,
+    "source_name": "PTLV",
+    "source_definition": "PSMA-PET total lesion volume",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Semi-automated volumetric segmentation of all PSMA-avid lesions above background; units in mL",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "PTLV",
+        "PSMA-PET total lesion volume",
+        "Semi-automated volumetric segmentation of all PSMA-avid lesions above background; units in mL"
+      ]
+    },
+    "node": "disease_burden",
+    "property": "total_psma_positive_tumor_volume_ml",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "disease_burden",
+      "property": "total_psma_positive_tumor_volume_ml"
+    },
+    "destination_options": [
+      {
+        "node": "disease_burden",
+        "property": "total_psma_positive_tumor_volume_ml"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r11",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 11,
+    "source_name": "Kidney_Dose_Cumul",
+    "source_definition": "Cumulative absorbed renal dose",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Mean dose per kidney per cycle summed across all cycles; SPECT/CT-based dosimetry; threshold ~23–28 Gy",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Kidney_Dose_Cumul",
+        "Cumulative absorbed renal dose",
+        "Mean dose per kidney per cycle summed across all cycles; SPECT/CT-based dosimetry; threshold ~23–28 Gy"
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r12",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 12,
+    "source_name": "BoneMarrow_Dose_Cumul",
+    "source_definition": "Cumulative red bone marrow absorbed dose",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Threshold ~2 Gy; computed from blood dosimetry or image-based method",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "BoneMarrow_Dose_Cumul",
+        "Cumulative red bone marrow absorbed dose",
+        "Threshold ~2 Gy; computed from blood dosimetry or image-based method"
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r67",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Red bone marrow",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r13",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 13,
+    "source_name": "ParotidGlands_Dose_Cumul",
+    "source_definition": "Cumulative parotid gland absorbed dose",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Mean bilateral dose summed across cycles; principal salivary organ at risk in 177Lu-PSMA therapy",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "ParotidGlands_Dose_Cumul",
+        "Cumulative parotid gland absorbed dose",
+        "Mean bilateral dose summed across cycles; principal salivary organ at risk in 177Lu-PSMA therapy"
+      ]
+    },
+    "node": "dose_summary",
+    "property": "cumulative_dose_gy",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r68",
+    "v0_2_destination": {
+      "node": "dose_summary",
+      "property": "cumulative_dose_gy"
+    },
+    "destination_options": [
+      {
+        "node": "dose_summary",
+        "property": "cumulative_dose_gy"
+      }
+    ],
+    "related_record_constraints": [
+      {
+        "node": "anatomic_target",
+        "property": "target_name",
+        "value": "Parotid glands: specify laterality or aggregation",
+        "via": "anatomic_targets; direct or through dose/annotation evidence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r14",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 14,
+    "source_name": "Pain_Response",
+    "source_definition": "Clinically meaningful pain palliation per PCWG3/PCWG4",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "≥30% relative OR ≥2-point absolute NRS improvement from baseline confirmed ≥2 weeks later, WITHOUT overall increase in opioid use. Requires baseline NRS ≥4",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Pain_Response",
+        "Clinically meaningful pain palliation per PCWG3/PCWG4",
+        "≥30% relative OR ≥2-point absolute NRS improvement from baseline confirmed ≥2 weeks later, WITHOUT overall increase in opioid use. Requires baseline NRS ≥4"
+      ]
+    },
+    "node": "response_assessment",
+    "property": "pain_response",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r91",
+    "v0_2_destination": {
+      "node": "response_assessment",
+      "property": "pain_response"
+    },
+    "destination_options": [
+      {
+        "node": "response_assessment",
+        "property": "pain_response"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r15",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 15,
+    "source_name": "NLCB_Date",
+    "source_definition": "No Longer Clinically Benefiting — per PCWG3/PCWG4",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Date on which physician and patient determined therapy no longer provides net benefit. Distinct from first documented progression date",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "NLCB_Date",
+        "No Longer Clinically Benefiting — per PCWG3/PCWG4",
+        "Date on which physician and patient determined therapy no longer provides net benefit. Distinct from first documented progression date"
+      ]
+    },
+    "node": "treatment_decision",
+    "property": "nlcb_date",
+    "fixed_values": {
+      "decision_type": "nlcb"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r50",
+    "v0_2_destination": {
+      "node": "treatment_decision",
+      "property": "nlcb_date"
+    },
+    "destination_options": [
+      {
+        "node": "treatment_decision",
+        "property": "nlcb_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r16",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 16,
+    "source_name": "SSE",
+    "source_definition": "Symptomatic skeletal event per PCWG3/PCWG4/ALSYMPCA",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Symptomatic fracture, radiotherapy to bone, surgery to bone, or spinal cord compression. Excludes asymptomatic fractures (SREs)",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "SSE",
+        "Symptomatic skeletal event per PCWG3/PCWG4/ALSYMPCA",
+        "Symptomatic fracture, radiotherapy to bone, surgery to bone, or spinal cord compression. Excludes asymptomatic fractures (SREs)"
+      ]
+    },
+    "node": "clinical_event",
+    "property": "event_type",
+    "fixed_values": {},
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_only_candidate",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "v0_2_destination": {
+      "node": "clinical_event",
+      "property": "event_type"
+    },
+    "destination_options": [
+      {
+        "node": "clinical_event",
+        "property": "event_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "outcomes_paper:supplement2:r17",
+    "source_document": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+    "source_sheet": "Outcomes paper Supplemental Table 2",
+    "source_row": 17,
+    "source_name": "Time_To_Next_Treatment",
+    "source_definition": "Time to first subsequent systemic therapy",
+    "source_data_type": "Operational definition",
+    "source_allowed_values": "Months from last 177Lu-PSMA cycle; required by PCWG3/PCWG4 to be recorded until death for OS interpretation",
+    "source_unit": "",
+    "source_metadata": {
+      "table": 2,
+      "original_cells": [
+        "Time_To_Next_Treatment",
+        "Time to first subsequent systemic therapy",
+        "Months from last 177Lu-PSMA cycle; required by PCWG3/PCWG4 to be recorded until death for OS interpretation"
+      ]
+    },
+    "node": "survival_outcome",
+    "property": "duration_months",
+    "fixed_values": {
+      "endpoint_name": "Time_To_Next_Treatment"
+    },
+    "transformation": "Paper alias/supporting definition. Where the revised spreadsheet differs, use the revised candidate and preserve this source wording for review. Criteria algorithms still require named-release verification. v0.3: MIDRC baseline definitions take precedence for reused fields; review source-to-canonical type/enum conversions.",
+    "mapping_status": "paper_supporting_source",
+    "external_reference": "",
+    "nuclex_mapping_status": "unmapped",
+    "nuclex_concept_id": null,
+    "current_revision_source_element_id": "outcome_revision:r87",
+    "v0_2_destination": {
+      "node": "survival_outcome",
+      "property": "duration_months"
+    },
+    "destination_options": [
+      {
+        "node": "survival_outcome",
+        "property": "duration_months"
+      }
+    ]
+  }
+]

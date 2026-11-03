@@ -1,0 +1,31 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+therapy_course,type,True,False,Theranostics extension,enum,,
+therapy_course,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+therapy_course,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+therapy_course,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+therapy_course,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+therapy_course,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+therapy_course,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+therapy_course,cases,True,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+therapy_course,studies,False,False,Theranostics extension,array,Link to study records by submitter_id or UUID.,
+therapy_course,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+therapy_course,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+therapy_course,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+therapy_course,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+therapy_course,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+therapy_course,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+therapy_course,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+therapy_course,course_number,False,False,Theranostics extension,integer,Course ordinal for this patient; rechallenge creates a distinct course.,
+therapy_course,start_date,False,False,Theranostics extension,string,"First therapeutic administration date or planned start, qualified by course status.",lu_177_psma_data_model:r329
+therapy_course,course_status,False,False,Theranostics extension,string,Course state.,
+therapy_course,planned_number_of_cycles,False,False,Theranostics extension,integer,Number of Lu-177 PSMA therapy cycles initially planned for the patient.,lu_177_psma_data_model:r330; nk_blueprint:r173
+therapy_course,reason_for_discontinuation,False,False,Theranostics extension,string,"Reason why Lu-177 PSMA therapy was stopped, if before completing planned cycles.",lu_177_psma_data_model:r331
+therapy_course,treatment_completed_as_planned,False,False,Theranostics extension,boolean,"Indicates whether the planned ¹⁷⁷Lu-PSMA RPT course was completed; if not, record reason, cycle number, delay, reduction, or cancellation.",outcome_revision:r104
+therapy_course,completion_date,False,False,Theranostics extension,string,Date the course was completed.,
+therapy_course,actual_number_of_cycles,False,False,Theranostics extension,integer,Number of cycles actually administered in this course.,
+therapy_course,completion_reason,False,False,Theranostics extension,string,"Reason for completion or noncompletion; retain associated holds, delays, reductions or cancellations.",

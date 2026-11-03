@@ -1,15 +1,15 @@
 {
   "name": "SNMMI-MIDRC Lu177-PSMA theranostics data model",
-  "release_version": "0.3.2",
-  "git_tag": "v0.3.2",
-  "release_title": "0.3.2",
-  "release_date": "2026-10-19",
+  "release_version": "0.4.0",
+  "git_tag": "v0.4.0",
+  "release_title": "0.4.0",
+  "release_date": "2026-11-02",
   "status": "Development release; technical proposal for review",
   "repository": "https://github.com/nkarakatsanis/MIDRC-SNMMI-Lu177-PSMA-Theranostics-Data-Model",
   "default_branch": "cdis",
-  "model_directory": "extensions/lu177_psma/v0.3.0",
-  "model_artifact_revision": "0.3.0-proposal",
-  "version_policy": "Release 0.3.2 updates the Word and HTML documentation to match the clarified baseline and tag history. The model schema revision remains 0.3.0-proposal under extensions/lu177_psma/v0.3.0/. Earlier release tags and original assets remain unchanged.",
+  "model_directory": "extensions/lu177_psma/v0.4.0",
+  "model_artifact_revision": "0.4.0-proposal",
+  "version_policy": "Minor development release with additive schema extensions; previous tags and v0.3.0 directory remain unchanged. Model, baseline and terminology versions are independent.",
   "baseline_source_parent_commit": "bee947238381704486ccd12beeb8f4689fb22843",
   "pinned_compiled_dictionary": {
     "url": "https://data.midrc.org/api/v0/submission/_dictionary/_all",
@@ -31,14 +31,15 @@
       "Neeta Pandit-Taskar",
       "Babak Saboury",
       "Jazmin Schwartz",
+      "Nouran Zaid",
       "Tahir I Yusufaly",
       "Tyler J Bradshaw"
     ],
-    "order_source": "User-specified SNMMI abstract order",
+    "order_source": "User-specified first two and final two authors retained; intervening authors ordered by surname.",
     "status": "tentative; not an assertion of author approval"
   },
-  "release_kind": "Documentation and explorer presentation patch",
-  "previous_release": "0.3.1",
-  "standalone_document_version": "0.3.2",
-  "model_schema_changed": false
+  "release_kind": "Additive radiopharmaceutical and research expansion",
+  "previous_release": "0.3.2",
+  "standalone_document_version": "0.4.0",
+  "model_schema_changed": true
 }

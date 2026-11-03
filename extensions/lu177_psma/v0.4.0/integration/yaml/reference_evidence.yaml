@@ -1,0 +1,463 @@
+$schema: http://json-schema.org/draft-04/schema#
+id: reference_evidence
+title: Reference Evidence
+type: object
+namespace: urn:nmmi:lu177-psma:model
+category: administrative
+program: '*'
+project: '*'
+description: One citable evidence context, population or experimental dataset; not
+  an individual patient observation.
+additionalProperties: false
+submittable: true
+validators: null
+links:
+- name: projects
+  backref: nmmi_reference_evidence_projects
+  label: member_of
+  target_type: project
+  multiplicity: many_to_one
+  required: true
+- name: provenance_records
+  backref: nmmi_reference_evidence_provenance_records
+  label: documented_by
+  target_type: provenance
+  multiplicity: many_to_many
+  required: false
+- name: radiopharmaceuticals
+  backref: nmmi_reference_evidence_radiopharmaceuticals
+  label: describes
+  target_type: radiopharmaceutical
+  multiplicity: many_to_many
+  required: false
+- name: medicinal_products
+  backref: nmmi_reference_evidence_medicinal_products
+  label: describes_product
+  target_type: medicinal_product
+  multiplicity: many_to_many
+  required: false
+- name: biological_targets
+  backref: nmmi_reference_evidence_biological_targets
+  label: describes_target
+  target_type: biological_target
+  multiplicity: many_to_many
+  required: false
+required:
+- type
+- submitter_id
+- title
+- evidence_kind
+- setting
+- source_citation
+- projects
+uniqueKeys:
+- - id
+- - project_id
+  - submitter_id
+systemProperties:
+- id
+- project_id
+- state
+- created_datetime
+- updated_datetime
+properties:
+  type:
+    enum:
+    - reference_evidence
+  submitter_id:
+    type: string
+    description: Stable submitter-assigned identifier, unique within a project. Do
+      not encode direct patient identifiers.
+    minLength: 1
+  id:
+    pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+    systemAlias: node_id
+    term:
+      description: 'A 128-bit identifier. Depending on the mechanism used to generate
+        it, it is either guaranteed to be different from all other UUIDs/GUIDs generated
+        until 3400 AD or extremely likely to be different. Its relatively small size
+        lends itself well to sorting, ordering, and hashing of all sorts, storing
+        in databases, simple allocation, and ease of programming in general.
+
+        '
+      termDef:
+        cde_id: C54100
+        cde_version: null
+        source: NCIt
+        term: Universally Unique Identifier
+        term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+    type: string
+  project_id:
+    term:
+      description: 'Unique ID for any specific defined piece of work that is undertaken
+        or attempted to meet a single requirement.
+
+        '
+    type: string
+  state:
+    default: validated
+    downloadable:
+    - uploaded
+    - md5summed
+    - validating
+    - validated
+    - error
+    - invalid
+    - released
+    oneOf:
+    - enum:
+      - uploading
+      - uploaded
+      - md5summing
+      - md5summed
+      - validating
+      - error
+      - invalid
+      - suppressed
+      - redacted
+      - live
+    - enum:
+      - validated
+      - submitted
+      - released
+    public:
+    - live
+    term:
+      description: 'The current state of the object.
+
+        '
+  created_datetime:
+    oneOf:
+    - format: date-time
+      type: string
+    - type: 'null'
+    term:
+      description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+
+        '
+  updated_datetime:
+    oneOf:
+    - format: date-time
+      type: string
+    - type: 'null'
+    term:
+      description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+
+        '
+  model_version:
+    type: string
+    description: Version of the submitting theranostics extension, independently of
+      the MIDRC baseline version.
+  record_status:
+    type: string
+    description: Record curation state, independent of clinical value.
+    enum:
+    - draft
+    - reviewed
+    - approved
+    - superseded
+    - withdrawn
+  source_record_id:
+    type: string
+    description: Identifier of the originating source record; use an approved pseudonym
+      when needed.
+  source_system:
+    type: string
+    description: Source system or data provider.
+  missing_properties:
+    type: array
+    description: Names of properties missing from this record; no missing value is
+      encoded as zero.
+    items:
+      type: string
+  missing_reasons:
+    type: array
+    description: Reasons corresponding by index to missing_properties.
+    items:
+      enum:
+      - unknown
+      - not_collected
+      - not_applicable
+      - not_available
+      - withheld
+      - pending
+  title:
+    description: Title or descriptive name of the evidence item.
+    type: string
+    minLength: 1
+  evidence_kind:
+    description: Kind of evidence source.
+    enum:
+    - publication
+    - trial
+    - regulatory_label
+    - experimental_dataset
+    - technical_report
+    - other
+  setting:
+    description: Experimental or reference setting; never silently pool species or
+      settings.
+    enum:
+    - human_clinical
+    - preclinical
+    - in_vitro
+    - computational
+    - reference
+  source_citation:
+    description: Citation or source location; exact identifiers can also be assigned
+      through external_identifier.
+    type: string
+    minLength: 1
+  source_version:
+    description: Document, label, dataset or registry version.
+    type: string
+    minLength: 1
+  source_locator:
+    description: Page, section, table, figure or record locator supporting the assertion.
+    type: string
+    minLength: 1
+  evidence_date:
+    description: Date of the evidence version or observation period as defined by
+      the source.
+    type: string
+    minLength: 1
+    format: date
+  species:
+    description: Organism represented in the evidence; required for biological experimental
+      results.
+    type: string
+    minLength: 1
+  population_description:
+    description: Population, cell system, species strain or cohort context.
+    type: string
+    minLength: 1
+  disease_context:
+    description: Disease and subtype described in the source; not an anatomical target.
+    type: string
+    minLength: 1
+  treatment_setting:
+    description: Treatment line, prior therapy and other setting constraints.
+    type: string
+    minLength: 1
+  study_design:
+    description: Source-described study design.
+    type: string
+    minLength: 1
+  trial_phase:
+    description: Source-described trial phase; not a permanent agent property.
+    type: string
+    minLength: 1
+  sponsor:
+    description: Study sponsor as reported.
+    type: string
+    minLength: 1
+  comparator:
+    description: Comparator or reference condition.
+    type: string
+    minLength: 1
+  sample_size:
+    description: Number of experimental units or subjects, interpreted with sample_unit.
+    type: integer
+    minimum: 0
+  sample_unit:
+    description: Unit counted by sample_size, such as participants, specimens or animals.
+    type: string
+    minLength: 1
+  inclusion_criteria:
+    description: Population inclusion and exclusion summary.
+    type: string
+    minLength: 1
+  biomarker_selection_criteria:
+    description: Biomarker selection rule and source version.
+    type: string
+    minLength: 1
+  primary_endpoint:
+    description: Prespecified primary endpoint and its definition reference.
+    type: string
+    minLength: 1
+  secondary_endpoints:
+    description: Secondary endpoints and their definition references.
+    type: array
+    items:
+      type: string
+    uniqueItems: true
+  generalizability_limits:
+    description: Known limitations on applying the evidence to another context.
+    type: string
+    minLength: 1
+  evidence_level:
+    description: Assessment under a named evidence-grading rubric supplied in provenance.
+    type: string
+    minLength: 1
+  projects:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        code:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - code
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to project records by code or UUID.
+    minItems: 1
+    maxItems: 1
+  provenance_records:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to provenance records by submitter_id or UUID.
+  radiopharmaceuticals:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to radiopharmaceutical records by submitter_id or UUID.
+  medicinal_products:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to medicinal_product records by submitter_id or UUID.
+  biological_targets:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to biological_target records by submitter_id or UUID.

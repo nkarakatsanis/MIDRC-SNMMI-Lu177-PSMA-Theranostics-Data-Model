@@ -1,39 +1,26 @@
-# Repository guide — release 0.3.2
+# Repository guide for 0.4.0
 
 **tentative authors list**
 
-Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Tahir I Yusufaly, Tyler J Bradshaw
+Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Nouran Zaid, Tahir I Yusufaly, Tyler J Bradshaw
 
-## Source layout
+The current model lives under `extensions/lu177_psma/v0.4.0/`. The previous `v0.3.0/` directory is preserved for comparison and regression checks. The inherited `gdcdictionary/` and its Python packaging remain unchanged and are not the merged proposal.
 
-| Path | Role |
-| --- | --- |
-| `gdcdictionary/`, `pyproject.toml` and original license files | Imported MIDRC source, retained at parent `bee947238381704486ccd12beeb8f4689fb22843`. |
-| `extensions/lu177_psma/v0.3.0/` | Complete v0.3.0 theranostics working model, dictionary, templates, graphs and examples. |
-| `docs/DATA_MODEL.md`, `docs/DOMAINS.md`, `docs/NODE_CATALOG.md` | Human-readable GitHub documentation. |
-| `docs/dictionary/` | Generated field-by-field reference for all 67 nodes, including required links and alternative groups. |
-| `docs/upstream/README.before-lu177-psma-v0.3.0.md` | Previous README preserved exactly. |
-| `VERSION` and `release.json` | Repository release identity: **0.3.2**; underlying model revision remains **0.3.0-proposal**. |
-| `releases/0.3.2.md`, `releases/0.3.1.md` and `releases/0.3.0.md` | Current document-update notes and earlier release history. |
-| `scripts/build_release_assets.py` | Builds downloadable artifacts from committed files. |
-| `scripts/build_dictionary_docs.py` | Rebuilds the field-level reference; `--check` detects documentation drift. |
+Lu177-PSMA theranostics data model release 0.4.0 extends the deployed MIDRC Gen3 dictionary version `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674`, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release.
 
-## Baseline compatibility
+The imported source parent is `bee947238381704486ccd12beeb8f4689fb22843`, a different revision. Its custom PT `mr_images` field and other differences need receiving-team reconciliation before integration.
 
-The repository's imported source and the deployed compiled dictionary have different revisions. The proposal is based on deployed dictionary `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674`. Its snapshot, hash and additive patch are in the versioned model folder.
+## Current artifacts
 
-The imported source includes a custom `pt_series_file.mr_images` boolean. It remains intact in `gdcdictionary/schemas/pt_series_file.yaml`. A receiving Gen3 implementation must reconcile that field and other source differences before applying this proposal to the source tree. This upload does not claim source-level interchangeability between these different baselines.
+- `schemas`, `integration/yaml`, `templates`, `tables` and `graph` are representations of the same 90-node dictionary.
+- `review` contains the two radiopharmaceutical workbooks; `publication` contains the manuscript draft, supplement and submission notes.
+- `mappings/radiopharmaceutical_source_crosswalk.json` and the revision log trace the new inputs. Source hashes and field extracts are under `sources/radiopharmaceutical_inputs`.
+- `integration/v030_to_v040_additive_patch.json` upgrades the prior merged proposal. The baseline patch still starts from the exact deployed MIDRC snapshot.
+- `scripts/validate_model.py` validates structure, profile rules, fixtures and both patches. Root `scripts/build_dictionary_docs.py --check` detects documentation drift.
+- `scripts/v040/` records the schema and source-crosswalk generation procedure. Artifact authoring also requires the source Word drafts and the supported spreadsheet renderer; generated artifacts are distributed for direct review.
 
-## Release automation
+## Publication workflow
 
-The release workflow is scoped to this repository's `cdis` branch. A committed change to `VERSION`, or a manual run, validates the model, verifies package checksums, builds the model archive and publishes the matching version as a GitHub development release. The title is exactly the numeric `VERSION`; the tag uses a `v` prefix. Existing tags and release assets are never overwritten by the workflow. Release 0.3.1 corrected the v0.3.0 release description. Release 0.3.2 updates the standalone documents and publishes new downloads while preserving earlier releases.
+The GitHub Actions release workflow runs on the authorized `cdis` branch when VERSION changes. It validates the model and documentation, verifies checksums, builds downloads and publishes a development release. The title is `0.4.0` and the tag is `v0.4.0`. Existing tags are never moved. This workflow publishes files only; it does not deploy MIDRC, migrate a database or submit a manuscript to a journal.
 
-The initial release title is **0.3.0**, using **v0.3.0**. Inherited MIDRC tags have since been removed from this repository. The current documentation-only patch is release **0.3.2**, using **v0.3.2**. Word and HTML filenames and visible documentation labels now use v0.3.2. The model schema revision remains v0.3.0; documentation files are updated at their existing repository paths under `extensions/lu177_psma/v0.3.0/`. The package checksums record those documentation changes. The internal `0.3.0-proposal` working-artifact label is retained to distinguish review status from repository release identity.
-
-The inherited build-and-deploy job is restricted to its original MIDRC source repositories. It is not used to deploy this personal model repository. The new workflow publishes release files only; it does not migrate a database or update MIDRC services.
-
-## Development and integration
-
-Use the root README's local validation command. Review the node delta, seven proposed enum additions, source crosswalks and open review register with the receiving Gen3 developers. Reconcile the target baseline, compile the receiving dictionary, validate synthetic submissions and then evaluate real-data mappings. NucLex, LOINC and RadLex bindings require independent semantic review.
-
-Keep release notes and version identifiers explicit. A later adoption into the active MIDRC dictionary is a separate integration change; changes to ontology definitions do not automatically change patient record relationships.
+Model, baseline dictionary, terminology/ontology, clinical criteria and dataset versions remain independent. A receiving deployment still needs a Gen3 build, ingestion/export round trip, vocabulary review and clinical/radiopharmacy review.

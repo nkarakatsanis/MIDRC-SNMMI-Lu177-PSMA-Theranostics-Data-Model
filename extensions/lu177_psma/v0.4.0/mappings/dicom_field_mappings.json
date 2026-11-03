@@ -1,0 +1,6965 @@
+[
+  {
+    "source_element_id": "dicom:r2",
+    "source_field": "Patient's Name",
+    "Data Category": "Patient",
+    "Required": "Yes",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Replace with pseudonym for sharing",
+    "source_tag": "0010,0010)",
+    "expected_tag": "(0010,0010)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient's Name",
+    "registry_match": {
+      "tag": "(0010,0010)",
+      "name": "Patient's Name",
+      "keyword": "PatientName",
+      "vr": "PN",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "submitter_id",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "submitter_id"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "submitter_id"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r3",
+    "source_field": "Patient ID",
+    "Data Category": "Patient",
+    "Required": "Yes",
+    "Required Metadata": "Linkage key",
+    "Comments": "Pseudonymize for sharing",
+    "source_tag": "0010,0020)",
+    "expected_tag": "(0010,0020)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient ID",
+    "registry_match": {
+      "tag": "(0010,0020)",
+      "name": "Patient ID",
+      "keyword": "PatientID",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "submitter_id",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "submitter_id"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "submitter_id"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r4",
+    "source_field": "Patient's Birth Date",
+    "Data Category": "Patient",
+    "Required": "Yes",
+    "Required Metadata": "Age or DOB offset",
+    "Comments": "Can be removed for anonymization",
+    "source_tag": "0010,0030)",
+    "expected_tag": "(0010,0030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient's Birth Date",
+    "registry_match": {
+      "tag": "(0010,0030)",
+      "name": "Patient's Birth Date",
+      "keyword": "PatientBirthDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "age_at_index",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "age_at_index"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "age_at_index"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r5",
+    "source_field": "Patient's Sex",
+    "Data Category": "Patient",
+    "Required": "Yes",
+    "Required Metadata": "—",
+    "Comments": "M/F/O",
+    "source_tag": "0010,0040)",
+    "expected_tag": "(0010,0040)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient's Sex",
+    "registry_match": {
+      "tag": "(0010,0040)",
+      "name": "Patient's Sex",
+      "keyword": "PatientSex",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "sex_assigned_at_birth",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "sex_assigned_at_birth"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "sex_assigned_at_birth"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r6",
+    "source_field": "Patient Weight",
+    "Data Category": "Patient",
+    "Required": "Yes",
+    "Required Metadata": "—",
+    "Comments": "Required for SUV calculation",
+    "source_tag": "0010,1030)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Patient's Weight",
+    "registry_match": {
+      "tag": "(0010,1030)",
+      "name": "Patient's Weight",
+      "keyword": "PatientWeight",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "v0_2_destination": {
+      "node": "anthropometric_assessment",
+      "property": "weight_kg"
+    },
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r7",
+    "source_field": "Patient Size",
+    "Data Category": "Patient",
+    "Required": "No",
+    "Required Metadata": null,
+    "Comments": "Required for certain SUV calculation",
+    "source_tag": "0010,1020)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Patient's Size",
+    "registry_match": {
+      "tag": "(0010,1020)",
+      "name": "Patient's Size",
+      "keyword": "PatientSize",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "v0_2_destination": {
+      "node": "anthropometric_assessment",
+      "property": "height_cm"
+    },
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r9",
+    "source_field": "Study Date",
+    "Data Category": "Study",
+    "Required": "Yes",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Shift date or remove if anonymizing; \nrelative offsets preserve timelines",
+    "source_tag": "0008,0020)",
+    "expected_tag": "(0008,0020)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Study Date",
+    "registry_match": {
+      "tag": "(0008,0020)",
+      "name": "Study Date",
+      "keyword": "StudyDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "imaging_study",
+    "property": "study_date",
+    "v0_2_destination": {
+      "node": "imaging_study",
+      "property": "study_date"
+    },
+    "destination_options": [
+      {
+        "node": "imaging_study",
+        "property": "study_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r10",
+    "source_field": "Study Time",
+    "Data Category": "Study",
+    "Required": "Yes",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Shifted with Study Date; \ncan be generalized (e.g., to nearest hour)",
+    "source_tag": "0008,0030)",
+    "expected_tag": "(0008,0030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Study Time",
+    "registry_match": {
+      "tag": "(0008,0030)",
+      "name": "Study Time",
+      "keyword": "StudyTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "imaging_study",
+    "property": "study_time",
+    "v0_2_destination": {
+      "node": "imaging_study",
+      "property": "study_time"
+    },
+    "destination_options": [
+      {
+        "node": "imaging_study",
+        "property": "study_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r11",
+    "source_field": "Accession Number",
+    "Data Category": "Study",
+    "Required": "Yes",
+    "Required Metadata": "Linkage key",
+    "Comments": "Replaced with a random ID; \nuseful for linking to reports/orders",
+    "source_tag": "0008,0050)",
+    "expected_tag": "(0008,0050)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Accession Number",
+    "registry_match": {
+      "tag": "(0008,0050)",
+      "name": "Accession Number",
+      "keyword": "AccessionNumber",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "imaging_study",
+    "property": "accession_number_pseudonym",
+    "v0_2_destination": {
+      "node": "imaging_study",
+      "property": "accession_number_pseudonym"
+    },
+    "destination_options": [
+      {
+        "node": "imaging_study",
+        "property": "accession_number_pseudonym"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r12",
+    "source_field": "Series Description",
+    "Data Category": "Series",
+    "Required": null,
+    "Required Metadata": "—",
+    "Comments": "Map to harmonized terms (e.g., “PET WB,” “CT Low-Dose”)",
+    "source_tag": "",
+    "expected_tag": "(0008,103E)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": null,
+    "registry_match": {
+      "tag": "(0008,103E)",
+      "name": "Series Description",
+      "keyword": "SeriesDescription",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_description",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_description"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_description"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r13",
+    "source_field": "Image Type",
+    "Data Category": "Series",
+    "Required": "No",
+    "Required Metadata": null,
+    "Comments": "Type of image (primary, derived, secondary capture, etc)",
+    "source_tag": "0008,0008)",
+    "expected_tag": "(0008,0008)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Image Type",
+    "registry_match": {
+      "tag": "(0008,0008)",
+      "name": "Image Type",
+      "keyword": "ImageType",
+      "vr": "CS",
+      "vm": "2-n"
+    },
+    "node": "pt_series_file",
+    "property": "image_type",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "image_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r14",
+    "source_field": "Modality",
+    "Data Category": "Series",
+    "Required": "Yes",
+    "Required Metadata": "—",
+    "Comments": "PET/NM/CT",
+    "source_tag": "0008,0060)",
+    "expected_tag": "(0008,0060)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Modality",
+    "registry_match": {
+      "tag": "(0008,0060)",
+      "name": "Modality",
+      "keyword": "Modality",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "modality",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "modality"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "modality"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r16",
+    "source_field": "Manufacturer",
+    "Data Category": "Equipment",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed for reproducibility and harmonization across scanners",
+    "source_tag": "0008,0070)",
+    "expected_tag": "(0008,0070)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Manufacturer",
+    "registry_match": {
+      "tag": "(0008,0070)",
+      "name": "Manufacturer",
+      "keyword": "Manufacturer",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "manufacturer",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "manufacturer"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "manufacturer"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r17",
+    "source_field": "Manufacturer's Model Name",
+    "Data Category": "Equipment",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Important for reconstruction consistency and SUV harmonization",
+    "source_tag": "0008,1090)",
+    "expected_tag": "(0008,1090)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Manufacturer's Model Name",
+    "registry_match": {
+      "tag": "(0008,1090)",
+      "name": "Manufacturer's Model Name",
+      "keyword": "ManufacturerModelName",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "manufacturer_model_name",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "manufacturer_model_name"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "manufacturer_model_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r18",
+    "source_field": "Device Serial Number",
+    "Data Category": "Equipment",
+    "Required": "No",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Optional: retain internally for traceability, \npseudonymize or remove when sharing",
+    "source_tag": "0018,1000)",
+    "expected_tag": "(0018,1000)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Device Serial Number",
+    "registry_match": {
+      "tag": "(0018,1000)",
+      "name": "Device Serial Number",
+      "keyword": "DeviceSerialNumber",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "device_identifier",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "device_identifier"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "device_identifier"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r21",
+    "source_field": "Rows",
+    "Data Category": "Pixel",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Defines image matrix size (number of rows)",
+    "source_tag": "0028,0010)",
+    "expected_tag": "(0028,0010)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Rows",
+    "registry_match": {
+      "tag": "(0028,0010)",
+      "name": "Rows",
+      "keyword": "Rows",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "rows",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "rows"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "rows"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r22",
+    "source_field": "Columns",
+    "Data Category": "Pixel",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Defines image matrix size (number of columns)",
+    "source_tag": "0028,0011)",
+    "expected_tag": "(0028,0011)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Columns",
+    "registry_match": {
+      "tag": "(0028,0011)",
+      "name": "Columns",
+      "keyword": "Columns",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "columns",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "columns"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "columns"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r23",
+    "source_field": "Pixel Spacing",
+    "Data Category": "Pixel",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Critical for quantitation (voxel size, SUV, dosimetry)",
+    "source_tag": "0028,0030)",
+    "expected_tag": "(0028,0030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Pixel Spacing",
+    "registry_match": {
+      "tag": "(0028,0030)",
+      "name": "Pixel Spacing",
+      "keyword": "PixelSpacing",
+      "vr": "DS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "pixel_spacing",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "pixel_spacing_mm"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_spacing"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r26",
+    "source_field": "Protocol Name",
+    "Data Category": "Study",
+    "Required": "No",
+    "Required Metadata": "Not applicable",
+    "Comments": "Useful for harmonization across sites",
+    "source_tag": "0018,1030)",
+    "expected_tag": "(0018,1030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Protocol Name",
+    "registry_match": {
+      "tag": "(0018,1030)",
+      "name": "Protocol Name",
+      "keyword": "ProtocolName",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "protocol_name",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "protocol_name"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "protocol_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r27",
+    "source_field": "Station Name",
+    "Data Category": "Equipment",
+    "Required": "No",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Helpful in multi-center studies",
+    "source_tag": "0008,1010)",
+    "expected_tag": "(0008,1010)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Station Name",
+    "registry_match": {
+      "tag": "(0008,1010)",
+      "name": "Station Name",
+      "keyword": "StationName",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "station_name",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "station_name"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "station_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r28",
+    "source_field": "Software Versions",
+    "Data Category": "Equipment",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For reconstruction/reproducibility",
+    "source_tag": "0018,1020)",
+    "expected_tag": "(0018,1020)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Software Versions",
+    "registry_match": {
+      "tag": "(0018,1020)",
+      "name": "Software Versions",
+      "keyword": "SoftwareVersions",
+      "vr": "LO",
+      "vm": "1-n"
+    },
+    "node": "scanner",
+    "property": "software_versions",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "software_versions"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "software_versions"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r31",
+    "source_field": "Convolution Kernel",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Affects resolution and AC",
+    "source_tag": "0018,1210)",
+    "expected_tag": "(0018,1210)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Convolution Kernel",
+    "registry_match": {
+      "tag": "(0018,1210)",
+      "name": "Convolution Kernel",
+      "keyword": "ConvolutionKernel",
+      "vr": "SH",
+      "vm": "1-n"
+    },
+    "node": "ct_series_file",
+    "property": "convolution_kernel",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "convolution_kernel"
+    },
+    "destination_options": [
+      {
+        "node": "ct_series_file",
+        "property": "convolution_kernel"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r32",
+    "source_field": "Reconstruction Diameter",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed for spatial resolution analysis",
+    "source_tag": "0018,1100)",
+    "expected_tag": "(0018,1100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Diameter",
+    "registry_match": {
+      "tag": "(0018,1100)",
+      "name": "Reconstruction Diameter",
+      "keyword": "ReconstructionDiameter",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "reconstruction_diameter",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "reconstruction_diameter"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_diameter"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r33",
+    "source_field": "Slice Thickness",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Impacts volumetrics and AC",
+    "source_tag": "0018,0050)",
+    "expected_tag": "(0018,0050)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Slice Thickness",
+    "registry_match": {
+      "tag": "(0018,0050)",
+      "name": "Slice Thickness",
+      "keyword": "SliceThickness",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "slice_thickness",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "slice_thickness"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "slice_thickness"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r34",
+    "source_field": "Spacing Between Slices",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Distance between slice centers, in mm",
+    "source_tag": "0018,0088)",
+    "expected_tag": "(0018,0088)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Spacing Between Slices",
+    "registry_match": {
+      "tag": "(0018,0088)",
+      "name": "Spacing Between Slices",
+      "keyword": "SpacingBetweenSlices",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "spacing_between_slices",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "spacing_between_slices"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "spacing_between_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "spacing_between_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "spacing_between_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "spacing_between_slices"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r35",
+    "source_field": "Spiral Pitch Factor",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "The ratio of the table distance traveled during one gantry rotation to the total width of the detector array",
+    "source_tag": "0018,9311)",
+    "expected_tag": "(0018,9311)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Spiral Pitch Factor",
+    "registry_match": {
+      "tag": "(0018,9311)",
+      "name": "Spiral Pitch Factor",
+      "keyword": "SpiralPitchFactor",
+      "vr": "FD",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "spiral_pitch_factor",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "spiral_pitch_factor"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "spiral_pitch_factor"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r36",
+    "source_field": "mAs (exposure)",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "A measure of the total number of photons produced by the X-ray tube",
+    "source_tag": "0018,1152)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Exposure",
+    "registry_match": {
+      "tag": "(0018,1152)",
+      "name": "Exposure",
+      "keyword": "Exposure",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "mas_exposure",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "mas_exposure"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "mas_exposure"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r37",
+    "source_field": "kVp",
+    "Data Category": "CT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "The peak voltage applied to the X-ray tube, which determines the energy of the X-ray photons",
+    "source_tag": "0018,0060)",
+    "expected_tag": "(0018,0060)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "KVP",
+    "registry_match": {
+      "tag": "(0018,0060)",
+      "name": "KVP",
+      "keyword": "KVP",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "kvp",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "kvp"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "kvp"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r38",
+    "source_field": "Exposure Time",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "The duration of the X-ray exposure for a CT scan, represented in milliseconds",
+    "source_tag": "0018,1150)",
+    "expected_tag": "(0018,1150)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Exposure Time",
+    "registry_match": {
+      "tag": "(0018,1150)",
+      "name": "Exposure Time",
+      "keyword": "ExposureTime",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "exposure_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "exposure_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "exposure_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r39",
+    "source_field": "mA (X-ray tube current)",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "A measure of flow of electrons through the x-ray tube, in milliampere",
+    "source_tag": "0018,1151)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "X-Ray Tube Current",
+    "registry_match": {
+      "tag": "(0018,1151)",
+      "name": "X-Ray Tube Current",
+      "keyword": "XRayTubeCurrent",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "ma_x_ray_tube_current",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "ma_x_ray_tube_current"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "ma_x_ray_tube_current"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r40",
+    "source_field": "Revolution Time",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "The time it takes for a source to do a complete revolution around the gantry",
+    "source_tag": "0018,9305)",
+    "expected_tag": "(0018,9305)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Revolution Time",
+    "registry_match": {
+      "tag": "(0018,9305)",
+      "name": "Revolution Time",
+      "keyword": "RevolutionTime",
+      "vr": "FD",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "revolution_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "revolution_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "revolution_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r41",
+    "source_field": "Scan Options",
+    "Data Category": "CT",
+    "Required": "No",
+    "Required Metadata": "Not applicable",
+    "Comments": "Parameters of scanning sequence (e.g., helical mode)",
+    "source_tag": "0018,0022)",
+    "expected_tag": "(0018,0022)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Scan Options",
+    "registry_match": {
+      "tag": "(0018,0022)",
+      "name": "Scan Options",
+      "keyword": "ScanOptions",
+      "vr": "CS",
+      "vm": "1-n"
+    },
+    "node": "acquisition",
+    "property": "scan_options",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "scan_options"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "scan_options"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r44",
+    "source_field": "Radiopharmaceutical",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Radiopharmaceutical",
+    "source_tag": "0018,0031)",
+    "expected_tag": "(0018,0031)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical",
+    "registry_match": {
+      "tag": "(0018,0031)",
+      "name": "Radiopharmaceutical",
+      "keyword": "Radiopharmaceutical",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "radiopharmaceutical",
+    "property": "name",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "name"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r45",
+    "source_field": "Radiopharmaceutical Start Time",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For decay correction",
+    "source_tag": "0018,1078)",
+    "expected_tag": "(0018,1072)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Radiopharmaceutical Start DateTime",
+    "registry_match": {
+      "tag": "(0018,1072)",
+      "name": "Radiopharmaceutical Start Time",
+      "keyword": "RadiopharmaceuticalStartTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "dicom_start_time",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "dicom_start_time"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "dicom_start_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r46",
+    "source_field": "Radiopharmaceutical Stop Time",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Useful for multi-injection protocols",
+    "source_tag": "0018,1079)",
+    "expected_tag": "(0018,1073)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Radiopharmaceutical Stop DateTime",
+    "registry_match": {
+      "tag": "(0018,1073)",
+      "name": "Radiopharmaceutical Stop Time",
+      "keyword": "RadiopharmaceuticalStopTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "dicom_stop_time",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "dicom_stop_time"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "dicom_stop_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r47",
+    "source_field": "Radiopharmaceutical Start Date Time",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For decay correction",
+    "source_tag": "0018,1078)",
+    "expected_tag": "(0018,1078)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical Start DateTime",
+    "registry_match": {
+      "tag": "(0018,1078)",
+      "name": "Radiopharmaceutical Start DateTime",
+      "keyword": "RadiopharmaceuticalStartDateTime",
+      "vr": "DT",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "administration_datetime",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "administration_datetime"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "administration_datetime"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r48",
+    "source_field": "Radiopharmaceutical Total Dose",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Decay-corrected to admin time",
+    "source_tag": "0018,1074)",
+    "expected_tag": "(0018,1074)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radionuclide Total Dose",
+    "registry_match": {
+      "tag": "(0018,1074)",
+      "name": "Radionuclide Total Dose",
+      "keyword": "RadionuclideTotalDose",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "administered_activity_mbq",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "administered_activity_mbq"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "administered_activity_mbq"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r49",
+    "source_field": "Radionuclide Half Life",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed for activity/time conversions",
+    "source_tag": "0018,1075)",
+    "expected_tag": "(0018,1075)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radionuclide Half Life",
+    "registry_match": {
+      "tag": "(0018,1075)",
+      "name": "Radionuclide Half Life",
+      "keyword": "RadionuclideHalfLife",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "radiopharmaceutical",
+    "property": "physical_half_life_seconds",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "physical_half_life_seconds"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "physical_half_life_seconds"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r50",
+    "source_field": "Units",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Usually BQML",
+    "source_tag": "0054,1001)",
+    "expected_tag": "(0054,1001)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Units",
+    "registry_match": {
+      "tag": "(0054,1001)",
+      "name": "Units",
+      "keyword": "Units",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "quantitative_units",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "quantitative_units"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "quantitative_units"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r51",
+    "source_field": "Decay Correction",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "\"START\", \"NONE\", etc.",
+    "source_tag": "0054,1102)",
+    "expected_tag": "(0054,1102)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Decay Correction",
+    "registry_match": {
+      "tag": "(0054,1102)",
+      "name": "Decay Correction",
+      "keyword": "DecayCorrection",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "decay_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "decay_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "decay_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r52",
+    "source_field": "Decay Factor",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Applied to scale pixel values",
+    "source_tag": "0054,1321)",
+    "expected_tag": "(0054,1321)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Decay Factor",
+    "registry_match": {
+      "tag": "(0054,1321)",
+      "name": "Decay Factor",
+      "keyword": "DecayFactor",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "decay_factor",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "decay_factor"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "decay_factor"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r53",
+    "source_field": "Frame Reference Time",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed for dynamic PET",
+    "source_tag": "0054,1300)",
+    "expected_tag": "(0054,1300)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Frame Reference Time",
+    "registry_match": {
+      "tag": "(0054,1300)",
+      "name": "Frame Reference Time",
+      "keyword": "FrameReferenceTime",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "frame_reference_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "frame_reference_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "frame_reference_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r54",
+    "source_field": "Frame Duration",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed to compute activity-time curves",
+    "source_tag": "0018,1242)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Actual Frame Duration",
+    "registry_match": {
+      "tag": "(0018,1242)",
+      "name": "Actual Frame Duration",
+      "keyword": "ActualFrameDuration",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "frame_duration",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "frame_duration"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "frame_duration"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r55",
+    "source_field": "SUV Type",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Method for calculating SUV (e.g., body weight, lean body mass)",
+    "source_tag": "0054,1006)",
+    "expected_tag": "(0054,1006)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "SUV Type",
+    "registry_match": {
+      "tag": "(0054,1006)",
+      "name": "SUV Type",
+      "keyword": "SUVType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "suv_type",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "suv_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "suv_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r56",
+    "source_field": "Radiopharmaceutical Route",
+    "Data Category": "PET",
+    "Required": "yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Route of administraion",
+    "source_tag": "0018,1070",
+    "expected_tag": "(0018,1070)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical Route",
+    "registry_match": {
+      "tag": "(0018,1070)",
+      "name": "Radiopharmaceutical Route",
+      "keyword": "RadiopharmaceuticalRoute",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "route",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "route"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "route"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r57",
+    "source_field": "Radionuclide Name",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0018, 0104",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "radiopharmaceutical",
+    "property": "radionuclide",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "radionuclide"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "radionuclide"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r58",
+    "source_field": "Radiopharmaceutical Substabce",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0018, 0031",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Radiopharmaceutical",
+    "registry_match": {
+      "tag": "(0018,0031)",
+      "name": "Radiopharmaceutical",
+      "keyword": "Radiopharmaceutical",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "radiopharmaceutical_substabce",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "radiopharmaceutical_substabce"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "radiopharmaceutical_substabce"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r59",
+    "source_field": "Radionuclide Code Meaning",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0008, 0100",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Code Value",
+    "registry_match": {
+      "tag": "(0008,0100)",
+      "name": "Code Value",
+      "keyword": "CodeValue",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "radionuclide_code_meaning",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "radionuclide_code_meaning"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "radionuclide_code_meaning"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r62",
+    "source_field": "Frame Start Time",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For kinetic modeling",
+    "source_tag": "0018,1062)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Nominal Interval",
+    "registry_match": {
+      "tag": "(0018,1062)",
+      "name": "Nominal Interval",
+      "keyword": "NominalInterval",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "frame_start_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "frame_start_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "frame_start_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r63",
+    "source_field": "Actual Frame Duration",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed for decay correction accuracy",
+    "source_tag": "0018,1242)",
+    "expected_tag": "(0018,1242)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Actual Frame Duration",
+    "registry_match": {
+      "tag": "(0018,1242)",
+      "name": "Actual Frame Duration",
+      "keyword": "ActualFrameDuration",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "actual_frame_duration",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "actual_frame_duration"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "actual_frame_duration"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r64",
+    "source_field": "Scatter Correction Method",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Affects quantitative bias",
+    "source_tag": "0054,1105)",
+    "expected_tag": "(0054,1105)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Scatter Correction Method",
+    "registry_match": {
+      "tag": "(0054,1105)",
+      "name": "Scatter Correction Method",
+      "keyword": "ScatterCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "scatter_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "scatter_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r65",
+    "source_field": "Attenuation Correction Method",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "CT, transmission scan, or none",
+    "source_tag": "0054,1102)",
+    "expected_tag": "(0054,1101)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Decay Correction",
+    "registry_match": {
+      "tag": "(0054,1101)",
+      "name": "Attenuation Correction Method",
+      "keyword": "AttenuationCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "attenuation_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "attenuation_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "attenuation_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r66",
+    "source_field": "Normalization Method",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For reproducibility",
+    "source_tag": "0054,1107)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "reconstruction",
+    "property": "normalization_method",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "normalization_method"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "normalization_method"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r67",
+    "source_field": "Sensitivity Factor",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For cross-calibration between scanners",
+    "source_tag": "0054,1320)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Slice Sensitivity Factor",
+    "registry_match": {
+      "tag": "(0054,1320)",
+      "name": "Slice Sensitivity Factor",
+      "keyword": "SliceSensitivityFactor",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "sensitivity_factor",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "sensitivity_factor"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "sensitivity_factor"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r68",
+    "source_field": "Corrections",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Corrections applied to the image (e.g., ATTN, SCAT, etc)",
+    "source_tag": "0028,0051)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Corrected Image",
+    "registry_match": {
+      "tag": "(0028,0051)",
+      "name": "Corrected Image",
+      "keyword": "CorrectedImage",
+      "vr": "CS",
+      "vm": "1-n"
+    },
+    "node": "reconstruction",
+    "property": "applied_corrections",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "corrections"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "applied_corrections"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r69",
+    "source_field": "Reconstruction Diameter",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Diameter of image, in mm",
+    "source_tag": "0018,1100)",
+    "expected_tag": "(0018,1100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Diameter",
+    "registry_match": {
+      "tag": "(0018,1100)",
+      "name": "Reconstruction Diameter",
+      "keyword": "ReconstructionDiameter",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "reconstruction_diameter",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "reconstruction_diameter"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_diameter"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r70",
+    "source_field": "Series Time",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Time of the image series",
+    "source_tag": "0008,0031)",
+    "expected_tag": "(0008,0031)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Time",
+    "registry_match": {
+      "tag": "(0008,0031)",
+      "name": "Series Time",
+      "keyword": "SeriesTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_time",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_time"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r71",
+    "source_field": "Series Date",
+    "Data Category": "PET",
+    "Required": "No",
+    "Required Metadata": "De-identification rules",
+    "Comments": "Date of the image series",
+    "source_tag": "0008,0021)",
+    "expected_tag": "(0008,0021)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Date",
+    "registry_match": {
+      "tag": "(0008,0021)",
+      "name": "Series Date",
+      "keyword": "SeriesDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_date",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_date"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r72",
+    "source_field": "Recon Method",
+    "Data Category": "PET",
+    "Required": "yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Textual description of reconstruction processing, e.g., 2D filtered backprojection, 2D iterative, 3D PROMIS, 3D FAVOR, 3D iterative.",
+    "source_tag": "0054,1103",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Reconstruction Method",
+    "registry_match": {
+      "tag": "(0054,1103)",
+      "name": "Reconstruction Method",
+      "keyword": "ReconstructionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "algorithm",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "algorithm"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "algorithm"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r73",
+    "source_field": "Rescale Slope",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "m: Needed to compute reeal ixel value",
+    "source_tag": "0028,1053",
+    "expected_tag": "(0028,1053)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Rescale Slope",
+    "registry_match": {
+      "tag": "(0028,1053)",
+      "name": "Rescale Slope",
+      "keyword": "RescaleSlope",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "rescale_slope",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "rescale_slope"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "rescale_slope"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r74",
+    "source_field": "Rescale Intercept",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "b = 0 for PET",
+    "source_tag": "0028,1052",
+    "expected_tag": "(0028,1052)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Rescale Intercept",
+    "registry_match": {
+      "tag": "(0028,1052)",
+      "name": "Rescale Intercept",
+      "keyword": "RescaleIntercept",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "rescale_intercept",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "rescale_intercept"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "rescale_intercept"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r75",
+    "source_field": "SliceProgressionDirection",
+    "Data Category": "PET",
+    "Required": "??",
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054,0500",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Slice Progression Direction",
+    "registry_match": {
+      "tag": "(0054,0500)",
+      "name": "Slice Progression Direction",
+      "keyword": "SliceProgressionDirection",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "sliceprogressiondirection",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "sliceprogressiondirection"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "sliceprogressiondirection"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r76",
+    "source_field": "Scatter Fraction Factor",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "An estimate of the fraction of acquired counts that were due to scatter and were corrected in this image. The value shall be zero if no scatter correction was applied.",
+    "source_tag": "0054,1323",
+    "expected_tag": "(0054,1323)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Scatter Fraction Factor",
+    "registry_match": {
+      "tag": "(0054,1323)",
+      "name": "Scatter Fraction Factor",
+      "keyword": "ScatterFractionFactor",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "scatter_fraction_factor",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "scatter_fraction_factor"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_fraction_factor"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r77",
+    "source_field": "Dead Time Factor",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "average dead time correction factor that was applied to this image. The value shall be one if no dead time correction was applied.",
+    "source_tag": "0054,1324",
+    "expected_tag": "(0054,1324)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Dead Time Factor",
+    "registry_match": {
+      "tag": "(0054,1324)",
+      "name": "Dead Time Factor",
+      "keyword": "DeadTimeFactor",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "dead_time_factor",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "dead_time_factor"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "dead_time_factor"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r78",
+    "source_field": "Image Index",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "index identifying the position of this image within a PET Series.",
+    "source_tag": "0054,1324",
+    "expected_tag": "(0054,1330)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Dead Time Factor",
+    "registry_match": {
+      "tag": "(0054,1330)",
+      "name": "Image Index",
+      "keyword": "ImageIndex",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "image_index",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "image_index"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "image_index"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r79",
+    "source_field": "Corrected Image",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "One or more values that indicate which, if any, corrections have been applied to the images in this Series.",
+    "source_tag": "0028,0051",
+    "expected_tag": "(0028,0051)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Corrected Image",
+    "registry_match": {
+      "tag": "(0028,0051)",
+      "name": "Corrected Image",
+      "keyword": "CorrectedImage",
+      "vr": "CS",
+      "vm": "1-n"
+    },
+    "node": "reconstruction",
+    "property": "corrected_image",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "corrected_image"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "corrected_image"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r80",
+    "source_field": "Number of Slices",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "The maximum number of Slices that may exist in this Series.",
+    "source_tag": "0054,0081",
+    "expected_tag": "(0054,0081)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Number of Slices",
+    "registry_match": {
+      "tag": "(0054,0081)",
+      "name": "Number of Slices",
+      "keyword": "NumberOfSlices",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "number_of_slices",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "number_of_slices"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "number_of_slices"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r81",
+    "source_field": "Series Type",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "multi-valued indicator of the type of Series",
+    "source_tag": "0054,1000",
+    "expected_tag": "(0054,1000)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Type",
+    "registry_match": {
+      "tag": "(0054,1000)",
+      "name": "Series Type",
+      "keyword": "SeriesType",
+      "vr": "CS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "series_type",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r82",
+    "source_field": "Randoms Correction Method",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Type of randoms correction processing.",
+    "source_tag": "0054,1100",
+    "expected_tag": "(0054,1100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Randoms Correction Method",
+    "registry_match": {
+      "tag": "(0054,1100)",
+      "name": "Randoms Correction Method",
+      "keyword": "RandomsCorrectionMethod",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "randoms_correction_method",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "randoms_correction_method"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "randoms_correction_method"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r83",
+    "source_field": "Attenuation Correction Method",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "textual description of the attenuation correction processing. e.g., measured vs. calculated, transmission source type (ring, line, point), assumed patient geometry (polygon, ellipse, segmented, attenuation coefficient, skull thickness), post-injection transmission, smoothing.",
+    "source_tag": "0054,1101",
+    "expected_tag": "(0054,1101)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Attenuation Correction Method",
+    "registry_match": {
+      "tag": "(0054,1101)",
+      "name": "Attenuation Correction Method",
+      "keyword": "AttenuationCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "attenuation_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "attenuation_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "attenuation_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r84",
+    "source_field": "Scatter Correction Method",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "A textual description of the scatter correction processing. e.g., convolution-subtraction, dual energy window, model-based, use of attenuation data.",
+    "source_tag": "0054,1102",
+    "expected_tag": "(0054,1105)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Decay Correction",
+    "registry_match": {
+      "tag": "(0054,1105)",
+      "name": "Scatter Correction Method",
+      "keyword": "ScatterCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "scatter_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "scatter_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r85",
+    "source_field": "Counts Source Attribute",
+    "Data Category": "PET",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "The primary source of counts. The primary source leads to the underlying image Units (0054,1001), as opposed to secondary sources that are used during reconstruction correction.",
+    "source_tag": "0054,1002",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Counts Source",
+    "registry_match": {
+      "tag": "(0054,1002)",
+      "name": "Counts Source",
+      "keyword": "CountsSource",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "counts_source_attribute",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "counts_source_attribute"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "counts_source_attribute"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r86",
+    "source_field": "Energy Window Lower Limit",
+    "Data Category": "PET",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054,0014)",
+    "expected_tag": "(0054,0014)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Energy Window Lower Limit",
+    "registry_match": {
+      "tag": "(0054,0014)",
+      "name": "Energy Window Lower Limit",
+      "keyword": "EnergyWindowLowerLimit",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_lower_kev",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_lower_limit"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_lower_kev"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r87",
+    "source_field": "Energy Window Upper Limit",
+    "Data Category": "PET",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054,0015)",
+    "expected_tag": "(0054,0015)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Energy Window Upper Limit",
+    "registry_match": {
+      "tag": "(0054,0015)",
+      "name": "Energy Window Upper Limit",
+      "keyword": "EnergyWindowUpperLimit",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_upper_kev",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_upper_limit"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_upper_kev"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r92",
+    "source_field": "Radiopharmaceutical Info Seq",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Same field number as PET",
+    "source_tag": "0054,0016)",
+    "expected_tag": "(0054,0016)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical Information Sequence",
+    "registry_match": {
+      "tag": "(0054,0016)",
+      "name": "Radiopharmaceutical Information Sequence",
+      "keyword": "RadiopharmaceuticalInformationSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "radiopharmaceutical_info_seq",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "radiopharmaceutical_info_seq"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "radiopharmaceutical_info_seq"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r93",
+    "source_field": "Energy Window Seq",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Includes window center/width",
+    "source_tag": "0054,0014)",
+    "expected_tag": "(0054,0012)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Energy Window Lower Limit",
+    "registry_match": {
+      "tag": "(0054,0012)",
+      "name": "Energy Window Information Sequence",
+      "keyword": "EnergyWindowInformationSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_seq",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_seq"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_seq"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r94",
+    "source_field": "Detector Type",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "NaI, CZT",
+    "source_tag": "0054,0200)",
+    "expected_tag": "(0018,7004)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Start Angle",
+    "registry_match": {
+      "tag": "(0018,7004)",
+      "name": "Detector Type",
+      "keyword": "DetectorType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "detector_type",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "detector_type"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "detector_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r95",
+    "source_field": "Collimator Name",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "LEHR, MEGP, etc.",
+    "source_tag": "0018,1180)",
+    "expected_tag": "(0018,1180)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Collimator/grid Name",
+    "registry_match": {
+      "tag": "(0018,1180)",
+      "name": "Collimator/grid Name",
+      "keyword": "CollimatorGridName",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "collimator_name",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "collimator_name"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "collimator_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r96",
+    "source_field": "Collimator Type",
+    "Data Category": "SPECT",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": "Parallel hole. Pinhole, Conebeam etc.",
+    "source_tag": "0018,1181)",
+    "expected_tag": "(0018,1181)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Collimator Type",
+    "registry_match": {
+      "tag": "(0018,1181)",
+      "name": "Collimator Type",
+      "keyword": "CollimatorType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "collimator_type",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "collimator_type"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "collimator_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r97",
+    "source_field": "Angular Step",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For tomo acquisitions",
+    "source_tag": "0018,1144)",
+    "expected_tag": "(0018,1144)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Angular Step",
+    "registry_match": {
+      "tag": "(0018,1144)",
+      "name": "Angular Step",
+      "keyword": "AngularStep",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "angular_step",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "angular_step"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "angular_step"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r98",
+    "source_field": "Rotation Direction",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "CW or CCW",
+    "source_tag": "0018,1140)",
+    "expected_tag": "(0018,1140)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Rotation Direction",
+    "registry_match": {
+      "tag": "(0018,1140)",
+      "name": "Rotation Direction",
+      "keyword": "RotationDirection",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "rotation_direction",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "rotation_direction"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "rotation_direction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r99",
+    "source_field": "Acquisition Type",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Planar, tomographic, whole-body",
+    "source_tag": "0018,9302)",
+    "expected_tag": "(0018,9302)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Acquisition Type",
+    "registry_match": {
+      "tag": "(0018,9302)",
+      "name": "Acquisition Type",
+      "keyword": "AcquisitionType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "ct_series_file",
+    "property": "acquisition_type",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acquisition_type"
+    },
+    "destination_options": [
+      {
+        "node": "ct_series_file",
+        "property": "acquisition_type"
+      },
+      {
+        "node": "acquisition",
+        "property": "acquisition_type_source_value"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r100",
+    "source_field": "Reconstruction Method",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "FBP, OSEM",
+    "source_tag": "0054,1103)",
+    "expected_tag": "(0054,1103)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Method",
+    "registry_match": {
+      "tag": "(0054,1103)",
+      "name": "Reconstruction Method",
+      "keyword": "ReconstructionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "algorithm",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "algorithm"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "algorithm"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r101",
+    "source_field": "Filter Type",
+    "Data Category": "SPECT",
+    "Required": "Yes",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Butterworth, Hanning",
+    "source_tag": "0054,1106)",
+    "expected_tag": "(0018,1160)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": null,
+    "registry_match": {
+      "tag": "(0018,1160)",
+      "name": "Filter Type",
+      "keyword": "FilterType",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "filter_type",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "filter_type"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "filter_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r102",
+    "source_field": "Acquisition Start Condition",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "For gated or triggered acquisitions",
+    "source_tag": "0018,0073)",
+    "expected_tag": "(0018,0073)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Acquisition Start Condition",
+    "registry_match": {
+      "tag": "(0018,0073)",
+      "name": "Acquisition Start Condition",
+      "keyword": "AcquisitionStartCondition",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "acquisition_start_condition",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acquisition_start_condition"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "acquisition_start_condition"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r103",
+    "source_field": "Acquisition End Condition",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Complements start condition",
+    "source_tag": "0018,0074)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Acquisition Start Condition Data",
+    "registry_match": {
+      "tag": "(0018,0074)",
+      "name": "Acquisition Start Condition Data",
+      "keyword": "AcquisitionStartConditionData",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "acquisition_end_condition",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acquisition_end_condition"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "acquisition_end_condition"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r104",
+    "source_field": "Cardiac Cycle Position",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed for gated SPECT",
+    "source_tag": "0018,1060)",
+    "expected_tag": "(0018,9236)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Trigger Time",
+    "registry_match": {
+      "tag": "(0018,9236)",
+      "name": "Cardiac Cycle Position",
+      "keyword": "CardiacCyclePosition",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "cardiac_cycle_position",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "cardiac_cycle_position"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "cardiac_cycle_position"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r105",
+    "source_field": "Energy Window Lower Limit",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Defines photopeak range",
+    "source_tag": "0054,0014)",
+    "expected_tag": "(0054,0014)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Energy Window Lower Limit",
+    "registry_match": {
+      "tag": "(0054,0014)",
+      "name": "Energy Window Lower Limit",
+      "keyword": "EnergyWindowLowerLimit",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_lower_kev",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_lower_limit"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_lower_kev"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r106",
+    "source_field": "Energy Window Upper Limit",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Defines photopeak range",
+    "source_tag": "0054,0015)",
+    "expected_tag": "(0054,0015)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Energy Window Upper Limit",
+    "registry_match": {
+      "tag": "(0054,0015)",
+      "name": "Energy Window Upper Limit",
+      "keyword": "EnergyWindowUpperLimit",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_upper_kev",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_upper_limit"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_upper_kev"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r107",
+    "source_field": "Energy Window Name",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054, 0018)",
+    "expected_tag": "(0054,0018)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Energy Window Name",
+    "registry_match": {
+      "tag": "(0054,0018)",
+      "name": "Energy Window Name",
+      "keyword": "EnergyWindowName",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_names",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_name"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_names"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r108",
+    "source_field": "Rotation Information Sequence",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Captures full orbit details",
+    "source_tag": "0054,0050)",
+    "expected_tag": "(0054,0052)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Rotation Vector",
+    "registry_match": {
+      "tag": "(0054,0052)",
+      "name": "Rotation Information Sequence",
+      "keyword": "RotationInformationSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "rotation_information_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "rotation_information_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "rotation_information_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r109",
+    "source_field": "Tomo Angle Range",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "Needed to replicate scan geometry",
+    "source_tag": "0054,0054)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "tomo_angle_range",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "tomo_angle_range"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "tomo_angle_range"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r110",
+    "source_field": "Applied Corrections",
+    "Data Category": "SPECT",
+    "Required": "No",
+    "Required Metadata": "Retain as provided",
+    "Comments": "E.g., decay, scatter, uniformity",
+    "source_tag": "0028,0051)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Corrected Image",
+    "registry_match": {
+      "tag": "(0028,0051)",
+      "name": "Corrected Image",
+      "keyword": "CorrectedImage",
+      "vr": "CS",
+      "vm": "1-n"
+    },
+    "node": "reconstruction",
+    "property": "applied_corrections",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "applied_corrections"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "applied_corrections"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r111",
+    "source_field": "Number of ENERGY wndows???",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": "number of distinct energy window groupings acquired in this image",
+    "source_tag": "0054,0011",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Number of Energy Windows",
+    "registry_match": {
+      "tag": "(0054,0011)",
+      "name": "Number of Energy Windows",
+      "keyword": "NumberOfEnergyWindows",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "number_of_energy_windows",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "number_of_energy_wndows"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "number_of_energy_windows"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r112",
+    "source_field": "Energy Window Information Sequence",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054,0012",
+    "expected_tag": "(0054,0012)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Energy Window Information Sequence",
+    "registry_match": {
+      "tag": "(0054,0012)",
+      "name": "Energy Window Information Sequence",
+      "keyword": "EnergyWindowInformationSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_information_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_information_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_information_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r113",
+    "source_field": "Number of Frames in Rotation",
+    "Data Category": "SPECT",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054,0053",
+    "expected_tag": "(0054,0053)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Number of Frames in Rotation",
+    "registry_match": {
+      "tag": "(0054,0053)",
+      "name": "Number of Frames in Rotation",
+      "keyword": "NumberOfFramesInRotation",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "number_of_frames_in_rotation",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "number_of_frames_in_rotation"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "number_of_frames_in_rotation"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r114",
+    "source_field": "Start Angle",
+    "Data Category": "SPECT",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0054,0200",
+    "expected_tag": "(0054,0200)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Start Angle",
+    "registry_match": {
+      "tag": "(0054,0200)",
+      "name": "Start Angle",
+      "keyword": "StartAngle",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "start_angle",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "start_angle"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "start_angle"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r115",
+    "source_field": "Actual Frame Duration",
+    "Data Category": "SPECT",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0018,1242",
+    "expected_tag": "(0018,1242)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Actual Frame Duration",
+    "registry_match": {
+      "tag": "(0018,1242)",
+      "name": "Actual Frame Duration",
+      "keyword": "ActualFrameDuration",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "actual_frame_duration",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "actual_frame_duration"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "actual_frame_duration"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r116",
+    "source_field": "Type of Detector Motion",
+    "Data Category": "SPECT",
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": "\"STEP AND SHOOT,\" \"CONTINUOUS\", \"ACQ DURING STEP\"",
+    "source_tag": "0054,0202",
+    "expected_tag": "(0054,0202)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Type of Detector Motion",
+    "registry_match": {
+      "tag": "(0054,0202)",
+      "name": "Type of Detector Motion",
+      "keyword": "TypeOfDetectorMotion",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "type_of_detector_motion",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "type_of_detector_motion"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "type_of_detector_motion"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r117",
+    "source_field": "Acuisition date/time??",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "acuisition_date_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acuisition_date_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "acuisition_date_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r118",
+    "source_field": "Frame time continuous bed",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "frame_time_continuous_bed",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "frame_time_continuous_bed"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "frame_time_continuous_bed"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r119",
+    "source_field": "bed speed?",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "bed_speed",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "bed_speed"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "bed_speed"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r120",
+    "source_field": "table motion",
+    "Data Category": null,
+    "Required": null,
+    "Required Metadata": null,
+    "Comments": null,
+    "source_tag": "0018,1134",
+    "expected_tag": "(0018,1134)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Table Motion",
+    "registry_match": {
+      "tag": "(0018,1134)",
+      "name": "Table Motion",
+      "keyword": "TableMotion",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "table_motion",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "table_motion"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "table_motion"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r127",
+    "source_field": "Exposure Time",
+    "source_tag": "(\"0018,1150\")",
+    "expected_tag": "(0018,1150)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Exposure Time",
+    "registry_match": {
+      "tag": "(0018,1150)",
+      "name": "Exposure Time",
+      "keyword": "ExposureTime",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "exposure_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "exposure_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "exposure_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r128",
+    "source_field": "X-Ray Tube Current",
+    "source_tag": "(\"0018,1151)",
+    "expected_tag": "(0018,1151)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "X-Ray Tube Current",
+    "registry_match": {
+      "tag": "(0018,1151)",
+      "name": "X-Ray Tube Current",
+      "keyword": "XRayTubeCurrent",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "x_ray_tube_current",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "x_ray_tube_current"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "x_ray_tube_current"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r129",
+    "source_field": "Exposure",
+    "source_tag": "(\"0018,1152\")",
+    "expected_tag": "(0018,1152)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Exposure",
+    "registry_match": {
+      "tag": "(0018,1152)",
+      "name": "Exposure",
+      "keyword": "Exposure",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "exposure",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "exposure"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "exposure"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r130",
+    "source_field": "CTDIvol",
+    "source_tag": "(\"0018,9345\")",
+    "expected_tag": "(0018,9345)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "CTDIvol",
+    "registry_match": {
+      "tag": "(0018,9345)",
+      "name": "CTDIvol",
+      "keyword": "CTDIvol",
+      "vr": "FD",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "ctdivol",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "ctdivol"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "ctdivol"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r131",
+    "source_field": "CTDI Phantom Type Code Sequence",
+    "source_tag": "",
+    "expected_tag": "(0018,9346)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": null,
+    "registry_match": {
+      "tag": "(0018,9346)",
+      "name": "CTDI Phantom Type Code Sequence",
+      "keyword": "CTDIPhantomTypeCodeSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "ctdi_phantom_type_code_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "ctdi_phantom_type_code_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "ctdi_phantom_type_code_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r138",
+    "source_field": "TYPE OF SEQUENCE",
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "type_of_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "type_of_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "type_of_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r139",
+    "source_field": "CONTRAST-ENHANCED",
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "contrast_enhanced",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "contrast_enhanced"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "contrast_enhanced"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r178",
+    "source_field": "Patient Name",
+    "source_tag": "(0008, 0040)",
+    "expected_tag": "(0010,0010)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Data Set Type",
+    "registry_match": {
+      "tag": "(0010,0010)",
+      "name": "Patient's Name",
+      "keyword": "PatientName",
+      "vr": "PN",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "submitter_id",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "submitter_id"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "submitter_id"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r179",
+    "source_field": "Patient ID",
+    "source_tag": "(0010, 0020)",
+    "expected_tag": "(0010,0020)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient ID",
+    "registry_match": {
+      "tag": "(0010,0020)",
+      "name": "Patient ID",
+      "keyword": "PatientID",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "submitter_id",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "submitter_id"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "submitter_id"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r180",
+    "source_field": "Patient's Birth Date",
+    "source_tag": "(0010, 0030)",
+    "expected_tag": "(0010,0030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient's Birth Date",
+    "registry_match": {
+      "tag": "(0010,0030)",
+      "name": "Patient's Birth Date",
+      "keyword": "PatientBirthDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "age_at_index",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "age_at_index"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "age_at_index"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r181",
+    "source_field": "Patient's Sex",
+    "source_tag": "(0010, 0040)",
+    "expected_tag": "(0010,0040)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient's Sex",
+    "registry_match": {
+      "tag": "(0010,0040)",
+      "name": "Patient's Sex",
+      "keyword": "PatientSex",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "sex_assigned_at_birth",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "sex_assigned_at_birth"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "sex_assigned_at_birth"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r182",
+    "source_field": "2. Image Characteristics",
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "source_section_note_2_image_characteristics",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "2_image_characteristics"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "source_section_note_2_image_characteristics"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r183",
+    "source_field": "Image Type",
+    "source_tag": "(0008, 0008)",
+    "expected_tag": "(0008,0008)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Image Type",
+    "registry_match": {
+      "tag": "(0008,0008)",
+      "name": "Image Type",
+      "keyword": "ImageType",
+      "vr": "CS",
+      "vm": "2-n"
+    },
+    "node": "pt_series_file",
+    "property": "image_type",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "image_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r184",
+    "source_field": "Image Orientation (Patient)",
+    "source_tag": "(0020, 0032)",
+    "expected_tag": "(0020,0037)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Image Position (Patient)",
+    "registry_match": {
+      "tag": "(0020,0037)",
+      "name": "Image Orientation (Patient)",
+      "keyword": "ImageOrientationPatient",
+      "vr": "DS",
+      "vm": "6"
+    },
+    "node": "pt_series_file",
+    "property": "image_orientation_patient",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "image_orientation_patient"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_orientation_patient"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r185",
+    "source_field": "Image Position (Patient)",
+    "source_tag": "(0020, 0037)",
+    "expected_tag": "(0020,0032)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Image Orientation (Patient)",
+    "registry_match": {
+      "tag": "(0020,0032)",
+      "name": "Image Position (Patient)",
+      "keyword": "ImagePositionPatient",
+      "vr": "DS",
+      "vm": "3"
+    },
+    "node": "pt_series_file",
+    "property": "image_position_patient",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "image_position_patient"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_position_patient"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r186",
+    "source_field": "Photometric Interpretation",
+    "source_tag": "(0028, 0004)",
+    "expected_tag": "(0028,0004)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Photometric Interpretation",
+    "registry_match": {
+      "tag": "(0028,0004)",
+      "name": "Photometric Interpretation",
+      "keyword": "PhotometricInterpretation",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "photometric_interpretation",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "photometric_interpretation"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "photometric_interpretation"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "photometric_interpretation"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "photometric_interpretation"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "photometric_interpretation"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r187",
+    "source_field": "Bits Allocated",
+    "source_tag": "(0028, 0100)",
+    "expected_tag": "(0028,0100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Bits Allocated",
+    "registry_match": {
+      "tag": "(0028,0100)",
+      "name": "Bits Allocated",
+      "keyword": "BitsAllocated",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "bits_allocated",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "bits_allocated"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "bits_allocated"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "bits_allocated"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "bits_allocated"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "bits_allocated"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r188",
+    "source_field": "Bits Stored",
+    "source_tag": "(0028, 0101)",
+    "expected_tag": "(0028,0101)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Bits Stored",
+    "registry_match": {
+      "tag": "(0028,0101)",
+      "name": "Bits Stored",
+      "keyword": "BitsStored",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "bits_stored",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "bits_stored"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "bits_stored"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "bits_stored"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "bits_stored"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "bits_stored"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r189",
+    "source_field": "High Bit",
+    "source_tag": "(0028, 0102)",
+    "expected_tag": "(0028,0102)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "High Bit",
+    "registry_match": {
+      "tag": "(0028,0102)",
+      "name": "High Bit",
+      "keyword": "HighBit",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "high_bit",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "high_bit"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "high_bit"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r190",
+    "source_field": "Pixel Representation",
+    "source_tag": "(0028, 0103)",
+    "expected_tag": "(0028,0103)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Pixel Representation",
+    "registry_match": {
+      "tag": "(0028,0103)",
+      "name": "Pixel Representation",
+      "keyword": "PixelRepresentation",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "pixel_representation",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "pixel_representation"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_representation"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_representation"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_representation"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_representation"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r191",
+    "source_field": "Samples per Pixel",
+    "source_tag": "(0028, 0002)",
+    "expected_tag": "(0028,0002)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Samples per Pixel",
+    "registry_match": {
+      "tag": "(0028,0002)",
+      "name": "Samples per Pixel",
+      "keyword": "SamplesPerPixel",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "samples_per_pixel",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "samples_per_pixel"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "samples_per_pixel"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "samples_per_pixel"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "samples_per_pixel"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "samples_per_pixel"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r192",
+    "source_field": "Rows",
+    "source_tag": "(0028, 0010)",
+    "expected_tag": "(0028,0010)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Rows",
+    "registry_match": {
+      "tag": "(0028,0010)",
+      "name": "Rows",
+      "keyword": "Rows",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "rows",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "rows"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "rows"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r193",
+    "source_field": "Columns",
+    "source_tag": "(0028, 0011)",
+    "expected_tag": "(0028,0011)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Columns",
+    "registry_match": {
+      "tag": "(0028,0011)",
+      "name": "Columns",
+      "keyword": "Columns",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "columns",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "columns"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "columns"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r194",
+    "source_field": "Pixel Spacing",
+    "source_tag": "(0028, 0030)",
+    "expected_tag": "(0028,0030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Pixel Spacing",
+    "registry_match": {
+      "tag": "(0028,0030)",
+      "name": "Pixel Spacing",
+      "keyword": "PixelSpacing",
+      "vr": "DS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "pixel_spacing",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "pixel_spacing_mm"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_spacing"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r195",
+    "source_field": "3. Acquisition Parameters",
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "source_section_note_3_acquisition_parameters",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "3_acquisition_parameters"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "source_section_note_3_acquisition_parameters"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r196",
+    "source_field": "Series Date",
+    "source_tag": "(0008, 0021)",
+    "expected_tag": "(0008,0021)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Date",
+    "registry_match": {
+      "tag": "(0008,0021)",
+      "name": "Series Date",
+      "keyword": "SeriesDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_date",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_date"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r197",
+    "source_field": "Series Time",
+    "source_tag": "(0008, 0031)",
+    "expected_tag": "(0008,0031)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Time",
+    "registry_match": {
+      "tag": "(0008,0031)",
+      "name": "Series Time",
+      "keyword": "SeriesTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_time",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_time"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r198",
+    "source_field": "Acquisition Number",
+    "source_tag": "(0020, 0011)",
+    "expected_tag": "(0020,0012)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Series Number",
+    "registry_match": {
+      "tag": "(0020,0012)",
+      "name": "Acquisition Number",
+      "keyword": "AcquisitionNumber",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "acquisition_number",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acquisition_number"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "acquisition_number"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r199",
+    "source_field": "Acquisition Termination Condition",
+    "source_tag": "(0018, 0071)",
+    "expected_tag": "(0018,0071)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Acquisition Termination Condition",
+    "registry_match": {
+      "tag": "(0018,0071)",
+      "name": "Acquisition Termination Condition",
+      "keyword": "AcquisitionTerminationCondition",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "acquisition_termination_condition",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acquisition_termination_condition"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "acquisition_termination_condition"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r200",
+    "source_field": "Detector Motion Details Sequence",
+    "source_tag": "(0018, 9733)",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "PET Detector Motion Details Sequence",
+    "registry_match": {
+      "tag": "(0018,9733)",
+      "name": "PET Detector Motion Details Sequence",
+      "keyword": "PETDetectorMotionDetailsSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "detector_motion_details_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "detector_motion_details_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "detector_motion_details_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r201",
+    "source_field": "PET Frame Acquisition Sequence",
+    "source_tag": "(0018, 9732)",
+    "expected_tag": "(0018,9732)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "PET Frame Acquisition Sequence",
+    "registry_match": {
+      "tag": "(0018,9732)",
+      "name": "PET Frame Acquisition Sequence",
+      "keyword": "PETFrameAcquisitionSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "pet_frame_acquisition_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "pet_frame_acquisition_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "pet_frame_acquisition_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r202",
+    "source_field": "PET Position Sequence",
+    "source_tag": "(0018, 9735)",
+    "expected_tag": "(0018,9735)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "PET Position Sequence",
+    "registry_match": {
+      "tag": "(0018,9735)",
+      "name": "PET Position Sequence",
+      "keyword": "PETPositionSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "pet_position_sequence",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "pet_position_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "pet_position_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r203",
+    "source_field": "4. Reconstruction Parameters",
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "reconstruction",
+    "property": "source_section_note_4_reconstruction_parameters",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "4_reconstruction_parameters"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "source_section_note_4_reconstruction_parameters"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r204",
+    "source_field": "Reconstruction Algorithm",
+    "source_tag": "(0018, 9315)",
+    "expected_tag": "(0018,9315)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Algorithm",
+    "registry_match": {
+      "tag": "(0018,9315)",
+      "name": "Reconstruction Algorithm",
+      "keyword": "ReconstructionAlgorithm",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "algorithm",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "reconstruction_algorithm"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "algorithm"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r205",
+    "source_field": "Reconstruction Diameter",
+    "source_tag": "(0018, 1100)",
+    "expected_tag": "(0018,1100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Diameter",
+    "registry_match": {
+      "tag": "(0018,1100)",
+      "name": "Reconstruction Diameter",
+      "keyword": "ReconstructionDiameter",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "reconstruction_diameter",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "reconstruction_diameter"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_diameter"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r206",
+    "source_field": "Reconstruction Field of View",
+    "source_tag": "(0018, 1102)",
+    "expected_tag": "(0018,9317)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": null,
+    "registry_match": {
+      "tag": "(0018,9317)",
+      "name": "Reconstruction Field of View",
+      "keyword": "ReconstructionFieldOfView",
+      "vr": "FD",
+      "vm": "2"
+    },
+    "node": "reconstruction",
+    "property": "reconstruction_field_of_view",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "reconstruction_field_of_view"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_field_of_view"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r207",
+    "source_field": "PET Reconstruction Sequence",
+    "source_tag": "(0018, 9749)",
+    "expected_tag": "(0018,9749)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "PET Reconstruction Sequence",
+    "registry_match": {
+      "tag": "(0018,9749)",
+      "name": "PET Reconstruction Sequence",
+      "keyword": "PETReconstructionSequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "pet_reconstruction_sequence",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "pet_reconstruction_sequence"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "pet_reconstruction_sequence"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r208",
+    "source_field": "SUV Type",
+    "source_tag": "(0054, 1006)",
+    "expected_tag": "(0054,1006)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "SUV Type",
+    "registry_match": {
+      "tag": "(0054,1006)",
+      "name": "SUV Type",
+      "keyword": "SUVType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "suv_type",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "suv_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "suv_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r209",
+    "source_field": "Units",
+    "source_tag": "(0054, 1001)",
+    "expected_tag": "(0054,1001)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Units",
+    "registry_match": {
+      "tag": "(0054,1001)",
+      "name": "Units",
+      "keyword": "Units",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "quantitative_units",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "quantitative_units"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "quantitative_units"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r210",
+    "source_field": "5. Other Important Fields",
+    "source_tag": "",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": null,
+    "registry_match": {},
+    "node": "acquisition",
+    "property": "source_section_note_5_other_important_fields",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "5_other_important_fields"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "source_section_note_5_other_important_fields"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r211",
+    "source_field": "Collimator Type",
+    "source_tag": "(0018, 1181)",
+    "expected_tag": "(0018,1181)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Collimator Type",
+    "registry_match": {
+      "tag": "(0018,1181)",
+      "name": "Collimator Type",
+      "keyword": "CollimatorType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "collimator_type",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "collimator_type"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "collimator_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r212",
+    "source_field": "Collimator/Grid Name",
+    "source_tag": "(0018, 1180)",
+    "expected_tag": "(0018,1180)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Collimator/grid Name",
+    "registry_match": {
+      "tag": "(0018,1180)",
+      "name": "Collimator/grid Name",
+      "keyword": "CollimatorGridName",
+      "vr": "SH",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "collimator_grid_name",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "collimator_grid_name"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "collimator_grid_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r213",
+    "source_field": "Gantry/Detector Slew",
+    "source_tag": "(0018, 1121)",
+    "expected_tag": "(0018,1121)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Gantry/Detector Slew",
+    "registry_match": {
+      "tag": "(0018,1121)",
+      "name": "Gantry/Detector Slew",
+      "keyword": "GantryDetectorSlew",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "gantry_detector_slew",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "gantry_detector_slew"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "gantry_detector_slew"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dicom:r214",
+    "source_field": "Type of Detector Motion",
+    "source_tag": "(0054, 0202)",
+    "expected_tag": "(0054,0202)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Type of Detector Motion",
+    "registry_match": {
+      "tag": "(0054,0202)",
+      "name": "Type of Detector Motion",
+      "keyword": "TypeOfDetectorMotion",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "type_of_detector_motion",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "type_of_detector_motion"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "type_of_detector_motion"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r4",
+    "source_field": "Radiopharmaceutical",
+    "Rationale and Possible Values": "Identify Lu-177 PSMA tracer",
+    "source_tag": "0018,0031",
+    "expected_tag": "(0018,0031)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical",
+    "registry_match": {
+      "tag": "(0018,0031)",
+      "name": "Radiopharmaceutical",
+      "keyword": "Radiopharmaceutical",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "radiopharmaceutical",
+    "property": "name",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "name"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r5",
+    "source_field": "Radiopharmaceutical Start Time",
+    "Rationale and Possible Values": "Needed for decay correction",
+    "source_tag": "0018,1072",
+    "expected_tag": "(0018,1072)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical Start Time",
+    "registry_match": {
+      "tag": "(0018,1072)",
+      "name": "Radiopharmaceutical Start Time",
+      "keyword": "RadiopharmaceuticalStartTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "dicom_start_time",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "dicom_start_time"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "dicom_start_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r6",
+    "source_field": "Radiopharmaceutical Stop Time",
+    "Rationale and Possible Values": "If infusion/slow bolus",
+    "source_tag": "0018,1073",
+    "expected_tag": "(0018,1073)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radiopharmaceutical Stop Time",
+    "registry_match": {
+      "tag": "(0018,1073)",
+      "name": "Radiopharmaceutical Stop Time",
+      "keyword": "RadiopharmaceuticalStopTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "dicom_stop_time",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "dicom_stop_time"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "dicom_stop_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r7",
+    "source_field": "Radionuclide Total Dose",
+    "Rationale and Possible Values": "Convert image counts to Bq/mL",
+    "source_tag": "0018,1074",
+    "expected_tag": "(0018,1074)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radionuclide Total Dose",
+    "registry_match": {
+      "tag": "(0018,1074)",
+      "name": "Radionuclide Total Dose",
+      "keyword": "RadionuclideTotalDose",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "administered_activity_mbq",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "administered_activity_mbq"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "administered_activity_mbq"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r8",
+    "source_field": "Radionuclide Half Life",
+    "Rationale and Possible Values": "Decay correction",
+    "source_tag": "0018,1075",
+    "expected_tag": "(0018,1075)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Radionuclide Half Life",
+    "registry_match": {
+      "tag": "(0018,1075)",
+      "name": "Radionuclide Half Life",
+      "keyword": "RadionuclideHalfLife",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "radiopharmaceutical",
+    "property": "physical_half_life_seconds",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "physical_half_life_seconds"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "physical_half_life_seconds"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r9",
+    "source_field": "Units",
+    "Rationale and Possible Values": "Distinguish BQML, CNTS, SUV, etc.",
+    "source_tag": "0054,1001",
+    "expected_tag": "(0054,1001)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Units",
+    "registry_match": {
+      "tag": "(0054,1001)",
+      "name": "Units",
+      "keyword": "Units",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "quantitative_units",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "quantitative_units"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "quantitative_units"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r10",
+    "source_field": "Rescale Slope",
+    "Rationale and Possible Values": "Convert stored values to physical units",
+    "source_tag": "0028,1053",
+    "expected_tag": "(0028,1053)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Rescale Slope",
+    "registry_match": {
+      "tag": "(0028,1053)",
+      "name": "Rescale Slope",
+      "keyword": "RescaleSlope",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "rescale_slope",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "rescale_slope"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "rescale_slope"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r11",
+    "source_field": "Rescale Intercept",
+    "Rationale and Possible Values": "Usually zero for PET",
+    "source_tag": "0028,1053",
+    "expected_tag": "(0028,1052)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Rescale Slope",
+    "registry_match": {
+      "tag": "(0028,1052)",
+      "name": "Rescale Intercept",
+      "keyword": "RescaleIntercept",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "rescale_intercept",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "rescale_intercept"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "rescale_intercept"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r12",
+    "source_field": "SUV Type",
+    "Rationale and Possible Values": "BSA, BW, LBM, LBMJAMES128, LBMJANMA, IBW, If absent, and the Units (0054,1001) are GML, then the type of SUV shall be assumed to be BW.",
+    "source_tag": "0028,1052",
+    "expected_tag": "(0054,1006)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Rescale Intercept",
+    "registry_match": {
+      "tag": "(0054,1006)",
+      "name": "SUV Type",
+      "keyword": "SUVType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "suv_type",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "suv_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "suv_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "suv_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r13",
+    "source_field": "Counts Source",
+    "Rationale and Possible Values": "EMISSION, TRANSMISSION",
+    "source_tag": "0054,1002",
+    "expected_tag": "(0054,1002)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Counts Source",
+    "registry_match": {
+      "tag": "(0054,1002)",
+      "name": "Counts Source",
+      "keyword": "CountsSource",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "counts_source",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "counts_source"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "counts_source"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r19",
+    "source_field": "Series Date",
+    "Rationale and Possible Values": null,
+    "source_tag": "0008,0021",
+    "expected_tag": "(0008,0021)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Date",
+    "registry_match": {
+      "tag": "(0008,0021)",
+      "name": "Series Date",
+      "keyword": "SeriesDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_date",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_date"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_date"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r20",
+    "source_field": "Series Time",
+    "Rationale and Possible Values": null,
+    "source_tag": "0008,0031",
+    "expected_tag": "(0008,0031)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Time",
+    "registry_match": {
+      "tag": "(0008,0031)",
+      "name": "Series Time",
+      "keyword": "SeriesTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_time",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_time"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_time"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r21",
+    "source_field": "Acquisition Time",
+    "Rationale and Possible Values": "Align with injection time",
+    "source_tag": "0008,0032",
+    "expected_tag": "(0008,0032)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Acquisition Time",
+    "registry_match": {
+      "tag": "(0008,0032)",
+      "name": "Acquisition Time",
+      "keyword": "AcquisitionTime",
+      "vr": "TM",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "acquisition_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "acquisition_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "acquisition_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r22",
+    "source_field": "Frame Reference Time",
+    "Rationale and Possible Values": "Dynamic acquisitions",
+    "source_tag": "0054,1300",
+    "expected_tag": "(0054,1300)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Frame Reference Time",
+    "registry_match": {
+      "tag": "(0054,1300)",
+      "name": "Frame Reference Time",
+      "keyword": "FrameReferenceTime",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "frame_reference_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "frame_reference_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "frame_reference_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r23",
+    "source_field": "Image Position (Patient)",
+    "Rationale and Possible Values": "Voxel-to-patient mapping",
+    "source_tag": "0020,0032",
+    "expected_tag": "(0020,0032)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Image Position (Patient)",
+    "registry_match": {
+      "tag": "(0020,0032)",
+      "name": "Image Position (Patient)",
+      "keyword": "ImagePositionPatient",
+      "vr": "DS",
+      "vm": "3"
+    },
+    "node": "pt_series_file",
+    "property": "image_position_patient",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "image_position_patient"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_position_patient"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_position_patient"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r24",
+    "source_field": "Image Orientation (Patient)",
+    "Rationale and Possible Values": "Voxel-to-patient mapping",
+    "source_tag": "0020,0037",
+    "expected_tag": "(0020,0037)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Image Orientation (Patient)",
+    "registry_match": {
+      "tag": "(0020,0037)",
+      "name": "Image Orientation (Patient)",
+      "keyword": "ImageOrientationPatient",
+      "vr": "DS",
+      "vm": "6"
+    },
+    "node": "pt_series_file",
+    "property": "image_orientation_patient",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "image_orientation_patient"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_orientation_patient"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_orientation_patient"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r25",
+    "source_field": "Pixel Spacing",
+    "Rationale and Possible Values": "Voxel volume calculation",
+    "source_tag": "0028,0030",
+    "expected_tag": "(0028,0030)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Pixel Spacing",
+    "registry_match": {
+      "tag": "(0028,0030)",
+      "name": "Pixel Spacing",
+      "keyword": "PixelSpacing",
+      "vr": "DS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "pixel_spacing",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "pixel_spacing_mm"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_spacing"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r26",
+    "source_field": "Slice Thickness",
+    "Rationale and Possible Values": "Voxel volume calculation",
+    "source_tag": "0018,0050",
+    "expected_tag": "(0018,0050)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Slice Thickness",
+    "registry_match": {
+      "tag": "(0018,0050)",
+      "name": "Slice Thickness",
+      "keyword": "SliceThickness",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "slice_thickness",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "slice_thickness"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "slice_thickness"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r27",
+    "source_field": "Patient Weight",
+    "Rationale and Possible Values": "SUV normalization",
+    "source_tag": "0010,1030",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Patient's Weight",
+    "registry_match": {
+      "tag": "(0010,1030)",
+      "name": "Patient's Weight",
+      "keyword": "PatientWeight",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "v0_2_destination": {
+      "node": "anthropometric_assessment",
+      "property": "weight_kg"
+    },
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r28",
+    "source_field": "Patient Size (Height)",
+    "Rationale and Possible Values": "BSA/LBM normalization",
+    "source_tag": "0010,1020",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Patient's Size",
+    "registry_match": {
+      "tag": "(0010,1020)",
+      "name": "Patient's Size",
+      "keyword": "PatientSize",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "v0_2_destination": {
+      "node": "anthropometric_assessment",
+      "property": "height_cm"
+    },
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r29",
+    "source_field": "Patient Sex",
+    "Rationale and Possible Values": "LBM/SUV calc",
+    "source_tag": "0010,0040",
+    "expected_tag": "(0010,0040)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Patient's Sex",
+    "registry_match": {
+      "tag": "(0010,0040)",
+      "name": "Patient's Sex",
+      "keyword": "PatientSex",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "case",
+    "property": "sex_assigned_at_birth",
+    "v0_2_destination": {
+      "node": "case",
+      "property": "sex_assigned_at_birth"
+    },
+    "destination_options": [
+      {
+        "node": "case",
+        "property": "sex_assigned_at_birth"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r30",
+    "source_field": "Table Motion",
+    "Rationale and Possible Values": "Identify CBM PET acquisition",
+    "source_tag": "0018,1134",
+    "expected_tag": "(0018,1134)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Table Motion",
+    "registry_match": {
+      "tag": "(0018,1134)",
+      "name": "Table Motion",
+      "keyword": "TableMotion",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "table_motion",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "table_motion"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "table_motion"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r31",
+    "source_field": "Table Speed",
+    "Rationale and Possible Values": "Needed for CBM dosimetry",
+    "source_tag": "0018,9455",
+    "expected_tag": "(0018,9309)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Calibration Sequence",
+    "registry_match": {
+      "tag": "(0018,9309)",
+      "name": "Table Speed",
+      "keyword": "TableSpeed",
+      "vr": "FD",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "table_speed",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "table_speed"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "table_speed"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r32",
+    "source_field": "Table Traverse",
+    "Rationale and Possible Values": "Needed for CBM dosimetry",
+    "source_tag": "0018,9456",
+    "expected_tag": "(0018,1131)",
+    "tag_validation": "mismatch",
+    "registry_name_at_source_tag": "Object Thickness Sequence",
+    "registry_match": {
+      "tag": "(0018,1131)",
+      "name": "Table Traverse",
+      "keyword": "TableTraverse",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "table_traverse",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "table_traverse"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "table_traverse"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r33",
+    "source_field": "Table Motion Direction",
+    "Rationale and Possible Values": "CBM acquisition direction",
+    "source_tag": "0018,9457",
+    "expected_tag": null,
+    "tag_validation": "needs_review",
+    "registry_name_at_source_tag": "Plane Identification",
+    "registry_match": {
+      "tag": "(0018,9457)",
+      "name": "Plane Identification",
+      "keyword": "PlaneIdentification",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "table_motion_direction",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "table_motion_direction"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "table_motion_direction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r34",
+    "source_field": "Number of Slices",
+    "Rationale and Possible Values": "Maximum number of Slices existing in Series.",
+    "source_tag": "0054,0081",
+    "expected_tag": "(0054,0081)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Number of Slices",
+    "registry_match": {
+      "tag": "(0054,0081)",
+      "name": "Number of Slices",
+      "keyword": "NumberOfSlices",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "number_of_slices",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "number_of_slices"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "number_of_slices"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r35",
+    "source_field": "Number of Time Slices",
+    "Rationale and Possible Values": "The maximum number of Time Slices that may exist in this Series. Required if Series Type (0054,1000), Value 1 is DYNAMIC.",
+    "source_tag": "0054,0101",
+    "expected_tag": "(0054,0101)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Number of Time Slices",
+    "registry_match": {
+      "tag": "(0054,0101)",
+      "name": "Number of Time Slices",
+      "keyword": "NumberOfTimeSlices",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "number_of_time_slices",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "number_of_time_slices"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "number_of_time_slices"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r36",
+    "source_field": "Corrected Image",
+    "Rationale and Possible Values": "Possible Values: DECY, ATTN, SCAT, DTIM, MOTN, PMOT, CLN, RAN, RADL, DCAL, NORM",
+    "source_tag": "0028,0051",
+    "expected_tag": "(0028,0051)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Corrected Image",
+    "registry_match": {
+      "tag": "(0028,0051)",
+      "name": "Corrected Image",
+      "keyword": "CorrectedImage",
+      "vr": "CS",
+      "vm": "1-n"
+    },
+    "node": "reconstruction",
+    "property": "corrected_image",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "corrected_image"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "corrected_image"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r37",
+    "source_field": "Randoms Correction Method",
+    "Rationale and Possible Values": "Possible Values: NONE, DYLD, SING",
+    "source_tag": "0054,1100",
+    "expected_tag": "(0054,1100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Randoms Correction Method",
+    "registry_match": {
+      "tag": "(0054,1100)",
+      "name": "Randoms Correction Method",
+      "keyword": "RandomsCorrectionMethod",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "randoms_correction_method",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "randoms_correction_method"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "randoms_correction_method"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r38",
+    "source_field": "Attenuation Correction Method",
+    "Rationale and Possible Values": "A textual description of the attenuation correction processing. e.g., measured vs. calculated, transmission source type (ring, line, point), assumed patient geometry (polygon, ellipse, segmented, attenuation coefficient, skull thickness), post-injection transmission, smoothing",
+    "source_tag": "0054,1101",
+    "expected_tag": "(0054,1101)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Attenuation Correction Method",
+    "registry_match": {
+      "tag": "(0054,1101)",
+      "name": "Attenuation Correction Method",
+      "keyword": "AttenuationCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "attenuation_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "attenuation_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "attenuation_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r39",
+    "source_field": "Scatter Correction Method",
+    "Rationale and Possible Values": "A textual description of the scatter correction processing. e.g., convolution-subtraction, dual energy window, model-based, use of attenuation data.",
+    "source_tag": "0054,1105",
+    "expected_tag": "(0054,1105)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Scatter Correction Method",
+    "registry_match": {
+      "tag": "(0054,1105)",
+      "name": "Scatter Correction Method",
+      "keyword": "ScatterCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "scatter_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "scatter_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r40",
+    "source_field": "Decay Correction",
+    "Rationale and Possible Values": "Reference (START/ADMIN/NONE)",
+    "source_tag": "0054,1102",
+    "expected_tag": "(0054,1102)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Decay Correction",
+    "registry_match": {
+      "tag": "(0054,1102)",
+      "name": "Decay Correction",
+      "keyword": "DecayCorrection",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "decay_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "decay_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "decay_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r41",
+    "source_field": "Reconstruction Method",
+    "Rationale and Possible Values": "Textual description of reconstruction processing, e.g., 2D filtered backprojection, 2D iterative, 3D PROMIS, 3D FAVOR, 3D iterative.",
+    "source_tag": "0054,1103",
+    "expected_tag": "(0054,1103)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Method",
+    "registry_match": {
+      "tag": "(0054,1103)",
+      "name": "Reconstruction Method",
+      "keyword": "ReconstructionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "algorithm",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "algorithm"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "algorithm"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r42",
+    "source_field": "Reconstruction Diameter",
+    "Rationale and Possible Values": "Data may exist outside this region and portions of the patient may exist outside this region. The diameter defines a circular region that is entirely contained within the encoded Pixel Data (7FE0,0010), unless the encoded image has been cropped after reconstruction.",
+    "source_tag": "0018,1100",
+    "expected_tag": "(0018,1100)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Reconstruction Diameter",
+    "registry_match": {
+      "tag": "(0018,1100)",
+      "name": "Reconstruction Diameter",
+      "keyword": "ReconstructionDiameter",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "reconstruction_diameter",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "reconstruction_diameter"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_diameter"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r43",
+    "source_field": "Convolution Kernel",
+    "Rationale and Possible Values": "Textual description of the convolution kernel(s) used to reconstruct the data (e.g., name, cutoff, radial/axial/angular, mathematical form, DC handling).",
+    "source_tag": "0018,1210",
+    "expected_tag": "(0018,1210)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Convolution Kernel",
+    "registry_match": {
+      "tag": "(0018,1210)",
+      "name": "Convolution Kernel",
+      "keyword": "ConvolutionKernel",
+      "vr": "SH",
+      "vm": "1-n"
+    },
+    "node": "ct_series_file",
+    "property": "convolution_kernel",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "convolution_kernel"
+    },
+    "destination_options": [
+      {
+        "node": "ct_series_file",
+        "property": "convolution_kernel"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r44",
+    "source_field": "Series Type",
+    "Rationale and Possible Values": "2-Value Field (Value1/Value2) Value 1: STATIC, DYNAMIC, GATED, WHOLE BODY Value 2: IMAGE, REPROJECTION",
+    "source_tag": "0054,1000",
+    "expected_tag": "(0054,1000)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Series Type",
+    "registry_match": {
+      "tag": "(0054,1000)",
+      "name": "Series Type",
+      "keyword": "SeriesType",
+      "vr": "CS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "series_type",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r45",
+    "source_field": "Type of Detector Motion",
+    "Rationale and Possible Values": "Possible Values: NONE, STEP AND SHOOT, CONTINUOUS, WOBBLE, CLAMSHELL",
+    "source_tag": "0054,0202",
+    "expected_tag": "(0054,0202)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Type of Detector Motion",
+    "registry_match": {
+      "tag": "(0054,0202)",
+      "name": "Type of Detector Motion",
+      "keyword": "TypeOfDetectorMotion",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "type_of_detector_motion",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "type_of_detector_motion"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "type_of_detector_motion"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r46",
+    "source_field": "Structure Set ROI Sequence",
+    "Rationale and Possible Values": "For dosimetry organ/tumor delineation",
+    "source_tag": "3006,0020",
+    "expected_tag": "(3006,0020)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Structure Set ROI Sequence",
+    "registry_match": {
+      "tag": "(3006,0020)",
+      "name": "Structure Set ROI Sequence",
+      "keyword": "StructureSetROISequence",
+      "vr": "SQ",
+      "vm": "1"
+    },
+    "node": "dicom_annotation_file",
+    "property": "dicom_structure_set_roi_sequence_reference",
+    "v0_2_destination": {
+      "node": "segmentation_file",
+      "property": "dicom_structure_set_roi_sequence_reference"
+    },
+    "destination_options": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "dicom_structure_set_roi_sequence_reference"
+      },
+      {
+        "node": "annotation_file",
+        "property": "dicom_structure_set_roi_sequence_reference"
+      }
+    ]
+  },
+  {
+    "source_element_id": "dcm_nicolas:r47",
+    "source_field": "Contour Data",
+    "Rationale and Possible Values": "Map structures to image space",
+    "source_tag": "3006,0050",
+    "expected_tag": "(3006,0050)",
+    "tag_validation": "name_verified",
+    "registry_name_at_source_tag": "Contour Data",
+    "registry_match": {
+      "tag": "(3006,0050)",
+      "name": "Contour Data",
+      "keyword": "ContourData",
+      "vr": "DS",
+      "vm": "3-3n"
+    },
+    "node": "dicom_annotation_file",
+    "property": "dicom_contour_data_reference",
+    "v0_2_destination": {
+      "node": "segmentation_file",
+      "property": "dicom_contour_data_reference"
+    },
+    "destination_options": [
+      {
+        "node": "dicom_annotation_file",
+        "property": "dicom_contour_data_reference"
+      },
+      {
+        "node": "annotation_file",
+        "property": "dicom_contour_data_reference"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r200",
+    "source_field": "Imaging_Study_Date",
+    "source_tag": "00080020",
+    "expected_tag": "00080020",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0008,0020)",
+      "name": "Study Date",
+      "keyword": "StudyDate",
+      "vr": "DA",
+      "vm": "1"
+    },
+    "node": "imaging_study",
+    "property": "study_date",
+    "v0_2_destination": {
+      "node": "imaging_study",
+      "property": "study_date"
+    },
+    "destination_options": [
+      {
+        "node": "imaging_study",
+        "property": "study_date"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r202",
+    "source_field": "Imaging_Type",
+    "source_tag": "00080008",
+    "expected_tag": "00080008",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0008,0008)",
+      "name": "Image Type",
+      "keyword": "ImageType",
+      "vr": "CS",
+      "vm": "2-n"
+    },
+    "node": "pt_series_file",
+    "property": "image_type",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "imaging_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "image_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "image_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r203",
+    "source_field": "Imaging_Study_Weight",
+    "source_tag": "00101030",
+    "expected_tag": "00101030",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0010,1030)",
+      "name": "Patient's Weight",
+      "keyword": "PatientWeight",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "measurement",
+    "property": "test_result_number",
+    "v0_2_destination": {
+      "node": "anthropometric_assessment",
+      "property": "weight_kg"
+    },
+    "destination_options": [
+      {
+        "node": "measurement",
+        "property": "test_result_number"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r204",
+    "source_field": "Imaging_Series_Description",
+    "source_tag": "0008103E",
+    "expected_tag": "0008103E",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0008,103E)",
+      "name": "Series Description",
+      "keyword": "SeriesDescription",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "series_description",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "series_description"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_description"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_description"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r205",
+    "source_field": "Imaging_Series_Modality",
+    "source_tag": "00080060",
+    "expected_tag": "00080060",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0008,0060)",
+      "name": "Modality",
+      "keyword": "Modality",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "modality",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "modality"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "modality"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "modality"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r206",
+    "source_field": "Imaging_Study_Scanner_Manufacturer",
+    "source_tag": "00080070",
+    "expected_tag": "00080070",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0008,0070)",
+      "name": "Manufacturer",
+      "keyword": "Manufacturer",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "manufacturer",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "manufacturer"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "manufacturer"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r207",
+    "source_field": "Imaging_Study_Scanner_Model_Name",
+    "source_tag": "00081090",
+    "expected_tag": "00081090",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0008,1090)",
+      "name": "Manufacturer's Model Name",
+      "keyword": "ManufacturerModelName",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "scanner",
+    "property": "manufacturer_model_name",
+    "v0_2_destination": {
+      "node": "scanner",
+      "property": "manufacturer_model_name"
+    },
+    "destination_options": [
+      {
+        "node": "scanner",
+        "property": "manufacturer_model_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r208",
+    "source_field": "Imaging_Reconstruction_Rows",
+    "source_tag": "00280010",
+    "expected_tag": "00280010",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0028,0010)",
+      "name": "Rows",
+      "keyword": "Rows",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "rows",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "rows"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "rows"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "rows"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r209",
+    "source_field": "Imaging_Reconstruction_Columns",
+    "source_tag": "00280011",
+    "expected_tag": "00280011",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0028,0011)",
+      "name": "Columns",
+      "keyword": "Columns",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "columns",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "columns"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "columns"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "columns"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r210",
+    "source_field": "Imaging_Reconstruction_Pixel_Spacing",
+    "source_tag": "00280030",
+    "expected_tag": "00280030",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0028,0030)",
+      "name": "Pixel Spacing",
+      "keyword": "PixelSpacing",
+      "vr": "DS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "pixel_spacing",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "pixel_spacing_mm"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "pixel_spacing"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "pixel_spacing"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r211",
+    "source_field": "Imaging_Study_Protocol_Name",
+    "source_tag": "00181030",
+    "expected_tag": "00181030",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1030)",
+      "name": "Protocol Name",
+      "keyword": "ProtocolName",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "protocol_name",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_study_protocol_name"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "protocol_name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r212",
+    "source_field": "Imaging_Reconstruction_Diameter",
+    "source_tag": "00181100",
+    "expected_tag": "00181100",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1100)",
+      "name": "Reconstruction Diameter",
+      "keyword": "ReconstructionDiameter",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "reconstruction_diameter",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "imaging_reconstruction_diameter"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "reconstruction_diameter"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r213",
+    "source_field": "Imaging_Slice_Thickness",
+    "source_tag": "00180050",
+    "expected_tag": "00180050",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,0050)",
+      "name": "Slice Thickness",
+      "keyword": "SliceThickness",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "slice_thickness",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "imaging_slice_thickness"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "slice_thickness"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "slice_thickness"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r214",
+    "source_field": "Imaging_CT_mAs",
+    "source_tag": "00181152",
+    "expected_tag": "00181152",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1152)",
+      "name": "Exposure",
+      "keyword": "Exposure",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "mas_exposure",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_ct_mas"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "mas_exposure"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r215",
+    "source_field": "Imaging_CT_kVp",
+    "source_tag": "00180060",
+    "expected_tag": "00180060",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,0060)",
+      "name": "KVP",
+      "keyword": "KVP",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "kvp",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_ct_kvp"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "kvp"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r216",
+    "source_field": "Imaging_CT_Exposure_Time",
+    "source_tag": "00181150",
+    "expected_tag": "00181150",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1150)",
+      "name": "Exposure Time",
+      "keyword": "ExposureTime",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "exposure_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_ct_exposure_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "exposure_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r217",
+    "source_field": "Imaging_CT_Revolution_Time",
+    "source_tag": "00189305",
+    "expected_tag": "00189305",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,9305)",
+      "name": "Revolution Time",
+      "keyword": "RevolutionTime",
+      "vr": "FD",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "revolution_time",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_ct_revolution_time"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "revolution_time"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r218",
+    "source_field": "Imaging_CT_Convolutional_Filter",
+    "source_tag": "00181210",
+    "expected_tag": "00181210",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1210)",
+      "name": "Convolution Kernel",
+      "keyword": "ConvolutionKernel",
+      "vr": "SH",
+      "vm": "1-n"
+    },
+    "node": "ct_series_file",
+    "property": "convolution_kernel",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "imaging_ct_convolutional_filter"
+    },
+    "destination_options": [
+      {
+        "node": "ct_series_file",
+        "property": "convolution_kernel"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r220",
+    "source_field": "Imaging_Radioisotope_Half_Life",
+    "source_tag": "00181075",
+    "expected_tag": "00181075",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1075)",
+      "name": "Radionuclide Half Life",
+      "keyword": "RadionuclideHalfLife",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "radiopharmaceutical",
+    "property": "physical_half_life_seconds",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "physical_half_life_seconds"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "physical_half_life_seconds"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r221",
+    "source_field": "Imaging_Radiopharmaceutical",
+    "source_tag": "00180031",
+    "expected_tag": "00180031",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,0031)",
+      "name": "Radiopharmaceutical",
+      "keyword": "Radiopharmaceutical",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "radiopharmaceutical",
+    "property": "name",
+    "v0_2_destination": {
+      "node": "radiopharmaceutical",
+      "property": "name"
+    },
+    "destination_options": [
+      {
+        "node": "radiopharmaceutical",
+        "property": "name"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r222",
+    "source_field": "Imaging_Radiopharmaceutical_Start_DateTime",
+    "source_tag": "00181078",
+    "expected_tag": "00181078",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1078)",
+      "name": "Radiopharmaceutical Start DateTime",
+      "keyword": "RadiopharmaceuticalStartDateTime",
+      "vr": "DT",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "administration_datetime",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "administration_datetime"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "administration_datetime"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r223",
+    "source_field": "Imaging_Radiopharmaceutical_Total_Activity",
+    "source_tag": "00181074",
+    "expected_tag": "00181074",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1074)",
+      "name": "Radionuclide Total Dose",
+      "keyword": "RadionuclideTotalDose",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "administration",
+    "property": "administered_activity_mbq",
+    "v0_2_destination": {
+      "node": "administration",
+      "property": "administered_activity_mbq"
+    },
+    "destination_options": [
+      {
+        "node": "administration",
+        "property": "administered_activity_mbq"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r224",
+    "source_field": "Imaging_PT_Units",
+    "source_tag": "",
+    "expected_tag": "00541001",
+    "tag_validation": "mismatch",
+    "registry_match": {
+      "tag": "(0054,1001)",
+      "name": "Units",
+      "keyword": "Units",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "quantitative_units",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "quantitative_units"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "quantitative_units"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "quantitative_units"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r225",
+    "source_field": "Imaging_PT_Corrections",
+    "source_tag": "00280051",
+    "expected_tag": "00280051",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0028,0051)",
+      "name": "Corrected Image",
+      "keyword": "CorrectedImage",
+      "vr": "CS",
+      "vm": "1-n"
+    },
+    "node": "reconstruction",
+    "property": "applied_corrections",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "imaging_pt_corrections"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "applied_corrections"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r226",
+    "source_field": "Imaging_PT_Frame_Duration",
+    "source_tag": "00181242",
+    "expected_tag": "00181242",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1242)",
+      "name": "Actual Frame Duration",
+      "keyword": "ActualFrameDuration",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "frame_duration",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_pt_frame_duration"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "frame_duration"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r227",
+    "source_field": "Imaging_PT_Reconstruction_Method",
+    "source_tag": "00541103",
+    "expected_tag": "00541103",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0054,1103)",
+      "name": "Reconstruction Method",
+      "keyword": "ReconstructionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "algorithm",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "algorithm"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "algorithm"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r228",
+    "source_field": "Imaging_PT_Number_of_Slices",
+    "source_tag": "00540081",
+    "expected_tag": "00540081",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0054,0081)",
+      "name": "Number of Slices",
+      "keyword": "NumberOfSlices",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "pt_series_file",
+    "property": "number_of_slices",
+    "v0_2_destination": {
+      "node": "image_file",
+      "property": "imaging_pt_number_of_slices"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "number_of_slices"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "number_of_slices"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r229",
+    "source_field": "Imaging_PT_Scatter_Correction_Method",
+    "source_tag": "00541102",
+    "expected_tag": "00541105",
+    "tag_validation": "mismatch",
+    "registry_match": {
+      "tag": "(0054,1105)",
+      "name": "Scatter Correction Method",
+      "keyword": "ScatterCorrectionMethod",
+      "vr": "LO",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "scatter_correction",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "scatter_correction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_correction"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r230",
+    "source_field": "Imaging_PT_Series_Type",
+    "source_tag": "00541000",
+    "expected_tag": "00541000",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0054,1000)",
+      "name": "Series Type",
+      "keyword": "SeriesType",
+      "vr": "CS",
+      "vm": "2"
+    },
+    "node": "pt_series_file",
+    "property": "series_type",
+    "v0_2_destination": {
+      "node": "imaging_series",
+      "property": "imaging_pt_series_type"
+    },
+    "destination_options": [
+      {
+        "node": "pt_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "nm_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "ct_series_file",
+        "property": "series_type"
+      },
+      {
+        "node": "mr_series_file",
+        "property": "series_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r231",
+    "source_field": "Imaging_PT_Scatter_Fraction",
+    "source_tag": "00541323",
+    "expected_tag": "00541323",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0054,1323)",
+      "name": "Scatter Fraction Factor",
+      "keyword": "ScatterFractionFactor",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "reconstruction",
+    "property": "scatter_fraction_factor",
+    "v0_2_destination": {
+      "node": "reconstruction",
+      "property": "imaging_pt_scatter_fraction"
+    },
+    "destination_options": [
+      {
+        "node": "reconstruction",
+        "property": "scatter_fraction_factor"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r233",
+    "source_field": "Imaging_SPECT_LowerLimit_of_Energy_Windows",
+    "source_tag": "00540015",
+    "expected_tag": "00540014",
+    "tag_validation": "mismatch",
+    "registry_match": {
+      "tag": "(0054,0014)",
+      "name": "Energy Window Lower Limit",
+      "keyword": "EnergyWindowLowerLimit",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_lower_kev",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_lower_kev"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_lower_kev"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r234",
+    "source_field": "Imaging_SPECT_UpperLimit_of_Energy_Windows",
+    "source_tag": "00540016",
+    "expected_tag": "00540015",
+    "tag_validation": "mismatch",
+    "registry_match": {
+      "tag": "(0054,0015)",
+      "name": "Energy Window Upper Limit",
+      "keyword": "EnergyWindowUpperLimit",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "energy_window_upper_kev",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "energy_window_upper_kev"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "energy_window_upper_kev"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r235",
+    "source_field": "Imaging_SPECT_Number_of_Energy_Windows",
+    "source_tag": "",
+    "expected_tag": "00540011",
+    "tag_validation": "mismatch",
+    "registry_match": {
+      "tag": "(0054,0011)",
+      "name": "Number of Energy Windows",
+      "keyword": "NumberOfEnergyWindows",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "number_of_energy_windows",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "number_of_energy_windows"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "number_of_energy_windows"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r236",
+    "source_field": "Imaging_SPECT_Angular_Step",
+    "source_tag": "00181144",
+    "expected_tag": "00181144",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1144)",
+      "name": "Angular Step",
+      "keyword": "AngularStep",
+      "vr": "DS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "angular_step",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_spect_angular_step"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "angular_step"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r238",
+    "source_field": "Imaging_SPECT_Collimator_Type",
+    "source_tag": "00541101",
+    "expected_tag": "00181181",
+    "tag_validation": "mismatch",
+    "registry_match": {
+      "tag": "(0018,1181)",
+      "name": "Collimator Type",
+      "keyword": "CollimatorType",
+      "vr": "CS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "collimator_type",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_spect_collimator_type"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "collimator_type"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r239",
+    "source_field": "Imaging_SPECT_Number_of_Frames_in_Rotation",
+    "source_tag": "00540053",
+    "expected_tag": "00540053",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0054,0053)",
+      "name": "Number of Frames in Rotation",
+      "keyword": "NumberOfFramesInRotation",
+      "vr": "US",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "number_of_frames_in_rotation",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_spect_number_of_frames_in_rotation"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "number_of_frames_in_rotation"
+      }
+    ]
+  },
+  {
+    "source_element_id": "lu_177_psma_data_model:r240",
+    "source_field": "Imaging_SPECT_Actual_Frame_Duration",
+    "source_tag": "00181242",
+    "expected_tag": "00181242",
+    "tag_validation": "name_verified",
+    "registry_match": {
+      "tag": "(0018,1242)",
+      "name": "Actual Frame Duration",
+      "keyword": "ActualFrameDuration",
+      "vr": "IS",
+      "vm": "1"
+    },
+    "node": "acquisition",
+    "property": "actual_frame_duration",
+    "v0_2_destination": {
+      "node": "acquisition",
+      "property": "imaging_spect_actual_frame_duration"
+    },
+    "destination_options": [
+      {
+        "node": "acquisition",
+        "property": "actual_frame_duration"
+      }
+    ]
+  }
+]

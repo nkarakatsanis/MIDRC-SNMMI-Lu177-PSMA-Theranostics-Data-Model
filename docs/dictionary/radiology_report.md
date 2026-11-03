@@ -1,6 +1,6 @@
 # Radiology Report (`radiology_report`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A detailed report that describes the results of an imaging test. A radiology report can include narrative information about the type of imaging test that was done, how it was done, and any labels representing the results of the test.
 
@@ -14,7 +14,7 @@ A detailed report that describes the results of an imaging test. A radiology rep
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/radiology_report.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/radiology_report.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_radiology_report_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/radiology_report.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/radiology_report.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_radiology_report_template.json)
 
 ## Relationships
 

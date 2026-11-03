@@ -1,0 +1,416 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "computational_model",
+  "title": "Computational Model",
+  "type": "object",
+  "namespace": "urn:nmmi:lu177-psma:model",
+  "category": "administrative",
+  "program": "*",
+  "project": "*",
+  "description": "One versioned computational model specification, independent of any execution or prediction.",
+  "additionalProperties": false,
+  "submittable": true,
+  "validators": null,
+  "links": [
+    {
+      "name": "projects",
+      "backref": "nmmi_computational_model_projects",
+      "label": "member_of",
+      "target_type": "project",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "name": "provenance_records",
+      "backref": "nmmi_computational_model_provenance_records",
+      "label": "documented_by",
+      "target_type": "provenance",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "name": "reference_evidence",
+      "backref": "nmmi_computational_model_reference_evidence",
+      "label": "supported_by",
+      "target_type": "reference_evidence",
+      "multiplicity": "many_to_many",
+      "required": false
+    }
+  ],
+  "required": [
+    "type",
+    "submitter_id",
+    "model_name",
+    "model_release",
+    "model_kind",
+    "scope",
+    "input_requirements",
+    "output_definition",
+    "human_oversight",
+    "validation_status",
+    "projects"
+  ],
+  "uniqueKeys": [
+    [
+      "id"
+    ],
+    [
+      "project_id",
+      "submitter_id"
+    ]
+  ],
+  "systemProperties": [
+    "id",
+    "project_id",
+    "state",
+    "created_datetime",
+    "updated_datetime"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "computational_model"
+      ]
+    },
+    "submitter_id": {
+      "type": "string",
+      "description": "Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+      "minLength": 1
+    },
+    "id": {
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "systemAlias": "node_id",
+      "term": {
+        "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+        "termDef": {
+          "cde_id": "C54100",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Universally Unique Identifier",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+        }
+      },
+      "type": "string"
+    },
+    "project_id": {
+      "term": {
+        "description": "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+      },
+      "type": "string"
+    },
+    "state": {
+      "default": "validated",
+      "downloadable": [
+        "uploaded",
+        "md5summed",
+        "validating",
+        "validated",
+        "error",
+        "invalid",
+        "released"
+      ],
+      "oneOf": [
+        {
+          "enum": [
+            "uploading",
+            "uploaded",
+            "md5summing",
+            "md5summed",
+            "validating",
+            "error",
+            "invalid",
+            "suppressed",
+            "redacted",
+            "live"
+          ]
+        },
+        {
+          "enum": [
+            "validated",
+            "submitted",
+            "released"
+          ]
+        }
+      ],
+      "public": [
+        "live"
+      ],
+      "term": {
+        "description": "The current state of the object.\n"
+      }
+    },
+    "created_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "updated_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "model_version": {
+      "type": "string",
+      "description": "Version of the submitting theranostics extension, independently of the MIDRC baseline version."
+    },
+    "record_status": {
+      "type": "string",
+      "description": "Record curation state, independent of clinical value.",
+      "enum": [
+        "draft",
+        "reviewed",
+        "approved",
+        "superseded",
+        "withdrawn"
+      ]
+    },
+    "source_record_id": {
+      "type": "string",
+      "description": "Identifier of the originating source record; use an approved pseudonym when needed."
+    },
+    "source_system": {
+      "type": "string",
+      "description": "Source system or data provider."
+    },
+    "missing_properties": {
+      "type": "array",
+      "description": "Names of properties missing from this record; no missing value is encoded as zero.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_reasons": {
+      "type": "array",
+      "description": "Reasons corresponding by index to missing_properties.",
+      "items": {
+        "enum": [
+          "unknown",
+          "not_collected",
+          "not_applicable",
+          "not_available",
+          "withheld",
+          "pending"
+        ]
+      }
+    },
+    "model_name": {
+      "description": "Name of the computational model.",
+      "type": "string",
+      "minLength": 1
+    },
+    "model_release": {
+      "description": "Exact model/software release; independent of the data-model version.",
+      "type": "string",
+      "minLength": 1
+    },
+    "model_kind": {
+      "description": "Computational model family; does not assert clinical validation.",
+      "enum": [
+        "compartmental",
+        "PBPK",
+        "voxel_dosimetry",
+        "tumor_control",
+        "toxicity",
+        "AI",
+        "other"
+      ]
+    },
+    "artifact_uri": {
+      "description": "Location of model code or weights.",
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_sha256": {
+      "description": "SHA-256 digest of the exact code or weight artifact, if available.",
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "description": "Intended subject, population, organ or molecular scope.",
+      "type": "string",
+      "minLength": 1
+    },
+    "input_requirements": {
+      "description": "Required imaging, clinical, treatment-history and other inputs with units and timing conventions.",
+      "type": "string",
+      "minLength": 1
+    },
+    "output_definition": {
+      "description": "Predicted quantities and their definitions and units.",
+      "type": "string",
+      "minLength": 1
+    },
+    "applicability_limits": {
+      "description": "Disease, population and acquisition settings in which use is justified by evidence.",
+      "type": "string",
+      "minLength": 1
+    },
+    "known_failure_modes": {
+      "description": "Known failure modes, including domain shift and missing inputs.",
+      "type": "string",
+      "minLength": 1
+    },
+    "identifiability_assessment": {
+      "description": "Parameter identifiability assessment and method.",
+      "type": "string",
+      "minLength": 1
+    },
+    "human_oversight": {
+      "description": "Required human review and intended research or clinical use constraints.",
+      "type": "string",
+      "minLength": 1
+    },
+    "validation_status": {
+      "description": "Evidence status; not a certification or universal claim of safety.",
+      "enum": [
+        "unvalidated",
+        "internal_evaluation",
+        "external_evaluation",
+        "reviewed_for_specified_use"
+      ]
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "code"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to project records by code or UUID.",
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "provenance_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to provenance records by submitter_id or UUID."
+    },
+    "reference_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to reference_evidence records by submitter_id or UUID."
+    }
+  }
+}

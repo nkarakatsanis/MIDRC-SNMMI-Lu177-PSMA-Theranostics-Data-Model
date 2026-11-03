@@ -1,0 +1,66 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+condition,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+condition,cases,True,False,MIDRC unchanged,compound,"The submitter_id or id of the case this condition describes, i.e., a link to a record in the parent node.",
+condition,condition_code,False,False,MIDRC unchanged,string,"The code for a specific condition, assigned by the code system.
+",
+condition,condition_code_system,False,False,MIDRC unchanged,string,"The system that assigned the code for a specific condition.
+",
+condition,condition_name,False,False,MIDRC unchanged,string,"The name of the condition the patient has experienced.
+",
+condition,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+condition,days_to_condition_end,False,False,MIDRC unchanged,integer,The number of days from the index date to the date the subject no longer experienced the condition. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.,
+condition,days_to_condition_start,False,False,MIDRC unchanged,integer,The number of days from the index date to the date the subject was diagnosed with or began experiencing the condition. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.,
+condition,days_to_symptom_onset,False,False,MIDRC unchanged,integer,The number of days from the index date to the date the symptoms began.,
+condition,fibrosis_confirmation,False,False,MIDRC unchanged,enum,An indicator confirming whether the patient received a diagnosis of fibrosis.,
+condition,fibrosis_lung_involvement_grading,False,False,MIDRC unchanged,enum,A visual measure of the involvement of fibrosis in the lungs.,
+condition,fibrosis_volume_loss_grading,False,False,MIDRC unchanged,enum,A visual measure of the volume loss or shrinkage of the lungs due to fibrosis.,
+condition,history_of_connective_tissue_disease,False,False,MIDRC unchanged,enum,An indicator confirming a history of connective tissue disease.,
+condition,history_of_connective_tissue_disease_type,False,False,MIDRC unchanged,enum,A description of the type of connective tissue disease.,
+condition,history_of_hiv,False,False,MIDRC unchanged,enum,An indicator confirming a history of human immunodeficiency virus (HIV).,
+condition,history_of_hiv_treatment,False,False,MIDRC unchanged,array,A description of the type of HIV treatment received.,
+condition,history_of_interstitial_lung_disease,False,False,MIDRC unchanged,enum,An indicator confirming a history of interstitial lung disease.,
+condition,history_of_lung_cancer,False,False,MIDRC unchanged,enum,An indicator confirming a history of lung cancer.,
+condition,history_of_other_disease,False,False,MIDRC unchanged,enum,A description of the confirmed history of other diseases not previously listed.,
+condition,history_of_tuberculosis,False,False,MIDRC unchanged,enum,The indicator related to medical history of the condition tuberculosis (TB).,
+condition,history_of_tuberculosis_treatment,False,False,MIDRC unchanged,array,A description of the type of tuberculosis treatment received.,
+condition,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+condition,presenting_symptoms,False,False,MIDRC unchanged,enum,A description noting the presenting symptoms at the onset of the condition.,
+condition,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+condition,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+condition,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+condition,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+condition,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+condition,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+condition,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+condition,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+condition,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+condition,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+condition,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+condition,assessment_datetime,False,False,Theranostics extension,string,ISO 8601 assessment datetime; use approved date shifting consistently within the case.,
+condition,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+condition,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+condition,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+condition,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+condition,ajcc_m_stage_initialdx,False,False,Theranostics extension,string,Metastasis stage (M) based on AJCC staging system version 9 at the time of initial prostate cancer diagnosis. ,lu_177_psma_data_model:r99; atlas_data_elements:r31
+condition,ajcc_n_stage_initialdx,False,False,Theranostics extension,string,Nodal stage (N) based on  AJCC staging system version 9at the time of initial prostate cancer diagnosis. ,lu_177_psma_data_model:r100; atlas_data_elements:r30
+condition,ajcc_stage_group_initialdx,False,False,Theranostics extension,string,Overall AJCC stage group at the time of initial prostate cancer diagnosis. Specify AJCC version used.,lu_177_psma_data_model:r101
+condition,ajcc_t_stage_initialdx,False,False,Theranostics extension,string,Tumor stage (T) based on  AJCC staging system version 9at the time of initial prostate cancer diagnosis. ,lu_177_psma_data_model:r102; atlas_data_elements:r29
+condition,castration_resistance_date,False,False,Theranostics extension,string,Date when the patient's prostate cancer was deemed castration-resistant.,lu_177_psma_data_model:r111
+condition,disease_sensitivity_status,False,False,Theranostics extension,string,Patient's disease status regarding hormone sensitivity at the time of assessment.,lu_177_psma_data_model:r116
+condition,disease_status_assessment_date,False,False,Theranostics extension,string,Date when the hormone sensitivity status was determined or assessed.,lu_177_psma_data_model:r117
+condition,gleason_grade_group_primary,False,False,Theranostics extension,integer,ISUP Gleason Grade Group from primary prostate cancer diagnosis.,lu_177_psma_data_model:r124
+condition,gleason_score_primary,False,False,Theranostics extension,string,Gleason score from primary prostate cancer diagnosis.,lu_177_psma_data_model:r125; atlas_data_elements:r27
+condition,histology_subtype,False,False,Theranostics extension,string,"Specific histological subtype or features, particularly noting adenocarcinoma vs. neuroendocrine differentiation or aggressive variants.",lu_177_psma_data_model:r128
+condition,initial_diagnosis_date_prostateca,False,False,Theranostics extension,string,Date when prostate cancer was first diagnosed.,lu_177_psma_data_model:r129
+condition,lvi_status,False,False,Theranostics extension,string,Presence or absence of lymph-vascular invasion identified in pathology report (typically from primary tumor).,lu_177_psma_data_model:r133
+condition,metastasis_sites_baseline,False,False,Theranostics extension,array,Location(s) of metastatic disease at baseline prior to PSMA theranostics.,lu_177_psma_data_model:r134
+condition,msi_status,False,False,Theranostics extension,string,"Microsatellite instability status (e.g., MSI-High, MSI-Low, MSS-Stable), if tested.",lu_177_psma_data_model:r135
+condition,baseline_clinical_data_hormone_sensitive_prostate_ca,False,False,Theranostics extension,string,Provisional field for Baseline clinical data; Hormone sensitive prostate ca; operational definition requires review.,other:r7
+condition,castrate_resistant_prostate_ca,False,False,Theranostics extension,string,Provisional field for Castrate resistant prostate Ca; operational definition requires review.,other:r8
+condition,timepoints,False,False,Theranostics extension,compound,,
+condition,provenance_records,False,False,Theranostics extension,compound,,

@@ -1,0 +1,401 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "supply_offer",
+  "title": "Supply Offer",
+  "type": "object",
+  "namespace": "urn:nmmi:lu177-psma:model",
+  "category": "clinical",
+  "program": "*",
+  "project": "*",
+  "description": "One dated commercial supply presentation or catalog offer; not a clinical prescription.",
+  "additionalProperties": false,
+  "submittable": true,
+  "validators": null,
+  "links": [
+    {
+      "name": "projects",
+      "backref": "nmmi_supply_offer_projects",
+      "label": "member_of",
+      "target_type": "project",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "name": "provenance_records",
+      "backref": "nmmi_supply_offer_provenance_records",
+      "label": "documented_by",
+      "target_type": "provenance",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "name": "product_packages",
+      "backref": "nmmi_supply_offer_product_packages",
+      "label": "offers",
+      "target_type": "product_package",
+      "multiplicity": "many_to_one",
+      "required": true
+    }
+  ],
+  "required": [
+    "type",
+    "submitter_id",
+    "seller",
+    "catalog_identifier",
+    "valid_from",
+    "source_citation",
+    "projects",
+    "product_packages"
+  ],
+  "uniqueKeys": [
+    [
+      "id"
+    ],
+    [
+      "project_id",
+      "submitter_id"
+    ]
+  ],
+  "systemProperties": [
+    "id",
+    "project_id",
+    "state",
+    "created_datetime",
+    "updated_datetime"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "supply_offer"
+      ]
+    },
+    "submitter_id": {
+      "type": "string",
+      "description": "Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+      "minLength": 1
+    },
+    "id": {
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "systemAlias": "node_id",
+      "term": {
+        "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+        "termDef": {
+          "cde_id": "C54100",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Universally Unique Identifier",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+        }
+      },
+      "type": "string"
+    },
+    "project_id": {
+      "term": {
+        "description": "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+      },
+      "type": "string"
+    },
+    "state": {
+      "default": "validated",
+      "downloadable": [
+        "uploaded",
+        "md5summed",
+        "validating",
+        "validated",
+        "error",
+        "invalid",
+        "released"
+      ],
+      "oneOf": [
+        {
+          "enum": [
+            "uploading",
+            "uploaded",
+            "md5summing",
+            "md5summed",
+            "validating",
+            "error",
+            "invalid",
+            "suppressed",
+            "redacted",
+            "live"
+          ]
+        },
+        {
+          "enum": [
+            "validated",
+            "submitted",
+            "released"
+          ]
+        }
+      ],
+      "public": [
+        "live"
+      ],
+      "term": {
+        "description": "The current state of the object.\n"
+      }
+    },
+    "created_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "updated_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "model_version": {
+      "type": "string",
+      "description": "Version of the submitting theranostics extension, independently of the MIDRC baseline version."
+    },
+    "record_status": {
+      "type": "string",
+      "description": "Record curation state, independent of clinical value.",
+      "enum": [
+        "draft",
+        "reviewed",
+        "approved",
+        "superseded",
+        "withdrawn"
+      ]
+    },
+    "source_record_id": {
+      "type": "string",
+      "description": "Identifier of the originating source record; use an approved pseudonym when needed."
+    },
+    "source_system": {
+      "type": "string",
+      "description": "Source system or data provider."
+    },
+    "missing_properties": {
+      "type": "array",
+      "description": "Names of properties missing from this record; no missing value is encoded as zero.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_reasons": {
+      "type": "array",
+      "description": "Reasons corresponding by index to missing_properties.",
+      "items": {
+        "enum": [
+          "unknown",
+          "not_collected",
+          "not_applicable",
+          "not_available",
+          "withheld",
+          "pending"
+        ]
+      }
+    },
+    "seller": {
+      "description": "Organization offering the product.",
+      "type": "string",
+      "minLength": 1
+    },
+    "supplier": {
+      "description": "Organization fulfilling supply, if different from seller.",
+      "type": "string",
+      "minLength": 1
+    },
+    "manufacturer": {
+      "description": "Organization manufacturing the offered product.",
+      "type": "string",
+      "minLength": 1
+    },
+    "labeler": {
+      "description": "Organization named as labeler; do not equate it automatically with manufacturer.",
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog_identifier": {
+      "description": "Seller-specific catalog number or SKU, kept as a string.",
+      "type": "string",
+      "minLength": 1
+    },
+    "valid_from": {
+      "description": "Date from which this offer description is known to apply.",
+      "type": "string",
+      "minLength": 1,
+      "format": "date"
+    },
+    "valid_to": {
+      "description": "End date when supplied; absence does not assert current availability.",
+      "type": "string",
+      "minLength": 1,
+      "format": "date"
+    },
+    "unit_of_sale": {
+      "description": "Commercial unit, distinct from physical activity and administered dose.",
+      "type": "string",
+      "minLength": 1
+    },
+    "price_amount": {
+      "description": "Optional source-reported dated price; no current price or reimbursement is inferred.",
+      "type": "number",
+      "minimum": 0
+    },
+    "price_currency": {
+      "description": "Currency code associated with price_amount.",
+      "type": "string",
+      "minLength": 1
+    },
+    "price_basis": {
+      "description": "Price basis and included or excluded services, such as transport or dispensing.",
+      "type": "string",
+      "minLength": 1
+    },
+    "source_citation": {
+      "description": "Catalog or contract source and retrieval context.",
+      "type": "string",
+      "minLength": 1
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "code"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to project records by code or UUID.",
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "provenance_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to provenance records by submitter_id or UUID."
+    },
+    "product_packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to product_package records by submitter_id or UUID.",
+      "minItems": 1,
+      "maxItems": 1
+    }
+  }
+}

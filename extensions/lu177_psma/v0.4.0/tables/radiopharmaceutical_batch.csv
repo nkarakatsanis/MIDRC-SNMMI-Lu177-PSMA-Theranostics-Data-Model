@@ -1,0 +1,34 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+radiopharmaceutical_batch,type,True,False,Theranostics extension,enum,,
+radiopharmaceutical_batch,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+radiopharmaceutical_batch,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+radiopharmaceutical_batch,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+radiopharmaceutical_batch,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+radiopharmaceutical_batch,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical_batch,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical_batch,radiopharmaceuticals,True,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,
+radiopharmaceutical_batch,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+radiopharmaceutical_batch,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+radiopharmaceutical_batch,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+radiopharmaceutical_batch,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+radiopharmaceutical_batch,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+radiopharmaceutical_batch,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+radiopharmaceutical_batch,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+radiopharmaceutical_batch,batch_identifier,False,False,Theranostics extension,string,Manufacturer or site lot identifier.,
+radiopharmaceutical_batch,production_method,False,False,Theranostics extension,string,Production method.,
+radiopharmaceutical_batch,assay_datetime,False,False,Theranostics extension,string,Reference datetime for batch QC.,
+radiopharmaceutical_batch,specific_activity_unit,False,False,Theranostics extension,string,Unit for specific activity; distinguish mass-specific from molar activity.,
+radiopharmaceutical_batch,radiochemical_purity_percent,False,False,Theranostics extension,number,Radiochemical purity at specified assay time.,
+radiopharmaceutical_batch,specific_activity,False,False,Theranostics extension,number,Specific or molar activity with explicit unit and definition.,
+radiopharmaceutical_batch,medicinal_products,False,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,
+radiopharmaceutical_batch,input_material_lots,False,False,Theranostics extension,array,Link to material_lot records by submitter_id or UUID.,
+radiopharmaceutical_batch,release_specification_version,False,False,Theranostics extension,string,Version of the specification used for this batch disposition.,nk_blueprint:r225
+radiopharmaceutical_batch,release_status,False,False,Theranostics extension,enum,Recorded authorized batch disposition; this data model does not determine release.,nk_blueprint:r226
+radiopharmaceutical_batch,release_datetime,False,False,Theranostics extension,string,Timestamp of the recorded batch disposition with UTC offset.,
+radiopharmaceutical_batch,release_authority_reference,False,False,Theranostics extension,string,"Authorized role or pseudonym responsible for disposition, under the receiving governance policy.",
+radiopharmaceutical_batch,deviation_reference,False,False,Theranostics extension,string,Reference to manufacturing or QC deviations and their review.,

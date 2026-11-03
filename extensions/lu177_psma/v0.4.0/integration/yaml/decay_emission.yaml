@@ -1,0 +1,363 @@
+$schema: http://json-schema.org/draft-04/schema#
+id: decay_emission
+title: Decay Emission
+type: object
+namespace: urn:nmmi:lu177-psma:model
+category: clinical
+program: '*'
+project: '*'
+description: One decay branch or one emission component with a specified energy definition
+  and yield.
+additionalProperties: false
+submittable: true
+validators: null
+links:
+- name: projects
+  backref: nmmi_decay_emission_projects
+  label: member_of
+  target_type: project
+  multiplicity: many_to_one
+  required: true
+- name: provenance_records
+  backref: nmmi_decay_emission_provenance_records
+  label: documented_by
+  target_type: provenance
+  multiplicity: many_to_many
+  required: false
+- name: parent_nuclides
+  backref: nmmi_decay_emission_parent_nuclides
+  label: emitted_by
+  target_type: radionuclide
+  multiplicity: many_to_one
+  required: true
+- name: daughter_nuclides
+  backref: nmmi_decay_emission_daughter_nuclides
+  label: decays_to
+  target_type: radionuclide
+  multiplicity: many_to_one
+  required: false
+required:
+- type
+- submitter_id
+- record_kind
+- reference_citation
+- projects
+- parent_nuclides
+uniqueKeys:
+- - id
+- - project_id
+  - submitter_id
+systemProperties:
+- id
+- project_id
+- state
+- created_datetime
+- updated_datetime
+properties:
+  type:
+    enum:
+    - decay_emission
+  submitter_id:
+    type: string
+    description: Stable submitter-assigned identifier, unique within a project. Do
+      not encode direct patient identifiers.
+    minLength: 1
+  id:
+    pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+    systemAlias: node_id
+    term:
+      description: 'A 128-bit identifier. Depending on the mechanism used to generate
+        it, it is either guaranteed to be different from all other UUIDs/GUIDs generated
+        until 3400 AD or extremely likely to be different. Its relatively small size
+        lends itself well to sorting, ordering, and hashing of all sorts, storing
+        in databases, simple allocation, and ease of programming in general.
+
+        '
+      termDef:
+        cde_id: C54100
+        cde_version: null
+        source: NCIt
+        term: Universally Unique Identifier
+        term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+    type: string
+  project_id:
+    term:
+      description: 'Unique ID for any specific defined piece of work that is undertaken
+        or attempted to meet a single requirement.
+
+        '
+    type: string
+  state:
+    default: validated
+    downloadable:
+    - uploaded
+    - md5summed
+    - validating
+    - validated
+    - error
+    - invalid
+    - released
+    oneOf:
+    - enum:
+      - uploading
+      - uploaded
+      - md5summing
+      - md5summed
+      - validating
+      - error
+      - invalid
+      - suppressed
+      - redacted
+      - live
+    - enum:
+      - validated
+      - submitted
+      - released
+    public:
+    - live
+    term:
+      description: 'The current state of the object.
+
+        '
+  created_datetime:
+    oneOf:
+    - format: date-time
+      type: string
+    - type: 'null'
+    term:
+      description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+
+        '
+  updated_datetime:
+    oneOf:
+    - format: date-time
+      type: string
+    - type: 'null'
+    term:
+      description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+
+        '
+  model_version:
+    type: string
+    description: Version of the submitting theranostics extension, independently of
+      the MIDRC baseline version.
+  record_status:
+    type: string
+    description: Record curation state, independent of clinical value.
+    enum:
+    - draft
+    - reviewed
+    - approved
+    - superseded
+    - withdrawn
+  source_record_id:
+    type: string
+    description: Identifier of the originating source record; use an approved pseudonym
+      when needed.
+  source_system:
+    type: string
+    description: Source system or data provider.
+  missing_properties:
+    type: array
+    description: Names of properties missing from this record; no missing value is
+      encoded as zero.
+    items:
+      type: string
+  missing_reasons:
+    type: array
+    description: Reasons corresponding by index to missing_properties.
+    items:
+      enum:
+      - unknown
+      - not_collected
+      - not_applicable
+      - not_available
+      - withheld
+      - pending
+  record_kind:
+    description: Select a branch probability record or an emitted-radiation record;
+      their denominators differ.
+    enum:
+    - decay_branch
+    - emission_line
+    - continuous_spectrum
+  decay_mode:
+    description: Decay pathway as stated by the evaluated source.
+    type: string
+    minLength: 1
+  branch_fraction:
+    description: Probability of this mutually identified decay branch per parent decay;
+      dimensionless fraction from 0 to 1.
+    type: number
+    minimum: 0
+    maximum: 1
+  radiation_type:
+    description: Emitted radiation, such as beta-minus, gamma, positron, alpha or
+      Auger electron.
+    type: string
+    minLength: 1
+  energy_kev:
+    description: Energy in keV; interpretation is specified by energy_kind.
+    type: number
+    minimum: 0
+  energy_kind:
+    description: Whether energy is a discrete line, spectral mean or endpoint.
+    enum:
+    - discrete
+    - mean
+    - maximum
+  yield_per_decay:
+    description: Mean emitted particles or photons per parent decay; not automatically
+      a branching probability and may exceed one.
+    type: number
+    minimum: 0
+  spectrum_uri:
+    description: Persistent reference to an evaluated spectrum; no binary spectrum
+      is stored here.
+    type: string
+    minLength: 1
+  reference_citation:
+    description: Evaluation source and locator for the branch or radiation data.
+    type: string
+    minLength: 1
+  projects:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        code:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - code
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to project records by code or UUID.
+    minItems: 1
+    maxItems: 1
+  provenance_records:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to provenance records by submitter_id or UUID.
+  parent_nuclides:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to radionuclide records by submitter_id or UUID.
+    minItems: 1
+    maxItems: 1
+  daughter_nuclides:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to radionuclide records by submitter_id or UUID.
+    maxItems: 1

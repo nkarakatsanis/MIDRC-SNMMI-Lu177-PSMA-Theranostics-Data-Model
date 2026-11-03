@@ -1,6 +1,6 @@
 # Toxicity Event (`toxicity_event`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Individual adverse-event assessment with CTCAE version, term, grade and attribution.
 
@@ -14,7 +14,7 @@ Individual adverse-event assessment with CTCAE version, term, grade and attribut
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/toxicity_event.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/toxicity_event.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_toxicity_event_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/toxicity_event.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/toxicity_event.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_toxicity_event_template.json)
 
 ## Relationships
 
@@ -61,6 +61,8 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `resolution_date` | No | string | Date of resolution date. | Format: <code>"date"</code> |
 | `ae_attribution_to_lu177` | No | string | Assessment of whether the AE is related to Lu-177 PSMA therapy. | — |
 | `ae_related_cycle_number` | No | integer | Specifies the Lu-177 PSMA treatment cycle number most closely associated with the onset or assessment of the AE. | — |
+| `dose_limiting_toxicity` | No | boolean | Whether the event met a named protocol's dose-limiting toxicity definition; not implied by grade alone. | — |
+| `dlt_definition_reference` | No | string | Protocol, version and rule used for the dose-limiting toxicity determination. | Minimum length: <code>1</code> |
 
 ### Relationship properties
 
@@ -85,6 +87,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic toxicity_event records](../../extensions/lu177_psma/v0.3.0/examples/by_node/toxicity_event.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic toxicity_event records](../../extensions/lu177_psma/v0.4.0/examples/by_node/toxicity_event.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

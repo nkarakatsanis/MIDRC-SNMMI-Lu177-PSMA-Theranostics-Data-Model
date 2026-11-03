@@ -1,0 +1,6 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+program,dbgap_accession_number,True,False,MIDRC unchanged,string,The dbgap accession number provided for the program.,
+program,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+program,name,True,False,MIDRC unchanged,string,Full name/title of the program.,
+program,type,False,False,MIDRC unchanged,string,,

@@ -1,0 +1,17 @@
+{
+  "*type": "biological_target",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*preferred_name": null,
+  "*target_type": null,
+  "gene_symbol": null,
+  "*species": null,
+  "cellular_localization": null,
+  "*projects": null,
+  "provenance_records": null
+}

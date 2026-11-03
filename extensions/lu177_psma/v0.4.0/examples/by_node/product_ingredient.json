@@ -1,0 +1,56 @@
+[
+  {
+    "type": "product_ingredient",
+    "submitter_id": "RP-INGREDIENT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "ingredient_role": "active",
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ],
+    "molecular_entities": [
+      {
+        "submitter_id": "RP-MOLECULE"
+      }
+    ]
+  },
+  {
+    "type": "product_ingredient",
+    "submitter_id": "RP-EXCIPIENT-ROLE",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "ingredient_role": "excipient",
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ],
+    "molecular_entities": [
+      {
+        "submitter_id": "RP-EXCIPIENT"
+      }
+    ]
+  }
+]

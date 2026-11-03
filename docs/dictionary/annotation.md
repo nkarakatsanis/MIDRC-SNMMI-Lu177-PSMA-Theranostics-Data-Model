@@ -1,6 +1,6 @@
 # Annotation (`annotation`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information describing characteristics of imaging studies, series and instances (e.g., segmentations, bounding boxes, feature labels) and inferences based on those characteristics (e.g., predicted diagnoses). Annotations may be recorded in the course of clinical care or retrospectively for purposes of research (e.g., imaging annotations from PACS or retrospective labeling tools). Please refer to https://midrc.org/annotations to learn more about a particular batch of annotations.
 
@@ -14,7 +14,7 @@ Information describing characteristics of imaging studies, series and instances 
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/annotation.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/annotation.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_annotation_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/annotation.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/annotation.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_annotation_template.json)
 
 ## Relationships
 
@@ -131,6 +131,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic annotation records](../../extensions/lu177_psma/v0.3.0/examples/by_node/annotation.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic annotation records](../../extensions/lu177_psma/v0.4.0/examples/by_node/annotation.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

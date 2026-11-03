@@ -1,0 +1,19 @@
+{
+  "*type": "dispense_event",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*dispensed_datetime": null,
+  "*dispense_status": null,
+  "dispenser_reference": null,
+  "custody_reference": null,
+  "*projects": null,
+  "provenance_records": null,
+  "*cases": null,
+  "*radiopharmaceutical_orders": null,
+  "*radiopharmaceutical_units": null
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "supply_offer",
+    "submitter_id": "RP-OFFER",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "product_packages": [
+      {
+        "submitter_id": "RP-PACKAGE"
+      }
+    ],
+    "seller": "SYNTHETIC seller",
+    "catalog_identifier": "SYN-SKU-0001",
+    "valid_from": "2025-12-01",
+    "source_citation": "Invented catalog example without actual price or vendor."
+  }
+]

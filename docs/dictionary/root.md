@@ -1,6 +1,6 @@
 # Root (`root`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 
 
@@ -14,7 +14,7 @@ Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CAT
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/root.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/root.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_root_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/root.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/root.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_root_template.json)
 
 ## Relationships
 

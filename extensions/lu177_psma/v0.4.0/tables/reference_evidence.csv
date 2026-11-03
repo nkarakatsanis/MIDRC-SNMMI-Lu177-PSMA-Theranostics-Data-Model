@@ -1,0 +1,47 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+reference_evidence,type,True,False,Theranostics extension,enum,,
+reference_evidence,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r88; nk_blueprint:r256
+reference_evidence,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+reference_evidence,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+reference_evidence,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+reference_evidence,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+reference_evidence,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+reference_evidence,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+reference_evidence,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+reference_evidence,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+reference_evidence,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+reference_evidence,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+reference_evidence,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+reference_evidence,title,True,False,Theranostics extension,string,Title or descriptive name of the evidence item.,
+reference_evidence,evidence_kind,True,False,Theranostics extension,enum,Kind of evidence source.,nk_blueprint:r257
+reference_evidence,setting,True,False,Theranostics extension,enum,Experimental or reference setting; never silently pool species or settings.,nk_blueprint:r89; idrp_ontology:r5
+reference_evidence,source_citation,True,False,Theranostics extension,string,Citation or source location; exact identifiers can also be assigned through external_identifier.,nk_blueprint:r259
+reference_evidence,source_version,False,False,Theranostics extension,string,"Document, label, dataset or registry version.",
+reference_evidence,source_locator,False,False,Theranostics extension,string,"Page, section, table, figure or record locator supporting the assertion.",
+reference_evidence,evidence_date,False,False,Theranostics extension,string,Date of the evidence version or observation period as defined by the source.,nk_blueprint:r280
+reference_evidence,species,False,False,Theranostics extension,string,Organism represented in the evidence; required for biological experimental results.,nk_blueprint:r90
+reference_evidence,population_description,False,False,Theranostics extension,string,"Population, cell system, species strain or cohort context.",
+reference_evidence,disease_context,False,False,Theranostics extension,string,Disease and subtype described in the source; not an anatomical target.,nk_blueprint:r8; nk_blueprint:r9; nk_blueprint:r230
+reference_evidence,treatment_setting,False,False,Theranostics extension,string,"Treatment line, prior therapy and other setting constraints.",nk_blueprint:r231
+reference_evidence,study_design,False,False,Theranostics extension,string,Source-described study design.,nk_blueprint:r264
+reference_evidence,trial_phase,False,False,Theranostics extension,string,Source-described trial phase; not a permanent agent property.,nk_blueprint:r7; nk_blueprint:r263
+reference_evidence,sponsor,False,False,Theranostics extension,string,Study sponsor as reported.,nk_blueprint:r262
+reference_evidence,comparator,False,False,Theranostics extension,string,Comparator or reference condition.,nk_blueprint:r265
+reference_evidence,sample_size,False,False,Theranostics extension,integer,"Number of experimental units or subjects, interpreted with sample_unit.",nk_blueprint:r266
+reference_evidence,sample_unit,False,False,Theranostics extension,string,"Unit counted by sample_size, such as participants, specimens or animals.",
+reference_evidence,inclusion_criteria,False,False,Theranostics extension,string,Population inclusion and exclusion summary.,nk_blueprint:r267
+reference_evidence,biomarker_selection_criteria,False,False,Theranostics extension,string,Biomarker selection rule and source version.,nk_blueprint:r268
+reference_evidence,primary_endpoint,False,False,Theranostics extension,string,Prespecified primary endpoint and its definition reference.,nk_blueprint:r269
+reference_evidence,secondary_endpoints,False,False,Theranostics extension,array,Secondary endpoints and their definition references.,nk_blueprint:r270
+reference_evidence,generalizability_limits,False,False,Theranostics extension,string,Known limitations on applying the evidence to another context.,nk_blueprint:r228; nk_blueprint:r281
+reference_evidence,evidence_level,False,False,Theranostics extension,string,Assessment under a named evidence-grading rubric supplied in provenance.,nk_blueprint:r279
+reference_evidence,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+reference_evidence,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+reference_evidence,radiopharmaceuticals,False,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,
+reference_evidence,medicinal_products,False,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,
+reference_evidence,biological_targets,False,False,Theranostics extension,array,Link to biological_target records by submitter_id or UUID.,

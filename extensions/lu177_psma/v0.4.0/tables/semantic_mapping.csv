@@ -1,0 +1,31 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+semantic_mapping,type,True,False,Theranostics extension,enum,,
+semantic_mapping,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r306
+semantic_mapping,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+semantic_mapping,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+semantic_mapping,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+semantic_mapping,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+semantic_mapping,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+semantic_mapping,model_releases,True,False,Theranostics extension,array,Link to model_release records by submitter_id or UUID.,
+semantic_mapping,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+semantic_mapping,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",nk_blueprint:r315; nk_blueprint:r327
+semantic_mapping,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+semantic_mapping,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+semantic_mapping,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+semantic_mapping,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+semantic_mapping,node_name,True,False,Theranostics extension,string,Model node being mapped.,nk_blueprint:r307
+semantic_mapping,property_name,False,False,Theranostics extension,string,Model property being mapped; omit for node-level mapping.,
+semantic_mapping,source_element_id,False,False,Theranostics extension,string,Source catalog element when mapping applies to a normalized field.,
+semantic_mapping,concept_id,False,False,Theranostics extension,string,External concept identifier or URI. Do not mint an apparent NucLex identifier.,nk_blueprint:r309; nk_blueprint:r314; nk_blueprint:r328
+semantic_mapping,vocabulary,True,False,Theranostics extension,string,Name of external vocabulary.,
+semantic_mapping,vocabulary_version,False,False,Theranostics extension,string,Exact vocabulary release.,
+semantic_mapping,preferred_term,False,False,Theranostics extension,string,External preferred label.,
+semantic_mapping,mapping_relation,False,False,Theranostics extension,string,"Exact, broader, narrower, related or unresolved correspondence.",nk_blueprint:r308
+semantic_mapping,definition_source,False,False,Theranostics extension,string,Source of definition.,nk_blueprint:r320
+semantic_mapping,reviewer,False,False,Theranostics extension,string,Reviewer role or approved reviewer identifier.,
+semantic_mapping,mapping_status,True,False,Theranostics extension,string,Status of mapping assertion.,nk_blueprint:r326

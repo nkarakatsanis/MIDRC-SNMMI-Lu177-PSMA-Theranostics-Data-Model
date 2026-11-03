@@ -1,0 +1,72 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+radiology_report,airway_involvement,False,False,MIDRC unchanged,enum,An indicator confirming whether airway involvement was discovered during imaging.,
+radiology_report,airway_involvement_type,False,False,MIDRC unchanged,array,A description noting the specific type of airway involvement discovered during imaging.,
+radiology_report,body_part_examined,False,False,MIDRC unchanged,array,"(0018, 0015) Body Part Examined.",
+radiology_report,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+radiology_report,cases,False,False,MIDRC unchanged,compound,"The submitter_id or id of the case this report relates to, i.e., a link to a record in the parent node.",
+radiology_report,cavities,False,False,MIDRC unchanged,enum,An indicator confirming whether cavities were discovered during imaging.,
+radiology_report,cavities_count,False,False,MIDRC unchanged,integer,The number of cavities discovered during imaging.,
+radiology_report,cavities_largest_size,False,False,MIDRC unchanged,number,A measure in size of the largest cavity discovered during imaging.,
+radiology_report,cavities_wall_thickness,False,False,MIDRC unchanged,number,A measure of wall thickness of the cavities discovered during imaging.,
+radiology_report,core_metadata_collections,False,False,MIDRC unchanged,compound,"The submitter_id or id of the core_metadata_collection to which the report belongs, i.e., a link to a record in the parent node.",
+radiology_report,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiology_report,ct_protocol,False,False,MIDRC unchanged,array,A description of the protocol used for a computed tomography (CT) scan.,
+radiology_report,cysts_bullae,False,False,MIDRC unchanged,enum,An indicator confirming whether cysts or bullae were discovered during imaging.,
+radiology_report,data_category,True,False,MIDRC unchanged,enum,"Broad categorization of the contents of the data file.
+",
+radiology_report,data_format,True,False,MIDRC unchanged,enum,"Format of the data files.
+",
+radiology_report,data_type,True,False,MIDRC unchanged,enum,"Specific content type of the data file.
+",
+radiology_report,datasets,False,False,MIDRC unchanged,compound,"The submitter_id or id of the case this report relates to, i.e., a link to a record in the parent node.",
+radiology_report,distribution_axial,False,False,MIDRC unchanged,enum,A description noting the distribution of fibrosis across the different zones relative to the center of the lung.,
+radiology_report,distribution_zone,False,False,MIDRC unchanged,enum,A description noting the distribution of fibrosis across the different zones within the lungs.,
+radiology_report,error_type,False,True,MIDRC unchanged,enum,"Type of error for the data file object.
+",
+radiology_report,fibrocalcific_scarring,False,False,MIDRC unchanged,enum,An indicator confirming whether fibrocalcific scaring was discovered during imaging.,
+radiology_report,fibrosis_pattern,False,False,MIDRC unchanged,enum,"A description of the pattern of fibrosis related scaring, determined by imaging.",
+radiology_report,fibrosis_segments,False,False,MIDRC unchanged,array,A description of the specific anatomic location of the fibrosis.,
+radiology_report,file_name,True,False,MIDRC unchanged,string,"The name (or part of a name) of a file (of any type).
+",
+radiology_report,file_size,True,False,MIDRC unchanged,integer,"The size of the data file (object) in bytes.
+",
+radiology_report,file_state,False,True,MIDRC unchanged,enum,"The current state of the data file object.
+",
+radiology_report,ground_glass_opacities,False,False,MIDRC unchanged,enum,An indicator confirming whether ground-glass opacities (GGOs) were discovered during imaging.,
+radiology_report,ground_glass_opacities_focality,False,False,MIDRC unchanged,enum,A description noting whether confirmed ground-glass opacities (GGOs) were localized (focal) or spread across multiple locations (diffuse).,
+radiology_report,honeycombing,False,False,MIDRC unchanged,enum,An indicator confirming whether honeycomb fibrosis was discovered during imaging.,
+radiology_report,honeycombing_focality,False,False,MIDRC unchanged,enum,A description noting whether confirmed honeycomb fibrosis was localized (focal) or spread across multiple locations (diffuse).,
+radiology_report,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+radiology_report,image_quality,False,False,MIDRC unchanged,enum,A description noting the quality of the image(s) used for the radiology report.,
+radiology_report,imaging_studies,False,False,MIDRC unchanged,compound,"The submitter_id or id of the imaging_study this report relates to, i.e., a link to a record in the parent node.",
+radiology_report,laterality,False,False,MIDRC unchanged,enum,Laterality type relative to the anatomic site of the body examined or affected.,
+radiology_report,lymphadenopathy_consolidation,False,False,MIDRC unchanged,enum,An indicator confirming whether lymphadenopathy or consolidation were discovered during imaging.,
+radiology_report,md5sum,True,False,MIDRC unchanged,string,"The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
+",
+radiology_report,modality,False,False,MIDRC unchanged,string,"(0008, 0060) Modality",
+radiology_report,object_id,False,False,MIDRC unchanged,string,The GUID of the object in the index service.,
+radiology_report,paracicatricial_emphysema,False,False,MIDRC unchanged,enum,An indicator confirming whether paracicatricial emphysema was discovered during imaging.,
+radiology_report,parenchymal_bands,False,False,MIDRC unchanged,enum,An indicator confirming whether parenchymal bands were discovered during imaging.,
+radiology_report,pleural_involvement,False,False,MIDRC unchanged,enum,"An indication of whether the pleura impacted by the fibrosis, based on imaging.",
+radiology_report,pleural_involvement_phase,False,False,MIDRC unchanged,array,A description noting the phase of pleural involvement.,
+radiology_report,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+radiology_report,pulmonary_hypertension_signs,False,False,MIDRC unchanged,array,A description noting the specific signs of pulmonary hypertension discovered during imaging.,
+radiology_report,pulmonary_hypertension_signs_indicator,False,False,MIDRC unchanged,enum,An indicator confirming whether imaging showed signs of pulmonary hypertension.,
+radiology_report,report_generation_method,False,False,MIDRC unchanged,enum,"A categorical description of the way the report was generated, either through clinical care (Clinical) or through computational means (Synethic).",
+radiology_report,report_modification_method,False,False,MIDRC unchanged,enum,"A categorical description of the type of modification performed on the report, either by redaction of sensitive information (Redacted) or by obscuring it through replacement with random or shifted values (Synthetic replacement).",
+radiology_report,reticular_opacities,False,False,MIDRC unchanged,enum,An indicator confirming whether reticular opacities were discovered during imaging.,
+radiology_report,reticular_opacities_focality,False,False,MIDRC unchanged,enum,A description noting whether confirmed reticular opacities were localized (focal) or spread across multiple locations (diffuse).,
+radiology_report,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+radiology_report,study_description,False,False,MIDRC unchanged,string,"(0008, 1030) Study Description.",
+radiology_report,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+radiology_report,symmetry,False,False,MIDRC unchanged,enum,A description noting how the fibrotic changes are distributed throughout the organ or tissue.,
+radiology_report,traction_bronchiectasis,False,False,MIDRC unchanged,enum,A indicator confirming whether traction bronchiectasis was discovered during imaging.,
+radiology_report,traction_bronchiectasis_focality,False,False,MIDRC unchanged,enum,A description noting whether confirmed traction bronchiectasis was localized (focal) or spread across multiple locations (diffuse).,
+radiology_report,tuberculoma_calcified_ghon_focus,False,False,MIDRC unchanged,enum,An indicator confirming whether a tuberculoma calcified ghon focus was discovered during imaging.,
+radiology_report,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+radiology_report,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",

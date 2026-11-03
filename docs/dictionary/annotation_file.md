@@ -1,6 +1,6 @@
 # Annotation File (`annotation_file`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 The annotation_file node provides the ability to link a file containing annotation information to a case, imaging study or imaging series.
 
@@ -14,7 +14,7 @@ The annotation_file node provides the ability to link a file containing annotati
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/annotation_file.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/annotation_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_annotation_file_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/annotation_file.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/annotation_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_annotation_file_template.json)
 
 ## Relationships
 

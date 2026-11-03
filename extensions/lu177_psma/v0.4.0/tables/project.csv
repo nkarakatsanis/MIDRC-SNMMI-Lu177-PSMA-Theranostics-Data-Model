@@ -1,0 +1,40 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+project,acknowledgement,False,False,MIDRC unchanged,string,Publication acknowledgement(s) for the published dataset.,
+project,availability_mechanism,False,False,MIDRC unchanged,string,Mechanism by which the project will be made avilable.,
+project,availability_type,False,False,MIDRC unchanged,enum,Is the project open or restricted?,
+project,code,True,False,MIDRC unchanged,string,Unique identifier for the project.,
+project,complete,False,False,MIDRC unchanged,enum,"Description of whether the project submission is complete or still in progress.
+",
+project,data_citation,False,False,MIDRC unchanged,string,The citation for the published dataset.,
+project,data_contributor,False,False,MIDRC unchanged,string,The name of the organization or individual that the contributed dataset belongs to.,
+project,data_description,False,False,MIDRC unchanged,string,"A brief, free-text description of the data files and associated metadata provided for this dataset.",
+project,data_url_doi,False,False,MIDRC unchanged,string,A URL or DOI for the source of the dataset or the contributing organization's website.,
+project,date_collected,False,False,MIDRC unchanged,string,The date or date range in which the project data was collected.,
+project,dbgap_accession_number,True,False,MIDRC unchanged,string,The dbgap accession number provided for the project.,
+project,disease_type,False,False,MIDRC unchanged,string,"The primary type of disease studied in this dataset, if applicable.",
+project,id,False,True,MIDRC unchanged,string,UUID for the project.,
+project,intended_release_date,False,True,MIDRC unchanged,string,Tracks a Project's intended release date.,
+project,investigator_affiliation,False,False,MIDRC unchanged,string,The investigator's affiliation with respect to a research institution.,
+project,investigator_name,False,False,MIDRC unchanged,string,Name of the principal investigator for the project.,
+project,license,False,False,MIDRC unchanged,string,The license under which the dataset has been published.,
+project,longitudinal,False,False,MIDRC unchanged,boolean,Indicates whether the dataset has longitudinal or time-series data.,
+project,name,True,False,MIDRC unchanged,string,Display name/brief description for the project.,
+project,primary_site,False,False,MIDRC unchanged,string,The primary body site studied in this dataset.,
+project,programs,True,False,MIDRC unchanged,compound,"The program to which the project belongs.
+",
+project,publication_citation,False,False,MIDRC unchanged,string,The major or main publication(s) associated with the data itself or with the publication that published the dataset.,
+project,releasable,False,True,MIDRC unchanged,boolean,"A project can only be released by the user when `releasable` is true.
+",
+project,released,False,True,MIDRC unchanged,boolean,"To release a project is to tell the GDC to include all submitted
+entities in the next GDC index.
+",
+project,research_description,False,False,MIDRC unchanged,string,"If the dataset is related to a research study, provide a brief, free-text description or abstract of the study being performed, for example, the hypothesis being tested and a very brief description of the materials, methods and results.",
+project,research_design,False,False,MIDRC unchanged,string,A summary of the goals of the research or a general description of the research's relationship to a clinical application.,
+project,research_objective,False,False,MIDRC unchanged,string,The general objective of the research; what the researchers hope to discover or determine.,
+project,research_setup,False,False,MIDRC unchanged,string,A high level description of the setup used to achieve the research objectives.,
+project,state,False,True,MIDRC unchanged,enum,"The possible states a project can be in. All but 'open' are
+equivalent to some type of locked state.
+",
+project,support_id,False,False,MIDRC unchanged,string,The ID of the source providing support/grant resources.,
+project,support_source,False,False,MIDRC unchanged,string,The name of source providing support/grant resources.,
+project,type,False,False,MIDRC unchanged,string,,

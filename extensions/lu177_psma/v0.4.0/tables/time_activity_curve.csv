@@ -1,0 +1,29 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+time_activity_curve,type,True,False,Theranostics extension,enum,,
+time_activity_curve,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+time_activity_curve,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+time_activity_curve,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+time_activity_curve,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+time_activity_curve,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+time_activity_curve,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+time_activity_curve,anatomic_targets,True,False,Theranostics extension,array,Link to anatomic_target records by submitter_id or UUID.,
+time_activity_curve,administrations,True,False,Theranostics extension,array,Link to administration records by submitter_id or UUID.,
+time_activity_curve,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+time_activity_curve,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+time_activity_curve,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+time_activity_curve,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+time_activity_curve,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+time_activity_curve,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+time_activity_curve,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+time_activity_curve,time_hours,False,False,Theranostics extension,array,"Sample times relative to the linked administration, in hours.",nk_blueprint:r108
+time_activity_curve,activity_mbq,False,False,Theranostics extension,array,Activities in MBq corresponding to time_hours.,nk_blueprint:r112; nk_blueprint:r113
+time_activity_curve,fit_method,False,False,Theranostics extension,string,Fit or numerical integration method.,
+time_activity_curve,extrapolation_method,False,False,Theranostics extension,string,Early and late extrapolation assumptions.,
+time_activity_curve,tiac_hours,False,False,Theranostics extension,number,"Time-integrated activity coefficient, if calculated.",atlas_data_elements:r17; nk_blueprint:r125; nk_blueprint:r126
+time_activity_curve,decay_reference,False,False,Theranostics extension,string,Whether samples are physical activity or decay corrected and to which time.,
+time_activity_curve,roi_measurements,False,False,Theranostics extension,compound,,

@@ -1,0 +1,35 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+computational_model,type,True,False,Theranostics extension,enum,,
+computational_model,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+computational_model,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+computational_model,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+computational_model,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+computational_model,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+computational_model,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+computational_model,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+computational_model,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+computational_model,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+computational_model,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+computational_model,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+computational_model,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+computational_model,model_name,True,False,Theranostics extension,string,Name of the computational model.,
+computational_model,model_release,True,False,Theranostics extension,string,Exact model/software release; independent of the data-model version.,nk_blueprint:r301
+computational_model,model_kind,True,False,Theranostics extension,enum,Computational model family; does not assert clinical validation.,nk_blueprint:r284; nk_blueprint:r292; nk_blueprint:r293; nk_blueprint:r294; nk_blueprint:r295
+computational_model,artifact_uri,False,False,Theranostics extension,string,Location of model code or weights.,
+computational_model,artifact_sha256,False,False,Theranostics extension,string,"SHA-256 digest of the exact code or weight artifact, if available.",
+computational_model,scope,True,False,Theranostics extension,string,"Intended subject, population, organ or molecular scope.",nk_blueprint:r283
+computational_model,input_requirements,True,False,Theranostics extension,string,"Required imaging, clinical, treatment-history and other inputs with units and timing conventions.",nk_blueprint:r285; nk_blueprint:r286; nk_blueprint:r296; nk_blueprint:r297
+computational_model,output_definition,True,False,Theranostics extension,string,Predicted quantities and their definitions and units.,nk_blueprint:r287
+computational_model,applicability_limits,False,False,Theranostics extension,string,"Disease, population and acquisition settings in which use is justified by evidence.",nk_blueprint:r303
+computational_model,known_failure_modes,False,False,Theranostics extension,string,"Known failure modes, including domain shift and missing inputs.",nk_blueprint:r291; nk_blueprint:r304
+computational_model,identifiability_assessment,False,False,Theranostics extension,string,Parameter identifiability assessment and method.,nk_blueprint:r288
+computational_model,human_oversight,True,False,Theranostics extension,string,Required human review and intended research or clinical use constraints.,nk_blueprint:r305
+computational_model,validation_status,True,False,Theranostics extension,enum,Evidence status; not a certification or universal claim of safety.,nk_blueprint:r290; nk_blueprint:r300
+computational_model,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+computational_model,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+computational_model,reference_evidence,False,False,Theranostics extension,array,Link to reference_evidence records by submitter_id or UUID.,

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "computational_model",
+    "submitter_id": "RP-COMPUTATIONAL",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "model_name": "Synthetic compartmental research model",
+    "model_release": "DEMO-1",
+    "model_kind": "compartmental",
+    "scope": "Patient lesion simulation",
+    "input_requirements": "Time-activity observations, activity and anatomical context",
+    "output_definition": "Illustrative mean absorbed dose in Gy for a specified scenario",
+    "human_oversight": "Research interpretation only; no treatment-order generation",
+    "validation_status": "unvalidated",
+    "known_failure_modes": "No numerical algorithm or clinical performance validation is distributed."
+  }
+]

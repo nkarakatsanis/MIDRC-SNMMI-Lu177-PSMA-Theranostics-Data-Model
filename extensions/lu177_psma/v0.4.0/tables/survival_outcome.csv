@@ -1,0 +1,42 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+survival_outcome,type,True,False,Theranostics extension,enum,,
+survival_outcome,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+survival_outcome,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+survival_outcome,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+survival_outcome,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+survival_outcome,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+survival_outcome,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+survival_outcome,therapy_courses,True,False,Theranostics extension,array,Link to therapy_course records by submitter_id or UUID.,
+survival_outcome,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+survival_outcome,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+survival_outcome,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+survival_outcome,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+survival_outcome,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+survival_outcome,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+survival_outcome,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+survival_outcome,endpoint_name,True,False,Theranostics extension,string,Endpoint endpoint name.,
+survival_outcome,endpoint_definition,True,False,Theranostics extension,string,Endpoint endpoint definition.,
+survival_outcome,time_origin_definition,True,False,Theranostics extension,string,Endpoint time origin definition.,
+survival_outcome,event_definition,True,False,Theranostics extension,string,Endpoint event definition.,
+survival_outcome,censoring_reason,False,False,Theranostics extension,string,Endpoint censoring reason.,
+survival_outcome,origin_date,False,False,Theranostics extension,string,Date used for endpoint origin date.,
+survival_outcome,event_date,False,False,Theranostics extension,string,Date used for endpoint event date.,
+survival_outcome,censor_date,False,False,Theranostics extension,string,Date used for endpoint censor date.,
+survival_outcome,event_observed,True,False,Theranostics extension,boolean,"True for qualifying event, false for censored follow-up.",
+survival_outcome,duration_days,False,False,Theranostics extension,number,Calculated follow-up duration from defined origin to event or censor date.,nk_blueprint:r245; nk_blueprint:r246; nk_blueprint:r247; nk_blueprint:r248
+survival_outcome,months_conversion,False,False,Theranostics extension,string,Rule converting days to months for reported month-based results.,
+survival_outcome,date_of_death,False,False,Theranostics extension,string,"Patient's date of death, if applicable.",lu_177_psma_data_model:r289
+survival_outcome,efs,False,False,Theranostics extension,number,Time from Lu-177 PSMA therapy start absent of any adverse events,lu_177_psma_data_model:r295
+survival_outcome,last_followup_date,False,False,Theranostics extension,string,Date of the patient's last contact or information update.,lu_177_psma_data_model:r296
+survival_outcome,os_months,False,False,Theranostics extension,number,"Time from Lu-177 PSMA therapy start to death from any cause, in months.",lu_177_psma_data_model:r297; atlas_data_elements:r78
+survival_outcome,pfs_months,False,False,Theranostics extension,number,"Time from Lu-177 PSMA therapy start to progression or death, in months.",lu_177_psma_data_model:r298; atlas_data_elements:r77
+survival_outcome,rpfs_months,False,False,Theranostics extension,number,"Time from Lu-177 PSMA therapy start to radiographic progression or death, in months.",lu_177_psma_data_model:r312
+survival_outcome,response_assessments,False,False,Theranostics extension,array,References to response_assessment records.,
+survival_outcome,clinical_events,False,False,Theranostics extension,array,References to clinical_event records.,
+survival_outcome,treatment_transitions,False,False,Theranostics extension,array,References to treatment_transition records.,
+survival_outcome,duration_months,False,False,Theranostics extension,number,"Reported endpoint duration in months, with explicit conversion convention and event/censor data.",marios_outcome_content:r41; marios_outcome_content:r42; marios_outcome_content:r43; marios_outcome_content:r44; marios_outcome_content:r45; marios_outcome_content:r87; marios_outcome_content:r93; marios_outcome_content:r98; outcome_revision:r41; outcome_revision:r42; outcome_revision:r43; outcome_revision:r44; outcome_revision:r45; outcome_revision:r87; outcome_revision:r93; outcome_revision:r98; outcomes_paper:supplement1:r36; outcomes_paper:supplement1:r48; outcomes_paper:supplement2:r17

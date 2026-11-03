@@ -1,0 +1,27 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+therapy_cycle,type,True,False,Theranostics extension,enum,,
+therapy_cycle,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+therapy_cycle,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+therapy_cycle,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+therapy_cycle,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+therapy_cycle,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+therapy_cycle,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+therapy_cycle,therapy_courses,True,False,Theranostics extension,array,Link to therapy_course records by submitter_id or UUID.,
+therapy_cycle,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+therapy_cycle,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+therapy_cycle,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+therapy_cycle,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+therapy_cycle,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+therapy_cycle,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+therapy_cycle,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+therapy_cycle,cycle_number,True,False,Theranostics extension,integer,Sequential cycle within the linked course.,lu_177_psma_data_model:r328; nk_blueprint:r153; nk_blueprint:r172
+therapy_cycle,cycle_status,True,False,Theranostics extension,string,Cycle state; cancelled cycles need not have administration records.,
+therapy_cycle,delay_days,False,False,Theranostics extension,number,Cycle delay days.,
+therapy_cycle,planned_activity_mbq,False,False,Theranostics extension,number,Cycle planned activity mbq.,
+therapy_cycle,modification_reason,False,False,Theranostics extension,string,Cycle modification reason.,
+therapy_cycle,plan_version_reference,False,False,Theranostics extension,string,Cycle plan version reference.,

@@ -1,6 +1,6 @@
 # Dosimetry (`dosimetry`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Dosimetry computation with inputs, integration method, mass model, uncertainty and software version.
 
@@ -14,7 +14,7 @@ Dosimetry computation with inputs, integration method, mass model, uncertainty a
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/dosimetry.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/dosimetry.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_dosimetry_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/dosimetry.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/dosimetry.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_dosimetry_template.json)
 
 ## Relationships
 
@@ -103,6 +103,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic dosimetry records](../../extensions/lu177_psma/v0.3.0/examples/by_node/dosimetry.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic dosimetry records](../../extensions/lu177_psma/v0.4.0/examples/by_node/dosimetry.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

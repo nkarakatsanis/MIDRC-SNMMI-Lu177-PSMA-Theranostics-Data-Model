@@ -1,0 +1,34 @@
+{
+  "packaging_date": "2026-11-02",
+  "model_version": "0.4.0-proposal",
+  "release": "0.4.0",
+  "schema_changes_in_this_packaging": true,
+  "baseline": {
+    "url": "https://data.midrc.org/api/v0/submission/_dictionary/_all",
+    "dictionary_version": "1.4.3-2-g7505333",
+    "commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "retrieved_on": "2026-10-16",
+    "sha256": "578e57dc45f719b07f1ac31482fed9129675c133aaafc3004dc346e5e4928e21"
+  },
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Nouran Zaid",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified first two and final two authors retained; intervening authors ordered by surname.",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "source_policy": "Source field extracts preserve original coordinates and source-file SHA-256; unverified example values and suggested ontology codes are not populated as canonical data."
+}

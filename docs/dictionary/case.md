@@ -1,6 +1,6 @@
 # Case (`case`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 The collection of all data related to a specific patient or case in the context of a specific dataset or experiment.
 
@@ -14,7 +14,7 @@ The collection of all data related to a specific patient or case in the context 
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/case.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/case.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_case_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/case.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/case.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_case_template.json)
 
 ## Relationships
 
@@ -102,6 +102,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic case records](../../extensions/lu177_psma/v0.3.0/examples/by_node/case.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic case records](../../extensions/lu177_psma/v0.4.0/examples/by_node/case.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

@@ -1,0 +1,23 @@
+{
+  "*type": "model_prediction",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*quantity_name": null,
+  "*predicted_value": null,
+  "*unit": null,
+  "prediction_time_hours": null,
+  "scenario_activity_mbq": null,
+  "uncertainty_lower": null,
+  "uncertainty_upper": null,
+  "uncertainty_definition": null,
+  "*review_status": null,
+  "*projects": null,
+  "provenance_records": null,
+  "*model_runs": null,
+  "anatomic_targets": null
+}

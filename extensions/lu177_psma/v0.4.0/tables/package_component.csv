@@ -1,0 +1,24 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+package_component,type,True,False,Theranostics extension,enum,,
+package_component,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+package_component,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+package_component,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+package_component,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+package_component,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+package_component,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+package_component,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+package_component,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+package_component,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+package_component,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+package_component,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+package_component,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+package_component,component_count,True,False,Theranostics extension,integer,Number of contained package units; must be positive.,nk_blueprint:r191
+package_component,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+package_component,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+package_component,outer_packages,True,False,Theranostics extension,array,Link to product_package records by submitter_id or UUID.,
+package_component,inner_packages,True,False,Theranostics extension,array,Link to product_package records by submitter_id or UUID.,nz_model:r108

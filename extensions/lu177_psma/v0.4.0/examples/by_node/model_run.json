@@ -1,0 +1,44 @@
+[
+  {
+    "type": "model_run",
+    "submitter_id": "RP-RUN",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "computational_models": [
+      {
+        "submitter_id": "RP-COMPUTATIONAL"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "input_administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "run_datetime": "2026-01-04T12:00:00Z",
+    "information_cutoff_datetime": "2026-01-04T11:00:00Z",
+    "purpose": "technical_validation",
+    "software_environment": "No algorithm executed; invented result for schema validation",
+    "scenario_description": "Hypothetical 1000 MBq future administration for record-link testing only",
+    "input_manifest": "SYN-ADMINISTRATION, available 2026-01-01; no future outcome inputs"
+  }
+]

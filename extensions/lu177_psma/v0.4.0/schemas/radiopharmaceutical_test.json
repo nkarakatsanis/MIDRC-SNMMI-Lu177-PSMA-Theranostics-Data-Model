@@ -1,0 +1,720 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "radiopharmaceutical_test",
+  "title": "Radiopharmaceutical Test",
+  "type": "object",
+  "namespace": "urn:nmmi:lu177-psma:model",
+  "category": "clinical",
+  "program": "*",
+  "project": "*",
+  "description": "One nonpatient QC, biological-reference or computational-evaluation result with an explicit subject and method.",
+  "additionalProperties": false,
+  "submittable": true,
+  "validators": null,
+  "links": [
+    {
+      "name": "projects",
+      "backref": "nmmi_radiopharmaceutical_test_projects",
+      "label": "member_of",
+      "target_type": "project",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "name": "provenance_records",
+      "backref": "nmmi_radiopharmaceutical_test_provenance_records",
+      "label": "documented_by",
+      "target_type": "provenance",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "name": "radiopharmaceutical_batches",
+      "backref": "nmmi_radiopharmaceutical_test_radiopharmaceutical_batches",
+      "label": "assesses",
+      "target_type": "radiopharmaceutical_batch",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "name": "material_lots",
+      "backref": "nmmi_radiopharmaceutical_test_material_lots",
+      "label": "assesses",
+      "target_type": "material_lot",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "name": "radiopharmaceutical_units",
+      "backref": "nmmi_radiopharmaceutical_test_radiopharmaceutical_units",
+      "label": "assesses",
+      "target_type": "radiopharmaceutical_unit",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "name": "reference_evidence",
+      "backref": "nmmi_radiopharmaceutical_test_reference_evidence",
+      "label": "assesses",
+      "target_type": "reference_evidence",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "name": "computational_models",
+      "backref": "nmmi_radiopharmaceutical_test_computational_models",
+      "label": "assesses",
+      "target_type": "computational_model",
+      "multiplicity": "many_to_one",
+      "required": false
+    }
+  ],
+  "required": [
+    "type",
+    "submitter_id",
+    "test_context",
+    "quantity_name",
+    "method_name",
+    "result_status",
+    "projects"
+  ],
+  "uniqueKeys": [
+    [
+      "id"
+    ],
+    [
+      "project_id",
+      "submitter_id"
+    ]
+  ],
+  "systemProperties": [
+    "id",
+    "project_id",
+    "state",
+    "created_datetime",
+    "updated_datetime"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "radiopharmaceutical_test"
+      ]
+    },
+    "submitter_id": {
+      "type": "string",
+      "description": "Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+      "minLength": 1
+    },
+    "id": {
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "systemAlias": "node_id",
+      "term": {
+        "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+        "termDef": {
+          "cde_id": "C54100",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Universally Unique Identifier",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+        }
+      },
+      "type": "string"
+    },
+    "project_id": {
+      "term": {
+        "description": "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+      },
+      "type": "string"
+    },
+    "state": {
+      "default": "validated",
+      "downloadable": [
+        "uploaded",
+        "md5summed",
+        "validating",
+        "validated",
+        "error",
+        "invalid",
+        "released"
+      ],
+      "oneOf": [
+        {
+          "enum": [
+            "uploading",
+            "uploaded",
+            "md5summing",
+            "md5summed",
+            "validating",
+            "error",
+            "invalid",
+            "suppressed",
+            "redacted",
+            "live"
+          ]
+        },
+        {
+          "enum": [
+            "validated",
+            "submitted",
+            "released"
+          ]
+        }
+      ],
+      "public": [
+        "live"
+      ],
+      "term": {
+        "description": "The current state of the object.\n"
+      }
+    },
+    "created_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "updated_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "model_version": {
+      "type": "string",
+      "description": "Version of the submitting theranostics extension, independently of the MIDRC baseline version."
+    },
+    "record_status": {
+      "type": "string",
+      "description": "Record curation state, independent of clinical value.",
+      "enum": [
+        "draft",
+        "reviewed",
+        "approved",
+        "superseded",
+        "withdrawn"
+      ]
+    },
+    "source_record_id": {
+      "type": "string",
+      "description": "Identifier of the originating source record; use an approved pseudonym when needed."
+    },
+    "source_system": {
+      "type": "string",
+      "description": "Source system or data provider."
+    },
+    "missing_properties": {
+      "type": "array",
+      "description": "Names of properties missing from this record; no missing value is encoded as zero.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_reasons": {
+      "type": "array",
+      "description": "Reasons corresponding by index to missing_properties.",
+      "items": {
+        "enum": [
+          "unknown",
+          "not_collected",
+          "not_applicable",
+          "not_available",
+          "withheld",
+          "pending"
+        ]
+      }
+    },
+    "test_context": {
+      "description": "Nonpatient context. Individual patient laboratory and ROI results remain MIDRC measurement records.",
+      "enum": [
+        "batch_qc",
+        "material_qc",
+        "unit_qc",
+        "reference_result",
+        "model_evaluation"
+      ]
+    },
+    "quantity_name": {
+      "description": "Quantity or finding assessed, such as radiochemical purity, binding affinity or cohort median PFS.",
+      "type": "string",
+      "minLength": 1
+    },
+    "quantity_code": {
+      "description": "Reviewed identifier for the test quantity, if available.",
+      "type": "string",
+      "minLength": 1
+    },
+    "quantity_code_system": {
+      "description": "Code system for quantity_code.",
+      "type": "string",
+      "minLength": 1
+    },
+    "quantity_code_version": {
+      "description": "Release of the coding system.",
+      "type": "string",
+      "minLength": 1
+    },
+    "method_name": {
+      "description": "Assay, calculation or assessment method.",
+      "type": "string",
+      "minLength": 1
+    },
+    "method_version": {
+      "description": "Assay/SOP/software version.",
+      "type": "string",
+      "minLength": 1
+    },
+    "result_status": {
+      "description": "Result availability; pending is not negative or failed.",
+      "enum": [
+        "final",
+        "preliminary",
+        "pending",
+        "not_performed",
+        "invalid"
+      ]
+    },
+    "result_text": {
+      "description": "Qualitative result or narrative interpretation; no inherited MIDRC patient-result enum is broadened.",
+      "type": "string",
+      "minLength": 1
+    },
+    "unit": {
+      "description": "Unit of numerical result, preferably reviewed UCUM; fraction and percent must be distinguished.",
+      "type": "string",
+      "minLength": 1
+    },
+    "result_operator": {
+      "description": "Relation between result and reported numerical bound.",
+      "enum": [
+        "eq",
+        "lt",
+        "le",
+        "gt",
+        "ge",
+        "approx"
+      ]
+    },
+    "statistic": {
+      "description": "Statistic such as mean, median, fraction or standard deviation; cohort summaries require a population context.",
+      "type": "string",
+      "minLength": 1
+    },
+    "assay_datetime": {
+      "description": "When the assay was performed, with UTC offset.",
+      "type": "string",
+      "minLength": 1,
+      "format": "date-time"
+    },
+    "activity_reference_datetime": {
+      "description": "Timestamp to which any activity-dependent quantity was decay-referenced.",
+      "type": "string",
+      "minLength": 1,
+      "format": "date-time"
+    },
+    "analyte_basis": {
+      "description": "Chemical species and denominator, such as total compound mass or total compound molar amount.",
+      "type": "string",
+      "minLength": 1
+    },
+    "anatomic_context": {
+      "description": "Organ, tissue, lesion class, source region or reference region in the evidence; not a patient lesion identifier.",
+      "type": "string",
+      "minLength": 1
+    },
+    "matrix": {
+      "description": "Assay matrix such as serum, plasma, solvent or cell system.",
+      "type": "string",
+      "minLength": 1
+    },
+    "time_after_administration_hours": {
+      "description": "Elapsed time in the referenced experimental context; not the date of a patient event.",
+      "type": "number"
+    },
+    "temperature_c": {
+      "description": "Assay temperature in degrees Celsius.",
+      "type": "number"
+    },
+    "ph": {
+      "description": "Assay pH, with measurement method in the evidence.",
+      "type": "number"
+    },
+    "uncertainty_value": {
+      "description": "Uncertainty magnitude for the numerical result.",
+      "type": "number",
+      "minimum": 0
+    },
+    "uncertainty_unit": {
+      "description": "Unit or explicit dimensionless designation for uncertainty_value.",
+      "type": "string",
+      "minLength": 1
+    },
+    "uncertainty_kind": {
+      "description": "Uncertainty statistic and confidence level where applicable.",
+      "type": "string",
+      "minLength": 1
+    },
+    "specification_version": {
+      "description": "Version of the acceptance specification used for a QC judgment.",
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptance_lower": {
+      "description": "Lower numerical acceptance limit, in unit, when appropriate.",
+      "type": "number"
+    },
+    "acceptance_upper": {
+      "description": "Upper numerical acceptance limit, in unit, when appropriate.",
+      "type": "number"
+    },
+    "acceptance_decision": {
+      "description": "Recorded evaluation against the named specification; not a clinical release authorization.",
+      "enum": [
+        "pass",
+        "fail",
+        "not_evaluated"
+      ]
+    },
+    "decay_correction_basis": {
+      "description": "Decay correction method, nuclide and time reference for yield, activity or purity results.",
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_radiation": {
+      "description": "Reference radiation and endpoint required to interpret RBE or other relative radiobiological quantities.",
+      "type": "string",
+      "minLength": 1
+    },
+    "rubric_name": {
+      "description": "Named assessment rubric required for readiness, evidence or quality scores.",
+      "type": "string",
+      "minLength": 1
+    },
+    "rubric_version": {
+      "description": "Version of the scoring rubric.",
+      "type": "string",
+      "minLength": 1
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "code"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to project records by code or UUID.",
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "provenance_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to provenance records by submitter_id or UUID."
+    },
+    "test_result_number": {
+      "description": "The result a test represented by a number.",
+      "type": "number"
+    },
+    "test_result_percent": {
+      "description": "The result a test represented by a percent.",
+      "type": "number"
+    },
+    "test_result_ratio": {
+      "description": "The result a test represented by a ratio.",
+      "type": "number"
+    },
+    "radiopharmaceutical_batches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to radiopharmaceutical_batch records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "material_lots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to material_lot records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "radiopharmaceutical_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to radiopharmaceutical_unit records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "reference_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to reference_evidence records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "computational_models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to computational_model records by submitter_id or UUID.",
+      "maxItems": 1
+    }
+  }
+}

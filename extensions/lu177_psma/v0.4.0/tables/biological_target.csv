@@ -1,0 +1,26 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+biological_target,type,True,False,Theranostics extension,enum,,
+biological_target,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+biological_target,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+biological_target,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+biological_target,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+biological_target,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+biological_target,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+biological_target,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+biological_target,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+biological_target,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+biological_target,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+biological_target,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+biological_target,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+biological_target,preferred_name,True,False,Theranostics extension,string,Preferred biological target label.,nz_model:r73; nk_blueprint:r76
+biological_target,target_type,True,False,Theranostics extension,string,"Target class such as enzyme, receptor or antigen.",nk_blueprint:r77
+biological_target,gene_symbol,False,False,Theranostics extension,string,Approved gene symbol with species and naming authority identified separately.,nk_blueprint:r78
+biological_target,species,True,False,Theranostics extension,string,Organism associated with the target identity.,
+biological_target,cellular_localization,False,False,Theranostics extension,string,Reference subcellular localization; context-specific variation belongs in evidence records.,nk_blueprint:r81
+biological_target,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+biological_target,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,

@@ -1,0 +1,55 @@
+{
+  "max_row": 7,
+  "max_column": 2,
+  "rows": [
+    {
+      "row": 1,
+      "values": [
+        "¹⁷⁷Lu-PSMA RPT Outcome Framework — Suggested Revisions",
+        null
+      ]
+    },
+    {
+      "row": 2,
+      "values": [
+        "Purpose",
+        "Candidate data-element specification supporting the JNM Perspective. It is not a validated core outcome set."
+      ]
+    },
+    {
+      "row": 3,
+      "values": [
+        "Five domains",
+        "1) Biochemical response and kinetics; \n2) Molecular and anatomic imaging; \n3) Dosimetry and dose–outcome relationships; \n4) Clinical benefit, safety, function, and patuient-reported outcomes; 5) Longitudinal treatment trajectory."
+      ]
+    },
+    {
+      "row": 4,
+      "values": [
+        "Variable taxonomy",
+        "Outcomes are separated from predictors/covariates, treatment exposures, decision variables, and technical metadata."
+      ]
+    },
+    {
+      "row": 5,
+      "values": [
+        "Priority",
+        "Core = broadly necessary; \nRecommended = theranostic-specific or infrastructure-dependent; \nExploratory = context-dependent or not yet validated."
+      ]
+    },
+    {
+      "row": 6,
+      "values": [
+        "Key corrections",
+        "RECIP removed from PSA/bone progression criteria; \nearly PSA rise no longer presumed to be flare; \nPRRT-derived dose levels not presented as validated PSMA-RPT limits; \nplanned cycle completion separated from NLCB; clinician-assessed CTCAE added."
+      ]
+    },
+    {
+      "row": 7,
+      "values": [
+        "Implementation",
+        "Use repeated patient-, cycle-, organ-, and lesion-level records; \ncapture assessment timing, provenance, method, uncertainty, and missingness."
+      ]
+    }
+  ]
+}

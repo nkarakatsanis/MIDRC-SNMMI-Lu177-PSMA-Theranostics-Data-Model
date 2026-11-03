@@ -1,6 +1,6 @@
 # Core Metadata Collection (`core_metadata_collection`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A collection of data files in a project.
 
@@ -14,7 +14,7 @@ A collection of data files in a project.
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/core_metadata_collection.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/core_metadata_collection.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_core_metadata_collection_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/core_metadata_collection.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/core_metadata_collection.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_core_metadata_collection_template.json)
 
 ## Relationships
 

@@ -1,0 +1,33 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+observation,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+observation,cases,True,False,MIDRC unchanged,compound,,
+observation,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+observation,days_to_observation,False,False,MIDRC unchanged,integer,The number of days from the index date to the date of the observation.,
+observation,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+observation,observation_answer,False,False,MIDRC unchanged,string,"The answer or value provided for a specific observation about a subject obtained in the context of examination, questioning or during a procedure.",lu_177_psma_data_model:r103; lu_177_psma_data_model:r104; lu_177_psma_data_model:r158; lu_177_psma_data_model:r159; atlas_data_elements:r107; atlas_data_elements:r108; atlas_data_elements:r109
+observation,observation_name,False,False,MIDRC unchanged,string,"The short name of the observation about the subject obtained in the context of examination, questioning or a during procedure.",
+observation,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+observation,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+observation,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+observation,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+observation,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+observation,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+observation,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+observation,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+observation,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+observation,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+observation,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+observation,assessment_datetime,False,False,Theranostics extension,string,ISO 8601 assessment datetime; use approved date shifting consistently within the case.,
+observation,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+observation,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+observation,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+observation,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+observation,timepoints,False,False,Theranostics extension,compound,,
+observation,provenance_records,False,False,Theranostics extension,compound,,
+observation,observation_profile,False,False,Theranostics extension,string,Optional collection profile; behavior records use lifestyle.,
+observation,observation_unit,False,False,Theranostics extension,string,"Unit, when the source behavior observation expresses a quantity.",

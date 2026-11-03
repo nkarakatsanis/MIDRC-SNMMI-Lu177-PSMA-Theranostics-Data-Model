@@ -1,6 +1,6 @@
 # Program (`program`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A broad framework of goals to be achieved. (NCIt C52647)
 
@@ -14,7 +14,7 @@ A broad framework of goals to be achieved. (NCIt C52647)
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["name"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/program.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/program.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_program_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/program.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/program.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_program_template.json)
 
 ## Relationships
 
@@ -44,6 +44,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic program records](../../extensions/lu177_psma/v0.3.0/examples/by_node/program.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic program records](../../extensions/lu177_psma/v0.4.0/examples/by_node/program.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

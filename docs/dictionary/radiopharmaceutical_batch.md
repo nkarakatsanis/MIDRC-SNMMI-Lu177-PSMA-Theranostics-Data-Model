@@ -1,20 +1,20 @@
 # Radiopharmaceutical Batch (`radiopharmaceutical_batch`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Batch production and quality attributes at specified assay times.
 
 | Attribute | Value |
 | --- | --- |
-| Record grain | One batch or lot |
+| Record grain | One physical manufacturing batch; one or more timed QC results are linked through radiopharmaceutical_test. |
 | Category | `clinical` |
-| Navigation group | Treatment |
+| Navigation group | Radiopharmaceutical manufacture |
 | MIDRC relationship | `new_theranostics_node` |
 | Submittable | <code>true</code> |
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/radiopharmaceutical_batch.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/radiopharmaceutical_batch.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_radiopharmaceutical_batch_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/radiopharmaceutical_batch.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/radiopharmaceutical_batch.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_radiopharmaceutical_batch_template.json)
 
 ## Relationships
 
@@ -24,6 +24,8 @@ Links point from this node to referenced records. Multiplicity is the schema’s
 | --- | --- | --- | --- | --- | --- |
 | `radiopharmaceuticals` | [radiopharmaceutical](radiopharmaceutical.md) | `many_to_one` | Yes | `nmmi_radiopharmaceutical_batch_radiopharmaceuticals` | `related_to` |
 | `provenance_records` | [provenance](provenance.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_batch_provenance_records` | `documented_by` |
+| `medicinal_products` | [medicinal_product](medicinal_product.md) | `many_to_one` | No | `nmmi_radiopharmaceutical_batch_medicinal_products` | `related_to` |
+| `input_material_lots` | [material_lot](material_lot.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_batch_input_material_lots` | `related_to` |
 
 ## Properties
 
@@ -49,6 +51,11 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `specific_activity_unit` | No | string | Unit for specific activity; distinguish mass-specific from molar activity. | — |
 | `radiochemical_purity_percent` | No | number | Radiochemical purity at specified assay time. | Minimum: <code>0</code>; Maximum: <code>100</code> |
 | `specific_activity` | No | number | Specific or molar activity with explicit unit and definition. | Minimum: <code>0</code> |
+| `release_specification_version` | No | string | Version of the specification used for this batch disposition. | Minimum length: <code>1</code> |
+| `release_status` | No | string (enumerated) | Recorded authorized batch disposition; this data model does not determine release. | Allowed values: <code>"quarantined"</code>, <code>"released"</code>, <code>"rejected"</code>, <code>"pending"</code> |
+| `release_datetime` | No | string | Timestamp of the recorded batch disposition with UTC offset. | Format: <code>"date-time"</code>; Minimum length: <code>1</code> |
+| `release_authority_reference` | No | string | Authorized role or pseudonym responsible for disposition, under the receiving governance policy. | Minimum length: <code>1</code> |
+| `deviation_reference` | No | string | Reference to manufacturing or QC deviations and their review. | Minimum length: <code>1</code> |
 
 ### Relationship properties
 
@@ -56,6 +63,8 @@ The JSON schema is authoritative, including nested object constraints. The table
 | --- | --- | --- | --- | --- |
 | `radiopharmaceuticals` | Yes | array of object | Link to radiopharmaceutical records by submitter_id or UUID. | Minimum items: <code>1</code>; Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 | `provenance_records` | No | array of object | Link to provenance records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `medicinal_products` | No | array of object | Link to medicinal_product records by submitter_id or UUID. | Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `input_material_lots` | No | array of object | Link to material_lot records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 
 ### System-managed properties
 
@@ -69,6 +78,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic radiopharmaceutical_batch records](../../extensions/lu177_psma/v0.3.0/examples/by_node/radiopharmaceutical_batch.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic radiopharmaceutical_batch records](../../extensions/lu177_psma/v0.4.0/examples/by_node/radiopharmaceutical_batch.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

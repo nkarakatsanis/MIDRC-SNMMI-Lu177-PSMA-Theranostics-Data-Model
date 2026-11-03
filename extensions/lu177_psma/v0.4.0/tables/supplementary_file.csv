@@ -1,0 +1,46 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+supplementary_file,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+supplementary_file,core_metadata_collections,False,False,MIDRC unchanged,compound,"The submitter_id or id of the core_metadata_collection to which the supplementary file belongs, i.e., a link to a record in the parent node.",
+supplementary_file,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+supplementary_file,data_category,True,False,MIDRC unchanged,string,The text term describing the broad category that the supplementary file falls into.,
+supplementary_file,data_format,True,False,MIDRC unchanged,string,"The text term describing the file format of the supplementary file, for example, PDF, XLSX, JPEG, PNG, TSV, etc.",
+supplementary_file,data_type,True,False,MIDRC unchanged,string,"The type of supplementary file, for example, figures, tables, clinical data, notes, publications, summary statistics, etc.",
+supplementary_file,datasets,False,False,MIDRC unchanged,compound,"The submitter_id or id of the dataset to which the supplementary file belongs, i.e., a link to a record in the parent node.",
+supplementary_file,error_type,False,True,MIDRC unchanged,enum,"Type of error for the data file object.
+",
+supplementary_file,file_description,False,False,MIDRC unchanged,string,"Free text to expand upon details for this file
+",
+supplementary_file,file_name,True,False,MIDRC unchanged,string,"The name (or part of a name) of a file (of any type).
+",
+supplementary_file,file_size,True,False,MIDRC unchanged,integer,"The size of the data file (object) in bytes.
+",
+supplementary_file,file_state,False,True,MIDRC unchanged,enum,"The current state of the data file object.
+",
+supplementary_file,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+supplementary_file,md5sum,True,False,MIDRC unchanged,string,"The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
+",
+supplementary_file,object_id,False,False,MIDRC unchanged,string,The GUID of the object in the index service.,lu_177_psma_data_model:r176
+supplementary_file,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+supplementary_file,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+supplementary_file,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+supplementary_file,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+supplementary_file,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+supplementary_file,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+supplementary_file,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+supplementary_file,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+supplementary_file,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+supplementary_file,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+supplementary_file,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+supplementary_file,sha256,False,False,Theranostics extension,string,SHA-256 checksum of the immutable artifact.,
+supplementary_file,format_version,False,False,Theranostics extension,string,"Format or standard release, including PETSIRD version where relevant.",
+supplementary_file,deidentification_profile,False,False,Theranostics extension,string,Profile used to de-identify file contents and metadata.,
+supplementary_file,raw_data_type,False,False,Theranostics extension,string,"PET list-mode, SPECT projection, planar projection, sinogram or other raw acquisition.",
+supplementary_file,petsird_version,False,False,Theranostics extension,string,"PETSIRD release for PET list-mode data, if used; do not assume applicability to all modalities.",
+supplementary_file,theranostics_file_role,False,False,Theranostics extension,string,Role of this existing MIDRC file object in the theranostics workflow.,
+supplementary_file,provenance_records,False,False,Theranostics extension,compound,,
+supplementary_file,cases,False,False,Theranostics extension,compound,,

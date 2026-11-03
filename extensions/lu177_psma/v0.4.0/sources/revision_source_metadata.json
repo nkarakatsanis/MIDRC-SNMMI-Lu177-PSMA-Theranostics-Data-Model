@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-15",
+  "files": [
+    {
+      "name": "PSMA_Theragnostics_outcomes_elements_NK(1).xlsx",
+      "sha256": "47bfdf7e551d02a58de6070aa1bfd5c853aef5c75301be054d517accc2b7af4b"
+    },
+    {
+      "name": "Lu177PSMA_Perspective_JNM_MJ_NK_v1.0(1).docx",
+      "sha256": "e12778a66d17f3adccaa7a4d1d196659d7cbb31fb489868ca3919036654958cf"
+    }
+  ],
+  "prior_discussion": "Ontology vs Data Models, 30 July 2026: model = entities, attributes, links, cardinalities and patient workflow; dictionary = field definitions, representations and constraints; ontology = concepts and semantic relationships.",
+  "source_precedence": "Revised workbook supplies current candidate definitions; contradictory paper wording and older workbook entries remain preserved and flagged."
+}

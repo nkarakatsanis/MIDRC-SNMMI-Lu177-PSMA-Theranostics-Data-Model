@@ -1,0 +1,23 @@
+{
+  "*type": "radionuclide",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*name": null,
+  "*atomic_symbol": null,
+  "*atomic_number": null,
+  "*mass_number": null,
+  "*nuclear_state": null,
+  "*is_stable": null,
+  "physical_half_life_seconds": null,
+  "half_life_uncertainty_seconds": null,
+  "decay_constant_per_second": null,
+  "*reference_citation": null,
+  "reference_version": null,
+  "*projects": null,
+  "provenance_records": null
+}

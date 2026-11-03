@@ -1,0 +1,22 @@
+{
+  "*type": "therapy_course",
+  "*submitter_id": null,
+  "*cases": null,
+  "studies": null,
+  "provenance_records": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "course_number": null,
+  "start_date": null,
+  "course_status": null,
+  "planned_number_of_cycles": null,
+  "reason_for_discontinuation": null,
+  "treatment_completed_as_planned": null,
+  "completion_date": null,
+  "actual_number_of_cycles": null,
+  "completion_reason": null
+}

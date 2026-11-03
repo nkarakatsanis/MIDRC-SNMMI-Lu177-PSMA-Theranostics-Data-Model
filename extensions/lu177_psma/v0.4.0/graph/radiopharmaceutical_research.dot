@@ -1,0 +1,35 @@
+digraph model {
+graph [rankdir=BT,bgcolor="white",pad=0.3,nodesep=0.4,ranksep=0.7,splines=polyline,fontname="Arial",fontsize=16,label="Reference evidence and computational predictions\nLu177-PSMA | v0.4.0 proposal",labelloc=t];
+node [shape=box,style="rounded,filled",fontname="Arial",fontsize=11,margin="0.14,0.09",penwidth=1.5];
+edge [fontname="Arial",fontsize=9,arrowsize=0.65];
+radiopharmaceutical [label="radiopharmaceutical",fillcolor="#f5ead8",color="#a66723",tooltip="One reference agent in the v0.4 profile. Existing product-like records remain readable; migrate them explicitly rather than silently reinterpreting their identifiers.",URL="#node=radiopharmaceutical"];
+reference_evidence [label="reference evidence",fillcolor="#f5ead8",color="#a66723",tooltip="One citable evidence context, population or experimental dataset; not an individual patient observation.",URL="#node=reference_evidence"];
+radiopharmaceutical_test [label="radiopharmaceutical test",fillcolor="#f5ead8",color="#a66723",tooltip="One nonpatient QC, biological-reference or computational-evaluation result with an explicit subject and method.",URL="#node=radiopharmaceutical_test"];
+computational_model [label="computational model",fillcolor="#f5ead8",color="#a66723",tooltip="One versioned computational model specification, independent of any execution or prediction.",URL="#node=computational_model"];
+model_run [label="model run",fillcolor="#f5ead8",color="#a66723",tooltip="One recorded execution of a computational model with explicit inputs and information cutoff.",URL="#node=model_run"];
+model_parameter [label="model parameter",fillcolor="#f5ead8",color="#a66723",tooltip="One parameter value or distribution for a model specification or execution, with units and provenance.",URL="#node=model_parameter"];
+model_prediction [label="model prediction",fillcolor="#f5ead8",color="#a66723",tooltip="One simulated or predicted result from a model execution; separate from a measured dose or outcome.",URL="#node=model_prediction"];
+administration [label="administration",fillcolor="#f5ead8",color="#a66723",tooltip="One actual administration event",URL="#node=administration"];
+anatomic_target [label="anatomic target",fillcolor="#f5ead8",color="#a66723",tooltip="One tracked lesion or organ per case",URL="#node=anatomic_target"];
+absorbed_dose [label="absorbed dose",fillcolor="#f5ead8",color="#a66723",tooltip="One target, run and dose statistic",URL="#node=absorbed_dose"];
+treatment_plan [label="treatment plan",fillcolor="#f5ead8",color="#a66723",tooltip="One plan version",URL="#node=treatment_plan"];
+case [label="case",fillcolor="#e5eff7",color="#265b85",tooltip="One person per project",URL="#node=case"];
+treatment_plan -> model_prediction [tooltip="treatment_plan.model_predictions \u2192 model_prediction | many_to_many | optional",style="dashed",color="#a0aeb8"];
+administration -> case [tooltip="administration.cases \u2192 case | many_to_one | required",style="solid",color="#345674"];
+administration -> radiopharmaceutical [tooltip="administration.radiopharmaceuticals \u2192 radiopharmaceutical | many_to_one | required",style="solid",color="#345674"];
+absorbed_dose -> anatomic_target [tooltip="absorbed_dose.anatomic_targets \u2192 anatomic_target | many_to_one | required",style="solid",color="#345674"];
+anatomic_target -> case [tooltip="anatomic_target.cases \u2192 case | many_to_one | required",style="solid",color="#345674"];
+reference_evidence -> radiopharmaceutical [tooltip="reference_evidence.radiopharmaceuticals \u2192 radiopharmaceutical | many_to_many | optional",style="dashed",color="#a0aeb8"];
+computational_model -> reference_evidence [tooltip="computational_model.reference_evidence \u2192 reference_evidence | many_to_many | optional",style="dashed",color="#a0aeb8"];
+model_run -> computational_model [tooltip="model_run.computational_models \u2192 computational_model | many_to_one | required",style="solid",color="#345674"];
+model_run -> case [tooltip="model_run.cases \u2192 case | many_to_one | optional",style="dashed",color="#a0aeb8"];
+model_run -> absorbed_dose [tooltip="model_run.input_doses \u2192 absorbed_dose | many_to_many | optional",style="dashed",color="#a0aeb8"];
+model_run -> administration [tooltip="model_run.input_administrations \u2192 administration | many_to_many | optional",style="dashed",color="#a0aeb8"];
+model_parameter -> computational_model [tooltip="model_parameter.computational_models \u2192 computational_model | many_to_one | required",style="solid",color="#345674"];
+model_parameter -> model_run [tooltip="model_parameter.model_runs \u2192 model_run | many_to_one | optional",style="dashed",color="#a0aeb8"];
+model_parameter -> reference_evidence [tooltip="model_parameter.reference_evidence \u2192 reference_evidence | many_to_many | optional",style="dashed",color="#a0aeb8"];
+model_prediction -> model_run [tooltip="model_prediction.model_runs \u2192 model_run | many_to_one | required",style="solid",color="#345674"];
+model_prediction -> anatomic_target [tooltip="model_prediction.anatomic_targets \u2192 anatomic_target | many_to_one | optional",style="dashed",color="#a0aeb8"];
+radiopharmaceutical_test -> reference_evidence [tooltip="radiopharmaceutical_test.reference_evidence \u2192 reference_evidence | many_to_one | optional",style="dashed",color="#a0aeb8"];
+radiopharmaceutical_test -> computational_model [tooltip="radiopharmaceutical_test.computational_models \u2192 computational_model | many_to_one | optional",style="dashed",color="#a0aeb8"];
+}

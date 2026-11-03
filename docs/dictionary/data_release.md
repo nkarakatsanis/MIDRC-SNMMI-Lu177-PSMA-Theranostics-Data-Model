@@ -1,6 +1,6 @@
 # Data Release (`data_release`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Internal node to store different data releases.
 
@@ -14,7 +14,7 @@ Internal node to store different data releases.
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/data_release.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/data_release.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_data_release_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/data_release.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/data_release.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_data_release_template.json)
 
 ## Relationships
 

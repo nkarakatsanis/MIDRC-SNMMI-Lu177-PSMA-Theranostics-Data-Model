@@ -1,6 +1,6 @@
 # Scanner (`scanner`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Scanner or activity meter identity, independent of patient encounters.
 
@@ -14,7 +14,7 @@ Scanner or activity meter identity, independent of patient encounters.
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/scanner.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/scanner.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_scanner_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/scanner.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/scanner.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_scanner_template.json)
 
 ## Relationships
 
@@ -72,6 +72,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic scanner records](../../extensions/lu177_psma/v0.3.0/examples/by_node/scanner.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic scanner records](../../extensions/lu177_psma/v0.4.0/examples/by_node/scanner.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

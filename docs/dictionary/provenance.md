@@ -1,6 +1,6 @@
 # Provenance (`provenance`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Record origin, transformation, software and review provenance.
 
@@ -14,7 +14,7 @@ Record origin, transformation, software and review provenance.
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/provenance.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/provenance.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_provenance_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/provenance.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/provenance.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_provenance_template.json)
 
 ## Relationships
 
@@ -51,6 +51,14 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `generated_at` | No | string | Creation timestamp. | — |
 | `input_record_ids` | No | array of string | Upstream record identifiers, with node and project context in the identifier scheme. | — |
 | `input_sha256` | No | array of string | Hashes of immutable input artifacts corresponding to input records. | — |
+| `extraction_method` | No | string | Manual abstraction, automated extraction or other source-processing method. | Minimum length: <code>1</code> |
+| `curator_reference` | No | string | Reviewer or curator identity/pseudonym under the governance policy. | Minimum length: <code>1</code> |
+| `source_locator` | No | string | Source sheet and row, or document section/page/paragraph. | Minimum length: <code>1</code> |
+| `curation_datetime` | No | string | Time of curation with UTC offset. | Format: <code>"date-time"</code>; Minimum length: <code>1</code> |
+| `confidence_value` | No | number | Confidence under a named rubric; not an uncalibrated probability of truth. | — |
+| `confidence_rubric` | No | string | Definition and version of the confidence scale. | Minimum length: <code>1</code> |
+| `conflict_status` | No | string (enumerated) | Status of conflicts among source assertions; missing is not evidence of agreement. | Allowed values: <code>"none_reported"</code>, <code>"unresolved"</code>, <code>"resolved"</code> |
+| `conflict_resolution` | No | string | Documented adjudication and supporting evidence. | Minimum length: <code>1</code> |
 
 ### Relationship properties
 
@@ -70,6 +78,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic provenance records](../../extensions/lu177_psma/v0.3.0/examples/by_node/provenance.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic provenance records](../../extensions/lu177_psma/v0.4.0/examples/by_node/provenance.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

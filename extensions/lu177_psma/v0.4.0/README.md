@@ -1,0 +1,37 @@
+# Lu177 PSMA model 0.4.0
+
+2 November 2026 · Development proposal for technical and scientific review.
+
+Lu177-PSMA theranostics data model release 0.4.0 extends the deployed MIDRC Gen3 dictionary version `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674`, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release.
+
+Baseline SHA-256: `578e57dc45f719b07f1ac31482fed9129675c133aaafc3004dc346e5e4928e21`.
+
+## Additive model changes
+
+- Add 23 nodes separating reference agent/substance/target identity, product and packaging, manufacturing, physical units, supply, prescription, dispensing, reference evidence and computational research.
+- Add optional fields or links to six earlier nodes: `radiopharmaceutical`, `radiopharmaceutical_batch`, `administration`, `provenance`, `toxicity_event` and `treatment_plan`.
+- Retain all 29 MIDRC baseline nodes and all earlier clinical outcome structures. The seven enum appends were already proposed in v0.3.0; this release introduces no additional baseline enum changes.
+- Distinguish molar and specific activity, physical decay and biological metabolism, reference/cohort evidence and human observations, and predicted and measured quantities.
+- Add an explicit v0.3-to-v0.4 additive patch and context validation. Legacy fields remain readable; curating the new normalized profiles requires an explicit, provenance-preserving migration.
+
+## Review materials
+
+The model now contains 90 nodes, 412 declared links and 3,212 node–property entries. The 1,371 source occurrences include 450 radiopharmaceutical entries: 102 from Nouran's initial model, 325 from the blueprint and 23 IDRP passages. Eighteen revision themes and source-by-source crosswalks identify proposed changes and reasons.
+
+The release includes revised model and rationale workbooks, an offline HTML explorer with 12 graph views, the architecture/status document, a scientific manuscript draft, supplementary information and submission notes. Nouran Zaid is added after Jazmin Schwartz and before Tahir I Yusufaly in the tentative authors list.
+
+## Validation and limits
+
+Local validation accepts all 153 connected example records, all 122 prior records and 29 baseline fixtures. All 49 predefined invalid cases are rejected. Both additive patches reproduce the merged dictionary; JSON/YAML and generated documentation agree. The examples are synthetic and no prediction algorithm was executed.
+
+This release does not establish production Gen3 deployment, clinical validity, regulatory compliance, ontology-owner approval or institutional adoption. It does not submit the manuscript to a journal. NucLex alignment and context-specific terminology review remain pending.
+
+## Version identity
+
+Repository/document release: **0.4.0**; Git tag: **v0.4.0**; schema revision: **0.4.0-proposal**; model directory: `extensions/lu177_psma/v0.4.0/`. The old `v0.3.0/` directory, earlier tags and release assets remain unchanged. This is an additive minor release, following documentation-only releases 0.3.1 and 0.3.2.
+
+**tentative authors list**
+
+Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Nouran Zaid, Tahir I Yusufaly, Tyler J Bradshaw
+
+See the root README, review workbooks, publication drafts and integration guide. Templates mark required fields with `*`; remove markers and blank optionals before validation. Profile requirements remain additional to JSON Schema.

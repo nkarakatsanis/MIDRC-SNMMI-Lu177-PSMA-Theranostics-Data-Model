@@ -1,6 +1,6 @@
 # CR Series File (`cr_series_file`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A package of image files and metadata related to a CR imaging series to which one or more computed radiograph (CR) instances belong.
 
@@ -14,7 +14,7 @@ A package of image files and metadata related to a CR imaging series to which on
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/cr_series_file.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/cr_series_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_cr_series_file_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/cr_series_file.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/cr_series_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_cr_series_file_template.json)
 
 ## Relationships
 

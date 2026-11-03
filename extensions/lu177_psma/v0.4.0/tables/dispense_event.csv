@@ -1,0 +1,28 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+dispense_event,type,True,False,Theranostics extension,enum,,
+dispense_event,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+dispense_event,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+dispense_event,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+dispense_event,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+dispense_event,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+dispense_event,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+dispense_event,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+dispense_event,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+dispense_event,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+dispense_event,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+dispense_event,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+dispense_event,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+dispense_event,dispensed_datetime,True,False,Theranostics extension,string,"Timestamp when the unit was dispensed, with UTC offset.",
+dispense_event,dispense_status,True,False,Theranostics extension,string,"Recorded dispensing status, such as dispensed, returned or cancelled.",
+dispense_event,dispenser_reference,False,False,Theranostics extension,string,Authorized dispenser identity or pseudonym under the receiving governance policy.,
+dispense_event,custody_reference,False,False,Theranostics extension,string,Reference to custody or delivery documentation.,
+dispense_event,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+dispense_event,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+dispense_event,cases,True,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+dispense_event,radiopharmaceutical_orders,True,False,Theranostics extension,array,Link to radiopharmaceutical_order records by submitter_id or UUID.,
+dispense_event,radiopharmaceutical_units,True,False,Theranostics extension,array,Link to radiopharmaceutical_unit records by submitter_id or UUID.,idrp_ontology:r14

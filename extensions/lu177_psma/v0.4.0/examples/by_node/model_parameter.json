@@ -1,0 +1,35 @@
+[
+  {
+    "type": "model_parameter",
+    "submitter_id": "RP-PARAMETER",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "computational_models": [
+      {
+        "submitter_id": "RP-COMPUTATIONAL"
+      }
+    ],
+    "model_runs": [
+      {
+        "submitter_id": "RP-RUN"
+      }
+    ],
+    "parameter_name": "illustrative_clearance_rate",
+    "parameter_role": "fixed",
+    "value": 0.1,
+    "unit": "1/h",
+    "uncertainty_value": 0.01,
+    "uncertainty_unit": "1/h",
+    "uncertainty_kind": "Invented standard uncertainty"
+  }
+]

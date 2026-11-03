@@ -1,0 +1,121 @@
+[
+  {
+    "type": "radiopharmaceutical_test",
+    "submitter_id": "RP-QC-RCP",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "test_context": "batch_qc",
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "quantity_name": "Radiochemical purity",
+    "method_name": "Synthetic chromatography method",
+    "result_status": "final",
+    "test_result_percent": 99.0,
+    "unit": "%",
+    "assay_datetime": "2026-01-01T09:00:00Z",
+    "activity_reference_datetime": "2026-01-01T09:00:00Z",
+    "analyte_basis": "Activity in desired chemical form divided by total measured activity",
+    "specification_version": "SYN-QC-SPEC-1",
+    "acceptance_decision": "not_evaluated"
+  },
+  {
+    "type": "radiopharmaceutical_test",
+    "submitter_id": "RP-QC-MOLAR",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "test_context": "batch_qc",
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "quantity_name": "Molar activity",
+    "method_name": "Synthetic activity and molar-amount assay",
+    "result_status": "final",
+    "test_result_number": 10.0,
+    "unit": "GBq/umol",
+    "assay_datetime": "2026-01-01T09:00:00Z",
+    "activity_reference_datetime": "2026-01-01T12:00:00Z",
+    "analyte_basis": "Total amount of the specified compound, labeled plus unlabeled; invented value"
+  },
+  {
+    "type": "radiopharmaceutical_test",
+    "submitter_id": "RP-QC-STERILITY",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "test_context": "batch_qc",
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "quantity_name": "Sterility",
+    "method_name": "Synthetic culture method",
+    "result_status": "pending",
+    "assay_datetime": "2026-01-01T09:00:00Z",
+    "acceptance_decision": "not_evaluated"
+  },
+  {
+    "type": "radiopharmaceutical_test",
+    "submitter_id": "RP-PK",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "test_context": "reference_result",
+    "reference_evidence": [
+      {
+        "submitter_id": "RP-EVIDENCE"
+      }
+    ],
+    "quantity_name": "Biological half-life",
+    "method_name": "Synthetic compartmental fit",
+    "result_status": "final",
+    "test_result_number": 24.0,
+    "unit": "h",
+    "statistic": "cohort mean",
+    "anatomic_context": "kidney",
+    "matrix": "organ activity estimate"
+  }
+]

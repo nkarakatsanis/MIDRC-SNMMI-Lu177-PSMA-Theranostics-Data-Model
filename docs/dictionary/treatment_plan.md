@@ -1,6 +1,6 @@
 # Treatment Plan (`treatment_plan`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Versioned physician-approved treatment intent or adaptation, with evidence links and planned activity.
 
@@ -14,7 +14,7 @@ Versioned physician-approved treatment intent or adaptation, with evidence links
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/treatment_plan.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/treatment_plan.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_treatment_plan_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/treatment_plan.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/treatment_plan.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_treatment_plan_template.json)
 
 ## Relationships
 
@@ -31,6 +31,7 @@ Links point from this node to referenced records. Multiplicity is the schema’s
 | `provenance_records` | [provenance](provenance.md) | `many_to_many` | No | `nmmi_treatment_plan_provenance_records` | `documented_by` |
 | `eligibility_assessments` | [eligibility_assessment](eligibility_assessment.md) | `many_to_many` | No | `nmmi_treatment_plan_eligibility_assessments` | `informed_by` |
 | `laboratory_measurements` | [measurement](measurement.md) | `many_to_many` | No | `nmmi_treatment_plan_laboratory_measurements` | `related_to` |
+| `model_predictions` | [model_prediction](model_prediction.md) | `many_to_many` | No | `nmmi_treatment_plan_model_predictions` | `considers_prediction` |
 
 ## Properties
 
@@ -72,6 +73,7 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `provenance_records` | No | array of object | Link to provenance records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 | `eligibility_assessments` | No | array of object | References to eligibility_assessment records. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 | `laboratory_measurements` | No | one or more of: object; array of object | No description supplied in the schema. | One or more alternatives: [1. object: One or more alternatives: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>] / 2. array of object: Minimum items: <code>1</code>; Each item: (One or more alternatives: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>])] |
+| `model_predictions` | No | array of object | Link to model_prediction records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 
 ### System-managed properties
 
@@ -85,6 +87,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic treatment_plan records](../../extensions/lu177_psma/v0.3.0/examples/by_node/treatment_plan.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic treatment_plan records](../../extensions/lu177_psma/v0.4.0/examples/by_node/treatment_plan.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

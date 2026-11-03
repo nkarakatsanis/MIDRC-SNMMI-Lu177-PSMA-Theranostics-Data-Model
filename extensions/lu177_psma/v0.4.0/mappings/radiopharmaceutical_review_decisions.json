@@ -1,0 +1,32 @@
+[
+  {
+    "item": "Regulatory terminology",
+    "status": "Requires regulatory reviewer",
+    "question": "Confirm jurisdiction-specific pathway terms and do not treat 505(c) or a source NDC as an approval classification."
+  },
+  {
+    "item": "Nuclear data",
+    "status": "Requires nuclear-data curator",
+    "question": "Select evaluated nuclear-data release and reconcile energy/yield conventions before importing real values."
+  },
+  {
+    "item": "Clinical and radiopharmacy profiles",
+    "status": "Requires clinical/radiopharmacy review",
+    "question": "Approve requiredness, dispensing provenance, release specifications and acceptable missingness for the intended registry."
+  },
+  {
+    "item": "Ontology bindings",
+    "status": "Pending NucLex development",
+    "question": "Approve exact concepts, logical relationships and terminology versions; candidate source codes are not validated."
+  },
+  {
+    "item": "Source example product data",
+    "status": "Not imported as defaults",
+    "question": "Verify any proposed Pluvicto-specific values against a current authoritative label before population."
+  },
+  {
+    "item": "Gen3 deployment",
+    "status": "Not executed",
+    "question": "Run staging dictionary build, database migration, ingestion/export and access-control tests with the receiving MIDRC team."
+  }
+]

@@ -53,11 +53,16 @@ def main():
     ]
     for source, destination in filenames:
         shutil.copyfile(model / source, output / destination)
+    for folder in ['review']:
+        for source in sorted((model / folder).glob('*')):
+            if source.is_file() and source.suffix in ['.xlsx', '.docx']:
+                shutil.copyfile(source, output / source.name)
     archive = output / f'SNMMI_MIDRC_Lu177_PSMA_Model_{version}.zip'
     paths = []
     for dirname in ['extensions', 'docs', 'releases', 'scripts', 'gdcdictionary', '.github']:
         paths.extend(p for p in (ROOT / dirname).rglob('*') if p.is_file()
-                     and '__pycache__' not in p.parts and p.suffix != '.pyc')
+                     and '__pycache__' not in p.parts and p.suffix != '.pyc'
+                     and 'publication' not in p.parts and 'manuscript_inputs' not in p.parts)
     paths.extend(ROOT / name for name in ['README.md', 'VERSION', 'release.json',
                   'CHANGELOG_LU177_PSMA.md', 'LICENSE', 'NOTICE', 'pyproject.toml', 'poetry.lock', '.gitignore'])
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:

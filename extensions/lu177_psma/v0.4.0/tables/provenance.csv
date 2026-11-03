@@ -1,0 +1,37 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+provenance,type,True,False,Theranostics extension,enum,,
+provenance,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+provenance,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+provenance,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+provenance,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+provenance,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+provenance,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+provenance,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+provenance,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+provenance,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+provenance,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,nk_blueprint:r317
+provenance,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+provenance,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+provenance,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+provenance,transformation,False,False,Theranostics extension,string,Description or identifier of extraction and harmonization operation.,nk_blueprint:r182
+provenance,software_name,False,False,Theranostics extension,string,Software used.,
+provenance,software_version,False,False,Theranostics extension,string,Exact software version or build.,
+provenance,source_file_hash,False,False,Theranostics extension,string,Hash of source file when available.,
+provenance,source_location,False,False,Theranostics extension,string,"Source location, sheet and row or record path.",nk_blueprint:r120; nk_blueprint:r310
+provenance,activity_id,False,False,Theranostics extension,string,Processing or review activity identifier.,
+provenance,generated_at,False,False,Theranostics extension,string,Creation timestamp.,
+provenance,input_record_ids,False,False,Theranostics extension,array,"Upstream record identifiers, with node and project context in the identifier scheme.",
+provenance,input_sha256,False,False,Theranostics extension,array,Hashes of immutable input artifacts corresponding to input records.,
+provenance,extraction_method,False,False,Theranostics extension,string,"Manual abstraction, automated extraction or other source-processing method.",nk_blueprint:r311
+provenance,curator_reference,False,False,Theranostics extension,string,Reviewer or curator identity/pseudonym under the governance policy.,nk_blueprint:r312; idrp_ontology:r44
+provenance,source_locator,False,False,Theranostics extension,string,"Source sheet and row, or document section/page/paragraph.",nz_model:r70; nk_blueprint:r316; nk_blueprint:r321
+provenance,curation_datetime,False,False,Theranostics extension,string,Time of curation with UTC offset.,nk_blueprint:r322
+provenance,confidence_value,False,False,Theranostics extension,number,Confidence under a named rubric; not an uncalibrated probability of truth.,nk_blueprint:r313; nk_blueprint:r323
+provenance,confidence_rubric,False,False,Theranostics extension,string,Definition and version of the confidence scale.,
+provenance,conflict_status,False,False,Theranostics extension,enum,Status of conflicts among source assertions; missing is not evidence of agreement.,nk_blueprint:r324
+provenance,conflict_resolution,False,False,Theranostics extension,string,Documented adjudication and supporting evidence.,nk_blueprint:r325

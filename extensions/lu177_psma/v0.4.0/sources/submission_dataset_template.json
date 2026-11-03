@@ -1,0 +1,23 @@
+{
+  "data_url_doi": null, 
+  "*data_description": null, 
+  "publication_citation": null, 
+  "project_id": null, 
+  "data_citation": null, 
+  "research_objective": null, 
+  "research_design": null, 
+  "full_name": null, 
+  "*type": "dataset", 
+  "research_description": null, 
+  "license": null, 
+  "*submitter_id": null, 
+  "disease_type": null, 
+  "*projects": {
+    "code": null
+  }, 
+  "longitudinal": null, 
+  "data_contributor": null, 
+  "primary_site": null, 
+  "acknowledgement": null, 
+  "research_setup": null
+}

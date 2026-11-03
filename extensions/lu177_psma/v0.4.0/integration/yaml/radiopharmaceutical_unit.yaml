@@ -1,0 +1,410 @@
+$schema: http://json-schema.org/draft-04/schema#
+id: radiopharmaceutical_unit
+title: Radiopharmaceutical Unit
+type: object
+namespace: urn:nmmi:lu177-psma:model
+category: clinical
+program: '*'
+project: '*'
+description: One physical vial, syringe or other traceable unit from a batch at a
+  stated calibration time.
+additionalProperties: false
+submittable: true
+validators: null
+links:
+- name: projects
+  backref: nmmi_radiopharmaceutical_unit_projects
+  label: member_of
+  target_type: project
+  multiplicity: many_to_one
+  required: true
+- name: provenance_records
+  backref: nmmi_radiopharmaceutical_unit_provenance_records
+  label: documented_by
+  target_type: provenance
+  multiplicity: many_to_many
+  required: false
+- name: radiopharmaceutical_batches
+  backref: nmmi_radiopharmaceutical_unit_radiopharmaceutical_batches
+  label: unit_of_batch
+  target_type: radiopharmaceutical_batch
+  multiplicity: many_to_one
+  required: true
+- name: product_packages
+  backref: nmmi_radiopharmaceutical_unit_product_packages
+  label: conforms_to
+  target_type: product_package
+  multiplicity: many_to_one
+  required: false
+- name: preparation_events
+  backref: nmmi_radiopharmaceutical_unit_preparation_events
+  label: prepared_by
+  target_type: preparation_event
+  multiplicity: many_to_one
+  required: false
+required:
+- type
+- submitter_id
+- unit_identifier
+- unit_kind
+- activity_at_reference_mbq
+- activity_reference_datetime
+- activity_basis
+- expiry_datetime
+- projects
+- radiopharmaceutical_batches
+uniqueKeys:
+- - id
+- - project_id
+  - submitter_id
+systemProperties:
+- id
+- project_id
+- state
+- created_datetime
+- updated_datetime
+properties:
+  type:
+    enum:
+    - radiopharmaceutical_unit
+  submitter_id:
+    type: string
+    description: Stable submitter-assigned identifier, unique within a project. Do
+      not encode direct patient identifiers.
+    minLength: 1
+  id:
+    pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+    systemAlias: node_id
+    term:
+      description: 'A 128-bit identifier. Depending on the mechanism used to generate
+        it, it is either guaranteed to be different from all other UUIDs/GUIDs generated
+        until 3400 AD or extremely likely to be different. Its relatively small size
+        lends itself well to sorting, ordering, and hashing of all sorts, storing
+        in databases, simple allocation, and ease of programming in general.
+
+        '
+      termDef:
+        cde_id: C54100
+        cde_version: null
+        source: NCIt
+        term: Universally Unique Identifier
+        term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+    type: string
+  project_id:
+    term:
+      description: 'Unique ID for any specific defined piece of work that is undertaken
+        or attempted to meet a single requirement.
+
+        '
+    type: string
+  state:
+    default: validated
+    downloadable:
+    - uploaded
+    - md5summed
+    - validating
+    - validated
+    - error
+    - invalid
+    - released
+    oneOf:
+    - enum:
+      - uploading
+      - uploaded
+      - md5summing
+      - md5summed
+      - validating
+      - error
+      - invalid
+      - suppressed
+      - redacted
+      - live
+    - enum:
+      - validated
+      - submitted
+      - released
+    public:
+    - live
+    term:
+      description: 'The current state of the object.
+
+        '
+  created_datetime:
+    oneOf:
+    - format: date-time
+      type: string
+    - type: 'null'
+    term:
+      description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+
+        '
+  updated_datetime:
+    oneOf:
+    - format: date-time
+      type: string
+    - type: 'null'
+    term:
+      description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+
+        '
+  model_version:
+    type: string
+    description: Version of the submitting theranostics extension, independently of
+      the MIDRC baseline version.
+  record_status:
+    type: string
+    description: Record curation state, independent of clinical value.
+    enum:
+    - draft
+    - reviewed
+    - approved
+    - superseded
+    - withdrawn
+  source_record_id:
+    type: string
+    description: Identifier of the originating source record; use an approved pseudonym
+      when needed.
+  source_system:
+    type: string
+    description: Source system or data provider.
+  missing_properties:
+    type: array
+    description: Names of properties missing from this record; no missing value is
+      encoded as zero.
+    items:
+      type: string
+  missing_reasons:
+    type: array
+    description: Reasons corresponding by index to missing_properties.
+    items:
+      enum:
+      - unknown
+      - not_collected
+      - not_applicable
+      - not_available
+      - withheld
+      - pending
+  unit_identifier:
+    description: Local barcode or identifier for this physical unit, separate from
+      a package NDC.
+    type: string
+    minLength: 1
+  unit_kind:
+    description: Physical presentation such as vial or syringe.
+    type: string
+    minLength: 1
+  activity_at_reference_mbq:
+    description: Measured or declared total activity of this unit in MBq at activity_reference_datetime,
+      not administered activity.
+    type: number
+    minimum: 0
+  activity_reference_datetime:
+    description: UTC-offset timestamp to which unit activity is referenced.
+    type: string
+    minLength: 1
+    format: date-time
+  activity_basis:
+    description: Origin of the unit activity value.
+    enum:
+    - measured
+    - manufacturer_declared
+    - decay_calculated
+  actual_fill_volume_ml:
+    description: Actual content volume in mL at the stated reference context.
+    type: number
+    minimum: 0
+  compound_mass_ug:
+    description: Total mass in micrograms of the chemically specified compound; distinguish
+      compound from radionuclide mass.
+    type: number
+    minimum: 0
+  compound_amount_nmol:
+    description: Total amount in nmol of the specified compound, with molar-mass assumptions
+      in provenance.
+    type: number
+    minimum: 0
+  expiry_datetime:
+    description: Expiry of this physical unit with UTC offset.
+    type: string
+    minLength: 1
+    format: date-time
+  storage_history_reference:
+    description: Reference to documented storage and transport history.
+    type: string
+    minLength: 1
+  projects:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        code:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - code
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to project records by code or UUID.
+    minItems: 1
+    maxItems: 1
+  provenance_records:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to provenance records by submitter_id or UUID.
+  radiopharmaceutical_batches:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to radiopharmaceutical_batch records by submitter_id or UUID.
+    minItems: 1
+    maxItems: 1
+  product_packages:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to product_package records by submitter_id or UUID.
+    maxItems: 1
+  preparation_events:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        submitter_id:
+          type: string
+          minLength: 1
+        id:
+          pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+          term:
+            description: 'A 128-bit identifier. Depending on the mechanism used to
+              generate it, it is either guaranteed to be different from all other
+              UUIDs/GUIDs generated until 3400 AD or extremely likely to be different.
+              Its relatively small size lends itself well to sorting, ordering, and
+              hashing of all sorts, storing in databases, simple allocation, and ease
+              of programming in general.
+
+              '
+            termDef:
+              cde_id: C54100
+              cde_version: null
+              source: NCIt
+              term: Universally Unique Identifier
+              term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+          type: string
+      oneOf:
+      - required:
+        - submitter_id
+      - required:
+        - id
+    uniqueItems: true
+    description: Link to preparation_event records by submitter_id or UUID.
+    maxItems: 1

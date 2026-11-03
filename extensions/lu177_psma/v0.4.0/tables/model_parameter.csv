@@ -1,0 +1,33 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+model_parameter,type,True,False,Theranostics extension,enum,,
+model_parameter,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+model_parameter,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+model_parameter,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+model_parameter,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+model_parameter,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+model_parameter,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+model_parameter,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+model_parameter,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+model_parameter,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+model_parameter,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+model_parameter,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+model_parameter,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+model_parameter,parameter_name,True,False,Theranostics extension,string,Parameter identity within the referenced model.,
+model_parameter,parameter_role,True,False,Theranostics extension,enum,Role of the parameter estimate.,
+model_parameter,value,False,False,Theranostics extension,number,Point estimate in unit; omit when only a distribution is available.,nk_blueprint:r118
+model_parameter,unit,True,False,Theranostics extension,string,Unit or explicit dimensionless designation.,
+model_parameter,distribution_description,False,False,Theranostics extension,string,"Distribution family and parameters, with parameter units and dependence assumptions.",
+model_parameter,uncertainty_value,False,False,Theranostics extension,number,Magnitude of reported uncertainty in uncertainty_unit.,nk_blueprint:r119
+model_parameter,uncertainty_unit,False,False,Theranostics extension,string,"Unit of uncertainty_value, or explicit dimensionless designation.",
+model_parameter,uncertainty_kind,False,False,Theranostics extension,string,"Standard deviation, confidence interval width or another explicitly defined uncertainty statistic.",
+model_parameter,anatomic_context,False,False,Theranostics extension,string,Region or compartment to which this parameter applies.,
+model_parameter,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+model_parameter,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+model_parameter,computational_models,True,False,Theranostics extension,array,Link to computational_model records by submitter_id or UUID.,
+model_parameter,model_runs,False,False,Theranostics extension,array,Link to model_run records by submitter_id or UUID.,
+model_parameter,reference_evidence,False,False,Theranostics extension,array,Link to reference_evidence records by submitter_id or UUID.,

@@ -1,0 +1,40 @@
+[
+  {
+    "type": "radiopharmaceutical_unit",
+    "submitter_id": "RP-UNIT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "unit_identifier": "SYN-VIAL-0001",
+    "unit_kind": "vial",
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "product_packages": [
+      {
+        "submitter_id": "RP-PACKAGE"
+      }
+    ],
+    "preparation_events": [
+      {
+        "submitter_id": "RP-PREP"
+      }
+    ],
+    "activity_at_reference_mbq": 1100.0,
+    "activity_reference_datetime": "2026-01-01T12:00:00Z",
+    "activity_basis": "measured",
+    "actual_fill_volume_ml": 10.0,
+    "expiry_datetime": "2026-01-02T12:00:00Z"
+  }
+]

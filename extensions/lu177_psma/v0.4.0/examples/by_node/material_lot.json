@@ -1,0 +1,48 @@
+[
+  {
+    "type": "material_lot",
+    "submitter_id": "RP-PRECURSOR-LOT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "lot_identifier": "SYN-PRECURSOR-LOT",
+    "material_kind": "precursor",
+    "molecular_entities": [
+      {
+        "submitter_id": "RP-MOLECULE"
+      }
+    ]
+  },
+  {
+    "type": "material_lot",
+    "submitter_id": "RP-NUCLIDE-LOT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "lot_identifier": "SYN-NUCLIDE-LOT",
+    "material_kind": "radionuclide_stock",
+    "radionuclides": [
+      {
+        "submitter_id": "RP-LU177"
+      }
+    ]
+  }
+]

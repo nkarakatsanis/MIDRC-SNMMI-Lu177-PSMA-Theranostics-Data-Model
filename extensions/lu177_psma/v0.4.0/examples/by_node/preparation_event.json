@@ -1,0 +1,35 @@
+[
+  {
+    "type": "preparation_event",
+    "submitter_id": "RP-PREP",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "event_kind": "production",
+    "recipe_name": "Invented synthesis workflow",
+    "recipe_version": "SYN-1",
+    "completed_datetime": "2026-01-01T08:00:00Z",
+    "input_material_lots": [
+      {
+        "submitter_id": "RP-PRECURSOR-LOT"
+      },
+      {
+        "submitter_id": "RP-NUCLIDE-LOT"
+      }
+    ],
+    "output_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ]
+  }
+]

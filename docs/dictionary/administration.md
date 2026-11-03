@@ -1,6 +1,6 @@
 # Administration (`administration`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 An actual diagnostic or therapeutic radiopharmaceutical administration, with measured activity, reference time and residual correction.
 
@@ -14,7 +14,7 @@ An actual diagnostic or therapeutic radiopharmaceutical administration, with mea
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/administration.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/administration.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_administration_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/administration.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/administration.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_administration_template.json)
 
 ## Relationships
 
@@ -28,6 +28,8 @@ Links point from this node to referenced records. Multiplicity is the schema’s
 | `therapy_cycles` | [therapy_cycle](therapy_cycle.md) | `many_to_one` | No | `nmmi_administration_therapy_cycles` | `related_to` |
 | `visits` | [visit](visit.md) | `many_to_one` | No | `nmmi_administration_visits` | `related_to` |
 | `provenance_records` | [provenance](provenance.md) | `many_to_many` | No | `nmmi_administration_provenance_records` | `documented_by` |
+| `radiopharmaceutical_units` | [radiopharmaceutical_unit](radiopharmaceutical_unit.md) | `many_to_one` | No | `nmmi_administration_radiopharmaceutical_units` | `traceable_to` |
+| `dispense_events` | [dispense_event](dispense_event.md) | `many_to_one` | No | `nmmi_administration_dispense_events` | `traceable_to` |
 
 ## Properties
 
@@ -62,6 +64,11 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `administration_date` | No | string | Date the specific Lu-177 PSMA therapy cycle was administered. | Format: <code>"date"</code> |
 | `dicom_start_time` | No | string | Provisional field for Radiopharmaceutical Start Time; operational definition requires review. | — |
 | `dicom_stop_time` | No | string | Provisional field for Radiopharmaceutical Stop Time; operational definition requires review. | — |
+| `administered_compound_mass_ug` | No | number | Actual administered mass of the specified compound in micrograms, distinct from radionuclide mass. | Minimum: <code>0</code> |
+| `administered_compound_amount_nmol` | No | number | Actual administered compound amount in nmol, with chemical identity and conversion assumptions in provenance. | Minimum: <code>0</code> |
+| `administered_volume_ml` | No | number | Actual administered volume in mL. | Minimum: <code>0</code> |
+| `infusion_duration_minutes` | No | number | Actual delivery duration in minutes, distinct from a protocol recommendation. | Minimum: <code>0</code> |
+| `mass_analyte_basis` | No | string | Chemical identity and total/labeled/unlabeled basis of the administered compound quantity. | Minimum length: <code>1</code> |
 
 ### Relationship properties
 
@@ -73,6 +80,8 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `therapy_cycles` | No | array of object | Link to therapy_cycle records by submitter_id or UUID. | Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 | `visits` | No | array of object | Link to visit records by submitter_id or UUID. | Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 | `provenance_records` | No | array of object | Link to provenance records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `radiopharmaceutical_units` | No | array of object | Link to radiopharmaceutical_unit records by submitter_id or UUID. | Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `dispense_events` | No | array of object | Link to dispense_event records by submitter_id or UUID. | Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 
 ### System-managed properties
 
@@ -86,6 +95,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic administration records](../../extensions/lu177_psma/v0.3.0/examples/by_node/administration.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic administration records](../../extensions/lu177_psma/v0.4.0/examples/by_node/administration.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

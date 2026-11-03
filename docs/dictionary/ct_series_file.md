@@ -1,6 +1,6 @@
 # CT Series File (`ct_series_file`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 A package of image files and metadata related to a CT imaging series to which one or more computed tomography instances belong.
 
@@ -14,7 +14,7 @@ A package of image files and metadata related to a CT imaging series to which on
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/ct_series_file.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/ct_series_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_ct_series_file_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/ct_series_file.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/ct_series_file.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_ct_series_file_template.json)
 
 ## Relationships
 
@@ -118,6 +118,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic ct_series_file records](../../extensions/lu177_psma/v0.3.0/examples/by_node/ct_series_file.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic ct_series_file records](../../extensions/lu177_psma/v0.4.0/examples/by_node/ct_series_file.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

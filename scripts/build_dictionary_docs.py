@@ -158,7 +158,7 @@ def outputs():
              f'**{len(SCHEMAS)} node types · {count:,} node/property entries · {nlinks} relationships.** Shared properties are counted once per node, not as distinct clinical concepts.', '',
              '[Architecture and use cases](../DATA_MODEL.md) · [Domain index](../DOMAINS.md) · [Repository guide](../REPOSITORY_GUIDE.md)', '',
              'Each page follows the MIDRC dictionary structure: node identity and category, record grain, links and back-references, multiplicity and required link groups, then property definitions, types, allowed values and constraints. The source JSON schemas remain authoritative.', '',
-             'The dictionary describes the complete v0.3.0 proposal under `extensions/lu177_psma/v0.3.0/`. The inherited `gdcdictionary/` source is a separate preserved baseline. This documentation does not indicate a deployed MIDRC release or completed clinical/terminology review.', '',
+             f'The dictionary describes the complete {VERSION} proposal under `{META["model_directory"]}/`. The inherited `gdcdictionary/` source is a separate preserved baseline. This documentation does not indicate a deployed MIDRC release or completed clinical/terminology review.', '',
              '| Node | Group | MIDRC relationship | Properties | Links |', '| --- | --- | --- | ---: | ---: |']
     for n, s in SCHEMAS.items():
         c = CATALOG[n]

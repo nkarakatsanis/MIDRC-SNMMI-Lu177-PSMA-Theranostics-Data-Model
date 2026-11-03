@@ -1,0 +1,33 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+visit,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+visit,cases,True,False,MIDRC unchanged,compound,"The submitter_id or id of the case this visit belongs to, i.e., a link to a record in the parent node.",
+visit,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+visit,days_to_hospital_admission,False,False,MIDRC unchanged,integer,The number of days between the case's index date and the date of the patient's hospital admission.,
+visit,days_to_hospital_discharge,False,False,MIDRC unchanged,integer,The number of days between the case's index date and the date of the patient's hospital discharge.,
+visit,days_to_icu_admission,False,False,MIDRC unchanged,integer,The number of days between the case's index date and the date of the patient's ICU admission.,
+visit,days_to_icu_discharge,False,False,MIDRC unchanged,integer,The number of days between the case's index date and the date of the patient's ICU discharge..,
+visit,discharge_type,False,False,MIDRC unchanged,string,The status or destination of the patient at the time of discharge.,
+visit,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+visit,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+visit,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+visit,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+visit,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+visit,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+visit,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+visit,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+visit,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+visit,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+visit,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+visit,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+visit,assessment_datetime,False,False,Theranostics extension,string,ISO 8601 assessment datetime; use approved date shifting consistently within the case.,
+visit,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+visit,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+visit,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+visit,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+visit,visit_type,False,False,Theranostics extension,string,Clinical or research encounter type.,
+visit,provenance_records,False,False,Theranostics extension,compound,,

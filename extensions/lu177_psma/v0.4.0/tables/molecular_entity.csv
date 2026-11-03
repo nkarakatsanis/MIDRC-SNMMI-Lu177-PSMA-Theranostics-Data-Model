@@ -1,0 +1,33 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+molecular_entity,type,True,False,Theranostics extension,enum,,
+molecular_entity,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r43
+molecular_entity,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+molecular_entity,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+molecular_entity,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+molecular_entity,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+molecular_entity,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+molecular_entity,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+molecular_entity,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+molecular_entity,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+molecular_entity,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+molecular_entity,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+molecular_entity,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+molecular_entity,preferred_name,True,False,Theranostics extension,string,"Preferred name of this exact substance or molecular form; distinguish precursor, radiolabeled product and salt.",
+molecular_entity,ingredient_name,False,False,Theranostics extension,string,"Ingredient-level name such as an INN, with the naming source retained in provenance.",nz_model:r7; nk_blueprint:r44; nk_blueprint:r46
+molecular_entity,precise_ingredient_name,False,False,Theranostics extension,string,"Name of the precise chemically specified ingredient, including isotope or salt where applicable.",nz_model:r8; nz_model:r75; nk_blueprint:r45
+molecular_entity,synonyms,False,False,Theranostics extension,array,Alternative labels for this same identity; these are not validated equivalence mappings.,nk_blueprint:r58
+molecular_entity,molecular_formula,False,False,Theranostics extension,string,"Formula specifying the chemical species, including relevant isotope and charge conventions.",nz_model:r48; nk_blueprint:r49
+molecular_entity,molecular_weight_g_per_mol,False,False,Theranostics extension,number,Molar mass in g/mol for the stated exact chemical species and isotope convention.,nz_model:r49; nk_blueprint:r50
+molecular_entity,canonical_smiles,False,False,Theranostics extension,string,Canonical SMILES with software/version supplied in provenance.,nz_model:r119; nk_blueprint:r51
+molecular_entity,isomeric_smiles,False,False,Theranostics extension,string,SMILES preserving stereochemistry and isotope specification.,
+molecular_entity,inchi,False,False,Theranostics extension,string,"Full InChI structure identifier, with standard/version context.",
+molecular_entity,inchi_key,False,False,Theranostics extension,string,InChIKey for the exact substance; never a numeric quantity.,nz_model:r45; nk_blueprint:r52
+molecular_entity,stereochemistry,False,False,Theranostics extension,string,Specified stereochemical form or explicitly unresolved stereochemistry.,nk_blueprint:r59
+molecular_entity,formal_charge,False,False,Theranostics extension,integer,"Formal integer charge of the defined molecular species, not a pH-dependent averaged net charge.",nk_blueprint:r60
+molecular_entity,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+molecular_entity,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,

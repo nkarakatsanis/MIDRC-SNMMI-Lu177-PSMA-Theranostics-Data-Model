@@ -1,20 +1,20 @@
 # Radiopharmaceutical (`radiopharmaceutical`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Radiopharmaceutical product identity independent of a particular batch or administration.
 
 | Attribute | Value |
 | --- | --- |
-| Record grain | One product identity |
+| Record grain | One reference agent in the v0.4 profile. Existing product-like records remain readable; migrate them explicitly rather than silently reinterpreting their identifiers. |
 | Category | `clinical` |
-| Navigation group | Treatment |
+| Navigation group | Radiopharmaceutical reference |
 | MIDRC relationship | `new_theranostics_node` |
 | Submittable | <code>true</code> |
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/radiopharmaceutical.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/radiopharmaceutical.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_radiopharmaceutical_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/radiopharmaceutical.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/radiopharmaceutical.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_radiopharmaceutical_template.json)
 
 ## Relationships
 
@@ -24,6 +24,13 @@ Links point from this node to referenced records. Multiplicity is the schema’s
 | --- | --- | --- | --- | --- | --- |
 | `projects` | [project](project.md) | `many_to_one` | Yes | `nmmi_radiopharmaceutical_projects` | `member_of` |
 | `provenance_records` | [provenance](provenance.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_provenance_records` | `documented_by` |
+| `radionuclide_records` | [radionuclide](radionuclide.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_radionuclide_records` | `has_identity` |
+| `molecular_entities` | [molecular_entity](molecular_entity.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_molecular_entities` | `has_component` |
+| `biological_targets` | [biological_target](biological_target.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_biological_targets` | `has_identity` |
+| `chelators` | [molecular_entity](molecular_entity.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_chelators` | `has_component` |
+| `linkers` | [molecular_entity](molecular_entity.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_linkers` | `has_component` |
+| `targeting_vectors` | [molecular_entity](molecular_entity.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_targeting_vectors` | `has_component` |
+| `precursors` | [molecular_entity](molecular_entity.md) | `many_to_many` | No | `nmmi_radiopharmaceutical_precursors` | `has_component` |
 
 ## Properties
 
@@ -51,6 +58,13 @@ The JSON schema is authoritative, including nested object constraints. The table
 | `production_type` | No | string | Production route or product category. | — |
 | `non_active_ingredients` | No | string | Description of inactive ingredients. | — |
 | `physical_half_life_seconds` | No | number | Physical radionuclide half-life with reference source. | Minimum: <code>0</code> |
+| `identity_scope` | No | string (enumerated) | Identity level of this record. New v0.4 reference-agent records are distinct from legacy product-like records; migration must preserve old identifiers. | Allowed values: <code>"reference_agent"</code>, <code>"legacy_product"</code> |
+| `agent_class` | No | string | Functional class of the reference agent; product, lot and administration are separate identities in the v0.4 profile. | Minimum length: <code>1</code> |
+| `intended_use` | No | array of string | Intended diagnostic, therapeutic or investigational uses, supported by versioned evidence. | Unique items: <code>true</code> |
+| `valency` | No | integer | Number of targeting motifs per construct. | Minimum: <code>0</code> |
+| `multimerization_state` | No | string | Monomeric or multimeric structural specification. | Minimum length: <code>1</code> |
+| `albumin_binding_moiety` | No | boolean | Presence of a structurally specified albumin-binding moiety; not a measured plasma binding fraction. | — |
+| `conjugation_site` | No | string | Site of conjugation in the specified molecular construct. | Minimum length: <code>1</code> |
 
 ### Relationship properties
 
@@ -58,6 +72,13 @@ The JSON schema is authoritative, including nested object constraints. The table
 | --- | --- | --- | --- | --- |
 | `projects` | Yes | array of object | Link to project records by code or UUID. | Minimum items: <code>1</code>; Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"code"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 | `provenance_records` | No | array of object | Link to provenance records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `radionuclide_records` | No | array of object | Link to radionuclide records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `molecular_entities` | No | array of object | Link to molecular_entity records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `biological_targets` | No | array of object | Link to biological_target records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `chelators` | No | array of object | Link to molecular_entity records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `linkers` | No | array of object | Link to molecular_entity records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `targeting_vectors` | No | array of object | Link to molecular_entity records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `precursors` | No | array of object | Link to molecular_entity records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
 
 ### System-managed properties
 
@@ -71,6 +92,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic radiopharmaceutical records](../../extensions/lu177_psma/v0.3.0/examples/by_node/radiopharmaceutical.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic radiopharmaceutical records](../../extensions/lu177_psma/v0.4.0/examples/by_node/radiopharmaceutical.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

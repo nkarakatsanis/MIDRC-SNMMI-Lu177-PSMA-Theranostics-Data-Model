@@ -1,0 +1,32 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+decay_emission,type,True,False,Theranostics extension,enum,,
+decay_emission,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+decay_emission,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+decay_emission,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+decay_emission,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+decay_emission,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+decay_emission,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+decay_emission,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+decay_emission,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+decay_emission,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+decay_emission,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+decay_emission,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+decay_emission,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+decay_emission,record_kind,True,False,Theranostics extension,enum,Select a branch probability record or an emitted-radiation record; their denominators differ.,
+decay_emission,decay_mode,False,False,Theranostics extension,string,Decay pathway as stated by the evaluated source.,nz_model:r65; nz_model:r126; nk_blueprint:r21
+decay_emission,branch_fraction,False,False,Theranostics extension,number,Probability of this mutually identified decay branch per parent decay; dimensionless fraction from 0 to 1.,nz_model:r66; nk_blueprint:r22
+decay_emission,radiation_type,False,False,Theranostics extension,string,"Emitted radiation, such as beta-minus, gamma, positron, alpha or Auger electron.",
+decay_emission,energy_kev,False,False,Theranostics extension,number,Energy in keV; interpretation is specified by energy_kind.,nz_model:r67; nk_blueprint:r23; nk_blueprint:r25; nk_blueprint:r26
+decay_emission,energy_kind,False,False,Theranostics extension,enum,"Whether energy is a discrete line, spectral mean or endpoint.",
+decay_emission,yield_per_decay,False,False,Theranostics extension,number,Mean emitted particles or photons per parent decay; not automatically a branching probability and may exceed one.,nz_model:r68; nk_blueprint:r24; nk_blueprint:r27; nk_blueprint:r28
+decay_emission,spectrum_uri,False,False,Theranostics extension,string,Persistent reference to an evaluated spectrum; no binary spectrum is stored here.,
+decay_emission,reference_citation,True,False,Theranostics extension,string,Evaluation source and locator for the branch or radiation data.,
+decay_emission,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+decay_emission,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+decay_emission,parent_nuclides,True,False,Theranostics extension,array,Link to radionuclide records by submitter_id or UUID.,
+decay_emission,daughter_nuclides,False,False,Theranostics extension,array,Link to radionuclide records by submitter_id or UUID.,nz_model:r69; nz_model:r125; nk_blueprint:r32

@@ -1,0 +1,19 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+data_release,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+data_release,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+data_release,major_version,True,False,MIDRC unchanged,integer,"The number identifying the major version.
+",
+data_release,minor_version,True,False,MIDRC unchanged,integer,"The number identifying the minor version.
+",
+data_release,name,True,False,MIDRC unchanged,string,"String representing release name.
+",
+data_release,release_date,False,False,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+data_release,released,False,False,MIDRC unchanged,boolean,"Indicates if it is the current release.
+",
+data_release,roots,False,False,MIDRC unchanged,compound,,
+data_release,type,True,False,MIDRC unchanged,enum,,
+data_release,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",

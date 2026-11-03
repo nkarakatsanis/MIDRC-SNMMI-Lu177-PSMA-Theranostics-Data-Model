@@ -1,0 +1,146 @@
+[
+  {
+    "revision_id": "R01",
+    "title": "Separate identity levels",
+    "source_issue": "Agent, chemical substance, product, package and external code were mixed.",
+    "proposed_revision": "Use radiopharmaceutical, molecular_entity, medicinal_product, product_package and external_identifier records.",
+    "rationale": "A package code cannot identify a chemical structure; RxNorm IN/PIN/SCD/SBD and NDC product/package levels must be explicit.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R02",
+    "title": "Represent identifiers as strings",
+    "source_issue": "Several blueprint identifiers use float types.",
+    "proposed_revision": "Store codes as strings with scheme, version, semantic level and review state.",
+    "rationale": "Preserves leading zeros and long identifiers, and avoids spreadsheet numerical rounding.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R03",
+    "title": "Separate regulation from identification",
+    "source_issue": "NDC is listed among regulatory identifiers and approval is a single status.",
+    "proposed_revision": "Use dated, jurisdiction-specific regulatory_authorization records and separate identifier assignments.",
+    "rationale": "NDC listing does not establish FDA approval; applications, authorization holders and reference products have distinct roles.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R04",
+    "title": "Normalize ingredients and molecular roles",
+    "source_issue": "Active ingredient, precise ingredient, excipient and moiety recur in multiple sections.",
+    "proposed_revision": "Use product_ingredient roles and typed molecular component links.",
+    "rationale": "One ingredient identity can be reused across products without duplicating its chemical definition.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R05",
+    "title": "Separate specification from physical unit",
+    "source_issue": "Packaging attributes, calibration activity and fill volume share one block.",
+    "proposed_revision": "Keep nominal package specifications apart from batch and radiopharmaceutical_unit measurements.",
+    "rationale": "The same package presentation can contain many units with different activities, timestamps and expiries.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R06",
+    "title": "Add manufacturing and QC provenance",
+    "source_issue": "The initial model lacks executable batch-level assay structure.",
+    "proposed_revision": "Add material_lot, preparation_event and radiopharmaceutical_test; retain batch disposition separately.",
+    "rationale": "A test needs subject, method, result status, unit, reference time and specification; pending sterility is not a failed test or an automatic release decision.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R07",
+    "title": "Distinguish specific and molar activity",
+    "source_issue": "The blueprint places both in radionuclide properties; the legacy batch field combines them.",
+    "proposed_revision": "Use separate timed test records for specific activity and molar activity with chemical denominator.",
+    "rationale": "Bq/g and Bq/mol are different quantities, depend on chemical species and reference time, and are not nuclide constants.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R08",
+    "title": "Normalize nuclear decay data",
+    "source_issue": "Branch probabilities, emission intensities and daughter chains are not clearly separated.",
+    "proposed_revision": "Use radionuclide and decay_emission with branch fraction, yield per decay, energy kind and daughter links.",
+    "rationale": "A photon yield is not a decay-branch probability; physical decay is not biological metabolism.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R09",
+    "title": "Give PK and binding measurements context",
+    "source_issue": "Absorption, distribution, metabolism and binding entries combine multiple quantities.",
+    "proposed_revision": "Use one contextual reference test per quantity, linked to evidence; use existing patient measurements and TACs for individuals.",
+    "rationale": "Species, matrix, organ, time, method, statistic and analyte basis determine meaning; cohort summaries are not patient observations.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R10",
+    "title": "Keep clinical events in existing nodes",
+    "source_issue": "Blueprint safety, response and dose fields overlap the Lu177-PSMA model.",
+    "proposed_revision": "Reuse measurement, anatomic_target, time_activity_curve, absorbed_dose, toxicity_event, response_assessment and survival_outcome.",
+    "rationale": "Avoids a parallel patient model and preserves the revised multidimensional outcome framework.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R11",
+    "title": "Add the operational medication chain",
+    "source_issue": "IDRP describes procurement, prescription, dispensing and MAR separately.",
+    "proposed_revision": "Add supply_offer, radiopharmaceutical_order, dispense_event and traceable unit links to administration.",
+    "rationale": "Records what was requested, prepared, dispensed and actually administered without assuming these quantities are equal.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R12",
+    "title": "Separate human clinical and research scopes",
+    "source_issue": "IDRP excludes preclinical work; the blueprint includes preclinical and digital-twin research.",
+    "proposed_revision": "Declare human clinical, reference/preclinical and computational research profiles.",
+    "rationale": "No animal or in-vitro result is silently treated as an individual human measurement.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R13",
+    "title": "Represent computation independently",
+    "source_issue": "AI readiness, PBPK and prediction fields are mixed with reference agent attributes.",
+    "proposed_revision": "Add computational_model, model_run, model_parameter and model_prediction with information cutoff and input provenance.",
+    "rationale": "Predictions remain distinct from measured dose and clinical decisions; readiness scores require named rubrics.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R14",
+    "title": "Separate structural links from ontology axioms",
+    "source_issue": "The source lists ontology-style predicates beside data elements.",
+    "proposed_revision": "Implement typed record links where appropriate and retain conceptual assertions for separately curated ontology mappings.",
+    "rationale": "A Gen3 foreign-key-like link does not establish OWL equivalence, causal claims or class subsumption.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R15",
+    "title": "Version and review the evidence",
+    "source_issue": "Definitions, example codes and numerical examples are preliminary.",
+    "proposed_revision": "Retain source row/paragraph, definition, revision rationale and mapping review state; do not populate unverified clinical defaults.",
+    "rationale": "Source examples and proposed mappings are not validated terminology, consensus, product labeling or prescribing instructions.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R16",
+    "title": "Make quantities unambiguous",
+    "source_issue": "Half-life, fractions, dose quantities and units are inconsistent in some rows.",
+    "proposed_revision": "Distinguish biological/physical/effective half-life; fraction/percent; absorbed dose/BED/EQD2; mass/moles; observed/predicted quantities.",
+    "rationale": "Unit conversion requires a defined quantity, denominator, time basis and model assumptions.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R17",
+    "title": "Retain the Gen3 integration contract",
+    "source_issue": "MIDRC measurements require patient-related parent links.",
+    "proposed_revision": "Preserve existing nodes, properties, enums and link groups; reuse applicable scalar definitions in a separate nonpatient test node.",
+    "rationale": "Batch QC cannot be submitted as a patient measurement without inventing a case or weakening the upstream schema.",
+    "status": "Proposed for working-group review"
+  },
+  {
+    "revision_id": "R18",
+    "title": "Resolve duplicate and empty source entries",
+    "source_issue": "Duplicate follows_regulatory_pathway, repeated route/excipient fields, a placeholder and an empty pharmacodynamics heading occur.",
+    "proposed_revision": "Consolidate equivalent destinations, retain all source occurrences and add contextual pharmacodynamic evidence records.",
+    "rationale": "Traceability is preserved without creating a second meaning for repeated labels or treating a work-allocation note as a clinical field.",
+    "status": "Proposed for working-group review"
+  }
+]

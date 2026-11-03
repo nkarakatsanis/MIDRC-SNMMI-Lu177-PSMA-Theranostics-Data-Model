@@ -1,0 +1,4784 @@
+[
+  {
+    "name": "Read me",
+    "headers": [
+      "Item",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Release",
+        "0.4.0 development proposal; 2 November 2026"
+      ],
+      [
+        "Purpose",
+        "Revised radiopharmaceutical model integrating the Nouran Zaid draft, Nicolas Karakatsanis blueprint and the supplied IDRP document."
+      ],
+      [
+        "How to read",
+        "Nodes defines record identity; Elements defines node properties; Links defines relationships; Profiles defines conditional context; Common metadata applies to all new nodes."
+      ],
+      [
+        "Scope",
+        "23 new nodes and optional additions to six existing nodes; all 29 MIDRC baseline nodes remain. The complete model has 90 nodes."
+      ],
+      [
+        "Baseline",
+        "MIDRC 1.4.3-2-g7505333; commit 7505333d56c87a289463a814131e38d0f2be6674; retrieved 16 October 2026."
+      ],
+      [
+        "Definitions",
+        "Proposed operational definitions. LOINC/RadLex/NucLex and regulatory mappings require separate release-specific review."
+      ],
+      [
+        "Units",
+        "See each quantity definition and profile. Identifiers are strings. Missing values are not zero. No source example is a clinical default."
+      ],
+      [
+        "Review companion",
+        "Radiopharmaceutical_Revisions_and_Rationale_v0.4.0.xlsx maps each source entry and explains the change."
+      ],
+      [
+        "tentative authors list",
+        "Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Nouran Zaid, Tahir I Yusufaly, Tyler J Bradshaw"
+      ],
+      [
+        "Status",
+        "No institutional adoption, live Gen3 deployment or clinical validation is claimed. All patient examples are invented."
+      ]
+    ],
+    "widths": [
+      28,
+      120
+    ]
+  },
+  {
+    "name": "Nodes",
+    "headers": [
+      "Node",
+      "Group",
+      "One record represents",
+      "Origin"
+    ],
+    "rows": [
+      [
+        "administration",
+        "Treatment",
+        "One actual administration event",
+        "Existing node extended"
+      ],
+      [
+        "biological_target",
+        "Radiopharmaceutical reference",
+        "One biological target identity; expression, binding and internalization are contextual evidence records.",
+        "New v0.4 node"
+      ],
+      [
+        "computational_model",
+        "Digital twin research",
+        "One versioned computational model specification, independent of any execution or prediction.",
+        "New v0.4 node"
+      ],
+      [
+        "decay_emission",
+        "Radiopharmaceutical reference",
+        "One decay branch or one emission component with a specified energy definition and yield.",
+        "New v0.4 node"
+      ],
+      [
+        "dispense_event",
+        "Radiopharmaceutical supply",
+        "One patient-specific dispensing event allocating a traceable physical unit to a prescription.",
+        "New v0.4 node"
+      ],
+      [
+        "external_identifier",
+        "Semantics and governance",
+        "One reviewed external identifier assignment to one explicitly typed entity; schema-level ontology mappings remain semantic_mapping records.",
+        "New v0.4 node"
+      ],
+      [
+        "material_lot",
+        "Radiopharmaceutical manufacture",
+        "One physical lot of a precursor, radionuclide stock or other manufacturing material.",
+        "New v0.4 node"
+      ],
+      [
+        "medicinal_product",
+        "Radiopharmaceutical product",
+        "One versioned commercial or investigational medicinal-product formulation, distinct from agent, authorization and batch.",
+        "New v0.4 node"
+      ],
+      [
+        "model_parameter",
+        "Digital twin research",
+        "One parameter value or distribution for a model specification or execution, with units and provenance.",
+        "New v0.4 node"
+      ],
+      [
+        "model_prediction",
+        "Digital twin research",
+        "One simulated or predicted result from a model execution; separate from a measured dose or outcome.",
+        "New v0.4 node"
+      ],
+      [
+        "model_run",
+        "Digital twin research",
+        "One recorded execution of a computational model with explicit inputs and information cutoff.",
+        "New v0.4 node"
+      ],
+      [
+        "molecular_entity",
+        "Radiopharmaceutical reference",
+        "One chemically specified substance or molecular component, independent of commercial packaging.",
+        "New v0.4 node"
+      ],
+      [
+        "package_component",
+        "Radiopharmaceutical product",
+        "One containment relationship between two package specifications.",
+        "New v0.4 node"
+      ],
+      [
+        "preparation_event",
+        "Radiopharmaceutical manufacture",
+        "One actual production, compounding, reconstitution or dilution event with specified inputs and output batch.",
+        "New v0.4 node"
+      ],
+      [
+        "product_ingredient",
+        "Radiopharmaceutical product",
+        "One ingredient role and quantity specification in a medicinal-product formulation.",
+        "New v0.4 node"
+      ],
+      [
+        "product_package",
+        "Radiopharmaceutical product",
+        "One versioned package specification for a medicinal product, not a physical vial.",
+        "New v0.4 node"
+      ],
+      [
+        "provenance",
+        "Governance",
+        "One provenance assertion",
+        "Existing node extended"
+      ],
+      [
+        "radionuclide",
+        "Radiopharmaceutical reference",
+        "One nuclide identity and versioned physical reference description, including stable daughters.",
+        "New v0.4 node"
+      ],
+      [
+        "radiopharmaceutical",
+        "Radiopharmaceutical reference",
+        "One reference agent in the v0.4 profile. Existing product-like records remain readable; migrate them explicitly rather than silently reinterpreting their identifiers.",
+        "Existing node extended"
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "Radiopharmaceutical manufacture",
+        "One physical manufacturing batch; one or more timed QC results are linked through radiopharmaceutical_test.",
+        "Existing node extended"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "Radiopharmaceutical supply",
+        "One procurement request or patient-specific prescription, explicitly distinguished by order_kind.",
+        "New v0.4 node"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "Radiopharmaceutical evidence",
+        "One nonpatient QC, biological-reference or computational-evaluation result with an explicit subject and method.",
+        "New v0.4 node"
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "Radiopharmaceutical supply",
+        "One physical vial, syringe or other traceable unit from a batch at a stated calibration time.",
+        "New v0.4 node"
+      ],
+      [
+        "reference_evidence",
+        "Research evidence",
+        "One citable evidence context, population or experimental dataset; not an individual patient observation.",
+        "New v0.4 node"
+      ],
+      [
+        "regulatory_authorization",
+        "Radiopharmaceutical product",
+        "One product-specific regulatory application or authorization state in one jurisdiction at a stated date.",
+        "New v0.4 node"
+      ],
+      [
+        "supply_offer",
+        "Radiopharmaceutical supply",
+        "One dated commercial supply presentation or catalog offer; not a clinical prescription.",
+        "New v0.4 node"
+      ],
+      [
+        "theranostic_pair",
+        "Radiopharmaceutical reference",
+        "One evidence-supported proposed pairing of diagnostic and therapeutic agents; not an assertion of interchangeable kinetics.",
+        "New v0.4 node"
+      ],
+      [
+        "toxicity_event",
+        "Outcomes",
+        "One adverse-event episode or graded assessment",
+        "Existing node extended"
+      ],
+      [
+        "treatment_plan",
+        "Treatment",
+        "One plan version",
+        "Existing node extended"
+      ]
+    ],
+    "widths": [
+      32,
+      32,
+      110,
+      25
+    ]
+  },
+  {
+    "name": "Elements",
+    "headers": [
+      "Node",
+      "Property",
+      "Type",
+      "Requiredness",
+      "Definition and units",
+      "Exact constraints",
+      "Change status",
+      "Source occurrences",
+      "Migration note"
+    ],
+    "rows": [
+      [
+        "administration",
+        "administered_compound_mass_ug",
+        "number",
+        "Optional",
+        "Actual administered mass of the specified compound in micrograms, distinct from radionuclide mass.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "Optional extension",
+        "nk_blueprint:r164",
+        ""
+      ],
+      [
+        "administration",
+        "administered_compound_amount_nmol",
+        "number",
+        "Optional",
+        "Actual administered compound amount in nmol, with chemical identity and conversion assumptions in provenance.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "Optional extension",
+        "nk_blueprint:r93",
+        ""
+      ],
+      [
+        "administration",
+        "administered_volume_ml",
+        "number",
+        "Optional",
+        "Actual administered volume in mL.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "Optional extension",
+        "nk_blueprint:r165",
+        ""
+      ],
+      [
+        "administration",
+        "infusion_duration_minutes",
+        "number",
+        "Optional",
+        "Actual delivery duration in minutes, distinct from a protocol recommendation.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "Optional extension",
+        "nk_blueprint:r166",
+        ""
+      ],
+      [
+        "administration",
+        "mass_analyte_basis",
+        "string",
+        "Optional",
+        "Chemical identity and total/labeled/unlabeled basis of the administered compound quantity.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "",
+        ""
+      ],
+      [
+        "biological_target",
+        "preferred_name",
+        "string",
+        "Required",
+        "Preferred biological target label.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r73; nk_blueprint:r76",
+        ""
+      ],
+      [
+        "biological_target",
+        "target_type",
+        "string",
+        "Required",
+        "Target class such as enzyme, receptor or antigen.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r77",
+        ""
+      ],
+      [
+        "biological_target",
+        "gene_symbol",
+        "string",
+        "Optional",
+        "Approved gene symbol with species and naming authority identified separately.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r78",
+        ""
+      ],
+      [
+        "biological_target",
+        "species",
+        "string",
+        "Required",
+        "Organism associated with the target identity.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "biological_target",
+        "cellular_localization",
+        "string",
+        "Optional",
+        "Reference subcellular localization; context-specific variation belongs in evidence records.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r81",
+        ""
+      ],
+      [
+        "computational_model",
+        "model_name",
+        "string",
+        "Required",
+        "Name of the computational model.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "computational_model",
+        "model_release",
+        "string",
+        "Required",
+        "Exact model/software release; independent of the data-model version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r301",
+        ""
+      ],
+      [
+        "computational_model",
+        "model_kind",
+        "enum",
+        "Required",
+        "Computational model family; does not assert clinical validation.",
+        "{\"enum\": [\"compartmental\", \"PBPK\", \"voxel_dosimetry\", \"tumor_control\", \"toxicity\", \"AI\", \"other\"]}",
+        "New node property",
+        "nk_blueprint:r284; nk_blueprint:r292; nk_blueprint:r293; nk_blueprint:r294; nk_blueprint:r295",
+        ""
+      ],
+      [
+        "computational_model",
+        "artifact_uri",
+        "string",
+        "Optional",
+        "Location of model code or weights.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "computational_model",
+        "artifact_sha256",
+        "string",
+        "Optional",
+        "SHA-256 digest of the exact code or weight artifact, if available.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "computational_model",
+        "scope",
+        "string",
+        "Required",
+        "Intended subject, population, organ or molecular scope.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r283",
+        ""
+      ],
+      [
+        "computational_model",
+        "input_requirements",
+        "string",
+        "Required",
+        "Required imaging, clinical, treatment-history and other inputs with units and timing conventions.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r285; nk_blueprint:r286; nk_blueprint:r296; nk_blueprint:r297",
+        ""
+      ],
+      [
+        "computational_model",
+        "output_definition",
+        "string",
+        "Required",
+        "Predicted quantities and their definitions and units.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r287",
+        ""
+      ],
+      [
+        "computational_model",
+        "applicability_limits",
+        "string",
+        "Optional",
+        "Disease, population and acquisition settings in which use is justified by evidence.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r303",
+        ""
+      ],
+      [
+        "computational_model",
+        "known_failure_modes",
+        "string",
+        "Optional",
+        "Known failure modes, including domain shift and missing inputs.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r291; nk_blueprint:r304",
+        ""
+      ],
+      [
+        "computational_model",
+        "identifiability_assessment",
+        "string",
+        "Optional",
+        "Parameter identifiability assessment and method.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r288",
+        ""
+      ],
+      [
+        "computational_model",
+        "human_oversight",
+        "string",
+        "Required",
+        "Required human review and intended research or clinical use constraints.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r305",
+        ""
+      ],
+      [
+        "computational_model",
+        "validation_status",
+        "enum",
+        "Required",
+        "Evidence status; not a certification or universal claim of safety.",
+        "{\"enum\": [\"unvalidated\", \"internal_evaluation\", \"external_evaluation\", \"reviewed_for_specified_use\"]}",
+        "New node property",
+        "nk_blueprint:r290; nk_blueprint:r300",
+        ""
+      ],
+      [
+        "decay_emission",
+        "record_kind",
+        "enum",
+        "Required",
+        "Select a branch probability record or an emitted-radiation record; their denominators differ.",
+        "{\"enum\": [\"decay_branch\", \"emission_line\", \"continuous_spectrum\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "decay_emission",
+        "decay_mode",
+        "string",
+        "Optional",
+        "Decay pathway as stated by the evaluated source.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r65; nz_model:r126; nk_blueprint:r21",
+        ""
+      ],
+      [
+        "decay_emission",
+        "branch_fraction",
+        "number",
+        "Optional",
+        "Probability of this mutually identified decay branch per parent decay; dimensionless fraction from 0 to 1.",
+        "{\"type\": \"number\", \"minimum\": 0, \"maximum\": 1}",
+        "New node property",
+        "nz_model:r66; nk_blueprint:r22",
+        ""
+      ],
+      [
+        "decay_emission",
+        "radiation_type",
+        "string",
+        "Optional",
+        "Emitted radiation, such as beta-minus, gamma, positron, alpha or Auger electron.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "decay_emission",
+        "energy_kev",
+        "number",
+        "Optional",
+        "Energy in keV; interpretation is specified by energy_kind.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r67; nk_blueprint:r23; nk_blueprint:r25; nk_blueprint:r26",
+        ""
+      ],
+      [
+        "decay_emission",
+        "energy_kind",
+        "enum",
+        "Optional",
+        "Whether energy is a discrete line, spectral mean or endpoint.",
+        "{\"enum\": [\"discrete\", \"mean\", \"maximum\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "decay_emission",
+        "yield_per_decay",
+        "number",
+        "Optional",
+        "Mean emitted particles or photons per parent decay; not automatically a branching probability and may exceed one.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r68; nk_blueprint:r24; nk_blueprint:r27; nk_blueprint:r28",
+        ""
+      ],
+      [
+        "decay_emission",
+        "spectrum_uri",
+        "string",
+        "Optional",
+        "Persistent reference to an evaluated spectrum; no binary spectrum is stored here.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "decay_emission",
+        "reference_citation",
+        "string",
+        "Required",
+        "Evaluation source and locator for the branch or radiation data.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "dispense_event",
+        "dispensed_datetime",
+        "string",
+        "Required",
+        "Timestamp when the unit was dispensed, with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "dispense_event",
+        "dispense_status",
+        "string",
+        "Required",
+        "Recorded dispensing status, such as dispensed, returned or cancelled.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "dispense_event",
+        "dispenser_reference",
+        "string",
+        "Optional",
+        "Authorized dispenser identity or pseudonym under the receiving governance policy.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "dispense_event",
+        "custody_reference",
+        "string",
+        "Optional",
+        "Reference to custody or delivery documentation.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "external_identifier",
+        "identifier",
+        "string",
+        "Required",
+        "Exact external code as a string, preserving leading zeros, hyphens and case where significant.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r9; nz_model:r10; nz_model:r11; nz_model:r12; nz_model:r13; nz_model:r17; nz_model:r43; nz_model:r44; nz_model:r46; nz_model:r47; nk_blueprint:r47; nk_blueprint:r48; nk_blueprint:r53; nk_blueprint:r54; nk_blueprint:r55; nk_blueprint:r56; nk_blueprint:r57; nk_blueprint:r79; nk_blueprint:r80; nk_blueprint:r158; nk_blueprint:r159; nk_blueprint:r160; nk_blueprint:r161; nk_blueprint:r180; nk_blueprint:r258; nk_blueprint:r260; nk_blueprint:r261",
+        ""
+      ],
+      [
+        "external_identifier",
+        "identifier_system",
+        "string",
+        "Required",
+        "Identifier authority or scheme, such as RxNorm, UNII, CAS, NDC, MPID, PhPID, PubChem, DOI or PMID.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "idrp_ontology:r32",
+        ""
+      ],
+      [
+        "external_identifier",
+        "identifier_system_version",
+        "string",
+        "Optional",
+        "Release or version of the identifier system.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "external_identifier",
+        "identifier_level",
+        "string",
+        "Required",
+        "Semantic level, such as RxNorm IN/PIN/SCD/SBD, NDC product/package, substance, medicinal product or publication.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "idrp_ontology:r45",
+        ""
+      ],
+      [
+        "external_identifier",
+        "preferred_label",
+        "string",
+        "Optional",
+        "Label from the identifier authority at the stated version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "external_identifier",
+        "jurisdiction",
+        "string",
+        "Optional",
+        "Jurisdiction where relevant to the identifier assignment.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "external_identifier",
+        "issuer",
+        "string",
+        "Optional",
+        "Issuing authority where not inherent in identifier_system.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "external_identifier",
+        "mapping_relation",
+        "enum",
+        "Required",
+        "Reviewed relationship between the linked entity and external concept; candidate is not validated equivalence.",
+        "{\"enum\": [\"exact\", \"narrower\", \"broader\", \"related\", \"candidate\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "external_identifier",
+        "review_status",
+        "enum",
+        "Required",
+        "Review state of this assignment.",
+        "{\"enum\": [\"unreviewed\", \"reviewed\", \"approved\", \"rejected\"]}",
+        "New node property",
+        "idrp_ontology:r188",
+        ""
+      ],
+      [
+        "external_identifier",
+        "source_citation",
+        "string",
+        "Required",
+        "Source supporting the identifier assignment and its semantic level.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "material_lot",
+        "lot_identifier",
+        "string",
+        "Required",
+        "Supplier or local lot identifier, scoped to the named material and supplier.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r202; nk_blueprint:r203",
+        ""
+      ],
+      [
+        "material_lot",
+        "material_kind",
+        "enum",
+        "Required",
+        "Role of this material lot in manufacturing.",
+        "{\"enum\": [\"precursor\", \"radionuclide_stock\", \"excipient\", \"other\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "material_lot",
+        "supplier",
+        "string",
+        "Optional",
+        "Supplier of this physical material lot.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "material_lot",
+        "production_route",
+        "string",
+        "Optional",
+        "Manufacturing route for this lot, such as reactor or cyclotron production.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r37",
+        ""
+      ],
+      [
+        "material_lot",
+        "expiry_datetime",
+        "string",
+        "Optional",
+        "Material expiry timestamp with explicit UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "material_lot",
+        "certificate_reference",
+        "string",
+        "Optional",
+        "Certificate of analysis reference, with file hash in provenance if available.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "product_name",
+        "string",
+        "Required",
+        "Name of the commercial or investigational medicinal product.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "brand_name",
+        "string",
+        "Optional",
+        "Brand label for this product and jurisdiction; not an ingredient identifier.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r6; nk_blueprint:r156",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "investigational_name",
+        "string",
+        "Optional",
+        "Sponsor-assigned investigational product name.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r157",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "product_kind",
+        "enum",
+        "Required",
+        "Presentation category; kit contents are not assumed to be a ready-to-administer radiolabeled dose.",
+        "{\"enum\": [\"ready_to_use\", \"kit\", \"generator\", \"precursor\", \"other\"]}",
+        "New node property",
+        "nk_blueprint:r192",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "manufactured_dose_form",
+        "string",
+        "Optional",
+        "Dose form before required preparation or transformation.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r57",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "administrable_dose_form",
+        "string",
+        "Optional",
+        "Dose form after preparation for administration.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r37; nz_model:r56; nz_model:r117; nk_blueprint:r168",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "intended_routes",
+        "array",
+        "Optional",
+        "Permitted or investigated routes according to the linked label or protocol; actual route belongs to administration.",
+        "{\"type\": \"array\", \"items\": {\"type\": \"string\"}, \"uniqueItems\": true}",
+        "New node property",
+        "nz_model:r38; nz_model:r59; nz_model:r118; nk_blueprint:r169",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "strength_description",
+        "string",
+        "Optional",
+        "Labeled strength or concentration convention, including numerator, denominator and activity reference basis.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r36; nk_blueprint:r170",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "appearance_specification",
+        "string",
+        "Optional",
+        "Labeled appearance requirement; measured appearance belongs to a test record.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r55",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "transformation_instruction",
+        "string",
+        "Optional",
+        "Source-referenced preparation instruction such as reconstitution or dilution; not an executed preparation event.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r61",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "administration_device_specification",
+        "string",
+        "Optional",
+        "Device or delivery-system specification from the source label or protocol.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r58",
+        ""
+      ],
+      [
+        "medicinal_product",
+        "label_version",
+        "string",
+        "Optional",
+        "Product-label or formulation specification version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "parameter_name",
+        "string",
+        "Required",
+        "Parameter identity within the referenced model.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "parameter_role",
+        "enum",
+        "Required",
+        "Role of the parameter estimate.",
+        "{\"enum\": [\"prior\", \"fixed\", \"fitted\", \"posterior\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "value",
+        "number",
+        "Optional",
+        "Point estimate in unit; omit when only a distribution is available.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "nk_blueprint:r118",
+        ""
+      ],
+      [
+        "model_parameter",
+        "unit",
+        "string",
+        "Required",
+        "Unit or explicit dimensionless designation.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "distribution_description",
+        "string",
+        "Optional",
+        "Distribution family and parameters, with parameter units and dependence assumptions.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "uncertainty_value",
+        "number",
+        "Optional",
+        "Magnitude of reported uncertainty in uncertainty_unit.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nk_blueprint:r119",
+        ""
+      ],
+      [
+        "model_parameter",
+        "uncertainty_unit",
+        "string",
+        "Optional",
+        "Unit of uncertainty_value, or explicit dimensionless designation.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "uncertainty_kind",
+        "string",
+        "Optional",
+        "Standard deviation, confidence interval width or another explicitly defined uncertainty statistic.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_parameter",
+        "anatomic_context",
+        "string",
+        "Optional",
+        "Region or compartment to which this parameter applies.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "quantity_name",
+        "string",
+        "Required",
+        "Predicted quantity, with explicit endpoint or physical quantity definition.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "predicted_value",
+        "number",
+        "Required",
+        "Predicted numerical value; never a measured administered activity or delivered dose.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "unit",
+        "string",
+        "Required",
+        "Unit of predicted_value or explicit dimensionless designation.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "prediction_time_hours",
+        "number",
+        "Optional",
+        "Prediction horizon relative to the run scenario anchor, in hours.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "scenario_activity_mbq",
+        "number",
+        "Optional",
+        "Hypothetical activity in the simulated scenario, not an administered dose.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "uncertainty_lower",
+        "number",
+        "Optional",
+        "Lower uncertainty bound in the same unit as the prediction.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "uncertainty_upper",
+        "number",
+        "Optional",
+        "Upper uncertainty bound in the same unit as the prediction.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "uncertainty_definition",
+        "string",
+        "Optional",
+        "Interval type, probability level and derivation method.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_prediction",
+        "review_status",
+        "enum",
+        "Required",
+        "Review state for this prediction; no automatic clinical approval.",
+        "{\"enum\": [\"unreviewed\", \"reviewed\", \"accepted_for_research\", \"rejected\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "run_datetime",
+        "string",
+        "Required",
+        "Execution timestamp with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "information_cutoff_datetime",
+        "string",
+        "Required",
+        "Latest time at which input information was available for this run; prevents silent use of future evidence.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "purpose",
+        "enum",
+        "Required",
+        "Purpose of this execution; no treatment is ordered by a run record.",
+        "{\"enum\": [\"retrospective_research\", \"prospective_research\", \"technical_validation\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "software_environment",
+        "string",
+        "Required",
+        "Runtime, dependency and hardware versions or reproducible environment reference.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "random_seed",
+        "string",
+        "Optional",
+        "Random seed or explicit deterministic setting; represented as a string to preserve generator conventions.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "scenario_description",
+        "string",
+        "Required",
+        "Scenario assumptions, including any simulated treatment activity or schedule.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "model_run",
+        "input_manifest",
+        "string",
+        "Required",
+        "Input identifiers, hashes, availability timestamps and transformations; detailed provenance may be stored as a referenced artifact.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "preferred_name",
+        "string",
+        "Required",
+        "Preferred name of this exact substance or molecular form; distinguish precursor, radiolabeled product and salt.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "ingredient_name",
+        "string",
+        "Optional",
+        "Ingredient-level name such as an INN, with the naming source retained in provenance.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r7; nk_blueprint:r44; nk_blueprint:r46",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "precise_ingredient_name",
+        "string",
+        "Optional",
+        "Name of the precise chemically specified ingredient, including isotope or salt where applicable.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r8; nz_model:r75; nk_blueprint:r45",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "synonyms",
+        "array",
+        "Optional",
+        "Alternative labels for this same identity; these are not validated equivalence mappings.",
+        "{\"type\": \"array\", \"items\": {\"type\": \"string\"}, \"uniqueItems\": true}",
+        "New node property",
+        "nk_blueprint:r58",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "molecular_formula",
+        "string",
+        "Optional",
+        "Formula specifying the chemical species, including relevant isotope and charge conventions.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r48; nk_blueprint:r49",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "molecular_weight_g_per_mol",
+        "number",
+        "Optional",
+        "Molar mass in g/mol for the stated exact chemical species and isotope convention.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r49; nk_blueprint:r50",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "canonical_smiles",
+        "string",
+        "Optional",
+        "Canonical SMILES with software/version supplied in provenance.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r119; nk_blueprint:r51",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "isomeric_smiles",
+        "string",
+        "Optional",
+        "SMILES preserving stereochemistry and isotope specification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "inchi",
+        "string",
+        "Optional",
+        "Full InChI structure identifier, with standard/version context.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "inchi_key",
+        "string",
+        "Optional",
+        "InChIKey for the exact substance; never a numeric quantity.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r45; nk_blueprint:r52",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "stereochemistry",
+        "string",
+        "Optional",
+        "Specified stereochemical form or explicitly unresolved stereochemistry.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r59",
+        ""
+      ],
+      [
+        "molecular_entity",
+        "formal_charge",
+        "integer",
+        "Optional",
+        "Formal integer charge of the defined molecular species, not a pH-dependent averaged net charge.",
+        "{\"type\": \"integer\"}",
+        "New node property",
+        "nk_blueprint:r60",
+        ""
+      ],
+      [
+        "package_component",
+        "component_count",
+        "integer",
+        "Required",
+        "Number of contained package units; must be positive.",
+        "{\"type\": \"integer\", \"minimum\": 0}",
+        "New node property",
+        "nk_blueprint:r191",
+        ""
+      ],
+      [
+        "preparation_event",
+        "event_kind",
+        "enum",
+        "Required",
+        "Executed preparation activity; dispensing and administration have separate records.",
+        "{\"enum\": [\"production\", \"compounding\", \"reconstitution\", \"dilution\", \"other\"]}",
+        "New node property",
+        "idrp_ontology:r121",
+        ""
+      ],
+      [
+        "preparation_event",
+        "recipe_name",
+        "string",
+        "Required",
+        "Executed recipe or SOP name.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r75; nk_blueprint:r208",
+        ""
+      ],
+      [
+        "preparation_event",
+        "recipe_version",
+        "string",
+        "Required",
+        "Version of the executed recipe or SOP.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "preparation_event",
+        "started_datetime",
+        "string",
+        "Optional",
+        "Start timestamp with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "preparation_event",
+        "completed_datetime",
+        "string",
+        "Required",
+        "Completion timestamp with UTC offset, including end-of-synthesis when applicable.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "nk_blueprint:r211",
+        ""
+      ],
+      [
+        "preparation_event",
+        "site_name",
+        "string",
+        "Optional",
+        "Manufacturing or preparation site identity without patient identifiers.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r204",
+        ""
+      ],
+      [
+        "preparation_event",
+        "gmp_status",
+        "string",
+        "Optional",
+        "Source-reported GMP status with governing evidence in provenance; not an inferred certification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r205",
+        ""
+      ],
+      [
+        "preparation_event",
+        "execution_mode",
+        "enum",
+        "Optional",
+        "Mode of execution.",
+        "{\"enum\": [\"automated\", \"manual\", \"hybrid\", \"unknown\"]}",
+        "New node property",
+        "nk_blueprint:r206",
+        ""
+      ],
+      [
+        "preparation_event",
+        "instrument_name",
+        "string",
+        "Optional",
+        "Synthesis module or preparation instrument.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r207",
+        ""
+      ],
+      [
+        "preparation_event",
+        "reaction_conditions",
+        "string",
+        "Optional",
+        "Executed temperature, time, pH and other conditions with units or an SOP reference.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r209",
+        ""
+      ],
+      [
+        "preparation_event",
+        "purification_method",
+        "string",
+        "Optional",
+        "Executed purification method and version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r210",
+        ""
+      ],
+      [
+        "preparation_event",
+        "deviation_description",
+        "string",
+        "Optional",
+        "Recorded deviation and its disposition; no deviation is inferred from missing data.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r227",
+        ""
+      ],
+      [
+        "product_ingredient",
+        "ingredient_role",
+        "enum",
+        "Required",
+        "Role of this chemically specified component in the linked formulation.",
+        "{\"enum\": [\"active\", \"excipient\", \"precursor\", \"radionuclide_source\", \"other\"]}",
+        "New node property",
+        "idrp_ontology:r170",
+        ""
+      ],
+      [
+        "product_ingredient",
+        "quantity_value",
+        "number",
+        "Optional",
+        "Ingredient quantity or concentration according to quantity_unit and quantity_basis.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "product_ingredient",
+        "quantity_unit",
+        "string",
+        "Optional",
+        "Unit, preferably a reviewed UCUM expression, for quantity_value.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "product_ingredient",
+        "quantity_basis",
+        "string",
+        "Optional",
+        "Denominator and basis, such as per mL, per vial or total compound mass, needed to interpret the quantity.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "product_ingredient",
+        "function",
+        "string",
+        "Optional",
+        "Formulation function such as stabilizer, buffer or targeting ingredient.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "product_package",
+        "package_name",
+        "string",
+        "Required",
+        "Human-readable package presentation label.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "product_package",
+        "container_type",
+        "string",
+        "Required",
+        "Immediate container type, such as vial or syringe.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r92; nk_blueprint:r183",
+        ""
+      ],
+      [
+        "product_package",
+        "container_material",
+        "string",
+        "Optional",
+        "Material of the immediate container.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r93; nk_blueprint:r184",
+        ""
+      ],
+      [
+        "product_package",
+        "closure_system",
+        "string",
+        "Optional",
+        "Closure specification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r94; nk_blueprint:r188",
+        ""
+      ],
+      [
+        "product_package",
+        "shielding_configuration",
+        "string",
+        "Optional",
+        "Shielding specification and reference; not evidence that a specific unit was handled correctly.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r95; nk_blueprint:r189",
+        ""
+      ],
+      [
+        "product_package",
+        "nominal_fill_volume_ml",
+        "number",
+        "Optional",
+        "Nominal volume per immediate container in mL; actual fill is recorded on the unit.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r96; nk_blueprint:r185",
+        ""
+      ],
+      [
+        "product_package",
+        "headspace_description",
+        "string",
+        "Optional",
+        "Nominal headspace composition or specification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r98; nk_blueprint:r187",
+        ""
+      ],
+      [
+        "product_package",
+        "secondary_packaging",
+        "string",
+        "Optional",
+        "Outer packaging specification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r190",
+        ""
+      ],
+      [
+        "product_package",
+        "base_quantity",
+        "number",
+        "Optional",
+        "Number or amount to which the package specification refers.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r101",
+        ""
+      ],
+      [
+        "product_package",
+        "base_unit",
+        "string",
+        "Optional",
+        "Unit for base_quantity, separate from activity and concentration units.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r102",
+        ""
+      ],
+      [
+        "product_package",
+        "storage_temperature_min_c",
+        "number",
+        "Optional",
+        "Lower labeled storage temperature in degrees Celsius.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "nz_model:r105",
+        ""
+      ],
+      [
+        "product_package",
+        "storage_temperature_max_c",
+        "number",
+        "Optional",
+        "Upper labeled storage temperature in degrees Celsius.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "nz_model:r105",
+        ""
+      ],
+      [
+        "product_package",
+        "storage_conditions",
+        "string",
+        "Optional",
+        "Versioned storage conditions, including at-rest and in-transit distinctions when supplied.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r130; nk_blueprint:r195; nk_blueprint:r200; idrp_ontology:r69",
+        ""
+      ],
+      [
+        "product_package",
+        "light_protection",
+        "string",
+        "Optional",
+        "Protection from light required by the source specification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r107",
+        ""
+      ],
+      [
+        "product_package",
+        "transport_classification",
+        "string",
+        "Optional",
+        "Transport class and governing source/version; not an inferred legal classification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r196; nk_blueprint:r199",
+        ""
+      ],
+      [
+        "product_package",
+        "radiation_safety_label",
+        "string",
+        "Optional",
+        "Label specification or referenced instruction.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r106; nk_blueprint:r193; nk_blueprint:r198",
+        ""
+      ],
+      [
+        "product_package",
+        "expiry_reference_basis",
+        "string",
+        "Optional",
+        "Time origin used for labeled shelf life, such as calibration or end of synthesis.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "product_package",
+        "shelf_life_hours",
+        "number",
+        "Optional",
+        "Specified shelf life in hours under the stated conditions; not a universal product constant.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r100; nk_blueprint:r40; nk_blueprint:r194",
+        ""
+      ],
+      [
+        "provenance",
+        "extraction_method",
+        "string",
+        "Optional",
+        "Manual abstraction, automated extraction or other source-processing method.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r311",
+        ""
+      ],
+      [
+        "provenance",
+        "curator_reference",
+        "string",
+        "Optional",
+        "Reviewer or curator identity/pseudonym under the governance policy.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r312; idrp_ontology:r44",
+        ""
+      ],
+      [
+        "provenance",
+        "source_locator",
+        "string",
+        "Optional",
+        "Source sheet and row, or document section/page/paragraph.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nz_model:r70; nk_blueprint:r316; nk_blueprint:r321",
+        ""
+      ],
+      [
+        "provenance",
+        "curation_datetime",
+        "string",
+        "Optional",
+        "Time of curation with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "Optional extension",
+        "nk_blueprint:r322",
+        ""
+      ],
+      [
+        "provenance",
+        "confidence_value",
+        "number",
+        "Optional",
+        "Confidence under a named rubric; not an uncalibrated probability of truth.",
+        "{\"type\": \"number\"}",
+        "Optional extension",
+        "nk_blueprint:r313; nk_blueprint:r323",
+        ""
+      ],
+      [
+        "provenance",
+        "confidence_rubric",
+        "string",
+        "Optional",
+        "Definition and version of the confidence scale.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "",
+        ""
+      ],
+      [
+        "provenance",
+        "conflict_status",
+        "enum",
+        "Optional",
+        "Status of conflicts among source assertions; missing is not evidence of agreement.",
+        "{\"enum\": [\"none_reported\", \"unresolved\", \"resolved\"]}",
+        "Optional extension",
+        "nk_blueprint:r324",
+        ""
+      ],
+      [
+        "provenance",
+        "conflict_resolution",
+        "string",
+        "Optional",
+        "Documented adjudication and supporting evidence.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r325",
+        ""
+      ],
+      [
+        "radionuclide",
+        "name",
+        "string",
+        "Required",
+        "Nuclide name, with element, mass number and nuclear state resolved.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r63; nk_blueprint:r15",
+        ""
+      ],
+      [
+        "radionuclide",
+        "atomic_symbol",
+        "string",
+        "Required",
+        "Chemical element symbol.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r16",
+        ""
+      ],
+      [
+        "radionuclide",
+        "atomic_number",
+        "integer",
+        "Required",
+        "Integer proton number Z; not an identifier code.",
+        "{\"type\": \"integer\", \"minimum\": 0}",
+        "New node property",
+        "nk_blueprint:r17",
+        ""
+      ],
+      [
+        "radionuclide",
+        "mass_number",
+        "integer",
+        "Required",
+        "Integer nucleon number A.",
+        "{\"type\": \"integer\", \"minimum\": 0}",
+        "New node property",
+        "nk_blueprint:r18",
+        ""
+      ],
+      [
+        "radionuclide",
+        "nuclear_state",
+        "string",
+        "Required",
+        "Ground or specified metastable nuclear state.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radionuclide",
+        "is_stable",
+        "boolean",
+        "Required",
+        "Whether the referenced nuclide is stable; a stable daughter has no finite physical half-life.",
+        "{\"type\": \"boolean\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radionuclide",
+        "physical_half_life_seconds",
+        "number",
+        "Optional",
+        "Physical decay half-life in seconds, excluding biological elimination; positive for a radioactive nuclide.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r64; nk_blueprint:r19",
+        ""
+      ],
+      [
+        "radionuclide",
+        "half_life_uncertainty_seconds",
+        "number",
+        "Optional",
+        "Standard uncertainty of the physical half-life in seconds, if reported.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radionuclide",
+        "decay_constant_per_second",
+        "number",
+        "Optional",
+        "Decay constant in s^-1; derived as ln(2)/physical_half_life_seconds when that model applies.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nk_blueprint:r20",
+        ""
+      ],
+      [
+        "radionuclide",
+        "reference_citation",
+        "string",
+        "Required",
+        "Nuclear data source, release and locator supporting the physical properties.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radionuclide",
+        "reference_version",
+        "string",
+        "Optional",
+        "Version or evaluation date of the nuclear data source.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "name",
+        "string",
+        "Required",
+        "Radiopharmaceutical product name.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "lu_177_psma_data_model:r221; atlas_data_elements:r61; dicom:r44; dcm_nicolas:r4; nk_blueprint:r5",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "radionuclide",
+        "string",
+        "Optional",
+        "Radionuclide label such as Lu-177.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "lu_177_psma_data_model:r219; atlas_data_elements:r60; dicom:r57",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "molecular_target",
+        "string",
+        "Optional",
+        "Target such as PSMA.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "product_code",
+        "string",
+        "Optional",
+        "Product identifier, including NDC when applicable.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "code_system",
+        "string",
+        "Optional",
+        "Product coding system.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "production_type",
+        "string",
+        "Optional",
+        "Production route or product category.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "non_active_ingredients",
+        "string",
+        "Optional",
+        "Description of inactive ingredients.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "physical_half_life_seconds",
+        "number",
+        "Optional",
+        "Physical radionuclide half-life with reference source.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "Retained legacy field",
+        "lu_177_psma_data_model:r220; dicom:r49; dcm_nicolas:r8",
+        "Legacy field retained. Prefer typed identity, product/ingredient, radionuclide or manufacturing records; reconcile rather than duplicate assertions."
+      ],
+      [
+        "radiopharmaceutical",
+        "identity_scope",
+        "enum",
+        "Optional",
+        "Identity level of this record. New v0.4 reference-agent records are distinct from legacy product-like records; migration must preserve old identifiers.",
+        "{\"enum\": [\"reference_agent\", \"legacy_product\"]}",
+        "Optional extension",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "agent_class",
+        "string",
+        "Optional",
+        "Functional class of the reference agent; product, lot and administration are separate identities in the v0.4 profile.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r6",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "intended_use",
+        "array",
+        "Optional",
+        "Intended diagnostic, therapeutic or investigational uses, supported by versioned evidence.",
+        "{\"type\": \"array\", \"items\": {\"type\": \"string\"}, \"uniqueItems\": true}",
+        "Optional extension",
+        "nk_blueprint:r11",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "valency",
+        "integer",
+        "Optional",
+        "Number of targeting motifs per construct.",
+        "{\"type\": \"integer\", \"minimum\": 0}",
+        "Optional extension",
+        "nk_blueprint:r70",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "multimerization_state",
+        "string",
+        "Optional",
+        "Monomeric or multimeric structural specification.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r69",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "albumin_binding_moiety",
+        "boolean",
+        "Optional",
+        "Presence of a structurally specified albumin-binding moiety; not a measured plasma binding fraction.",
+        "{\"type\": \"boolean\"}",
+        "Optional extension",
+        "nk_blueprint:r71",
+        ""
+      ],
+      [
+        "radiopharmaceutical",
+        "conjugation_site",
+        "string",
+        "Optional",
+        "Site of conjugation in the specified molecular construct.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r73",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "batch_identifier",
+        "string",
+        "Optional",
+        "Manufacturer or site lot identifier.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "production_method",
+        "string",
+        "Optional",
+        "Production method.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "assay_datetime",
+        "string",
+        "Optional",
+        "Reference datetime for batch QC.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy compatibility only. Prefer separate timed QC tests with explicit quantity, units and chemical denominator; no automatic conversion."
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "specific_activity_unit",
+        "string",
+        "Optional",
+        "Unit for specific activity; distinguish mass-specific from molar activity.",
+        "{\"type\": \"string\"}",
+        "Retained legacy field",
+        "",
+        "Legacy compatibility only. Prefer separate timed QC tests with explicit quantity, units and chemical denominator; no automatic conversion."
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "radiochemical_purity_percent",
+        "number",
+        "Optional",
+        "Radiochemical purity at specified assay time.",
+        "{\"type\": \"number\", \"minimum\": 0, \"maximum\": 100}",
+        "Retained legacy field",
+        "",
+        "Legacy compatibility only. Prefer separate timed QC tests with explicit quantity, units and chemical denominator; no automatic conversion."
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "specific_activity",
+        "number",
+        "Optional",
+        "Specific or molar activity with explicit unit and definition.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "Retained legacy field",
+        "",
+        "Legacy compatibility only. Prefer separate timed QC tests with explicit quantity, units and chemical denominator; no automatic conversion."
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "release_specification_version",
+        "string",
+        "Optional",
+        "Version of the specification used for this batch disposition.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "nk_blueprint:r225",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "release_status",
+        "enum",
+        "Optional",
+        "Recorded authorized batch disposition; this data model does not determine release.",
+        "{\"enum\": [\"quarantined\", \"released\", \"rejected\", \"pending\"]}",
+        "Optional extension",
+        "nk_blueprint:r226",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "release_datetime",
+        "string",
+        "Optional",
+        "Timestamp of the recorded batch disposition with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "Optional extension",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "release_authority_reference",
+        "string",
+        "Optional",
+        "Authorized role or pseudonym responsible for disposition, under the receiving governance policy.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "deviation_reference",
+        "string",
+        "Optional",
+        "Reference to manufacturing or QC deviations and their review.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "order_kind",
+        "enum",
+        "Required",
+        "A procurement order is not a patient prescription.",
+        "{\"enum\": [\"procurement\", \"patient_prescription\"]}",
+        "New node property",
+        "idrp_ontology:r10",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "ordered_datetime",
+        "string",
+        "Required",
+        "Timestamp when the request was recorded, with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "order_status",
+        "string",
+        "Required",
+        "Workflow state such as requested, authorized, cancelled or fulfilled; controlled locally with a versioned policy.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "requested_activity_mbq",
+        "number",
+        "Optional",
+        "Requested activity in MBq at requested_reference_datetime, not delivered activity.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "requested_reference_datetime",
+        "string",
+        "Optional",
+        "Reference timestamp for requested activity.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "requested_quantity",
+        "number",
+        "Optional",
+        "Number or amount of requested units according to requested_quantity_unit.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "requested_quantity_unit",
+        "string",
+        "Optional",
+        "Unit of requested_quantity, separate from activity units.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_order",
+        "instruction_reference",
+        "string",
+        "Optional",
+        "Authorized protocol or order instruction reference; no regimen is encoded as a model default.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r175; idrp_ontology:r73",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "test_context",
+        "enum",
+        "Required",
+        "Nonpatient context. Individual patient laboratory and ROI results remain MIDRC measurement records.",
+        "{\"enum\": [\"batch_qc\", \"material_qc\", \"unit_qc\", \"reference_result\", \"model_evaluation\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "quantity_name",
+        "string",
+        "Required",
+        "Quantity or finding assessed, such as radiochemical purity, binding affinity or cohort median PFS.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r40; nz_model:r60; nz_model:r74; nz_model:r76; nz_model:r79; nz_model:r82; nz_model:r83; nz_model:r84; nz_model:r85; nz_model:r86; nz_model:r87; nz_model:r88; nz_model:r89; idrp_ontology:r194",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "quantity_code",
+        "string",
+        "Optional",
+        "Reviewed identifier for the test quantity, if available.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "quantity_code_system",
+        "string",
+        "Optional",
+        "Code system for quantity_code.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "quantity_code_version",
+        "string",
+        "Optional",
+        "Release of the coding system.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "method_name",
+        "string",
+        "Required",
+        "Assay, calculation or assessment method.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "method_version",
+        "string",
+        "Optional",
+        "Assay/SOP/software version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "result_status",
+        "enum",
+        "Required",
+        "Result availability; pending is not negative or failed.",
+        "{\"enum\": [\"final\", \"preliminary\", \"pending\", \"not_performed\", \"invalid\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "result_text",
+        "string",
+        "Optional",
+        "Qualitative result or narrative interpretation; no inherited MIDRC patient-result enum is broadened.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r123; nk_blueprint:r33; nk_blueprint:r34; nk_blueprint:r41; nk_blueprint:r42; nk_blueprint:r62; nk_blueprint:r63; nk_blueprint:r72; nk_blueprint:r82; nk_blueprint:r83; nk_blueprint:r84; nk_blueprint:r85; nk_blueprint:r87; nk_blueprint:r91; nk_blueprint:r92; nk_blueprint:r93; nk_blueprint:r95; nk_blueprint:r98; nk_blueprint:r103; nk_blueprint:r105; nk_blueprint:r106; nk_blueprint:r107; nk_blueprint:r108; nk_blueprint:r109; nk_blueprint:r110; nk_blueprint:r111; nk_blueprint:r112; nk_blueprint:r113; nk_blueprint:r117; nk_blueprint:r122; nk_blueprint:r123; nk_blueprint:r124; nk_blueprint:r125; nk_blueprint:r126; nk_blueprint:r128; nk_blueprint:r129; nk_blueprint:r130; nk_blueprint:r131; nk_blueprint:r136; nk_blueprint:r137; nk_blueprint:r138; nk_blueprint:r139; nk_blueprint:r140; nk_blueprint:r141; nk_blueprint:r143; nk_blueprint:r145; nk_blueprint:r146; nk_blueprint:r147; nk_blueprint:r148; nk_blueprint:r149; nk_blueprint:r150; nk_blueprint:r151; nk_blueprint:r152; nk_blueprint:r153; nk_blueprint:r154; nk_blueprint:r163; nk_blueprint:r164; nk_blueprint:r165; nk_blueprint:r166; nk_blueprint:r167; nk_blueprint:r172; nk_blueprint:r173; nk_blueprint:r174; nk_blueprint:r175; nk_blueprint:r176; nk_blueprint:r177; nk_blueprint:r178; nk_blueprint:r229; nk_blueprint:r230; nk_blueprint:r231; nk_blueprint:r232; nk_blueprint:r233; nk_blueprint:r234; nk_blueprint:r235; nk_blueprint:r236; nk_blueprint:r237; nk_blueprint:r238; nk_blueprint:r239; nk_blueprint:r240; nk_blueprint:r241; nk_blueprint:r242; nk_blueprint:r243; nk_blueprint:r244; nk_blueprint:r245; nk_blueprint:r246; nk_blueprint:r247; nk_blueprint:r248; nk_blueprint:r249; nk_blueprint:r250; nk_blueprint:r251; nk_blueprint:r252; nk_blueprint:r253; nk_blueprint:r254; nk_blueprint:r255; nk_blueprint:r271; nk_blueprint:r272; nk_blueprint:r277; nk_blueprint:r278; nk_blueprint:r318",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "unit",
+        "string",
+        "Optional",
+        "Unit of numerical result, preferably reviewed UCUM; fraction and percent must be distinguished.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r319",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "result_operator",
+        "enum",
+        "Optional",
+        "Relation between result and reported numerical bound.",
+        "{\"enum\": [\"eq\", \"lt\", \"le\", \"gt\", \"ge\", \"approx\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "statistic",
+        "string",
+        "Optional",
+        "Statistic such as mean, median, fraction or standard deviation; cohort summaries require a population context.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "assay_datetime",
+        "string",
+        "Optional",
+        "When the assay was performed, with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "activity_reference_datetime",
+        "string",
+        "Optional",
+        "Timestamp to which any activity-dependent quantity was decay-referenced.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "analyte_basis",
+        "string",
+        "Optional",
+        "Chemical species and denominator, such as total compound mass or total compound molar amount.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "idrp_ontology:r192",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "anatomic_context",
+        "string",
+        "Optional",
+        "Organ, tissue, lesion class, source region or reference region in the evidence; not a patient lesion identifier.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r124",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "matrix",
+        "string",
+        "Optional",
+        "Assay matrix such as serum, plasma, solvent or cell system.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "time_after_administration_hours",
+        "number",
+        "Optional",
+        "Elapsed time in the referenced experimental context; not the date of a patient event.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "temperature_c",
+        "number",
+        "Optional",
+        "Assay temperature in degrees Celsius.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "ph",
+        "number",
+        "Optional",
+        "Assay pH, with measurement method in the evidence.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "uncertainty_value",
+        "number",
+        "Optional",
+        "Uncertainty magnitude for the numerical result.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "uncertainty_unit",
+        "string",
+        "Optional",
+        "Unit or explicit dimensionless designation for uncertainty_value.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "uncertainty_kind",
+        "string",
+        "Optional",
+        "Uncertainty statistic and confidence level where applicable.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "specification_version",
+        "string",
+        "Optional",
+        "Version of the acceptance specification used for a QC judgment.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "idrp_ontology:r78",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "acceptance_lower",
+        "number",
+        "Optional",
+        "Lower numerical acceptance limit, in unit, when appropriate.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "acceptance_upper",
+        "number",
+        "Optional",
+        "Upper numerical acceptance limit, in unit, when appropriate.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "acceptance_decision",
+        "enum",
+        "Optional",
+        "Recorded evaluation against the named specification; not a clinical release authorization.",
+        "{\"enum\": [\"pass\", \"fail\", \"not_evaluated\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "decay_correction_basis",
+        "string",
+        "Optional",
+        "Decay correction method, nuclide and time reference for yield, activity or purity results.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "reference_radiation",
+        "string",
+        "Optional",
+        "Reference radiation and endpoint required to interpret RBE or other relative radiobiological quantities.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "rubric_name",
+        "string",
+        "Optional",
+        "Named assessment rubric required for readiness, evidence or quality scores.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "rubric_version",
+        "string",
+        "Optional",
+        "Version of the scoring rubric.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "test_result_number",
+        "number",
+        "Optional",
+        "The result a test represented by a number.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "nk_blueprint:r29; nk_blueprint:r30; nk_blueprint:r31; nk_blueprint:r35; nk_blueprint:r36; nk_blueprint:r38; nk_blueprint:r39; nk_blueprint:r61; nk_blueprint:r86; nk_blueprint:r91; nk_blueprint:r92; nk_blueprint:r93; nk_blueprint:r94; nk_blueprint:r96; nk_blueprint:r97; nk_blueprint:r99; nk_blueprint:r100; nk_blueprint:r101; nk_blueprint:r102; nk_blueprint:r104; nk_blueprint:r108; nk_blueprint:r109; nk_blueprint:r110; nk_blueprint:r111; nk_blueprint:r112; nk_blueprint:r113; nk_blueprint:r114; nk_blueprint:r115; nk_blueprint:r116; nk_blueprint:r122; nk_blueprint:r123; nk_blueprint:r124; nk_blueprint:r125; nk_blueprint:r126; nk_blueprint:r127; nk_blueprint:r128; nk_blueprint:r129; nk_blueprint:r130; nk_blueprint:r131; nk_blueprint:r132; nk_blueprint:r133; nk_blueprint:r134; nk_blueprint:r135; nk_blueprint:r137; nk_blueprint:r138; nk_blueprint:r139; nk_blueprint:r142; nk_blueprint:r143; nk_blueprint:r144; nk_blueprint:r148; nk_blueprint:r150; nk_blueprint:r151; nk_blueprint:r152; nk_blueprint:r153; nk_blueprint:r154; nk_blueprint:r163; nk_blueprint:r164; nk_blueprint:r165; nk_blueprint:r166; nk_blueprint:r167; nk_blueprint:r172; nk_blueprint:r173; nk_blueprint:r174; nk_blueprint:r175; nk_blueprint:r176; nk_blueprint:r177; nk_blueprint:r178; nk_blueprint:r212; nk_blueprint:r213; nk_blueprint:r214; nk_blueprint:r215; nk_blueprint:r216; nk_blueprint:r217; nk_blueprint:r218; nk_blueprint:r219; nk_blueprint:r220; nk_blueprint:r221; nk_blueprint:r222; nk_blueprint:r223; nk_blueprint:r224; nk_blueprint:r229; nk_blueprint:r230; nk_blueprint:r231; nk_blueprint:r232; nk_blueprint:r233; nk_blueprint:r234; nk_blueprint:r235; nk_blueprint:r236; nk_blueprint:r237; nk_blueprint:r238; nk_blueprint:r239; nk_blueprint:r240; nk_blueprint:r241; nk_blueprint:r242; nk_blueprint:r243; nk_blueprint:r244; nk_blueprint:r245; nk_blueprint:r246; nk_blueprint:r247; nk_blueprint:r248; nk_blueprint:r249; nk_blueprint:r250; nk_blueprint:r251; nk_blueprint:r252; nk_blueprint:r289; nk_blueprint:r298; nk_blueprint:r299; nk_blueprint:r302",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "test_result_percent",
+        "number",
+        "Optional",
+        "The result a test represented by a percent.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_test",
+        "test_result_ratio",
+        "number",
+        "Optional",
+        "The result a test represented by a ratio.",
+        "{\"type\": \"number\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "unit_identifier",
+        "string",
+        "Required",
+        "Local barcode or identifier for this physical unit, separate from a package NDC.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r197; idrp_ontology:r12",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "unit_kind",
+        "string",
+        "Required",
+        "Physical presentation such as vial or syringe.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "activity_at_reference_mbq",
+        "number",
+        "Required",
+        "Measured or declared total activity of this unit in MBq at activity_reference_datetime, not administered activity.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r97; nk_blueprint:r162; nk_blueprint:r186",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "activity_reference_datetime",
+        "string",
+        "Required",
+        "UTC-offset timestamp to which unit activity is referenced.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "nz_model:r99; nk_blueprint:r171",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "activity_basis",
+        "enum",
+        "Required",
+        "Origin of the unit activity value.",
+        "{\"enum\": [\"measured\", \"manufacturer_declared\", \"decay_calculated\"]}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "actual_fill_volume_ml",
+        "number",
+        "Optional",
+        "Actual content volume in mL at the stated reference context.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "nz_model:r96",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "compound_mass_ug",
+        "number",
+        "Optional",
+        "Total mass in micrograms of the chemically specified compound; distinguish compound from radionuclide mass.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "compound_amount_nmol",
+        "number",
+        "Optional",
+        "Total amount in nmol of the specified compound, with molar-mass assumptions in provenance.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "expiry_datetime",
+        "string",
+        "Required",
+        "Expiry of this physical unit with UTC offset.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date-time\"}",
+        "New node property",
+        "idrp_ontology:r178",
+        ""
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "storage_history_reference",
+        "string",
+        "Optional",
+        "Reference to documented storage and transport history.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "title",
+        "string",
+        "Required",
+        "Title or descriptive name of the evidence item.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "evidence_kind",
+        "enum",
+        "Required",
+        "Kind of evidence source.",
+        "{\"enum\": [\"publication\", \"trial\", \"regulatory_label\", \"experimental_dataset\", \"technical_report\", \"other\"]}",
+        "New node property",
+        "nk_blueprint:r257",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "setting",
+        "enum",
+        "Required",
+        "Experimental or reference setting; never silently pool species or settings.",
+        "{\"enum\": [\"human_clinical\", \"preclinical\", \"in_vitro\", \"computational\", \"reference\"]}",
+        "New node property",
+        "nk_blueprint:r89; idrp_ontology:r5",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "source_citation",
+        "string",
+        "Required",
+        "Citation or source location; exact identifiers can also be assigned through external_identifier.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r259",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "source_version",
+        "string",
+        "Optional",
+        "Document, label, dataset or registry version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "source_locator",
+        "string",
+        "Optional",
+        "Page, section, table, figure or record locator supporting the assertion.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "evidence_date",
+        "string",
+        "Optional",
+        "Date of the evidence version or observation period as defined by the source.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date\"}",
+        "New node property",
+        "nk_blueprint:r280",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "species",
+        "string",
+        "Optional",
+        "Organism represented in the evidence; required for biological experimental results.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r90",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "population_description",
+        "string",
+        "Optional",
+        "Population, cell system, species strain or cohort context.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "disease_context",
+        "string",
+        "Optional",
+        "Disease and subtype described in the source; not an anatomical target.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r8; nk_blueprint:r9; nk_blueprint:r230",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "treatment_setting",
+        "string",
+        "Optional",
+        "Treatment line, prior therapy and other setting constraints.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r231",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "study_design",
+        "string",
+        "Optional",
+        "Source-described study design.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r264",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "trial_phase",
+        "string",
+        "Optional",
+        "Source-described trial phase; not a permanent agent property.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r7; nk_blueprint:r263",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "sponsor",
+        "string",
+        "Optional",
+        "Study sponsor as reported.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r262",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "comparator",
+        "string",
+        "Optional",
+        "Comparator or reference condition.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r265",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "sample_size",
+        "integer",
+        "Optional",
+        "Number of experimental units or subjects, interpreted with sample_unit.",
+        "{\"type\": \"integer\", \"minimum\": 0}",
+        "New node property",
+        "nk_blueprint:r266",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "sample_unit",
+        "string",
+        "Optional",
+        "Unit counted by sample_size, such as participants, specimens or animals.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "inclusion_criteria",
+        "string",
+        "Optional",
+        "Population inclusion and exclusion summary.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r267",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "biomarker_selection_criteria",
+        "string",
+        "Optional",
+        "Biomarker selection rule and source version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r268",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "primary_endpoint",
+        "string",
+        "Optional",
+        "Prespecified primary endpoint and its definition reference.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r269",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "secondary_endpoints",
+        "array",
+        "Optional",
+        "Secondary endpoints and their definition references.",
+        "{\"type\": \"array\", \"items\": {\"type\": \"string\"}, \"uniqueItems\": true}",
+        "New node property",
+        "nk_blueprint:r270",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "generalizability_limits",
+        "string",
+        "Optional",
+        "Known limitations on applying the evidence to another context.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r228; nk_blueprint:r281",
+        ""
+      ],
+      [
+        "reference_evidence",
+        "evidence_level",
+        "string",
+        "Optional",
+        "Assessment under a named evidence-grading rubric supplied in provenance.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nk_blueprint:r279",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "application_identifier",
+        "string",
+        "Optional",
+        "NDA, ANDA, IND, marketing-authorization or other identifier; preserve leading zeros and identifier scheme.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r16; nz_model:r18; nz_model:r20; nz_model:r127",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "application_type",
+        "string",
+        "Required",
+        "Application type under the named authority; do not infer approval from an NDC or application number.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r27",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "regulatory_pathway",
+        "string",
+        "Optional",
+        "Legal pathway with authority and source citation; section references require regulatory review.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r28; nz_model:r111; nz_model:r128",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "authority",
+        "string",
+        "Required",
+        "Regulatory authority responsible for the application or authorization.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r24; nz_model:r112; nk_blueprint:r273",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "jurisdiction",
+        "string",
+        "Required",
+        "Jurisdiction to which this state applies.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r23; nk_blueprint:r12; nk_blueprint:r276",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "authorization_holder",
+        "string",
+        "Optional",
+        "Marketing authorization holder, distinct from manufacturer, supplier and labeler.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r19",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "status",
+        "string",
+        "Required",
+        "Source-reported regulatory state, not inferred from availability or marketing codes.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r21; nk_blueprint:r13; nk_blueprint:r274",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "status_date",
+        "string",
+        "Required",
+        "Date to which the recorded regulatory status applies.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "approval_date",
+        "string",
+        "Optional",
+        "Actual approval date when supported by the source.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date\"}",
+        "New node property",
+        "nz_model:r22",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "approved_indication",
+        "string",
+        "Optional",
+        "Source wording or reviewed representation of the indication for this authorization and label version.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r39; nk_blueprint:r275",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "label_version",
+        "string",
+        "Optional",
+        "Approved or investigational label/protocol version associated with the assertion.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "reference_application_identifier",
+        "string",
+        "Optional",
+        "Identifier of the reference application with its scheme/authority in the source.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r30",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "reference_relationship",
+        "string",
+        "Optional",
+        "Relationship to a reference product, such as RLD or comparator; equivalence is an evidence assertion, not automatic identity.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r31; nz_model:r114",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "submission_strategy",
+        "string",
+        "Optional",
+        "Administrative filing context such as a grouped supplement, if relevant.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "nz_model:r32",
+        ""
+      ],
+      [
+        "regulatory_authorization",
+        "source_citation",
+        "string",
+        "Required",
+        "Authoritative source and locator supporting the regulatory assertion.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "seller",
+        "string",
+        "Required",
+        "Organization offering the product.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "idrp_ontology:r11",
+        ""
+      ],
+      [
+        "supply_offer",
+        "supplier",
+        "string",
+        "Optional",
+        "Organization fulfilling supply, if different from seller.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "manufacturer",
+        "string",
+        "Optional",
+        "Organization manufacturing the offered product.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "labeler",
+        "string",
+        "Optional",
+        "Organization named as labeler; do not equate it automatically with manufacturer.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "catalog_identifier",
+        "string",
+        "Required",
+        "Seller-specific catalog number or SKU, kept as a string.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "idrp_ontology:r82",
+        ""
+      ],
+      [
+        "supply_offer",
+        "valid_from",
+        "string",
+        "Required",
+        "Date from which this offer description is known to apply.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "valid_to",
+        "string",
+        "Optional",
+        "End date when supplied; absence does not assert current availability.",
+        "{\"type\": \"string\", \"minLength\": 1, \"format\": \"date\"}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "unit_of_sale",
+        "string",
+        "Optional",
+        "Commercial unit, distinct from physical activity and administered dose.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "price_amount",
+        "number",
+        "Optional",
+        "Optional source-reported dated price; no current price or reimbursement is inferred.",
+        "{\"type\": \"number\", \"minimum\": 0}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "price_currency",
+        "string",
+        "Optional",
+        "Currency code associated with price_amount.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "price_basis",
+        "string",
+        "Optional",
+        "Price basis and included or excluded services, such as transport or dispensing.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "supply_offer",
+        "source_citation",
+        "string",
+        "Required",
+        "Catalog or contract source and retrieval context.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "theranostic_pair",
+        "pair_name",
+        "string",
+        "Required",
+        "Label for this diagnostic and therapeutic pairing.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "theranostic_pair",
+        "pair_basis",
+        "string",
+        "Required",
+        "Biological or chemical rationale for pairing, with limitations in pair_limitations.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "theranostic_pair",
+        "pair_limitations",
+        "string",
+        "Required",
+        "Differences in structure, radionuclide, mass, timing and kinetics relevant to transfer of evidence.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "New node property",
+        "",
+        ""
+      ],
+      [
+        "toxicity_event",
+        "dose_limiting_toxicity",
+        "boolean",
+        "Optional",
+        "Whether the event met a named protocol's dose-limiting toxicity definition; not implied by grade alone.",
+        "{\"type\": \"boolean\"}",
+        "Optional extension",
+        "nk_blueprint:r234",
+        ""
+      ],
+      [
+        "toxicity_event",
+        "dlt_definition_reference",
+        "string",
+        "Optional",
+        "Protocol, version and rule used for the dose-limiting toxicity determination.",
+        "{\"type\": \"string\", \"minLength\": 1}",
+        "Optional extension",
+        "",
+        ""
+      ]
+    ],
+    "widths": [
+      30,
+      36,
+      16,
+      18,
+      100,
+      65,
+      26,
+      42,
+      85
+    ]
+  },
+  {
+    "name": "Links",
+    "headers": [
+      "Child node",
+      "Link property",
+      "Referenced node",
+      "Multiplicity",
+      "Requiredness",
+      "Relationship",
+      "Reverse name"
+    ],
+    "rows": [
+      [
+        "administration",
+        "cases",
+        "case",
+        "many_to_one",
+        "Required",
+        "related_to",
+        "nmmi_administration_cases"
+      ],
+      [
+        "administration",
+        "radiopharmaceuticals",
+        "radiopharmaceutical",
+        "many_to_one",
+        "Required",
+        "related_to",
+        "nmmi_administration_radiopharmaceuticals"
+      ],
+      [
+        "administration",
+        "radiopharmaceutical_batches",
+        "radiopharmaceutical_batch",
+        "many_to_one",
+        "Optional",
+        "related_to",
+        "nmmi_administration_radiopharmaceutical_batches"
+      ],
+      [
+        "administration",
+        "therapy_cycles",
+        "therapy_cycle",
+        "many_to_one",
+        "Optional",
+        "related_to",
+        "nmmi_administration_therapy_cycles"
+      ],
+      [
+        "administration",
+        "visits",
+        "visit",
+        "many_to_one",
+        "Optional",
+        "related_to",
+        "nmmi_administration_visits"
+      ],
+      [
+        "administration",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_administration_provenance_records"
+      ],
+      [
+        "administration",
+        "radiopharmaceutical_units",
+        "radiopharmaceutical_unit",
+        "many_to_one",
+        "Optional",
+        "traceable_to",
+        "nmmi_administration_radiopharmaceutical_units"
+      ],
+      [
+        "administration",
+        "dispense_events",
+        "dispense_event",
+        "many_to_one",
+        "Optional",
+        "traceable_to",
+        "nmmi_administration_dispense_events"
+      ],
+      [
+        "biological_target",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_biological_target_projects"
+      ],
+      [
+        "biological_target",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_biological_target_provenance_records"
+      ],
+      [
+        "computational_model",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_computational_model_projects"
+      ],
+      [
+        "computational_model",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_computational_model_provenance_records"
+      ],
+      [
+        "computational_model",
+        "reference_evidence",
+        "reference_evidence",
+        "many_to_many",
+        "Optional",
+        "supported_by",
+        "nmmi_computational_model_reference_evidence"
+      ],
+      [
+        "decay_emission",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_decay_emission_projects"
+      ],
+      [
+        "decay_emission",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_decay_emission_provenance_records"
+      ],
+      [
+        "decay_emission",
+        "parent_nuclides",
+        "radionuclide",
+        "many_to_one",
+        "Required",
+        "emitted_by",
+        "nmmi_decay_emission_parent_nuclides"
+      ],
+      [
+        "decay_emission",
+        "daughter_nuclides",
+        "radionuclide",
+        "many_to_one",
+        "Optional",
+        "decays_to",
+        "nmmi_decay_emission_daughter_nuclides"
+      ],
+      [
+        "dispense_event",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_dispense_event_projects"
+      ],
+      [
+        "dispense_event",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_dispense_event_provenance_records"
+      ],
+      [
+        "dispense_event",
+        "cases",
+        "case",
+        "many_to_one",
+        "Required",
+        "for_patient",
+        "nmmi_dispense_event_cases"
+      ],
+      [
+        "dispense_event",
+        "radiopharmaceutical_orders",
+        "radiopharmaceutical_order",
+        "many_to_one",
+        "Required",
+        "fulfills",
+        "nmmi_dispense_event_radiopharmaceutical_orders"
+      ],
+      [
+        "dispense_event",
+        "radiopharmaceutical_units",
+        "radiopharmaceutical_unit",
+        "many_to_one",
+        "Required",
+        "dispenses",
+        "nmmi_dispense_event_radiopharmaceutical_units"
+      ],
+      [
+        "external_identifier",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_external_identifier_projects"
+      ],
+      [
+        "external_identifier",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_external_identifier_provenance_records"
+      ],
+      [
+        "external_identifier",
+        "radiopharmaceuticals",
+        "radiopharmaceutical",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_radiopharmaceuticals"
+      ],
+      [
+        "external_identifier",
+        "radionuclides",
+        "radionuclide",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_radionuclides"
+      ],
+      [
+        "external_identifier",
+        "molecular_entities",
+        "molecular_entity",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_molecular_entities"
+      ],
+      [
+        "external_identifier",
+        "biological_targets",
+        "biological_target",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_biological_targets"
+      ],
+      [
+        "external_identifier",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_medicinal_products"
+      ],
+      [
+        "external_identifier",
+        "product_packages",
+        "product_package",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_product_packages"
+      ],
+      [
+        "external_identifier",
+        "regulatory_authorizations",
+        "regulatory_authorization",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_regulatory_authorizations"
+      ],
+      [
+        "external_identifier",
+        "reference_evidence",
+        "reference_evidence",
+        "many_to_one",
+        "One required alternative",
+        "identifies",
+        "nmmi_external_identifier_reference_evidence"
+      ],
+      [
+        "material_lot",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_material_lot_projects"
+      ],
+      [
+        "material_lot",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_material_lot_provenance_records"
+      ],
+      [
+        "material_lot",
+        "molecular_entities",
+        "molecular_entity",
+        "many_to_one",
+        "Optional",
+        "has_identity",
+        "nmmi_material_lot_molecular_entities"
+      ],
+      [
+        "material_lot",
+        "radionuclides",
+        "radionuclide",
+        "many_to_one",
+        "Optional",
+        "contains_nuclide",
+        "nmmi_material_lot_radionuclides"
+      ],
+      [
+        "medicinal_product",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_medicinal_product_projects"
+      ],
+      [
+        "medicinal_product",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_medicinal_product_provenance_records"
+      ],
+      [
+        "medicinal_product",
+        "radiopharmaceuticals",
+        "radiopharmaceutical",
+        "many_to_one",
+        "Required",
+        "formulation_of",
+        "nmmi_medicinal_product_radiopharmaceuticals"
+      ],
+      [
+        "model_parameter",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_model_parameter_projects"
+      ],
+      [
+        "model_parameter",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_model_parameter_provenance_records"
+      ],
+      [
+        "model_parameter",
+        "computational_models",
+        "computational_model",
+        "many_to_one",
+        "Required",
+        "parameter_of",
+        "nmmi_model_parameter_computational_models"
+      ],
+      [
+        "model_parameter",
+        "model_runs",
+        "model_run",
+        "many_to_one",
+        "Optional",
+        "estimated_in",
+        "nmmi_model_parameter_model_runs"
+      ],
+      [
+        "model_parameter",
+        "reference_evidence",
+        "reference_evidence",
+        "many_to_many",
+        "Optional",
+        "supported_by",
+        "nmmi_model_parameter_reference_evidence"
+      ],
+      [
+        "model_prediction",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_model_prediction_projects"
+      ],
+      [
+        "model_prediction",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_model_prediction_provenance_records"
+      ],
+      [
+        "model_prediction",
+        "model_runs",
+        "model_run",
+        "many_to_one",
+        "Required",
+        "generated_by",
+        "nmmi_model_prediction_model_runs"
+      ],
+      [
+        "model_prediction",
+        "anatomic_targets",
+        "anatomic_target",
+        "many_to_one",
+        "Optional",
+        "predicts_for",
+        "nmmi_model_prediction_anatomic_targets"
+      ],
+      [
+        "model_run",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_model_run_projects"
+      ],
+      [
+        "model_run",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_model_run_provenance_records"
+      ],
+      [
+        "model_run",
+        "computational_models",
+        "computational_model",
+        "many_to_one",
+        "Required",
+        "executes",
+        "nmmi_model_run_computational_models"
+      ],
+      [
+        "model_run",
+        "cases",
+        "case",
+        "many_to_one",
+        "Optional",
+        "for_subject",
+        "nmmi_model_run_cases"
+      ],
+      [
+        "model_run",
+        "therapy_courses",
+        "therapy_course",
+        "many_to_one",
+        "Optional",
+        "for_subject",
+        "nmmi_model_run_therapy_courses"
+      ],
+      [
+        "model_run",
+        "therapy_cycles",
+        "therapy_cycle",
+        "many_to_one",
+        "Optional",
+        "for_subject",
+        "nmmi_model_run_therapy_cycles"
+      ],
+      [
+        "model_run",
+        "input_measurements",
+        "measurement",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_model_run_input_measurements"
+      ],
+      [
+        "model_run",
+        "input_acquisitions",
+        "acquisition",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_model_run_input_acquisitions"
+      ],
+      [
+        "model_run",
+        "input_curves",
+        "time_activity_curve",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_model_run_input_curves"
+      ],
+      [
+        "model_run",
+        "input_doses",
+        "absorbed_dose",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_model_run_input_doses"
+      ],
+      [
+        "model_run",
+        "input_administrations",
+        "administration",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_model_run_input_administrations"
+      ],
+      [
+        "molecular_entity",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_molecular_entity_projects"
+      ],
+      [
+        "molecular_entity",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_molecular_entity_provenance_records"
+      ],
+      [
+        "package_component",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_package_component_projects"
+      ],
+      [
+        "package_component",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_package_component_provenance_records"
+      ],
+      [
+        "package_component",
+        "outer_packages",
+        "product_package",
+        "many_to_one",
+        "Required",
+        "contained_in",
+        "nmmi_package_component_outer_packages"
+      ],
+      [
+        "package_component",
+        "inner_packages",
+        "product_package",
+        "many_to_one",
+        "Required",
+        "contains_specification",
+        "nmmi_package_component_inner_packages"
+      ],
+      [
+        "preparation_event",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_preparation_event_projects"
+      ],
+      [
+        "preparation_event",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_preparation_event_provenance_records"
+      ],
+      [
+        "preparation_event",
+        "input_material_lots",
+        "material_lot",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_preparation_event_input_material_lots"
+      ],
+      [
+        "preparation_event",
+        "input_batches",
+        "radiopharmaceutical_batch",
+        "many_to_many",
+        "Optional",
+        "uses_input",
+        "nmmi_preparation_event_input_batches"
+      ],
+      [
+        "preparation_event",
+        "output_batches",
+        "radiopharmaceutical_batch",
+        "many_to_one",
+        "Required",
+        "produces",
+        "nmmi_preparation_event_output_batches"
+      ],
+      [
+        "product_ingredient",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_product_ingredient_projects"
+      ],
+      [
+        "product_ingredient",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_product_ingredient_provenance_records"
+      ],
+      [
+        "product_ingredient",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_one",
+        "Required",
+        "ingredient_of",
+        "nmmi_product_ingredient_medicinal_products"
+      ],
+      [
+        "product_ingredient",
+        "molecular_entities",
+        "molecular_entity",
+        "many_to_one",
+        "Required",
+        "has_identity",
+        "nmmi_product_ingredient_molecular_entities"
+      ],
+      [
+        "product_package",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_product_package_projects"
+      ],
+      [
+        "product_package",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_product_package_provenance_records"
+      ],
+      [
+        "product_package",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_one",
+        "Required",
+        "package_of",
+        "nmmi_product_package_medicinal_products"
+      ],
+      [
+        "radionuclide",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_radionuclide_projects"
+      ],
+      [
+        "radionuclide",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_radionuclide_provenance_records"
+      ],
+      [
+        "radiopharmaceutical",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_radiopharmaceutical_projects"
+      ],
+      [
+        "radiopharmaceutical",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_radiopharmaceutical_provenance_records"
+      ],
+      [
+        "radiopharmaceutical",
+        "radionuclide_records",
+        "radionuclide",
+        "many_to_many",
+        "Optional",
+        "has_identity",
+        "nmmi_radiopharmaceutical_radionuclide_records"
+      ],
+      [
+        "radiopharmaceutical",
+        "molecular_entities",
+        "molecular_entity",
+        "many_to_many",
+        "Optional",
+        "has_component",
+        "nmmi_radiopharmaceutical_molecular_entities"
+      ],
+      [
+        "radiopharmaceutical",
+        "biological_targets",
+        "biological_target",
+        "many_to_many",
+        "Optional",
+        "has_identity",
+        "nmmi_radiopharmaceutical_biological_targets"
+      ],
+      [
+        "radiopharmaceutical",
+        "chelators",
+        "molecular_entity",
+        "many_to_many",
+        "Optional",
+        "has_component",
+        "nmmi_radiopharmaceutical_chelators"
+      ],
+      [
+        "radiopharmaceutical",
+        "linkers",
+        "molecular_entity",
+        "many_to_many",
+        "Optional",
+        "has_component",
+        "nmmi_radiopharmaceutical_linkers"
+      ],
+      [
+        "radiopharmaceutical",
+        "targeting_vectors",
+        "molecular_entity",
+        "many_to_many",
+        "Optional",
+        "has_component",
+        "nmmi_radiopharmaceutical_targeting_vectors"
+      ],
+      [
+        "radiopharmaceutical",
+        "precursors",
+        "molecular_entity",
+        "many_to_many",
+        "Optional",
+        "has_component",
+        "nmmi_radiopharmaceutical_precursors"
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "radiopharmaceuticals",
+        "radiopharmaceutical",
+        "many_to_one",
+        "Required",
+        "related_to",
+        "nmmi_radiopharmaceutical_batch_radiopharmaceuticals"
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_radiopharmaceutical_batch_provenance_records"
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_one",
+        "Optional",
+        "related_to",
+        "nmmi_radiopharmaceutical_batch_medicinal_products"
+      ],
+      [
+        "radiopharmaceutical_batch",
+        "input_material_lots",
+        "material_lot",
+        "many_to_many",
+        "Optional",
+        "related_to",
+        "nmmi_radiopharmaceutical_batch_input_material_lots"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_radiopharmaceutical_order_projects"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_radiopharmaceutical_order_provenance_records"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_one",
+        "Required",
+        "requests",
+        "nmmi_radiopharmaceutical_order_medicinal_products"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "product_packages",
+        "product_package",
+        "many_to_one",
+        "Optional",
+        "requests_package",
+        "nmmi_radiopharmaceutical_order_product_packages"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "supply_offers",
+        "supply_offer",
+        "many_to_one",
+        "Optional",
+        "uses_offer",
+        "nmmi_radiopharmaceutical_order_supply_offers"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "cases",
+        "case",
+        "many_to_one",
+        "Optional",
+        "for_patient",
+        "nmmi_radiopharmaceutical_order_cases"
+      ],
+      [
+        "radiopharmaceutical_order",
+        "therapy_cycles",
+        "therapy_cycle",
+        "many_to_one",
+        "Optional",
+        "for_cycle",
+        "nmmi_radiopharmaceutical_order_therapy_cycles"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_radiopharmaceutical_test_projects"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_radiopharmaceutical_test_provenance_records"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "radiopharmaceutical_batches",
+        "radiopharmaceutical_batch",
+        "many_to_one",
+        "Optional",
+        "assesses",
+        "nmmi_radiopharmaceutical_test_radiopharmaceutical_batches"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "material_lots",
+        "material_lot",
+        "many_to_one",
+        "Optional",
+        "assesses",
+        "nmmi_radiopharmaceutical_test_material_lots"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "radiopharmaceutical_units",
+        "radiopharmaceutical_unit",
+        "many_to_one",
+        "Optional",
+        "assesses",
+        "nmmi_radiopharmaceutical_test_radiopharmaceutical_units"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "reference_evidence",
+        "reference_evidence",
+        "many_to_one",
+        "Optional",
+        "assesses",
+        "nmmi_radiopharmaceutical_test_reference_evidence"
+      ],
+      [
+        "radiopharmaceutical_test",
+        "computational_models",
+        "computational_model",
+        "many_to_one",
+        "Optional",
+        "assesses",
+        "nmmi_radiopharmaceutical_test_computational_models"
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_radiopharmaceutical_unit_projects"
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_radiopharmaceutical_unit_provenance_records"
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "radiopharmaceutical_batches",
+        "radiopharmaceutical_batch",
+        "many_to_one",
+        "Required",
+        "unit_of_batch",
+        "nmmi_radiopharmaceutical_unit_radiopharmaceutical_batches"
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "product_packages",
+        "product_package",
+        "many_to_one",
+        "Optional",
+        "conforms_to",
+        "nmmi_radiopharmaceutical_unit_product_packages"
+      ],
+      [
+        "radiopharmaceutical_unit",
+        "preparation_events",
+        "preparation_event",
+        "many_to_one",
+        "Optional",
+        "prepared_by",
+        "nmmi_radiopharmaceutical_unit_preparation_events"
+      ],
+      [
+        "reference_evidence",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_reference_evidence_projects"
+      ],
+      [
+        "reference_evidence",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_reference_evidence_provenance_records"
+      ],
+      [
+        "reference_evidence",
+        "radiopharmaceuticals",
+        "radiopharmaceutical",
+        "many_to_many",
+        "Optional",
+        "describes",
+        "nmmi_reference_evidence_radiopharmaceuticals"
+      ],
+      [
+        "reference_evidence",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_many",
+        "Optional",
+        "describes_product",
+        "nmmi_reference_evidence_medicinal_products"
+      ],
+      [
+        "reference_evidence",
+        "biological_targets",
+        "biological_target",
+        "many_to_many",
+        "Optional",
+        "describes_target",
+        "nmmi_reference_evidence_biological_targets"
+      ],
+      [
+        "regulatory_authorization",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_regulatory_authorization_projects"
+      ],
+      [
+        "regulatory_authorization",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_regulatory_authorization_provenance_records"
+      ],
+      [
+        "regulatory_authorization",
+        "medicinal_products",
+        "medicinal_product",
+        "many_to_one",
+        "Required",
+        "authorizes",
+        "nmmi_regulatory_authorization_medicinal_products"
+      ],
+      [
+        "regulatory_authorization",
+        "reference_products",
+        "medicinal_product",
+        "many_to_many",
+        "Optional",
+        "references",
+        "nmmi_regulatory_authorization_reference_products"
+      ],
+      [
+        "supply_offer",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_supply_offer_projects"
+      ],
+      [
+        "supply_offer",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_supply_offer_provenance_records"
+      ],
+      [
+        "supply_offer",
+        "product_packages",
+        "product_package",
+        "many_to_one",
+        "Required",
+        "offers",
+        "nmmi_supply_offer_product_packages"
+      ],
+      [
+        "theranostic_pair",
+        "projects",
+        "project",
+        "many_to_one",
+        "Required",
+        "member_of",
+        "nmmi_theranostic_pair_projects"
+      ],
+      [
+        "theranostic_pair",
+        "provenance_records",
+        "provenance",
+        "many_to_many",
+        "Optional",
+        "documented_by",
+        "nmmi_theranostic_pair_provenance_records"
+      ],
+      [
+        "theranostic_pair",
+        "diagnostic_agents",
+        "radiopharmaceutical",
+        "many_to_one",
+        "Required",
+        "diagnostic_component",
+        "nmmi_theranostic_pair_diagnostic_agents"
+      ],
+      [
+        "theranostic_pair",
+        "therapeutic_agents",
+        "radiopharmaceutical",
+        "many_to_one",
+        "Required",
+        "therapeutic_component",
+        "nmmi_theranostic_pair_therapeutic_agents"
+      ],
+      [
+        "theranostic_pair",
+        "reference_evidence",
+        "reference_evidence",
+        "many_to_many",
+        "Optional",
+        "supported_by",
+        "nmmi_theranostic_pair_reference_evidence"
+      ],
+      [
+        "treatment_plan",
+        "model_predictions",
+        "model_prediction",
+        "many_to_many",
+        "Optional",
+        "considers_prediction",
+        "nmmi_treatment_plan_model_predictions"
+      ]
+    ],
+    "widths": [
+      30,
+      34,
+      30,
+      24,
+      28,
+      26,
+      48
+    ]
+  },
+  {
+    "name": "Profiles",
+    "headers": [
+      "Profile",
+      "Scope",
+      "Requirements",
+      "Boundary"
+    ],
+    "rows": [
+      [
+        "human_clinical",
+        "Human diagnosis, treatment and follow-up with optional product-to-administration traceability.",
+        "Keep existing MIDRC case and typed imaging parents; prescriptions and dispensing identify the same case and cycle; units identify their batch and expiry.",
+        "No preclinical or digital-twin record is mandatory for a clinical patient."
+      ],
+      [
+        "radiopharmacy",
+        "Manufacturing, package specifications, material lots, preparation, unit inventory and timed QC.",
+        "Use nonpatient radiopharmaceutical_test subjects; retain method, units, result status, specification and reference times. Authorized batch disposition is separate.",
+        "No fabricated patient is created for batch QC; passing a test is not an automated release decision."
+      ],
+      [
+        "reference_research",
+        "Published, preclinical, in-vitro and cohort evidence.",
+        "Identify setting, species/population, statistic, method, matrix/anatomy, time and source. Separate one result per quantity.",
+        "No automatic transfer of a cohort result to an individual human record."
+      ],
+      [
+        "digital_twin_research",
+        "Versioned model specifications, runs, parameters and predictions.",
+        "Identify exact model release, input provenance, information cutoff, parameter units and scenario. Predictions remain separate from measured dose/outcomes.",
+        "No model execution, readiness score, clinical decision policy or safety approval is supplied."
+      ]
+    ],
+    "widths": [
+      28,
+      75,
+      110,
+      100
+    ]
+  },
+  {
+    "name": "Common metadata",
+    "headers": [
+      "Property",
+      "Type",
+      "Requiredness",
+      "Definition"
+    ],
+    "rows": [
+      [
+        "type",
+        "enum",
+        "Required",
+        ""
+      ],
+      [
+        "submitter_id",
+        "string",
+        "Required",
+        "Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers."
+      ],
+      [
+        "id",
+        "string",
+        "System",
+        "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n"
+      ],
+      [
+        "project_id",
+        "string",
+        "System",
+        "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+      ],
+      [
+        "state",
+        "compound",
+        "System",
+        "The current state of the object.\n"
+      ],
+      [
+        "created_datetime",
+        "compound",
+        "System",
+        "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      ],
+      [
+        "updated_datetime",
+        "compound",
+        "System",
+        "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      ],
+      [
+        "model_version",
+        "string",
+        "Optional",
+        "Version of the submitting theranostics extension, independently of the MIDRC baseline version."
+      ],
+      [
+        "record_status",
+        "string",
+        "Optional",
+        "Record curation state, independent of clinical value."
+      ],
+      [
+        "source_record_id",
+        "string",
+        "Optional",
+        "Identifier of the originating source record; use an approved pseudonym when needed."
+      ],
+      [
+        "source_system",
+        "string",
+        "Optional",
+        "Source system or data provider."
+      ],
+      [
+        "missing_properties",
+        "array",
+        "Optional",
+        "Names of properties missing from this record; no missing value is encoded as zero."
+      ],
+      [
+        "missing_reasons",
+        "array",
+        "Optional",
+        "Reasons corresponding by index to missing_properties."
+      ],
+      [
+        "projects",
+        "array",
+        "Required",
+        "Link to project records by code or UUID."
+      ],
+      [
+        "provenance_records",
+        "array",
+        "Optional",
+        "Link to provenance records by submitter_id or UUID."
+      ]
+    ],
+    "widths": [
+      35,
+      18,
+      20,
+      115
+    ]
+  }
+]

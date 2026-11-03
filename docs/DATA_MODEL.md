@@ -1,10 +1,13 @@
-# Lu177-PSMA data model: architecture and use cases
+# NMMI Lu177 PSMA Theranostics Data Model
 
-Repository and documentation release **0.3.2**, with model schema revision **0.3.0-proposal**. This page follows the architecture document, updated from the author-supplied file; the revised Word document is [available here](../extensions/lu177_psma/v0.3.0/NMMI_Lu177_PSMA_Architecture_and_Status.docx).
+Architecture and MIDRC integration proposal
 
-**tentative authors list**
+Development release 0.4.0    2 November 2026
+Model schema revision 0.4.0-proposal
 
-Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Tahir I Yusufaly, Tyler J Bradshaw
+tentative authors list
+
+Nicolas A Karakatsanis, Atlas Haddadi Avval, Julia Brosch-Lenz, Irene Buvat, Abhinav Jha, Mario Jreige, Quanzheng Li, Neeta Pandit-Taskar, Babak Saboury, Jazmin Schwartz, Nouran Zaid, Tahir I Yusufaly, Tyler J Bradshaw
 
 Prepared for the Lu177-PSMA data model working group within the SNMMI AI Task Force and Computational Nuclear Ontology Working Groups, with a technical handoff for MIDRC Gen3 developers.
 
@@ -13,11 +16,43 @@ The proposed model is an additive extension of the deployed MIDRC dictionary. It
 | Revision result | Scope |
 | --- | --- |
 | MIDRC foundation | 29 baseline nodes retained; 17 receive optional additions and 12 are unchanged. |
-| Theranostics extension | 38 proposed nodes; 67 total node types and 293 relationships in the merged model. |
-| Source continuity | 921 source-field occurrences, including all 94 revised outcome elements and 65 paper-table occurrences. |
-| Examples and validation | Five use cases, a nine-stage patient journey and 122 invented linked records. Local structural tests pass. |
+| Theranostics extension | 61 proposed nodes; 90 total node types and 412 relationships in the merged model. |
+| Source continuity | 1,371 source-field occurrences, including all 94 revised outcome elements and 65 paper-table occurrences. |
+| Examples and validation | Eight use cases, a nine-stage patient journey and 153 invented linked records. Local structural tests pass. |
 
 The model and its dictionary remain under development. This package is ready for technical review; a receiving Gen3 build, staging submission and terminology-owner approval are still required before adoption as a MIDRC release.
+
+## Radiopharmaceutical expansion in version 0 4
+
+Version 0.4.0 reconciles Nouran Zaid’s initial radiopharmaceutical model with the supplied IDRP document and Nicolas Karakatsanis’s digital-twin ontology blueprint. The model adds 23 node types and optional fields or links on radiopharmaceutical, radiopharmaceutical_batch, administration, treatment_plan, toxicity_event and provenance. It retains all existing clinical outcome structures and the pinned MIDRC foundation.
+
+The revised radiopharmaceutical workbook provides 289 domain-property rows, 129 module link rows and a shared metadata sheet. Its companion revision workbook accounts for 102 entries from Nouran’s source, all 325 blueprint fields and 23 conceptual passages from IDRP. These counts include repeated source labels, proposed relations, a work-allocation placeholder and an empty pharmacodynamics heading. Eighteen revision themes explain the structural and semantic changes; mapping approval remains pending.
+
+### Identity and product structure
+
+A radiopharmaceutical reference agent identifies the radiolabeled construct and its target. A molecular_entity identifies an exact substance, chelator, linker or targeting component. medicinal_product describes a formulation; product_ingredient assigns ingredient roles; product_package describes a package specification. A physical radiopharmaceutical_unit is a particular vial or syringe from a batch. These identities must not be merged because their identifiers and life cycles differ.
+
+external_identifier assigns one code to one typed entity with a system, version, semantic level and review status. RxNorm ingredient and precise-ingredient identifiers, NDC product and package identifiers, and chemical identifiers are not interchangeable. Codes remain strings. Regulatory status is a dated regulatory_authorization in a specified jurisdiction; an NDC listing does not establish FDA approval. PhPID means Pharmaceutical Product Identifier. [12, 13]
+
+### Manufacturing quality and actual delivery
+
+material_lot identifies precursor and radionuclide stock. preparation_event records production, compounding or transformation, including input lots and output batch. radiopharmaceutical_test records one timed QC result; batch disposition remains an authorized, separately recorded action. Specific activity and molar activity are distinct quantities with mass and molar denominators and explicit activity-reference times. Neither is an invariant nuclide property. [14]
+
+A supply_offer describes a dated catalog presentation. radiopharmaceutical_order distinguishes procurement from a patient prescription; dispense_event connects a patient prescription with a physical unit. administration retains the authoritative delivered activity and its reference time and may link the dispensed unit. Requested, calibrated, pre-injection, residual and administered activities must be compared only after reconciling their time bases and measurement methods.
+
+### Reference evidence and computational research
+
+The IDRP source prioritizes human clinical use, whereas the blueprint includes preclinical and computational research. Version 0.4.0 makes these scopes explicit. reference_evidence identifies setting, species, population, source and version. A nonpatient radiopharmaceutical_test records a contextual result such as binding affinity or a cohort PK estimate. Human laboratory and ROI observations continue to use MIDRC measurement records and their required patient-related parents.
+
+computational_model identifies the exact model release; model_run records an execution, its inputs and information cutoff; model_parameter carries a value or distribution with units; model_prediction carries a scenario result. Predictions do not overwrite absorbed_dose or administration records. A treatment plan may cite a prediction as evidence, but no prescribing algorithm is supplied. Readiness and confidence scores require declared rubrics rather than unexplained numbers.
+
+### Definitions requiring careful reconciliation
+
+Physical decay and biological metabolism are different processes. The source example describing Lu-177 decay to Hf-177 is not imported as a metabolite. Branch probability and emission yield have distinct denominators. Biological, physical and effective half-lives require separate context. Absorbed dose, BED and EQD2 are different quantities; RBE needs a reference radiation, endpoint and model. Source numerical examples, product codes, dose ranges and billing codes remain unverified and are not defaults.
+
+### Upgrade from the earlier proposal
+
+The new dictionary is additive relative to schema 0.3.0-proposal. Existing records remain readable. Legacy product-like radiopharmaceutical records and the ambiguous batch specific_activity field are retained for compatibility. Curators should create an explicit agent/product distinction and timed QC records, preserve the old identifiers and source provenance, and document the migration. No mass-to-molar conversion or identity reassignment is inferred automatically.
 
 ## The model dictionary and semantic layer
 
@@ -67,9 +102,9 @@ Retain source labels, approve a dictionary definition and representation, then b
 
 ## Reuse of the MIDRC foundation
 
-Lu177-PSMA theranostics data model release 0.3.0 extends the deployed MIDRC Gen3 dictionary version `1.4.3-2-g7505333`, commit `7505333d56c87a289463a814131e38d0f2be6674`, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release. Existing node metadata, required lists, types, definitions, relationship multiplicities and subgroup rules are preserved. [2, 3]
+Lu177-PSMA theranostics data model release 0.4.0 extends the deployed MIDRC Gen3 dictionary version 1.4.3-2-g7505333, commit 7505333d56c87a289463a814131e38d0f2be6674, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release. Existing node metadata, required lists, types, definitions, relationship multiplicities and subgroup rules are preserved. [2, 3]
 
-| Earlier proposal | Canonical version 0 3 structure |
+| Earlier proposal | Canonical version 0 4 structure |
 | --- | --- |
 | imaging_series and image_file | pt_series_file, nm_series_file, ct_series_file or mr_series_file, selected by modality. |
 | laboratory_result and roi_measurement | measurement profiles, using the existing numeric result property with units and evidence links. |
@@ -115,9 +150,9 @@ Uncertain DICOM source labels stay explicit until their modality, attribute, seq
 
 The focused graph shows how an estimate connects to its patient, cycle and imaging evidence. Blue borders identify existing MIDRC node types; brown borders identify proposed theranostics nodes.
 
-![Lesion-dose record relationships](../extensions/lu177_psma/v0.3.0/graph/lesion_dose.png)
+![Lesion dose evidence graph](../extensions/lu177_psma/v0.4.0/graph/lesion_dose.svg)
 
-*Figure 1. Arrows point to referenced records. Solid lines are required relationships; pale dashed lines are optional. Brown dashed lines are members of required alternative groups. The full group and multiplicity are shown in the HTML table view. Other links are omitted here for readability.*
+Figure 1. Arrows point to referenced records. Solid lines are required relationships; pale dashed lines are optional. Brown dashed lines are members of required alternative groups. The full group and multiplicity are shown in the HTML table view. Other links are omitted here for readability.
 
 ## Use case following a lesion dose
 
@@ -141,39 +176,39 @@ The compact second-cycle summary explicitly marks its acquisition/contour eviden
 
 ## Domains for identity imaging and quantification
 
-Domains organize navigation; nodes define record types. One domain can span several nodes, and one node can serve multiple domains. The four laboratory families share one measurement structure. The 24 navigation domains preserve the original multimodality scope.
+Domains organize navigation; nodes define record types. One domain can span several nodes, and one node can serve multiple domains. The four laboratory families share one measurement structure. The original 24 navigation domains are retained, with additional views for the radiopharmaceutical expansion.
 
 | Domain | Nodes and purpose |
 | --- | --- |
-| Subject information | case, site; Stable project-scoped case identity and site context. |
-| Anthropometrics and body composition | measurement; Atomic height, weight, body composition and derived body-size measurements. |
-| Lifestyle and behavioral factors | observation; Dated observations with original behavior labels; baseline case summaries remain distinct. |
-| Study and longitudinal context | study, dataset, visit, therapy_course, therapy_cycle, timepoint, treatment_transition; Protocol, collection, encounter, course, cycle, timepoint and later treatment. |
-| Imaging examination | imaging_study, pt_series_file, nm_series_file, ct_series_file, mr_series_file; Examination plus typed file metadata for PET, NM, CT and MR. |
-| Raw imaging data | supplementary_file; Indexed raw projection/list-mode artifacts with format and version metadata. |
-| Acquisition parameters | acquisition; Scanner-specific acquisition settings, timing, energy windows and context. |
-| Scanner QA and calibration | scanner, scanner_qa; Equipment identity and dated calibration/QA with isotope context. |
-| Reconstructed imaging data | pt_series_file, nm_series_file, ct_series_file, mr_series_file; Typed image files, geometry, quantitative units and source-header metadata. |
-| Reconstruction and processing | reconstruction, registration; Processing executions, input/output evidence and registration transforms. |
-| Segmentation and ROI metrics | anatomic_target, annotation, dicom_annotation_file, annotation_file, measurement; Persistent targets, image-specific annotations, mask files and atomic ROI metrics. |
-| Dosimetry | time_activity_curve, dosimetry, absorbed_dose, dicom_annotation_file, supplementary_file, dose_summary; Activity curves, calculation runs, target estimates, dose maps and cumulative summaries. |
+| Subject information | case, site<br>Stable project-scoped case identity and site context. |
+| Anthropometrics and body composition | measurement<br>Atomic height, weight, body composition and derived body-size measurements. |
+| Lifestyle and behavioral factors | observation<br>Dated observations with original behavior labels; baseline case summaries remain distinct. |
+| Study and longitudinal context | study, dataset, visit, therapy_course, therapy_cycle, timepoint, treatment_transition<br>Protocol, collection, encounter, course, cycle, timepoint and later treatment. |
+| Imaging examination | imaging_study, pt_series_file, nm_series_file, ct_series_file, mr_series_file<br>Examination plus typed file metadata for PET, NM, CT and MR. |
+| Raw imaging data | supplementary_file<br>Indexed raw projection/list-mode artifacts with format and version metadata. |
+| Acquisition parameters | acquisition<br>Scanner-specific acquisition settings, timing, energy windows and context. |
+| Scanner QA and calibration | scanner, scanner_qa<br>Equipment identity and dated calibration/QA with isotope context. |
+| Reconstructed imaging data | pt_series_file, nm_series_file, ct_series_file, mr_series_file<br>Typed image files, geometry, quantitative units and source-header metadata. |
+| Reconstruction and processing | reconstruction, registration<br>Processing executions, input/output evidence and registration transforms. |
+| Segmentation and ROI metrics | anatomic_target, annotation, dicom_annotation_file, annotation_file, measurement<br>Persistent targets, image-specific annotations, mask files and atomic ROI metrics. |
+| Dosimetry | time_activity_curve, dosimetry, absorbed_dose, dicom_annotation_file, supplementary_file, dose_summary<br>Activity curves, calculation runs, target estimates, dose maps and cumulative summaries. |
 
 ## Domains for clinical evidence and governance
 
 | Domain | Nodes and purpose |
 | --- | --- |
-| Hematology labs | laboratory_panel, measurement; Blood counts with specimen/collection context and per-result units. |
-| Renal function labs | laboratory_panel, measurement; Creatinine, eGFR and clearance with formula and normalization context. |
-| Liver function labs | laboratory_panel, measurement; Liver chemistry/function measurements and reference ranges. |
-| PSA and related assays | laboratory_panel, measurement; PSA assays and repeated samples; derived responses link to their evidence. |
-| Clinical and molecular biomarkers | specimen, biomarker_assessment, clinical_assessment; Specimen-linked molecular/clinical assessments and their interpretation. |
-| Treatment response and outcomes | response_assessment, survival_outcome, patient_reported_outcome, disease_burden, clinical_event, treatment_decision, treatment_transition; Criteria-specific response, disease burden, events, patient reports and survival. |
-| Treatment administration | therapy_course, therapy_cycle, administration, treatment_plan, eligibility_assessment, treatment_decision; Plans, course/cycle context and actual radiopharmaceutical administrations. |
-| Organs at risk functional status | organ_function; Organ-specific functional interpretation with supporting observations. |
-| Toxicity CTCAE based | toxicity_event, toxicity_summary; Individual CTCAE event assessments and separate time-window summaries. |
-| Medical records and history | condition, medical_history, medication, procedure, supplementary_file, radiology_report; Conditions, procedures, medications, history and supporting reports. |
-| Radiopharmaceutical | radiopharmaceutical, radiopharmaceutical_batch, administration; Product identity, production batch and actual measured administration. |
-| Semantics and governance | program, project, model_release, semantic_mapping, provenance; Project organization, releases, provenance and external semantic mappings. |
+| Hematology labs | laboratory_panel, measurement<br>Blood counts with specimen/collection context and per-result units. |
+| Renal function labs | laboratory_panel, measurement<br>Creatinine, eGFR and clearance with formula and normalization context. |
+| Liver function labs | laboratory_panel, measurement<br>Liver chemistry/function measurements and reference ranges. |
+| PSA and related assays | laboratory_panel, measurement<br>PSA assays and repeated samples; derived responses link to their evidence. |
+| Clinical and molecular biomarkers | specimen, biomarker_assessment, clinical_assessment<br>Specimen-linked molecular/clinical assessments and their interpretation. |
+| Treatment response and outcomes | response_assessment, survival_outcome, patient_reported_outcome, disease_burden, clinical_event, treatment_decision, treatment_transition<br>Criteria-specific response, disease burden, events, patient reports and survival. |
+| Treatment administration | therapy_course, therapy_cycle, administration, treatment_plan, eligibility_assessment, treatment_decision<br>Plans, course/cycle context and actual radiopharmaceutical administrations. |
+| Organs at risk functional status | organ_function<br>Organ-specific functional interpretation with supporting observations. |
+| Toxicity CTCAE based | toxicity_event, toxicity_summary<br>Individual CTCAE event assessments and separate time-window summaries. |
+| Medical records and history | condition, medical_history, medication, procedure, supplementary_file, radiology_report<br>Conditions, procedures, medications, history and supporting reports. |
+| Radiopharmaceutical | radiopharmaceutical, medicinal_product, product_package, radiopharmaceutical_batch, preparation_event, radiopharmaceutical_unit, radiopharmaceutical_test, radiopharmaceutical_order, dispense_event and administration<br>Separate reference agent, product specification, manufacturing evidence, physical unit and actual patient delivery. |
+| Semantics and governance | program, project, model_release, semantic_mapping, provenance<br>Project organization, releases, provenance and external semantic mappings. |
 
 New course, cycle, administration and dose nodes have distinct record grains that are absent from the baseline. Remaining clinical and biomarker assessment nodes are retained as panels or interpretations; their implementation should reference atomic measurements rather than introduce independently maintained duplicate facts. This is a specific review item for the receiving team.
 
@@ -251,11 +286,11 @@ The supplied manuscript and spreadsheet propose five complementary outcome dimen
 
 | Dimension | Records and interpretation |
 | --- | --- |
-| Biochemical response and kinetics | laboratory_panel, measurement, biomarker_assessment, response_assessment; Keep baseline, nadir, serial and confirmatory evidence distinct; early rise is not a prospective flare label. |
-| Molecular and anatomic imaging | imaging_study, anatomic_target, annotation, measurement, disease_burden, response_assessment; Separate lesion observations, whole-body burden, RECIST response, PCWG progression and RECIP response. |
-| Dosimetry and dose–outcome relationships | administration, acquisition, annotation, dosimetry, absorbed_dose, dose_summary, response_assessment, toxicity_event, study; Dose is an exposure. Link target-specific estimates to response and toxicity without treating association as causation. |
-| Clinical benefit, safety, function and patient-reported outcomes | clinical_assessment, clinical_event, patient_reported_outcome, toxicity_event, toxicity_summary, response_assessment, survival_outcome, therapy_course; Capture actual events and repeated instruments; separate clinician grading, patient reporting and course completion. |
-| Longitudinal treatment trajectory | therapy_course, therapy_cycle, treatment_plan, treatment_decision, treatment_transition, medication, procedure, survival_outcome; First progression, NLCB, last administration, planned completion, next treatment and retreatment are distinct events. |
+| Biochemical response and kinetics | laboratory_panel, measurement, biomarker_assessment, response_assessment<br>Keep baseline, nadir, serial and confirmatory evidence distinct; early rise is not a prospective flare label. |
+| Molecular and anatomic imaging | imaging_study, anatomic_target, annotation, measurement, disease_burden, response_assessment<br>Separate lesion observations, whole-body burden, RECIST response, PCWG progression and RECIP response. |
+| Dosimetry and dose–outcome relationships | administration, acquisition, annotation, dosimetry, absorbed_dose, dose_summary, response_assessment, toxicity_event, study<br>Dose is an exposure. Link target-specific estimates to response and toxicity without treating association as causation. |
+| Clinical benefit, safety, function and patient-reported outcomes | clinical_assessment, clinical_event, patient_reported_outcome, toxicity_event, toxicity_summary, response_assessment, survival_outcome, therapy_course<br>Capture actual events and repeated instruments; separate clinician grading, patient reporting and course completion. |
+| Longitudinal treatment trajectory | therapy_course, therapy_cycle, treatment_plan, treatment_decision, treatment_transition, medication, procedure, survival_outcome<br>First progression, NLCB, last administration, planned completion, next treatment and retreatment are distinct events. |
 
 ### Distinguish the role of a variable
 
@@ -267,7 +302,7 @@ Whole-body disease_burden records support molecular response. Individual lesion 
 
 ## Outcome definitions and remaining clinical decisions
 
-| Topic | Representation in version 0 3 |
+| Topic | Representation in version 0 4 |
 | --- | --- |
 | PSA | Repeated measurement records with explicit baseline/nadir/confirmation links; early rise does not by itself establish flare or progression. |
 | Molecular response | Whole-body PSMA-positive volume is separate from lesion-level metrics. RECIP assessment and PCWG progression retain distinct criteria/version fields. |
@@ -308,30 +343,52 @@ Example paths: therapy_course.treatment_completed_as_planned; treatment_decision
 
 The baseline PET file is a pt_series_file linked to its imaging_study. Its CT companion is a ct_series_file. The post-therapy SPECT and planar files are nm_series_file records with different nm_acquisition_kind values. The file-level DICOM radiopharmaceutical header is source metadata; the administration record remains the authoritative injection event.
 
-Example paths: pt_series_file.imaging_studies; nm_series_file.imaging_studies; imaging_study.administrations
+Example paths: pt_series_file.imaging_studies; nm_series_file.imaging_studies;
+imaging_study.administrations
 
 Each use case in the explorer opens the actual synthetic records and their node definitions. This makes the model reviewable as a set of connected records, including which observation supports which interpretation or decision.
 
+## Radiopharmaceutical use cases
+
+### Trace a delivered unit back to its quality evidence
+
+In the invented patient journey, SYN-ADMINISTRATION links RP-UNIT and RP-DISPENSE. Dispensing fulfills RP-ORDER for the same patient and cycle. The unit identifies SYN-RADIOPHARMACEUTICAL_BATCH; RP-PREP identifies its input lots and output batch. RP-QC-RCP, RP-QC-MOLAR and RP-QC-STERILITY point to the batch. The sterility result is pending, while disposition is separately documented. This illustrates traceability and status separation, without claiming a clinically adequate release protocol.
+
+### Use research evidence without changing its subject
+
+RP-PK contains an invented cohort mean biological half-life linked to explicitly preclinical RP-EVIDENCE. It is not a patient measurement. A human lesion’s time_activity_curve instead references its anatomical target, actual administration and ROI evidence. Translating the preclinical result to that person would require a justified computational model and a separately recorded prediction.
+
+### Compare a hypothetical prediction with an observed estimate
+
+RP-PREDICTION is an invented 4 Gy scenario value tied to RP-RUN and model release DEMO-1. The run records its information cutoff and inputs. SYN-DOSE-LESION-C1 remains a separate 5 Gy dose estimate linked to its imaging and dosimetry evidence. No numerical prediction model was executed; the values demonstrate distinct record types and auditable relationships.
+
 ## JSON templates tables and relationship rules
 
-The combined dictionary and 67 individual schemas use Gen3 node conventions: id, category, links, properties, required fields, system properties and unique keys. The graph edges and table rows are derived from these schemas. Proposal record-grain metadata and source crosswalks live in external registries so that baseline definitions are not rewritten with local annotations.
+The combined dictionary and 90 individual schemas use Gen3 node conventions: id, category, links, properties, required fields, system properties and unique keys. The graph edges and table rows are derived from these schemas. Proposal record-grain metadata and source crosswalks live in external registries so that baseline definitions are not rewritten with local annotations.
 
 ### One quantitative laboratory record
 
 This abbreviated invented record shows the canonical structure. It is a completed payload shape; its linked records must already exist. The code is illustrative for the matching total-PSA serum assay, not an automatic mapping for all PSA tests.
 
-```json
 {
+
 "type": "measurement", "submitter_id": "EXAMPLE-PSA-01",
+
 "cases": [{"submitter_id": "EXAMPLE-CASE"}],
+
 "laboratory_panels": [{"submitter_id": "EXAMPLE-PANEL"}],
+
 "measurement_profile": "laboratory",
+
 "test_name_source_value": "Total PSA",
+
 "test_code": "2857-1", "test_code_system": "LOINC",
+
 "specimen_type": "Serum",
+
 "test_result_number": 42.0, "unit": "ng/mL"
+
 }
-```
 
 ### Portal templates are not submission payloads
 
@@ -354,7 +411,7 @@ The integration folder supplies the exact additive patch, node/property delta, s
 | Verify retrieval | Check graph/table views, link/backref queries, file access, export, record revisions and existing MIDRC regression data. |
 | Release review | Adjudicate clinical semantics and ontology mappings using representative de-identified cases before production adoption. |
 
-The merged _settings retains the original MIDRC baseline provenance. The model schema revision remains 0.3.0-proposal in release_manifest.json; repository and document release 0.3.2 are recorded separately in the root release.json and documentation metadata. The receiving build must assign its own dictionary version and commit; the baseline commit must not be presented as the commit of a new deployed release.
+The merged _settings retains the MIDRC baseline provenance. Model schema revision 0.4.0-proposal is recorded in release_manifest.json; repository and document release 0.4.0 are recorded separately in root release.json. The receiving Gen3 build assigns its own dictionary version and commit; the baseline commit is not the commit of a new deployed dictionary.
 
 ### Proposed review responsibilities
 
@@ -388,9 +445,9 @@ Clinical assessment panels, organ function interpretations and biomarker records
 
 ## Validation development status and release decisions
 
-Local validation passes for 67 JSON schemas and the deployed Gen3 metaschema. It confirms preservation of 29 baseline nodes and 824 existing property definitions apart from the seven explicit enum additions, exact patch reproduction, 67 template structures, 921 source destinations, and an acyclic dependency graph with MIDRC’s administrative roots preserved.
+Local validation passes for 90 JSON schemas and the deployed Gen3 metaschema. It confirms preservation of 29 baseline nodes and 824 existing property definitions apart from the seven explicit enum additions, exact patch reproduction, 90 template structures, 1,371 source destinations, and an acyclic dependency graph with MIDRC’s administrative roots preserved.
 
-The 122-record invented patient journey covers 55 used node types. A separate set of 29 independent schema regression fixtures tests baseline acceptance. Twenty-seven intentionally invalid cases are rejected, including incorrect PT/NM routing, scalar slice thickness, an unsupported test-name enum, missing required link groups, dangling parents, cross-patient evidence, dose/contour target mismatch and selected outcome-evidence inconsistencies.
+The 153-record invented patient journey covers 78 used node types. A separate set of 29 independent schema regression fixtures tests baseline acceptance. Forty-nine intentionally invalid cases are rejected, including incorrect PT/NM routing, scalar slice thickness, an unsupported test-name enum, missing required link groups, dangling parents, cross-patient evidence, dose/contour target mismatch and selected outcome-evidence inconsistencies.
 
 | Evidence or milestone | Current status |
 | --- | --- |
@@ -398,11 +455,17 @@ The 122-record invented patient journey covers 55 used node types. A separate se
 | Outcome revision | 94 revised spreadsheet elements and 65 paper-table occurrences retained; source conflicts remain visible. |
 | Technical tests | Local checks pass; live Gen3 compilation, ingestion, indexing and portal rendering remain unverified. |
 | Clinical and semantic review | 65 review items include historical findings and new integration decisions; not all are proven errors or unresolved technical failures. |
-| Dissemination plans | The initial GitHub release 0.3.0 was published on 16 October 2026. Documentation release 0.3.2 accompanies this document. Journal publication by the end of 2026 remains an aim. |
+| Dissemination plans | The initial GitHub release 0.3.0 was published on 16 October 2026. Development release 0.4.0 accompanies this document. Journal publication by the end of 2026 remains an aim. |
 
-The earlier abstract’s 256-element/21-category snapshot and the expanded workbook counts describe different stages and units of counting. Source occurrences, unique concepts, node properties and navigation domains must not be reported interchangeably. The current source catalog includes repeated entries and aliases; it does not claim 921 approved concepts.
+The earlier abstract’s 256-element/21-category snapshot and the expanded workbook counts describe different stages and units of counting. Source occurrences, unique concepts, node properties and navigation domains must not be reported interchangeably. The current source catalog includes repeated entries and aliases; it does not claim 1,371 approved concepts.
 
-The HTML has passed DOM-based navigation, filtering, graph-node count and download checks. Browser rendering was unavailable for this revision; graphical SVGs and document pages were inspected separately. The data model has not been tested with real patient records, verified file bytes or a complete clinical criteria engine.
+The HTML contains 90 node definitions, 12 schema-derived graph views, searchable source mappings, the patient journey and eight use cases. Local DOM navigation, filtering, record inspection and JSON download controls are checked as part of this release. Graph SVGs are rendered for visual inspection. A browser runtime was unavailable; no MIDRC portal deployment, real patient data extraction or clinical criteria engine is validated.
+
+### Radiopharmaceutical validation and remaining review
+
+The combined local validator accepts 153 records across 78 node types, preserves acceptance of all 122 prior records and all 29 MIDRC baseline fixtures, and rejects 49 predefined invalid cases. The 22 added mutations exercise identifier type and entity level, decay/emission confusion, QC subject and status, activity units/reference time, patient prescriptions, expiry, preparation inputs, package cycles, evidence setting, prediction intervals and information cutoff. Both baseline-to-current and v0.3-to-v0.4 additive patches reproduce the merged dictionary.
+
+These checks do not validate every regulatory rule, nuclear-data evaluation, radiopharmacy release policy, NucLex binding or clinical criterion. The receiving team should approve collection profiles and run a real Gen3 build, migration, submission and export round trip. The field definitions and source crosswalk remain proposals for expert review.
 
 ## References and source materials
 
@@ -436,12 +499,38 @@ Additional supplied project sources: NMMI Data Models Lu177-PSMA May2026.xlsx; t
 
 MIDRC schema content is reused under Apache License 2.0. The license, source attribution and modification notice accompany the package. LOINC and the external ontologies retain their own governance and terms. Gen3/MIDRC interface and terminology references were checked for this revision on 16 October 2026; clinical source reviews carried forward from version 0.2 remain identified in the review log.
 
-## Documentation patch 0.3.2
+[12] FDA National Drug Code Directory. https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory (accessed 2 November 2026).
 
-Repository release 0.3.1 clarified baseline provenance and tag history. Release 0.3.2 incorporates those clarifications into the Word document and HTML explorer, with matching documentation labels. The model schemas and definitions remain unchanged. See [patch notes](../releases/0.3.2.md).
+[13] FDA Identification of Medicinal Products. https://www.fda.gov/industry/fda-data-standards-advisory-board/identification-medicinal-products-idmp (accessed 2 November 2026).
+
+[14] EANM guidance on molar activity and specific activity. https://pmc.ncbi.nlm.nih.gov/articles/PMC8502193/ (accessed 2 November 2026).
+
+New supplied sources: Radiopharmaceutical Digital Twin Ontology Blueprint_NK.xlsx; Radiopharmaceutical data model_Nov2026_NZ.xlsx; NucLex_ RadioPharmaceutical Ontology (IDRP).docx. Source hashes and row/paragraph crosswalks are distributed with v0.4.0.
+
+## Release history and baseline provenance
+
+This document accompanies repository release 0.4.0 and model schema revision 0.4.0-proposal under extensions/lu177_psma/v0.4.0/. It adds 23 nodes and optional extensions to six earlier nodes. Releases 0.3.1 and 0.3.2 were documentation patches over schema 0.3.0-proposal; their original tags and assets remain unchanged.
+
+Lu177-PSMA theranostics data model release 0.4.0 extends the deployed MIDRC Gen3 dictionary version 1.4.3-2-g7505333, commit 7505333d56c87a289463a814131e38d0f2be6674, retrieved on 16 October 2026. The baseline snapshot and its SHA-256 checksum are preserved in this release.
+
+### Release chronology
+
+Release 0.3.0 | 16 October 2026. Initial theranostics model release, tagged v0.3.0.
+
+Release 0.3.1 | 19 October 2026. Repository documentation patch identifying the precise MIDRC baseline and correcting inherited-tag wording.
+
+Release 0.3.2 | 19 October 2026. Word and HTML documentation update with matching release labels, baseline provenance and release history. The model schemas are unchanged.
 
 The initial theranostics model release is tagged v0.3.0. Inherited MIDRC tags have been removed from this repository. Documentation patches use v0.3.1 and v0.3.2; earlier release tags and their original downloads remain unchanged.
 
-## Repository baseline reconciliation
+### Reproducible baseline
 
-The repository source before this upload is commit `bee947238381704486ccd12beeb8f4689fb22843` on `cdis`. It includes a custom optional `pt_series_file.mr_images` boolean. That field is absent from the deployed baseline used by this proposal. The imported source is preserved, and any future application of the proposal to it must reconcile the PET/MR flag and other source-version differences explicitly. The proposed typed MR file relationships are documented separately; this release does not silently replace the custom flag.
+Source: https://data.midrc.org/api/v0/submission/_dictionary/_all
+
+Snapshot: sources/midrc_dictionary_1.4.3-2-g7505333.json
+
+Snapshot SHA-256: 578e57dc45f719b07f1ac31482fed9129675c133aaafc3004dc346e5e4928e21
+
+The retained gdcdictionary/ source comes from repository parent bee947238381704486ccd12beeb8f4689fb22843. It is a different revision from the pinned deployed dictionary and must be reconciled before live integration.
+
+Release 0.4.0 | 2 November 2026. Additive radiopharmaceutical and research expansion, revised workbooks, architecture, explorer, manuscript and supplementary documentation.

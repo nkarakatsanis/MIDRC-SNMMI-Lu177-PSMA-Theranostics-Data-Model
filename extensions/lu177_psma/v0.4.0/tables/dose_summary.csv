@@ -1,0 +1,29 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+dose_summary,type,True,False,Theranostics extension,enum,,
+dose_summary,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+dose_summary,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+dose_summary,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+dose_summary,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+dose_summary,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+dose_summary,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+dose_summary,therapy_courses,True,False,Theranostics extension,array,Link to therapy_course records by submitter_id or UUID.,
+dose_summary,anatomic_targets,True,False,Theranostics extension,array,Link to anatomic_target records by submitter_id or UUID.,
+dose_summary,component_doses,True,False,Theranostics extension,array,Link to absorbed_dose records by submitter_id or UUID.,
+dose_summary,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+dose_summary,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+dose_summary,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+dose_summary,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+dose_summary,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+dose_summary,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+dose_summary,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+dose_summary,cumulative_dose_gy,True,False,Theranostics extension,number,Aggregate dose using the explicitly linked component dose records.,marios_outcome_content:r65; marios_outcome_content:r66; marios_outcome_content:r67; marios_outcome_content:r68; marios_outcome_content:r69; outcome_revision:r65; outcome_revision:r66; outcome_revision:r67; outcome_revision:r68; outcome_revision:r69; outcomes_paper:supplement1:r24; outcomes_paper:supplement1:r25; outcomes_paper:supplement1:r26; outcomes_paper:supplement1:r27; outcomes_paper:supplement1:r28; outcomes_paper:supplement2:r11; outcomes_paper:supplement2:r12; outcomes_paper:supplement2:r13; nk_blueprint:r139
+dose_summary,aggregation_method,True,False,Theranostics extension,string,Aggregation rule and handling of changing target mass or geometry.,
+dose_summary,included_cycle_numbers,False,False,Theranostics extension,array,Cycle ordinals included in this aggregate.,
+dose_summary,dose_distribution_statistic,False,False,Theranostics extension,string,Dose summary dose distribution statistic.,
+dose_summary,lesion_selection_rule,False,False,Theranostics extension,string,Dose summary lesion selection rule.,
+dose_summary,coverage_description,False,False,Theranostics extension,string,"Which cycles, targets and estimates are included; incomplete sampling is explicit.",

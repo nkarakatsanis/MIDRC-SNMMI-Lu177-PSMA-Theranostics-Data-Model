@@ -1,0 +1,37 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+model_run,type,True,False,Theranostics extension,enum,,
+model_run,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r282
+model_run,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+model_run,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+model_run,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+model_run,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+model_run,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+model_run,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+model_run,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+model_run,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+model_run,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+model_run,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+model_run,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+model_run,run_datetime,True,False,Theranostics extension,string,Execution timestamp with UTC offset.,
+model_run,information_cutoff_datetime,True,False,Theranostics extension,string,Latest time at which input information was available for this run; prevents silent use of future evidence.,
+model_run,purpose,True,False,Theranostics extension,enum,Purpose of this execution; no treatment is ordered by a run record.,
+model_run,software_environment,True,False,Theranostics extension,string,"Runtime, dependency and hardware versions or reproducible environment reference.",
+model_run,random_seed,False,False,Theranostics extension,string,Random seed or explicit deterministic setting; represented as a string to preserve generator conventions.,
+model_run,scenario_description,True,False,Theranostics extension,string,"Scenario assumptions, including any simulated treatment activity or schedule.",
+model_run,input_manifest,True,False,Theranostics extension,string,"Input identifiers, hashes, availability timestamps and transformations; detailed provenance may be stored as a referenced artifact.",
+model_run,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+model_run,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+model_run,computational_models,True,False,Theranostics extension,array,Link to computational_model records by submitter_id or UUID.,
+model_run,cases,False,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+model_run,therapy_courses,False,False,Theranostics extension,array,Link to therapy_course records by submitter_id or UUID.,
+model_run,therapy_cycles,False,False,Theranostics extension,array,Link to therapy_cycle records by submitter_id or UUID.,
+model_run,input_measurements,False,False,Theranostics extension,array,Link to measurement records by submitter_id or UUID.,
+model_run,input_acquisitions,False,False,Theranostics extension,array,Link to acquisition records by submitter_id or UUID.,
+model_run,input_curves,False,False,Theranostics extension,array,Link to time_activity_curve records by submitter_id or UUID.,
+model_run,input_doses,False,False,Theranostics extension,array,Link to absorbed_dose records by submitter_id or UUID.,
+model_run,input_administrations,False,False,Theranostics extension,array,Link to administration records by submitter_id or UUID.,

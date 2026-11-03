@@ -1,6 +1,6 @@
 # Imaging Study (`imaging_study`)
 
-Release **0.3.2** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
 
 Information related to an imaging study or exam done for diagnostic or research purposes, including patient clinical or contextual data recorded at the time of the imaging study.
 
@@ -14,7 +14,7 @@ Information related to an imaging study or exam done for diagnostic or research 
 | Additional properties permitted | <code>false</code> |
 | Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
 
-[JSON schema](../../extensions/lu177_psma/v0.3.0/schemas/imaging_study.json) · [YAML schema](../../extensions/lu177_psma/v0.3.0/integration/yaml/imaging_study.yaml) · [Submission template](../../extensions/lu177_psma/v0.3.0/templates/submission_imaging_study_template.json)
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/imaging_study.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/imaging_study.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_imaging_study_template.json)
 
 ## Relationships
 
@@ -94,6 +94,6 @@ The JSON schema is authoritative, including nested object constraints. The table
 
 ## Synthetic examples
 
-[Read the synthetic imaging_study records](../../extensions/lu177_psma/v0.3.0/examples/by_node/imaging_study.json). These are structural demonstrations, not patient data or treatment recommendations.
+[Read the synthetic imaging_study records](../../extensions/lu177_psma/v0.4.0/examples/by_node/imaging_study.json). These are structural demonstrations, not patient data or treatment recommendations.
 
 Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.
