@@ -1,0 +1,127 @@
+[
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-TRACER",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "diagnostic",
+    "administered_activity_mbq": 10.0,
+    "activity_reference_datetime": "2026-04-01T12:00:00Z",
+    "administration_datetime": "2026-04-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-PRODUCT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-ADMIN-1",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "therapy",
+    "administered_activity_mbq": 1000.0,
+    "activity_reference_datetime": "2026-08-01T12:00:00Z",
+    "administration_datetime": "2026-08-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-CYCLE-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ADMIN-2",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "therapy",
+    "administered_activity_mbq": 1000.0,
+    "activity_reference_datetime": "2026-02-01T12:00:00Z",
+    "administration_datetime": "2026-02-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-CYCLE-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ADMINISTRATION",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "therapy",
+    "administered_activity_mbq": 1000.0,
+    "activity_reference_datetime": "2026-01-01T12:00:00Z",
+    "administration_datetime": "2026-01-01T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "radiopharmaceutical_batches": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DIAGNOSTIC-ADMIN",
+    "model_version": "0.3.0-proposal",
+    "administration_purpose": "diagnostic",
+    "administered_activity_mbq": 10.0,
+    "activity_reference_datetime": "2025-12-20T12:00:00Z",
+    "administration_datetime": "2025-12-20T12:00:00Z",
+    "type": "administration",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-PRODUCT"
+      }
+    ]
+  }
+]

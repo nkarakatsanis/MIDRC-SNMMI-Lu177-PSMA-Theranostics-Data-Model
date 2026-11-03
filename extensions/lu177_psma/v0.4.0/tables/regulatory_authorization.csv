@@ -1,0 +1,38 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+regulatory_authorization,type,True,False,Theranostics extension,enum,,
+regulatory_authorization,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+regulatory_authorization,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+regulatory_authorization,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+regulatory_authorization,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+regulatory_authorization,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+regulatory_authorization,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+regulatory_authorization,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+regulatory_authorization,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+regulatory_authorization,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+regulatory_authorization,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+regulatory_authorization,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+regulatory_authorization,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+regulatory_authorization,application_identifier,False,False,Theranostics extension,string,"NDA, ANDA, IND, marketing-authorization or other identifier; preserve leading zeros and identifier scheme.",nz_model:r16; nz_model:r18; nz_model:r20; nz_model:r127
+regulatory_authorization,application_type,True,False,Theranostics extension,string,Application type under the named authority; do not infer approval from an NDC or application number.,nz_model:r27
+regulatory_authorization,regulatory_pathway,False,False,Theranostics extension,string,Legal pathway with authority and source citation; section references require regulatory review.,nz_model:r28; nz_model:r111; nz_model:r128
+regulatory_authorization,authority,True,False,Theranostics extension,string,Regulatory authority responsible for the application or authorization.,nz_model:r24; nz_model:r112; nk_blueprint:r273
+regulatory_authorization,jurisdiction,True,False,Theranostics extension,string,Jurisdiction to which this state applies.,nz_model:r23; nk_blueprint:r12; nk_blueprint:r276
+regulatory_authorization,authorization_holder,False,False,Theranostics extension,string,"Marketing authorization holder, distinct from manufacturer, supplier and labeler.",nz_model:r19
+regulatory_authorization,status,True,False,Theranostics extension,string,"Source-reported regulatory state, not inferred from availability or marketing codes.",nz_model:r21; nk_blueprint:r13; nk_blueprint:r274
+regulatory_authorization,status_date,True,False,Theranostics extension,string,Date to which the recorded regulatory status applies.,
+regulatory_authorization,approval_date,False,False,Theranostics extension,string,Actual approval date when supported by the source.,nz_model:r22
+regulatory_authorization,approved_indication,False,False,Theranostics extension,string,Source wording or reviewed representation of the indication for this authorization and label version.,nz_model:r39; nk_blueprint:r275
+regulatory_authorization,label_version,False,False,Theranostics extension,string,Approved or investigational label/protocol version associated with the assertion.,
+regulatory_authorization,reference_application_identifier,False,False,Theranostics extension,string,Identifier of the reference application with its scheme/authority in the source.,nz_model:r30
+regulatory_authorization,reference_relationship,False,False,Theranostics extension,string,"Relationship to a reference product, such as RLD or comparator; equivalence is an evidence assertion, not automatic identity.",nz_model:r31; nz_model:r114
+regulatory_authorization,submission_strategy,False,False,Theranostics extension,string,"Administrative filing context such as a grouped supplement, if relevant.",nz_model:r32
+regulatory_authorization,source_citation,True,False,Theranostics extension,string,Authoritative source and locator supporting the regulatory assertion.,
+regulatory_authorization,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+regulatory_authorization,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+regulatory_authorization,medicinal_products,True,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,nz_model:r113
+regulatory_authorization,reference_products,False,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,nz_model:r29

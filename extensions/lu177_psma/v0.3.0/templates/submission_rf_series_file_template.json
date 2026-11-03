@@ -1,0 +1,37 @@
+{
+  "case_ids": null,
+  "contrast_bolus_agent": null,
+  "core_metadata_collections": {
+    "submitter_id": null
+  },
+  "*data_category": null,
+  "*data_format": null,
+  "*data_type": null,
+  "detector_type": null,
+  "dicom_header_file_guid": null,
+  "*file_name": null,
+  "*file_size": null,
+  "image_data_modification_method": null,
+  "image_data_modification_name": null,
+  "image_data_modified": null,
+  "image_type": null,
+  "imager_pixel_spacing": null,
+  "imaging_studies": {
+    "submitter_id": null
+  },
+  "lossy_image_compression": null,
+  "manufacturer": null,
+  "manufacturer_model_name": null,
+  "*md5sum": null,
+  "modality": null,
+  "number_of_instances": null,
+  "object_id": null,
+  "pixel_spacing": null,
+  "project_id": null,
+  "series_description": null,
+  "series_uid": null,
+  "spatial_resolution": null,
+  "*submitter_id": null,
+  "*type": "rf_series_file",
+  "view_position": null
+}

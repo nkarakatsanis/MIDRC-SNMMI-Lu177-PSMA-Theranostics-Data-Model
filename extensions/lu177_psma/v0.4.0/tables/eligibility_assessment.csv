@@ -1,0 +1,39 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+eligibility_assessment,type,True,False,Theranostics extension,enum,,
+eligibility_assessment,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+eligibility_assessment,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+eligibility_assessment,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+eligibility_assessment,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+eligibility_assessment,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+eligibility_assessment,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+eligibility_assessment,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+eligibility_assessment,assessment_datetime,True,False,Theranostics extension,string,Date and time of eligibility decision.,
+eligibility_assessment,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+eligibility_assessment,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+eligibility_assessment,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+eligibility_assessment,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+eligibility_assessment,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+eligibility_assessment,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+eligibility_assessment,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+eligibility_assessment,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+eligibility_assessment,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+eligibility_assessment,cases,True,False,Theranostics extension,array,References to case records.,
+eligibility_assessment,studies,False,False,Theranostics extension,array,References to study records.,
+eligibility_assessment,visits,False,False,Theranostics extension,array,References to visit records.,
+eligibility_assessment,therapy_courses,False,False,Theranostics extension,array,References to therapy_course records.,
+eligibility_assessment,conditions,False,False,Theranostics extension,array,References to condition records.,
+eligibility_assessment,clinical_assessments,False,False,Theranostics extension,array,References to clinical_assessment records.,
+eligibility_assessment,imaging_studies,False,False,Theranostics extension,array,References to imaging_study records.,
+eligibility_assessment,organ_functions,False,False,Theranostics extension,array,References to organ_function records.,
+eligibility_assessment,provenance_records,False,False,Theranostics extension,array,References to provenance records.,
+eligibility_assessment,eligibility_status,True,False,Theranostics extension,string,Documented eligibility result; this record does not calculate clinical eligibility.,
+eligibility_assessment,criteria_name,True,False,Theranostics extension,string,Eligibility criteria name.,nk_blueprint:r177; nk_blueprint:r178
+eligibility_assessment,criteria_version,False,False,Theranostics extension,string,Eligibility criteria version.,
+eligibility_assessment,rationale,False,False,Theranostics extension,string,Eligibility rationale.,
+eligibility_assessment,reviewer_role,False,False,Theranostics extension,string,Eligibility reviewer role.,
+eligibility_assessment,laboratory_measurements,False,False,Theranostics extension,compound,,

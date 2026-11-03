@@ -67,6 +67,10 @@ properties:
     description: Indicates whether a computed tomography image(s) are assocated with this PET scan (e.g. PET/CT).
     type: boolean
 
+  mr_images:
+    description: Indicates whether a magnetic resonance image(s) are assocated with this PET scan (e.g. PET/MR).
+    type: boolean
+
   image_data_modification_name:
     description: A MIDRC classification describing specific methods (e.g., software tools, processes) used to modify the study series. More information can be found at midrc.org. 
     type: integer

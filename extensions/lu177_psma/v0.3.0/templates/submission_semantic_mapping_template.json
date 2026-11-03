@@ -1,0 +1,25 @@
+{
+  "*type": "semantic_mapping",
+  "*submitter_id": null,
+  "project_id": null,
+  "*model_releases": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*node_name": null,
+  "property_name": null,
+  "source_element_id": null,
+  "concept_id": null,
+  "*vocabulary": null,
+  "vocabulary_version": null,
+  "preferred_term": null,
+  "mapping_relation": null,
+  "definition_source": null,
+  "reviewer": null,
+  "*mapping_status": null
+}

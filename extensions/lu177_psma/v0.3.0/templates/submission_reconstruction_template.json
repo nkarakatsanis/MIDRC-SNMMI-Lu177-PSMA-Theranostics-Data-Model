@@ -1,0 +1,57 @@
+{
+  "*type": "reconstruction",
+  "*submitter_id": null,
+  "project_id": null,
+  "*acquisitions": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "algorithm": null,
+  "software_name": null,
+  "software_version": null,
+  "parameter_file_reference": null,
+  "attenuation_correction": null,
+  "scatter_correction": null,
+  "decay_correction": null,
+  "normalization_method": null,
+  "iterations": null,
+  "subsets": null,
+  "psf_used": null,
+  "tof_used": null,
+  "reconstruction_diameter": null,
+  "decay_factor": null,
+  "rescale_slope": null,
+  "rescale_intercept": null,
+  "scatter_fraction_factor": null,
+  "dead_time_factor": null,
+  "corrected_image": null,
+  "randoms_correction_method": null,
+  "filter_type": null,
+  "applied_corrections": null,
+  "reconstruction_field_of_view": null,
+  "pet_reconstruction_sequence": null,
+  "raw_files": {
+    "submitter_id": null
+  },
+  "output_pt_series_files": {
+    "submitter_id": null
+  },
+  "output_nm_series_files": {
+    "submitter_id": null
+  },
+  "output_ct_series_files": {
+    "submitter_id": null
+  },
+  "output_mr_series_files": {
+    "submitter_id": null
+  },
+  "source_section_note_4_reconstruction_parameters": null
+}

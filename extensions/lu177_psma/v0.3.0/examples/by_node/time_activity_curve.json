@@ -1,0 +1,70 @@
+[
+  {
+    "submitter_id": "JOURNEY-LESION-TAC-C1",
+    "model_version": "0.3.0-proposal",
+    "time_hours": [
+      24.0,
+      48.0
+    ],
+    "activity_mbq": [
+      24.0,
+      14.0
+    ],
+    "fit_method": "Synthetic illustrative fit",
+    "extrapolation_method": "Illustrative only",
+    "decay_reference": "physical activity at sampling time",
+    "type": "time_activity_curve",
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "JOURNEY-LESION-ACTIVITY-24H"
+      },
+      {
+        "submitter_id": "JOURNEY-LESION-ACTIVITY-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TIME_ACTIVITY_CURVE",
+    "model_version": "0.3.0-proposal",
+    "time_hours": [
+      24.0,
+      48.0
+    ],
+    "activity_mbq": [
+      10.0,
+      6.0
+    ],
+    "fit_method": "Synthetic illustrative fit",
+    "extrapolation_method": "Illustrative only",
+    "decay_reference": "physical activity at sampling time",
+    "type": "time_activity_curve",
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "SYN-ROI_MEASUREMENT"
+      },
+      {
+        "submitter_id": "JOURNEY-KIDNEY-ACTIVITY-48H"
+      }
+    ]
+  }
+]

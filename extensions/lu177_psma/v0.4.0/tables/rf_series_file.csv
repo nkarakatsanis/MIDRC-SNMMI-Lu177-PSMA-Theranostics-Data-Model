@@ -1,0 +1,64 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+rf_series_file,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+rf_series_file,contrast_bolus_agent,False,False,MIDRC unchanged,array,"(0018, 0010) Contrast/Bolus Agent. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,core_metadata_collections,False,False,MIDRC unchanged,compound,"The submitter_id or id of the core_metadata_collection to which the rf_series_file belongs, i.e., a link to a record in the parent node.",
+rf_series_file,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+rf_series_file,data_category,True,False,MIDRC unchanged,enum,"Broad categorization of the contents of the data file.
+",
+rf_series_file,data_format,True,False,MIDRC unchanged,enum,"Format of the data files.
+",
+rf_series_file,data_type,True,False,MIDRC unchanged,enum,"Specific content type of the data file.
+",
+rf_series_file,detector_type,False,False,MIDRC unchanged,enum,"(0018, 7004) Detector Type. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,dicom_header_file_guid,False,False,MIDRC unchanged,string,The GUID of the zip file containing DICOM header files for an imaging series in the MIDRC index service.,
+rf_series_file,error_type,False,True,MIDRC unchanged,enum,"Type of error for the data file object.
+",
+rf_series_file,file_name,True,False,MIDRC unchanged,string,"The name (or part of a name) of a file (of any type).
+",
+rf_series_file,file_size,True,False,MIDRC unchanged,integer,"The size of the data file (object) in bytes.
+",
+rf_series_file,file_state,False,True,MIDRC unchanged,enum,"The current state of the data file object.
+",
+rf_series_file,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+rf_series_file,image_data_modification_method,False,False,MIDRC unchanged,enum,A categorical description of the type of image modification performed on the study series.,
+rf_series_file,image_data_modification_name,False,False,MIDRC unchanged,integer,"A MIDRC classification describing specific methods (e.g., software tools, processes) used to modify the study series. More information can be found at midrc.org.",
+rf_series_file,image_data_modified,False,False,MIDRC unchanged,boolean,An indicator of whether any post-clinical modification of image pixel data has been performed on the study series.,
+rf_series_file,image_type,False,False,MIDRC unchanged,array,"(0008, 0008) Image Type. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,imager_pixel_spacing,False,False,MIDRC unchanged,array,"(0018, 1164) Imager Pixel Spacing. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,imaging_studies,False,False,MIDRC unchanged,compound,"The submitter_id or id of the imaging_study this rf_series_file belongs to, i.e., a link to a record in the parent node.",
+rf_series_file,lossy_image_compression,False,False,MIDRC unchanged,enum,"(0028, 2110) Lossy Image Compression; Note, if an image is compressed with a lossy algorithm, the Attribute Lossy Image Compression (0028,2110) is set to ""01"". Subsequently, if the image is decompressed and transferred in uncompressed format, this Attribute value remains ""01"". The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,manufacturer,False,False,MIDRC unchanged,string,"(0008, 0070) Manufacturer. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,manufacturer_model_name,False,False,MIDRC unchanged,string,"(0008, 1090) Manufacturer's Model Name. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,md5sum,True,False,MIDRC unchanged,string,"The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
+",
+rf_series_file,modality,False,False,MIDRC unchanged,string,"(0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,number_of_instances,False,False,MIDRC unchanged,integer,The number of instances included in this series.,
+rf_series_file,object_id,False,False,MIDRC unchanged,string,The GUID of the object in the index service.,
+rf_series_file,pixel_spacing,False,False,MIDRC unchanged,array,"(0028, 0030) Pixel Spacing. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+rf_series_file,series_description,False,False,MIDRC unchanged,string,"(0008, 103e) Series Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,series_uid,False,False,MIDRC unchanged,string,"(0020, 000e) Series Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,spatial_resolution,False,False,MIDRC unchanged,number,"(0018, 1050) Spatial Resolution. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+rf_series_file,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+rf_series_file,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+rf_series_file,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+rf_series_file,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+rf_series_file,view_position,False,False,MIDRC unchanged,array,"(0018, 5101) View Position. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",

@@ -1,0 +1,50 @@
+{
+  "*type": "patient_reported_outcome",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "timepoints": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "instrument_name": null,
+  "instrument_version": null,
+  "score_domain": null,
+  "scoring_method": null,
+  "score": null,
+  "qol_assessment_date": null,
+  "qol_instrument_used": null,
+  "qol_score": null,
+  "pro_ctcae_collected": null,
+  "quality_of_life": null,
+  "analgesic_medications": {
+    "submitter_id": null
+  },
+  "assessment_role": null,
+  "instrument_language": null,
+  "respondent": null,
+  "recall_period": null,
+  "item_code": null,
+  "item_attribute": null,
+  "score_unit": null,
+  "response_value": null,
+  "baseline_averaging_days": null,
+  "opioid_use": null,
+  "opioid_daily_ome_mg": null,
+  "opioid_conversion_method": null
+}

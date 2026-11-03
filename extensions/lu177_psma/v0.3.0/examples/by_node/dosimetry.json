@@ -1,0 +1,123 @@
+[
+  {
+    "submitter_id": "JOURNEY-LESION-DOSIMETRY-C1",
+    "model_version": "0.3.0-proposal",
+    "method": "Synthetic target-specific SPECT/CT calculation",
+    "software_name": "ExampleDosimetry",
+    "software_version": "0-demo",
+    "type": "dosimetry",
+    "evidence_completeness": "complete",
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "time_activity_curves": [
+      {
+        "submitter_id": "JOURNEY-LESION-TAC-C1"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "acquisitions": [
+      {
+        "submitter_id": "SYN-ACQUISITION"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-ACQ-48H"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-24H"
+      },
+      {
+        "submitter_id": "JOURNEY-LESION-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSIMETRY",
+    "model_version": "0.3.0-proposal",
+    "method": "Synthetic target-specific SPECT/CT calculation",
+    "software_name": "ExampleDosimetry",
+    "software_version": "0-demo",
+    "type": "dosimetry",
+    "evidence_completeness": "complete",
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ],
+    "time_activity_curves": [
+      {
+        "submitter_id": "SYN-TIME_ACTIVITY_CURVE"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "acquisitions": [
+      {
+        "submitter_id": "SYN-ACQUISITION"
+      },
+      {
+        "submitter_id": "JOURNEY-C1-ACQ-48H"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "SYN-SEGMENTATION"
+      },
+      {
+        "submitter_id": "JOURNEY-KIDNEY-C1-48H"
+      }
+    ],
+    "dose_maps": [
+      {
+        "submitter_id": "SYN-DOSE_MAP_FILE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSIMETRY-2",
+    "model_version": "0.3.0-proposal",
+    "method": "Illustrative calculation",
+    "software_name": "Demonstration",
+    "software_version": "1",
+    "type": "dosimetry",
+    "evidence_completeness": "partial",
+    "missing_evidence_reason": "The compact synthetic second-cycle summary does not include its source acquisitions or contours. Do not treat it as a reproducible dosimetry example or substitute first-cycle evidence.",
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-CYCLE-2"
+      }
+    ],
+    "administrations": [
+      {
+        "submitter_id": "SYN-ADMIN-2"
+      }
+    ]
+  }
+]

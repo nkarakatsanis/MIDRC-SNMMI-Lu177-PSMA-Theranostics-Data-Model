@@ -1,0 +1,27 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+theranostic_pair,type,True,False,Theranostics extension,enum,,
+theranostic_pair,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r10
+theranostic_pair,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+theranostic_pair,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+theranostic_pair,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+theranostic_pair,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+theranostic_pair,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+theranostic_pair,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+theranostic_pair,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+theranostic_pair,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+theranostic_pair,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+theranostic_pair,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+theranostic_pair,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+theranostic_pair,pair_name,True,False,Theranostics extension,string,Label for this diagnostic and therapeutic pairing.,
+theranostic_pair,pair_basis,True,False,Theranostics extension,string,"Biological or chemical rationale for pairing, with limitations in pair_limitations.",
+theranostic_pair,pair_limitations,True,False,Theranostics extension,string,"Differences in structure, radionuclide, mass, timing and kinetics relevant to transfer of evidence.",
+theranostic_pair,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+theranostic_pair,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+theranostic_pair,diagnostic_agents,True,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,nk_blueprint:r179
+theranostic_pair,therapeutic_agents,True,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,
+theranostic_pair,reference_evidence,False,False,Theranostics extension,array,Link to reference_evidence records by submitter_id or UUID.,

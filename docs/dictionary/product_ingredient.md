@@ -1,0 +1,77 @@
+# Product Ingredient (`product_ingredient`)
+
+Release **0.4.0** · [Dictionary index](README.md) · [Node catalog](../NODE_CATALOG.md)
+
+One ingredient role and quantity specification in a medicinal-product formulation.
+
+| Attribute | Value |
+| --- | --- |
+| Record grain | One ingredient role and quantity specification in a medicinal-product formulation. |
+| Category | `clinical` |
+| Navigation group | Radiopharmaceutical product |
+| MIDRC relationship | `new_extension` |
+| Submittable | <code>true</code> |
+| Additional properties permitted | <code>false</code> |
+| Unique keys | <code>[["id"], ["project_id", "submitter_id"]]</code> |
+
+[JSON schema](../../extensions/lu177_psma/v0.4.0/schemas/product_ingredient.json) · [YAML schema](../../extensions/lu177_psma/v0.4.0/integration/yaml/product_ingredient.yaml) · [Submission template](../../extensions/lu177_psma/v0.4.0/templates/submission_product_ingredient_template.json)
+
+## Relationships
+
+Links point from this node to referenced records. Multiplicity is the schema’s child-to-parent relationship; a back-reference names traversal in the reverse direction. Requirements below combine the link declaration and the node required-property list.
+
+| Link property | Target | Multiplicity | Required | Back-reference | Label |
+| --- | --- | --- | --- | --- | --- |
+| `projects` | [project](project.md) | `many_to_one` | Yes | `nmmi_product_ingredient_projects` | `member_of` |
+| `provenance_records` | [provenance](provenance.md) | `many_to_many` | No | `nmmi_product_ingredient_provenance_records` | `documented_by` |
+| `medicinal_products` | [medicinal_product](medicinal_product.md) | `many_to_one` | Yes | `nmmi_product_ingredient_medicinal_products` | `ingredient_of` |
+| `molecular_entities` | [molecular_entity](molecular_entity.md) | `many_to_one` | Yes | `nmmi_product_ingredient_molecular_entities` | `has_identity` |
+
+## Properties
+
+“Required” reflects the node’s `required` list. Alternative-link groups above can impose an additional requirement. System-managed properties are identified separately. Units are preserved in the supplied definitions; no units or code bindings are inferred. An optional field does not automatically permit a null value.
+
+The JSON schema is authoritative, including nested object constraints. The tables expose every top-level property and its declared values, constraints and source terminology. Inherited terminology metadata is reproduced as supplied; inclusion is not a new mapping approval.
+
+### Data and identification properties
+
+| Property | Required | Type | Definition | Allowed values and constraints |
+| --- | --- | --- | --- | --- |
+| `type` | Yes | string (enumerated) | No description supplied in the schema. | Allowed values: <code>"product_ingredient"</code> |
+| `submitter_id` | Yes | string | Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers. | Minimum length: <code>1</code> |
+| `model_version` | No | string | Version of the submitting theranostics extension, independently of the MIDRC baseline version. | — |
+| `record_status` | No | string | Record curation state, independent of clinical value. | Allowed values: <code>"draft"</code>, <code>"reviewed"</code>, <code>"approved"</code>, <code>"superseded"</code>, <code>"withdrawn"</code> |
+| `source_record_id` | No | string | Identifier of the originating source record; use an approved pseudonym when needed. | — |
+| `source_system` | No | string | Source system or data provider. | — |
+| `missing_properties` | No | array of string | Names of properties missing from this record; no missing value is encoded as zero. | — |
+| `missing_reasons` | No | array of string (enumerated) | Reasons corresponding by index to missing_properties. | Each item: (Allowed values: <code>"unknown"</code>, <code>"not_collected"</code>, <code>"not_applicable"</code>, <code>"not_available"</code>, <code>"withheld"</code>, <code>"pending"</code>) |
+| `ingredient_role` | Yes | string (enumerated) | Role of this chemically specified component in the linked formulation. | Allowed values: <code>"active"</code>, <code>"excipient"</code>, <code>"precursor"</code>, <code>"radionuclide_source"</code>, <code>"other"</code> |
+| `quantity_value` | No | number | Ingredient quantity or concentration according to quantity_unit and quantity_basis. | Minimum: <code>0</code> |
+| `quantity_unit` | No | string | Unit, preferably a reviewed UCUM expression, for quantity_value. | Minimum length: <code>1</code> |
+| `quantity_basis` | No | string | Denominator and basis, such as per mL, per vial or total compound mass, needed to interpret the quantity. | Minimum length: <code>1</code> |
+| `function` | No | string | Formulation function such as stabilizer, buffer or targeting ingredient. | Minimum length: <code>1</code> |
+
+### Relationship properties
+
+| Property | Required | Type | Definition | Allowed values and constraints |
+| --- | --- | --- | --- | --- |
+| `projects` | Yes | array of object | Link to project records by code or UUID. | Minimum items: <code>1</code>; Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"code"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `provenance_records` | No | array of object | Link to provenance records by submitter_id or UUID. | Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `medicinal_products` | Yes | array of object | Link to medicinal_product records by submitter_id or UUID. | Minimum items: <code>1</code>; Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+| `molecular_entities` | Yes | array of object | Link to molecular_entity records by submitter_id or UUID. | Minimum items: <code>1</code>; Maximum items: <code>1</code>; Unique items: <code>true</code>; Each item: (Exactly one alternative: [1. Not explicitly typed; see schema constraints: required keys: <code>"submitter_id"</code> / 2. Not explicitly typed; see schema constraints: required keys: <code>"id"</code>]) |
+
+### System-managed properties
+
+| Property | Required | Type | Definition | Allowed values and constraints |
+| --- | --- | --- | --- | --- |
+| `id` | No | string | A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general. | Pattern: <code>"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"</code>; System alias: <code>"node_id"</code>; Source term: NCIt; C54100; Universally Unique Identifier |
+| `project_id` | No | string | Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement. | — |
+| `state` | No | exactly one of: string (enumerated); string (enumerated) | The current state of the object. | Default: <code>"validated"</code>; Exactly one alternative: [1. string (enumerated): Allowed values: <code>"uploading"</code>, <code>"uploaded"</code>, <code>"md5summing"</code>, <code>"md5summed"</code>, <code>"validating"</code>, <code>"error"</code>, <code>"invalid"</code>, <code>"suppressed"</code>, <code>"redacted"</code>, <code>"live"</code> / 2. string (enumerated): Allowed values: <code>"validated"</code>, <code>"submitted"</code>, <code>"released"</code>] |
+| `created_datetime` | No | exactly one of: string; null | A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z&#124;(+&#124;-)hh:mm] | Exactly one alternative: [1. string: Format: <code>"date-time"</code> / 2. null] |
+| `updated_datetime` | No | exactly one of: string; null | A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z&#124;(+&#124;-)hh:mm] | Exactly one alternative: [1. string: Format: <code>"date-time"</code> / 2. null] |
+
+## Synthetic examples
+
+[Read the synthetic product_ingredient records](../../extensions/lu177_psma/v0.4.0/examples/by_node/product_ingredient.json). These are structural demonstrations, not patient data or treatment recommendations.
+
+Generated from the committed node schema by `scripts/build_dictionary_docs.py`. Do not edit this generated page directly.

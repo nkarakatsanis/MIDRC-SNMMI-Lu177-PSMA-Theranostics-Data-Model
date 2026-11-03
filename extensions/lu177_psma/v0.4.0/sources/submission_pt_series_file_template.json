@@ -1,0 +1,36 @@
+
+
+{
+  "image_data_modified": null, 
+  "body_part_examined": null, 
+  "*data_type": null, 
+  "image_data_modification_name": null, 
+  "*type": "pt_series_file", 
+  "ct_images": null, 
+  "number_of_instances": null, 
+  "*submitter_id": null, 
+  "manufacturer_model_name": null, 
+  "*data_category": null, 
+  "image_data_modification_method": null, 
+  "lossy_image_compression": null, 
+  "object_id": null, 
+  "radiopharmaceutical": null, 
+  "core_metadata_collections": {
+    "submitter_id": null
+  }, 
+  "project_id": null, 
+  "*data_format": null, 
+  "*file_name": null, 
+  "series_uid": null, 
+  "case_ids": null, 
+  "imaging_studies": {
+    "submitter_id": null
+  }, 
+  "modality": null, 
+  "slice_thickness": null, 
+  "*file_size": null, 
+  "*md5sum": null, 
+  "manufacturer": null, 
+  "series_description": null, 
+  "urls": null
+}

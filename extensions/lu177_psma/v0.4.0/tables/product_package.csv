@@ -1,0 +1,40 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+product_package,type,True,False,Theranostics extension,enum,,
+product_package,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+product_package,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+product_package,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+product_package,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+product_package,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+product_package,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+product_package,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+product_package,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+product_package,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+product_package,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+product_package,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+product_package,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+product_package,package_name,True,False,Theranostics extension,string,Human-readable package presentation label.,
+product_package,container_type,True,False,Theranostics extension,string,"Immediate container type, such as vial or syringe.",nz_model:r92; nk_blueprint:r183
+product_package,container_material,False,False,Theranostics extension,string,Material of the immediate container.,nz_model:r93; nk_blueprint:r184
+product_package,closure_system,False,False,Theranostics extension,string,Closure specification.,nz_model:r94; nk_blueprint:r188
+product_package,shielding_configuration,False,False,Theranostics extension,string,Shielding specification and reference; not evidence that a specific unit was handled correctly.,nz_model:r95; nk_blueprint:r189
+product_package,nominal_fill_volume_ml,False,False,Theranostics extension,number,Nominal volume per immediate container in mL; actual fill is recorded on the unit.,nz_model:r96; nk_blueprint:r185
+product_package,headspace_description,False,False,Theranostics extension,string,Nominal headspace composition or specification.,nz_model:r98; nk_blueprint:r187
+product_package,secondary_packaging,False,False,Theranostics extension,string,Outer packaging specification.,nk_blueprint:r190
+product_package,base_quantity,False,False,Theranostics extension,number,Number or amount to which the package specification refers.,nz_model:r101
+product_package,base_unit,False,False,Theranostics extension,string,"Unit for base_quantity, separate from activity and concentration units.",nz_model:r102
+product_package,storage_temperature_min_c,False,False,Theranostics extension,number,Lower labeled storage temperature in degrees Celsius.,nz_model:r105
+product_package,storage_temperature_max_c,False,False,Theranostics extension,number,Upper labeled storage temperature in degrees Celsius.,nz_model:r105
+product_package,storage_conditions,False,False,Theranostics extension,string,"Versioned storage conditions, including at-rest and in-transit distinctions when supplied.",nz_model:r130; nk_blueprint:r195; nk_blueprint:r200; idrp_ontology:r69
+product_package,light_protection,False,False,Theranostics extension,string,Protection from light required by the source specification.,nz_model:r107
+product_package,transport_classification,False,False,Theranostics extension,string,Transport class and governing source/version; not an inferred legal classification.,nk_blueprint:r196; nk_blueprint:r199
+product_package,radiation_safety_label,False,False,Theranostics extension,string,Label specification or referenced instruction.,nz_model:r106; nk_blueprint:r193; nk_blueprint:r198
+product_package,expiry_reference_basis,False,False,Theranostics extension,string,"Time origin used for labeled shelf life, such as calibration or end of synthesis.",
+product_package,shelf_life_hours,False,False,Theranostics extension,number,Specified shelf life in hours under the stated conditions; not a universal product constant.,nz_model:r100; nk_blueprint:r40; nk_blueprint:r194
+product_package,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+product_package,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+product_package,medicinal_products,True,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,nz_model:r129; idrp_ontology:r62

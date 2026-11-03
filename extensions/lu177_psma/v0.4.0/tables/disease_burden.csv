@@ -1,0 +1,38 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+disease_burden,type,True,False,Theranostics extension,enum,,
+disease_burden,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+disease_burden,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+disease_burden,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+disease_burden,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+disease_burden,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+disease_burden,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+disease_burden,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+disease_burden,assessment_datetime,False,False,Theranostics extension,string,ISO 8601 assessment datetime; use approved date shifting consistently within the case.,
+disease_burden,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+disease_burden,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+disease_burden,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+disease_burden,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+disease_burden,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+disease_burden,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+disease_burden,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+disease_burden,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+disease_burden,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+disease_burden,cases,True,False,Theranostics extension,array,References to case records.,
+disease_burden,imaging_studies,True,False,Theranostics extension,array,References to imaging_study records.,
+disease_burden,included_targets,False,False,Theranostics extension,array,References to anatomic_target records.,
+disease_burden,provenance_records,False,False,Theranostics extension,array,References to provenance records.,
+disease_burden,scope,True,False,Theranostics extension,string,Anatomic coverage of the summary. Whole-body PTLV must not be substituted by a single index-lesion volume.,
+disease_burden,total_psma_positive_tumor_volume_ml,True,False,Theranostics extension,number,Total segmented PSMA-positive tumor volume in the stated scope at this examination.,marios_outcome_content:r56; marios_outcome_content:r57; outcome_revision:r56; outcome_revision:r57; outcomes_paper:supplement1:r20; outcomes_paper:supplement1:r21; outcomes_paper:supplement2:r10
+disease_burden,method,True,False,Theranostics extension,string,Imaging-burden method.,
+disease_burden,software_version,False,False,Theranostics extension,string,Imaging-burden software version.,
+disease_burden,coverage_description,False,False,Theranostics extension,string,Imaging-burden coverage description.,
+disease_burden,exclusions,False,False,Theranostics extension,string,Imaging-burden exclusions.,
+disease_burden,compartment,False,False,Theranostics extension,string,Imaging-burden compartment.,
+disease_burden,lesion_count,False,False,Theranostics extension,integer,Number of included PSMA-positive lesions.,
+disease_burden,assessment_role,False,False,Theranostics extension,string,"Baseline, interim, end-of-treatment or follow-up scan role.",
+disease_burden,roi_measurements,False,False,Theranostics extension,compound,,

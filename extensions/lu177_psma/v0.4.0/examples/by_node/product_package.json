@@ -1,0 +1,49 @@
+[
+  {
+    "type": "product_package",
+    "submitter_id": "RP-PACKAGE",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "package_name": "Invented vial specification",
+    "container_type": "vial",
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ],
+    "nominal_fill_volume_ml": 10.0
+  },
+  {
+    "type": "product_package",
+    "submitter_id": "RP-OUTER",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "package_name": "Invented outer package specification",
+    "container_type": "outer package",
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ]
+  }
+]

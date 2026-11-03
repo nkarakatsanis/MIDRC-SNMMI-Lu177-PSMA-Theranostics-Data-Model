@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "release": "0.4.0",
+  "documents": [
+    {
+      "file": "NMMI_Lu177_PSMA_Architecture_and_Status_v0.4.0.docx",
+      "sha256": "58aa1514de5e5f5a7fc9726e00d7876584a8d92709e9f3896caaf00ae5970b6b",
+      "rendered_pages": 21,
+      "authors_and_version": "PASS",
+      "visual_review": "Rendered pages inspected; tables, figure/caption placement and footer pagination checked."
+    },
+    {
+      "file": "Lu177_PSMA_v0.4.0_Scientific_Data_Manuscript.docx",
+      "sha256": "f05e54631731648dabe9f4917c28b06947e73b886eb04ba686c076c2e04fd894",
+      "rendered_pages": 15,
+      "authors_and_version": "PASS",
+      "visual_review": "Rendered pages inspected; tables, figure/caption placement and footer pagination checked."
+    },
+    {
+      "file": "Lu177_PSMA_v0.4.0_Supplementary_Information.docx",
+      "sha256": "756290f3ffeeded5d3020f41082a4721f14a60b8456dfd8b053e7f98f6299f01",
+      "rendered_pages": 8,
+      "authors_and_version": "PASS",
+      "visual_review": "Rendered pages inspected; tables, figure/caption placement and footer pagination checked."
+    },
+    {
+      "file": "Lu177_PSMA_v0.4.0_Submission_Notes.docx",
+      "sha256": "88fd02a24509f3801a60568642790a60366294da46ede468b2f6e44e7cd82d88",
+      "rendered_pages": 4,
+      "authors_and_version": "PASS",
+      "visual_review": "Rendered pages inspected; tables, figure/caption placement and footer pagination checked."
+    }
+  ],
+  "workbooks": [
+    {
+      "file": "Radiopharmaceutical_Revisions_and_Rationale_v0.4.0.xlsx",
+      "sha256": "5f0143ae4aa2929615a67353987e1cdffe14fbf52c9479c0707527590854150c",
+      "sheets": [
+        "Read me",
+        "Revision themes",
+        "Nouran row review",
+        "Blueprint crosswalk",
+        "IDRP passages",
+        "Open decisions",
+        "Sources"
+      ],
+      "cell_errors": 0,
+      "visual_review": "Representative ranges on every worksheet rendered and inspected."
+    },
+    {
+      "file": "Radiopharmaceutical_Data_Model_v0.4.0.xlsx",
+      "sha256": "9e3f183b05bb671133b5780a41f228d31107a1bd8e7551e8b4fc2402679391c3",
+      "sheets": [
+        "Read me",
+        "Nodes",
+        "Elements",
+        "Links",
+        "Profiles",
+        "Common metadata"
+      ],
+      "cell_errors": 0,
+      "visual_review": "Representative ranges on every worksheet rendered and inspected."
+    }
+  ]
+}

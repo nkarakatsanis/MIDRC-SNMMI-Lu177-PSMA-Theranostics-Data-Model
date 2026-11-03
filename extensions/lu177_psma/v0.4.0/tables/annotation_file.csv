@@ -1,0 +1,62 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+annotation_file,annotation_long_name,False,False,MIDRC unchanged,string,The long name of the annotation provides more information about the specific annotation.,
+annotation_file,annotation_method,False,False,MIDRC unchanged,enum,Defines the method by which the annotation was created. Clinically_derived - Based on information produced in the process of the subject's medical care; Retrospective_expert - Based on information produced retrospective to the subject's care by annotators with relevant special clinical expertise; Retrospective_general - Based on information produced retrospective to the subject's care by annotators without relevant special clinical expertise; Retrospective_auto - Based on information produced retrospective to the subject's care using automated means.,
+annotation_file,annotation_name,True,False,MIDRC unchanged,enum,"The name of the annotation. These names are unique and assigned by MIDRC. Annotation names reference a document posted on the MIDRC website describing the annotation, methods and values expected.  All MIDRC created annotations start with ""midrc_"".
+",
+annotation_file,annotator_id,False,False,MIDRC unchanged,string,Coded value to represent a particular annotator in a group. These need only be unique per annotation.,
+annotation_file,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+annotation_file,cases,False,False,MIDRC unchanged,compound,"The submitter_id or id of the case this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,core_metadata_collections,False,False,MIDRC unchanged,compound,"The submitter_id or id of the core_metadata_collection to which the rf_series_file belongs, i.e., a link to a record in the parent node.",
+annotation_file,cr_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the CR imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+annotation_file,ct_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the CT imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,data_category,True,False,MIDRC unchanged,enum,"The category of the file; must be ""annotation_file"".",
+annotation_file,data_format,True,False,MIDRC unchanged,enum,"The file format of the annotation file, e.g., JSON.",
+annotation_file,data_type,True,False,MIDRC unchanged,enum,An indication of whether the annotation is expert validated by MIDRC (“Internal Annotation”) or has not been validated by MIDRC experts (“External Annotation”).,
+annotation_file,datasets,False,False,MIDRC unchanged,compound,"The submitter_id or id of the dataset this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,dx_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the DX imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,error_type,False,True,MIDRC unchanged,enum,"Type of error for the data file object.
+",
+annotation_file,file_name,True,False,MIDRC unchanged,string,"The name (or part of a name) of a file (of any type).
+",
+annotation_file,file_size,True,False,MIDRC unchanged,integer,"The size of the data file (object) in bytes.
+",
+annotation_file,file_state,False,True,MIDRC unchanged,enum,"The current state of the data file object.
+",
+annotation_file,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+annotation_file,imaging_studies,False,False,MIDRC unchanged,compound,"The submitter_id or id of the imaging_study this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,instance_uids,False,False,MIDRC unchanged,array,"Used to denote that this annotation applies only to specific images (image instances) in a series.  If absent, an annotation that references an imaging series node applies to the entire imaging series.",
+annotation_file,md5sum,True,False,MIDRC unchanged,string,"The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital fingerprint.
+",
+annotation_file,mg_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the MG imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,mr_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the MR imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,nm_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the NM imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,object_id,False,False,MIDRC unchanged,string,The GUID of the object in the index service.,lu_177_psma_data_model:r244; atlas_data_elements:r35; atlas_data_elements:r37; atlas_data_elements:r39
+annotation_file,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+annotation_file,pt_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the PT imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,rf_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the RF imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,software_versions,False,False,MIDRC unchanged,string,"(0018,1020) Software Versions. This is the software version of the application where the annotation series was created.",
+annotation_file,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+annotation_file,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+annotation_file,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+annotation_file,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+annotation_file,us_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the US imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,xa_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the XA imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation_file,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+annotation_file,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+annotation_file,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+annotation_file,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+annotation_file,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+annotation_file,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+annotation_file,sha256,False,False,Theranostics extension,string,SHA-256 checksum of the immutable artifact.,
+annotation_file,format_version,False,False,Theranostics extension,string,"Format or standard release, including PETSIRD version where relevant.",
+annotation_file,deidentification_profile,False,False,Theranostics extension,string,Profile used to de-identify file contents and metadata.,
+annotation_file,dicom_structure_set_roi_sequence_reference,False,False,Theranostics extension,string,ROI definitions,dcm_nicolas:r46
+annotation_file,dicom_contour_data_reference,False,False,Theranostics extension,string,ROI contours,dcm_nicolas:r47
+annotation_file,theranostics_file_role,False,False,Theranostics extension,string,Role of this existing MIDRC file object in the theranostics workflow.,
+annotation_file,provenance_records,False,False,Theranostics extension,compound,,

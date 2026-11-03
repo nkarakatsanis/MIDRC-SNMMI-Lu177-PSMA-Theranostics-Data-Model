@@ -1,0 +1,48 @@
+{
+  "version": "0.3.0-proposal",
+  "retired_nodes": {
+    "image_file": [
+      "pt_series_file",
+      "nm_series_file",
+      "ct_series_file",
+      "mr_series_file"
+    ],
+    "imaging_series": [
+      "pt_series_file",
+      "nm_series_file",
+      "ct_series_file",
+      "mr_series_file"
+    ],
+    "laboratory_result": [
+      "measurement"
+    ],
+    "roi_measurement": [
+      "measurement"
+    ],
+    "anthropometric_assessment": [
+      "measurement"
+    ],
+    "lifestyle_assessment": [
+      "observation"
+    ],
+    "segmentation": [
+      "annotation"
+    ],
+    "segmentation_file": [
+      "dicom_annotation_file",
+      "annotation_file"
+    ],
+    "dose_map_file": [
+      "dicom_annotation_file",
+      "supplementary_file"
+    ],
+    "raw_imaging_file": [
+      "supplementary_file"
+    ],
+    "clinical_document_file": [
+      "supplementary_file",
+      "radiology_report"
+    ]
+  },
+  "policy": "No retired v0.2 node is included in the current dictionary. A source series UID can occur in multiple file packages; do not collapse distinct objects by UID alone."
+}

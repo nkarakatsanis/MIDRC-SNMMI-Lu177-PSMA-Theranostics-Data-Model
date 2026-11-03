@@ -1,0 +1,69 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+annotation,airspace_disease_grading,False,False,MIDRC unchanged,enum,"Values are extracted from the annotation file midrc_mdai_chestxr. Accepted values are ""mild"" opacities (1-2 lung zones), ""moderate"" opacities (3-4 lung zones), and ""severe"" opacities (>4 lung zones).",
+annotation,annotation_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the annotation_file this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,annotation_long_name,False,False,MIDRC unchanged,string,The long name of the annotation provides more information about the specific annotation.,lu_177_psma_data_model:r183
+annotation,annotation_method,False,False,MIDRC unchanged,enum,Defines the method by which the annotation was created. Clinically_derived - Based on information produced in the process of the subject's medical care; Retrospective_expert - Based on information produced retrospective to the subject's care by annotators with relevant special clinical expertise; Retrospective_general - Based on information produced retrospective to the subject's care by annotators without relevant special clinical expertise; Retrospective_auto - Based on information produced retrospective to the subject's care using automated means.,
+annotation,annotation_name,False,False,MIDRC unchanged,enum,"The name of the annotation. These names are unique and assigned by MIDRC. Annotation names reference a document posted on the MIDRC website describing the annotation, methods and values expected.  All MIDRC created annotations start with ""midrc_"".
+",
+annotation,annotator_id,False,False,MIDRC unchanged,string,Coded value to represent a particular annotator in a group. These need only be unique per annotation.,
+annotation,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+annotation,cases,False,False,MIDRC unchanged,compound,"The submitter_id or id of the case this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,class_covid19_pneumonia,False,False,MIDRC unchanged,enum,"Values are extracted from the annotation file midrc_mdai_chestxr; Accepted values include ""typical"" appearance, which is multifocal bilateral, peripheral opacities, or opacities with rounded morphology, lower lung-predominant distribution;  ""indeterminate"" appearance, which is absence of typical findings and unilateral, central or upper lung predominant distribution of airspace disease; ""atypical"" appearance, which is pneumothorax or pleural effusion, pulmonary edema, lobar consolidation, solitary lung nodule, or mass diffuse tiny nodules cavity; ""negative"" for pneumonia, which is no lung opacities.",
+annotation,cr_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the CR imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+annotation,ct_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the CT imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,datasets,False,False,MIDRC unchanged,compound,"The submitter_id or id of the case this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,dicom_annotation_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the dicom_annotation_file this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,dx_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the DX imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+annotation,imaging_studies,False,False,MIDRC unchanged,compound,"The submitter_id or id of the imaging_study this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,instance_uids,False,False,MIDRC unchanged,array,"Used to denote that this annotation applies only to specific images (image instances) in a series.  If absent, an annotation that references an imaging series node applies to the entire imaging series.",
+annotation,mg_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the MG imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,midrc_mRALE_score,False,False,MIDRC unchanged,integer,"Values are extracted from the annotation file mRALE_Mastermind_Challenge. The Radiographic Assessment of Lung Edema (RALE) score is provided as a reference standard assessment of disease severity on chest radiograph.  A normal chest radiograph receives a score of 0, while a chest radiograph with complete consolidation of both lungs receives the maximum score of 24.",
+annotation,mr_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the MR imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,nm_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the NM imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+annotation,pt_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the PT imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,rf_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the RF imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,sift_image_quality_index,False,False,MIDRC unchanged,enum,A score of image quality based on the SIFT annotation software.,
+annotation,software_version,False,False,MIDRC unchanged,string,"(0018, 1020) Software Version(s). The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+annotation,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+annotation,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+annotation,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+annotation,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+annotation,us_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the US imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,xa_series_files,False,False,MIDRC unchanged,compound,"The submitter_id or id of the XA imaging series this annotation relates to, i.e., a link to a record in the parent node.",
+annotation,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+annotation,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+annotation,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+annotation,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+annotation,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+annotation,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+annotation,segmentation_identifier,False,False,Theranostics extension,string,"Contour identifier for this particular target, image and method.",lu_177_psma_data_model:r194
+annotation,segmentation_method,False,False,Theranostics extension,string,Segmentation method.,lu_177_psma_data_model:r185; nk_blueprint:r121
+annotation,software_name,False,False,Theranostics extension,string,Segmentation software name.,
+annotation,parameters,False,False,Theranostics extension,string,Segmentation parameters.,lu_177_psma_data_model:r188
+annotation,frame_of_reference_uid,False,False,Theranostics extension,string,Segmentation frame of reference uid.,
+annotation,roi_image_uid,False,False,Theranostics extension,string,Unique identifier of the image on which the ROI was defined and measured.,lu_177_psma_data_model:r179
+annotation,roi_segmentation_imaging_modality,False,False,Theranostics extension,string,The imaging modality used for contouring the ROI. ,lu_177_psma_data_model:r184
+annotation,roi_segmentation_method_absolute_threshold_value,False,False,Theranostics extension,string,Provisional field for ROI_Segmentation_Method_Absolute_Threshold_Value; operational definition requires review.,lu_177_psma_data_model:r186
+annotation,segmentation_method_description,False,False,Theranostics extension,string,"A description of the segmentation method, particularly for those that fit in the ""Other"" category. ",lu_177_psma_data_model:r187
+annotation,roi_segmentation_method_ratio_reference_region,False,False,Theranostics extension,string,Provisional field for ROI_Segmentation_Method_Ratio_Reference_Region; operational definition requires review.,lu_177_psma_data_model:r189
+annotation,roi_segmentation_method_ratio_threshold_value,False,False,Theranostics extension,string,Provisional field for ROI_Segmentation_Method_Ratio_Threshold_Value; operational definition requires review.,lu_177_psma_data_model:r190
+annotation,roi_segmentation_method_relative_threshold_value,False,False,Theranostics extension,string,Provisional field for ROI_Segmentation_Method_Relative_Threshold_Value; operational definition requires review.,lu_177_psma_data_model:r191
+annotation,roi_segmentation_modality_coregistration_method,False,False,Theranostics extension,string,The method used to coregister the imaging modalities used during ROI segmentation.,lu_177_psma_data_model:r192
+annotation,roi_segmentation_modality_coregistration_method_name,False,False,Theranostics extension,string,A free-text description of the method used to coregister the imaging modalities used during ROI segmentation.,lu_177_psma_data_model:r193
+annotation,anatomic_targets,False,False,Theranostics extension,compound,,
+annotation,registrations,False,False,Theranostics extension,compound,,
+annotation,provenance_records,False,False,Theranostics extension,compound,,
+annotation,annotation_profile,False,False,Theranostics extension,string,Theranostics annotation profile.,
+annotation,anatomic_reference_pt_series_files,False,False,Theranostics extension,compound,,
+annotation,anatomic_reference_nm_series_files,False,False,Theranostics extension,compound,,
+annotation,anatomic_reference_ct_series_files,False,False,Theranostics extension,compound,,
+annotation,anatomic_reference_mr_series_files,False,False,Theranostics extension,compound,,

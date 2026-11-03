@@ -1,0 +1,24 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+anatomic_target,type,True,False,Theranostics extension,enum,,
+anatomic_target,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+anatomic_target,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+anatomic_target,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+anatomic_target,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+anatomic_target,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+anatomic_target,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+anatomic_target,cases,True,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+anatomic_target,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+anatomic_target,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+anatomic_target,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+anatomic_target,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+anatomic_target,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+anatomic_target,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+anatomic_target,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+anatomic_target,target_identifier,True,False,Theranostics extension,string,Persistent lesion or organ identifier across all observations.,lu_177_psma_data_model:r196
+anatomic_target,target_type,True,False,Theranostics extension,string,Type of tracked target.,lu_177_psma_data_model:r180
+anatomic_target,anatomic_location,False,False,Theranostics extension,string,"Anatomic site, laterality and localization.",lu_177_psma_data_model:r178; nk_blueprint:r110; nk_blueprint:r111; nk_blueprint:r128; nk_blueprint:r129

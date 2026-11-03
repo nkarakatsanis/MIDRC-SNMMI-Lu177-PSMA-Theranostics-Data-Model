@@ -1,0 +1,51 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+dosimetry,type,True,False,Theranostics extension,enum,,
+dosimetry,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r122
+dosimetry,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+dosimetry,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+dosimetry,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+dosimetry,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+dosimetry,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+dosimetry,therapy_cycles,True,False,Theranostics extension,array,Link to therapy_cycle records by submitter_id or UUID.,
+dosimetry,administrations,False,False,Theranostics extension,array,Link to administration records by submitter_id or UUID.,
+dosimetry,time_activity_curves,False,False,Theranostics extension,array,Link to time_activity_curve records by submitter_id or UUID.,
+dosimetry,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+dosimetry,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+dosimetry,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+dosimetry,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+dosimetry,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+dosimetry,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+dosimetry,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+dosimetry,method,False,False,Theranostics extension,string,Dosimetry method.,outcome_revision:r101; nk_blueprint:r124
+dosimetry,software_name,False,False,Theranostics extension,string,Dosimetry software name.,nk_blueprint:r152
+dosimetry,software_version,False,False,Theranostics extension,string,Dosimetry software version.,
+dosimetry,mass_model,False,False,Theranostics extension,string,Dosimetry mass model.,nk_blueprint:r151
+dosimetry,model_assumptions,False,False,Theranostics extension,string,Dosimetry model assumptions.,nk_blueprint:r123; nk_blueprint:r150
+dosimetry,uncertainty_method,False,False,Theranostics extension,string,Dosimetry uncertainty method.,
+dosimetry,calculation_datetime,False,False,Theranostics extension,string,Calculation timestamp.,
+dosimetry,dosimetry_ad_calculation_granularity,False,False,Theranostics extension,integer,"Specifies the level of detail for dosimetry computation, such as voxel-based or organ-based.",lu_177_psma_data_model:r166
+dosimetry,dosimetry_ad_calculation_method,False,False,Theranostics extension,integer,The class of computational method used to calculate absorbed dose to regions of interest.,lu_177_psma_data_model:r167
+dosimetry,dosimetry_ad_tiac_fitting_method_for_roi,False,False,Theranostics extension,integer,The type of curve fitting that is applied to calculate the time-integrated activity curve for a given ROI.,lu_177_psma_data_model:r168
+dosimetry,dosimetry_software,False,False,Theranostics extension,string,The software or library used to calculate absorbed dose values for dosimetry.,lu_177_psma_data_model:r169
+dosimetry,dosimetry_software_version,False,False,Theranostics extension,string,The version of the software or library used to calculate absorbed dose values for dosimetry.,lu_177_psma_data_model:r170
+dosimetry,dosimetry_imaging_modality,False,False,Theranostics extension,integer,"Imaging modality used for dosimetry (e.g., SPECT/CT, scintigraphy).",lu_177_psma_data_model:r173
+dosimetry,dosimetry_performed,False,False,Theranostics extension,boolean,Indicates if dosimetry calculations were performed for this patient.,lu_177_psma_data_model:r174
+dosimetry,dosimetry_timepoints,False,False,Theranostics extension,string,Timepoints post-injection when dosimetry imaging was acquired.,lu_177_psma_data_model:r175
+dosimetry,equivalent_dose,False,False,Theranostics extension,string,Accounts for the different biological effects of various types of radiation. Measured in sieverts (Sv) or rem,atlas_data_elements:r14
+dosimetry,effective_dose,False,False,Theranostics extension,string,"Considers the radiation sensitivity of different tissues and organs, providing an overall risk estimate. Measured in sieverts (Sv).",atlas_data_elements:r15
+dosimetry,kerma,False,False,Theranostics extension,string,Kinetic energy released in matter per unit mass. Measured in grays (Gy),atlas_data_elements:r16
+dosimetry,acquisitions,False,False,Theranostics extension,array,References to acquisition records.,
+dosimetry,pt_series_files,False,False,Theranostics extension,compound,,
+dosimetry,nm_series_files,False,False,Theranostics extension,compound,,
+dosimetry,ct_series_files,False,False,Theranostics extension,compound,,
+dosimetry,mr_series_files,False,False,Theranostics extension,compound,,
+dosimetry,annotations,False,False,Theranostics extension,compound,,
+dosimetry,dose_maps,False,False,Theranostics extension,compound,,nk_blueprint:r131
+dosimetry,non_dicom_dose_maps,False,False,Theranostics extension,compound,,
+dosimetry,evidence_completeness,False,False,Theranostics extension,string,Declared completeness of acquisition and contour provenance for this calculation run.,
+dosimetry,missing_evidence_reason,False,False,Theranostics extension,string,Reason acquisition or contour provenance is incomplete; never infer missing evidence from a different cycle.,

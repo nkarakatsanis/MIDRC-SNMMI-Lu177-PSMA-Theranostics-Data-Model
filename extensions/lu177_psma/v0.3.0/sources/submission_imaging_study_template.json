@@ -1,0 +1,29 @@
+{
+  "body_part_examined": null, 
+  "image_data_modified": null, 
+  "*submitter_id": null, 
+  "loinc_contrast": null, 
+  "loinc_method": null, 
+  "days_to_study": null, 
+  "days_from_study_to_neg_covid_test": null, 
+  "days_from_study_to_pos_covid_test": null, 
+  "*cases": {
+    "submitter_id": null
+  }, 
+  "age_at_imaging": null, 
+  "study_modality": null, 
+  "project_id": null, 
+  "study_uid": null, 
+  "*datasets": {
+    "submitter_id": null
+  }, 
+  "study_year": null, 
+  "loinc_code": null, 
+  "case_ids": null, 
+  "age_at_imaging_gt89": null, 
+  "study_description": null, 
+  "loinc_system": null, 
+  "study_year_shifted": null, 
+  "*type": "imaging_study", 
+  "loinc_long_common_name": null
+}

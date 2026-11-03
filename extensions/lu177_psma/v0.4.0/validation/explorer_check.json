@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "release": "0.4.0",
+  "method": "jsdom navigation, filtering, record inspection and download event checks; SVG visual review",
+  "checks": {
+    "nodes": 90,
+    "views": 12,
+    "rp_graph_nodes": 12,
+    "source_count": "100 shown of 450 matching source-field occurrences",
+    "prediction_opened": true,
+    "downloads": [
+      "model_prediction.schema.json",
+      "model_prediction.template.json"
+    ],
+    "errors": []
+  },
+  "browser_runtime_tested": false,
+  "limits": "No full browser runtime or deployed Gen3 portal was tested."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "release": "0.4.0",
+  "schemas": 90,
+  "templates": 90,
+  "property_tables": 90,
+  "json_yaml_equal": 90,
+  "graph_nodes": 90,
+  "graph_edges": 412,
+  "graph_views": 12,
+  "source_occurrences": 1371,
+  "new_source_occurrences": 450,
+  "source_passages_preserved": 23,
+  "broken_current_documentation_links": [],
+  "historical_model_unchanged": true,
+  "baseline_checksum_preserved": true,
+  "aggregate_property_exports_checked": 3212
+}

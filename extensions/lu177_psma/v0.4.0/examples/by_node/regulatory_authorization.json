@@ -1,0 +1,29 @@
+[
+  {
+    "type": "regulatory_authorization",
+    "submitter_id": "RP-REGULATORY",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ],
+    "application_type": "Synthetic workflow example",
+    "authority": "SYNTHETIC authority",
+    "jurisdiction": "SYNTHETIC",
+    "status": "No real authorization asserted",
+    "status_date": "2025-12-01",
+    "source_citation": "Invented structural fixture; not an approved product or application."
+  }
+]

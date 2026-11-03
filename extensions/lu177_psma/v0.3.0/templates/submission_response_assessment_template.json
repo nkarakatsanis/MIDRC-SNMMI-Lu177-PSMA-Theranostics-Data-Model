@@ -1,0 +1,172 @@
+{
+  "*type": "response_assessment",
+  "*submitter_id": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "baseline_imaging_studies": {
+    "submitter_id": null
+  },
+  "followup_imaging_studies": {
+    "submitter_id": null
+  },
+  "dose_summaries": {
+    "submitter_id": null
+  },
+  "timepoints": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "*criteria_name": null,
+  "criteria_version": null,
+  "assessment_scope": null,
+  "baseline_definition": null,
+  "result_category": null,
+  "baseline_date": null,
+  "confirmation_date": null,
+  "clinical_progression_date": null,
+  "date_of_best_psa_response": null,
+  "date_of_radiographic_progression": null,
+  "date_of_radiographic_response_assessment": null,
+  "radiographic_response_assessment": null,
+  "imaging_response_assessment_criteria": null,
+  "psa_baseline_definition": null,
+  "psa_baseline_date": null,
+  "psa_response_category": null,
+  "psa_progression_confirmation": null,
+  "radiographic_response_criteria": null,
+  "radiographic_response_overall": null,
+  "psa_nadir_date": null,
+  "psa_response_50_confirmed": null,
+  "psa_response_50_date": null,
+  "psa_best_response_percent": null,
+  "psa_early_rise_pre12w": null,
+  "psa_progression_pcwg3_documented": null,
+  "psa_progression_pcwg3_date": null,
+  "psa_progression_pcwg3_confirmed_date": null,
+  "psa_progression_criteria_used": null,
+  "imaging_response_criteria_used": null,
+  "imaging_overall_response": null,
+  "imaging_overall_response_date": null,
+  "imaging_progression_type": null,
+  "imaging_progression_site": null,
+  "imaging_progression_date": null,
+  "soft_tissue_response_recist": null,
+  "nodal_progression_pcwg3": null,
+  "nodal_progression_date": null,
+  "nodal_progression_location": null,
+  "visceral_progression_pcwg3": null,
+  "visceral_progression_date": null,
+  "visceral_progression_site": null,
+  "bone_progression_pcwg3": null,
+  "bone_progression_date": null,
+  "bone_progression_confirmed_date": null,
+  "bone_scan_flare": null,
+  "bone_progression_criteria_used": null,
+  "mixed_response": null,
+  "mixed_response_sites": null,
+  "overall_treatment_response_category": null,
+  "psa_imaging_concordance": null,
+  "recip_response": null,
+  "recip_response_date": null,
+  "psma_pet_response_date": null,
+  "psma_pet_progression_date": null,
+  "psma_expression_change_percent": null,
+  "new_psma_avid_lesions_posttreatment": null,
+  "alp_response_normalization": null,
+  "alp_response_date": null,
+  "alp_best_response_percent": null,
+  "ldh_response_normalization": null,
+  "ldh_best_response_percent": null,
+  "hemoglobin_nadir_value": null,
+  "hemoglobin_nadir_date": null,
+  "ctc_conversion_favorable": null,
+  "testosterone_response": null,
+  "fdg_pet_positivity": null,
+  "invovled_organ_systems": null,
+  "mri_pirads": null,
+  "bone_scan": null,
+  "oligometastasis": null,
+  "widespread_metastasis": null,
+  "superscan": null,
+  "baseline_burdens": {
+    "submitter_id": null
+  },
+  "followup_burdens": {
+    "submitter_id": null
+  },
+  "anatomic_targets": {
+    "submitter_id": null
+  },
+  "absorbed_doses": {
+    "submitter_id": null
+  },
+  "baseline_pros": {
+    "submitter_id": null
+  },
+  "followup_pros": {
+    "submitter_id": null
+  },
+  "confirmation_pros": {
+    "submitter_id": null
+  },
+  "clinical_assessments": {
+    "submitter_id": null
+  },
+  "biomarker_assessments": {
+    "submitter_id": null
+  },
+  "clinical_events": {
+    "submitter_id": null
+  },
+  "criteria_reference": null,
+  "criteria_release": null,
+  "criteria_rule_text": null,
+  "criteria_rule_status": null,
+  "new_lesion_compartment": null,
+  "psa_rise_retrospective_interpretation": null,
+  "composite_algorithm_name": null,
+  "composite_algorithm_version": null,
+  "psa_best_response_selection_rule": null,
+  "confirmation_status": null,
+  "psma_pet_pcwg4_progression_documented": null,
+  "imaging_progression_modality": null,
+  "recip_category": null,
+  "ptlv_change_percent": null,
+  "psa_followup_value": null,
+  "psa_change_percent": null,
+  "psa_subsequent_decline_documented": null,
+  "retrospective_interpretation_date": null,
+  "sse_occurred": null,
+  "pain_response": null,
+  "pain_response_date": null,
+  "laboratory_measurements": {
+    "submitter_id": null
+  },
+  "roi_measurements": {
+    "submitter_id": null
+  },
+  "baseline_psa_results": {
+    "submitter_id": null
+  },
+  "nadir_psa_results": {
+    "submitter_id": null
+  },
+  "confirmatory_psa_results": {
+    "submitter_id": null
+  }
+}

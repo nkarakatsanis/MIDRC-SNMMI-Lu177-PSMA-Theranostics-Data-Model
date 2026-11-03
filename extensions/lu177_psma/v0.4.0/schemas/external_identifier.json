@@ -1,0 +1,754 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "external_identifier",
+  "title": "External Identifier",
+  "type": "object",
+  "namespace": "urn:nmmi:lu177-psma:model",
+  "category": "administrative",
+  "program": "*",
+  "project": "*",
+  "description": "One reviewed external identifier assignment to one explicitly typed entity; schema-level ontology mappings remain semantic_mapping records.",
+  "additionalProperties": false,
+  "submittable": true,
+  "validators": null,
+  "links": [
+    {
+      "name": "projects",
+      "backref": "nmmi_external_identifier_projects",
+      "label": "member_of",
+      "target_type": "project",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "name": "provenance_records",
+      "backref": "nmmi_external_identifier_provenance_records",
+      "label": "documented_by",
+      "target_type": "provenance",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "subgroup": [
+        {
+          "name": "radiopharmaceuticals",
+          "backref": "nmmi_external_identifier_radiopharmaceuticals",
+          "label": "identifies",
+          "target_type": "radiopharmaceutical",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "radionuclides",
+          "backref": "nmmi_external_identifier_radionuclides",
+          "label": "identifies",
+          "target_type": "radionuclide",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "molecular_entities",
+          "backref": "nmmi_external_identifier_molecular_entities",
+          "label": "identifies",
+          "target_type": "molecular_entity",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "biological_targets",
+          "backref": "nmmi_external_identifier_biological_targets",
+          "label": "identifies",
+          "target_type": "biological_target",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "medicinal_products",
+          "backref": "nmmi_external_identifier_medicinal_products",
+          "label": "identifies",
+          "target_type": "medicinal_product",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "product_packages",
+          "backref": "nmmi_external_identifier_product_packages",
+          "label": "identifies",
+          "target_type": "product_package",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "regulatory_authorizations",
+          "backref": "nmmi_external_identifier_regulatory_authorizations",
+          "label": "identifies",
+          "target_type": "regulatory_authorization",
+          "multiplicity": "many_to_one",
+          "required": false
+        },
+        {
+          "name": "reference_evidence",
+          "backref": "nmmi_external_identifier_reference_evidence",
+          "label": "identifies",
+          "target_type": "reference_evidence",
+          "multiplicity": "many_to_one",
+          "required": false
+        }
+      ],
+      "required": true,
+      "exclusive": true
+    }
+  ],
+  "required": [
+    "type",
+    "submitter_id",
+    "identifier",
+    "identifier_system",
+    "identifier_level",
+    "mapping_relation",
+    "review_status",
+    "source_citation",
+    "projects"
+  ],
+  "uniqueKeys": [
+    [
+      "id"
+    ],
+    [
+      "project_id",
+      "submitter_id"
+    ]
+  ],
+  "systemProperties": [
+    "id",
+    "project_id",
+    "state",
+    "created_datetime",
+    "updated_datetime"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "external_identifier"
+      ]
+    },
+    "submitter_id": {
+      "type": "string",
+      "description": "Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+      "minLength": 1
+    },
+    "id": {
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "systemAlias": "node_id",
+      "term": {
+        "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+        "termDef": {
+          "cde_id": "C54100",
+          "cde_version": null,
+          "source": "NCIt",
+          "term": "Universally Unique Identifier",
+          "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+        }
+      },
+      "type": "string"
+    },
+    "project_id": {
+      "term": {
+        "description": "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+      },
+      "type": "string"
+    },
+    "state": {
+      "default": "validated",
+      "downloadable": [
+        "uploaded",
+        "md5summed",
+        "validating",
+        "validated",
+        "error",
+        "invalid",
+        "released"
+      ],
+      "oneOf": [
+        {
+          "enum": [
+            "uploading",
+            "uploaded",
+            "md5summing",
+            "md5summed",
+            "validating",
+            "error",
+            "invalid",
+            "suppressed",
+            "redacted",
+            "live"
+          ]
+        },
+        {
+          "enum": [
+            "validated",
+            "submitted",
+            "released"
+          ]
+        }
+      ],
+      "public": [
+        "live"
+      ],
+      "term": {
+        "description": "The current state of the object.\n"
+      }
+    },
+    "created_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "updated_datetime": {
+      "oneOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "term": {
+        "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+      }
+    },
+    "model_version": {
+      "type": "string",
+      "description": "Version of the submitting theranostics extension, independently of the MIDRC baseline version."
+    },
+    "record_status": {
+      "type": "string",
+      "description": "Record curation state, independent of clinical value.",
+      "enum": [
+        "draft",
+        "reviewed",
+        "approved",
+        "superseded",
+        "withdrawn"
+      ]
+    },
+    "source_record_id": {
+      "type": "string",
+      "description": "Identifier of the originating source record; use an approved pseudonym when needed."
+    },
+    "source_system": {
+      "type": "string",
+      "description": "Source system or data provider."
+    },
+    "missing_properties": {
+      "type": "array",
+      "description": "Names of properties missing from this record; no missing value is encoded as zero.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_reasons": {
+      "type": "array",
+      "description": "Reasons corresponding by index to missing_properties.",
+      "items": {
+        "enum": [
+          "unknown",
+          "not_collected",
+          "not_applicable",
+          "not_available",
+          "withheld",
+          "pending"
+        ]
+      }
+    },
+    "identifier": {
+      "description": "Exact external code as a string, preserving leading zeros, hyphens and case where significant.",
+      "type": "string",
+      "minLength": 1
+    },
+    "identifier_system": {
+      "description": "Identifier authority or scheme, such as RxNorm, UNII, CAS, NDC, MPID, PhPID, PubChem, DOI or PMID.",
+      "type": "string",
+      "minLength": 1
+    },
+    "identifier_system_version": {
+      "description": "Release or version of the identifier system.",
+      "type": "string",
+      "minLength": 1
+    },
+    "identifier_level": {
+      "description": "Semantic level, such as RxNorm IN/PIN/SCD/SBD, NDC product/package, substance, medicinal product or publication.",
+      "type": "string",
+      "minLength": 1
+    },
+    "preferred_label": {
+      "description": "Label from the identifier authority at the stated version.",
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction": {
+      "description": "Jurisdiction where relevant to the identifier assignment.",
+      "type": "string",
+      "minLength": 1
+    },
+    "issuer": {
+      "description": "Issuing authority where not inherent in identifier_system.",
+      "type": "string",
+      "minLength": 1
+    },
+    "mapping_relation": {
+      "description": "Reviewed relationship between the linked entity and external concept; candidate is not validated equivalence.",
+      "enum": [
+        "exact",
+        "narrower",
+        "broader",
+        "related",
+        "candidate"
+      ]
+    },
+    "review_status": {
+      "description": "Review state of this assignment.",
+      "enum": [
+        "unreviewed",
+        "reviewed",
+        "approved",
+        "rejected"
+      ]
+    },
+    "source_citation": {
+      "description": "Source supporting the identifier assignment and its semantic level.",
+      "type": "string",
+      "minLength": 1
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "code"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to project records by code or UUID.",
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "provenance_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to provenance records by submitter_id or UUID."
+    },
+    "radiopharmaceuticals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to radiopharmaceutical records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "radionuclides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to radionuclide records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "molecular_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to molecular_entity records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "biological_targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to biological_target records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "medicinal_products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to medicinal_product records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "product_packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to product_package records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "regulatory_authorizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to regulatory_authorization records by submitter_id or UUID.",
+      "maxItems": 1
+    },
+    "reference_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "submitter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+            "term": {
+              "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+              "termDef": {
+                "cde_id": "C54100",
+                "cde_version": null,
+                "source": "NCIt",
+                "term": "Universally Unique Identifier",
+                "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+              }
+            },
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "submitter_id"
+            ]
+          },
+          {
+            "required": [
+              "id"
+            ]
+          }
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Link to reference_evidence records by submitter_id or UUID.",
+      "maxItems": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "*type": "dose_summary",
+  "*submitter_id": null,
+  "*therapy_courses": null,
+  "*anatomic_targets": null,
+  "*component_doses": null,
+  "provenance_records": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*cumulative_dose_gy": null,
+  "*aggregation_method": null,
+  "included_cycle_numbers": null,
+  "dose_distribution_statistic": null,
+  "lesion_selection_rule": null,
+  "coverage_description": null
+}

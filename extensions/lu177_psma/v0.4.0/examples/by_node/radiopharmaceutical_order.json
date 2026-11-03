@@ -1,0 +1,39 @@
+[
+  {
+    "type": "radiopharmaceutical_order",
+    "submitter_id": "RP-ORDER",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "order_kind": "patient_prescription",
+    "ordered_datetime": "2025-12-31T12:00:00Z",
+    "order_status": "authorized",
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ],
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "requested_activity_mbq": 1000.0,
+    "requested_reference_datetime": "2026-01-01T12:00:00Z",
+    "instruction_reference": "Synthetic initial plan; not a prescribed regimen."
+  }
+]

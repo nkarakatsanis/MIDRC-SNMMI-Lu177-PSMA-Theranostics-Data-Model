@@ -1,0 +1,59 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+imaging_study,age_at_imaging,False,False,MIDRC unchanged,number,"The study participant's age, in years, at the time the imaging study was performed. Note that an age of 0 indicates a participant who is younger than 1 year old. For participants with ages greater than 89 years, please use the property 'age_at_index_gt89'.
+",
+imaging_study,age_at_imaging_gt89,False,False,MIDRC unchanged,enum,Indicates whether the age of the patient in years at the time the imaging study was performed is greater than 89 years. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.,
+imaging_study,body_part_examined,False,False,MIDRC unchanged,array,"(0018, 0015) Body Part Examined. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+imaging_study,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+imaging_study,cases,True,False,MIDRC unchanged,compound,"The submitter_id or id of the case observed in this imaging_study, i.e., a link to a record in the parent node.",
+imaging_study,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+imaging_study,datasets,True,False,MIDRC unchanged,compound,"The submitter_id or id of the dataset this case belongs to, i.e., a link to a record in the parent node.",
+imaging_study,days_from_study_to_neg_covid_test,False,False,MIDRC unchanged,array,"The number of days from the imaging study to the patient's negative COVID-19 test(s).  This property takes a list of values, each of which represents a COVID-19 test for the patient. A positive value for this property means that a negative COVID-19 test result was obtained for the patient that many days after the imaging study was performed. A negative value indicates that a negative COVID-19 test result was obtained prior to the date of imaging. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.",
+imaging_study,days_from_study_to_pos_covid_test,False,False,MIDRC unchanged,array,"The number of days from the imaging study to the patient's positive COVID-19 test(s).  This property takes a list of values, each of which represents a COVID-19 test for the patient. A positive value for this property means that a positive COVID-19 test result was obtained for the patient that many days after the imaging study was performed. A negative value indicates that the positive COVID-19 test result was obtained prior to the date of imaging. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.",
+imaging_study,days_to_study,False,False,MIDRC unchanged,number,The number of days between the case's index date and the date of the imaging study. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.,
+imaging_study,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+imaging_study,image_data_modified,False,False,MIDRC unchanged,boolean,An indicator of whether any post-clinical modification of image pixel data has been performed on the study.,
+imaging_study,loinc_code,False,False,MIDRC unchanged,string,"The LOINC code assigned based on the study description provided. The Logical Observation Identifiers, Names, and Codes (LOINC) standard is A common language (set of identifiers, names, and codes) for clinical and laboratory observations.
+",
+imaging_study,loinc_contrast,False,False,MIDRC unchanged,string,"The LOINC indicator noting whether the image was completed with or without contrast, as associated with the assigned LOINC code. The Logical Observation Identifiers, Names, and Codes (LOINC) standard is A common language (set of identifiers, names, and codes) for clinical and laboratory observations.
+",
+imaging_study,loinc_long_common_name,False,False,MIDRC unchanged,string,"The LOINC long common name associated with the assigned LOINC code. The Logical Observation Identifiers, Names, and Codes (LOINC) standard is A common language (set of identifiers, names, and codes) for clinical and laboratory observations.
+",
+imaging_study,loinc_method,False,False,MIDRC unchanged,string,"The LOINC method or imaging modality associated with the assigned LOINC code. The Logical Observation Identifiers, Names, and Codes (LOINC) standard is A common language (set of identifiers, names, and codes) for clinical and laboratory observations.
+",
+imaging_study,loinc_system,False,False,MIDRC unchanged,string,"The LOINC system or body part examined associated with the assigned LOINC code. The Logical Observation Identifiers, Names, and Codes (LOINC) standard is A common language (set of identifiers, names, and codes) for clinical and laboratory observations.
+",
+imaging_study,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+imaging_study,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+imaging_study,study_description,False,False,MIDRC unchanged,string,"(0008, 1030) Study Description. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+imaging_study,study_modality,False,False,MIDRC unchanged,array,"The modalities of the imaging study; derived from (0008, 0060) Modality. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+imaging_study,study_uid,False,False,MIDRC unchanged,string,"(0020, 000d) Study Instance UID. The Digital Imaging and Communications in Medicine (DICOM) standard is the international standard to transmit, store, retrieve, print, process, and display medical imaging information.
+",
+imaging_study,study_year,False,False,MIDRC unchanged,integer,"The year when imaging study was performed; year component of Study Date (0008, 0020).
+",
+imaging_study,study_year_shifted,False,False,MIDRC unchanged,boolean,Indicates whether the study year has been shifted for de-identification. This property is included to ensure personal privacy protection in accordance with the HIPAA Safe Harbor Method. More information can be found here https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html.,
+imaging_study,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",idrp_ontology:r40
+imaging_study,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+imaging_study,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+imaging_study,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+imaging_study,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+imaging_study,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+imaging_study,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+imaging_study,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+imaging_study,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+imaging_study,study_date,False,False,Theranostics extension,string,Date of imaging study.,lu_177_psma_data_model:r200; dicom:r9
+imaging_study,imaging_purpose,False,False,Theranostics extension,string,"Baseline, eligibility, dosimetry, response or follow-up purpose.",
+imaging_study,is_therapy_baseline,False,False,Theranostics extension,boolean,Is this the baseline exam for PSMA therapy,lu_177_psma_data_model:r327
+imaging_study,study_time,False,False,Theranostics extension,string,Provisional field for Study Time; operational definition requires review.,dicom:r10
+imaging_study,accession_number_pseudonym,False,False,Theranostics extension,string,Provisional field for Accession Number; operational definition requires review.,dicom:r11
+imaging_study,visits,False,False,Theranostics extension,compound,,
+imaging_study,timepoints,False,False,Theranostics extension,compound,,
+imaging_study,administrations,False,False,Theranostics extension,compound,,
+imaging_study,provenance_records,False,False,Theranostics extension,compound,,

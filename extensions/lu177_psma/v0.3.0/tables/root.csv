@@ -1,0 +1,4 @@
+node,property,required,system,origin,type,definition,schema,source_occurrence_ids
+root,id,False,True,MIDRC unchanged,enum,,"{""enum"": [""root""]}",[]
+root,schema_version,False,False,MIDRC unchanged,string,,"{""type"": ""string""}",[]
+root,type,True,False,MIDRC unchanged,string,,"{""type"": ""string""}",[]

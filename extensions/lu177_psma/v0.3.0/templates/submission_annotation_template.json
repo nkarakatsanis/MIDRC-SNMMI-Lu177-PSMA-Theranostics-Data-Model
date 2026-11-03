@@ -1,0 +1,103 @@
+{
+  "airspace_disease_grading": null,
+  "annotation_files": {
+    "submitter_id": null
+  },
+  "annotation_long_name": null,
+  "annotation_method": null,
+  "annotation_name": null,
+  "annotator_id": null,
+  "case_ids": null,
+  "cases": {
+    "submitter_id": null
+  },
+  "class_covid19_pneumonia": null,
+  "cr_series_files": {
+    "submitter_id": null
+  },
+  "ct_series_files": {
+    "submitter_id": null
+  },
+  "datasets": {
+    "submitter_id": null
+  },
+  "dicom_annotation_files": {
+    "submitter_id": null
+  },
+  "dx_series_files": {
+    "submitter_id": null
+  },
+  "imaging_studies": {
+    "submitter_id": null
+  },
+  "instance_uids": null,
+  "mg_series_files": {
+    "submitter_id": null
+  },
+  "midrc_mRALE_score": null,
+  "mr_series_files": {
+    "submitter_id": null
+  },
+  "nm_series_files": {
+    "submitter_id": null
+  },
+  "project_id": null,
+  "pt_series_files": {
+    "submitter_id": null
+  },
+  "rf_series_files": {
+    "submitter_id": null
+  },
+  "sift_image_quality_index": null,
+  "software_version": null,
+  "*submitter_id": null,
+  "*type": "annotation",
+  "us_series_files": {
+    "submitter_id": null
+  },
+  "xa_series_files": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "segmentation_identifier": null,
+  "segmentation_method": null,
+  "software_name": null,
+  "parameters": null,
+  "frame_of_reference_uid": null,
+  "roi_image_uid": null,
+  "roi_segmentation_imaging_modality": null,
+  "roi_segmentation_method_absolute_threshold_value": null,
+  "segmentation_method_description": null,
+  "roi_segmentation_method_ratio_reference_region": null,
+  "roi_segmentation_method_ratio_threshold_value": null,
+  "roi_segmentation_method_relative_threshold_value": null,
+  "roi_segmentation_modality_coregistration_method": null,
+  "roi_segmentation_modality_coregistration_method_name": null,
+  "anatomic_targets": {
+    "submitter_id": null
+  },
+  "registrations": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "annotation_profile": null,
+  "anatomic_reference_pt_series_files": {
+    "submitter_id": null
+  },
+  "anatomic_reference_nm_series_files": {
+    "submitter_id": null
+  },
+  "anatomic_reference_ct_series_files": {
+    "submitter_id": null
+  },
+  "anatomic_reference_mr_series_files": {
+    "submitter_id": null
+  }
+}

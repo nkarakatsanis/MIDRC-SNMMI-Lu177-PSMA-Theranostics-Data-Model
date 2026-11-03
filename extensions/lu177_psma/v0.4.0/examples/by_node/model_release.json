@@ -1,0 +1,14 @@
+[
+  {
+    "submitter_id": "SYN-MODEL_RELEASE",
+    "model_version": "0.4.0-proposal",
+    "release_version": "0.4.0-proposal",
+    "released_on": "2026-11-02",
+    "type": "model_release",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  }
+]

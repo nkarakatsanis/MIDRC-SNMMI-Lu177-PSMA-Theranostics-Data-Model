@@ -1,0 +1,29 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+material_lot,type,True,False,Theranostics extension,enum,,
+material_lot,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+material_lot,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+material_lot,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+material_lot,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+material_lot,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+material_lot,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+material_lot,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+material_lot,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+material_lot,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+material_lot,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+material_lot,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+material_lot,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+material_lot,lot_identifier,True,False,Theranostics extension,string,"Supplier or local lot identifier, scoped to the named material and supplier.",nk_blueprint:r202; nk_blueprint:r203
+material_lot,material_kind,True,False,Theranostics extension,enum,Role of this material lot in manufacturing.,
+material_lot,supplier,False,False,Theranostics extension,string,Supplier of this physical material lot.,
+material_lot,production_route,False,False,Theranostics extension,string,"Manufacturing route for this lot, such as reactor or cyclotron production.",nk_blueprint:r37
+material_lot,expiry_datetime,False,False,Theranostics extension,string,Material expiry timestamp with explicit UTC offset.,
+material_lot,certificate_reference,False,False,Theranostics extension,string,"Certificate of analysis reference, with file hash in provenance if available.",
+material_lot,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+material_lot,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+material_lot,molecular_entities,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,
+material_lot,radionuclides,False,False,Theranostics extension,array,Link to radionuclide records by submitter_id or UUID.,

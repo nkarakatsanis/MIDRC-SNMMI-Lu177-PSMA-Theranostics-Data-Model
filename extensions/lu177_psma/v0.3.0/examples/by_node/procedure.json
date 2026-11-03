@@ -1,0 +1,25 @@
+[
+  {
+    "submitter_id": "SYN-PROCEDURE",
+    "model_version": "0.3.0-proposal",
+    "procedure_name_source_value": "Palliative radiotherapy to symptomatic bone lesion",
+    "procedure_date": "2026-05-15",
+    "method": "Synthetic focal radiotherapy record",
+    "type": "procedure",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  }
+]

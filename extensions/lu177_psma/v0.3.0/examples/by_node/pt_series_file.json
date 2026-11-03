@@ -1,0 +1,71 @@
+[
+  {
+    "submitter_id": "JOURNEY-BASELINE-PET-IMAGE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-baseline-pet-image.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "SUVbw",
+    "type": "pt_series_file",
+    "series_uid": "2.25.20002",
+    "modality": "PT",
+    "series_description": "Baseline PSMA PET",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "PT",
+    "case_ids": [
+      "SYN-CASE"
+    ],
+    "ct_images": true
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-PET-IMAGE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-followup-pet-image.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "SUVbw",
+    "type": "pt_series_file",
+    "series_uid": "2.25.40002",
+    "modality": "PT",
+    "series_description": "Follow-up PSMA PET",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PETCT"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "PT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  }
+]

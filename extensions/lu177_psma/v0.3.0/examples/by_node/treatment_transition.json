@@ -1,0 +1,30 @@
+[
+  {
+    "submitter_id": "JOURNEY-TRANSITION-RETREATMENT",
+    "model_version": "0.3.0-proposal",
+    "transition_type": "psma_rpt_retreatment",
+    "transition_status": "occurred",
+    "post_lu177_therapy_received": true,
+    "retreatment_performed": true,
+    "start_date": "2026-08-01",
+    "last_prior_administration_date": "2026-02-01",
+    "agent_name": "Synthetic Lu-177 PSMA product",
+    "reason": "Recorded clinician decision after later reassessment",
+    "type": "treatment_transition",
+    "prior_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "subsequent_courses": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-COURSE"
+      }
+    ],
+    "treatment_decisions": [
+      {
+        "submitter_id": "JOURNEY-RETREATMENT-DECISION"
+      }
+    ]
+  }
+]

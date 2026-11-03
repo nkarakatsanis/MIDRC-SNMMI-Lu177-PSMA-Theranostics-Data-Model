@@ -1,0 +1,39 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+external_identifier,type,True,False,Theranostics extension,enum,,
+external_identifier,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+external_identifier,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+external_identifier,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+external_identifier,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+external_identifier,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+external_identifier,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+external_identifier,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+external_identifier,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+external_identifier,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+external_identifier,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+external_identifier,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+external_identifier,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+external_identifier,identifier,True,False,Theranostics extension,string,"Exact external code as a string, preserving leading zeros, hyphens and case where significant.",nz_model:r9; nz_model:r10; nz_model:r11; nz_model:r12; nz_model:r13; nz_model:r17; nz_model:r43; nz_model:r44; nz_model:r46; nz_model:r47; nk_blueprint:r47; nk_blueprint:r48; nk_blueprint:r53; nk_blueprint:r54; nk_blueprint:r55; nk_blueprint:r56; nk_blueprint:r57; nk_blueprint:r79; nk_blueprint:r80; nk_blueprint:r158; nk_blueprint:r159; nk_blueprint:r160; nk_blueprint:r161; nk_blueprint:r180; nk_blueprint:r258; nk_blueprint:r260; nk_blueprint:r261
+external_identifier,identifier_system,True,False,Theranostics extension,string,"Identifier authority or scheme, such as RxNorm, UNII, CAS, NDC, MPID, PhPID, PubChem, DOI or PMID.",idrp_ontology:r32
+external_identifier,identifier_system_version,False,False,Theranostics extension,string,Release or version of the identifier system.,
+external_identifier,identifier_level,True,False,Theranostics extension,string,"Semantic level, such as RxNorm IN/PIN/SCD/SBD, NDC product/package, substance, medicinal product or publication.",idrp_ontology:r45
+external_identifier,preferred_label,False,False,Theranostics extension,string,Label from the identifier authority at the stated version.,
+external_identifier,jurisdiction,False,False,Theranostics extension,string,Jurisdiction where relevant to the identifier assignment.,
+external_identifier,issuer,False,False,Theranostics extension,string,Issuing authority where not inherent in identifier_system.,
+external_identifier,mapping_relation,True,False,Theranostics extension,enum,Reviewed relationship between the linked entity and external concept; candidate is not validated equivalence.,
+external_identifier,review_status,True,False,Theranostics extension,enum,Review state of this assignment.,idrp_ontology:r188
+external_identifier,source_citation,True,False,Theranostics extension,string,Source supporting the identifier assignment and its semantic level.,
+external_identifier,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+external_identifier,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+external_identifier,radiopharmaceuticals,False,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,
+external_identifier,radionuclides,False,False,Theranostics extension,array,Link to radionuclide records by submitter_id or UUID.,
+external_identifier,molecular_entities,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,
+external_identifier,biological_targets,False,False,Theranostics extension,array,Link to biological_target records by submitter_id or UUID.,
+external_identifier,medicinal_products,False,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,
+external_identifier,product_packages,False,False,Theranostics extension,array,Link to product_package records by submitter_id or UUID.,
+external_identifier,regulatory_authorizations,False,False,Theranostics extension,array,Link to regulatory_authorization records by submitter_id or UUID.,
+external_identifier,reference_evidence,False,False,Theranostics extension,array,Link to reference_evidence records by submitter_id or UUID.,

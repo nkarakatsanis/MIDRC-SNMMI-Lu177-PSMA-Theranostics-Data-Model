@@ -1,0 +1,34 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+radiopharmaceutical_order,type,True,False,Theranostics extension,enum,,
+radiopharmaceutical_order,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+radiopharmaceutical_order,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+radiopharmaceutical_order,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+radiopharmaceutical_order,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+radiopharmaceutical_order,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical_order,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical_order,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+radiopharmaceutical_order,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+radiopharmaceutical_order,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+radiopharmaceutical_order,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+radiopharmaceutical_order,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+radiopharmaceutical_order,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+radiopharmaceutical_order,order_kind,True,False,Theranostics extension,enum,A procurement order is not a patient prescription.,idrp_ontology:r10
+radiopharmaceutical_order,ordered_datetime,True,False,Theranostics extension,string,"Timestamp when the request was recorded, with UTC offset.",
+radiopharmaceutical_order,order_status,True,False,Theranostics extension,string,"Workflow state such as requested, authorized, cancelled or fulfilled; controlled locally with a versioned policy.",
+radiopharmaceutical_order,requested_activity_mbq,False,False,Theranostics extension,number,"Requested activity in MBq at requested_reference_datetime, not delivered activity.",
+radiopharmaceutical_order,requested_reference_datetime,False,False,Theranostics extension,string,Reference timestamp for requested activity.,
+radiopharmaceutical_order,requested_quantity,False,False,Theranostics extension,number,Number or amount of requested units according to requested_quantity_unit.,
+radiopharmaceutical_order,requested_quantity_unit,False,False,Theranostics extension,string,"Unit of requested_quantity, separate from activity units.",
+radiopharmaceutical_order,instruction_reference,False,False,Theranostics extension,string,Authorized protocol or order instruction reference; no regimen is encoded as a model default.,nk_blueprint:r175; idrp_ontology:r73
+radiopharmaceutical_order,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+radiopharmaceutical_order,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+radiopharmaceutical_order,medicinal_products,True,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,
+radiopharmaceutical_order,product_packages,False,False,Theranostics extension,array,Link to product_package records by submitter_id or UUID.,
+radiopharmaceutical_order,supply_offers,False,False,Theranostics extension,array,Link to supply_offer records by submitter_id or UUID.,
+radiopharmaceutical_order,cases,False,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+radiopharmaceutical_order,therapy_cycles,False,False,Theranostics extension,array,Link to therapy_cycle records by submitter_id or UUID.,

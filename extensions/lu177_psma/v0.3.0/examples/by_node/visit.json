@@ -1,0 +1,14 @@
+[
+  {
+    "submitter_id": "SYN-VISIT",
+    "model_version": "0.3.0-proposal",
+    "visit_type": "Initial theranostics consultation",
+    "assessment_datetime": "2025-12-10T10:00:00Z",
+    "type": "visit",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

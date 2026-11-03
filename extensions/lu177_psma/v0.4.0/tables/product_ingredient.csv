@@ -1,0 +1,28 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+product_ingredient,type,True,False,Theranostics extension,enum,,
+product_ingredient,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+product_ingredient,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+product_ingredient,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+product_ingredient,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+product_ingredient,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+product_ingredient,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+product_ingredient,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+product_ingredient,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+product_ingredient,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+product_ingredient,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+product_ingredient,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+product_ingredient,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+product_ingredient,ingredient_role,True,False,Theranostics extension,enum,Role of this chemically specified component in the linked formulation.,idrp_ontology:r170
+product_ingredient,quantity_value,False,False,Theranostics extension,number,Ingredient quantity or concentration according to quantity_unit and quantity_basis.,
+product_ingredient,quantity_unit,False,False,Theranostics extension,string,"Unit, preferably a reviewed UCUM expression, for quantity_value.",
+product_ingredient,quantity_basis,False,False,Theranostics extension,string,"Denominator and basis, such as per mL, per vial or total compound mass, needed to interpret the quantity.",
+product_ingredient,function,False,False,Theranostics extension,string,"Formulation function such as stabilizer, buffer or targeting ingredient.",
+product_ingredient,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+product_ingredient,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+product_ingredient,medicinal_products,True,False,Theranostics extension,array,Link to medicinal_product records by submitter_id or UUID.,
+product_ingredient,molecular_entities,True,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,nz_model:r34; nz_model:r35; nz_model:r54; nz_model:r75; nz_model:r115; nz_model:r116

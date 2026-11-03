@@ -1,0 +1,82 @@
+[
+  {
+    "submitter_id": "JOURNEY-C1-ACQ-48H",
+    "model_version": "0.3.0-proposal",
+    "number_of_energy_windows": 1,
+    "energy_window_names": [
+      "PHOTOPEAK"
+    ],
+    "energy_window_lower_kev": [
+      190.0
+    ],
+    "energy_window_upper_kev": [
+      220.0
+    ],
+    "type": "acquisition",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-C1-SPECTCT-48H"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "JOURNEY-C1-IMAGE-48H"
+      }
+    ],
+    "scanners": [
+      {
+        "submitter_id": "SYN-SCANNER"
+      }
+    ],
+    "scanner_qas": [
+      {
+        "submitter_id": "SYN-SCANNER_QA"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "JOURNEY-C1-RAW-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ACQUISITION",
+    "model_version": "0.3.0-proposal",
+    "number_of_energy_windows": 1,
+    "energy_window_names": [
+      "PHOTOPEAK"
+    ],
+    "energy_window_lower_kev": [
+      190.0
+    ],
+    "energy_window_upper_kev": [
+      220.0
+    ],
+    "type": "acquisition",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "nm_series_files": [
+      {
+        "submitter_id": "SYN-IMAGE_FILE"
+      }
+    ],
+    "scanners": [
+      {
+        "submitter_id": "SYN-SCANNER"
+      }
+    ],
+    "scanner_qas": [
+      {
+        "submitter_id": "SYN-SCANNER_QA"
+      }
+    ],
+    "raw_files": [
+      {
+        "submitter_id": "SYN-RAW_IMAGING_FILE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "*type": "organ_function",
+  "*submitter_id": null,
+  "project_id": null,
+  "*cases": {
+    "submitter_id": null
+  },
+  "anatomic_targets": {
+    "submitter_id": null
+  },
+  "timepoints": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "*organ_name": null,
+  "functional_status": null,
+  "laboratory_measurements": {
+    "submitter_id": null
+  }
+}

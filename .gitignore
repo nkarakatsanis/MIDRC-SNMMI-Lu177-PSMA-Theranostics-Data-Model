@@ -81,3 +81,7 @@ artifacts/
 #DS_store
 .DS_store
 .DS_Store
+
+# Private manuscript materials
+**/publication/
+**/sources/manuscript_inputs/

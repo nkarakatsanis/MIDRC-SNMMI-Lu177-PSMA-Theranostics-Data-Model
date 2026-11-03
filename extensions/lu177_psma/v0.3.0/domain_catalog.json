@@ -1,0 +1,200 @@
+[
+  {
+    "domain": "Subject information",
+    "nodes": [
+      "case",
+      "site"
+    ]
+  },
+  {
+    "domain": "Anthropometrics and body composition",
+    "nodes": [
+      "measurement"
+    ]
+  },
+  {
+    "domain": "Lifestyle and behavioral factors",
+    "nodes": [
+      "observation"
+    ]
+  },
+  {
+    "domain": "Study and longitudinal context",
+    "nodes": [
+      "study",
+      "dataset",
+      "visit",
+      "therapy_course",
+      "therapy_cycle",
+      "timepoint",
+      "treatment_transition"
+    ]
+  },
+  {
+    "domain": "Imaging examination",
+    "nodes": [
+      "imaging_study",
+      "pt_series_file",
+      "nm_series_file",
+      "ct_series_file",
+      "mr_series_file"
+    ]
+  },
+  {
+    "domain": "Raw imaging data",
+    "nodes": [
+      "supplementary_file"
+    ]
+  },
+  {
+    "domain": "Acquisition parameters",
+    "nodes": [
+      "acquisition"
+    ]
+  },
+  {
+    "domain": "Scanner QA and calibration",
+    "nodes": [
+      "scanner",
+      "scanner_qa"
+    ]
+  },
+  {
+    "domain": "Reconstructed imaging data",
+    "nodes": [
+      "pt_series_file",
+      "nm_series_file",
+      "ct_series_file",
+      "mr_series_file"
+    ]
+  },
+  {
+    "domain": "Reconstruction and processing",
+    "nodes": [
+      "reconstruction",
+      "registration"
+    ]
+  },
+  {
+    "domain": "Segmentation and ROI metrics",
+    "nodes": [
+      "anatomic_target",
+      "annotation",
+      "dicom_annotation_file",
+      "annotation_file",
+      "measurement"
+    ]
+  },
+  {
+    "domain": "Dosimetry",
+    "nodes": [
+      "time_activity_curve",
+      "dosimetry",
+      "absorbed_dose",
+      "dicom_annotation_file",
+      "supplementary_file",
+      "dose_summary"
+    ]
+  },
+  {
+    "domain": "Hematology labs",
+    "nodes": [
+      "laboratory_panel",
+      "measurement"
+    ]
+  },
+  {
+    "domain": "Renal function labs",
+    "nodes": [
+      "laboratory_panel",
+      "measurement"
+    ]
+  },
+  {
+    "domain": "Liver function labs",
+    "nodes": [
+      "laboratory_panel",
+      "measurement"
+    ]
+  },
+  {
+    "domain": "PSA and related assays",
+    "nodes": [
+      "laboratory_panel",
+      "measurement"
+    ]
+  },
+  {
+    "domain": "Clinical and molecular biomarkers",
+    "nodes": [
+      "specimen",
+      "biomarker_assessment",
+      "clinical_assessment"
+    ]
+  },
+  {
+    "domain": "Treatment response and outcomes",
+    "nodes": [
+      "response_assessment",
+      "survival_outcome",
+      "patient_reported_outcome",
+      "disease_burden",
+      "clinical_event",
+      "treatment_decision",
+      "treatment_transition"
+    ]
+  },
+  {
+    "domain": "Treatment administration",
+    "nodes": [
+      "therapy_course",
+      "therapy_cycle",
+      "administration",
+      "treatment_plan",
+      "eligibility_assessment",
+      "treatment_decision"
+    ]
+  },
+  {
+    "domain": "Organs at risk functional status",
+    "nodes": [
+      "organ_function"
+    ]
+  },
+  {
+    "domain": "Toxicity CTCAE based",
+    "nodes": [
+      "toxicity_event",
+      "toxicity_summary"
+    ]
+  },
+  {
+    "domain": "Medical records and history",
+    "nodes": [
+      "condition",
+      "medical_history",
+      "medication",
+      "procedure",
+      "supplementary_file",
+      "radiology_report"
+    ]
+  },
+  {
+    "domain": "Radiopharmaceutical",
+    "nodes": [
+      "radiopharmaceutical",
+      "radiopharmaceutical_batch",
+      "administration"
+    ]
+  },
+  {
+    "domain": "Semantics and governance",
+    "nodes": [
+      "program",
+      "project",
+      "model_release",
+      "semantic_mapping",
+      "provenance"
+    ]
+  }
+]

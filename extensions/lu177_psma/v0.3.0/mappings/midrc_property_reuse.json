@@ -1,0 +1,4946 @@
+[
+  {
+    "node": "pt_series_file",
+    "property": "body_part_examined",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "ct_images",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "radiopharmaceutical",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "slice_thickness",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "pt_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "breathing_support_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "conditions",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "days_to_procedure_end",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "days_to_procedure_start",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "history_of_radiation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "procedure_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "procedure",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "detector_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "imager_pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "spatial_resolution",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dx_series_file",
+    "property": "view_position",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "body_part_examined",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "detector_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "imager_pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "radiation_setting",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "spatial_resolution",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "xa_series_file",
+    "property": "view_position",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "airspace_disease_grading",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "annotation_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "annotation_long_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "annotation_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "annotation_name",
+    "status": "explicit_enum_append",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "annotator_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "class_covid19_pneumonia",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "cr_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "ct_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "datasets",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "dicom_annotation_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "dx_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "instance_uids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "mg_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "midrc_mRALE_score",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "mr_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "nm_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "pt_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "rf_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "sift_image_quality_index",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "software_version",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "us_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation",
+    "property": "xa_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "days_to_observation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "observation_answer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "observation_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "observation",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "annotation_long_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "annotation_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "annotation_name",
+    "status": "explicit_enum_append",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "annotator_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "cr_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "ct_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "datasets",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "dx_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "instance_uids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "mg_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "mr_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "nm_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "pt_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "rf_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "software_versions",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "us_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "annotation_file",
+    "property": "xa_series_files",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "root",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "root",
+    "property": "schema_version",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "root",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "angio_flag",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "diffusion_b_value",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "diffusion_gradient_orientation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "echo_number",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "echo_time",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "echo_train_length",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "imaged_nucleus",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "imager_pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "magnetic_field_strength",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "mr_acquisition_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "number_of_temporal_positions",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "repetition_time",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "scan_options",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "scanning_sequence",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "sequence_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "sequence_variant",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "slice_thickness",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "software_version",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "spacing_between_slices",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mr_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "acquisition_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "convolution_kernel",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "exposure_modulation_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "patient_position",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "slice_thickness",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "spacing_between_slices",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "ct_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "detector_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "imager_pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "spatial_resolution",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "rf_series_file",
+    "property": "view_position",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "airway_involvement",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "airway_involvement_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "body_part_examined",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "cavities",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "cavities_count",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "cavities_largest_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "cavities_wall_thickness",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "ct_protocol",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "cysts_bullae",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "datasets",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "distribution_axial",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "distribution_zone",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "fibrocalcific_scarring",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "fibrosis_pattern",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "fibrosis_segments",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "ground_glass_opacities",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "ground_glass_opacities_focality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "honeycombing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "honeycombing_focality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "image_quality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "laterality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "lymphadenopathy_consolidation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "paracicatricial_emphysema",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "parenchymal_bands",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "pleural_involvement",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "pleural_involvement_phase",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "pulmonary_hypertension_signs",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "pulmonary_hypertension_signs_indicator",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "report_generation_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "report_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "reticular_opacities",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "reticular_opacities_focality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "study_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "symmetry",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "traction_bronchiectasis",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "traction_bronchiectasis_focality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "tuberculoma_calcified_ghon_focus",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "radiology_report",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "region_spatial_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "transducer_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "us_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "detector_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "imager_pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "spatial_resolution",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "cr_series_file",
+    "property": "view_position",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "annotation_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "annotation_name",
+    "status": "explicit_enum_append",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "annotator_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "modality",
+    "status": "explicit_enum_append",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "software_versions",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "days_to_medication_end",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "days_to_medication_start",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "dose_sequence_number",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "medication_code",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "medication_code_system",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "medication_manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "medication_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "medication_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "medication",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "acknowledgement",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "availability_mechanism",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "availability_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "code",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "complete",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "data_citation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "data_contributor",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "data_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "data_url_doi",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "date_collected",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "dbgap_accession_number",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "disease_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "intended_release_date",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "investigator_affiliation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "investigator_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "license",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "longitudinal",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "primary_site",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "programs",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "publication_citation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "releasable",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "released",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "research_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "research_design",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "research_objective",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "research_setup",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "support_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "support_source",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "project",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "age_at_index",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "age_at_index_gt89",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "country_of_residence",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "covid19_positive",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "datasets",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "days_to_death",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "days_to_last_follow_up",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "ethnicity",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "gen3_linked_subjects_available",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "icu_indicator",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "index_event",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "indoor_biomass_smoke_exposure",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "linked_external_data",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "long_covid_diagnosis",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "mortality_status",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "number_of_pack_years",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "occupational_exposure",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "occupational_exposure_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "patient_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "pulmonary_fibrosis_family_history",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "race",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "race_ethnicity",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "race_ethnicity_detail",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "race_ethnicity_write_in",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "sex",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "site_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "smoking_history",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "token_record_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "treatment_info",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "ventilator_indicator",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "case",
+    "property": "zip",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "age_at_imaging",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "age_at_imaging_gt89",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "body_part_examined",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "datasets",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "days_from_study_to_neg_covid_test",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "days_from_study_to_pos_covid_test",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "days_to_study",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "loinc_code",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "loinc_contrast",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "loinc_long_common_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "loinc_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "loinc_system",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_year",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "study_year_shifted",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "imaging_study",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "datasets",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "file_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "supplementary_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "condition_code",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "condition_code_system",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "condition_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "days_to_condition_end",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "days_to_condition_start",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "days_to_symptom_onset",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "fibrosis_confirmation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "fibrosis_lung_involvement_grading",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "fibrosis_volume_loss_grading",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_connective_tissue_disease",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_connective_tissue_disease_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_hiv",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_hiv_treatment",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_interstitial_lung_disease",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_lung_cancer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_other_disease",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_tuberculosis",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "history_of_tuberculosis_treatment",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "presenting_symptoms",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "condition",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "code_meaning",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "contrast_bolus_agent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "detector_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "image_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "imager_pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "pixel_spacing",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "sop_class_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "sop_class_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "spatial_resolution",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "mg_series_file",
+    "property": "view_position",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "program",
+    "property": "dbgap_accession_number",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "program",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "program",
+    "property": "name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "program",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "contributor",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "coverage",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "creator",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "date",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "language",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "projects",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "publisher",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "relation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "rights",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "source",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "subject",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "title",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "core_metadata_collection",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "body_part_examined",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "core_metadata_collections",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "data_category",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "data_format",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "data_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "dicom_header_file_guid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "error_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "file_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "file_size",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "file_state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "image_data_modification_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "image_data_modification_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "image_data_modified",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "imaging_studies",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "lossy_image_compression",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "manufacturer",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "manufacturer_model_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "md5sum",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "modality",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "number_of_instances",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "object_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "radiopharmaceutical",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "series_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "series_uid",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "nm_series_file",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "acknowledgement",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "data_citation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "data_contributor",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "data_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "data_url_doi",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "disease_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "full_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "license",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "longitudinal",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "primary_site",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "projects",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "publication_citation",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "research_description",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "research_design",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "research_objective",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "research_setup",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "dataset",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "conditions",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "home_oxygen_use",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "oxygenation_measurement_environment",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "procedures",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "pulmonary_function_test",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "six_minute_walk_test",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_days_from_index",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_method",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_result_number",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_result_percent",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_result_ratio",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "test_result_text",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "measurement",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "case_ids",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "cases",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "days_to_hospital_admission",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "days_to_hospital_discharge",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "days_to_icu_admission",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "days_to_icu_discharge",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "discharge_type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "project_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "state",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "submitter_id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "visit",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "created_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "id",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "major_version",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "minor_version",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "name",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "release_date",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "released",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "roots",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "type",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  },
+  {
+    "node": "data_release",
+    "property": "updated_datetime",
+    "status": "exact_baseline_definition",
+    "baseline_version": "1.4.3-2-g7505333"
+  }
+]

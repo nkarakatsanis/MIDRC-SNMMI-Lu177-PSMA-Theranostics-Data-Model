@@ -1,0 +1,18 @@
+{
+  "*type": "study",
+  "*submitter_id": null,
+  "project_id": null,
+  "*projects": {
+    "code": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*protocol_identifier": null,
+  "*protocol_version": null,
+  "dose_response_analysis_performed": null,
+  "dose_response_analysis_specification": null
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "submitter_id": "SYN-ABSORBED_DOSE",
+    "model_version": "0.3.0-proposal",
+    "absorbed_dose_gy": 1.0,
+    "statistic": "mean",
+    "target_mass_g": 150.0,
+    "uncertainty_value": 0.1,
+    "uncertainty_unit": "Gy",
+    "uncertainty_definition": "Illustrative standard uncertainty",
+    "uncertainty_method": "Invented for data-structure demonstration",
+    "type": "absorbed_dose",
+    "dosimetries": [
+      {
+        "submitter_id": "SYN-DOSIMETRY"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "SYN-SEGMENTATION"
+      },
+      {
+        "submitter_id": "JOURNEY-KIDNEY-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSE-KIDNEY-C2",
+    "model_version": "0.3.0-proposal",
+    "absorbed_dose_gy": 1.5,
+    "statistic": "mean",
+    "target_mass_g": 150.0,
+    "type": "absorbed_dose",
+    "dosimetries": [
+      {
+        "submitter_id": "SYN-DOSIMETRY-2"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-DOSE-LESION-C1",
+    "model_version": "0.3.0-proposal",
+    "absorbed_dose_gy": 5.0,
+    "statistic": "mean",
+    "target_mass_g": 20.0,
+    "uncertainty_value": 0.5,
+    "uncertainty_unit": "Gy",
+    "uncertainty_definition": "Illustrative standard uncertainty",
+    "uncertainty_method": "Synthetic uncertainty estimate",
+    "type": "absorbed_dose",
+    "dosimetries": [
+      {
+        "submitter_id": "JOURNEY-LESION-DOSIMETRY-C1"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-24H"
+      },
+      {
+        "submitter_id": "JOURNEY-LESION-C1-48H"
+      }
+    ]
+  }
+]

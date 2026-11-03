@@ -1,0 +1,84 @@
+[
+  {
+    "submitter_id": "JOURNEY-BASELINE-TIME",
+    "model_version": "0.3.0-proposal",
+    "phase": "baseline",
+    "hours_from_administration": 1.0,
+    "assessment_datetime": "2025-12-20T13:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-ADMIN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-48H",
+    "model_version": "0.3.0-proposal",
+    "phase": "post_administration",
+    "hours_from_administration": 48.0,
+    "assessment_datetime": "2026-01-03T12:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-FOLLOWUP-TIME",
+    "model_version": "0.3.0-proposal",
+    "phase": "follow_up",
+    "hours_from_administration": 1.0,
+    "assessment_datetime": "2026-04-01T13:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-TRACER"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-TIMEPOINT",
+    "model_version": "0.3.0-proposal",
+    "phase": "post_administration",
+    "hours_from_administration": 24.0,
+    "assessment_datetime": "2026-01-02T12:00:00Z",
+    "type": "timepoint",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "anchor_administrations": [
+      {
+        "submitter_id": "SYN-ADMINISTRATION"
+      }
+    ]
+  }
+]

@@ -1,0 +1,300 @@
+[
+  {
+    "submitter_id": "JOURNEY-BASELINE-CREATININE",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Creatinine",
+    "unit": "mg/dL",
+    "test_result_number": 1.0,
+    "source_element_id": "Synthetic baseline evidence",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-LABORATORY_PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BASELINE-HEMOGLOBIN",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Hemoglobin",
+    "unit": "g/dL",
+    "test_result_number": 12.0,
+    "source_element_id": "Synthetic baseline evidence",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-LABORATORY_PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-KIDNEY-ACTIVITY-48H",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 6.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-KIDNEY-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-ACTIVITY-24H",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 24.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-24H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-LESION-ACTIVITY-48H",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 14.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-LESION-C1-48H"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L1-BASE",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 12.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L1-BASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L1-FU",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 7.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L1-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L2-BASE",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 18.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L2-BASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PET-VOLUME-L2-FU",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "PSMA-positive tumor volume",
+    "test_result_number": 11.0,
+    "unit": "mL",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "JOURNEY-PET-L2-FU"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-CONFIRM",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 35.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "JOURNEY-PSA-CONFIRM-PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PSA-EARLY",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 130.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "JOURNEY-PSA-EARLY-PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ANTHROPOMETRIC_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "anthropometric",
+    "test_name_source_value": "Weight",
+    "test_result_number": 80.0,
+    "unit": "kg"
+  },
+  {
+    "submitter_id": "SYN-LABORATORY_RESULT",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 100.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-LABORATORY_PANEL"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PSA-2",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "Total PSA",
+    "unit": "ng/mL",
+    "test_result_number": 40.0,
+    "source_element_id": "lu_177_psma_data_model:r278",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "laboratory",
+    "test_code": "2857-1",
+    "test_code_system": "LOINC",
+    "specimen_type": "Serum",
+    "laboratory_panels": [
+      {
+        "submitter_id": "SYN-PSA-PANEL-2"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-ROI_MEASUREMENT",
+    "model_version": "0.3.0-proposal",
+    "test_name_source_value": "activity",
+    "test_result_number": 10.0,
+    "unit": "MBq",
+    "type": "measurement",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "measurement_profile": "roi",
+    "annotations": [
+      {
+        "submitter_id": "SYN-SEGMENTATION"
+      }
+    ]
+  }
+]

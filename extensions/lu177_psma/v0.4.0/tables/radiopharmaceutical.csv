@@ -1,0 +1,43 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+radiopharmaceutical,type,True,False,Theranostics extension,enum,,
+radiopharmaceutical,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r4
+radiopharmaceutical,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+radiopharmaceutical,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+radiopharmaceutical,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+radiopharmaceutical,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+radiopharmaceutical,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+radiopharmaceutical,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+radiopharmaceutical,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+radiopharmaceutical,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+radiopharmaceutical,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+radiopharmaceutical,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+radiopharmaceutical,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+radiopharmaceutical,name,True,False,Theranostics extension,string,Radiopharmaceutical product name.,lu_177_psma_data_model:r221; atlas_data_elements:r61; dicom:r44; dcm_nicolas:r4; nk_blueprint:r5
+radiopharmaceutical,radionuclide,False,False,Theranostics extension,string,Radionuclide label such as Lu-177.,lu_177_psma_data_model:r219; atlas_data_elements:r60; dicom:r57
+radiopharmaceutical,molecular_target,False,False,Theranostics extension,string,Target such as PSMA.,
+radiopharmaceutical,product_code,False,False,Theranostics extension,string,"Product identifier, including NDC when applicable.",
+radiopharmaceutical,code_system,False,False,Theranostics extension,string,Product coding system.,
+radiopharmaceutical,production_type,False,False,Theranostics extension,string,Production route or product category.,
+radiopharmaceutical,non_active_ingredients,False,False,Theranostics extension,string,Description of inactive ingredients.,
+radiopharmaceutical,physical_half_life_seconds,False,False,Theranostics extension,number,Physical radionuclide half-life with reference source.,lu_177_psma_data_model:r220; dicom:r49; dcm_nicolas:r8
+radiopharmaceutical,radionuclide_records,False,False,Theranostics extension,array,Link to radionuclide records by submitter_id or UUID.,nz_model:r121; nk_blueprint:r67; nk_blueprint:r68
+radiopharmaceutical,molecular_entities,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,
+radiopharmaceutical,biological_targets,False,False,Theranostics extension,array,Link to biological_target records by submitter_id or UUID.,nz_model:r122
+radiopharmaceutical,chelators,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,nz_model:r120; nk_blueprint:r65
+radiopharmaceutical,linkers,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,nk_blueprint:r66
+radiopharmaceutical,targeting_vectors,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,nz_model:r50; nk_blueprint:r64
+radiopharmaceutical,precursors,False,False,Theranostics extension,array,Link to molecular_entity records by submitter_id or UUID.,nk_blueprint:r74
+radiopharmaceutical,identity_scope,False,False,Theranostics extension,enum,Identity level of this record. New v0.4 reference-agent records are distinct from legacy product-like records; migration must preserve old identifiers.,
+radiopharmaceutical,agent_class,False,False,Theranostics extension,string,"Functional class of the reference agent; product, lot and administration are separate identities in the v0.4 profile.",nk_blueprint:r6
+radiopharmaceutical,intended_use,False,False,Theranostics extension,array,"Intended diagnostic, therapeutic or investigational uses, supported by versioned evidence.",nk_blueprint:r11
+radiopharmaceutical,valency,False,False,Theranostics extension,integer,Number of targeting motifs per construct.,nk_blueprint:r70
+radiopharmaceutical,multimerization_state,False,False,Theranostics extension,string,Monomeric or multimeric structural specification.,nk_blueprint:r69
+radiopharmaceutical,albumin_binding_moiety,False,False,Theranostics extension,boolean,Presence of a structurally specified albumin-binding moiety; not a measured plasma binding fraction.,nk_blueprint:r71
+radiopharmaceutical,conjugation_site,False,False,Theranostics extension,string,Site of conjugation in the specified molecular construct.,nk_blueprint:r73

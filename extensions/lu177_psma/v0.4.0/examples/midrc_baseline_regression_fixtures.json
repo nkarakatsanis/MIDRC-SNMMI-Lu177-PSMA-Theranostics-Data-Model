@@ -1,0 +1,300 @@
+{
+  "note": "Independent schema regression fixtures; not a connected submission bundle or real data.",
+  "records": [
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "annotation",
+      "datasets": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "annotation_file",
+      "annotation_name": "midrc_bpr_landmarks",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "XML",
+      "data_type": "Internal Annotation",
+      "data_category": "annotation_file",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "case",
+      "datasets": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "condition",
+      "cases": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "core_metadata_collection",
+      "projects": {
+        "code": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "cr_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "CR",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "ct_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "CT",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "name": "SYNTHETIC",
+      "major_version": 0,
+      "minor_version": 0,
+      "type": "data_release"
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "dataset",
+      "data_description": "SYNTHETIC",
+      "projects": {
+        "code": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "dicom_annotation_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "Internal Annotation",
+      "data_category": "DICOM Annotation Series File",
+      "annotation_name": "midrc_bpr_landmarks",
+      "case_ids": [],
+      "modality": "RTSTRUCT",
+      "series_description": "SYNTHETIC",
+      "series_uid": "SYNTHETIC",
+      "imaging_studies": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "dx_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "DX",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "imaging_study",
+      "cases": {
+        "submitter_id": "SYNTHETIC"
+      },
+      "datasets": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "measurement",
+      "conditions": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "medication",
+      "cases": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "mg_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "MG",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "mr_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "MR",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "nm_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "NM",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "observation",
+      "cases": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "procedure",
+      "cases": {
+        "submitter_id": "SYNTHETIC"
+      },
+      "conditions": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "name": "SYNTHETIC",
+      "dbgap_accession_number": "SYNTHETIC",
+      "type": "program"
+    },
+    {
+      "code": "SYNTHETIC",
+      "name": "SYNTHETIC",
+      "dbgap_accession_number": "SYNTHETIC",
+      "programs": {
+        "id": "11111111-1111-4111-8111-111111111111"
+      },
+      "type": "project"
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "pt_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "PT",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "radiology_report",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_category": "Radiology Report",
+      "data_format": "CSV",
+      "data_type": "Radiology Report",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "rf_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "RF",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "type": "root"
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "supplementary_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_category": "SYNTHETIC",
+      "data_type": "SYNTHETIC",
+      "data_format": "SYNTHETIC",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "us_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "US",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "visit",
+      "cases": {
+        "submitter_id": "SYNTHETIC"
+      }
+    },
+    {
+      "submitter_id": "SYNTHETIC",
+      "type": "xa_series_file",
+      "file_name": "SYNTHETIC",
+      "file_size": 0,
+      "md5sum": "00000000000000000000000000000000",
+      "data_format": "DCM",
+      "data_type": "DICOM",
+      "data_category": "XA",
+      "core_metadata_collections": {
+        "submitter_id": "SYNTHETIC"
+      }
+    }
+  ]
+}

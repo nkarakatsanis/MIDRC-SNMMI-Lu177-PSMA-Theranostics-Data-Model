@@ -1,0 +1,32 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+model_prediction,type,True,False,Theranostics extension,enum,,
+model_prediction,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+model_prediction,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+model_prediction,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+model_prediction,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+model_prediction,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+model_prediction,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+model_prediction,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+model_prediction,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+model_prediction,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+model_prediction,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+model_prediction,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+model_prediction,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+model_prediction,quantity_name,True,False,Theranostics extension,string,"Predicted quantity, with explicit endpoint or physical quantity definition.",
+model_prediction,predicted_value,True,False,Theranostics extension,number,Predicted numerical value; never a measured administered activity or delivered dose.,
+model_prediction,unit,True,False,Theranostics extension,string,Unit of predicted_value or explicit dimensionless designation.,
+model_prediction,prediction_time_hours,False,False,Theranostics extension,number,"Prediction horizon relative to the run scenario anchor, in hours.",
+model_prediction,scenario_activity_mbq,False,False,Theranostics extension,number,"Hypothetical activity in the simulated scenario, not an administered dose.",
+model_prediction,uncertainty_lower,False,False,Theranostics extension,number,Lower uncertainty bound in the same unit as the prediction.,
+model_prediction,uncertainty_upper,False,False,Theranostics extension,number,Upper uncertainty bound in the same unit as the prediction.,
+model_prediction,uncertainty_definition,False,False,Theranostics extension,string,"Interval type, probability level and derivation method.",
+model_prediction,review_status,True,False,Theranostics extension,enum,Review state for this prediction; no automatic clinical approval.,
+model_prediction,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+model_prediction,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+model_prediction,model_runs,True,False,Theranostics extension,array,Link to model_run records by submitter_id or UUID.,
+model_prediction,anatomic_targets,False,False,Theranostics extension,array,Link to anatomic_target records by submitter_id or UUID.,

@@ -1,0 +1,47 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+administration,type,True,False,Theranostics extension,enum,,
+administration,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+administration,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+administration,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+administration,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+administration,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+administration,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+administration,cases,True,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+administration,radiopharmaceuticals,True,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,
+administration,radiopharmaceutical_batches,False,False,Theranostics extension,array,Link to radiopharmaceutical_batch records by submitter_id or UUID.,
+administration,therapy_cycles,False,False,Theranostics extension,array,Link to therapy_cycle records by submitter_id or UUID.,
+administration,visits,False,False,Theranostics extension,array,Link to visit records by submitter_id or UUID.,
+administration,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+administration,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+administration,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+administration,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,idrp_ontology:r41
+administration,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+administration,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+administration,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+administration,administration_purpose,True,False,Theranostics extension,string,Purpose distinguishes treatment administration from tracer injection.,
+administration,administration_datetime,False,False,Theranostics extension,string,Administration start datetime with timezone; apply common shift within patient if de-identified.,lu_177_psma_data_model:r222; dicom:r47
+administration,administered_activity_mbq,True,False,Theranostics extension,number,"Net measured activity delivered, decay-referenced to activity_reference_datetime.",lu_177_psma_data_model:r223; lu_177_psma_data_model:r324; atlas_data_elements:r62; dicom:r48; dcm_nicolas:r7; outcome_revision:r100; nk_blueprint:r92; nk_blueprint:r130
+administration,activity_reference_datetime,True,False,Theranostics extension,string,Datetime to which net delivered activity is decay corrected.,
+administration,pre_injection_activity_mbq,False,False,Theranostics extension,number,Pre-injection activity at its recorded measurement time.,
+administration,residual_activity_mbq,False,False,Theranostics extension,number,Residual activity at its recorded measurement time.,
+administration,pre_measurement_datetime,False,False,Theranostics extension,string,Measurement datetime; do not subtract activities measured at different reference times without decay correction.,
+administration,residual_measurement_datetime,False,False,Theranostics extension,string,Measurement datetime; do not subtract activities measured at different reference times without decay correction.,
+administration,residual_correction_method,False,False,Theranostics extension,string,How residual and delivery losses were handled.,
+administration,route,False,False,Theranostics extension,string,Administration route.,dicom:r56; nk_blueprint:r91
+administration,activity_meter_identifier,False,False,Theranostics extension,string,Activity meter identifier; calibration provenance must be traceable.,
+administration,activity_measurement_container,False,False,Theranostics extension,string,Vial or syringe material and geometry used for activity measurement.,lu_177_psma_data_model:r332
+administration,administration_date,False,False,Theranostics extension,string,Date the specific Lu-177 PSMA therapy cycle was administered.,lu_177_psma_data_model:r326
+administration,dicom_start_time,False,False,Theranostics extension,string,Provisional field for Radiopharmaceutical Start Time; operational definition requires review.,dicom:r45; dcm_nicolas:r5
+administration,dicom_stop_time,False,False,Theranostics extension,string,Provisional field for Radiopharmaceutical Stop Time; operational definition requires review.,dicom:r46; dcm_nicolas:r6
+administration,radiopharmaceutical_units,False,False,Theranostics extension,array,Link to radiopharmaceutical_unit records by submitter_id or UUID.,
+administration,dispense_events,False,False,Theranostics extension,array,Link to dispense_event records by submitter_id or UUID.,idrp_ontology:r15
+administration,administered_compound_mass_ug,False,False,Theranostics extension,number,"Actual administered mass of the specified compound in micrograms, distinct from radionuclide mass.",nk_blueprint:r164
+administration,administered_compound_amount_nmol,False,False,Theranostics extension,number,"Actual administered compound amount in nmol, with chemical identity and conversion assumptions in provenance.",nk_blueprint:r93
+administration,administered_volume_ml,False,False,Theranostics extension,number,Actual administered volume in mL.,nk_blueprint:r165
+administration,infusion_duration_minutes,False,False,Theranostics extension,number,"Actual delivery duration in minutes, distinct from a protocol recommendation.",nk_blueprint:r166
+administration,mass_analyte_basis,False,False,Theranostics extension,string,Chemical identity and total/labeled/unlabeled basis of the administered compound quantity.,

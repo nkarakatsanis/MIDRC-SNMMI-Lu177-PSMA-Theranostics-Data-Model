@@ -1,0 +1,73 @@
+[
+  {
+    "submitter_id": "JOURNEY-TIME-TO-NEXT-TREATMENT",
+    "model_version": "0.3.0-proposal",
+    "endpoint_name": "Time to next treatment",
+    "endpoint_definition": "Next anticancer treatment after last administration of the index course",
+    "time_origin_definition": "Last therapeutic administration of index course",
+    "event_definition": "Actual start of next anticancer therapy",
+    "event_observed": true,
+    "origin_date": "2026-02-01",
+    "censor_date": "2026-08-01",
+    "duration_days": 181,
+    "censoring_reason": "Alive at follow-up",
+    "event_date": "2026-08-01",
+    "duration_months": 5.946611909650924,
+    "months_conversion": "days / 30.4375 for this illustrative analysis",
+    "type": "survival_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "treatment_transitions": [
+      {
+        "submitter_id": "JOURNEY-TRANSITION-RETREATMENT"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-TIME-TO-SSE",
+    "model_version": "0.3.0-proposal",
+    "endpoint_name": "Time to first SSE",
+    "endpoint_definition": "First qualifying symptomatic skeletal event after therapy start",
+    "time_origin_definition": "First therapeutic administration",
+    "event_definition": "First confirmed SSE",
+    "event_observed": true,
+    "origin_date": "2026-01-01",
+    "censor_date": "2026-05-15",
+    "duration_days": 134,
+    "censoring_reason": "Alive at follow-up",
+    "event_date": "2026-05-15",
+    "type": "survival_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "clinical_events": [
+      {
+        "submitter_id": "JOURNEY-SSE-1"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-SURVIVAL_OUTCOME",
+    "model_version": "0.3.0-proposal",
+    "endpoint_name": "OS",
+    "endpoint_definition": "All-cause death or censor at last known alive",
+    "time_origin_definition": "First therapeutic administration",
+    "event_definition": "Death from any cause",
+    "event_observed": false,
+    "origin_date": "2026-01-01",
+    "censor_date": "2026-10-01",
+    "duration_days": 273,
+    "censoring_reason": "Alive at follow-up",
+    "type": "survival_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ]
+  }
+]

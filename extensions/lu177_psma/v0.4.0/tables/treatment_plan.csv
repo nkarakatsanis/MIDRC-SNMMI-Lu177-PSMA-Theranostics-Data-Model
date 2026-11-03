@@ -1,0 +1,37 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+treatment_plan,type,True,False,Theranostics extension,enum,,
+treatment_plan,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+treatment_plan,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+treatment_plan,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+treatment_plan,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+treatment_plan,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+treatment_plan,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+treatment_plan,therapy_courses,True,False,Theranostics extension,array,Link to therapy_course records by submitter_id or UUID.,
+treatment_plan,therapy_cycles,False,False,Theranostics extension,array,Link to therapy_cycle records by submitter_id or UUID.,
+treatment_plan,response_assessments,False,False,Theranostics extension,array,Link to response_assessment records by submitter_id or UUID.,
+treatment_plan,toxicity_events,False,False,Theranostics extension,array,Link to toxicity_event records by submitter_id or UUID.,
+treatment_plan,organ_functions,False,False,Theranostics extension,array,Link to organ_function records by submitter_id or UUID.,
+treatment_plan,dose_summaries,False,False,Theranostics extension,array,Link to dose_summary records by submitter_id or UUID.,
+treatment_plan,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+treatment_plan,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+treatment_plan,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+treatment_plan,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+treatment_plan,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+treatment_plan,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+treatment_plan,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+treatment_plan,planned_activity_gbq,False,False,Theranostics extension,number,"Planned therapeutic activity for the referenced cycle, distinct from measured delivered activity.",nk_blueprint:r163
+treatment_plan,plan_version,True,False,Theranostics extension,string,Version of treatment intent or adaptation.,
+treatment_plan,approval_status,True,False,Theranostics extension,string,Human review state of this plan.,
+treatment_plan,rationale,False,False,Theranostics extension,string,Clinical rationale for plan or modification.,
+treatment_plan,planned_interval_days,False,False,Theranostics extension,number,Planned interval between administrations in days.,nk_blueprint:r167
+treatment_plan,eligibility_assessments,False,False,Theranostics extension,array,References to eligibility_assessment records.,
+treatment_plan,plan_datetime,False,False,Theranostics extension,string,Date/time this plan version was recorded.,
+treatment_plan,planning_reference_dose_gy,False,False,Theranostics extension,number,"Reference dose used in this plan, if any; not a model-imposed or universal PSMA-RPT tolerance limit.",nk_blueprint:r148
+treatment_plan,planning_reference_source,False,False,Theranostics extension,string,"Source, context and applicability of a planning reference level.",
+treatment_plan,laboratory_measurements,False,False,Theranostics extension,compound,,
+treatment_plan,model_predictions,False,False,Theranostics extension,array,Link to model_prediction records by submitter_id or UUID.,

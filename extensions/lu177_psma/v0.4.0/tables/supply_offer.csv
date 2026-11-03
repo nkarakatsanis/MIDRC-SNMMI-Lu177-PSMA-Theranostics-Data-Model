@@ -1,0 +1,34 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+supply_offer,type,True,False,Theranostics extension,enum,,
+supply_offer,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+supply_offer,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+supply_offer,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+supply_offer,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+supply_offer,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+supply_offer,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+supply_offer,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+supply_offer,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+supply_offer,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+supply_offer,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+supply_offer,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+supply_offer,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+supply_offer,seller,True,False,Theranostics extension,string,Organization offering the product.,idrp_ontology:r11
+supply_offer,supplier,False,False,Theranostics extension,string,"Organization fulfilling supply, if different from seller.",
+supply_offer,manufacturer,False,False,Theranostics extension,string,Organization manufacturing the offered product.,
+supply_offer,labeler,False,False,Theranostics extension,string,Organization named as labeler; do not equate it automatically with manufacturer.,
+supply_offer,catalog_identifier,True,False,Theranostics extension,string,"Seller-specific catalog number or SKU, kept as a string.",idrp_ontology:r82
+supply_offer,valid_from,True,False,Theranostics extension,string,Date from which this offer description is known to apply.,
+supply_offer,valid_to,False,False,Theranostics extension,string,End date when supplied; absence does not assert current availability.,
+supply_offer,unit_of_sale,False,False,Theranostics extension,string,"Commercial unit, distinct from physical activity and administered dose.",
+supply_offer,price_amount,False,False,Theranostics extension,number,Optional source-reported dated price; no current price or reimbursement is inferred.,
+supply_offer,price_currency,False,False,Theranostics extension,string,Currency code associated with price_amount.,
+supply_offer,price_basis,False,False,Theranostics extension,string,"Price basis and included or excluded services, such as transport or dispensing.",
+supply_offer,source_citation,True,False,Theranostics extension,string,Catalog or contract source and retrieval context.,
+supply_offer,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+supply_offer,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+supply_offer,product_packages,True,False,Theranostics extension,array,Link to product_package records by submitter_id or UUID.,

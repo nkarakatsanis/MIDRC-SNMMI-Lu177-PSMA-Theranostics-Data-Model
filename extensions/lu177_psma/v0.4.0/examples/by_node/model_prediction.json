@@ -1,0 +1,36 @@
+[
+  {
+    "type": "model_prediction",
+    "submitter_id": "RP-PREDICTION",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "model_runs": [
+      {
+        "submitter_id": "RP-RUN"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      }
+    ],
+    "quantity_name": "Mean lesion absorbed dose",
+    "predicted_value": 4.0,
+    "unit": "Gy",
+    "scenario_activity_mbq": 1000.0,
+    "uncertainty_lower": 3.0,
+    "uncertainty_upper": 5.0,
+    "uncertainty_definition": "Invented illustrative interval, not a calibrated confidence interval",
+    "review_status": "unreviewed"
+  }
+]

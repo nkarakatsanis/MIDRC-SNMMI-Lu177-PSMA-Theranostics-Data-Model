@@ -1,0 +1,31 @@
+[
+  {
+    "type": "theranostic_pair",
+    "submitter_id": "RP-PAIR",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "pair_name": "Synthetic diagnostic and therapy pair",
+    "diagnostic_agents": [
+      {
+        "submitter_id": "SYN-DIAGNOSTIC-PRODUCT"
+      }
+    ],
+    "therapeutic_agents": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "pair_basis": "Common target in the invented example",
+    "pair_limitations": "No kinetic or dosimetric interchangeability is established."
+  }
+]

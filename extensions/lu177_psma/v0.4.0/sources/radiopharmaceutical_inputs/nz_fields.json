@@ -1,0 +1,1038 @@
+{
+  "filename": "Radiopharmaceutical data model_Nov2026_NZ.xlsx",
+  "sha256": "10dc2deb91dfee642204f83023f1ce0037443ff5b02fcde8d00c0312605dee14",
+  "sheets": [
+    {
+      "name": "Sheet1",
+      "rows": [
+        {
+          "row": 5,
+          "cells": {
+            "A5": {
+              "value": "Category",
+              "formula": null
+            },
+            "B5": {
+              "value": "Subcategory",
+              "formula": null
+            },
+            "C5": {
+              "value": "Data elements to capture",
+              "formula": null
+            },
+            "D5": {
+              "value": "Pluvicto-specific data",
+              "formula": null
+            },
+            "E5": {
+              "value": "Data source",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 6,
+          "cells": {
+            "A6": {
+              "value": "Medicinal Product Identification",
+              "formula": null
+            },
+            "B6": {
+              "value": "Naming & Coding",
+              "formula": null
+            },
+            "C6": {
+              "value": "Brand Name (BN)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 7,
+          "cells": {
+            "C7": {
+              "value": "International Nonproprietary Name (INN)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 8,
+          "cells": {
+            "C8": {
+              "value": "Precise Ingredient (PIN)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 9,
+          "cells": {
+            "C9": {
+              "value": "RxNorm Concept Unique Identifier (RxCUI)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 10,
+          "cells": {
+            "C10": {
+              "value": "Unique Ingredient Identifier (UNII)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 11,
+          "cells": {
+            "C11": {
+              "value": "SNOMED CT Identifier (SCT ID)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 12,
+          "cells": {
+            "C12": {
+              "value": "NCI Thesaurus Code",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 13,
+          "cells": {
+            "C13": {
+              "value": "Medicinal product identifier (MPID)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 16,
+          "cells": {
+            "B16": {
+              "value": "Regulatory Identification",
+              "formula": null
+            },
+            "C16": {
+              "value": "New Drug Application (NDA) no.",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 17,
+          "cells": {
+            "C17": {
+              "value": "National Drug Code (NDC) number",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 18,
+          "cells": {
+            "C18": {
+              "value": "Abbreviated New Drug Application (ANDA) no.",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 19,
+          "cells": {
+            "C19": {
+              "value": "Marketing Authorisation Holder (MAH)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 20,
+          "cells": {
+            "C20": {
+              "value": "Marketing Authorisation Number",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 21,
+          "cells": {
+            "C21": {
+              "value": "Regulatory approval status",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 22,
+          "cells": {
+            "C22": {
+              "value": "Regulatory approval date",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 23,
+          "cells": {
+            "C23": {
+              "value": "Regulatory jurisdiction",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 24,
+          "cells": {
+            "C24": {
+              "value": "Regulatory Authority",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 27,
+          "cells": {
+            "B27": {
+              "value": "Regulatory / Application Relationship",
+              "formula": null
+            },
+            "C27": {
+              "value": "Regulatory application type ",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 28,
+          "cells": {
+            "C28": {
+              "value": "Regulatory approval pathway [e.g. 505(b)(1), 505(b)(2), 505 (c), 505(j), Standard/petitioned ANDA]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 29,
+          "cells": {
+            "C29": {
+              "value": "Reference Listed Drug (RLD)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 30,
+          "cells": {
+            "C30": {
+              "value": "Reference product/application number",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 31,
+          "cells": {
+            "C31": {
+              "value": "Relationship to reference product",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 32,
+          "cells": {
+            "C32": {
+              "value": "Regulatory submission strategy (Bundling, Grouped Supplements)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 34,
+          "cells": {
+            "B34": {
+              "value": "Product-Defining Attributes",
+              "formula": null
+            },
+            "C34": {
+              "value": "Active Ingredient(s) (IN) ",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 35,
+          "cells": {
+            "C35": {
+              "value": "Excipient(s)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 36,
+          "cells": {
+            "C36": {
+              "value": "Strength",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 37,
+          "cells": {
+            "C37": {
+              "value": "Dosage form",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 38,
+          "cells": {
+            "C38": {
+              "value": "Route of administration",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 39,
+          "cells": {
+            "C39": {
+              "value": "Approved indication/conditions of use",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 40,
+          "cells": {
+            "C40": {
+              "value": "Bioequivalence and/or Bioavailability",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 43,
+          "cells": {
+            "B43": {
+              "value": "Chemical Structure & Identifiers",
+              "formula": null
+            },
+            "C43": {
+              "value": "PubChem CID",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 44,
+          "cells": {
+            "C44": {
+              "value": "CAS Number",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 45,
+          "cells": {
+            "C45": {
+              "value": "InChIKey",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 46,
+          "cells": {
+            "C46": {
+              "value": "ChEMBL ID",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 47,
+          "cells": {
+            "C47": {
+              "value": "DrugBank ID",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 48,
+          "cells": {
+            "C48": {
+              "value": "Molecular formula",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 49,
+          "cells": {
+            "C49": {
+              "value": "Molecular weight",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 50,
+          "cells": {
+            "C50": {
+              "value": "moiety",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 54,
+          "cells": {
+            "A54": {
+              "value": "Description of Medicinal Product",
+              "formula": null
+            },
+            "B54": {
+              "value": "Active component (PI)",
+              "formula": null
+            },
+            "C54": {
+              "value": "Excipient",
+              "formula": null
+            },
+            "E54": {
+              "value": "Drugs@FDA",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 55,
+          "cells": {
+            "C55": {
+              "value": "Physical appearance (clarity, color)",
+              "formula": null
+            },
+            "E55": {
+              "value": "Drugs@FDA",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 56,
+          "cells": {
+            "C56": {
+              "value": "Administrable dose form (aDF) [e.g. solution for injection, tablet for oral use, hard-capsule powder for inhilation]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 57,
+          "cells": {
+            "C57": {
+              "value": "Manufactured dose form (mDF) ",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 58,
+          "cells": {
+            "C58": {
+              "value": "Administration device [e.g. needle, oral syringe]",
+              "formula": null
+            },
+            "E58": {
+              "value": "Drugs@FDA",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 59,
+          "cells": {
+            "C59": {
+              "value": "Route of Administration (intravenous, oral, intravesical)",
+              "formula": null
+            },
+            "E59": {
+              "value": "Drugs@FDA",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 60,
+          "cells": {
+            "C60": {
+              "value": "pH",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 61,
+          "cells": {
+            "C61": {
+              "value": "Transformation [e.g. Dilution, dissolution, suspension]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 63,
+          "cells": {
+            "B63": {
+              "value": "Radioactive component ",
+              "formula": null
+            },
+            "C63": {
+              "value": "Name of the radioactive isotope ",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 64,
+          "cells": {
+            "C64": {
+              "value": "Physical half-life",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 65,
+          "cells": {
+            "C65": {
+              "value": "Decay mode",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 66,
+          "cells": {
+            "C66": {
+              "value": "Branching ratio",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 67,
+          "cells": {
+            "C67": {
+              "value": "Emission energy spectrum",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 68,
+          "cells": {
+            "C68": {
+              "value": "Emission abundance",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 69,
+          "cells": {
+            "C69": {
+              "value": "Decay chain (radioactive daughters)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 70,
+          "cells": {
+            "C70": {
+              "value": "[… This section is for Jazmin]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 73,
+          "cells": {
+            "A73": {
+              "value": "Clinical Pharmacology",
+              "formula": null
+            },
+            "B73": {
+              "value": "Mechanism of Action & Targeting ",
+              "formula": null
+            },
+            "C73": {
+              "value": "Biological Target",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 74,
+          "cells": {
+            "C74": {
+              "value": "Targeting Mechanism or mode of interaction",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 75,
+          "cells": {
+            "C75": {
+              "value": "Active component (PI)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 76,
+          "cells": {
+            "C76": {
+              "value": "Radiation-induced killing mechanism",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 79,
+          "cells": {
+            "B79": {
+              "value": "Pharmacodynamic Effects",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 82,
+          "cells": {
+            "B82": {
+              "value": "Pharmacokinetics",
+              "formula": null
+            },
+            "C82": {
+              "value": "Absorption (bioavailability?, geometric mean blood exposure, geometric mean maximum blood concentration)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 83,
+          "cells": {
+            "C83": {
+              "value": "Distribution (mean volume of distribution, binding to plasma proteins, organs or tissue of high uptake)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 84,
+          "cells": {
+            "C84": {
+              "value": "Elimination (mean clearance, mean terminal half-life)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 85,
+          "cells": {
+            "C85": {
+              "value": "Metabolism (biotransformation (renal or hepatic metabolism))",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 86,
+          "cells": {
+            "C86": {
+              "value": "Protein binding",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 87,
+          "cells": {
+            "C87": {
+              "value": "Binding affinity",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 88,
+          "cells": {
+            "C88": {
+              "value": "Excretion (percentage of excreted activity per 5, 24, 48h and 14 days)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 89,
+          "cells": {
+            "C89": {
+              "value": "In vitro evaluation of drug interaction potential (enzymes and transporters)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 92,
+          "cells": {
+            "A92": {
+              "value": "Packaging, Storage and Handling",
+              "formula": null
+            },
+            "B92": {
+              "value": "Container ",
+              "formula": null
+            },
+            "C92": {
+              "value": "Container type [e.g. vial (single-dose / multi-dose), pre-filled syringe, ampoule, cartridge, infusion bag, generator system]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 93,
+          "cells": {
+            "C93": {
+              "value": "Container Material [e.g. Glass , plastic , shielded container (lead-lined vial, tungsten syringe)]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 94,
+          "cells": {
+            "C94": {
+              "value": "Closure System [e.g. Stopper type (rubber, coated), crimp seal (aluminum), luer-lock (for syringes)]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 95,
+          "cells": {
+            "C95": {
+              "value": "Shielding configration [e.g. Lead pot (mm Pb equivalent), tungsten syringe shield, transport shielding class]",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 96,
+          "cells": {
+            "B96": {
+              "value": "Nominal fill volume ",
+              "formula": null
+            },
+            "C96": {
+              "value": "Volume per container (e.g., mL)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 97,
+          "cells": {
+            "C97": {
+              "value": "total activity per container (e.g., GBq at calibration)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 98,
+          "cells": {
+            "C98": {
+              "value": "headspace",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 99,
+          "cells": {
+            "B99": {
+              "value": "Calibration & Labeling Attributes",
+              "formula": null
+            },
+            "C99": {
+              "value": "Calibration time",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 100,
+          "cells": {
+            "C100": {
+              "value": "Expiry relative to calibration (shelf-life)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 101,
+          "cells": {
+            "C101": {
+              "value": "base quantity",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 102,
+          "cells": {
+            "C102": {
+              "value": "base unit",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 105,
+          "cells": {
+            "B105": {
+              "value": "Storage & Transport Conditions",
+              "formula": null
+            },
+            "C105": {
+              "value": "Temperature",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 106,
+          "cells": {
+            "C106": {
+              "value": "Radiation safety labeling",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 107,
+          "cells": {
+            "C107": {
+              "value": "light protection",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 108,
+          "cells": {
+            "C108": {
+              "value": "Packaging Configuration (Immediate and outer packaging)",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 111,
+          "cells": {
+            "B111": {
+              "value": "follows_regulatory_pathway",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 112,
+          "cells": {
+            "B112": {
+              "value": "issued_by",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 113,
+          "cells": {
+            "B113": {
+              "value": "has_marketing_authorization",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 114,
+          "cells": {
+            "B114": {
+              "value": "is_pharmaceutically_equivalent_to",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 115,
+          "cells": {
+            "B115": {
+              "value": "has_active_ingredient",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 116,
+          "cells": {
+            "B116": {
+              "value": "has_excipient",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 117,
+          "cells": {
+            "B117": {
+              "value": "has_dose_form",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 118,
+          "cells": {
+            "B118": {
+              "value": "has_route_of_administration",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 119,
+          "cells": {
+            "B119": {
+              "value": "has_chemical_structure",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 120,
+          "cells": {
+            "B120": {
+              "value": "has_chelator",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 121,
+          "cells": {
+            "B121": {
+              "value": "has_radionuclide",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 122,
+          "cells": {
+            "B122": {
+              "value": "has_molecular_target",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 123,
+          "cells": {
+            "B123": {
+              "value": "has_mechanism_of_action",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 124,
+          "cells": {
+            "B124": {
+              "value": "is_expressed_in",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 125,
+          "cells": {
+            "B125": {
+              "value": "decays_to",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 126,
+          "cells": {
+            "B126": {
+              "value": "has_decay_mode",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 127,
+          "cells": {
+            "B127": {
+              "value": "has_regulatory_application",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 128,
+          "cells": {
+            "B128": {
+              "value": "follows_regulatory_pathway",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 129,
+          "cells": {
+            "B129": {
+              "value": "is_packaged_in",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 130,
+          "cells": {
+            "B130": {
+              "value": "has_storage_condition",
+              "formula": null
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

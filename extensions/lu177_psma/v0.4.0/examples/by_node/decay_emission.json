@@ -1,0 +1,32 @@
+[
+  {
+    "type": "decay_emission",
+    "submitter_id": "RP-DECAY",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "record_kind": "decay_branch",
+    "parent_nuclides": [
+      {
+        "submitter_id": "RP-LU177"
+      }
+    ],
+    "daughter_nuclides": [
+      {
+        "submitter_id": "RP-HF177"
+      }
+    ],
+    "decay_mode": "beta-minus",
+    "branch_fraction": 1.0,
+    "reference_citation": "NNDC ENSDF adopted Lu-177 levels, August 2019 evaluation; aggregate beta-minus decay branch, not a gamma emission yield."
+  }
+]

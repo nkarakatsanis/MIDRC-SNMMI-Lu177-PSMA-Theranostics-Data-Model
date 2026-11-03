@@ -1,0 +1,51 @@
+[
+  {
+    "node": "dicom_annotation_file",
+    "property": "modality",
+    "added_value": "RTDOSE",
+    "reason": "Represent DICOM RT Dose maps using the existing DICOM annotation artifact node.",
+    "status": "proposed; MIDRC approval required"
+  },
+  {
+    "node": "annotation",
+    "property": "annotation_name",
+    "added_value": "NMMI_PSMA_SEGMENTATION",
+    "reason": "Provisional registered annotation workflow names; not ontology concept identifiers.",
+    "status": "proposed; MIDRC approval required"
+  },
+  {
+    "node": "annotation",
+    "property": "annotation_name",
+    "added_value": "NMMI_PSMA_DOSE_MAP",
+    "reason": "Provisional registered annotation workflow names; not ontology concept identifiers.",
+    "status": "proposed; MIDRC approval required"
+  },
+  {
+    "node": "annotation_file",
+    "property": "annotation_name",
+    "added_value": "NMMI_PSMA_SEGMENTATION",
+    "reason": "Provisional registered annotation workflow names; not ontology concept identifiers.",
+    "status": "proposed; MIDRC approval required"
+  },
+  {
+    "node": "annotation_file",
+    "property": "annotation_name",
+    "added_value": "NMMI_PSMA_DOSE_MAP",
+    "reason": "Provisional registered annotation workflow names; not ontology concept identifiers.",
+    "status": "proposed; MIDRC approval required"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "annotation_name",
+    "added_value": "NMMI_PSMA_SEGMENTATION",
+    "reason": "Provisional registered annotation workflow names; not ontology concept identifiers.",
+    "status": "proposed; MIDRC approval required"
+  },
+  {
+    "node": "dicom_annotation_file",
+    "property": "annotation_name",
+    "added_value": "NMMI_PSMA_DOSE_MAP",
+    "reason": "Provisional registered annotation workflow names; not ontology concept identifiers.",
+    "status": "proposed; MIDRC approval required"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "reference_evidence",
+    "submitter_id": "RP-EVIDENCE",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "title": "Invented reference PK study",
+    "evidence_kind": "experimental_dataset",
+    "setting": "preclinical",
+    "species": "Synthetic animal study context",
+    "source_citation": "Fabricated evidence for data-structure demonstration; no animal experiment was conducted.",
+    "population_description": "Invented cohort",
+    "sample_size": 5,
+    "sample_unit": "animals"
+  }
+]

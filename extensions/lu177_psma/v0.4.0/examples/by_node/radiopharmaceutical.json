@@ -1,0 +1,45 @@
+[
+  {
+    "submitter_id": "SYN-DIAGNOSTIC-PRODUCT",
+    "model_version": "0.4.0-proposal",
+    "name": "Synthetic F-18 PSMA tracer",
+    "radionuclide": "F-18",
+    "molecular_target": "PSMA",
+    "type": "radiopharmaceutical",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-RADIOPHARMACEUTICAL",
+    "model_version": "0.4.0-proposal",
+    "name": "Synthetic Lu-177 PSMA product",
+    "radionuclide": "Lu-177",
+    "molecular_target": "PSMA",
+    "type": "radiopharmaceutical",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "radionuclide_records": [
+      {
+        "submitter_id": "RP-LU177"
+      }
+    ],
+    "molecular_entities": [
+      {
+        "submitter_id": "RP-MOLECULE"
+      }
+    ],
+    "biological_targets": [
+      {
+        "submitter_id": "RP-TARGET"
+      }
+    ],
+    "agent_class": "therapeutic reference agent",
+    "identity_scope": "reference_agent"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "submitter_id": "JOURNEY-COMPLETION",
+    "model_version": "0.3.0-proposal",
+    "decision_type": "complete_planned_course",
+    "decision_datetime": "2026-02-01T15:00:00Z",
+    "rationale": "Completed the prospectively recorded compact example plan; this does not mean NLCB.",
+    "type": "treatment_decision",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "treatment_plans": [
+      {
+        "submitter_id": "JOURNEY-INITIAL-PLAN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-CONTINUE-DECISION",
+    "model_version": "0.3.0-proposal",
+    "decision_type": "continue",
+    "decision_datetime": "2026-01-23T10:00:00Z",
+    "rationale": "Synthetic treating-team decision following clinical review; an early PSA increase alone was not assigned a flare or progression label.",
+    "type": "treatment_decision",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "therapy_cycles": [
+      {
+        "submitter_id": "SYN-THERAPY_CYCLE"
+      }
+    ],
+    "response_assessments": [
+      {
+        "submitter_id": "JOURNEY-EARLY-PSA-ASSESSMENT"
+      }
+    ],
+    "toxicity_events": [
+      {
+        "submitter_id": "SYN-TOXICITY_EVENT"
+      }
+    ],
+    "treatment_plans": [
+      {
+        "submitter_id": "JOURNEY-INITIAL-PLAN"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-DECISION",
+    "model_version": "0.3.0-proposal",
+    "decision_type": "retreat",
+    "decision_datetime": "2026-07-28T12:00:00Z",
+    "rationale": "Invented clinician-selected retreatment after later reassessment; not an automatic response to PSA or dose.",
+    "type": "treatment_decision",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "clinical_events": [
+      {
+        "submitter_id": "JOURNEY-SSE-1"
+      }
+    ]
+  }
+]

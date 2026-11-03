@@ -1,0 +1,12 @@
+[
+  {
+    "submitter_id": "SYN-MEDICAL_HISTORY",
+    "model_version": "0.3.0-proposal",
+    "type": "medical_history",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

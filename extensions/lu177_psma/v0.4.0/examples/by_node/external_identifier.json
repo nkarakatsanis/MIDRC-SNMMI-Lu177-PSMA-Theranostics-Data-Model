@@ -1,0 +1,29 @@
+[
+  {
+    "type": "external_identifier",
+    "submitter_id": "RP-ID",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "molecular_entities": [
+      {
+        "submitter_id": "RP-MOLECULE"
+      }
+    ],
+    "identifier": "SYN-CODE-0001",
+    "identifier_system": "Synthetic local scheme",
+    "identifier_level": "precise substance",
+    "mapping_relation": "candidate",
+    "review_status": "unreviewed",
+    "source_citation": "Invented identifier; no NucLex/RxNorm approval asserted."
+  }
+]

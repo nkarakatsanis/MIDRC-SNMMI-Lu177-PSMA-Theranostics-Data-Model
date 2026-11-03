@@ -1,0 +1,58 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+medication,case_ids,False,False,MIDRC unchanged,array,A list of one or more case submitter_ids associated with this data.,
+medication,cases,True,False,MIDRC unchanged,compound,"The submitter_id or id of the case receiving this medication, i.e., a link to a record in the parent node.",
+medication,created_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+medication,days_to_medication_end,False,False,MIDRC unchanged,integer,The number of days from the index date to the date the case stopped a specific medication.,
+medication,days_to_medication_start,False,False,MIDRC unchanged,integer,The number of days from the index date to the date the case started a specific medication.,
+medication,dose_sequence_number,False,False,MIDRC unchanged,integer,The sequence number of a specific dose of a medication given in a series of doses.,
+medication,id,False,True,MIDRC unchanged,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+medication,medication_code,False,False,MIDRC unchanged,string,"The code for a specific medication, assigned by the code system.",
+medication,medication_code_system,False,False,MIDRC unchanged,string,"The code for a specific medication, assigned by the code system.
+",
+medication,medication_manufacturer,False,False,MIDRC unchanged,string,"The name of the company that manufactured the medication.
+",
+medication,medication_name,False,False,MIDRC unchanged,string,"The name of the specific medication the case was prescribed or administered.
+",nk_blueprint:r174; nk_blueprint:r176
+medication,medication_type,False,False,MIDRC unchanged,enum,A categorization of medication used to describe the type of medication the patient was perscribed or administered.,
+medication,project_id,False,True,MIDRC unchanged,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+medication,state,False,True,MIDRC unchanged,compound,"The current state of the object.
+",
+medication,submitter_id,True,False,MIDRC unchanged,string,"A human-readable, unique identifier for a record in the metadata database. It can be used in place of the UUID for identifying or recalling a record (e.g., in data queries or uploads/exports).",
+medication,type,True,False,MIDRC unchanged,string,"The node_id of the node in the data model; the name of the node used in queries and API requests (e.g., ""aligned_reads_file"" for the ""Aligned Reads File"" node).",
+medication,updated_datetime,False,True,MIDRC unchanged,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+medication,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+medication,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+medication,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+medication,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+medication,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+medication,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+medication,prior_androgen_receptor_targeted_agent,False,False,Theranostics extension,boolean,"Specifies if the patient received prior ARPI therapy (e.g., Abiraterone, Enzalutamide).",lu_177_psma_data_model:r136
+medication,prior_arpi_names,False,False,Theranostics extension,array,List of ARPIs previously administered.,lu_177_psma_data_model:r137
+medication,prior_chemo_nontaxane_regimens,False,False,Theranostics extension,string,List or description of non-taxane chemotherapy regimens previously administered.,lu_177_psma_data_model:r138
+medication,prior_chemotherapy_nontaxane,False,False,Theranostics extension,boolean,Specifies if the patient received prior non-taxane chemotherapy regimens.,lu_177_psma_data_model:r139
+medication,prior_hormonal_other_regimens,False,False,Theranostics extension,string,List or description of other hormonal therapies previously administered.,lu_177_psma_data_model:r140
+medication,prior_hormonal_therapy_other,False,False,Theranostics extension,boolean,"Specifies if the patient received prior hormonal therapies other than initial ADT or the main ARPIs listed separately (e.g., ketoconazole, estrogens).",lu_177_psma_data_model:r141
+medication,prior_immunotherapy,False,False,Theranostics extension,boolean,"Specifies if the patient received prior immunotherapy (e.g., Sipuleucel-T, Pembrolizumab).",lu_177_psma_data_model:r142
+medication,prior_immunotherapy_regimens,False,False,Theranostics extension,string,List or description of immunotherapies previously administered.,lu_177_psma_data_model:r143
+medication,prior_other_systemic_therapies,False,False,Theranostics extension,string,"Details of other systemic therapies received for prostate cancer (e.g., Sipuleucel-T, Radium-223).",lu_177_psma_data_model:r144
+medication,prior_radiopharmaceutical_therapy,False,False,Theranostics extension,boolean,"Specifies if the patient received prior radiopharmaceutical therapy other than the current Lu-177 PSMA (e.g., Radium-223, Strontium-89).",lu_177_psma_data_model:r145
+medication,prior_rpt_agent,False,False,Theranostics extension,array,Name of the prior therapeutic radiopharmaceutical agent(s) administered.,lu_177_psma_data_model:r150
+medication,prior_rpt_completion_date,False,False,Theranostics extension,string,Date the last cycle of prior radiopharmaceutical therapy was administered.,lu_177_psma_data_model:r151
+medication,prior_taxane_chemotherapy,False,False,Theranostics extension,boolean,"Specifies if the patient received prior taxane-based chemotherapy (e.g., Docetaxel, Cabazitaxel).",lu_177_psma_data_model:r155
+medication,prior_taxane_names,False,False,Theranostics extension,array,List of taxane chemotherapies previously administered.,lu_177_psma_data_model:r156
+medication,concurrent_therapies_during_lu177,False,False,Theranostics extension,array,Any other cancer therapies administered concurrently with Lu-177 PSMA.,lu_177_psma_data_model:r325
+medication,hormone_therapy,False,False,Theranostics extension,string,Provisional field for hormone therapy; operational definition requires review.,atlas_data_elements:r132
+medication,chemotherapy,False,False,Theranostics extension,string,Provisional field for chemotherapy; operational definition requires review.,atlas_data_elements:r133
+medication,immunotherapy,False,False,Theranostics extension,string,Provisional field for Immunotherapy; operational definition requires review.,atlas_data_elements:r134
+medication,arpi,False,False,Theranostics extension,string,type of treatment,other:r9
+medication,other_medication,False,False,Theranostics extension,string,Provisional field for Other medication; operational definition requires review.,other:r19
+medication,morphine,False,False,Theranostics extension,string,Provisional field for Morphine; operational definition requires review.,other:r21
+medication,fentanyl,False,False,Theranostics extension,string,Provisional field for Fentanyl; operational definition requires review.,other:r22
+medication,pain_medication,False,False,Theranostics extension,string,Provisional field for Pain medication; operational definition requires review.,other:r23
+medication,start_date,False,False,Theranostics extension,string,Date of medication start date.,
+medication,end_date,False,False,Theranostics extension,string,Date of medication end date.,
+medication,provenance_records,False,False,Theranostics extension,compound,,

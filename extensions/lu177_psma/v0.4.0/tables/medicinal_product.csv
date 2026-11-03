@@ -1,0 +1,34 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+medicinal_product,type,True,False,Theranostics extension,enum,,
+medicinal_product,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r155
+medicinal_product,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+medicinal_product,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+medicinal_product,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+medicinal_product,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+medicinal_product,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+medicinal_product,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+medicinal_product,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+medicinal_product,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+medicinal_product,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+medicinal_product,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+medicinal_product,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+medicinal_product,product_name,True,False,Theranostics extension,string,Name of the commercial or investigational medicinal product.,
+medicinal_product,brand_name,False,False,Theranostics extension,string,Brand label for this product and jurisdiction; not an ingredient identifier.,nz_model:r6; nk_blueprint:r156
+medicinal_product,investigational_name,False,False,Theranostics extension,string,Sponsor-assigned investigational product name.,nk_blueprint:r157
+medicinal_product,product_kind,True,False,Theranostics extension,enum,Presentation category; kit contents are not assumed to be a ready-to-administer radiolabeled dose.,nk_blueprint:r192
+medicinal_product,manufactured_dose_form,False,False,Theranostics extension,string,Dose form before required preparation or transformation.,nz_model:r57
+medicinal_product,administrable_dose_form,False,False,Theranostics extension,string,Dose form after preparation for administration.,nz_model:r37; nz_model:r56; nz_model:r117; nk_blueprint:r168
+medicinal_product,intended_routes,False,False,Theranostics extension,array,Permitted or investigated routes according to the linked label or protocol; actual route belongs to administration.,nz_model:r38; nz_model:r59; nz_model:r118; nk_blueprint:r169
+medicinal_product,strength_description,False,False,Theranostics extension,string,"Labeled strength or concentration convention, including numerator, denominator and activity reference basis.",nz_model:r36; nk_blueprint:r170
+medicinal_product,appearance_specification,False,False,Theranostics extension,string,Labeled appearance requirement; measured appearance belongs to a test record.,nz_model:r55
+medicinal_product,transformation_instruction,False,False,Theranostics extension,string,Source-referenced preparation instruction such as reconstitution or dilution; not an executed preparation event.,nz_model:r61
+medicinal_product,administration_device_specification,False,False,Theranostics extension,string,Device or delivery-system specification from the source label or protocol.,nz_model:r58
+medicinal_product,label_version,False,False,Theranostics extension,string,Product-label or formulation specification version.,
+medicinal_product,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+medicinal_product,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+medicinal_product,radiopharmaceuticals,True,False,Theranostics extension,array,Link to radiopharmaceutical records by submitter_id or UUID.,

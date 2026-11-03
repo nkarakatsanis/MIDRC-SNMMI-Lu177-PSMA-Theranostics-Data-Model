@@ -1,0 +1,14 @@
+[
+  {
+    "submitter_id": "SYN-PROVENANCE",
+    "model_version": "0.3.0-proposal",
+    "source_system": "Synthetic generator",
+    "transformation": "Illustrative data only; no clinical inference or imported patient data",
+    "type": "provenance",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  }
+]

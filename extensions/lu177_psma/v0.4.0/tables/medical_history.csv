@@ -1,0 +1,47 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+medical_history,type,True,False,Theranostics extension,enum,,
+medical_history,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+medical_history,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+medical_history,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+medical_history,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+medical_history,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+medical_history,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+medical_history,cases,True,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+medical_history,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+medical_history,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+medical_history,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+medical_history,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+medical_history,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+medical_history,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+medical_history,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+medical_history,comorbidity_cardiovascular_disease,False,False,Theranostics extension,string,"Presence of clinically significant cardiovascular disease (e.g., CAD, CHF, Stroke).",lu_177_psma_data_model:r112
+medical_history,comorbidity_chronic_kidney_disease,False,False,Theranostics extension,string,"Presence of Chronic Kidney Disease (CKD) not including primary renal effects of cancer/therapy, specify stage if known.",lu_177_psma_data_model:r113
+medical_history,comorbidity_diabetes_mellitus,False,False,Theranostics extension,string,Presence of Diabetes Mellitus as a comorbidity.,lu_177_psma_data_model:r114
+medical_history,comorbidity_hypertension,False,False,Theranostics extension,string,Presence of Hypertension as a comorbidity.,lu_177_psma_data_model:r115
+medical_history,significant_comorbidities_list,False,False,Theranostics extension,array,"List of significant co-existing medical conditions at baseline (e.g., Diabetes Mellitus, Hypertension, Cardiovascular Disease, Chronic Kidney Disease, COPD). Can be free text or coded.",lu_177_psma_data_model:r157
+medical_history,family_history_other_cancer,False,False,Theranostics extension,string,"Indicates if there is a family history of other significant cancers (e.g., breast, ovarian, pancreatic, colorectal).",lu_177_psma_data_model:r320
+medical_history,family_history_other_cancer_details,False,False,Theranostics extension,string,Specify type of cancer and relative for other family cancer history.,lu_177_psma_data_model:r321
+medical_history,family_history_prostateca,False,False,Theranostics extension,string,Indicates if there is a family history of prostate cancer in first or second-degree relatives.,lu_177_psma_data_model:r322
+medical_history,family_history_prostateca_relatives,False,False,Theranostics extension,array,"Specify relatives with prostate cancer (e.g., Father, Brother, Son).",lu_177_psma_data_model:r323
+medical_history,family_history_prostate_cancer,False,False,Theranostics extension,string,"Parent, sibling, ",atlas_data_elements:r18
+medical_history,family_history_prostate_cancer_age,False,False,Theranostics extension,string,Age of onset,atlas_data_elements:r19
+medical_history,family_history_breast_cancer,False,False,Theranostics extension,string,Provisional field for breast cancer; operational definition requires review.,atlas_data_elements:r20
+medical_history,family_history_colorectal_cancer,False,False,Theranostics extension,string,Provisional field for colorectal cancer; operational definition requires review.,atlas_data_elements:r21
+medical_history,family_history_ovarian_cancer,False,False,Theranostics extension,string,Provisional field for ovarian cancer; operational definition requires review.,atlas_data_elements:r22
+medical_history,family_history_melanoma,False,False,Theranostics extension,string,Provisional field for melanoma; operational definition requires review.,atlas_data_elements:r23
+medical_history,family_history_pancreatic_cancer,False,False,Theranostics extension,string,Provisional field for pancreatic cancer; operational definition requires review.,atlas_data_elements:r24
+medical_history,history_prostate_cancer,False,False,Theranostics extension,string,Provisional field for prostate cancer; operational definition requires review.,atlas_data_elements:r80
+medical_history,history_bph,False,False,Theranostics extension,string,Benign Prostate Hyperplasia,atlas_data_elements:r81
+medical_history,history_prostatitis,False,False,Theranostics extension,string,Provisional field for prostatitis; operational definition requires review.,atlas_data_elements:r82
+medical_history,history_diabetes,False,False,Theranostics extension,string,Provisional field for diabetes; operational definition requires review.,atlas_data_elements:r83
+medical_history,history_coronary_disease,False,False,Theranostics extension,string,Provisional field for coronary disease; operational definition requires review.,atlas_data_elements:r84
+medical_history,history_hypertension,False,False,Theranostics extension,string,Provisional field for hypertension; operational definition requires review.,atlas_data_elements:r85
+medical_history,history_heart_failure,False,False,Theranostics extension,string,Provisional field for heart failure; operational definition requires review.,atlas_data_elements:r86
+medical_history,history_kidney_stones,False,False,Theranostics extension,string,Provisional field for kidney stones; operational definition requires review.,atlas_data_elements:r87
+medical_history,history_bladder_stones,False,False,Theranostics extension,string,Provisional field for bladder stones; operational definition requires review.,atlas_data_elements:r88
+medical_history,history_uti,False,False,Theranostics extension,string,History of any prior Urinary Tract Infection,atlas_data_elements:r89

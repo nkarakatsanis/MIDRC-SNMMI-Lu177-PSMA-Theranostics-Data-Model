@@ -1,0 +1,16 @@
+[
+  {
+    "submitter_id": "SYN-CONDITION",
+    "model_version": "0.3.0-proposal",
+    "condition_name": "Prostate adenocarcinoma with metastatic disease; synthetic record",
+    "initial_diagnosis_date_prostateca": "2023-04-10",
+    "histology_subtype": "Adenocarcinoma",
+    "disease_status_assessment_date": "2025-12-10",
+    "type": "condition",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

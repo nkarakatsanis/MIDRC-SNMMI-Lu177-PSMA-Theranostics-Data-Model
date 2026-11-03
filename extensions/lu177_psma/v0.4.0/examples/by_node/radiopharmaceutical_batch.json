@@ -1,0 +1,30 @@
+[
+  {
+    "submitter_id": "SYN-RADIOPHARMACEUTICAL_BATCH",
+    "model_version": "0.4.0-proposal",
+    "batch_identifier": "SYNTHETIC-LOT",
+    "type": "radiopharmaceutical_batch",
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "medicinal_products": [
+      {
+        "submitter_id": "RP-PRODUCT"
+      }
+    ],
+    "input_material_lots": [
+      {
+        "submitter_id": "RP-PRECURSOR-LOT"
+      },
+      {
+        "submitter_id": "RP-NUCLIDE-LOT"
+      }
+    ],
+    "release_status": "released",
+    "release_specification_version": "SYN-QC-SPEC-1",
+    "release_datetime": "2026-01-01T10:00:00Z",
+    "release_authority_reference": "SYNTHETIC authorized-review role"
+  }
+]

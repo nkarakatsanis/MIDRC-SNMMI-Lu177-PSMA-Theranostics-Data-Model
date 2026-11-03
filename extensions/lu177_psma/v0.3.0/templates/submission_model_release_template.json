@@ -1,0 +1,17 @@
+{
+  "*type": "model_release",
+  "*submitter_id": null,
+  "project_id": null,
+  "*projects": {
+    "code": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*release_version": null,
+  "released_on": null,
+  "ontology_version": null
+}

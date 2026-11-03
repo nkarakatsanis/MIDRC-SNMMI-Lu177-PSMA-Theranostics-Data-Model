@@ -1,0 +1,29 @@
+[
+  {
+    "type": "package_component",
+    "submitter_id": "RP-PACK-CONTAINMENT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "outer_packages": [
+      {
+        "submitter_id": "RP-OUTER"
+      }
+    ],
+    "inner_packages": [
+      {
+        "submitter_id": "RP-PACKAGE"
+      }
+    ],
+    "component_count": 1
+  }
+]

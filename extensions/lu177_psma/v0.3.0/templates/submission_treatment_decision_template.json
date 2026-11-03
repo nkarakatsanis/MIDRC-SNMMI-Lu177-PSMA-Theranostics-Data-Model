@@ -1,0 +1,62 @@
+{
+  "*type": "treatment_decision",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "project_id": null,
+  "*therapy_courses": {
+    "submitter_id": null
+  },
+  "therapy_cycles": {
+    "submitter_id": null
+  },
+  "response_assessments": {
+    "submitter_id": null
+  },
+  "toxicity_events": {
+    "submitter_id": null
+  },
+  "clinical_assessments": {
+    "submitter_id": null
+  },
+  "organ_functions": {
+    "submitter_id": null
+  },
+  "dose_summaries": {
+    "submitter_id": null
+  },
+  "patient_reported_outcomes": {
+    "submitter_id": null
+  },
+  "clinical_events": {
+    "submitter_id": null
+  },
+  "procedures": {
+    "submitter_id": null
+  },
+  "treatment_plans": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "*decision_type": null,
+  "*decision_datetime": null,
+  "*rationale": null,
+  "decision_maker_role": null,
+  "benefit_assessment": null,
+  "nlcb_reason": null,
+  "nlcb_date": null,
+  "continued_beyond_progression": null,
+  "focal_therapy_for_oligoprogression": null,
+  "dose_limiting_organ": null
+}

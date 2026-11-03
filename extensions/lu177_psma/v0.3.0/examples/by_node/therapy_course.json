@@ -1,0 +1,47 @@
+[
+  {
+    "submitter_id": "JOURNEY-RETREATMENT-COURSE",
+    "model_version": "0.3.0-proposal",
+    "course_number": 2,
+    "start_date": "2026-08-01",
+    "course_status": "active",
+    "planned_number_of_cycles": 2,
+    "actual_number_of_cycles": 1,
+    "treatment_completed_as_planned": false,
+    "completion_reason": "Ongoing subsequent course in synthetic follow-up",
+    "type": "therapy_course",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "studies": [
+      {
+        "submitter_id": "SYN-STUDY"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-THERAPY_COURSE",
+    "model_version": "0.3.0-proposal",
+    "course_number": 1,
+    "start_date": "2026-01-01",
+    "course_status": "completed",
+    "planned_number_of_cycles": 2,
+    "completion_date": "2026-02-01",
+    "actual_number_of_cycles": 2,
+    "treatment_completed_as_planned": true,
+    "completion_reason": "Completed the two planned cycles in this compact invented example; this is not a recommended treatment regimen.",
+    "type": "therapy_course",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "studies": [
+      {
+        "submitter_id": "SYN-STUDY"
+      }
+    ]
+  }
+]

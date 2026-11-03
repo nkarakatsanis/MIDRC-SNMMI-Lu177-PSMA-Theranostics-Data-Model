@@ -1,0 +1,27 @@
+[
+  {
+    "type": "medicinal_product",
+    "submitter_id": "RP-PRODUCT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "product_name": "Invented Lu177-PSMA formulation",
+    "product_kind": "ready_to_use",
+    "radiopharmaceuticals": [
+      {
+        "submitter_id": "SYN-RADIOPHARMACEUTICAL"
+      }
+    ],
+    "administrable_dose_form": "Solution for injection",
+    "label_version": "SYNTHETIC-NOT-A-LABEL"
+  }
+]

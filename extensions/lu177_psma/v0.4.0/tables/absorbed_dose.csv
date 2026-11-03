@@ -1,0 +1,33 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+absorbed_dose,type,True,False,Theranostics extension,enum,,
+absorbed_dose,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+absorbed_dose,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+absorbed_dose,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+absorbed_dose,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+absorbed_dose,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+absorbed_dose,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+absorbed_dose,dosimetries,True,False,Theranostics extension,array,Link to dosimetry records by submitter_id or UUID.,nk_blueprint:r154
+absorbed_dose,anatomic_targets,True,False,Theranostics extension,array,Link to anatomic_target records by submitter_id or UUID.,
+absorbed_dose,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+absorbed_dose,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+absorbed_dose,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+absorbed_dose,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+absorbed_dose,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+absorbed_dose,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+absorbed_dose,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+absorbed_dose,absorbed_dose_gy,True,False,Theranostics extension,number,Absorbed dose for the linked target and run.,lu_177_psma_data_model:r171; lu_177_psma_data_model:r172; atlas_data_elements:r13; nk_blueprint:r137; nk_blueprint:r138
+absorbed_dose,statistic,True,False,Theranostics extension,string,Dose statistic.,
+absorbed_dose,uncertainty_gy,False,False,Theranostics extension,number,Dose uncertainty with coverage definition.,
+absorbed_dose,uncertainty_definition,False,False,Theranostics extension,string,"Standard deviation, confidence interval half-width or other uncertainty definition.",
+absorbed_dose,target_mass_g,False,False,Theranostics extension,number,Target mass used in dose calculation.,
+absorbed_dose,uncertainty_percent,False,False,Theranostics extension,number,Absorbed-dose uncertainty percent.,
+absorbed_dose,uncertainty_coverage_probability,False,False,Theranostics extension,number,Absorbed-dose uncertainty coverage probability.,
+absorbed_dose,uncertainty_method,False,False,Theranostics extension,string,"Method and uncertainty convention; distinguishes standard, expanded and confidence/credible intervals.",
+absorbed_dose,uncertainty_value,False,False,Theranostics extension,number,Uncertainty magnitude; interpret with uncertainty_unit and uncertainty_definition.,outcome_revision:r102; nk_blueprint:r143
+absorbed_dose,uncertainty_unit,False,False,Theranostics extension,string,Unit of uncertainty magnitude.,
+absorbed_dose,annotations,False,False,Theranostics extension,compound,,

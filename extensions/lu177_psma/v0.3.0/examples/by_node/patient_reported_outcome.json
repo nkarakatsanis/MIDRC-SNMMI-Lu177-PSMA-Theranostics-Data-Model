@@ -1,0 +1,107 @@
+[
+  {
+    "submitter_id": "JOURNEY-PAIN-CONFIRM",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "NRS",
+    "instrument_version": "0-10",
+    "score_domain": "pain",
+    "score": 3.0,
+    "score_unit": "NRS points",
+    "assessment_role": "confirmation",
+    "baseline_averaging_days": 3,
+    "assessment_datetime": "2026-04-16T09:00:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PAIN-FU",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "NRS",
+    "instrument_version": "0-10",
+    "score_domain": "pain",
+    "score": 3.0,
+    "score_unit": "NRS points",
+    "assessment_role": "followup",
+    "baseline_averaging_days": 3,
+    "assessment_datetime": "2026-04-01T09:00:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-PRO-CTCAE-FATIGUE",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "PRO-CTCAE",
+    "instrument_version": "Specify approved item-library release",
+    "score_domain": "fatigue",
+    "assessment_role": "followup",
+    "assessment_datetime": "2026-04-01T09:30:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "item_code": "Synthetic item identifier for illustration",
+    "item_attribute": "severity",
+    "response_value": "Mild",
+    "pro_ctcae_collected": true,
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  },
+  {
+    "submitter_id": "SYN-PATIENT_REPORTED_OUTCOME",
+    "model_version": "0.3.0-proposal",
+    "instrument_name": "NRS",
+    "instrument_version": "0-10",
+    "score_domain": "pain",
+    "score": 6.0,
+    "score_unit": "NRS points",
+    "assessment_role": "baseline",
+    "baseline_averaging_days": 3,
+    "assessment_datetime": "2025-12-30T09:00:00Z",
+    "opioid_use": true,
+    "opioid_daily_ome_mg": 10.0,
+    "opioid_conversion_method": "Illustrative already-normalized exposure, not a conversion recommendation",
+    "type": "patient_reported_outcome",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "analgesic_medications": [
+      {
+        "submitter_id": "SYN-MEDICATION"
+      }
+    ]
+  }
+]

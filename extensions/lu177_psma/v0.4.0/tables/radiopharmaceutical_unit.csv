@@ -1,0 +1,34 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+radiopharmaceutical_unit,type,True,False,Theranostics extension,enum,,
+radiopharmaceutical_unit,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+radiopharmaceutical_unit,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+radiopharmaceutical_unit,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+radiopharmaceutical_unit,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+radiopharmaceutical_unit,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical_unit,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+radiopharmaceutical_unit,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+radiopharmaceutical_unit,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+radiopharmaceutical_unit,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+radiopharmaceutical_unit,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+radiopharmaceutical_unit,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+radiopharmaceutical_unit,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+radiopharmaceutical_unit,unit_identifier,True,False,Theranostics extension,string,"Local barcode or identifier for this physical unit, separate from a package NDC.",nk_blueprint:r197; idrp_ontology:r12
+radiopharmaceutical_unit,unit_kind,True,False,Theranostics extension,string,Physical presentation such as vial or syringe.,
+radiopharmaceutical_unit,activity_at_reference_mbq,True,False,Theranostics extension,number,"Measured or declared total activity of this unit in MBq at activity_reference_datetime, not administered activity.",nz_model:r97; nk_blueprint:r162; nk_blueprint:r186
+radiopharmaceutical_unit,activity_reference_datetime,True,False,Theranostics extension,string,UTC-offset timestamp to which unit activity is referenced.,nz_model:r99; nk_blueprint:r171
+radiopharmaceutical_unit,activity_basis,True,False,Theranostics extension,enum,Origin of the unit activity value.,
+radiopharmaceutical_unit,actual_fill_volume_ml,False,False,Theranostics extension,number,Actual content volume in mL at the stated reference context.,nz_model:r96
+radiopharmaceutical_unit,compound_mass_ug,False,False,Theranostics extension,number,Total mass in micrograms of the chemically specified compound; distinguish compound from radionuclide mass.,
+radiopharmaceutical_unit,compound_amount_nmol,False,False,Theranostics extension,number,"Total amount in nmol of the specified compound, with molar-mass assumptions in provenance.",
+radiopharmaceutical_unit,expiry_datetime,True,False,Theranostics extension,string,Expiry of this physical unit with UTC offset.,idrp_ontology:r178
+radiopharmaceutical_unit,storage_history_reference,False,False,Theranostics extension,string,Reference to documented storage and transport history.,
+radiopharmaceutical_unit,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+radiopharmaceutical_unit,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+radiopharmaceutical_unit,radiopharmaceutical_batches,True,False,Theranostics extension,array,Link to radiopharmaceutical_batch records by submitter_id or UUID.,
+radiopharmaceutical_unit,product_packages,False,False,Theranostics extension,array,Link to product_package records by submitter_id or UUID.,
+radiopharmaceutical_unit,preparation_events,False,False,Theranostics extension,array,Link to preparation_event records by submitter_id or UUID.,

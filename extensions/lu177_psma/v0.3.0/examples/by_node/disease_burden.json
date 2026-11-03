@@ -1,0 +1,76 @@
+[
+  {
+    "submitter_id": "JOURNEY-BURDEN-BASE",
+    "model_version": "0.3.0-proposal",
+    "scope": "whole_body",
+    "assessment_role": "baseline",
+    "total_psma_positive_tumor_volume_ml": 30.0,
+    "method": "Sum of the two included synthetic lesion volumes",
+    "lesion_count": 2,
+    "coverage_description": "Complete two-lesion burden of this invented dataset",
+    "type": "disease_burden",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "included_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      },
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L1-BASE"
+      },
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L2-BASE"
+      }
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-BURDEN-FU",
+    "model_version": "0.3.0-proposal",
+    "scope": "whole_body",
+    "assessment_role": "followup",
+    "total_psma_positive_tumor_volume_ml": 18.0,
+    "method": "Same synthetic method as baseline",
+    "lesion_count": 2,
+    "coverage_description": "Same two tracked lesions; no new lesions",
+    "type": "disease_burden",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ],
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-FOLLOWUP-PETCT"
+      }
+    ],
+    "included_targets": [
+      {
+        "submitter_id": "SYN-TARGET-LESION-1"
+      },
+      {
+        "submitter_id": "JOURNEY-TARGET-LESION-2"
+      }
+    ],
+    "roi_measurements": [
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L1-FU"
+      },
+      {
+        "submitter_id": "JOURNEY-PET-VOLUME-L2-FU"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+treatment_transition,type,True,False,Theranostics extension,enum,,
+treatment_transition,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+treatment_transition,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+treatment_transition,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+treatment_transition,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+treatment_transition,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+treatment_transition,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+treatment_transition,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+treatment_transition,assessment_datetime,False,False,Theranostics extension,string,ISO 8601 assessment datetime; use approved date shifting consistently within the case.,
+treatment_transition,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+treatment_transition,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+treatment_transition,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+treatment_transition,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+treatment_transition,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+treatment_transition,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+treatment_transition,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+treatment_transition,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+treatment_transition,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+treatment_transition,prior_courses,True,False,Theranostics extension,array,References to therapy_course records.,
+treatment_transition,subsequent_courses,False,False,Theranostics extension,array,References to therapy_course records.,
+treatment_transition,medications,False,False,Theranostics extension,array,References to medication records.,
+treatment_transition,treatment_decisions,False,False,Theranostics extension,array,References to treatment_decision records.,
+treatment_transition,provenance_records,False,False,Theranostics extension,array,References to provenance records.,
+treatment_transition,transition_type,True,False,Theranostics extension,string,Kind of subsequent treatment or dated follow-up status.,outcome_revision:r107
+treatment_transition,transition_status,True,False,Theranostics extension,string,"Whether a transition is planned, occurred, or not yet observed.",
+treatment_transition,post_lu177_therapy_received,False,False,Theranostics extension,boolean,"Indicates whether the patient received any subsequent anticancer therapy after completion or discontinuation of ¹⁷⁷Lu-PSMA RPT. Per PCWG3, all subsequent therapies must be recorded until death as they affect OS interpretation.",marios_outcome_content:r83; outcome_revision:r83
+treatment_transition,retreatment_performed,False,False,Theranostics extension,boolean,Dated status of retreatment performed.,outcomes_paper:supplement1:r44
+treatment_transition,agent_name,False,False,Theranostics extension,string,"Name of the anticancer agent(s) administered after ¹⁷⁷Lu-PSMA RPT, recorded in order of administration.",marios_outcome_content:r84; outcome_revision:r84; outcomes_paper:supplement1:r45
+treatment_transition,reason,False,False,Theranostics extension,string,Reason for initiating subsequent anticancer therapy after ¹⁷⁷Lu-PSMA.,marios_outcome_content:r86; outcome_revision:r86; outcomes_paper:supplement1:r47
+treatment_transition,start_date,False,False,Theranostics extension,string,Date on which the first subsequent anticancer therapy was initiated after ¹⁷⁷Lu-PSMA RPT.,marios_outcome_content:r85; outcome_revision:r85; outcomes_paper:supplement1:r46
+treatment_transition,last_prior_administration_date,False,False,Theranostics extension,string,Transition last prior administration date.,
+treatment_transition,last_followup_date,False,False,Theranostics extension,string,Transition last followup date.,

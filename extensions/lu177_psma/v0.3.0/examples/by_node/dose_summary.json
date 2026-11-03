@@ -1,0 +1,33 @@
+[
+  {
+    "submitter_id": "SYN-DOSE_SUMMARY",
+    "model_version": "0.3.0-proposal",
+    "cumulative_dose_gy": 2.5,
+    "aggregation_method": "Sum of cycle-specific mean doses for the same tracked organ",
+    "included_cycle_numbers": [
+      1,
+      2
+    ],
+    "coverage_description": "Both illustrated cycles; one tracked right kidney; mean absorbed dose.",
+    "dose_distribution_statistic": "mean",
+    "type": "dose_summary",
+    "therapy_courses": [
+      {
+        "submitter_id": "SYN-THERAPY_COURSE"
+      }
+    ],
+    "anatomic_targets": [
+      {
+        "submitter_id": "SYN-ANATOMIC_TARGET"
+      }
+    ],
+    "component_doses": [
+      {
+        "submitter_id": "SYN-ABSORBED_DOSE"
+      },
+      {
+        "submitter_id": "SYN-DOSE-KIDNEY-C2"
+      }
+    ]
+  }
+]

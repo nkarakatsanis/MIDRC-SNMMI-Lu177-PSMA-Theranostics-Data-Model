@@ -1,0 +1,36 @@
+{
+  "model": "NMMI Lu177-PSMA Theranostics",
+  "version": "0.3.0-proposal",
+  "as_of": "2026-10-16",
+  "status": "Technical proposal for review; not deployed or institutionally approved",
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified SNMMI abstract order",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "midrc_baseline": {
+    "url": "https://data.midrc.org/api/v0/submission/_dictionary/_all",
+    "dictionary_version": "1.4.3-2-g7505333",
+    "commit": "7505333d56c87a289463a814131e38d0f2be6674",
+    "retrieved_on": "2026-10-16",
+    "sha256": "578e57dc45f719b07f1ac31482fed9129675c133aaafc3004dc346e5e4928e21"
+  },
+  "settings_policy": "The merged _settings retains the MIDRC baseline provenance. Extension version is recorded in this manifest; the receiving build assigns its own commit/version.",
+  "clinical_policy": "Representation and evidence tracing; not a prescribing or clinical decision engine.",
+  "ontology_policy": "No fabricated NucLex/RadLex codes. Candidate mappings require release-specific review.",
+  "institutional_policy": "Technical proposal; no institutional commitments asserted."
+}

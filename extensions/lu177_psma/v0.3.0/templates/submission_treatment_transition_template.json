@@ -1,0 +1,40 @@
+{
+  "*type": "treatment_transition",
+  "*submitter_id": null,
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "assessment_datetime": null,
+  "days_from_course_start": null,
+  "time_basis": null,
+  "time_window_start_day": null,
+  "time_window_end_day": null,
+  "project_id": null,
+  "*prior_courses": {
+    "submitter_id": null
+  },
+  "subsequent_courses": {
+    "submitter_id": null
+  },
+  "medications": {
+    "submitter_id": null
+  },
+  "treatment_decisions": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "*transition_type": null,
+  "*transition_status": null,
+  "post_lu177_therapy_received": null,
+  "retreatment_performed": null,
+  "agent_name": null,
+  "reason": null,
+  "start_date": null,
+  "last_prior_administration_date": null,
+  "last_followup_date": null
+}

@@ -1,0 +1,33 @@
+{
+  "version": "0.4.0",
+  "status": "Proposed collection profiles; working-group and Gen3 deployment review required",
+  "profiles": [
+    {
+      "name": "human_clinical",
+      "scope": "Human diagnosis, treatment and follow-up with optional product-to-administration traceability.",
+      "requirements": "Keep existing MIDRC case and typed imaging parents; prescriptions and dispensing identify the same case and cycle; units identify their batch and expiry.",
+      "not_required": "No preclinical or digital-twin record is mandatory for a clinical patient."
+    },
+    {
+      "name": "radiopharmacy",
+      "scope": "Manufacturing, package specifications, material lots, preparation, unit inventory and timed QC.",
+      "requirements": "Use nonpatient radiopharmaceutical_test subjects; retain method, units, result status, specification and reference times. Authorized batch disposition is separate.",
+      "not_required": "No fabricated patient is created for batch QC; passing a test is not an automated release decision."
+    },
+    {
+      "name": "reference_research",
+      "scope": "Published, preclinical, in-vitro and cohort evidence.",
+      "requirements": "Identify setting, species/population, statistic, method, matrix/anatomy, time and source. Separate one result per quantity.",
+      "not_required": "No automatic transfer of a cohort result to an individual human record."
+    },
+    {
+      "name": "digital_twin_research",
+      "scope": "Versioned model specifications, runs, parameters and predictions.",
+      "requirements": "Identify exact model release, input provenance, information cutoff, parameter units and scenario. Predictions remain separate from measured dose/outcomes.",
+      "not_required": "No model execution, readiness score, clinical decision policy or safety approval is supplied."
+    }
+  ],
+  "validation_module": "scripts/radiopharmaceutical_profile.py",
+  "unit_policy": "Numeric results carry units. Fractions use 1, percentages use %, mass and molar activity use distinct denominator units. Other units require reviewed conversion; missing values are not zeros.",
+  "legacy_policy": "Read legacy product-like radiopharmaceutical records and ambiguous batch activity fields unchanged. Curate an explicit agent/product split and timed QC result before using the new normalized profile; never infer a molar/mass denominator."
+}

@@ -1,0 +1,164 @@
+{
+  "version": "0.4.0",
+  "new_nodes": [
+    "radionuclide",
+    "decay_emission",
+    "molecular_entity",
+    "biological_target",
+    "medicinal_product",
+    "product_ingredient",
+    "product_package",
+    "package_component",
+    "regulatory_authorization",
+    "supply_offer",
+    "material_lot",
+    "preparation_event",
+    "radiopharmaceutical_unit",
+    "radiopharmaceutical_order",
+    "dispense_event",
+    "reference_evidence",
+    "computational_model",
+    "model_run",
+    "model_parameter",
+    "model_prediction",
+    "radiopharmaceutical_test",
+    "theranostic_pair",
+    "external_identifier"
+  ],
+  "node_metadata": {
+    "radionuclide": {
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One nuclide identity and versioned physical reference description, including stable daughters.",
+      "new": true
+    },
+    "decay_emission": {
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One decay branch or one emission component with a specified energy definition and yield.",
+      "new": true
+    },
+    "molecular_entity": {
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One chemically specified substance or molecular component, independent of commercial packaging.",
+      "new": true
+    },
+    "biological_target": {
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One biological target identity; expression, binding and internalization are contextual evidence records.",
+      "new": true
+    },
+    "medicinal_product": {
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One versioned commercial or investigational medicinal-product formulation, distinct from agent, authorization and batch.",
+      "new": true
+    },
+    "product_ingredient": {
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One ingredient role and quantity specification in a medicinal-product formulation.",
+      "new": true
+    },
+    "product_package": {
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One versioned package specification for a medicinal product, not a physical vial.",
+      "new": true
+    },
+    "package_component": {
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One containment relationship between two package specifications.",
+      "new": true
+    },
+    "regulatory_authorization": {
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One product-specific regulatory application or authorization state in one jurisdiction at a stated date.",
+      "new": true
+    },
+    "supply_offer": {
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One dated commercial supply presentation or catalog offer; not a clinical prescription.",
+      "new": true
+    },
+    "material_lot": {
+      "group": "Radiopharmaceutical manufacture",
+      "record_grain": "One physical lot of a precursor, radionuclide stock or other manufacturing material.",
+      "new": true
+    },
+    "preparation_event": {
+      "group": "Radiopharmaceutical manufacture",
+      "record_grain": "One actual production, compounding, reconstitution or dilution event with specified inputs and output batch.",
+      "new": true
+    },
+    "radiopharmaceutical_unit": {
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One physical vial, syringe or other traceable unit from a batch at a stated calibration time.",
+      "new": true
+    },
+    "radiopharmaceutical_order": {
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One procurement request or patient-specific prescription, explicitly distinguished by order_kind.",
+      "new": true
+    },
+    "dispense_event": {
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One patient-specific dispensing event allocating a traceable physical unit to a prescription.",
+      "new": true
+    },
+    "reference_evidence": {
+      "group": "Research evidence",
+      "record_grain": "One citable evidence context, population or experimental dataset; not an individual patient observation.",
+      "new": true
+    },
+    "computational_model": {
+      "group": "Digital twin research",
+      "record_grain": "One versioned computational model specification, independent of any execution or prediction.",
+      "new": true
+    },
+    "model_run": {
+      "group": "Digital twin research",
+      "record_grain": "One recorded execution of a computational model with explicit inputs and information cutoff.",
+      "new": true
+    },
+    "model_parameter": {
+      "group": "Digital twin research",
+      "record_grain": "One parameter value or distribution for a model specification or execution, with units and provenance.",
+      "new": true
+    },
+    "model_prediction": {
+      "group": "Digital twin research",
+      "record_grain": "One simulated or predicted result from a model execution; separate from a measured dose or outcome.",
+      "new": true
+    },
+    "radiopharmaceutical_test": {
+      "group": "Radiopharmaceutical evidence",
+      "record_grain": "One nonpatient QC, biological-reference or computational-evaluation result with an explicit subject and method.",
+      "new": true
+    },
+    "theranostic_pair": {
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One evidence-supported proposed pairing of diagnostic and therapeutic agents; not an assertion of interchangeable kinetics.",
+      "new": true
+    },
+    "external_identifier": {
+      "group": "Semantics and governance",
+      "record_grain": "One reviewed external identifier assignment to one explicitly typed entity; schema-level ontology mappings remain semantic_mapping records.",
+      "new": true
+    },
+    "radiopharmaceutical": {
+      "new": false,
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One reference agent in the v0.4 profile. Existing product-like records remain readable; migrate them explicitly rather than silently reinterpreting their identifiers."
+    },
+    "radiopharmaceutical_batch": {
+      "new": false,
+      "group": "Radiopharmaceutical manufacture",
+      "record_grain": "One physical manufacturing batch; one or more timed QC results are linked through radiopharmaceutical_test."
+    }
+  },
+  "extended_nodes": [
+    "treatment_plan",
+    "radiopharmaceutical_batch",
+    "radiopharmaceutical",
+    "provenance",
+    "toxicity_event",
+    "administration"
+  ],
+  "profile": "profiles/radiopharmaceutical_v040.json"
+}

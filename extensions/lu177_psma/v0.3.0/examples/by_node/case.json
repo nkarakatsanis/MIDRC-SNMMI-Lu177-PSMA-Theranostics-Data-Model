@@ -1,0 +1,15 @@
+[
+  {
+    "submitter_id": "SYN-CASE",
+    "model_version": "0.3.0-proposal",
+    "age_at_index": 70,
+    "sex_assigned_at_birth": "Male",
+    "deidentification_method": "Invented example; no real person",
+    "type": "case",
+    "datasets": [
+      {
+        "submitter_id": "SYN-DATASET"
+      }
+    ]
+  }
+]

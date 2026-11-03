@@ -1,0 +1,17 @@
+[
+  {
+    "submitter_id": "SYN-CLINICAL_ASSESSMENT",
+    "model_version": "0.3.0-proposal",
+    "assessment_role": "baseline",
+    "assessment_datetime": "2025-12-10T10:30:00Z",
+    "ecog_score": 1,
+    "prognostic_context": "Disease extent, prior treatment and clinical status reviewed; illustrative documentation, no prognosis algorithm applied.",
+    "prognostic_risk_category": "Recorded narrative assessment; no calculated risk category",
+    "type": "clinical_assessment",
+    "cases": [
+      {
+        "submitter_id": "SYN-CASE"
+      }
+    ]
+  }
+]

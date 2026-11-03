@@ -1,0 +1,5045 @@
+{
+  "model": "SNMMI-MIDRC Lu177-PSMA Theranostics",
+  "version": "0.4.0-proposal",
+  "authorship": {
+    "designation": "tentative authors list",
+    "authors": [
+      "Nicolas A Karakatsanis",
+      "Atlas Haddadi Avval",
+      "Julia Brosch-Lenz",
+      "Irene Buvat",
+      "Abhinav Jha",
+      "Mario Jreige",
+      "Quanzheng Li",
+      "Neeta Pandit-Taskar",
+      "Babak Saboury",
+      "Jazmin Schwartz",
+      "Nouran Zaid",
+      "Tahir I Yusufaly",
+      "Tyler J Bradshaw"
+    ],
+    "order_source": "User-specified first two and final two authors retained; intervening authors ordered by surname.",
+    "status": "tentative; not an assertion of author approval"
+  },
+  "direction": "Child record to referenced parent or evidence",
+  "nodes": [
+    {
+      "label": "Annotation",
+      "id": "annotation",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 61,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "annotation",
+      "group": "Imaging",
+      "record_grain": "One annotation/contour execution; its files remain separate artifacts",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Annotation File",
+      "id": "annotation_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 50,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "annotation_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC annotation file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Case",
+      "id": "case",
+      "group": "Subject",
+      "record_grain": "One person per project",
+      "midrc_pattern": "case",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "PERSON",
+      "status": "MIDRC baseline retained",
+      "property_count": 53,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Condition",
+      "id": "condition",
+      "group": "Clinical",
+      "record_grain": "One condition or disease-status assessment",
+      "midrc_pattern": "condition",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "CONDITION_OCCURRENCE; staging MEASUREMENT or OBSERVATION",
+      "status": "MIDRC baseline retained",
+      "property_count": 57,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Core Metadata Collection",
+      "id": "core_metadata_collection",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 23,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "core_metadata_collection",
+      "group": "Governance",
+      "record_grain": "One MIDRC core metadata collection record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "CR Series File",
+      "id": "cr_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 37,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "cr_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC cr series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "CT Series File",
+      "id": "ct_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 67,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "ct_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC ct series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Data Release",
+      "id": "data_release",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 10,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "data_release",
+      "group": "Governance",
+      "record_grain": "One MIDRC data release record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Dataset",
+      "id": "dataset",
+      "group": "Governance",
+      "record_grain": "One collection",
+      "midrc_pattern": "dataset",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "",
+      "status": "MIDRC baseline retained",
+      "property_count": 29,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "DICOM Annotation Series File",
+      "id": "dicom_annotation_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 41,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "dicom_annotation_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC dicom annotation file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "DX Series File",
+      "id": "dx_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 37,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "dx_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC dx series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Imaging Study",
+      "id": "imaging_study",
+      "group": "Imaging",
+      "record_grain": "One examination",
+      "midrc_pattern": "imaging_study",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "PROCEDURE_OCCURRENCE; imaging extension",
+      "status": "MIDRC baseline retained",
+      "property_count": 42,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Measurement",
+      "id": "measurement",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 55,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "measurement",
+      "group": "Clinical",
+      "record_grain": "One measured value with context; lab, ROI and anthropometric profiles",
+      "omop_candidates": "MEASUREMENT"
+    },
+    {
+      "label": "Medication",
+      "id": "medication",
+      "group": "Clinical",
+      "record_grain": "One medication exposure or source summary",
+      "midrc_pattern": "medication",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "DRUG_EXPOSURE",
+      "status": "MIDRC baseline retained",
+      "property_count": 49,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "MG Series File",
+      "id": "mg_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 40,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "mg_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC mg series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "MR Series File",
+      "id": "mr_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 80,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "mr_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC mr series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "NM Series File",
+      "id": "nm_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 64,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "nm_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC nm series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Observation",
+      "id": "observation",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 27,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "observation",
+      "group": "Clinical",
+      "record_grain": "One categorical or text observation with context",
+      "omop_candidates": "OBSERVATION"
+    },
+    {
+      "label": "Procedure",
+      "id": "procedure",
+      "group": "Clinical",
+      "record_grain": "One intervention or source summary",
+      "midrc_pattern": "procedure",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "PROCEDURE_OCCURRENCE",
+      "status": "MIDRC baseline retained",
+      "property_count": 37,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Program",
+      "id": "program",
+      "group": "Governance",
+      "record_grain": "One initiative",
+      "midrc_pattern": "program",
+      "midrc_relation": "preserved",
+      "omop_candidates": "",
+      "status": "MIDRC baseline retained",
+      "property_count": 4,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Project",
+      "id": "project",
+      "group": "Governance",
+      "record_grain": "One access-controlled project",
+      "midrc_pattern": "project",
+      "midrc_relation": "preserved",
+      "omop_candidates": "",
+      "status": "MIDRC baseline retained",
+      "property_count": 32,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "PT Series File",
+      "id": "pt_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 64,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "pt_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC pt series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Radiology Report",
+      "id": "radiology_report",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 58,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "radiology_report",
+      "group": "Clinical",
+      "record_grain": "One MIDRC radiology report record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "RF Series File",
+      "id": "rf_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 37,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "rf_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC rf series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Root",
+      "id": "root",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 3,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "root",
+      "group": "Governance",
+      "record_grain": "One MIDRC root record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Supplementary File",
+      "id": "supplementary_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 34,
+      "midrc_relation": "preserved_and_extended",
+      "midrc_pattern": "supplementary_file",
+      "group": "Governance",
+      "record_grain": "One MIDRC supplementary file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "US Series File",
+      "id": "us_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 32,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "us_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC us series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Visit",
+      "id": "visit",
+      "group": "Longitudinal context",
+      "record_grain": "One encounter",
+      "midrc_pattern": "visit",
+      "midrc_relation": "preserved_and_extended",
+      "omop_candidates": "VISIT_OCCURRENCE",
+      "status": "MIDRC baseline retained",
+      "property_count": 27,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "XA Series File",
+      "id": "xa_series_file",
+      "model_version": "0.4.0-proposal",
+      "status": "MIDRC baseline retained",
+      "property_count": 39,
+      "midrc_relation": "preserved",
+      "midrc_pattern": "xa_series_file",
+      "group": "Imaging",
+      "record_grain": "One MIDRC xa series file record",
+      "omop_candidates": ""
+    },
+    {
+      "label": "Therapy Course",
+      "id": "therapy_course",
+      "group": "Longitudinal context",
+      "record_grain": "One course per case",
+      "midrc_pattern": "No exact therapy-course node",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "EPISODE",
+      "status": "proposed extension node",
+      "property_count": 25,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Toxicity Event",
+      "id": "toxicity_event",
+      "group": "Outcomes",
+      "record_grain": "One adverse-event episode or graded assessment",
+      "midrc_pattern": "condition; observation",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "OBSERVATION or CONDITION_OCCURRENCE as concept domain requires",
+      "status": "proposed extension node",
+      "property_count": 35,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Clinical Assessment",
+      "id": "clinical_assessment",
+      "group": "Clinical",
+      "record_grain": "One assessment time",
+      "midrc_pattern": "observation; measurement",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "OBSERVATION; MEASUREMENT",
+      "status": "proposed extension node",
+      "property_count": 113,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Timepoint",
+      "id": "timepoint",
+      "group": "Longitudinal context",
+      "record_grain": "One time anchor or assessment window",
+      "midrc_pattern": "Relative days-to-index properties",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "VISIT_OCCURRENCE or EPISODE context",
+      "status": "proposed extension node",
+      "property_count": 25,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Treatment Plan",
+      "id": "treatment_plan",
+      "group": "Treatment",
+      "record_grain": "One plan version",
+      "midrc_pattern": "medication; procedure patterns",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Planned order not a delivered DRUG_EXPOSURE",
+      "status": "proposed extension node",
+      "property_count": 31,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Anatomic Target",
+      "id": "anatomic_target",
+      "group": "Quantification",
+      "record_grain": "One tracked lesion or organ per case",
+      "midrc_pattern": "annotation pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Target identifier in imaging extension",
+      "status": "proposed extension node",
+      "property_count": 18,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Dose Summary",
+      "id": "dose_summary",
+      "group": "Quantification",
+      "record_grain": "One target and aggregation window",
+      "midrc_pattern": "measurement pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "MEASUREMENT",
+      "status": "proposed extension node",
+      "property_count": 23,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Patient Reported Outcome",
+      "id": "patient_reported_outcome",
+      "group": "Outcomes",
+      "record_grain": "One instrument and assessment time",
+      "midrc_pattern": "measurement; observation",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "MEASUREMENT; OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 44,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Response Assessment",
+      "id": "response_assessment",
+      "group": "Outcomes",
+      "record_grain": "One criteria set and assessment time",
+      "midrc_pattern": "observation; measurement",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "OBSERVATION; MEASUREMENT; EPISODE",
+      "status": "proposed extension node",
+      "property_count": 132,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Semantic Mapping",
+      "id": "semantic_mapping",
+      "group": "Governance",
+      "record_grain": "One mapping assertion",
+      "midrc_pattern": "property term metadata",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "CONCEPT; CONCEPT_RELATIONSHIP; vocabulary governance",
+      "status": "proposed extension node",
+      "property_count": 25,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Acquisition",
+      "id": "acquisition",
+      "group": "Imaging",
+      "record_grain": "One acquisition settings block",
+      "midrc_pattern": "Modality-specific series-file metadata",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Imaging extension; selected OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 92,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Radiopharmaceutical Batch",
+      "id": "radiopharmaceutical_batch",
+      "group": "Radiopharmaceutical manufacture",
+      "record_grain": "One physical manufacturing batch; one or more timed QC results are linked through radiopharmaceutical_test.",
+      "midrc_pattern": "No exact batch-QC node",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "External product metadata or qualified measurements",
+      "status": "proposed extension node",
+      "property_count": 28,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Scanner",
+      "id": "scanner",
+      "group": "Imaging",
+      "record_grain": "One equipment unit",
+      "midrc_pattern": "Series manufacturer and model properties",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Device concept; site equipment registry",
+      "status": "proposed extension node",
+      "property_count": 23,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Time Activity Curve",
+      "id": "time_activity_curve",
+      "group": "Quantification",
+      "record_grain": "One target and administration curve",
+      "midrc_pattern": "No exact equivalent",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Imaging extension; derived MEASUREMENT",
+      "status": "proposed extension node",
+      "property_count": 23,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Radiopharmaceutical",
+      "id": "radiopharmaceutical",
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One reference agent in the v0.4 profile. Existing product-like records remain readable; migrate them explicitly rather than silently reinterpreting their identifiers.",
+      "midrc_pattern": "pt_series_file.radiopharmaceutical; medication",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Drug concept vocabulary; no separate DRUG table in OMOP 5.4",
+      "status": "proposed extension node",
+      "property_count": 37,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Study",
+      "id": "study",
+      "group": "Longitudinal context",
+      "record_grain": "One protocol version",
+      "midrc_pattern": "dataset",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Protocol metadata outside clinical OMOP core",
+      "status": "proposed extension node",
+      "property_count": 18,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Scanner Qa",
+      "id": "scanner_qa",
+      "group": "Imaging",
+      "record_grain": "One QA test or calibration event",
+      "midrc_pattern": "measurement pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "MEASUREMENT; device usage when applicable",
+      "status": "proposed extension node",
+      "property_count": 24,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Toxicity Summary",
+      "id": "toxicity_summary",
+      "group": "Outcomes",
+      "record_grain": "One toxicity term and window",
+      "midrc_pattern": "observation",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 26,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Laboratory Panel",
+      "id": "laboratory_panel",
+      "group": "Clinical",
+      "record_grain": "One collected panel or order",
+      "midrc_pattern": "measurement pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Grouping metadata; SPECIMEN; VISIT_OCCURRENCE",
+      "status": "proposed extension node",
+      "property_count": 27,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Dosimetry",
+      "id": "dosimetry",
+      "group": "Quantification",
+      "record_grain": "One calculation run for a cycle or administration",
+      "midrc_pattern": "No exact equivalent",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "External analysis; selected OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 45,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Biomarker Assessment",
+      "id": "biomarker_assessment",
+      "group": "Clinical",
+      "record_grain": "One assay or assessment",
+      "midrc_pattern": "measurement",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "MEASUREMENT; OBSERVATION; SPECIMEN",
+      "status": "proposed extension node",
+      "property_count": 46,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Provenance",
+      "id": "provenance",
+      "group": "Governance",
+      "record_grain": "One provenance assertion",
+      "midrc_pattern": "system properties",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "External provenance; selected NOTE or OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 31,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Organ Function",
+      "id": "organ_function",
+      "group": "Clinical",
+      "record_grain": "One organ and assessment time",
+      "midrc_pattern": "measurement; observation",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "MEASUREMENT; OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 25,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Site",
+      "id": "site",
+      "group": "Governance",
+      "record_grain": "One site",
+      "midrc_pattern": "case.site_id",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "CARE_SITE; LOCATION",
+      "status": "proposed extension node",
+      "property_count": 15,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Medical History",
+      "id": "medical_history",
+      "group": "Clinical",
+      "record_grain": "One history assessment",
+      "midrc_pattern": "condition; observation",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "CONDITION_OCCURRENCE; OBSERVATION; NOTE",
+      "status": "proposed extension node",
+      "property_count": 41,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Registration",
+      "id": "registration",
+      "group": "Imaging",
+      "record_grain": "One registration execution",
+      "midrc_pattern": "annotation pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Imaging extension",
+      "status": "proposed extension node",
+      "property_count": 25,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Administration",
+      "id": "administration",
+      "group": "Treatment",
+      "record_grain": "One actual administration event",
+      "midrc_pattern": "medication",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "DRUG_EXPOSURE plus activity MEASUREMENT",
+      "status": "proposed extension node",
+      "property_count": 41,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Specimen",
+      "id": "specimen",
+      "group": "Clinical",
+      "record_grain": "One collected specimen",
+      "midrc_pattern": "Gen3 biospecimen pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "SPECIMEN",
+      "status": "proposed extension node",
+      "property_count": 18,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Absorbed Dose",
+      "id": "absorbed_dose",
+      "group": "Quantification",
+      "record_grain": "One target, run and dose statistic",
+      "midrc_pattern": "measurement",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "MEASUREMENT",
+      "status": "proposed extension node",
+      "property_count": 27,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Model Release",
+      "id": "model_release",
+      "group": "Governance",
+      "record_grain": "One release",
+      "midrc_pattern": "_settings",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "METADATA or external governance",
+      "status": "proposed extension node",
+      "property_count": 17,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Therapy Cycle",
+      "id": "therapy_cycle",
+      "group": "Longitudinal context",
+      "record_grain": "One course and cycle number",
+      "midrc_pattern": "No exact cycle node",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "EPISODE with EPISODE_EVENT",
+      "status": "proposed extension node",
+      "property_count": 21,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Survival Outcome",
+      "id": "survival_outcome",
+      "group": "Outcomes",
+      "record_grain": "One endpoint definition per case and course",
+      "midrc_pattern": "case mortality and follow-up properties",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "DEATH; EPISODE; derived MEASUREMENT",
+      "status": "proposed extension node",
+      "property_count": 36,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Reconstruction",
+      "id": "reconstruction",
+      "group": "Imaging",
+      "record_grain": "One execution",
+      "midrc_pattern": "Series metadata; Gen3 analysis pattern",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Imaging extension; OBSERVATION",
+      "status": "proposed extension node",
+      "property_count": 45,
+      "model_version": "0.4.0-proposal"
+    },
+    {
+      "label": "Eligibility assessment",
+      "id": "eligibility_assessment",
+      "group": "Clinical",
+      "record_grain": "One eligibility assessment and criteria version",
+      "midrc_pattern": "observation; measurement; linked evidence patterns",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "OBSERVATION; linked clinical evidence",
+      "status": "proposed extension node",
+      "model_version": "0.4.0-proposal",
+      "property_count": 33
+    },
+    {
+      "label": "Disease burden",
+      "id": "disease_burden",
+      "group": "Quantification",
+      "record_grain": "One imaging examination, scope and quantification method",
+      "midrc_pattern": "observation; measurement; linked evidence patterns",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "Derived MEASUREMENT; imaging extension",
+      "status": "proposed extension node",
+      "model_version": "0.4.0-proposal",
+      "property_count": 32
+    },
+    {
+      "label": "Clinical event",
+      "id": "clinical_event",
+      "group": "Outcomes",
+      "record_grain": "One clinical event",
+      "midrc_pattern": "observation; measurement; linked evidence patterns",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "CONDITION_OCCURRENCE; PROCEDURE_OCCURRENCE; OBSERVATION",
+      "status": "proposed extension node",
+      "model_version": "0.4.0-proposal",
+      "property_count": 30
+    },
+    {
+      "label": "Treatment decision",
+      "id": "treatment_decision",
+      "group": "Treatment",
+      "record_grain": "One decision at a specified time",
+      "midrc_pattern": "observation; measurement; linked evidence patterns",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "OBSERVATION; planned treatment metadata",
+      "status": "proposed extension node",
+      "model_version": "0.4.0-proposal",
+      "property_count": 40
+    },
+    {
+      "label": "Treatment transition",
+      "id": "treatment_transition",
+      "group": "Longitudinal context",
+      "record_grain": "One transition or follow-up status assessment",
+      "midrc_pattern": "observation; measurement; linked evidence patterns",
+      "midrc_relation": "new_theranostics_node",
+      "omop_candidates": "EPISODE context; DRUG_EXPOSURE; OBSERVATION",
+      "status": "proposed extension node",
+      "model_version": "0.4.0-proposal",
+      "property_count": 32
+    },
+    {
+      "label": "Radionuclide",
+      "id": "radionuclide",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 26,
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One nuclide identity and versioned physical reference description, including stable daughters."
+    },
+    {
+      "label": "Decay Emission",
+      "id": "decay_emission",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 26,
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One decay branch or one emission component with a specified energy definition and yield."
+    },
+    {
+      "label": "Molecular Entity",
+      "id": "molecular_entity",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 27,
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One chemically specified substance or molecular component, independent of commercial packaging."
+    },
+    {
+      "label": "Biological Target",
+      "id": "biological_target",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 20,
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One biological target identity; expression, binding and internalization are contextual evidence records."
+    },
+    {
+      "label": "Medicinal Product",
+      "id": "medicinal_product",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 28,
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One versioned commercial or investigational medicinal-product formulation, distinct from agent, authorization and batch."
+    },
+    {
+      "label": "Product Ingredient",
+      "id": "product_ingredient",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 22,
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One ingredient role and quantity specification in a medicinal-product formulation."
+    },
+    {
+      "label": "Product Package",
+      "id": "product_package",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 34,
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One versioned package specification for a medicinal product, not a physical vial."
+    },
+    {
+      "label": "Package Component",
+      "id": "package_component",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 18,
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One containment relationship between two package specifications."
+    },
+    {
+      "label": "Regulatory Authorization",
+      "id": "regulatory_authorization",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 32,
+      "group": "Radiopharmaceutical product",
+      "record_grain": "One product-specific regulatory application or authorization state in one jurisdiction at a stated date."
+    },
+    {
+      "label": "Supply Offer",
+      "id": "supply_offer",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 28,
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One dated commercial supply presentation or catalog offer; not a clinical prescription."
+    },
+    {
+      "label": "Material Lot",
+      "id": "material_lot",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 23,
+      "group": "Radiopharmaceutical manufacture",
+      "record_grain": "One physical lot of a precursor, radionuclide stock or other manufacturing material."
+    },
+    {
+      "label": "Preparation Event",
+      "id": "preparation_event",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 30,
+      "group": "Radiopharmaceutical manufacture",
+      "record_grain": "One actual production, compounding, reconstitution or dilution event with specified inputs and output batch."
+    },
+    {
+      "label": "Radiopharmaceutical Unit",
+      "id": "radiopharmaceutical_unit",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 28,
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One physical vial, syringe or other traceable unit from a batch at a stated calibration time."
+    },
+    {
+      "label": "Radiopharmaceutical Order",
+      "id": "radiopharmaceutical_order",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 28,
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One procurement request or patient-specific prescription, explicitly distinguished by order_kind."
+    },
+    {
+      "label": "Dispense Event",
+      "id": "dispense_event",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 22,
+      "group": "Radiopharmaceutical supply",
+      "record_grain": "One patient-specific dispensing event allocating a traceable physical unit to a prescription."
+    },
+    {
+      "label": "Reference Evidence",
+      "id": "reference_evidence",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 41,
+      "group": "Research evidence",
+      "record_grain": "One citable evidence context, population or experimental dataset; not an individual patient observation."
+    },
+    {
+      "label": "Computational Model",
+      "id": "computational_model",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 29,
+      "group": "Digital twin research",
+      "record_grain": "One versioned computational model specification, independent of any execution or prediction."
+    },
+    {
+      "label": "Model Run",
+      "id": "model_run",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 31,
+      "group": "Digital twin research",
+      "record_grain": "One recorded execution of a computational model with explicit inputs and information cutoff."
+    },
+    {
+      "label": "Model Parameter",
+      "id": "model_parameter",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 27,
+      "group": "Digital twin research",
+      "record_grain": "One parameter value or distribution for a model specification or execution, with units and provenance."
+    },
+    {
+      "label": "Model Prediction",
+      "id": "model_prediction",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 26,
+      "group": "Digital twin research",
+      "record_grain": "One simulated or predicted result from a model execution; separate from a measured dose or outcome."
+    },
+    {
+      "label": "Radiopharmaceutical Test",
+      "id": "radiopharmaceutical_test",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 54,
+      "group": "Radiopharmaceutical evidence",
+      "record_grain": "One nonpatient QC, biological-reference or computational-evaluation result with an explicit subject and method."
+    },
+    {
+      "label": "Theranostic Pair",
+      "id": "theranostic_pair",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 21,
+      "group": "Radiopharmaceutical reference",
+      "record_grain": "One evidence-supported proposed pairing of diagnostic and therapeutic agents; not an assertion of interchangeable kinetics."
+    },
+    {
+      "label": "External Identifier",
+      "id": "external_identifier",
+      "status": "Proposed extension",
+      "midrc_relation": "new_extension",
+      "midrc_pattern": "Gen3 clinical/administrative node pattern; existing MIDRC fields reused where their context applies.",
+      "omop_candidates": "Requires an explicit reviewed ETL; no new OMOP table is asserted.",
+      "model_version": "0.4.0-proposal",
+      "property_count": 33,
+      "group": "Semantics and governance",
+      "record_grain": "One reviewed external identifier assignment to one explicitly typed entity; schema-level ontology mappings remain semantic_mapping records."
+    }
+  ],
+  "edges": [
+    {
+      "source": "annotation_file",
+      "target": "core_metadata_collection",
+      "backref": "annotation_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "dataset",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "datasets",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "case",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "imaging_study",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "cr_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cr_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "ct_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "ct_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "dx_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "dx_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "mg_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "mg_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "mr_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "mr_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "nm_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "nm_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "pt_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "pt_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "rf_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "rf_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "us_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "us_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "xa_series_file",
+      "backref": "annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "xa_series_files",
+      "required": false,
+      "group_id": "annotation_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_annotation_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "clinical_assessment",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_clinical_assessment_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "clinical_assessment",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_clinical_assessment_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "clinical_assessment",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_clinical_assessment_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "study",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_study_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dx_series_file",
+      "target": "core_metadata_collection",
+      "backref": "dx_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "dx_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "dx_series_file",
+      "target": "imaging_study",
+      "backref": "dx_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "dx_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "biomarker_assessment",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_biomarker_assessment_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "biomarker_assessment",
+      "target": "specimen",
+      "name": "specimens",
+      "backref": "nmmi_biomarker_assessment_specimens",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "biomarker_assessment",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_biomarker_assessment_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "biomarker_assessment",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_biomarker_assessment_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dose_summary",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_dose_summary_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dose_summary",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_dose_summary_anatomic_targets",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dose_summary",
+      "target": "absorbed_dose",
+      "name": "component_doses",
+      "backref": "nmmi_dose_summary_component_doses",
+      "label": "derived_from",
+      "multiplicity": "many_to_many",
+      "required": true
+    },
+    {
+      "source": "dose_summary",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_dose_summary_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "case",
+      "target": "dataset",
+      "backref": "cases",
+      "label": "member_of",
+      "multiplicity": "many_to_many",
+      "name": "datasets",
+      "required": true
+    },
+    {
+      "source": "case",
+      "target": "site",
+      "name": "sites",
+      "backref": "nmmi_case_sites",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "case",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_case_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_treatment_plan_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "treatment_plan",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_treatment_plan_therapy_cycles",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "response_assessment",
+      "name": "response_assessments",
+      "backref": "nmmi_treatment_plan_response_assessments",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "toxicity_event",
+      "name": "toxicity_events",
+      "backref": "nmmi_treatment_plan_toxicity_events",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "organ_function",
+      "name": "organ_functions",
+      "backref": "nmmi_treatment_plan_organ_functions",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "dose_summary",
+      "name": "dose_summaries",
+      "backref": "nmmi_treatment_plan_dose_summaries",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_treatment_plan_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "eligibility_assessment",
+      "name": "eligibility_assessments",
+      "backref": "nmmi_treatment_plan_eligibility_assessments",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "measurement",
+      "name": "laboratory_measurements",
+      "backref": "nmmi_treatment_plan_laboratory_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_plan",
+      "target": "model_prediction",
+      "name": "model_predictions",
+      "backref": "nmmi_treatment_plan_model_predictions",
+      "label": "considers_prediction",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "dataset",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "datasets",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "case",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "imaging_study",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "cr_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cr_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "ct_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "ct_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "dx_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "dx_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "mg_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "mg_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "mr_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "mr_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "nm_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "nm_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "pt_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "pt_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "rf_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "rf_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "us_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "us_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "xa_series_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "xa_series_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "annotation_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "annotation_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "dicom_annotation_file",
+      "backref": "annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "dicom_annotation_files",
+      "required": false,
+      "group_id": "annotation:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "annotation",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_annotation_anatomic_targets",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "registration",
+      "name": "registrations",
+      "backref": "nmmi_annotation_registrations",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_annotation_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "pt_series_file",
+      "name": "anatomic_reference_pt_series_files",
+      "backref": "nmmi_annotation_anatomic_reference_pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "nm_series_file",
+      "name": "anatomic_reference_nm_series_files",
+      "backref": "nmmi_annotation_anatomic_reference_nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "ct_series_file",
+      "name": "anatomic_reference_ct_series_files",
+      "backref": "nmmi_annotation_anatomic_reference_ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "annotation",
+      "target": "mr_series_file",
+      "name": "anatomic_reference_mr_series_files",
+      "backref": "nmmi_annotation_anatomic_reference_mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_eligibility_assessment_cases",
+      "label": "belongs_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "study",
+      "name": "studies",
+      "backref": "nmmi_eligibility_assessment_studies",
+      "label": "supported_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "visit",
+      "name": "visits",
+      "backref": "nmmi_eligibility_assessment_visits",
+      "label": "supported_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_eligibility_assessment_therapy_courses",
+      "label": "supported_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "condition",
+      "name": "conditions",
+      "backref": "nmmi_eligibility_assessment_conditions",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "clinical_assessment",
+      "name": "clinical_assessments",
+      "backref": "nmmi_eligibility_assessment_clinical_assessments",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "imaging_study",
+      "name": "imaging_studies",
+      "backref": "nmmi_eligibility_assessment_imaging_studies",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "organ_function",
+      "name": "organ_functions",
+      "backref": "nmmi_eligibility_assessment_organ_functions",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_eligibility_assessment_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "eligibility_assessment",
+      "target": "measurement",
+      "name": "laboratory_measurements",
+      "backref": "nmmi_eligibility_assessment_laboratory_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "core_metadata_collection",
+      "target": "project",
+      "backref": "core_metadata_collections",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "projects",
+      "required": true
+    },
+    {
+      "source": "treatment_transition",
+      "target": "therapy_course",
+      "name": "prior_courses",
+      "backref": "nmmi_treatment_transition_prior_courses",
+      "label": "follows",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "treatment_transition",
+      "target": "therapy_course",
+      "name": "subsequent_courses",
+      "backref": "nmmi_treatment_transition_subsequent_courses",
+      "label": "initiates",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_transition",
+      "target": "medication",
+      "name": "medications",
+      "backref": "nmmi_treatment_transition_medications",
+      "label": "documents",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_transition",
+      "target": "treatment_decision",
+      "name": "treatment_decisions",
+      "backref": "nmmi_treatment_transition_treatment_decisions",
+      "label": "motivated_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_transition",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_treatment_transition_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "procedure",
+      "target": "condition",
+      "backref": "procedures",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "conditions",
+      "required": false,
+      "group_id": "procedure:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "procedure",
+      "target": "case",
+      "backref": "procedures",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": false,
+      "group_id": "procedure:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "procedure",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_procedure_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "procedure",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_procedure_anatomic_targets",
+      "label": "treats",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "procedure",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_procedure_therapy_courses",
+      "label": "supported_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "data_release",
+      "target": "root",
+      "backref": "data_releases",
+      "label": "describes",
+      "multiplicity": "many_to_one",
+      "name": "roots",
+      "required": true
+    },
+    {
+      "source": "dataset",
+      "target": "project",
+      "backref": "datasets",
+      "label": "performed_for",
+      "multiplicity": "many_to_one",
+      "name": "projects",
+      "required": true
+    },
+    {
+      "source": "reconstruction",
+      "target": "acquisition",
+      "name": "acquisitions",
+      "backref": "nmmi_reconstruction_acquisitions",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "reconstruction",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_reconstruction_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reconstruction",
+      "target": "supplementary_file",
+      "name": "raw_files",
+      "backref": "nmmi_reconstruction_raw_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reconstruction",
+      "target": "pt_series_file",
+      "name": "output_pt_series_files",
+      "backref": "nmmi_reconstruction_output_pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reconstruction",
+      "target": "nm_series_file",
+      "name": "output_nm_series_files",
+      "backref": "nmmi_reconstruction_output_nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reconstruction",
+      "target": "ct_series_file",
+      "name": "output_ct_series_files",
+      "backref": "nmmi_reconstruction_output_ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reconstruction",
+      "target": "mr_series_file",
+      "name": "output_mr_series_files",
+      "backref": "nmmi_reconstruction_output_mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "mg_series_file",
+      "target": "core_metadata_collection",
+      "backref": "mg_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "mg_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "mg_series_file",
+      "target": "imaging_study",
+      "backref": "mg_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "mg_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "radiopharmaceutical_batch",
+      "target": "radiopharmaceutical",
+      "name": "radiopharmaceuticals",
+      "backref": "nmmi_radiopharmaceutical_batch_radiopharmaceuticals",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_batch",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_radiopharmaceutical_batch_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_batch",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_radiopharmaceutical_batch_medicinal_products",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_batch",
+      "target": "material_lot",
+      "name": "input_material_lots",
+      "backref": "nmmi_radiopharmaceutical_batch_input_material_lots",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_radiopharmaceutical_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_radiopharmaceutical_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "radionuclide",
+      "name": "radionuclide_records",
+      "backref": "nmmi_radiopharmaceutical_radionuclide_records",
+      "label": "has_identity",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "molecular_entity",
+      "name": "molecular_entities",
+      "backref": "nmmi_radiopharmaceutical_molecular_entities",
+      "label": "has_component",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "biological_target",
+      "name": "biological_targets",
+      "backref": "nmmi_radiopharmaceutical_biological_targets",
+      "label": "has_identity",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "molecular_entity",
+      "name": "chelators",
+      "backref": "nmmi_radiopharmaceutical_chelators",
+      "label": "has_component",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "molecular_entity",
+      "name": "linkers",
+      "backref": "nmmi_radiopharmaceutical_linkers",
+      "label": "has_component",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "molecular_entity",
+      "name": "targeting_vectors",
+      "backref": "nmmi_radiopharmaceutical_targeting_vectors",
+      "label": "has_component",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical",
+      "target": "molecular_entity",
+      "name": "precursors",
+      "backref": "nmmi_radiopharmaceutical_precursors",
+      "label": "has_component",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "ct_series_file",
+      "target": "core_metadata_collection",
+      "backref": "ct_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "ct_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "ct_series_file",
+      "target": "imaging_study",
+      "backref": "ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "ct_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "ct_series_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_ct_series_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "registration",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_registration_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "registration",
+      "target": "pt_series_file",
+      "name": "moving_pt_series_files",
+      "backref": "nmmi_registration_moving_pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:1",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "nm_series_file",
+      "name": "moving_nm_series_files",
+      "backref": "nmmi_registration_moving_nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:1",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "ct_series_file",
+      "name": "moving_ct_series_files",
+      "backref": "nmmi_registration_moving_ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:1",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "mr_series_file",
+      "name": "moving_mr_series_files",
+      "backref": "nmmi_registration_moving_mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:1",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "pt_series_file",
+      "name": "reference_pt_series_files",
+      "backref": "nmmi_registration_reference_pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:2",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "nm_series_file",
+      "name": "reference_nm_series_files",
+      "backref": "nmmi_registration_reference_nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:2",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "ct_series_file",
+      "name": "reference_ct_series_files",
+      "backref": "nmmi_registration_reference_ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:2",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "registration",
+      "target": "mr_series_file",
+      "name": "reference_mr_series_files",
+      "backref": "nmmi_registration_reference_mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "registration:group:2",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "observation",
+      "target": "case",
+      "backref": "observations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": true
+    },
+    {
+      "source": "observation",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_observation_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "observation",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_observation_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "provenance",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_provenance_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "organ_function",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_organ_function_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "organ_function",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_organ_function_anatomic_targets",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "organ_function",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_organ_function_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "organ_function",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_organ_function_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "organ_function",
+      "target": "measurement",
+      "name": "laboratory_measurements",
+      "backref": "nmmi_organ_function_laboratory_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_release",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_model_release_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "medical_history",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_medical_history_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "medical_history",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_medical_history_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "disease_burden",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_disease_burden_cases",
+      "label": "belongs_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "disease_burden",
+      "target": "imaging_study",
+      "name": "imaging_studies",
+      "backref": "nmmi_disease_burden_imaging_studies",
+      "label": "derived_from",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "disease_burden",
+      "target": "anatomic_target",
+      "name": "included_targets",
+      "backref": "nmmi_disease_burden_included_targets",
+      "label": "derived_from",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "disease_burden",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_disease_burden_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "disease_burden",
+      "target": "measurement",
+      "name": "roi_measurements",
+      "backref": "nmmi_disease_burden_roi_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "toxicity_event",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_toxicity_event_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "toxicity_event",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_toxicity_event_therapy_cycles",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "toxicity_event",
+      "target": "absorbed_dose",
+      "name": "absorbed_doses",
+      "backref": "nmmi_toxicity_event_absorbed_doses",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "toxicity_event",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_toxicity_event_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "toxicity_event",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_toxicity_event_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "toxicity_event",
+      "target": "measurement",
+      "name": "laboratory_measurements",
+      "backref": "nmmi_toxicity_event_laboratory_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "patient_reported_outcome",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_patient_reported_outcome_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "patient_reported_outcome",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_patient_reported_outcome_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "patient_reported_outcome",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_patient_reported_outcome_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "patient_reported_outcome",
+      "target": "medication",
+      "name": "analgesic_medications",
+      "backref": "nmmi_patient_reported_outcome_analgesic_medications",
+      "label": "contextualized_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "scanner",
+      "name": "scanners",
+      "backref": "nmmi_acquisition_scanners",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "acquisition",
+      "target": "scanner_qa",
+      "name": "scanner_qas",
+      "backref": "nmmi_acquisition_scanner_qas",
+      "label": "qualified_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_acquisition_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "imaging_study",
+      "name": "imaging_studies",
+      "backref": "nmmi_acquisition_imaging_studies",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "acquisition",
+      "target": "pt_series_file",
+      "name": "pt_series_files",
+      "backref": "nmmi_acquisition_pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "nm_series_file",
+      "name": "nm_series_files",
+      "backref": "nmmi_acquisition_nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "ct_series_file",
+      "name": "ct_series_files",
+      "backref": "nmmi_acquisition_ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "mr_series_file",
+      "name": "mr_series_files",
+      "backref": "nmmi_acquisition_mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "acquisition",
+      "target": "supplementary_file",
+      "name": "raw_files",
+      "backref": "nmmi_acquisition_raw_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "mr_series_file",
+      "target": "core_metadata_collection",
+      "backref": "mr_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "mr_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "mr_series_file",
+      "target": "imaging_study",
+      "backref": "mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "mr_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "mr_series_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_mr_series_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "specimen",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_specimen_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "specimen",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_specimen_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "survival_outcome",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_survival_outcome_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "survival_outcome",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_survival_outcome_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "survival_outcome",
+      "target": "response_assessment",
+      "name": "response_assessments",
+      "backref": "nmmi_survival_outcome_response_assessments",
+      "label": "event_supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "survival_outcome",
+      "target": "clinical_event",
+      "name": "clinical_events",
+      "backref": "nmmi_survival_outcome_clinical_events",
+      "label": "event_supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "survival_outcome",
+      "target": "treatment_transition",
+      "name": "treatment_transitions",
+      "backref": "nmmi_survival_outcome_treatment_transitions",
+      "label": "event_supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "administration",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_administration_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "administration",
+      "target": "radiopharmaceutical",
+      "name": "radiopharmaceuticals",
+      "backref": "nmmi_administration_radiopharmaceuticals",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "administration",
+      "target": "radiopharmaceutical_batch",
+      "name": "radiopharmaceutical_batches",
+      "backref": "nmmi_administration_radiopharmaceutical_batches",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "administration",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_administration_therapy_cycles",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "administration",
+      "target": "visit",
+      "name": "visits",
+      "backref": "nmmi_administration_visits",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "administration",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_administration_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "administration",
+      "target": "radiopharmaceutical_unit",
+      "name": "radiopharmaceutical_units",
+      "backref": "nmmi_administration_radiopharmaceutical_units",
+      "label": "traceable_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "administration",
+      "target": "dispense_event",
+      "name": "dispense_events",
+      "backref": "nmmi_administration_dispense_events",
+      "label": "traceable_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "scanner_qa",
+      "target": "scanner",
+      "name": "scanners",
+      "backref": "nmmi_scanner_qa_scanners",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "scanner_qa",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_scanner_qa_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "toxicity_summary",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_toxicity_summary_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "toxicity_summary",
+      "target": "toxicity_event",
+      "name": "toxicity_events",
+      "backref": "nmmi_toxicity_summary_toxicity_events",
+      "label": "derived_from",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "toxicity_summary",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_toxicity_summary_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "semantic_mapping",
+      "target": "model_release",
+      "name": "model_releases",
+      "backref": "nmmi_semantic_mapping_model_releases",
+      "label": "defines",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "pt_series_file",
+      "target": "core_metadata_collection",
+      "backref": "pt_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "pt_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "pt_series_file",
+      "target": "imaging_study",
+      "backref": "pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "pt_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "pt_series_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_pt_series_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "xa_series_file",
+      "target": "core_metadata_collection",
+      "backref": "xa_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "xa_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "xa_series_file",
+      "target": "imaging_study",
+      "backref": "xa_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "xa_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "nm_series_file",
+      "target": "core_metadata_collection",
+      "backref": "nm_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "nm_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "nm_series_file",
+      "target": "imaging_study",
+      "backref": "nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "nm_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "nm_series_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_nm_series_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_treatment_decision_therapy_courses",
+      "label": "belongs_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "treatment_decision",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_treatment_decision_therapy_cycles",
+      "label": "informed_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "response_assessment",
+      "name": "response_assessments",
+      "backref": "nmmi_treatment_decision_response_assessments",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "toxicity_event",
+      "name": "toxicity_events",
+      "backref": "nmmi_treatment_decision_toxicity_events",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "clinical_assessment",
+      "name": "clinical_assessments",
+      "backref": "nmmi_treatment_decision_clinical_assessments",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "organ_function",
+      "name": "organ_functions",
+      "backref": "nmmi_treatment_decision_organ_functions",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "dose_summary",
+      "name": "dose_summaries",
+      "backref": "nmmi_treatment_decision_dose_summaries",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "patient_reported_outcome",
+      "name": "patient_reported_outcomes",
+      "backref": "nmmi_treatment_decision_patient_reported_outcomes",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "clinical_event",
+      "name": "clinical_events",
+      "backref": "nmmi_treatment_decision_clinical_events",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "procedure",
+      "name": "procedures",
+      "backref": "nmmi_treatment_decision_procedures",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "treatment_plan",
+      "name": "treatment_plans",
+      "backref": "nmmi_treatment_decision_treatment_plans",
+      "label": "informed_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "treatment_decision",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_treatment_decision_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "measurement",
+      "target": "condition",
+      "backref": "measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "conditions",
+      "required": false,
+      "group_id": "measurement:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "measurement",
+      "target": "procedure",
+      "backref": "measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "procedures",
+      "required": false,
+      "group_id": "measurement:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "measurement",
+      "target": "case",
+      "backref": "measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": false,
+      "group_id": "measurement:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "measurement",
+      "target": "laboratory_panel",
+      "name": "laboratory_panels",
+      "backref": "nmmi_measurement_laboratory_panels",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "measurement",
+      "target": "annotation",
+      "name": "annotations",
+      "backref": "nmmi_measurement_annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "measurement",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_measurement_anatomic_targets",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "measurement",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_measurement_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "measurement",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_measurement_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_response_assessment_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "response_assessment",
+      "target": "imaging_study",
+      "name": "baseline_imaging_studies",
+      "backref": "nmmi_response_assessment_baseline_imaging_studies",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "imaging_study",
+      "name": "followup_imaging_studies",
+      "backref": "nmmi_response_assessment_followup_imaging_studies",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "dose_summary",
+      "name": "dose_summaries",
+      "backref": "nmmi_response_assessment_dose_summaries",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_response_assessment_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_response_assessment_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "disease_burden",
+      "name": "baseline_burdens",
+      "backref": "nmmi_response_assessment_baseline_burdens",
+      "label": "supported_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "disease_burden",
+      "name": "followup_burdens",
+      "backref": "nmmi_response_assessment_followup_burdens",
+      "label": "supported_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_response_assessment_anatomic_targets",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "absorbed_dose",
+      "name": "absorbed_doses",
+      "backref": "nmmi_response_assessment_absorbed_doses",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "patient_reported_outcome",
+      "name": "baseline_pros",
+      "backref": "nmmi_response_assessment_baseline_pros",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "patient_reported_outcome",
+      "name": "followup_pros",
+      "backref": "nmmi_response_assessment_followup_pros",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "patient_reported_outcome",
+      "name": "confirmation_pros",
+      "backref": "nmmi_response_assessment_confirmation_pros",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "clinical_assessment",
+      "name": "clinical_assessments",
+      "backref": "nmmi_response_assessment_clinical_assessments",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "biomarker_assessment",
+      "name": "biomarker_assessments",
+      "backref": "nmmi_response_assessment_biomarker_assessments",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "clinical_event",
+      "name": "clinical_events",
+      "backref": "nmmi_response_assessment_clinical_events",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "measurement",
+      "name": "laboratory_measurements",
+      "backref": "nmmi_response_assessment_laboratory_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "measurement",
+      "name": "roi_measurements",
+      "backref": "nmmi_response_assessment_roi_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "measurement",
+      "name": "baseline_psa_results",
+      "backref": "nmmi_response_assessment_baseline_psa_results",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "measurement",
+      "name": "nadir_psa_results",
+      "backref": "nmmi_response_assessment_nadir_psa_results",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "response_assessment",
+      "target": "measurement",
+      "name": "confirmatory_psa_results",
+      "backref": "nmmi_response_assessment_confirmatory_psa_results",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "laboratory_panel",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_laboratory_panel_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "laboratory_panel",
+      "target": "specimen",
+      "name": "specimens",
+      "backref": "nmmi_laboratory_panel_specimens",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "laboratory_panel",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_laboratory_panel_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "laboratory_panel",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_laboratory_panel_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dicom_annotation_file",
+      "target": "core_metadata_collection",
+      "backref": "dicom_annotation_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false
+    },
+    {
+      "source": "dicom_annotation_file",
+      "target": "imaging_study",
+      "backref": "dicom_annotation_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": true
+    },
+    {
+      "source": "dicom_annotation_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_dicom_annotation_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "site",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_site_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dosimetry",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_dosimetry_therapy_cycles",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dosimetry",
+      "target": "administration",
+      "name": "administrations",
+      "backref": "nmmi_dosimetry_administrations",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "time_activity_curve",
+      "name": "time_activity_curves",
+      "backref": "nmmi_dosimetry_time_activity_curves",
+      "label": "derived_from",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_dosimetry_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "acquisition",
+      "name": "acquisitions",
+      "backref": "nmmi_dosimetry_acquisitions",
+      "label": "derived_from",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "pt_series_file",
+      "name": "pt_series_files",
+      "backref": "nmmi_dosimetry_pt_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "nm_series_file",
+      "name": "nm_series_files",
+      "backref": "nmmi_dosimetry_nm_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "ct_series_file",
+      "name": "ct_series_files",
+      "backref": "nmmi_dosimetry_ct_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "mr_series_file",
+      "name": "mr_series_files",
+      "backref": "nmmi_dosimetry_mr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "annotation",
+      "name": "annotations",
+      "backref": "nmmi_dosimetry_annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "dicom_annotation_file",
+      "name": "dose_maps",
+      "backref": "nmmi_dosimetry_dose_maps",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dosimetry",
+      "target": "supplementary_file",
+      "name": "non_dicom_dose_maps",
+      "backref": "nmmi_dosimetry_non_dicom_dose_maps",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "project",
+      "target": "program",
+      "backref": "projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "name": "programs",
+      "required": true
+    },
+    {
+      "source": "absorbed_dose",
+      "target": "dosimetry",
+      "name": "dosimetries",
+      "backref": "nmmi_absorbed_dose_dosimetries",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "absorbed_dose",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_absorbed_dose_anatomic_targets",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "absorbed_dose",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_absorbed_dose_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "absorbed_dose",
+      "target": "annotation",
+      "name": "annotations",
+      "backref": "nmmi_absorbed_dose_annotations",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "therapy_cycle",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_therapy_cycle_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "therapy_cycle",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_therapy_cycle_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "scanner",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_scanner_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "scanner",
+      "target": "site",
+      "name": "sites",
+      "backref": "nmmi_scanner_sites",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "scanner",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_scanner_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "time_activity_curve",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_time_activity_curve_anatomic_targets",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "time_activity_curve",
+      "target": "administration",
+      "name": "administrations",
+      "backref": "nmmi_time_activity_curve_administrations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "time_activity_curve",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_time_activity_curve_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "time_activity_curve",
+      "target": "measurement",
+      "name": "roi_measurements",
+      "backref": "nmmi_time_activity_curve_roi_measurements",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "anatomic_target",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_anatomic_target_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "anatomic_target",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_anatomic_target_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "therapy_course",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_therapy_course_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "therapy_course",
+      "target": "study",
+      "name": "studies",
+      "backref": "nmmi_therapy_course_studies",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "therapy_course",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_therapy_course_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "supplementary_file",
+      "target": "core_metadata_collection",
+      "backref": "supplementary_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "supplementary_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "supplementary_file",
+      "target": "dataset",
+      "backref": "supplementary_files",
+      "label": "refers_to",
+      "multiplicity": "many_to_one",
+      "name": "datasets",
+      "required": false,
+      "group_id": "supplementary_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "supplementary_file",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_supplementary_file_provenance_records",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "supplementary_file",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_supplementary_file_cases",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "cr_series_file",
+      "target": "core_metadata_collection",
+      "backref": "cr_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "cr_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "cr_series_file",
+      "target": "imaging_study",
+      "backref": "cr_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "cr_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "us_series_file",
+      "target": "core_metadata_collection",
+      "backref": "us_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "us_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "us_series_file",
+      "target": "imaging_study",
+      "backref": "us_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "us_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "condition",
+      "target": "case",
+      "backref": "conditions",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": true
+    },
+    {
+      "source": "condition",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_condition_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "condition",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_condition_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "visit",
+      "target": "case",
+      "backref": "visits",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": true
+    },
+    {
+      "source": "visit",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_visit_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "rf_series_file",
+      "target": "core_metadata_collection",
+      "backref": "rf_series_files",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "rf_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "rf_series_file",
+      "target": "imaging_study",
+      "backref": "rf_series_files",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "rf_series_file:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "medication",
+      "target": "case",
+      "backref": "medications",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": true
+    },
+    {
+      "source": "medication",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_medication_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "clinical_event",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_clinical_event_therapy_courses",
+      "label": "belongs_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "clinical_event",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_clinical_event_anatomic_targets",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "clinical_event",
+      "target": "procedure",
+      "name": "procedures",
+      "backref": "nmmi_clinical_event_procedures",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "clinical_event",
+      "target": "condition",
+      "name": "conditions",
+      "backref": "nmmi_clinical_event_conditions",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "clinical_event",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_clinical_event_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "imaging_study",
+      "target": "case",
+      "backref": "imaging_studies",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": true
+    },
+    {
+      "source": "imaging_study",
+      "target": "dataset",
+      "backref": "imaging_studies",
+      "label": "member_of",
+      "multiplicity": "many_to_many",
+      "name": "datasets",
+      "required": true
+    },
+    {
+      "source": "imaging_study",
+      "target": "visit",
+      "name": "visits",
+      "backref": "nmmi_imaging_study_visits",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "imaging_study",
+      "target": "timepoint",
+      "name": "timepoints",
+      "backref": "nmmi_imaging_study_timepoints",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "imaging_study",
+      "target": "administration",
+      "name": "administrations",
+      "backref": "nmmi_imaging_study_administrations",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "imaging_study",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_imaging_study_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "timepoint",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_timepoint_therapy_courses",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "timepoint",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_timepoint_therapy_cycles",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "timepoint",
+      "target": "administration",
+      "name": "anchor_administrations",
+      "backref": "nmmi_timepoint_anchor_administrations",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "timepoint",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_timepoint_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiology_report",
+      "target": "core_metadata_collection",
+      "backref": "radiology_reports",
+      "label": "data_from",
+      "multiplicity": "many_to_one",
+      "name": "core_metadata_collections",
+      "required": false,
+      "group_id": "radiology_report:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "radiology_report",
+      "target": "dataset",
+      "backref": "radiology_reports",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "datasets",
+      "required": false,
+      "group_id": "radiology_report:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "radiology_report",
+      "target": "case",
+      "backref": "radiology_reports",
+      "label": "related_to",
+      "multiplicity": "many_to_one",
+      "name": "cases",
+      "required": false,
+      "group_id": "radiology_report:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "radiology_report",
+      "target": "imaging_study",
+      "backref": "radiology_reports",
+      "label": "related_to",
+      "multiplicity": "many_to_many",
+      "name": "imaging_studies",
+      "required": false,
+      "group_id": "radiology_report:group:0",
+      "group_required": true,
+      "group_exclusive": false
+    },
+    {
+      "source": "radionuclide",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_radionuclide_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radionuclide",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_radionuclide_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "decay_emission",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_decay_emission_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "decay_emission",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_decay_emission_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "decay_emission",
+      "target": "radionuclide",
+      "name": "parent_nuclides",
+      "backref": "nmmi_decay_emission_parent_nuclides",
+      "label": "emitted_by",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "decay_emission",
+      "target": "radionuclide",
+      "name": "daughter_nuclides",
+      "backref": "nmmi_decay_emission_daughter_nuclides",
+      "label": "decays_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "molecular_entity",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_molecular_entity_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "molecular_entity",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_molecular_entity_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "biological_target",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_biological_target_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "biological_target",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_biological_target_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "medicinal_product",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_medicinal_product_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "medicinal_product",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_medicinal_product_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "medicinal_product",
+      "target": "radiopharmaceutical",
+      "name": "radiopharmaceuticals",
+      "backref": "nmmi_medicinal_product_radiopharmaceuticals",
+      "label": "formulation_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "product_ingredient",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_product_ingredient_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "product_ingredient",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_product_ingredient_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "product_ingredient",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_product_ingredient_medicinal_products",
+      "label": "ingredient_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "product_ingredient",
+      "target": "molecular_entity",
+      "name": "molecular_entities",
+      "backref": "nmmi_product_ingredient_molecular_entities",
+      "label": "has_identity",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "product_package",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_product_package_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "product_package",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_product_package_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "product_package",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_product_package_medicinal_products",
+      "label": "package_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "package_component",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_package_component_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "package_component",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_package_component_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "package_component",
+      "target": "product_package",
+      "name": "outer_packages",
+      "backref": "nmmi_package_component_outer_packages",
+      "label": "contained_in",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "package_component",
+      "target": "product_package",
+      "name": "inner_packages",
+      "backref": "nmmi_package_component_inner_packages",
+      "label": "contains_specification",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "regulatory_authorization",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_regulatory_authorization_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "regulatory_authorization",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_regulatory_authorization_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "regulatory_authorization",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_regulatory_authorization_medicinal_products",
+      "label": "authorizes",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "regulatory_authorization",
+      "target": "medicinal_product",
+      "name": "reference_products",
+      "backref": "nmmi_regulatory_authorization_reference_products",
+      "label": "references",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "supply_offer",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_supply_offer_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "supply_offer",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_supply_offer_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "supply_offer",
+      "target": "product_package",
+      "name": "product_packages",
+      "backref": "nmmi_supply_offer_product_packages",
+      "label": "offers",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "material_lot",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_material_lot_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "material_lot",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_material_lot_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "material_lot",
+      "target": "molecular_entity",
+      "name": "molecular_entities",
+      "backref": "nmmi_material_lot_molecular_entities",
+      "label": "has_identity",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "material_lot",
+      "target": "radionuclide",
+      "name": "radionuclides",
+      "backref": "nmmi_material_lot_radionuclides",
+      "label": "contains_nuclide",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "preparation_event",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_preparation_event_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "preparation_event",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_preparation_event_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "preparation_event",
+      "target": "material_lot",
+      "name": "input_material_lots",
+      "backref": "nmmi_preparation_event_input_material_lots",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "preparation_event",
+      "target": "radiopharmaceutical_batch",
+      "name": "input_batches",
+      "backref": "nmmi_preparation_event_input_batches",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "preparation_event",
+      "target": "radiopharmaceutical_batch",
+      "name": "output_batches",
+      "backref": "nmmi_preparation_event_output_batches",
+      "label": "produces",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_unit",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_radiopharmaceutical_unit_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_unit",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_radiopharmaceutical_unit_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_unit",
+      "target": "radiopharmaceutical_batch",
+      "name": "radiopharmaceutical_batches",
+      "backref": "nmmi_radiopharmaceutical_unit_radiopharmaceutical_batches",
+      "label": "unit_of_batch",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_unit",
+      "target": "product_package",
+      "name": "product_packages",
+      "backref": "nmmi_radiopharmaceutical_unit_product_packages",
+      "label": "conforms_to",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_unit",
+      "target": "preparation_event",
+      "name": "preparation_events",
+      "backref": "nmmi_radiopharmaceutical_unit_preparation_events",
+      "label": "prepared_by",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_radiopharmaceutical_order_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_radiopharmaceutical_order_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_radiopharmaceutical_order_medicinal_products",
+      "label": "requests",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "product_package",
+      "name": "product_packages",
+      "backref": "nmmi_radiopharmaceutical_order_product_packages",
+      "label": "requests_package",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "supply_offer",
+      "name": "supply_offers",
+      "backref": "nmmi_radiopharmaceutical_order_supply_offers",
+      "label": "uses_offer",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_radiopharmaceutical_order_cases",
+      "label": "for_patient",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_order",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_radiopharmaceutical_order_therapy_cycles",
+      "label": "for_cycle",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "dispense_event",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_dispense_event_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dispense_event",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_dispense_event_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "dispense_event",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_dispense_event_cases",
+      "label": "for_patient",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dispense_event",
+      "target": "radiopharmaceutical_order",
+      "name": "radiopharmaceutical_orders",
+      "backref": "nmmi_dispense_event_radiopharmaceutical_orders",
+      "label": "fulfills",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "dispense_event",
+      "target": "radiopharmaceutical_unit",
+      "name": "radiopharmaceutical_units",
+      "backref": "nmmi_dispense_event_radiopharmaceutical_units",
+      "label": "dispenses",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "reference_evidence",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_reference_evidence_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "reference_evidence",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_reference_evidence_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reference_evidence",
+      "target": "radiopharmaceutical",
+      "name": "radiopharmaceuticals",
+      "backref": "nmmi_reference_evidence_radiopharmaceuticals",
+      "label": "describes",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reference_evidence",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_reference_evidence_medicinal_products",
+      "label": "describes_product",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "reference_evidence",
+      "target": "biological_target",
+      "name": "biological_targets",
+      "backref": "nmmi_reference_evidence_biological_targets",
+      "label": "describes_target",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "computational_model",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_computational_model_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "computational_model",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_computational_model_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "computational_model",
+      "target": "reference_evidence",
+      "name": "reference_evidence",
+      "backref": "nmmi_computational_model_reference_evidence",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_model_run_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "model_run",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_model_run_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "computational_model",
+      "name": "computational_models",
+      "backref": "nmmi_model_run_computational_models",
+      "label": "executes",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "model_run",
+      "target": "case",
+      "name": "cases",
+      "backref": "nmmi_model_run_cases",
+      "label": "for_subject",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "therapy_course",
+      "name": "therapy_courses",
+      "backref": "nmmi_model_run_therapy_courses",
+      "label": "for_subject",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "therapy_cycle",
+      "name": "therapy_cycles",
+      "backref": "nmmi_model_run_therapy_cycles",
+      "label": "for_subject",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "measurement",
+      "name": "input_measurements",
+      "backref": "nmmi_model_run_input_measurements",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "acquisition",
+      "name": "input_acquisitions",
+      "backref": "nmmi_model_run_input_acquisitions",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "time_activity_curve",
+      "name": "input_curves",
+      "backref": "nmmi_model_run_input_curves",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "absorbed_dose",
+      "name": "input_doses",
+      "backref": "nmmi_model_run_input_doses",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_run",
+      "target": "administration",
+      "name": "input_administrations",
+      "backref": "nmmi_model_run_input_administrations",
+      "label": "uses_input",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_parameter",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_model_parameter_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "model_parameter",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_model_parameter_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_parameter",
+      "target": "computational_model",
+      "name": "computational_models",
+      "backref": "nmmi_model_parameter_computational_models",
+      "label": "parameter_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "model_parameter",
+      "target": "model_run",
+      "name": "model_runs",
+      "backref": "nmmi_model_parameter_model_runs",
+      "label": "estimated_in",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "model_parameter",
+      "target": "reference_evidence",
+      "name": "reference_evidence",
+      "backref": "nmmi_model_parameter_reference_evidence",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_prediction",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_model_prediction_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "model_prediction",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_model_prediction_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "model_prediction",
+      "target": "model_run",
+      "name": "model_runs",
+      "backref": "nmmi_model_prediction_model_runs",
+      "label": "generated_by",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "model_prediction",
+      "target": "anatomic_target",
+      "name": "anatomic_targets",
+      "backref": "nmmi_model_prediction_anatomic_targets",
+      "label": "predicts_for",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_radiopharmaceutical_test_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_radiopharmaceutical_test_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "radiopharmaceutical_batch",
+      "name": "radiopharmaceutical_batches",
+      "backref": "nmmi_radiopharmaceutical_test_radiopharmaceutical_batches",
+      "label": "assesses",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "material_lot",
+      "name": "material_lots",
+      "backref": "nmmi_radiopharmaceutical_test_material_lots",
+      "label": "assesses",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "radiopharmaceutical_unit",
+      "name": "radiopharmaceutical_units",
+      "backref": "nmmi_radiopharmaceutical_test_radiopharmaceutical_units",
+      "label": "assesses",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "reference_evidence",
+      "name": "reference_evidence",
+      "backref": "nmmi_radiopharmaceutical_test_reference_evidence",
+      "label": "assesses",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "radiopharmaceutical_test",
+      "target": "computational_model",
+      "name": "computational_models",
+      "backref": "nmmi_radiopharmaceutical_test_computational_models",
+      "label": "assesses",
+      "multiplicity": "many_to_one",
+      "required": false
+    },
+    {
+      "source": "theranostic_pair",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_theranostic_pair_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "theranostic_pair",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_theranostic_pair_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "theranostic_pair",
+      "target": "radiopharmaceutical",
+      "name": "diagnostic_agents",
+      "backref": "nmmi_theranostic_pair_diagnostic_agents",
+      "label": "diagnostic_component",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "theranostic_pair",
+      "target": "radiopharmaceutical",
+      "name": "therapeutic_agents",
+      "backref": "nmmi_theranostic_pair_therapeutic_agents",
+      "label": "therapeutic_component",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "theranostic_pair",
+      "target": "reference_evidence",
+      "name": "reference_evidence",
+      "backref": "nmmi_theranostic_pair_reference_evidence",
+      "label": "supported_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "external_identifier",
+      "target": "project",
+      "name": "projects",
+      "backref": "nmmi_external_identifier_projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "required": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "provenance",
+      "name": "provenance_records",
+      "backref": "nmmi_external_identifier_provenance_records",
+      "label": "documented_by",
+      "multiplicity": "many_to_many",
+      "required": false
+    },
+    {
+      "source": "external_identifier",
+      "target": "radiopharmaceutical",
+      "name": "radiopharmaceuticals",
+      "backref": "nmmi_external_identifier_radiopharmaceuticals",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "radionuclide",
+      "name": "radionuclides",
+      "backref": "nmmi_external_identifier_radionuclides",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "molecular_entity",
+      "name": "molecular_entities",
+      "backref": "nmmi_external_identifier_molecular_entities",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "biological_target",
+      "name": "biological_targets",
+      "backref": "nmmi_external_identifier_biological_targets",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "medicinal_product",
+      "name": "medicinal_products",
+      "backref": "nmmi_external_identifier_medicinal_products",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "product_package",
+      "name": "product_packages",
+      "backref": "nmmi_external_identifier_product_packages",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "regulatory_authorization",
+      "name": "regulatory_authorizations",
+      "backref": "nmmi_external_identifier_regulatory_authorizations",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    },
+    {
+      "source": "external_identifier",
+      "target": "reference_evidence",
+      "name": "reference_evidence",
+      "backref": "nmmi_external_identifier_reference_evidence",
+      "label": "identifies",
+      "multiplicity": "many_to_one",
+      "required": false,
+      "group_id": "external_identifier:group:2",
+      "group_required": true,
+      "group_exclusive": true
+    }
+  ]
+}

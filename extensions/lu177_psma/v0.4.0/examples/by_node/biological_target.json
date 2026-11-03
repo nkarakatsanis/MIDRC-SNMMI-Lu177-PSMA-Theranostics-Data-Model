@@ -1,0 +1,22 @@
+[
+  {
+    "type": "biological_target",
+    "submitter_id": "RP-TARGET",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "preferred_name": "PSMA",
+    "target_type": "cell-surface enzyme",
+    "species": "Homo sapiens",
+    "gene_symbol": "FOLH1"
+  }
+]

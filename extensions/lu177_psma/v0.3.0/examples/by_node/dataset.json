@@ -1,0 +1,15 @@
+[
+  {
+    "submitter_id": "SYN-DATASET",
+    "model_version": "0.3.0-proposal",
+    "full_name": "Synthetic Lu-177 PSMA model example",
+    "longitudinal": true,
+    "type": "dataset",
+    "data_description": "Entirely invented longitudinal Lu177-PSMA model example; no real patient data or image objects.",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ]
+  }
+]

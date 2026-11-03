@@ -1,0 +1,98 @@
+[
+  {
+    "view": "lesion_dose",
+    "title": "Lesion dose: patient, cycle and imaging evidence",
+    "nodes": 11,
+    "edges": 24,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "clinical_core",
+    "title": "Clinical evidence and treatment decisions",
+    "nodes": 13,
+    "edges": 32,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "midrc_imaging",
+    "title": "Existing MIDRC image nodes in the theranostics workflow",
+    "nodes": 12,
+    "edges": 29,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "outcome_revision",
+    "title": "Five-dimensional outcome framework and evidence",
+    "nodes": 17,
+    "edges": 53,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "longitudinal",
+    "title": "Subject, collection and treatment context",
+    "nodes": 17,
+    "edges": 33,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "imaging",
+    "title": "Acquisition, processing, contours and dosimetry",
+    "nodes": 22,
+    "edges": 69,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "governance",
+    "title": "Administrative and semantic governance",
+    "nodes": 11,
+    "edges": 15,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "baseline",
+    "title": "Unmodified MIDRC topology (optional extensions omitted)",
+    "nodes": 29,
+    "edges": 80,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "complete",
+    "title": "Complete merged MIDRC and theranostics graph",
+    "nodes": 90,
+    "edges": 412,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "radiopharmaceutical_identity",
+    "title": "Agent, product, ingredients and identifiers",
+    "nodes": 11,
+    "edges": 24,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "radiopharmaceutical_trace",
+    "title": "Preparation, quality and the actual administration",
+    "nodes": 12,
+    "edges": 24,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  },
+  {
+    "view": "radiopharmaceutical_research",
+    "title": "Reference evidence and computational predictions",
+    "nodes": 12,
+    "edges": 18,
+    "direction": "child to referenced parent/evidence",
+    "warnings": []
+  }
+]

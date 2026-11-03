@@ -1,0 +1,62 @@
+{
+  "airway_involvement": null,
+  "airway_involvement_type": null,
+  "body_part_examined": null,
+  "case_ids": null,
+  "cases": {
+    "submitter_id": null
+  },
+  "cavities": null,
+  "cavities_count": null,
+  "cavities_largest_size": null,
+  "cavities_wall_thickness": null,
+  "core_metadata_collections": {
+    "submitter_id": null
+  },
+  "ct_protocol": null,
+  "cysts_bullae": null,
+  "*data_category": null,
+  "*data_format": null,
+  "*data_type": null,
+  "datasets": {
+    "submitter_id": null
+  },
+  "distribution_axial": null,
+  "distribution_zone": null,
+  "fibrocalcific_scarring": null,
+  "fibrosis_pattern": null,
+  "fibrosis_segments": null,
+  "*file_name": null,
+  "*file_size": null,
+  "ground_glass_opacities": null,
+  "ground_glass_opacities_focality": null,
+  "honeycombing": null,
+  "honeycombing_focality": null,
+  "image_quality": null,
+  "imaging_studies": {
+    "submitter_id": null
+  },
+  "laterality": null,
+  "lymphadenopathy_consolidation": null,
+  "*md5sum": null,
+  "modality": null,
+  "object_id": null,
+  "paracicatricial_emphysema": null,
+  "parenchymal_bands": null,
+  "pleural_involvement": null,
+  "pleural_involvement_phase": null,
+  "project_id": null,
+  "pulmonary_hypertension_signs": null,
+  "pulmonary_hypertension_signs_indicator": null,
+  "report_generation_method": null,
+  "report_modification_method": null,
+  "reticular_opacities": null,
+  "reticular_opacities_focality": null,
+  "study_description": null,
+  "*submitter_id": null,
+  "symmetry": null,
+  "traction_bronchiectasis": null,
+  "traction_bronchiectasis_focality": null,
+  "tuberculoma_calcified_ghon_focus": null,
+  "*type": "radiology_report"
+}

@@ -1,0 +1,44 @@
+{
+  "*type": "administration",
+  "*submitter_id": null,
+  "project_id": null,
+  "*cases": {
+    "submitter_id": null
+  },
+  "*radiopharmaceuticals": {
+    "submitter_id": null
+  },
+  "radiopharmaceutical_batches": {
+    "submitter_id": null
+  },
+  "therapy_cycles": {
+    "submitter_id": null
+  },
+  "visits": {
+    "submitter_id": null
+  },
+  "provenance_records": {
+    "submitter_id": null
+  },
+  "model_version": null,
+  "record_status": null,
+  "source_record_id": null,
+  "source_system": null,
+  "missing_properties": null,
+  "missing_reasons": null,
+  "*administration_purpose": null,
+  "administration_datetime": null,
+  "*administered_activity_mbq": null,
+  "*activity_reference_datetime": null,
+  "pre_injection_activity_mbq": null,
+  "residual_activity_mbq": null,
+  "pre_measurement_datetime": null,
+  "residual_measurement_datetime": null,
+  "residual_correction_method": null,
+  "route": null,
+  "activity_meter_identifier": null,
+  "activity_measurement_container": null,
+  "administration_date": null,
+  "dicom_start_time": null,
+  "dicom_stop_time": null
+}

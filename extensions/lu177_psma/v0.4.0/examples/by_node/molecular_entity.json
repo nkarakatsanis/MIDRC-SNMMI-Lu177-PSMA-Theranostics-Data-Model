@@ -1,0 +1,37 @@
+[
+  {
+    "type": "molecular_entity",
+    "submitter_id": "RP-MOLECULE",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "preferred_name": "Synthetic PSMA-targeting compound",
+    "ingredient_name": "Invented molecular identity for structural testing"
+  },
+  {
+    "type": "molecular_entity",
+    "submitter_id": "RP-EXCIPIENT",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "preferred_name": "Synthetic formulation excipient"
+  }
+]

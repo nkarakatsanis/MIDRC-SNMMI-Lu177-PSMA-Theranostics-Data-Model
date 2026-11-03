@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key id="label" for="node" attr.name="label" attr.type="string"/>
+<key id="group" for="node" attr.name="group" attr.type="string"/>
+<key id="name" for="edge" attr.name="name" attr.type="string"/>
+<key id="multiplicity" for="edge" attr.name="multiplicity" attr.type="string"/>
+<key id="required" for="edge" attr.name="required" attr.type="boolean"/>
+<key id="group_required" for="edge" attr.name="group_required" attr.type="boolean"/>
+<graph id="NMMI_Lu177_PSMA_v0_3" edgedefault="directed">
+<node id="annotation"><data key="label">Annotation</data><data key="group">Imaging</data></node>
+<node id="annotation_file"><data key="label">Annotation File</data><data key="group">Imaging</data></node>
+<node id="case"><data key="label">Case</data><data key="group">Subject</data></node>
+<node id="condition"><data key="label">Condition</data><data key="group">Clinical</data></node>
+<node id="core_metadata_collection"><data key="label">Core Metadata Collection</data><data key="group">Governance</data></node>
+<node id="cr_series_file"><data key="label">CR Series File</data><data key="group">Imaging</data></node>
+<node id="ct_series_file"><data key="label">CT Series File</data><data key="group">Imaging</data></node>
+<node id="data_release"><data key="label">Data Release</data><data key="group">Governance</data></node>
+<node id="dataset"><data key="label">Dataset</data><data key="group">Governance</data></node>
+<node id="dicom_annotation_file"><data key="label">DICOM Annotation Series File</data><data key="group">Imaging</data></node>
+<node id="dx_series_file"><data key="label">DX Series File</data><data key="group">Imaging</data></node>
+<node id="imaging_study"><data key="label">Imaging Study</data><data key="group">Imaging</data></node>
+<node id="measurement"><data key="label">Measurement</data><data key="group">Clinical</data></node>
+<node id="medication"><data key="label">Medication</data><data key="group">Clinical</data></node>
+<node id="mg_series_file"><data key="label">MG Series File</data><data key="group">Imaging</data></node>
+<node id="mr_series_file"><data key="label">MR Series File</data><data key="group">Imaging</data></node>
+<node id="nm_series_file"><data key="label">NM Series File</data><data key="group">Imaging</data></node>
+<node id="observation"><data key="label">Observation</data><data key="group">Clinical</data></node>
+<node id="procedure"><data key="label">Procedure</data><data key="group">Clinical</data></node>
+<node id="program"><data key="label">Program</data><data key="group">Governance</data></node>
+<node id="project"><data key="label">Project</data><data key="group">Governance</data></node>
+<node id="pt_series_file"><data key="label">PT Series File</data><data key="group">Imaging</data></node>
+<node id="radiology_report"><data key="label">Radiology Report</data><data key="group">Clinical</data></node>
+<node id="rf_series_file"><data key="label">RF Series File</data><data key="group">Imaging</data></node>
+<node id="root"><data key="label">Root</data><data key="group">Governance</data></node>
+<node id="supplementary_file"><data key="label">Supplementary File</data><data key="group">Governance</data></node>
+<node id="us_series_file"><data key="label">US Series File</data><data key="group">Imaging</data></node>
+<node id="visit"><data key="label">Visit</data><data key="group">Longitudinal context</data></node>
+<node id="xa_series_file"><data key="label">XA Series File</data><data key="group">Imaging</data></node>
+<node id="therapy_course"><data key="label">Therapy Course</data><data key="group">Longitudinal context</data></node>
+<node id="toxicity_event"><data key="label">Toxicity Event</data><data key="group">Outcomes</data></node>
+<node id="clinical_assessment"><data key="label">Clinical Assessment</data><data key="group">Clinical</data></node>
+<node id="timepoint"><data key="label">Timepoint</data><data key="group">Longitudinal context</data></node>
+<node id="treatment_plan"><data key="label">Treatment Plan</data><data key="group">Treatment</data></node>
+<node id="anatomic_target"><data key="label">Anatomic Target</data><data key="group">Quantification</data></node>
+<node id="dose_summary"><data key="label">Dose Summary</data><data key="group">Quantification</data></node>
+<node id="patient_reported_outcome"><data key="label">Patient Reported Outcome</data><data key="group">Outcomes</data></node>
+<node id="response_assessment"><data key="label">Response Assessment</data><data key="group">Outcomes</data></node>
+<node id="semantic_mapping"><data key="label">Semantic Mapping</data><data key="group">Governance</data></node>
+<node id="acquisition"><data key="label">Acquisition</data><data key="group">Imaging</data></node>
+<node id="radiopharmaceutical_batch"><data key="label">Radiopharmaceutical Batch</data><data key="group">Treatment</data></node>
+<node id="scanner"><data key="label">Scanner</data><data key="group">Imaging</data></node>
+<node id="time_activity_curve"><data key="label">Time Activity Curve</data><data key="group">Quantification</data></node>
+<node id="radiopharmaceutical"><data key="label">Radiopharmaceutical</data><data key="group">Treatment</data></node>
+<node id="study"><data key="label">Study</data><data key="group">Longitudinal context</data></node>
+<node id="scanner_qa"><data key="label">Scanner Qa</data><data key="group">Imaging</data></node>
+<node id="toxicity_summary"><data key="label">Toxicity Summary</data><data key="group">Outcomes</data></node>
+<node id="laboratory_panel"><data key="label">Laboratory Panel</data><data key="group">Clinical</data></node>
+<node id="dosimetry"><data key="label">Dosimetry</data><data key="group">Quantification</data></node>
+<node id="biomarker_assessment"><data key="label">Biomarker Assessment</data><data key="group">Clinical</data></node>
+<node id="provenance"><data key="label">Provenance</data><data key="group">Governance</data></node>
+<node id="organ_function"><data key="label">Organ Function</data><data key="group">Clinical</data></node>
+<node id="site"><data key="label">Site</data><data key="group">Governance</data></node>
+<node id="medical_history"><data key="label">Medical History</data><data key="group">Clinical</data></node>
+<node id="registration"><data key="label">Registration</data><data key="group">Imaging</data></node>
+<node id="administration"><data key="label">Administration</data><data key="group">Treatment</data></node>
+<node id="specimen"><data key="label">Specimen</data><data key="group">Clinical</data></node>
+<node id="absorbed_dose"><data key="label">Absorbed Dose</data><data key="group">Quantification</data></node>
+<node id="model_release"><data key="label">Model Release</data><data key="group">Governance</data></node>
+<node id="therapy_cycle"><data key="label">Therapy Cycle</data><data key="group">Longitudinal context</data></node>
+<node id="survival_outcome"><data key="label">Survival Outcome</data><data key="group">Outcomes</data></node>
+<node id="reconstruction"><data key="label">Reconstruction</data><data key="group">Imaging</data></node>
+<node id="eligibility_assessment"><data key="label">Eligibility assessment</data><data key="group">Clinical</data></node>
+<node id="disease_burden"><data key="label">Disease burden</data><data key="group">Quantification</data></node>
+<node id="clinical_event"><data key="label">Clinical event</data><data key="group">Outcomes</data></node>
+<node id="treatment_decision"><data key="label">Treatment decision</data><data key="group">Treatment</data></node>
+<node id="treatment_transition"><data key="label">Treatment transition</data><data key="group">Longitudinal context</data></node>
+<edge id="e0" source="annotation" target="dataset"><data key="name">datasets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e1" source="annotation" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e2" source="annotation" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e3" source="annotation" target="cr_series_file"><data key="name">cr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e4" source="annotation" target="ct_series_file"><data key="name">ct_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e5" source="annotation" target="dx_series_file"><data key="name">dx_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e6" source="annotation" target="mg_series_file"><data key="name">mg_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e7" source="annotation" target="mr_series_file"><data key="name">mr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e8" source="annotation" target="nm_series_file"><data key="name">nm_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e9" source="annotation" target="pt_series_file"><data key="name">pt_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e10" source="annotation" target="rf_series_file"><data key="name">rf_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e11" source="annotation" target="us_series_file"><data key="name">us_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e12" source="annotation" target="xa_series_file"><data key="name">xa_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e13" source="annotation" target="annotation_file"><data key="name">annotation_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e14" source="annotation" target="dicom_annotation_file"><data key="name">dicom_annotation_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e15" source="annotation" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e16" source="annotation" target="registration"><data key="name">registrations</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e17" source="annotation" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e18" source="annotation" target="pt_series_file"><data key="name">anatomic_reference_pt_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e19" source="annotation" target="nm_series_file"><data key="name">anatomic_reference_nm_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e20" source="annotation" target="ct_series_file"><data key="name">anatomic_reference_ct_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e21" source="annotation" target="mr_series_file"><data key="name">anatomic_reference_mr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e22" source="annotation_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e23" source="annotation_file" target="dataset"><data key="name">datasets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e24" source="annotation_file" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e25" source="annotation_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e26" source="annotation_file" target="cr_series_file"><data key="name">cr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e27" source="annotation_file" target="ct_series_file"><data key="name">ct_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e28" source="annotation_file" target="dx_series_file"><data key="name">dx_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e29" source="annotation_file" target="mg_series_file"><data key="name">mg_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e30" source="annotation_file" target="mr_series_file"><data key="name">mr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e31" source="annotation_file" target="nm_series_file"><data key="name">nm_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e32" source="annotation_file" target="pt_series_file"><data key="name">pt_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e33" source="annotation_file" target="rf_series_file"><data key="name">rf_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e34" source="annotation_file" target="us_series_file"><data key="name">us_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e35" source="annotation_file" target="xa_series_file"><data key="name">xa_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e36" source="annotation_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e37" source="case" target="dataset"><data key="name">datasets</data><data key="multiplicity">many_to_many</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e38" source="case" target="site"><data key="name">sites</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e39" source="case" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e40" source="condition" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e41" source="condition" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e42" source="condition" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e43" source="core_metadata_collection" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e44" source="cr_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e45" source="cr_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e46" source="ct_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e47" source="ct_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e48" source="ct_series_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e49" source="data_release" target="root"><data key="name">roots</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e50" source="dataset" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e51" source="dicom_annotation_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e52" source="dicom_annotation_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e53" source="dicom_annotation_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e54" source="dx_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e55" source="dx_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e56" source="imaging_study" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e57" source="imaging_study" target="dataset"><data key="name">datasets</data><data key="multiplicity">many_to_many</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e58" source="imaging_study" target="visit"><data key="name">visits</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e59" source="imaging_study" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e60" source="imaging_study" target="administration"><data key="name">administrations</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e61" source="imaging_study" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e62" source="measurement" target="condition"><data key="name">conditions</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e63" source="measurement" target="procedure"><data key="name">procedures</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e64" source="measurement" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e65" source="measurement" target="laboratory_panel"><data key="name">laboratory_panels</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e66" source="measurement" target="annotation"><data key="name">annotations</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e67" source="measurement" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e68" source="measurement" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e69" source="measurement" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e70" source="medication" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e71" source="medication" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e72" source="mg_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e73" source="mg_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e74" source="mr_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e75" source="mr_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e76" source="mr_series_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e77" source="nm_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e78" source="nm_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e79" source="nm_series_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e80" source="observation" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e81" source="observation" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e82" source="observation" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e83" source="procedure" target="condition"><data key="name">conditions</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e84" source="procedure" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e85" source="procedure" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e86" source="procedure" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e87" source="procedure" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e88" source="project" target="program"><data key="name">programs</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e89" source="pt_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e90" source="pt_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e91" source="pt_series_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e92" source="radiology_report" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e93" source="radiology_report" target="dataset"><data key="name">datasets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e94" source="radiology_report" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e95" source="radiology_report" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e96" source="rf_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e97" source="rf_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e98" source="supplementary_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e99" source="supplementary_file" target="dataset"><data key="name">datasets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e100" source="supplementary_file" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e101" source="supplementary_file" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e102" source="us_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e103" source="us_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e104" source="visit" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e105" source="visit" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e106" source="xa_series_file" target="core_metadata_collection"><data key="name">core_metadata_collections</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e107" source="xa_series_file" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e108" source="therapy_course" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e109" source="therapy_course" target="study"><data key="name">studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e110" source="therapy_course" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e111" source="toxicity_event" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e112" source="toxicity_event" target="therapy_cycle"><data key="name">therapy_cycles</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e113" source="toxicity_event" target="absorbed_dose"><data key="name">absorbed_doses</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e114" source="toxicity_event" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e115" source="toxicity_event" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e116" source="toxicity_event" target="measurement"><data key="name">laboratory_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e117" source="clinical_assessment" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e118" source="clinical_assessment" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e119" source="clinical_assessment" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e120" source="timepoint" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e121" source="timepoint" target="therapy_cycle"><data key="name">therapy_cycles</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e122" source="timepoint" target="administration"><data key="name">anchor_administrations</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e123" source="timepoint" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e124" source="treatment_plan" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e125" source="treatment_plan" target="therapy_cycle"><data key="name">therapy_cycles</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e126" source="treatment_plan" target="response_assessment"><data key="name">response_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e127" source="treatment_plan" target="toxicity_event"><data key="name">toxicity_events</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e128" source="treatment_plan" target="organ_function"><data key="name">organ_functions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e129" source="treatment_plan" target="dose_summary"><data key="name">dose_summaries</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e130" source="treatment_plan" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e131" source="treatment_plan" target="eligibility_assessment"><data key="name">eligibility_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e132" source="treatment_plan" target="measurement"><data key="name">laboratory_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e133" source="anatomic_target" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e134" source="anatomic_target" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e135" source="dose_summary" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e136" source="dose_summary" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e137" source="dose_summary" target="absorbed_dose"><data key="name">component_doses</data><data key="multiplicity">many_to_many</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e138" source="dose_summary" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e139" source="patient_reported_outcome" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e140" source="patient_reported_outcome" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e141" source="patient_reported_outcome" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e142" source="patient_reported_outcome" target="medication"><data key="name">analgesic_medications</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e143" source="response_assessment" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e144" source="response_assessment" target="imaging_study"><data key="name">baseline_imaging_studies</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e145" source="response_assessment" target="imaging_study"><data key="name">followup_imaging_studies</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e146" source="response_assessment" target="dose_summary"><data key="name">dose_summaries</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e147" source="response_assessment" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e148" source="response_assessment" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e149" source="response_assessment" target="disease_burden"><data key="name">baseline_burdens</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e150" source="response_assessment" target="disease_burden"><data key="name">followup_burdens</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e151" source="response_assessment" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e152" source="response_assessment" target="absorbed_dose"><data key="name">absorbed_doses</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e153" source="response_assessment" target="patient_reported_outcome"><data key="name">baseline_pros</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e154" source="response_assessment" target="patient_reported_outcome"><data key="name">followup_pros</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e155" source="response_assessment" target="patient_reported_outcome"><data key="name">confirmation_pros</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e156" source="response_assessment" target="clinical_assessment"><data key="name">clinical_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e157" source="response_assessment" target="biomarker_assessment"><data key="name">biomarker_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e158" source="response_assessment" target="clinical_event"><data key="name">clinical_events</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e159" source="response_assessment" target="measurement"><data key="name">laboratory_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e160" source="response_assessment" target="measurement"><data key="name">roi_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e161" source="response_assessment" target="measurement"><data key="name">baseline_psa_results</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e162" source="response_assessment" target="measurement"><data key="name">nadir_psa_results</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e163" source="response_assessment" target="measurement"><data key="name">confirmatory_psa_results</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e164" source="semantic_mapping" target="model_release"><data key="name">model_releases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e165" source="acquisition" target="scanner"><data key="name">scanners</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e166" source="acquisition" target="scanner_qa"><data key="name">scanner_qas</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e167" source="acquisition" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e168" source="acquisition" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e169" source="acquisition" target="pt_series_file"><data key="name">pt_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e170" source="acquisition" target="nm_series_file"><data key="name">nm_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e171" source="acquisition" target="ct_series_file"><data key="name">ct_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e172" source="acquisition" target="mr_series_file"><data key="name">mr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e173" source="acquisition" target="supplementary_file"><data key="name">raw_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e174" source="radiopharmaceutical_batch" target="radiopharmaceutical"><data key="name">radiopharmaceuticals</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e175" source="radiopharmaceutical_batch" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e176" source="scanner" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e177" source="scanner" target="site"><data key="name">sites</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e178" source="scanner" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e179" source="time_activity_curve" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e180" source="time_activity_curve" target="administration"><data key="name">administrations</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e181" source="time_activity_curve" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e182" source="time_activity_curve" target="measurement"><data key="name">roi_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e183" source="radiopharmaceutical" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e184" source="radiopharmaceutical" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e185" source="study" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e186" source="scanner_qa" target="scanner"><data key="name">scanners</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e187" source="scanner_qa" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e188" source="toxicity_summary" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e189" source="toxicity_summary" target="toxicity_event"><data key="name">toxicity_events</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e190" source="toxicity_summary" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e191" source="laboratory_panel" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e192" source="laboratory_panel" target="specimen"><data key="name">specimens</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e193" source="laboratory_panel" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e194" source="laboratory_panel" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e195" source="dosimetry" target="therapy_cycle"><data key="name">therapy_cycles</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e196" source="dosimetry" target="administration"><data key="name">administrations</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e197" source="dosimetry" target="time_activity_curve"><data key="name">time_activity_curves</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e198" source="dosimetry" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e199" source="dosimetry" target="acquisition"><data key="name">acquisitions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e200" source="dosimetry" target="pt_series_file"><data key="name">pt_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e201" source="dosimetry" target="nm_series_file"><data key="name">nm_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e202" source="dosimetry" target="ct_series_file"><data key="name">ct_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e203" source="dosimetry" target="mr_series_file"><data key="name">mr_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e204" source="dosimetry" target="annotation"><data key="name">annotations</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e205" source="dosimetry" target="dicom_annotation_file"><data key="name">dose_maps</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e206" source="dosimetry" target="supplementary_file"><data key="name">non_dicom_dose_maps</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e207" source="biomarker_assessment" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e208" source="biomarker_assessment" target="specimen"><data key="name">specimens</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e209" source="biomarker_assessment" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e210" source="biomarker_assessment" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e211" source="provenance" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e212" source="organ_function" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e213" source="organ_function" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e214" source="organ_function" target="timepoint"><data key="name">timepoints</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e215" source="organ_function" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e216" source="organ_function" target="measurement"><data key="name">laboratory_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e217" source="site" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e218" source="medical_history" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e219" source="medical_history" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e220" source="registration" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e221" source="registration" target="pt_series_file"><data key="name">moving_pt_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e222" source="registration" target="nm_series_file"><data key="name">moving_nm_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e223" source="registration" target="ct_series_file"><data key="name">moving_ct_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e224" source="registration" target="mr_series_file"><data key="name">moving_mr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e225" source="registration" target="pt_series_file"><data key="name">reference_pt_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e226" source="registration" target="nm_series_file"><data key="name">reference_nm_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e227" source="registration" target="ct_series_file"><data key="name">reference_ct_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e228" source="registration" target="mr_series_file"><data key="name">reference_mr_series_files</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">true</data></edge>
+<edge id="e229" source="administration" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e230" source="administration" target="radiopharmaceutical"><data key="name">radiopharmaceuticals</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e231" source="administration" target="radiopharmaceutical_batch"><data key="name">radiopharmaceutical_batches</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e232" source="administration" target="therapy_cycle"><data key="name">therapy_cycles</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e233" source="administration" target="visit"><data key="name">visits</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e234" source="administration" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e235" source="specimen" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e236" source="specimen" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e237" source="absorbed_dose" target="dosimetry"><data key="name">dosimetries</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e238" source="absorbed_dose" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e239" source="absorbed_dose" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e240" source="absorbed_dose" target="annotation"><data key="name">annotations</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e241" source="model_release" target="project"><data key="name">projects</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e242" source="therapy_cycle" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e243" source="therapy_cycle" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e244" source="survival_outcome" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e245" source="survival_outcome" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e246" source="survival_outcome" target="response_assessment"><data key="name">response_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e247" source="survival_outcome" target="clinical_event"><data key="name">clinical_events</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e248" source="survival_outcome" target="treatment_transition"><data key="name">treatment_transitions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e249" source="reconstruction" target="acquisition"><data key="name">acquisitions</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e250" source="reconstruction" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e251" source="reconstruction" target="supplementary_file"><data key="name">raw_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e252" source="reconstruction" target="pt_series_file"><data key="name">output_pt_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e253" source="reconstruction" target="nm_series_file"><data key="name">output_nm_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e254" source="reconstruction" target="ct_series_file"><data key="name">output_ct_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e255" source="reconstruction" target="mr_series_file"><data key="name">output_mr_series_files</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e256" source="eligibility_assessment" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e257" source="eligibility_assessment" target="study"><data key="name">studies</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e258" source="eligibility_assessment" target="visit"><data key="name">visits</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e259" source="eligibility_assessment" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e260" source="eligibility_assessment" target="condition"><data key="name">conditions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e261" source="eligibility_assessment" target="clinical_assessment"><data key="name">clinical_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e262" source="eligibility_assessment" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e263" source="eligibility_assessment" target="organ_function"><data key="name">organ_functions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e264" source="eligibility_assessment" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e265" source="eligibility_assessment" target="measurement"><data key="name">laboratory_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e266" source="disease_burden" target="case"><data key="name">cases</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e267" source="disease_burden" target="imaging_study"><data key="name">imaging_studies</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e268" source="disease_burden" target="anatomic_target"><data key="name">included_targets</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e269" source="disease_burden" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e270" source="disease_burden" target="measurement"><data key="name">roi_measurements</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e271" source="clinical_event" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e272" source="clinical_event" target="anatomic_target"><data key="name">anatomic_targets</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e273" source="clinical_event" target="procedure"><data key="name">procedures</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e274" source="clinical_event" target="condition"><data key="name">conditions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e275" source="clinical_event" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e276" source="treatment_decision" target="therapy_course"><data key="name">therapy_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e277" source="treatment_decision" target="therapy_cycle"><data key="name">therapy_cycles</data><data key="multiplicity">many_to_one</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e278" source="treatment_decision" target="response_assessment"><data key="name">response_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e279" source="treatment_decision" target="toxicity_event"><data key="name">toxicity_events</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e280" source="treatment_decision" target="clinical_assessment"><data key="name">clinical_assessments</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e281" source="treatment_decision" target="organ_function"><data key="name">organ_functions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e282" source="treatment_decision" target="dose_summary"><data key="name">dose_summaries</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e283" source="treatment_decision" target="patient_reported_outcome"><data key="name">patient_reported_outcomes</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e284" source="treatment_decision" target="clinical_event"><data key="name">clinical_events</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e285" source="treatment_decision" target="procedure"><data key="name">procedures</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e286" source="treatment_decision" target="treatment_plan"><data key="name">treatment_plans</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e287" source="treatment_decision" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e288" source="treatment_transition" target="therapy_course"><data key="name">prior_courses</data><data key="multiplicity">many_to_one</data><data key="required">true</data><data key="group_required">false</data></edge>
+<edge id="e289" source="treatment_transition" target="therapy_course"><data key="name">subsequent_courses</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e290" source="treatment_transition" target="medication"><data key="name">medications</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e291" source="treatment_transition" target="treatment_decision"><data key="name">treatment_decisions</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+<edge id="e292" source="treatment_transition" target="provenance"><data key="name">provenance_records</data><data key="multiplicity">many_to_many</data><data key="required">false</data><data key="group_required">false</data></edge>
+</graph></graphml>

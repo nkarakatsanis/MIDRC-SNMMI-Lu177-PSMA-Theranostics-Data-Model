@@ -1,0 +1,104 @@
+[
+  {
+    "submitter_id": "JOURNEY-BASELINE-CT-IMAGE",
+    "model_version": "0.3.0-proposal",
+    "file_name": "synthetic_baseline_ct.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "HU",
+    "type": "ct_series_file",
+    "series_uid": "2.25.20003",
+    "modality": "CT",
+    "series_description": "Baseline CT anatomical reference",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-BASELINE-PETCT"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "CT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-CT-IMAGE-24H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-c1-ct-image-24h.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "HU",
+    "type": "ct_series_file",
+    "series_uid": "2.25.31001",
+    "modality": "CT",
+    "series_description": "CT for paired post-therapy SPECT/CT",
+    "imaging_studies": [
+      {
+        "submitter_id": "SYN-IMAGING_STUDY"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "CT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  },
+  {
+    "submitter_id": "JOURNEY-C1-CT-IMAGE-48H",
+    "model_version": "0.3.0-proposal",
+    "file_name": "journey-c1-ct-image-48h.dcm",
+    "file_size": 1,
+    "md5sum": "00000000000000000000000000000000",
+    "rows": 64,
+    "columns": 64,
+    "pixel_spacing": [
+      4.0,
+      4.0
+    ],
+    "voxel_spacing_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "quantitative_units": "HU",
+    "type": "ct_series_file",
+    "series_uid": "2.25.31002",
+    "modality": "CT",
+    "series_description": "CT for paired post-therapy SPECT/CT",
+    "imaging_studies": [
+      {
+        "submitter_id": "JOURNEY-C1-SPECTCT-48H"
+      }
+    ],
+    "data_format": "DCM",
+    "data_type": "DICOM",
+    "data_category": "CT",
+    "case_ids": [
+      "SYN-CASE"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+preparation_event,type,True,False,Theranostics extension,enum,,
+preparation_event,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",nk_blueprint:r201
+preparation_event,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+preparation_event,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+preparation_event,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+preparation_event,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+preparation_event,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+preparation_event,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+preparation_event,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+preparation_event,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+preparation_event,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+preparation_event,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+preparation_event,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+preparation_event,event_kind,True,False,Theranostics extension,enum,Executed preparation activity; dispensing and administration have separate records.,idrp_ontology:r121
+preparation_event,recipe_name,True,False,Theranostics extension,string,Executed recipe or SOP name.,nk_blueprint:r75; nk_blueprint:r208
+preparation_event,recipe_version,True,False,Theranostics extension,string,Version of the executed recipe or SOP.,
+preparation_event,started_datetime,False,False,Theranostics extension,string,Start timestamp with UTC offset.,
+preparation_event,completed_datetime,True,False,Theranostics extension,string,"Completion timestamp with UTC offset, including end-of-synthesis when applicable.",nk_blueprint:r211
+preparation_event,site_name,False,False,Theranostics extension,string,Manufacturing or preparation site identity without patient identifiers.,nk_blueprint:r204
+preparation_event,gmp_status,False,False,Theranostics extension,string,Source-reported GMP status with governing evidence in provenance; not an inferred certification.,nk_blueprint:r205
+preparation_event,execution_mode,False,False,Theranostics extension,enum,Mode of execution.,nk_blueprint:r206
+preparation_event,instrument_name,False,False,Theranostics extension,string,Synthesis module or preparation instrument.,nk_blueprint:r207
+preparation_event,reaction_conditions,False,False,Theranostics extension,string,"Executed temperature, time, pH and other conditions with units or an SOP reference.",nk_blueprint:r209
+preparation_event,purification_method,False,False,Theranostics extension,string,Executed purification method and version.,nk_blueprint:r210
+preparation_event,deviation_description,False,False,Theranostics extension,string,Recorded deviation and its disposition; no deviation is inferred from missing data.,nk_blueprint:r227
+preparation_event,projects,True,False,Theranostics extension,array,Link to project records by code or UUID.,
+preparation_event,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+preparation_event,input_material_lots,False,False,Theranostics extension,array,Link to material_lot records by submitter_id or UUID.,idrp_ontology:r24
+preparation_event,input_batches,False,False,Theranostics extension,array,Link to radiopharmaceutical_batch records by submitter_id or UUID.,
+preparation_event,output_batches,True,False,Theranostics extension,array,Link to radiopharmaceutical_batch records by submitter_id or UUID.,

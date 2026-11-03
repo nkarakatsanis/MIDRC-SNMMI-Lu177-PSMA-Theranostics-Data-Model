@@ -1,0 +1,54 @@
+node,property,required,system,origin,type,definition,source_occurrence_ids
+biomarker_assessment,type,True,False,Theranostics extension,enum,,
+biomarker_assessment,submitter_id,True,False,Theranostics extension,string,"Stable submitter-assigned identifier, unique within a project. Do not encode direct patient identifiers.",
+biomarker_assessment,id,False,True,Theranostics extension,string,"A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.
+",
+biomarker_assessment,project_id,False,True,Theranostics extension,string,"Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
+",
+biomarker_assessment,state,False,True,Theranostics extension,compound,"The current state of the object.
+",
+biomarker_assessment,created_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+biomarker_assessment,updated_datetime,False,True,Theranostics extension,compound,"A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+",
+biomarker_assessment,cases,True,False,Theranostics extension,array,Link to case records by submitter_id or UUID.,
+biomarker_assessment,specimens,False,False,Theranostics extension,array,Link to specimen records by submitter_id or UUID.,
+biomarker_assessment,timepoints,False,False,Theranostics extension,array,Link to timepoint records by submitter_id or UUID.,
+biomarker_assessment,provenance_records,False,False,Theranostics extension,array,Link to provenance records by submitter_id or UUID.,
+biomarker_assessment,model_version,False,False,Theranostics extension,string,"Version of the submitting theranostics extension, independently of the MIDRC baseline version.",
+biomarker_assessment,record_status,False,False,Theranostics extension,string,"Record curation state, independent of clinical value.",
+biomarker_assessment,source_record_id,False,False,Theranostics extension,string,Identifier of the originating source record; use an approved pseudonym when needed.,
+biomarker_assessment,source_system,False,False,Theranostics extension,string,Source system or data provider.,
+biomarker_assessment,missing_properties,False,False,Theranostics extension,array,Names of properties missing from this record; no missing value is encoded as zero.,
+biomarker_assessment,missing_reasons,False,False,Theranostics extension,array,Reasons corresponding by index to missing_properties.,
+biomarker_assessment,assessment_datetime,False,False,Theranostics extension,string,ISO 8601 assessment datetime; use approved date shifting consistently within the case.,
+biomarker_assessment,days_from_course_start,False,False,Theranostics extension,number,Signed elapsed days from the linked therapy course start.,
+biomarker_assessment,time_basis,False,False,Theranostics extension,string,Interpretation of stored dates and elapsed times.,
+biomarker_assessment,time_window_start_day,False,False,Theranostics extension,number,"Beginning of assessment window relative to course start, in days.",
+biomarker_assessment,time_window_end_day,False,False,Theranostics extension,number,"End of assessment window relative to course start, in days.",
+biomarker_assessment,biomarker_name,False,False,Theranostics extension,string,Assay or biomarker name.,
+biomarker_assessment,assay_method,False,False,Theranostics extension,string,Assay platform and method.,
+biomarker_assessment,unit,False,False,Theranostics extension,string,Unit for quantitative biomarker values.,
+biomarker_assessment,germline_genetic_test_date,False,False,Theranostics extension,string,Date germline genetic testing was performed or results reported.,lu_177_psma_data_model:r121
+biomarker_assessment,germline_genetic_test_results_summary,False,False,Theranostics extension,string,"Summary of key germline mutations found (e.g., BRCA1/2, ATM, CHEK2, PALB2, Lynch syndrome genes) or 'No pathogenic variants identified'.",lu_177_psma_data_model:r122
+biomarker_assessment,germline_genetic_testing_performed,False,False,Theranostics extension,string,Indicates if germline genetic testing for cancer-related mutations was performed.,lu_177_psma_data_model:r123
+biomarker_assessment,ki67_biopsy_date,False,False,Theranostics extension,string,Date the biopsy for Ki-67 analysis was performed.,lu_177_psma_data_model:r130
+biomarker_assessment,ki67_biopsy_site,False,False,Theranostics extension,string,Anatomical site of the biopsy used for Ki-67 index determination.,lu_177_psma_data_model:r131
+biomarker_assessment,ki67_index_value,False,False,Theranostics extension,number,"Ki-67 proliferation index percentage from the most relevant biopsy (e.g., primary or metastatic). Specify if available.",lu_177_psma_data_model:r132
+biomarker_assessment,somatic_genetic_test_biopsy_site,False,False,Theranostics extension,string,"Site of biopsy used for somatic genetic testing, if applicable.",lu_177_psma_data_model:r160
+biomarker_assessment,somatic_genetic_test_date,False,False,Theranostics extension,string,Date somatic genetic testing was performed or results reported.,lu_177_psma_data_model:r161
+biomarker_assessment,somatic_genetic_test_results_summary,False,False,Theranostics extension,string,"Summary of key somatic mutations found (e.g., BRCA1/2, ATM, TP53, PTEN, AR alterations) or 'No targetable pathogenic variants identified'.",lu_177_psma_data_model:r162
+biomarker_assessment,somatic_genetic_testing_performed,False,False,Theranostics extension,string,Indicates if somatic genetic testing (from tumor tissue or ctDNA) was performed.,lu_177_psma_data_model:r163
+biomarker_assessment,ctdna,False,False,Theranostics extension,string,Provisional field for ctDNA; operational definition requires review.,lu_177_psma_data_model:r286
+biomarker_assessment,biopsy_method,False,False,Theranostics extension,string,"1- Transrectal
+2- Transperineal
+3- Transurethral",atlas_data_elements:r25
+biomarker_assessment,biopsy_date,False,False,Theranostics extension,string,Provisional field for biopsy date; operational definition requires review.,atlas_data_elements:r26
+biomarker_assessment,grading,False,False,Theranostics extension,string,Provisional field for grading; operational definition requires review.,atlas_data_elements:r28
+biomarker_assessment,uicc_staging,False,False,Theranostics extension,string,Provisional field for UICC staging; operational definition requires review.,atlas_data_elements:r32
+biomarker_assessment,mutation,False,False,Theranostics extension,string,Provisional field for mutation; operational definition requires review.,atlas_data_elements:r33
+biomarker_assessment,neuroendocrine_or_adenocarcinoma,False,False,Theranostics extension,string,"Provisional field for neuroendocrine, or adenocarcinoma; operational definition requires review.",atlas_data_elements:r166
+biomarker_assessment,result_numeric,False,False,Theranostics extension,number,Numeric assay result at this collection time.,marios_outcome_content:r79; marios_outcome_content:r80; outcome_revision:r79; outcome_revision:r80
+biomarker_assessment,assay_name,False,False,Theranostics extension,string,Biomarker assay name.,
+biomarker_assessment,result_unit,False,False,Theranostics extension,string,Unit of the numeric biomarker assay result.,
+biomarker_assessment,assessment_role,False,False,Theranostics extension,string,"Baseline or follow-up context, specified rather than encoded in record identity.",

@@ -1,0 +1,50 @@
+[
+  {
+    "type": "radionuclide",
+    "submitter_id": "RP-LU177",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "name": "Lutetium-177",
+    "atomic_symbol": "Lu",
+    "atomic_number": 71,
+    "mass_number": 177,
+    "nuclear_state": "ground",
+    "is_stable": false,
+    "physical_half_life_seconds": 574067.52,
+    "reference_citation": "NNDC ENSDF adopted Lu-177 levels, evaluated August 2019: https://www.nndc.bnl.gov/ensnds/177/Lu/adopted.pdf",
+    "reference_version": "2019-08 evaluation"
+  },
+  {
+    "type": "radionuclide",
+    "submitter_id": "RP-HF177",
+    "model_version": "0.4.0-proposal",
+    "record_status": "draft",
+    "projects": [
+      {
+        "code": "SYNTHETIC"
+      }
+    ],
+    "provenance_records": [
+      {
+        "submitter_id": "SYN-PROVENANCE"
+      }
+    ],
+    "name": "Hafnium-177",
+    "atomic_symbol": "Hf",
+    "atomic_number": 72,
+    "mass_number": 177,
+    "nuclear_state": "ground",
+    "is_stable": true,
+    "reference_citation": "Stable daughter identity for the Lu-177 decay example; nuclear data release requires deployment-specific curation."
+  }
+]
